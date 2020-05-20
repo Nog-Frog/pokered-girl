@@ -137,10 +137,10 @@ charmap "ק", $D7
 charmap "ר", $D8
 charmap "ש", $D9
 charmap "ת", $DA
-charmap "'ג", $DB
-charmap "'ז", $DC
-charmap "'צ", $DD
-charmap "'ת", $DE
+charmap "ג'", $DB
+charmap "ז'", $DC
+charmap "צ'", $DD
+charmap "ת'", $DE
 charmap "־", $DF
 charmap "'", $E0
 charmap "ゅ", $E1
