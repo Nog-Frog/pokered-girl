@@ -1,7 +1,24 @@
-# Pokémon Red and Blue
+# About
 
 This is a disassembly of Pokémon Red and Blue.
+It has been modified to allow Hebrew language compatibility,
+and is in the process of being translated into Hebrew.
 
+Almost all of the code for Hebrew compatibility is from
+[**LIJI32**](https://github.com/LIJI32)'s old modification on top
+of pokered, called [pokeadom](https://github.com/LIJI32/pokeadom).
+
+Thanks so much to Eyal Seelig (link TBA) for porting LIJI32's
+6-year-old for the still-currently-updating pokered.
+
+If you'd like to contribute Hebrew translations, please do contact
+me either or on Discord (I'm Nog#4061) for a short style guide (style guide
+link TBA).
+
+
+# Pokémon Red and Blue
+
+This is a modified disassembly of Pokémon Red and Blue.
 It builds the following roms:
 
 * Pokemon Red (UE) [S][!].gb  `md5: 3d45c1ee9abd5738df46d2bdda8b57dc`
@@ -20,8 +37,7 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 * Disassembly of [**Pokémon Ruby**][pokeruby]
 * Disassembly of [**Pokémon Fire Red**][pokefirered]
 * Disassembly of [**Pokémon Emerald**][pokeemerald]
-* Discord: [**pret**][Discord]
-* irc: **irc.freenode.net** [**#pret**][irc]
+* The Pret Discord: [**pret**][Discord]
 
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokegold]: https://github.com/pret/pokegold
