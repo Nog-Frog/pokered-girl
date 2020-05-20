@@ -42,7 +42,7 @@ jpab: MACRO
 ENDM
 
 validateCoords: MACRO
-	IF \1 >= SCREEN_WIDTH
+	IF \1 >= SCREEN_WIDTH+1
 		fail "x coord out of range"
 	ENDC
 	IF \2 >= SCREEN_HEIGHT

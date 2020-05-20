@@ -77,6 +77,8 @@ Char4ETest::
 	jr nz, .next3
 	pop hl
 	coord hl, 1, 16
+	call AlignHL
+.next4
 	push hl
 	jp PlaceNextChar_inc
 
@@ -111,7 +113,20 @@ endm
 	dict $59, Char59 ; TARGET
 	dict $5A, Char5A ; USER
 
-	ld [hli], a
+	; test if RightAligned is set
+	push af
+	ld a, [wRightAligned]
+	and a
+	
+	; increase or decrease hl based on alignment
+	jr nz, .rightAligned
+	pop af
+	ld [hli], a	
+	jr .delay
+.rightAligned
+	pop af
+	ld [hld],a
+.delay
 	call PrintLetterDelay
 PlaceNextChar_inc::
 	inc de
@@ -206,9 +221,7 @@ MonsterNameCharsCommon::
 	ld de, wEnemyMonNick ; enemy active monster name
 
 FinishDTE::
-	call PlaceString
-	ld h, b
-	ld l, c
+	call PrintReversed
 	pop de
 	inc de
 	jp PlaceNextChar
@@ -258,12 +271,12 @@ Char58:: ; prompt
 	cp LINK_STATE_BATTLING
 	jp z, .ok
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 .ok
 	call ProtectedDelay3
 	call ManualTextScroll
 	ld a, " "
-	Coorda 18, 16
+	Coorda 1, 16
 Char57:: ; done
 	pop hl
 	ld de, Char58Text
@@ -276,7 +289,7 @@ Char58Text::
 Char51:: ; para
 	push de
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	call ManualTextScroll
 	coord hl, 1, 13
@@ -286,12 +299,13 @@ Char51:: ; para
 	call DelayFrames
 	pop de
 	coord hl, 1, 14
+	call AlignHL
 	jp PlaceNextChar_inc
 
 Char49::
 	push de
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	call ManualTextScroll
 	coord hl, 1, 10
@@ -307,19 +321,20 @@ Char49::
 
 Char4B::
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	push de
 	call ManualTextScroll
 	pop de
 	ld a, " "
-	Coorda 18, 16
+	Coorda 1, 16
 	;fall through
 Char4C::
 	push de
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	coord hl, 1, 16
+	call AlignHL
 	pop de
 	jp PlaceNextChar_inc
 
@@ -447,7 +462,7 @@ TextCommand01::
 	push hl
 	ld h, b
 	ld l, c
-	call PlaceString
+	call PrintReversed
 	pop hl
 	jr NextTextCommand
 
@@ -493,6 +508,7 @@ TextCommand03::
 TextCommand05::
 	pop hl
 	coord bc, 1, 16 ; address of second line of dialogue text box
+	call AlignHL
 	jp NextTextCommand
 
 ; blink arrow and wait for A or B to be pressed
@@ -503,12 +519,12 @@ TextCommand06::
 	cp LINK_STATE_BATTLING
 	jp z, TextCommand0D
 	ld a, "▼"
-	Coorda 18, 16 ; place down arrow in lower right corner of dialogue text box
+	Coorda 1, 16 ; place down arrow in lower left corner of dialogue text box
 	push bc
 	call ManualTextScroll ; blink arrow and wait for A or B to be pressed
 	pop bc
 	ld a, " "
-	Coorda 18, 16 ; overwrite down arrow with blank space
+	Coorda 1, 16 ; overwrite down arrow with blank space
 	pop hl
 	jp NextTextCommand
 
@@ -517,11 +533,12 @@ TextCommand06::
 ; (no arguments)
 TextCommand07::
 	ld a, " "
-	Coorda 18, 16 ; place blank space in lower right corner of dialogue text box
+	Coorda 1, 16 ; place blank space in lower left corner of dialogue text box
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	pop hl
 	coord bc, 1, 16 ; address of second line of dialogue text box
+	call AlignHL
 	jp NextTextCommand
 
 ; execute asm inline
@@ -709,3 +726,13 @@ TextCommandJumpTable::
 	dw TextCommand0B
 	dw TextCommand0C
 	dw TextCommand0D
+
+; Adds 17 to HL if RightAligned is on
+AlignHL::
+	ld a, [wRightAligned]
+	and a
+	ret z
+	ld a, 17
+	add l
+	ld l, a
+	ret
