@@ -1,5 +1,6 @@
 _Route5Text1::
-	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	text "מעבר תת קרקעי"
+	line "עיר הטורקיז -"
+	cont "עיר הארגמן"
 	done
+

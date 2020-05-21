@@ -1,145 +1,147 @@
 _Route3Text1::
-	text "Whew... I better"
-	line "take a rest..."
-	cont "Groan..."
+	text "פיו.. כדאי שאני.."
+	line "אנוח קצת.."
+	cont "אנחה..."
 
-	para "That tunnel from"
-	line "CERULEAN takes a"
-	cont "lot out of you!"
+	para "המנהרה הזאת"
+	line "מעיר הטורקיז"
+	cont "ממש מוציאה ממך את המיץ!"
 	done
 
 _Route3BattleText1::
-	text "Hey! I met you in"
-	line "VIRIDIAN FOREST!"
+	text "היי! אני פגשתי אותך"
+	line "ביער ירוק-העד!"
 	done
 
 _Route3EndBattleText1::
-	text "You"
-	line "beat me again!"
+	text "אני לא מאמין!"
+	line "ניצחת אותי שוב!"
 	prompt
 
 _Route3AfterBattleText1::
-	text "There are other"
-	line "kinds of #MON"
-	cont "than those found"
-	cont "in the forest!"
+	text "ישנם סוגים"
+	line "נוספים של #ימונים"
+	cont "מלבד אלו"
+	cont "שמצאת ביער!"
 	done
 
 _Route3BattleText2::
-	text "Hi! I like shorts!"
-	line "They're comfy and"
-	cont "easy to wear!"
+	text "היי! אני אוהב מכנסיים קצרים"
+	line "הם נוחים וגם"
+	cont "קלים ללבישה!"
 	done
 
 _Route3EndBattleText2::
-	text "I don't"
-	line "believe it!"
+	text "אני לא"
+	line "מאמין לזה!"
 	prompt
 
 _Route3AfterBattleText2::
-	text "Are you storing"
-	line "your #MON on"
-	cont "PC? Each BOX can"
-	cont "hold 20 #MON!"
+	text "אתה מאחסן"
+	line "את ה#ימונים שלך"
+	cont "במחשב? כל קופסה"
+	cont "יכולה להכיל עד"
+	cont "20 #ימונים!"
 	done
 
 _Route3BattleText3::
-	text "You looked at me,"
-	line "didn't you?"
+	text "אתה הסתכלת עליי"
+	line "נכון?"
 	done
 
 _Route3EndBattleText3::
-	text "You're"
-	line "mean!"
+	text "אתה"
+	line "רשע מרושע!"
 	prompt
 
 _Route3AfterBattleText3::
-	text "Quit staring if"
-	line "you don't want to"
-	cont "fight!"
+	text "תפסיק לבהות"
+	line "אם אתה לא רוצה"
+	cont "להלחם!"
 	done
 
 _Route3BattleText4::
-	text "Are you a trainer?"
-	line "Let's fight!"
+	text "אתה מאמן פוקימונים?"
+	line "בוא נלחם!"
 	done
 
 _Route3EndBattleText4::
-	text "If I"
-	line "had new #MON I"
-	cont "would've won!"
+	text "לו היה לי"
+	line "#ימון חדש"
+	cont "הייתי מנצחת!"
 	prompt
 
 _Route3AfterBattleText4::
-	text "If a #MON BOX"
-	line "on the PC gets"
-	cont "full, just switch"
-	cont "to another BOX!"
+	text "אם קופסת #ימונים"
+	line "במחשב מלאה עד אפס מקום,"
+	cont "פשוט תחליף"
+	cont "לקופסה אחרת!"
 	done
 
 _Route3BattleText5::
-	text "That look you"
-	line "gave me, it's so"
-	cont "intriguing!"
+	text "הצורה שבה הבטת בי"
+	line "כל כך מסקרנת!"
 	done
 
 _Route3EndBattleText5::
-	text "Be nice!"
+	text "תהיה נחמד!"
 	prompt
 
 _Route3AfterBattleText5::
-	text "Avoid fights by"
-	line "not letting"
-	cont "people see you!"
+	text "כדי להמנע מקרבות,"
+	line "אל תיתן"
+	cont "לאנשים לראות אותך!"
 	done
 
 _Route3BattleText6::
-	text "Hey! You're not"
-	line "wearing shorts!"
+	text "היי! אתה לא לובש"
+	line "מכנסיים קצרים!"
 	done
 
 _Route3EndBattleText6::
-	text "Lost!"
-	line "Lost! Lost!"
+	text "הפסדתי!"
+	line "אני לא מאמינה שהפסדתי!"
 	prompt
 
 _Route3AfterBattleText6::
-	text "I always wear"
-	line "shorts, even in"
-	cont "winter!"
+	text "אני תמיד לובשת"
+	line "מכנסיים קצרים,"
+	cont "אפילו בחורף!"
 	done
 
 _Route3BattleText7::
-	text "You can fight my"
-	line "new #MON!"
+	text "אתה יכול להלחם"
+	line "ב#ימונים החדשים"
+	cont "שלי!"
 	done
 
 _Route3EndBattleText7::
-	text "Done"
-	line "like dinner!"
+	text "נזללתי"
+	line "כמו ארוחת ילדים!"
 	prompt
 
 _Route3AfterBattleText7::
-	text "Trained #MON"
-	line "are stronger than"
-	cont "the wild ones!"
+	text "#ימונים מאומנים"
+	line "חזקים יותר"
+	cont "מ#ימונים פראיים!"
 	done
 
 _Route3BattleText8::
-	text "Eek! Did you"
-	line "touch me?"
+	text "איכס!"
+	line "אתה נגעת בי?"
 	done
 
 _Route3EndBattleText8::
-	text "That's it?"
+	text "זה הכל?"
 	prompt
 
 _Route3AfterBattleText8::
-	text "ROUTE 4 is at the"
-	line "foot of MT.MOON."
+	text "דרך 4 נמצאת במורד"
+	line "הר הירח."
 	done
 
 _Route3Text10::
-	text "ROUTE 3"
-	line "MT.MOON AHEAD"
+	text "דרך 3"
+	line "בהמשך: הר ירח"
 	done
+
