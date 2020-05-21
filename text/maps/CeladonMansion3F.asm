@@ -25,9 +25,10 @@ _GameDesignerText::
 	para "אניו יוצר"
 	line "המשחק!"
 
-	para "למלא את ה"
-	line "#DEX שלך זה קשה," ה
-	cont "אבל את תתייאש!"
+	para "למלא את"
+	line "ה#DEX שלך זה"
+	cont "קשה, אבל אל"
+	cont "תתייאש!"
 
 	para "כשתסיים,"
 	line "תחזור לספר לי!"
