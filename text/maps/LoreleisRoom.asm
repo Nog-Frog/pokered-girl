@@ -1,42 +1,40 @@
 _LoreleiBeforeBattleText::
-	text "Welcome to"
-	line "#MON LEAGUE!"
+	text "ברוכים הבאים"
+	line " ה#ימונים LEAGUEל!" ;TODO
 
-	para "I am LORELEI of"
-	line "the ELITE FOUR!"
+	para "אני LORELEI " ;TODO
+	line "מה ELITE FOUR!" ;TODO
 
-	para "No one can best"
-	line "me when it comes"
-	cont "to icy #MON!"
+	para "אף אחד לא"
+	line "טוב יותר ממני כשמדובר"
+	cont "באימון #ימוני קרח!"
 
-	para "Freezing moves"
-	line "are powerful!"
+	para "מתקפות הקפאה"
+	line "הן עוצמתיות!"
 
-	para "Your #MON will"
-	line "be at my mercy"
-	cont "when they are"
-	cont "frozen solid!"
+	para "ה#ימונים שלך"
+	line "יהיו נתונים לחסדיי"
+	cont "כשהם יהיו"
+	cont "קפואים לצמיתות!" ;TODO (אולי לא מדויק)
 
-	para "Hahaha!"
-	line "Are you ready?"
+	para "חה חה!"
+	line "אתה מוכן?"
 	done
 
 _LoreleiEndBattleText::
-	text "How"
-	line "dare you!"
+	text "עכשיו"
+	line "תעז לנסות!" ;TODO (אולי לא מדויק)
 	prompt
 
 _LoreleiAfterBattleText::
-	text "You're better"
-	line "than I thought!"
-	cont "Go on ahead!"
+	text "אתה טוב יותר משחשבתי"
+	line "קדימה!"
 
-	para "You only got a"
-	line "taste of #MON"
-	cont "LEAGUE power!"
+	para "קיבלת רק טעימה קטנה"
+	line "מעוצמת ליגת ה#ימונים!"
 	done
 
 _LoreleiDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "Someone's voice:"  ;TODO (זכור לי שזה משהו קבוע אבל לא זוכרת מה רושמים אז אשמח שתשנו לפי זה)
+	line "Don't run away!" ;TODO (זכור לי שזה משהו קבוע אבל לא זוכרת מה רושמים אז אשמח שתשנו לפי זה)
 	done
