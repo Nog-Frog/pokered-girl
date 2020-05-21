@@ -29,7 +29,7 @@ _VictoryRoad2EndBattleText2::
 	prompt
 
 _VictoryRoad2AfterBattleText2::
-	text $53, "מגיע גם"
+	text "<RIVAL> מגיע גם"
 	line "דרך כאן!"
 	done
 
