@@ -1,13 +1,13 @@
 _ViridianForestEntranceText1::
-	text "Are you going to"
-	line "VIRIDIAN FOREST?"
-	cont "Be careful, it's"
-	cont "a natural maze!"
+	text "אתה הולך"
+	line "ליער ירוק-עד?"
+	cont "תיזהר, היער הזה"
+	cont "הוא ממש מבוך!"
 	done
 
 _ViridianForestEntranceText2::
-	text "RATTATA may be"
-	line "small, but its"
-	cont "bite is wicked!"
-	cont "Did you get one?"
+	text "RATTATA אולי" ; TODO
+	line "קטן, אבל הנשיכה שלו"
+	cont "שלו כל כך כואבת!"
+	cont "חטפת אחת?"
 	done
