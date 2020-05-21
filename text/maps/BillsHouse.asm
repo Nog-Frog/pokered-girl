@@ -49,7 +49,7 @@ _BillThankYouText::
 
 	para "איך אני יכול"
 	line "להחזיר לך טובה?"
-	cont "...אה! אולי זה?
+	cont "...אה! אולי זה?"
 	prompt
 
 _SSTicketReceivedText::
