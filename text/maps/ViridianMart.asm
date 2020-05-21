@@ -1,30 +1,30 @@
 _ViridianMartText1::
-	text "Okay! Say hi to"
-	line "PROF.OAK for me!"
+	text "אוקי! מסור דרישת שלום"
+	line "לפרופסור אלון ממני!"
 	done
 
 _ViridianMartText4::
-	text "Hey! You came from"
-	line "PALLET TOWN?"
+	text "הי! הגעת לכאן"
+	line "מהעיירה פאלט?"
 	done
 
 ViridianMartParcelQuestText::
-	text "You know PROF."
-	line "OAK, right?"
+	text "אתה מכיר את פרופסור"
+	line "אלון, נכון?"
 
-	para "His order came in."
-	line "Will you take it"
-	cont "to him?"
+	para "ההזמנה שלו הגיעה."
+	line "האם אתה מוכן"
+	cont "למסור לו אותה?"
 
-	para "<PLAYER> got"
-	line "OAK's PARCEL!@@"
+	para "<PLAYER> קיבל את"
+	line "החבילה של אלון!@@"
 
 _ViridianMartText2::
-	text "This shop sells"
-	line "many ANTIDOTEs."
+	text "החנות הזאת מוכרת"
+	line "הרבה נוגדנים."
 	done
 
-_ViridianMartText3::
-	text "No! POTIONs are"
-	line "all sold out."
+_ViridianMartText3:: 
+	text "לא! לא נותרו שיקויים"
+	line "במלאי."
 	done
