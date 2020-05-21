@@ -1,4 +1,4 @@
-_VermilionGymText_5cb72::
+_LTSurgePostBattleAdviceText::
 	text "עצה קטנה ממני"
 	line "ילד!"
 
@@ -9,8 +9,8 @@ _VermilionGymText_5cb72::
 	line "מול #ימונים מסוג אדמה!"
 	done
 
-_VermilionGymText_5cb77::
-	text "The THUNDERBADGE" ;TODO
+_LTSurgeThunderbadgeInfoText::
+	text "The THUNDERBADGE" ; TODO
 	line "יגביר את"
 	cont "מהירות ה#ימון שלך!"
 
@@ -109,7 +109,7 @@ _VermilionGymAfterBattleText3::
 	cont "יהיה בדיוק לצידו!"
 	done
 
-_VermilionGymText_5cbf4::
+_VermilionGymFanPreBattleText::
 	text "יו!אתה אלוף"
 	line "בזה!"
 
@@ -134,7 +134,7 @@ _VermilionGymText_5cbf4::
 	cont "כדי להגיע אליו!"
 	done
 
-_VermilionGymText_5cbf9::
+_VermilionGymFanPostBattleText::
 	text "ואו! הקרב הזה היה"
 	line "מדליק!"
 	done
