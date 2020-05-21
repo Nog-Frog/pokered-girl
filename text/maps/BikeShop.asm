@@ -1,19 +1,19 @@
 _BikeShopText_1d810::
-	text "Hi! Welcome to"
-	line "our BIKE SHOP."
+	text "שלום! ברוך הבא"
+	line "לחנות האופניים."
 
-	para "Have we got just"
-	line "the BIKE for you!"
+	para "יש לנו זוג אופניים"
+	line "בדיוק בשבילך!"
 	prompt
 
 _BikeShopText_1d815::
-	text "It's a cool BIKE!"
-	line "Do you want it?"
+	text "אלה אופניים שווים!"
+	line "אתה מעוניין בהם?"
 	done
 
 _BikeShopCantAffordText::
-	text "Sorry! You can't"
-	line "afford it!"
+	text "אני מצטער, אבל"
+	line "אין לך מספיק כסף!"
 	prompt
 
 _BikeShopText_1d81f::

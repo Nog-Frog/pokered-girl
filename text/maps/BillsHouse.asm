@@ -1,87 +1,89 @@
 _BillsHouseText_1e865::
-	text "Hiya! I'm a"
-	line "#MON..."
-	cont "...No I'm not!"
+	text "היי! אני"
+	line "#ימון!"
+	cont "...עובדים עליך!"
 
-	para "Call me BILL!"
-	line "I'm a true blue"
-	cont "#MANIAC! Hey!"
-	cont "What's with that"
-	cont "skeptical look?"
+	para "תקרא לי BILL!" ; TODO
+	line "אני #MANIAC בדם" ; TODO
+	cont "ובנשמה!"
+	cont "מה יש לך? אתה לא"
+	cont "מאמין לי?"
 
-	para "I'm not joshing"
-	line "you, I screwed up"
-	cont "an experiment and"
-	cont "got combined with"
-	cont "a #MON!"
+	para "אני לא משקר אותך,"
+	line "התפקשש לי איזה"
+	cont "ניסוי ויצא"
+	cont "שהשתלבתי עם"
+	cont "#ימון!"
 
-	para "So, how about it?"
-	line "Help me out here!"
+	para "תעזור רגע לסחבק!"
 	done
 
 _BillsHouseText_1e86a::
-	text "When I'm in the"
-	line "TELEPORTER, go to"
-	cont "my PC and run the"
-	cont "Cell Separation"
-	cont "System!"
+	text "כשאני נכנס"
+	line "לTELEPORTER, לך" ; TODO
+	cont "למחשב שלי ותפעיל"
+	cont "את מערכת הפרדת"
+	cont "התאים!"
 	done
 
 _BillsHouseText_1e86f::
-	text "No!? Come on, you"
-	line "gotta help a guy"
-	cont "in deep trouble!"
+	text "מה זאת אומרת לא?"
+	line "נו, תעזור לי רגע"
+	cont "אחי, הסתבכתי!"
 
-	para "What do you say,"
-	line "chief? Please?"
-	cont "OK? All right!"
+	para "סבבה אחי? בבקשה?"
+	line "כן? אתה תעזור?"
+	cont "בדוק אחי!"
 	prompt
 
 _BillThankYouText::
-	text "BILL: Yeehah!"
-	line "Thanks, bud! I"
-	cont "owe you one!"
+	text "BILL: יש!" ; TODO
+	line "תודה, חביבי! אני"
+	cont "חייב לך!"
 
-	para "So, did you come"
-	line "to see my #MON"
-	cont "collection?"
-	cont "You didn't?"
-	cont "That's a bummer."
+	para "רגע, באת לראות את"
+	line "אוסף ה#ימונים"
+	cont "שלי?"
+	cont "לא?"
+	cont "איזה באסה."
 
-	para "I've got to thank"
-	line "you... Oh here,"
-	cont "maybe this'll do."
+	para "איך אני יכול"
+	line "להחזיר לך טובה?"
+	cont "...אה! אולי זה?
 	prompt
 
 _SSTicketReceivedText::
-	text "<PLAYER> received"
-	line "an @"
+	text "<PLAYER> קיבל"
+	line " @"
 	TX_RAM wcf4b
 	text "!@@"
 
 _SSTicketNoRoomText::
-	text "You've got too"
-	line "much stuff, bud!"
+	text "אתה סוחב יותר"
+	line "מדי בכיסים,"
+	line "חבריקו!"
 	done
 
 _BillsHouseText_1e8cb::
-	text "That cruise ship,"
-	line "S.S.ANNE, is in"
-	cont "VERMILION CITY."
-	cont "Its passengers"
-	cont "are all trainers!"
+	text "הספינה אנה עוגנת"
+	line "בעיר הארגמן."
+	cont "כל הנוסעים בספינה"
+	cont "הם מאמני #ימון!"
 
-	para "They invited me"
-	line "to their party,"
-	cont "but I can't stand"
-	cont "fancy do's. Why"
-	cont "don't you go"
-	cont "instead of me?"
+	para "הם הזמינו אותי"
+	line "למסיבה שלהם, אבל"
+	cont "אני לא סובל את"
+	cont "השטויות המפונפנות"
+	cont "האלה. תעשה לי"
+	cont "טובה, אולי תלך לשם"
+	cont "במקומי?"
 	done
 
 _BillsHouseText_1e8da::
-	text "BILL: Look, bud,"
-	line "just check out"
-	cont "some of my rare"
-	cont "#MON on my PC!"
+	text "BILL: אחי, אתה" ; TODO
+	line "חייב להסתכל על"
+	cont "ה#ימונים"
+	cont "הנדירים שיש"
+	cont "באוסף על המחשב"
+	cont "שלי!"
 	done

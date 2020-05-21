@@ -1,44 +1,44 @@
 _AgathaBeforeBattleText::
-	text "I am AGATHA of"
-	line "the ELITE FOUR!"
+	text "אני רוחמה מהרביעיה"
+	line "העילית!"
 
-	para "OAK's taken a lot"
-	line "of interest in"
-	cont "you, child!"
+	para "אלון הביע עניין"
+	line "רב בך, ילדון!"
 
-	para "That old duff was"
-	line "once tough and"
-	cont "handsome! That"
-	cont "was decades ago!"
+	para "התרח הזקן הזה היה"
+	line "פעם מחוספס ונאה!"
+	cont "אבל זה היה לפני"
+	cont "יובלים!"
 
-	para "Now he just wants"
-	line "to fiddle with"
-	cont "his #DEX! He's"
-	cont "wrong! #MON"
-	cont "are for fighting!"
+	para "כעת הוא מתעניין"
+	line "רק בכתיבת ה#ידע"
+	cont "האווילי שלו! הוא"
+	cont "טועה! #ימונים"
+	cont "נועדו רק לקרבות!"
 
-	para "<PLAYER>! I'll show"
-	line "you how a real"
-	cont "trainer fights!"
+	para "<PLAYER>! אני אראה"
+	line "לך איך מאמנת"
+	cont "#ימונים אמיתית"
+	cont "נלחמת!"
 	done
 
 _AgathaEndBattleText::
-	text "Oh ho!"
-	line "You're something"
-	cont "special, child!"
+	text "או הו!"
+	line "אתה ממש משהו"
+	cont "מיוחד, ילדון!"
 	prompt
 
 _AgathaAfterBattleText::
-	text "You win! I see"
-	line "what the old duff"
-	cont "sees in you now!"
+	text "אתה המנצח! עכשיו"
+	line "אני רואה מה התרח"
+	cont "הזקן מוצא בך!"
 
-	para "I have nothing"
-	line "else to say! Run"
-	cont "along now, child!"
+	para "אין לי עוד מה"
+	line "מה להוסיף! צעד"
+	cont "הלאה, ילדון!"
 	done
 
 _AgathaDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "קול מוכר קורא:"
+	line "אל תיסוג!"
 	done
