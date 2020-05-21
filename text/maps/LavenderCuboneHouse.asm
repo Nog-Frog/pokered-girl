@@ -1,24 +1,22 @@
 _LavenderHouse2Text1::
-	text "CUBONE: Kyarugoo!@@"
+	text "CUBONE: Kyarugoo!@@" ; TODO
 
 _LavenderHouse2Text_1d9dc::
-	text "I hate those"
-	line "horrible ROCKETs!"
+	text "אני מתעבת את כנופיית" ; TODO ROCKET
+	line "רוקט האכזרית!"
 
-	para "That poor CUBONE's"
-	line "mother..."
+	para "CUBONE המסכן..." ; TODO
 
-	para "It was killed"
-	line "trying to escape"
-	cont "from TEAM ROCKET!"
+	para "אמא שלו נהרגה "
+	line "כשהיא ניסתה להימלט"
+	cont "מכנופיית רוקט!" ; TODO ROCKET
 	done
 
 _LavenderHouse2Text_1d9e1::
-	text "The GHOST of"
-	line "#MON TOWER is"
-	cont "gone!"
+	text "הרוח שב#MON" ; TODO
+	line "TOWER נעלמה!" ; TODO
 
-	para "Someone must have"
-	line "soothed its"
-	cont "restless soul!"
+	para "מישהו כנראה"
+	line "עזר לה להירגע!"
 	done
+

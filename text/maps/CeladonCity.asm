@@ -150,3 +150,4 @@ _CeladonCityText18::
 	line "The playground"
 	cont "for grown-ups!"
 	done
+

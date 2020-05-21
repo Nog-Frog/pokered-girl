@@ -1,21 +1,22 @@
 _CeladonHotelText1::
-	text "#MON? No, this"
-	line "is a hotel for"
-	cont "people."
+	text "#ימונים? לא,"
+	line "כאן זה מלון של"
+	cont "אנשים."
 
-	para "We're full up."
+	para "אנחנו בתפוסה מלאה."
 	done
 
 _CeladonHotelText2::
-	text "I'm on vacation"
-	line "with my brother"
-	cont "and boy friend."
+	text "אני בחופשה עם"
+	line "אחי ועם החבר"
+	cont "שלי."
 
-	para "CELADON is such a"
-	line "pretty city!"
+	para "עיר האביב כל כך"
+	line "יפה!"
 	done
 
 _CeladonHotelText3::
-	text "Why did she bring"
-	line "her brother?"
+	text "למה היא הביאה"
+	line "את אחיה?"
 	done
+

@@ -1,97 +1,97 @@
 _CopycatsHouse2FText_5ccd4::
-	text "<PLAYER>: Hi! Do"
-	line "you like #MON?"
+	text "<PLAYER>: היי! את"
+	line "אוהבת #ימונים?"
 
-	para "<PLAYER>: Uh no, I"
-	line "just asked you."
+	para "<PLAYER>: זה מה"
+	line "שאני שאלתי אותך."
 
-	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	para "<PLAYER>: מה?"
+	line "את מוזרה!"
 
-	para "COPYCAT: Hmm?"
-	line "Quit mimicking?"
+	para "חקיינית: מה?"
+	line "להפסיק לחקות אותך?"
 
-	para "But, that's my"
-	line "favorite hobby!"
+	para "אבל התחביב שלי"
+	line "הוא לחקות אנשים!"
 	prompt
 
 _TM31PreReceiveText::
-	text "Oh wow!"
-	line "A # DOLL!"
+	text "הו וואו!"
+	line "בובת #ימון!"
 
-	para "For me?"
-	line "Thank you!"
+	para "בשבילי?"
+	line "תודה רבה!"
 
-	para "You can have"
-	line "this, then!"
+	para "אתה יכול לקחת"
+	line "את זה בתמורה!"
 	prompt
 
 _ReceivedTM31Text::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM31ExplanationText1::
-	text ""
+	db $0
+	para "TM31 מכיל את"
+	line "המהלך האהוב עלי,"
+	cont "חקיינות!"
 
-	para "TM31 contains my"
-	line "favorite, MIMIC!"
-
-	para "Use it on a good"
-	line "#MON!@@"
+	para "תשתמש בו על"
+	line "#ימון חזק!@@"
 
 _TM31ExplanationText2::
-	text "<PLAYER>: Hi!"
-	line "Thanks for TM31!"
+	text "<PLAYER>: היי!"
+	line "תודה על הTM31!"
 
-	para "<PLAYER>: Pardon?"
+	para "<PLAYER>: סליחה?"
 
-	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	para "<PLAYER>: זה באמת"
+	line "כל כך כיף לך לחקות"
+	cont "כל דבר שאני עושה?"
 
-	para "COPYCAT: You bet!"
-	line "It's a scream!"
+	para "חקיינית: לגמרי!"
+	line "זה הכי כיף שיש!"
 	done
 
 _TM31NoRoomText::
-	text "Don't you want"
-	line "this?@@"
+	text "אתה לא רוצה"
+	line "את זה?@@"
 
 _CopycatsHouse2FText2::
-	text "DODUO: Giiih!"
+	text "DODUO: Giiih!" ; TODO
 
-	para "MIRROR MIRROR ON"
-	line "THE WALL, WHO IS"
-	cont "THE FAIREST ONE"
-	cont "OF ALL?"
+	para "מראה, מראה,"
+	line "שעל הקיר,"
+	cont "מי הכי יפה בעיר?"
 	done
 
 _CopycatsHouse2FText3::
-	text "This is a rare"
-	line "#MON! Huh?"
-	cont "It's only a doll!"
+	text "זה #ימון"
+	line "נדיר! רגע אחד..."
+	cont "זאת סתם בובה!"
 	done
 
 _CopycatsHouse2FText6::
-	text "A game with MARIO"
-	line "wearing a bucket"
-	cont "on his head!"
+	text "זה משחק מריו,"
+	line "ולמריו יש דלי"
+	cont "על הראש!"
 	done
 
 _CopycatsHouse2FText_5cd17::
 	text "..."
 
-	para "My Secrets!"
+	para "הסודות שלי!"
 
-	para "Skill: Mimicry!"
-	line "Hobby: Collecting"
-	cont "dolls!"
-	cont "Favorite #MON:"
-	cont "CLEFAIRY!"
+	para "כישרון: חקיינות!"
+	line "תחביב: לאסוף"
+	cont "בובות!"
+	cont "#ימון אהוב:"
+	cont "CLEFAIRY!" ; TODO
 	done
 
 _CopycatsHouse2FText_5cd1c::
-	text "Huh? Can't see!"
+	text "מה? אני לא רואה!"
 	done
+

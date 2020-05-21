@@ -1,8 +1,8 @@
 _CopycatsHouse1FText1::
-	text "My daughter is so"
-	line "self-centered."
-	cont "She only has a"
-	cont "few friends."
+	text "הבת שלי מאוד"
+	line "מרוכזת בעצמה."
+	cont "אין לה הרבה"
+	cont "חברים."
 	done
 
 _CopycatsHouse1FText2::
@@ -18,3 +18,4 @@ _CopycatsHouse1FText2::
 _CopycatsHouse1FText3::
 	text "CHANSEY: Chaan!"
 	line "Sii!@@"
+

@@ -34,7 +34,7 @@ _LavenderHouse1Text4::
 	text "NIDORINO: Gaoo!@@"
 
 _LavenderHouse1Text_1d94c::
-	text "MR.FUJI: <PLAYER>."
+	text "MR.FUJI: ", "<PLAYER>."
 
 	para "Your #DEX quest"
 	line "may fail without"
@@ -52,8 +52,7 @@ _ReceivedFluteText::
 	text "!@@"
 
 _FluteExplanationText::
-	text ""
-
+	db $0
 	para "Upon hearing #"
 	line "FLUTE, sleeping"
 	cont "#MON will"
@@ -84,3 +83,4 @@ _LavenderHouse1Text6::
 	para "Gone! It's been"
 	line "clipped out!"
 	done
+

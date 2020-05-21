@@ -34,3 +34,4 @@ _CeruleanHouseTrashedText3::
 	text "TEAM ROCKET left"
 	line "a way out!"
 	done
+

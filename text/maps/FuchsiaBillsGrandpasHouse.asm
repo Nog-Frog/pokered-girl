@@ -1,27 +1,31 @@
 _FuchsiaHouse1Text1::
-	text "SAFARI ZONE's"
-	line "WARDEN is old,"
-	cont "but still active!"
+	text "הפקח של אזור"	; TODO WARDEN
+	line "הספארי כבר מבוגר,"
+	cont "אבל הוא עדיין"
+	cont "פעיל!"
 
-	para "All his teeth are"
-	line "false, though."
+	para "מה שכן, כל"
+	line "השיניים שלו הן"
+	cont "תותבות."
 	done
 
 _FuchsiaHouse1Text2::
-	text "Hmm? You've met"
-	line "BILL?"
+	text "מה אתה אומר?"
+	line "פגשת את BILL?" ; TODO
 
-	para "He's my grandson!"
+	para "הוא הנכד שלי!"
 
-	para "He always liked"
-	line "collecting things"
-	cont "even as a child!"
+	para "אפילו בתור ילד"
+	line "הוא תמיד אהב"
+	cont "לאסוף דברים!"
 	done
 
 _FuchsiaHouse1Text3::
-	text "BILL files his"
-	line "own #MON data"
-	cont "on his PC!"
+	text "BILL מתייק את"
+	line "פרטי ה#ימונים"
+	cont "שלו במחשב!"
 
-	para "Did he show you?"
+	para "אם תבקש ממנו, אולי"
+	cont "הוא יראה לך איך!"
 	done
+
