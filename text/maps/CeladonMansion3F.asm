@@ -1,66 +1,64 @@
 _ProgrammerText::
-	text "Me? I'm the"
-	line "programmer!"
+	text "אני?"
+	line "אני המתכנת!"
 	done
 
 _GraphicArtistText::
-	text "I'm the graphic"
-	line "artist!"
-	cont "I drew you!"
+	text "אני המעצב"
+	line "אני ציירתי אותך!"
 	done
 
 _WriterText::
-	text "I wrote the story!"
-	line "Isn't ERIKA cute?"
+	text "אני כתבתי את הסיפור!"
+	line " נכון ERIKA כה נהדרת?" ;TODO
 
-	para "I like MISTY a"
-	line "lot too!"
+	para "אני גם אוהב את MISTY" ;TODO
+	line "מאוד!"
 
-	para "Oh, and SABRINA,"
-	line "I like her!"
+	para "הו, וגם את SABRINA," ;TODO
+	line "אני מת עליה!"
 	done
 
 _GameDesignerText::
 	text "Is that right?"
 
-	para "I'm the game"
-	line "designer!"
+	para "אניו יוצר"
+	line "המשחק!"
 
-	para "Filling up your"
-	line "#DEX is tough,"
-	cont "but don't quit!"
+	para "למלא את ה"
+	line "#DEX שלך זה קשה," ה
+	cont "אבל את תתייאש!"
 
-	para "When you finish,"
-	line "come tell me!"
+	para "כשתסיים,"
+	line "תחזור לספר לי!"
 	done
 
 _CompletedDexText::
-	text "Wow! Excellent!"
-	line "You completed"
-	cont "your #DEX!"
-	cont "Congratulations!"
+	text "ואו! מעולה!"
+	line "סיימת למלא את"
+	cont "שלך ה#DEX!" ;TODO
+	cont "ברכותיי!"
 	cont "...@@"
 
 _CeladonMansion3Text5::
-	text "It's the game"
-	line "program! Messing"
-	cont "with it could bug"
-	cont "out the game!"
+	text "זו תוכנית המשחק!"
+	line "עדיף שלא לגעת בה"
+	cont "כדי לא לגרום לבאגים במשחק!"
 	done
 
 _CeladonMansion3Text6::
-	text "Someone's playing"
-	line "a game instead of"
-	cont "working!"
+	text "מישהו כאן משחק"
+	line "במקום לעבוד!"
 	done
 
 _CeladonMansion3Text7::
-	text "It's the script!"
-	line "Better not look"
-	cont "at the ending!"
+	text "זה התסריט!"
+	line "אל תקרא ותהרוס לעצמך"
+	cont "את הסוף שלו!"
 	done
 
 _CeladonMansion3Text8::
 	text "GAME FREAK"
-	line "Development Room"
+	line "חדר פיתוח"
 	done
+

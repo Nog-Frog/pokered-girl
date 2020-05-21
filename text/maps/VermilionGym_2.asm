@@ -1,144 +1,141 @@
-_LTSurgePostBattleAdviceText::
-	text "A little word of"
-	line "advice, kid!"
+_VermilionGymText_5cb72::
+	text "עצה קטנה ממני"
+	line "ילד!"
 
-	para "Electricity is"
-	line "sure powerful!"
+	para "מתקפות חשמל"
+	line "בהחלט עוצמתיות!"
 
-	para "But, it's useless"
-	line "against ground-"
-	cont "type #MON!"
+	para "אבל, הן יהיו חסרות תועלת"
+	line "מול #ימונים מסוג אדמה!"
 	done
 
-_LTSurgeThunderbadgeInfoText::
-	text "The THUNDERBADGE"
-	line "cranks up your"
-	cont "#MON's SPEED!"
+_VermilionGymText_5cb77::
+	text "The THUNDERBADGE" ;TODO
+	line "יגביר את"
+	cont "מהירות ה#ימון שלך!"
 
-	para "It also lets your"
-	line "#MON FLY any"
-	cont "time, kid!"
+	para "זה גם יאפשר"
+	line "ל#ימון שלך לעוף"
+	cont "בכל זמן, ילד!"
 
-	para "You're special,"
-	line "kid! Take this!"
+	para "אתה מיוחד,"
+	line "ילד! קח את זה!"
 	done
 
 _ReceivedTM24Text::
-	text "<PLAYER> received "
+	text "<PLAYER> התקבל "
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM24ExplanationText::
-	text ""
+	db $0
+	para "TM24 מכיל"
+	line "THUNDERBOLT!" ;TODO
 
-	para "TM24 contains"
-	line "THUNDERBOLT!"
-
-	para "Teach it to an"
-	line "electric #MON!"
+	para "למד #ימון מסוג חשמל"
+	line "את המתקפה!"
 	done
 
 _TM24NoRoomText::
-	text "Yo kid, make room"
-	line "in your pack!"
+	text "הי ילד, פנה מקום"
+	line "בתיק החפצים שלך!"
 	done
 
 _ReceivedThunderbadgeText::
-	text "Whoa!"
+	text "והא!"
 
-	para "You're the real"
-	line "deal, kid!"
+	para "אתה בהחלט משהו מיוחד"
+	line "ילד!"
 
-	para "Fine then, take"
-	line "the THUNDERBADGE!"
+	para "בסדר, קח את"
+	line "ה THUNDERBADGE!" ;TODO
 	prompt
 
 _VermilionGymBattleText1::
-	text "When I was in the"
-	line "Army, LT.SURGE"
-	cont "was my strict CO!"
+	text "כשאני הייתי בצבא"
+	line "LT.SURGE" ;TODO
+	cont "המפקח הקפדני שלי!"
 	done
 
 _VermilionGymEndBattleText1::
-	text "Stop!"
-	line "You're very good!"
+	text "עצור!"
+	line "אתה טוב מאוד!"
 	prompt
 
 _VermilionGymAfterBattleText1::
-	text "The door won't"
-	line "open?"
+	text "הדלת לא"
+	line "תיפתח?"
 
-	para "LT.SURGE always"
-	line "was cautious!"
+	para "LT.SURGE תמיד היה" ;TODO
+	line "כל כך זהיר!" 
 	done
 
 _VermilionGymBattleText2::
-	text "I'm a lightweight,"
-	line "but I'm good with"
-	cont "electricity!"
+	text "אני lightweight," ;TODO (יש פה בדיחה אולי?)
+	line "אבל אני טוב עם"
+	cont "חשמל!" 
 	done
 
 _VermilionGymEndBattleText2::
-	text "Fried!"
+	text "חבר!"
 	prompt
 
 _VermilionGymAfterBattleText2::
-	text "OK, I'll talk!"
+	text "אוקי, אני אדבר!"
 
-	para "LT.SURGE said he"
-	line "hid door switches"
-	cont "inside something!"
+	para "LT.SURGE אמר שהוא" ;TODO
+	line "הסתיר מתגי דלתות"
+	cont "חבויים היכן שהוא!"
 	done
 
 _VermilionGymBattleText3::
-	text "This is no place"
-	line "for kids!"
+	text "זה לא מקום עבור"
+	line "ילדים!"
 	done
 
 _VermilionGymEndBattleText3::
-	text "Wow!"
-	line "Surprised me!"
+	text "ואו!"
+	line "הפתיע אותי!"
 	prompt
 
 _VermilionGymAfterBattleText3::
-	text "LT.SURGE set up"
-	line "double locks!"
-	cont "Here's a hint!"
+	text "LT.SURGE הטמין" ;TODO
+	line "מנעולים כפולים!"
+	cont "הנה רמז!"
 
-	para "When you open the"
-	line "1st lock, the 2nd"
-	cont "lock is right"
-	cont "next to it!"
+	para "כאשר אתה פותח את"
+	line "המנעול הראשון, המנעול השני"
+	cont "יהיה בדיוק לצידו!"
 	done
 
-_VermilionGymFanPreBattleText::
-	text "Yo! Champ in"
-	line "making!"
+_VermilionGymText_5cbf4::
+	text "יו!אתה אלוף"
+	line "בזה!"
 
-	para "LT.SURGE has a"
-	line "nickname. People"
-	cont "refer to him as"
+	para "לLT.SURGE יש" ;TODO
+	line "כינוי. אנשים"
+	cont "מכנים אותו"
 	cont "the Lightning"
-	cont "American!"
+	cont "American!" ;TODO (עוד סוג של בדיחה שאפשר לתרגם יפה)
 
-	para "He's an expert on"
-	line "electric #MON!"
+	para "הוא מומחה"
+	line "ל#ימוני חשמל!"
 
-	para "Birds and water"
-	line "#MON are at"
-	cont "risk! Beware of"
-	cont "paralysis too!"
+	para "#ימוני מים ותעופה"
+	line "נמצאים בסכנה"
+	cont "זהירות ממתקפות השיתוק!"
 
-	para "LT.SURGE is very"
-	line "cautious!"
+	para "LT.SURGE מאוד" 
+	line "זהיר!"
 
-	para "You'll have to"
-	line "break a code to"
-	cont "get to him!"
+	para "אתה חייב לפתור"
+	line "את הקוד"
+	cont "כדי להגיע אליו!"
 	done
 
-_VermilionGymFanPostBattleText::
-	text "Whew! That match"
-	line "was electric!"
+_VermilionGymText_5cbf9::
+	text "ואו! הקרב הזה היה"
+	line "מדליק!"
 	done
+

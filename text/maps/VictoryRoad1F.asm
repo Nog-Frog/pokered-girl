@@ -1,31 +1,31 @@
 _VictoryRoad1BattleText1::
-	text "I wonder if you"
-	line "are good enough"
-	cont "for me!"
+	text "אני אתפלא אם"
+	line "אתה מספיק חזק"
+	cont "להילחם מולי!"
 	done
 
 _VictoryRoad1EndBattleText1::
-	text "I"
-	line "lost out!"
+	text "אני"
+	line "הפסדתי!"
 	prompt
 
 _VictoryRoad1AfterBattleText1::
-	text "I never wanted to"
-	line "lose to anybody!"
+	text "לא רציתי להפסיד"
+	line "מול אף אחד לעולם!"
 	done
 
 _VictoryRoad1BattleText2::
-	text "I can see you're"
-	line "good! Let me see"
-	cont "exactly how good!"
+	text "אני רואה שאתה טוב"
+	line "אבל בוא נראה עד כמה!"
 	done
 
 _VictoryRoad1EndBattleText2::
-	text "I"
-	line "had a chance..."
+	text "היה לי"
+	line "סיכוי..."
 	prompt
 
 _VictoryRoad1AfterBattleText2::
-	text "I concede, you're"
-	line "better than me!"
+	text "אני מודה,"
+	line "אתה טוב יותר ממני!"
 	done
+
