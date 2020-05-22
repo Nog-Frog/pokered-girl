@@ -1,4 +1,4 @@
-### English-only Speakers
+### If You're an English-Only Speaker
 
 If you'd like an English version of this document ~~despite not being able to follow any of these guidelines due to not speaking Hebrew~~, contact me either on Github, Facebook (if you got here through a facebook post), or on Discord at Nog#4061.
 
