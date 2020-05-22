@@ -89,7 +89,7 @@ ReverseText::
 	and a
 	ret z
 	push hl
-	ld hl, wReversedTextEnd 
+	ld hl, wReversedTextEnd
 	ld a, "@"
 	ld [hld], a
 .reverseLoop
@@ -103,7 +103,7 @@ ReverseText::
 	ld e, l
 	pop hl
 	ret
-	
+
 ; function to print a BCD (Binary-coded decimal) number
 ; de = address of BCD number
 ; hl = destination address
