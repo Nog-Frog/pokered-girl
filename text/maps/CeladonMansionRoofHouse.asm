@@ -1,10 +1,8 @@
 _CeladonMansion5Text1::
-	text "I know everything"
-	line "about the world"
-	cont "of #MON in"
-	cont "your GAME BOY!"
+	text "אני יודע הכל"
+	line "על עולם ה#ימונים"
+	cont "שבGAME BOY שלך!" ;TODO
 
-	para "Get together with"
-	line "your friends and"
-	cont "trade #MON!"
+	para "היפגש עם חברייך"
+	line "והחלף איתם #ימונים!"
 	done
