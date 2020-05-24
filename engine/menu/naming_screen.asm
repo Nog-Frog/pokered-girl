@@ -257,21 +257,9 @@ DisplayNamingScreen:
 	ret nc
 	dec hl
 .addLetter
-	call CalcStringLength
-	; c is length, hl is null terminator
-	inc c ; include the terminator in length
-
-.addLetterLoop
-	ld a, [hl]
-	inc hl
-	ld [hl], a
-	dec hl
-	dec hl
-	dec c
-	jr nz, .addLetterLoop
-
 	ld a, [wNamingScreenLetter]
-	ld [wcf4b], a
+	ld [hli], a
+	ld [hl], "@"
 	ld a, SFX_PRESS_AB
 	call PlaySound
 	ret
@@ -280,19 +268,8 @@ DisplayNamingScreen:
 	and a
 	ret z
 	call CalcStringLength
-	; c is length
-	push de
-	ld hl, wcf4b
-	ld de, wcf4b
-	inc hl
-.deleteLetterLoop
-	ld a, [hl]
-	ld [de], a
-	inc de
-	inc hl
-	dec c
-	jr nz, .deleteLetterLoop
-	pop de
+	dec hl
+	ld [hl], "@"
 	ret
 .pressedRight
 	ld a, [wCurrentMenuItem]
@@ -363,9 +340,9 @@ PrintAlphabet:
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ld a, [wAlphabetCase]
 	and a
-	ld de, EnglishKeyboard
+	ld de, LowerCaseAlphabet
 	jr nz, .lowercase
-	ld de, HebrewKeyboard
+	ld de, UpperCaseAlphabet
 .lowercase
 	coord hl, 2, 5
 	lb bc, 5, 9 ; 5 rows, 9 columns
@@ -388,11 +365,11 @@ PrintAlphabet:
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
-HebrewKeyboard: ; 679e (1:679e)
-	db "קראטוןםפףשדגכעיחלךזסבהנמצתץ×():;[]־ -?!♂♀/",$f2,",¥תילגנא@"
+LowerCaseAlphabet:
+	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥UPPER CASE@"
 
-EnglishKeyboard: ; 67d6 (1:67d6)
-	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥תירבע @"
+UpperCaseAlphabet:
+	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥lower case@"
 
 PrintNicknameAndUnderscores:
 	call CalcStringLength
@@ -401,16 +378,7 @@ PrintNicknameAndUnderscores:
 	coord hl, 10, 2
 	lb bc, 1, 10
 	call ClearScreenArea
-
-	call CalcStringLength
-	; Subtract the length of the string from right edge
-	coord hl, 20, 2 ; Right screen edge
-	xor a
-	sub c
-	ld c, a
-	ld b, $FF
-	add hl, bc
-
+	coord hl, 10, 2
 	ld de, wcf4b
 	call PlaceString
 	coord hl, 10, 3
@@ -418,7 +386,6 @@ PrintNicknameAndUnderscores:
 	cp NAME_MON_SCREEN
 	jr nc, .pokemon1
 	ld b, 7 ; player or rival max name length
-	coord hl, 13, 3 ;
 	jr .playerOrRival1
 .pokemon1
 	ld b, 10 ; pokemon max name length
@@ -451,10 +418,6 @@ PrintNicknameAndUnderscores:
 	ld a, 6 ; keep the last underscore raised
 .pokemon3
 .emptySpacesRemaining
-	; c = 9 - a
-	ld c, a
-	ld a, 9
-	sub c
 	ld c, a
 	ld b, $0
 	coord hl, 10, 3
@@ -476,21 +439,20 @@ DakutensAndHandakutens:
 	ld [wNamingScreenLetter], a
 	ret
 
-Dakutens: ; 6885 (1:6885)
-; Commented out to save on space (Unused in English version)
-;	db "かが", "きぎ", "くぐ", "けげ", "こご"
-;	db "さざ", "しじ", "すず", "せぜ", "そぞ"
-;	db "ただ", "ちぢ", "つづ", "てで", "とど"
-;	db "はば", "ひび", "ふぶ", "へべ", "ほぼ"
-;	db "カガ", "キギ", "クグ", "ケゲ", "コゴ"
-;	db "サザ", "シジ", "スズ", "セゼ", "ソゾ"
-;	db "タダ", "チヂ", "ツヅ", "テデ", "トド"
-;	db "ハバ", "ヒビ", "フブ", "へべ", "ホボ"
-;	db $ff
+Dakutens:
+	db "かが", "きぎ", "くぐ", "けげ", "こご"
+	db "さざ", "しじ", "すず", "せぜ", "そぞ"
+	db "ただ", "ちぢ", "つづ", "てで", "とど"
+	db "はば", "ひび", "ふぶ", "へべ", "ほぼ"
+	db "カガ", "キギ", "クグ", "ケゲ", "コゴ"
+	db "サザ", "シジ", "スズ", "セゼ", "ソゾ"
+	db "タダ", "チヂ", "ツヅ", "テデ", "トド"
+	db "ハバ", "ヒビ", "フブ", "へべ", "ホボ"
+	db $ff
 
-Handakutens: ; 68d6 (1:68d6)
-;	db "はぱ", "ひぴ", "ふぷ", "へぺ", "ほぽ"
-;	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
+Handakutens:
+	db "はぱ", "ひぴ", "ふぷ", "へぺ", "ほぽ"
+	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
 	db $ff
 
 ; calculates the length of the string at wcf4b and stores it in c
@@ -523,12 +485,9 @@ PrintNamingText:
 	call GetMonName
 	coord hl, 4, 1
 	call PlaceString
-	; ld hl, $1
-	; add hl, bc
-	; ld [hl], $c9 ; A leftover from the Japanese version.
-	; This used to be the "No" hiragana character (Meaning "'s"),
-	; but in the English version it's just one of the empty tiles.
-	; Since we use these empty tiles for Hebrew, it had to be removed.
+	ld hl, $1
+	add hl, bc
+	ld [hl], $c9
 	coord hl, 1, 3
 	ld de, NicknameTextString
 	jr .placeString
@@ -540,14 +499,14 @@ PrintNamingText:
 .placeString
 	jp PlaceString
 
-YourTextString: ; 693f (1:693f)
-	db "?ךל םיארוק ךיא@"
+YourTextString:
+	db "YOUR @"
 
-RivalsTextString: ; 6945 (1:6945)
-	db "?ביריה םש@"
+RivalsTextString:
+	db "RIVAL's @"
 
 NameTextString:
-	db "@"
+	db "NAME?@"
 
 NicknameTextString:
-	db "@"
+	db "NICKNAME?@"

@@ -81,73 +81,6 @@ HideSprites::
 
 INCLUDE "home/copy.asm"
 
-; Input: de points to a strings (Max 16 characters)
-; Output: de pointers to the reversed string. de stays
-;         unchanged if left aligned
-ReverseText::
-	ld a, [wRightAligned]
-	and a
-	ret z
-	push hl
-	ld hl, wReversedTextEnd
-	ld a, "@"
-	ld [hld], a
-.reverseLoop
-	ld [hld], a
-	ld a, [de]
-	inc de
-	cp a, "@"
-	jr nz, .reverseLoop
-	inc hl
-	ld d, h
-	ld e, l
-	pop hl
-	ret
-
-; function to print a BCD (Binary-coded decimal) number
-; de = address of BCD number
-; hl = destination address
-; c = flags and length
-; bit 7: if set, do not print leading zeroes
-;        if unset, print leading zeroes
-; bit 6: if set, left-align the string (do not pad empty digits with spaces)
-;        if unset, right-align the string
-; bit 5: if set, print currency symbol at the beginning of the string
-;        if unset, do not print the currency symbol
-; bits 0-4: length of BCD number in bytes
-; Note that bits 5 and 7 are modified during execution. The above reflects
-; their meaning at the beginning of the functions's execution.
-PrintBCDNumber::
-	; This wrapper, if RightAligned is on, prints the string
-	; to a temporary buffer, reverses it, and prints the
-	; reversed string.
-	ld a, [wRightAligned]
-	and a
-	; Left aligned, use original
-	jp z, PrintBCDNumberInternal
-	; Save hl
-	push hl
-	; Set dest to the temp buffer
-	ld hl, wBCDReverseTemp
-	; Turn delay off
-	ld a,[wd730]
-	push af
-	set 6, a
-	ld [wd730], a
-	; Print to temp buffer
-	call PrintBCDNumberInternal
-AfterPrintBCDNumberInternal::
-	; Restore flags
-	pop af
-	ld [wd730], a
-	; Put a null terminator after the string
-	ld a, "@"
-	ld [hl], a
-	; Restore original dest
-	pop hl
-	; Reverse and print the text
-	ld de, wBCDReverseTemp
-	jp PrintReversed
 
 SECTION "Entry", ROM0
 
@@ -711,7 +644,7 @@ GetPartyMonName::
 ; bits 0-4: length of BCD number in bytes
 ; Note that bits 5 and 7 are modified during execution. The above reflects
 ; their meaning at the beginning of the functions's execution.
-PrintBCDNumberInternal::
+PrintBCDNumber::
 	ld b, c ; save flags in b
 	res 7, c
 	res 6, c
@@ -774,15 +707,6 @@ PrintBCDDigit::
 	bit 6, b ; left or right alignment?
 	ret nz
 	inc hl ; if right-aligned, "print" a space by advancing the pointer
-	ret
-
-; Input: String at de, dest on hl
-; Output: Prints de on hl, hl advances to new end
-PrintReversed::
-	call ReverseText
-	call PlaceString
-	ld h,b
-	ld l,c
 	ret
 
 ; uncompresses the front or back sprite of the specified mon
@@ -1390,7 +1314,7 @@ SubtractAmountPaidFromMoney::
 ; adds the amount the player sold to their money
 AddAmountSoldToMoney::
 	ld de, wPlayerMoney + 2
-	ld hl, $ffa1 ; total price of items
+	ld hl, hMoney + 2 ; total price of items
 	ld c, 3 ; length of money in bytes
 	predef AddBCDPredef ; add total price to money
 	ld a, MONEY_BOX
@@ -2648,7 +2572,6 @@ TrainerEndBattleText::
 	TX_FAR _TrainerNameText
 	TX_ASM
 	call GetSavedEndBattleTextPointer
-	coord bc, 18, 14
 	call TextCommandProcessor
 	jp TextScriptEnd
 
@@ -4258,13 +4181,8 @@ PrintText::
 	call Delay3
 	pop hl
 PrintText_NoCreatingTextBox::
-	coord bc, 18, 14
-	ld a, 1
-	ld [wRightAligned], a
-	call TextCommandProcessor
-	xor a
-	ld [wRightAligned], a
-	ret
+	coord bc, 1, 14
+	jp TextCommandProcessor
 
 
 PrintNumber::
@@ -4273,26 +4191,6 @@ PrintNumber::
 ; the value to char "0" instead of calling PrintNumber.
 ; Flags LEADING_ZEROES and LEFT_ALIGN can be given
 ; in bits 7 and 6 of b respectively.
-	; This wrapper, if RightAligned is on, prints the string
-	; to a temporary buffer, reverses it, and prints the
-	; reversed string.
-	ld a, [wRightAligned]
-	and a
-	; Left aligned, use original
-	jp z, PrintNumberInternal
-	; Save hl
-	push hl
-	; Set dest to the temp buffer
-	ld hl, wBCDReverseTemp
-	; Turn delay off
-	ld a,[wd730]
-	push af
-	set 6, a
-	ld [wd730], a
-	; Print to temp buffer
-	call PrintNumberInternal
-	jp AfterPrintBCDNumberInternal
-PrintNumberInternal:: ; 3c5f (0:3c5f)
 	push bc
 	xor a
 	ld [H_PASTLEADINGZEROES], a
