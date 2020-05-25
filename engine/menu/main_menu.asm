@@ -413,19 +413,19 @@ PrintNumOwnedMons:
 	jp PrintNumber
 
 PrintPlayTime:
-	ld de, wPlayTimeHours
-	lb bc, 1, 3
+	ld de, wPlayTimeMinutes
+	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber
 	ld [hl], $6d
 	inc hl
-	ld de, wPlayTimeMinutes
-	lb bc, LEADING_ZEROES | 1, 2
+	ld de, wPlayTimeHours
+	lb bc, 1, 2
 	jp PrintNumber
 
 SaveScreenInfoText:
 	db   "שם"
 	next "תגים    "
-	next "פוקדע    "
+	next "#ידע    "
 	next "זמן משחק@"
 
 DisplayOptionMenu:
