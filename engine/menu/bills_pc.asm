@@ -1,4 +1,6 @@
 DisplayPCMainMenu::
+	ld a, 1
+	ld [wRightAligned], a ; Enable RTL
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 	call SaveScreenTilesToBuffer2
@@ -30,24 +32,24 @@ DisplayPCMainMenu::
 	ld [wMaxMenuItem], a
 	CheckEvent EVENT_MET_BILL
 	jr nz, .metBill
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, SomeonesPCText
 	jr .next2
 .metBill
-	coord hl, 2, 2
+	coord hl, 14, 2
 	ld de, BillsPCText
 .next2
 	call PlaceString
-	coord hl, 2, 4
-	ld de, wPlayerName
+	coord hl, 14, 4
+	ld de, PlayersPCText
 	call PlaceString
 	ld l, c
 	ld h, b
-	ld de, PlayersPCText
+	ld de, wPlayerName
 	call PlaceString
 	CheckEvent EVENT_GOT_POKEDEX
 	jr z, .noOaksPC2
-	coord hl, 2, 6
+	coord hl, 14, 6
 	ld de, OaksPCText
 	call PlaceString
 	ld a, [wNumHoFTeams]
@@ -55,20 +57,20 @@ DisplayPCMainMenu::
 	jr z, .noLeaguePC
 	ld a, 4
 	ld [wMaxMenuItem], a
-	coord hl, 2, 8
+	coord hl, 14, 8
 	ld de, PKMNLeaguePCText
 	call PlaceString
-	coord hl, 2, 10
+	coord hl, 14, 10
 	ld de, LogOffPCText
 	jr .next3
 .noLeaguePC
-	coord hl, 2, 8
+	coord hl, 14, 8
 	ld de, LogOffPCText
 	jr .next3
 .noOaksPC2
 	ld a, $2
 	ld [wMaxMenuItem], a
-	coord hl, 2, 6
+	coord hl, 14, 6
 	ld de, LogOffPCText
 .next3
 	call PlaceString
@@ -85,12 +87,12 @@ DisplayPCMainMenu::
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ret
 
-SomeonesPCText:   db "SOMEONE's PC@"
-BillsPCText:      db "BILL's PC@"
-PlayersPCText:    db "'s PC@"
-OaksPCText:       db "PROF.OAK's PC@"
-PKMNLeaguePCText: db $4a, "LEAGUE@"
-LogOffPCText:     db "LOG OFF@"
+SomeonesPCText:   db "המחשב של ?@"
+BillsPCText:      db "המחשב של BILL@" ; TODO
+PlayersPCText:    db "המחשב של @"
+OaksPCText:       db "המחשב של אלון@"
+PKMNLeaguePCText: db "היכל התהילה@"
+LogOffPCText:     db "כיבוי@"
 
 BillsPC_::
 	ld hl, wd730
@@ -123,7 +125,7 @@ BillsPCMenu:
 	ld b, 10
 	ld c, 12
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, BillsPCMenuText
 	call PlaceString
 	ld hl, wTopMenuItemY
@@ -156,15 +158,15 @@ BillsPCMenu:
 	jr c, .singleDigitBoxNum
 ; two digit box num
 	sub 9
-	coord hl, 17, 16
+	coord hl, 10, 16
 	ld [hl], "1"
 	add "0"
 	jr .next
 .singleDigitBoxNum
 	add "1"
 .next
-	Coorda 18, 16
-	coord hl, 10, 16
+	Coorda 11, 16
+	coord hl, 18, 16
 	ld de, BoxNoPCText
 	call PlaceString
 	ld a, 1
@@ -339,15 +341,15 @@ DisplayMonListMenu:
 	ret
 
 BillsPCMenuText:
-	db   "WITHDRAW ", $4a
-	next "DEPOSIT ",  $4a
-	next "RELEASE ",  $4a
-	next "CHANGE BOX"
-	next "SEE YA!"
+	db   "הוצא ", $4a
+	next "הפקד ",  $4a
+	next "שחרר ",  $4a
+	next "החלף קופסה"
+	next "יאללה ביי!"
 	db "@"
 
 BoxNoPCText:
-	db "BOX No.@"
+	db "קופסה@"
 
 KnowsHMMove::
 ; returns whether mon with party index [wWhichPokemon] knows an HM move
@@ -395,9 +397,9 @@ DisplayDepositWithdrawMenu:
 	jr nz, .next
 	ld de, WithdrawPCText
 .next
-	coord hl, 11, 12
+	coord hl, 18, 12
 	call PlaceString
-	coord hl, 11, 14
+	coord hl, 18, 14
 	ld de, StatsCancelPCText
 	call PlaceString
 	ld hl, wTopMenuItemY
@@ -451,11 +453,11 @@ DisplayDepositWithdrawMenu:
 	call LoadGBPal
 	jr .loop
 
-DepositPCText:  db "DEPOSIT@"
-WithdrawPCText: db "WITHDRAW@"
+DepositPCText:  db "הפקד@"
+WithdrawPCText: db "הוצא@"
 StatsCancelPCText:
-	db   "STATS"
-	next "CANCEL@"
+	db   "נתונים"
+	next "ביטול@"
 
 SwitchOnText:
 	TX_FAR _SwitchOnText
