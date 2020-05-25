@@ -13,6 +13,8 @@ MainMenu:
 .mainMenuLoop
 	ld c, 20
 	call DelayFrames
+	ld a, 1
+	ld [wRightAligned], a ; Enable RTL
 	xor a ; LINK_STATE_NONE
 	ld [wLinkState], a
 	ld hl, wPartyAndBillsPCSavedMenuItem
@@ -37,7 +39,7 @@ MainMenu:
 	ld b, 6
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 11, 2
 	ld de, ContinueText
 	call PlaceString
 	jr .next2
@@ -46,7 +48,7 @@ MainMenu:
 	ld b, 4
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 11, 2
 	ld de, NewGameText
 	call PlaceString
 .next2
@@ -329,11 +331,11 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
+	db "המשך משחק", $4e
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "משחק חדש"
+	next "אפשרויות@"
 
 CableClubOptionsText:
 	db   "TRADE CENTER"
@@ -347,17 +349,17 @@ DisplayContinueGameInfo:
 	ld b, 8
 	ld c, 14
 	call TextBoxBorder
-	coord hl, 5, 9
+	coord hl, 18, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 9
+	coord hl, 9, 9
 	ld de, wPlayerName
-	call PlaceString
-	coord hl, 17, 11
+	call PrintReversed
+	coord hl, 9, 11
 	call PrintNumBadges
-	coord hl, 16, 13
+	coord hl, 9, 13
 	call PrintNumOwnedMons
-	coord hl, 13, 15
+	coord hl, 9, 15
 	call PrintPlayTime
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -421,10 +423,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "שם"
+	next "תגים    "
+	next "פוקדע    "
+	next "זמן משחק@"
 
 DisplayOptionMenu:
 	coord hl, 0, 0
