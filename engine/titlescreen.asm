@@ -372,31 +372,31 @@ LoadCopyrightTiles:
 	ld hl, vChars2 + $600
 	lb bc, BANK(NintendoCopyrightLogoGraphics), (GamefreakLogoGraphicsEnd - NintendoCopyrightLogoGraphics) / $10
 	call CopyVideoData
-	coord hl, 2, 7
+	coord hl, 17, 6
 	ld de, CopyrightTextString
 	jp PlaceString
 
 CopyrightTextString:
-	db   $60,$61,$62,$61,$63,$61,$64,$7F,$65,$66,$67,$68,$69,$6A             ; ©'95.'96.'98 Nintendo
-	next $60,$61,$62,$61,$63,$61,$64,$7F,$6B,$6C,$6D,$6E,$6F,$70,$71,$72     ; ©'95.'96.'98 Creatures inc.
-	next $60,$61,$62,$61,$63,$61,$64,$7F,$73,$74,$75,$76,$77,$78,$79,$7A,$7B ; ©'95.'96.'98 GAME FREAK inc.
+	db   $64, $61, $63, $61, $62, $61, $60, $7F, $6A, $69, $68, $67, $66, $65 ; ©'95.'96.'98 Nintendo
+	next $64, $61, $63, $61, $62, $61, $60, $7F, $72, $71, $70, $6F, $6E, $6D, $6C, $6B ; ©'95.'96.'98 Creatures inc.
+	next $64, $61, $63, $61, $62, $61, $60, $7F, $7B, $7A, $79, $78, $77, $76, $75, $74, $73 ; ©'95.'96.'98 GAME FREAK inc.
 	db   "@"
 
 INCLUDE "data/title_mons.asm"
 
 ; prints version text (red, blue)
 PrintGameVersionOnTitleScreen:
-	coord hl, 7, 8
+	coord hl, 13, 8
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:
 IF DEF(_RED)
-	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Red/Blue Version"
+	db $68, $67, $66, $65, $64, $63, $62, $61, "@" ; "Red/Blue Version"
 ENDC
 IF DEF(_BLUE)
-	db $61,$62,$63,$64,$65,$66,$67,$68,"@" ; "Blue Version"
+	db $68, $67, $66, $65, $64, $63, $62, $61, "@" ; "Blue Version"
 ENDC
 
 NintenText: db "NINTEN@"
