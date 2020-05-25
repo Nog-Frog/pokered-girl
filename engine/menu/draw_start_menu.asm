@@ -16,7 +16,7 @@ DrawStartMenu:
 	ld [wMenuWatchedKeys], a
 	ld a, $02
 	ld [wTopMenuItemY], a ; Y position of first menu choice
-	ld a, $0b
+	ld a, $12
 	ld [wTopMenuItemX], a ; X position of first menu choice
 	ld a, [wBattleAndStartSavedMenuItem] ; remembered menu selection from last time
 	ld [wCurrentMenuItem], a
@@ -25,7 +25,7 @@ DrawStartMenu:
 	ld [wMenuWatchMovingOutOfBounds], a
 	ld hl, wd730
 	set 6, [hl] ; no pauses between printing each letter
-	coord hl, 12, 2
+	coord hl, 17, 2
 	CheckEvent EVENT_GOT_POKEDEX
 ; case for not having pokedex
 	ld a, $06
@@ -60,25 +60,25 @@ DrawStartMenu:
 	ret
 
 StartMenuPokedexText:
-	db "POKéDEX@"
+	db "#ידע@"
 
 StartMenuPokemonText:
-	db "POKéMON@"
+	db "#ימון@"
 
 StartMenuItemText:
-	db "ITEM@"
+	db "פריטים@"
 
 StartMenuSaveText:
-	db "SAVE@"
+	db "שמירה@"
 
 StartMenuResetText:
-	db "RESET@"
+	db "איתחול@"
 
 StartMenuExitText:
-	db "EXIT@"
+	db "יציאה@"
 
 StartMenuOptionText:
-	db "OPTION@"
+	db "כלים@"
 
 PrintStartMenuItem:
 	push hl
