@@ -345,9 +345,9 @@ CableClubOptionsText:
 DisplayContinueGameInfo:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 7
+	coord hl, 3, 7
 	ld b, 8
-	ld c, 14
+	ld c, 15
 	call TextBoxBorder
 	coord hl, 18, 9
 	ld de, SaveScreenInfoText
@@ -399,7 +399,7 @@ PrintNumBadges:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, 1, 2
+	lb bc, LEFT_ALIGN | 1, 2
 	jp PrintNumber
 
 PrintNumOwnedMons:
@@ -409,17 +409,17 @@ PrintNumOwnedMons:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, 1, 3
+	lb bc, LEFT_ALIGN | 1, 3
 	jp PrintNumber
 
 PrintPlayTime:
 	ld de, wPlayTimeMinutes
-	lb bc, LEADING_ZEROES | 1, 2
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
 	call PrintNumber
 	ld [hl], $6d
 	dec hl
 	ld de, wPlayTimeHours
-	lb bc, 1, 2
+	lb bc, LEFT_ALIGN | 1, 3
 	jp PrintNumber
 
 SaveScreenInfoText:
