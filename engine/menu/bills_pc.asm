@@ -1,6 +1,4 @@
 DisplayPCMainMenu::
-	ld a, 1
-	ld [wRightAligned], a ; Enable RTL
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 	call SaveScreenTilesToBuffer2
@@ -32,7 +30,7 @@ DisplayPCMainMenu::
 	ld [wMaxMenuItem], a
 	CheckEvent EVENT_MET_BILL
 	jr nz, .metBill
-	coord hl, 12, 2
+	coord hl, 14, 2
 	ld de, SomeonesPCText
 	jr .next2
 .metBill

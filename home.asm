@@ -85,9 +85,6 @@ INCLUDE "home/copy.asm"
 ; Output: de pointers to the reversed string. de stays
 ;         unchanged if left aligned
 ReverseText::
-	ld a, [wRightAligned]
-	and a
-	ret z
 	push hl
 	ld hl, wReversedTextEnd 
 	ld a, "@"
@@ -118,13 +115,9 @@ ReverseText::
 ; Note that bits 5 and 7 are modified during execution. The above reflects
 ; their meaning at the beginning of the functions's execution.
 PrintBCDNumber::
-	; This wrapper, if RightAligned is on, prints the string
+	; This wrapper prints the string
 	; to a temporary buffer, reverses it, and prints the
 	; reversed string.
-	ld a, [wRightAligned]
-	and a
-	; Left aligned, use original
-	jp z, PrintBCDNumberInternal
 	; Save hl
 	push hl
 	; Set dest to the temp buffer
@@ -4259,11 +4252,7 @@ PrintText::
 	pop hl
 PrintText_NoCreatingTextBox::
 	coord bc, 18, 14
-	ld a, 1
-	ld [wRightAligned], a
 	call TextCommandProcessor
-	xor a
-	ld [wRightAligned], a
 	ret
 
 
@@ -4273,13 +4262,9 @@ PrintNumber::
 ; the value to char "0" instead of calling PrintNumber.
 ; Flags LEADING_ZEROES and LEFT_ALIGN can be given
 ; in bits 7 and 6 of b respectively.
-	; This wrapper, if RightAligned is on, prints the string
+	; This wrapper prints the string
 	; to a temporary buffer, reverses it, and prints the
 	; reversed string.
-	ld a, [wRightAligned]
-	and a
-	; Left aligned, use original
-	jp z, PrintNumberInternal
 	; Save hl
 	push hl
 	; Set dest to the temp buffer
