@@ -13,8 +13,6 @@ MainMenu:
 .mainMenuLoop
 	ld c, 20
 	call DelayFrames
-	ld a, 1
-	ld [wRightAligned], a ; Enable RTL
 	xor a ; LINK_STATE_NONE
 	ld [wLinkState], a
 	ld hl, wPartyAndBillsPCSavedMenuItem
