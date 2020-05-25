@@ -76,9 +76,7 @@ Char4ETest::
 	cp $4F ; line
 	jr nz, .next3
 	pop hl
-	coord hl, 1, 16
-	call AlignHL
-.next4
+	coord hl, 18, 16
 	push hl
 	jp PlaceNextChar_inc
 
@@ -113,20 +111,7 @@ endm
 	dict $59, Char59 ; TARGET
 	dict $5A, Char5A ; USER
 
-	; test if RightAligned is set
-	push af
-	ld a, [wRightAligned]
-	and a
-	
-	; increase or decrease hl based on alignment
-	jr nz, .rightAligned
-	pop af
-	ld [hli], a
-	jr .delay
-.rightAligned
-	pop af
-	ld [hld],a
-.delay
+	ld [hld], a
 	call PrintLetterDelay
 PlaceNextChar_inc::
 	inc de
@@ -298,8 +283,7 @@ Char51:: ; para
 	ld c, 20
 	call DelayFrames
 	pop de
-	coord hl, 1, 14
-	call AlignHL
+	coord hl, 18, 14
 	jp PlaceNextChar_inc
 
 Char49::
@@ -333,8 +317,7 @@ Char4C::
 	push de
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
-	coord hl, 1, 16
-	call AlignHL
+	coord hl, 18, 16
 	pop de
 	jp PlaceNextChar_inc
 
@@ -507,12 +490,7 @@ TextCommand03::
 ; (no arguments)
 TextCommand05::
 	pop hl
-	coord bc, 1, 16 ; address of second line of dialogue text box
-	; Add 17 to BC due to Right-To-Left (RTL)
-	; Warning: this should probably be done only after checking wRightAligned
-	ld a, 17
-	add c
-	ld c, a
+	coord bc, 18, 16 ; address of second line of dialogue text box
 	jp NextTextCommand
 
 ; blink arrow and wait for A or B to be pressed
@@ -541,12 +519,7 @@ TextCommand07::
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	pop hl
-	coord bc, 1, 16 ; address of second line of dialogue text box
-	; Add 17 to BC due to Right-To-Left (RTL). 
-	; Warning: this should probably be done only after checking wRightAligned
-	ld a, 17
-	add c
-	ld c, a
+	coord bc, 18, 16 ; address of second line of dialogue text box
 	jp NextTextCommand
 
 ; execute asm inline
@@ -734,14 +707,3 @@ TextCommandJumpTable::
 	dw TextCommand0B
 	dw TextCommand0C
 	dw TextCommand0D
-
-; Adds 17 to HL if RightAligned is on
-AlignHL::
-	ld a, [wRightAligned]
-	and a
-	ret z
-	ld a, 17
-	add l
-	ld l, a
-	ret
-
