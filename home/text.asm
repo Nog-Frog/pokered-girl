@@ -121,7 +121,7 @@ endm
 	; increase or decrease hl based on alignment
 	jr nz, .rightAligned
 	pop af
-	ld [hli], a	
+	ld [hli], a
 	jr .delay
 .rightAligned
 	pop af
@@ -508,7 +508,11 @@ TextCommand03::
 TextCommand05::
 	pop hl
 	coord bc, 1, 16 ; address of second line of dialogue text box
-	call AlignHL
+	; Add 17 to BC due to Right-To-Left (RTL)
+	; Warning: this should probably be done only after checking wRightAligned
+	ld a, 17
+	add c
+	ld c, a
 	jp NextTextCommand
 
 ; blink arrow and wait for A or B to be pressed
@@ -538,7 +542,11 @@ TextCommand07::
 	call ScrollTextUpOneLine
 	pop hl
 	coord bc, 1, 16 ; address of second line of dialogue text box
-	call AlignHL
+	; Add 17 to BC due to Right-To-Left (RTL). 
+	; Warning: this should probably be done only after checking wRightAligned
+	ld a, 17
+	add c
+	ld c, a
 	jp NextTextCommand
 
 ; execute asm inline
@@ -736,3 +744,4 @@ AlignHL::
 	add l
 	ld l, a
 	ret
+
