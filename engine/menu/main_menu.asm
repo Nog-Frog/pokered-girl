@@ -37,7 +37,7 @@ MainMenu:
 	ld b, 6
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 11, 2
+	coord hl, 12, 2
 	ld de, ContinueText
 	call PlaceString
 	jr .next2
@@ -46,7 +46,7 @@ MainMenu:
 	ld b, 4
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 11, 2
+	coord hl, 12, 2
 	ld de, NewGameText
 	call PlaceString
 .next2
@@ -57,9 +57,9 @@ MainMenu:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ld [wMenuJoypadPollCount], a
-	inc a
+	ld a, $d
 	ld [wTopMenuItemX], a
-	inc a
+	ld a, 2
 	ld [wTopMenuItemY], a
 	ld a, A_BUTTON | B_BUTTON | START
 	ld [wMenuWatchedKeys], a
