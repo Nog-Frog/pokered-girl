@@ -34,6 +34,7 @@ rLCDC_DEFAULT EQU %11100011
 	ld [rBGP], a
 	ld [rOBP0], a
 	ld [rOBP1], a
+	ld [wRightAligned], a
 
 	ld a, rLCDC_ENABLE_MASK
 	ld [rLCDC], a

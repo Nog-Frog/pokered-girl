@@ -397,6 +397,10 @@ ShowPokedexData:
 
 ; function to display pokedex data from inside the pokedex
 ShowPokedexDataInternal:
+	ld a, [wRightAligned]
+	push af
+	xor a
+	ld [wRightAligned], a
 	ld hl, wd72c
 	set 1, [hl]
 	ld a, $33 ; 3/7 volume
@@ -587,6 +591,8 @@ ShowPokedexDataInternal:
 	res 1, [hl]
 	ld a, $77 ; max volume
 	ld [rNR50], a
+	pop af
+	ld [wRightAligned], a
 	ret
 
 HeightWeightText:
