@@ -414,10 +414,10 @@ PrintNumOwnedMons:
 
 PrintPlayTime:
 	ld de, wPlayTimeMinutes
-	lb bc, LEADING_ZEROES | 1, 3
+	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber
 	ld [hl], $6d
-	inc hl
+	dec hl
 	ld de, wPlayTimeHours
 	lb bc, 1, 2
 	jp PrintNumber
