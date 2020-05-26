@@ -176,14 +176,14 @@ HandlePokedexListMenu:
 	call CountSetBits
 	ld de, wNumSetBits
 	coord hl, 16, 3
-	lb bc, 1, 3
+	lb bc, LEFT_ALIGN | 1, 1, 3
 	call PrintNumber ; print number of seen pokemon
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld de, wNumSetBits
 	coord hl, 16, 6
-	lb bc, 1, 3
+	lb bc, LEFT_ALIGN | 1, 1, 3
 	call PrintNumber ; print number of owned pokemon
 	coord hl, 16, 2
 	ld de, PokedexSeenText
@@ -242,7 +242,7 @@ HandlePokedexListMenu:
 	ld de, -SCREEN_WIDTH
 	add hl, de
 	ld de, wd11e
-	lb bc, LEADING_ZEROES | 1, 3
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 3
 	call PrintNumber ; print the pokedex number
 	ld de, SCREEN_WIDTH
 	add hl, de
@@ -442,16 +442,16 @@ ShowPokedexDataInternal:
 	ld a, $6e ; lower right corner tile
 	Coorda 19, 17
 
-	coord hl, 0, 9
+	coord hl, 19, 9
 	ld de, PokedexDataDividerLine
 	call PlaceString ; draw horizontal divider line
 
-	coord hl, 9, 6
+	coord hl, 18, 6
 	ld de, HeightWeightText
 	call PlaceString
 
 	call GetMonName
-	coord hl, 9, 2
+	coord hl, 18, 2
 	call PlaceString
 
 	ld hl, PokedexEntryPointers
@@ -465,7 +465,7 @@ ShowPokedexDataInternal:
 	ld e, a
 	ld d, [hl] ; de = address of pokedex entry
 
-	coord hl, 9, 4
+	coord hl, 18, 4
 	call PlaceString ; print species name
 
 	ld h, b
@@ -475,13 +475,13 @@ ShowPokedexDataInternal:
 	push af
 	call IndexToPokedex
 
-	coord hl, 2, 8
+	coord hl, 6, 8
 	ld a, "№"
-	ld [hli], a
+	ld [hld], a
 	ld a, "⠄"
-	ld [hli], a
+	ld [hld], a
 	ld de, wd11e
-	lb bc, LEADING_ZEROES | 1, 3
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 3
 	call PrintNumber ; print pokedex number
 
 	ld hl, wPokedexOwned
@@ -516,14 +516,14 @@ ShowPokedexDataInternal:
 	inc de ; de = address of feet (height)
 	ld a, [de] ; reads feet, but a is overwritten without being used
 	coord hl, 12, 6
-	lb bc, 1, 2
+	lb bc, LEFT_ALIGN | 1, 1, 2
 	call PrintNumber ; print feet (height)
 	ld a, $60 ; feet symbol tile (one tick)
 	ld [hl], a
 	inc de
 	inc de ; de = address of inches (height)
 	coord hl, 15, 6
-	lb bc, LEADING_ZEROES | 1, 2
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
 	call PrintNumber ; print inches (height)
 	ld a, $61 ; inches symbol tile (two ticks)
 	ld [hl], a
@@ -545,7 +545,7 @@ ShowPokedexDataInternal:
 	ld [hl], a ; store lower byte of weight in [hDexWeight + 1]
 	ld de, hDexWeight
 	coord hl, 11, 8
-	lb bc, 2, 5 ; 2 bytes, 5 digits
+	lb bc, LEFT_ALIGN | 1, 2, 5 ; 2 bytes, 5 digits
 	call PrintNumber ; print weight
 	coord hl, 14, 8
 	ld a, [hDexWeight + 1]
@@ -565,7 +565,7 @@ ShowPokedexDataInternal:
 	ld [hDexWeight], a ; restore original value of [hDexWeight]
 	pop hl
 	inc hl ; hl = address of pokedex description text
-	coord bc, 1, 11
+	coord bc, 19, 11
 	ld a, 2
 	ld [$fff4], a
 	call TextCommandProcessor ; print pokedex description text
@@ -599,10 +599,10 @@ PokeText:
 
 ; horizontal line that divides the pokedex text description from the rest of the data
 PokedexDataDividerLine:
-	db $68,$69,$6B,$69,$6B
+	db $6A,$69,$6B,$69,$6B
 	db $69,$6B,$69,$6B,$6B
 	db $6B,$6B,$69,$6B,$69
-	db $6B,$69,$6B,$69,$6A
+	db $6B,$69,$6B,$69,$68
 	db "@"
 
 ; draws a line of tiles
