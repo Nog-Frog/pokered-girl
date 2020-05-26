@@ -405,9 +405,9 @@ DisplayTwoOptionMenu:
 	pop hl
 	ld a, [hli]
 	and a ; put blank line before first menu item?
-	ld bc, 20 + 2
+	ld bc, 20 + 3
 	jr z, .noBlankLine
-	ld bc, 2 * 20 + 2
+	ld bc, 2 * 20 + 6
 .noBlankLine
 	ld a, [hli]
 	ld e, a
