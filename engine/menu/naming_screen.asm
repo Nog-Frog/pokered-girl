@@ -101,9 +101,10 @@ DisplayNamingScreen:
 	ld a, 3
 	ld [wTopMenuItemY], a
 	ld a, 1
-	ld [wTopMenuItemX], a
 	ld [wLastMenuItem], a
 	ld [wCurrentMenuItem], a
+	ld a, 16
+	ld [wTopMenuItemX], a
 	ld a, $ff
 	ld [wMenuWatchedKeys], a
 	ld a, 7
@@ -224,6 +225,8 @@ DisplayNamingScreen:
 .didNotPressCaseSwtich
 	ld hl, wMenuCursorLocation
 	ld a, [hli]
+	dec a
+	dec a
 	ld h, [hl]
 	ld l, a
 	inc hl
@@ -257,21 +260,10 @@ DisplayNamingScreen:
 	ret nc
 	dec hl
 .addLetter
-	call CalcStringLength
-	; c is length, hl is null terminator
-	inc c ; include the terminator in length
-
-.addLetterLoop
-	ld a, [hl]
-	inc hl
-	ld [hl], a
-	dec hl
-	dec hl
-	dec c
-	jr nz, .addLetterLoop
-
 	ld a, [wNamingScreenLetter]
-	ld [wcf4b], a
+	ld [hli], a
+	ld [hl], "@"
+
 	ld a, SFX_PRESS_AB
 	call PlaySound
 	ret
@@ -280,19 +272,8 @@ DisplayNamingScreen:
 	and a
 	ret z
 	call CalcStringLength
-	; c is length
-	push de
-	ld hl, wcf4b
-	ld de, wcf4b
-	inc hl
-.deleteLetterLoop
-	ld a, [hl]
-	ld [de], a
-	inc de
-	inc hl
-	dec c
-	jr nz, .deleteLetterLoop
-	pop de
+	dec hl
+	ld [hl], "@"
 	ret
 .pressedRight
 	ld a, [wCurrentMenuItem]
@@ -367,7 +348,7 @@ PrintAlphabet:
 	jr nz, .lowercase
 	ld de, HebrewKeyboard
 .lowercase
-	coord hl, 2, 5
+	coord hl, 1, 5
 	lb bc, 5, 9 ; 5 rows, 9 columns
 .outerLoop
 	push bc
@@ -398,29 +379,22 @@ PrintNicknameAndUnderscores:
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
-	coord hl, 10, 2
-	lb bc, 1, 10
+	coord hl, 9, 2
+	lb bc, 1, 11
 	call ClearScreenArea
 
-	call CalcStringLength
-	; Subtract the length of the string from right edge
-	coord hl, 20, 2 ; Right screen edge
-	xor a
-	sub c
-	ld c, a
-	ld b, $FF
-	add hl, bc
+	coord hl, 18, 2 ; Right screen edge
 
 	ld de, wcf4b
 	call PlaceString
-	coord hl, 10, 3
+	coord hl, 12, 3
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr nc, .pokemon1
 	ld b, 7 ; player or rival max name length
-	coord hl, 13, 3 ;
 	jr .playerOrRival1
 .pokemon1
+	coord hl, 9, 3
 	ld b, 10 ; pokemon max name length
 .playerOrRival1
 	ld a, $76 ; underscore tile id
@@ -457,7 +431,7 @@ PrintNicknameAndUnderscores:
 	sub c
 	ld c, a
 	ld b, $0
-	coord hl, 10, 3
+	coord hl, 9, 3
 	add hl, bc
 	ld [hl], $77 ; raised underscore tile id
 	ret
@@ -506,7 +480,7 @@ CalcStringLength:
 	jr .loop
 
 PrintNamingText:
-	coord hl, 0, 1
+	coord hl, 18, 1
 	ld a, [wNamingScreenType]
 	ld de, YourTextString
 	and a
@@ -541,10 +515,10 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString: ; 693f (1:693f)
-	db "?ךל םיארוק ךיא@"
+	db "איך קוראים לך?@"
 
 RivalsTextString: ; 6945 (1:6945)
-	db "?ביריה םש@"
+	db "איך קוראים ליריבך?@"
 
 NameTextString:
 	db "@"
