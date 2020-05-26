@@ -222,7 +222,7 @@ Char5BText::
 Char5EText::
 	db "ROCKET@"
 Char54Text::
-	db "POKé@"
+	db "פוק@"
 Char56Text::
 	db "……@"
 Char5AText::

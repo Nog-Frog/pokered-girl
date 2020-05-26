@@ -540,11 +540,11 @@ TwoOptionMenuStrings:
 	dw .NoYesMenu
 
 .NoYesMenu
-	db   "NO"
-	next "YES@"
+	db   "לא"
+	next "כן@"
 .YesNoMenu
-	db   "YES"
-	next "NO@"
+	db   "כן"
+	next "לא@"
 .NorthWestMenu
 	db   "NORTH"
 	next "WEST@"

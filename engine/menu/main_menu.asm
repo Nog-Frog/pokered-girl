@@ -350,12 +350,12 @@ DisplayContinueGameInfo:
 	coord hl, 18, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 9, 9
+	coord hl, 10, 9
 	ld de, wPlayerName
-	call PrintReversed
-	coord hl, 9, 11
+	call PlaceString
+	coord hl, 10, 11
 	call PrintNumBadges
-	coord hl, 9, 13
+	coord hl, 10, 13
 	call PrintNumOwnedMons
 	coord hl, 9, 15
 	call PrintPlayTime
@@ -373,17 +373,17 @@ PrintSaveScreenText:
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	coord hl, 5, 2
+	coord hl, 18, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 2
+	coord hl, 11, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 17, 4
+	coord hl, 11, 4
 	call PrintNumBadges
-	coord hl, 16, 6
+	coord hl, 11, 6
 	call PrintNumOwnedMons
-	coord hl, 13, 8
+	coord hl, 10, 8
 	call PrintPlayTime
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -414,6 +414,9 @@ PrintPlayTime:
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
 	call PrintNumber
+	;dec hl  ; Those three decs are necessary
+	;dec hl  ; if LIJI's wrappers around PrintNumber
+	;dec hl  ; are removed.
 	ld [hl], $6d
 	dec hl
 	ld de, wPlayTimeHours
@@ -422,9 +425,9 @@ PrintPlayTime:
 
 SaveScreenInfoText:
 	db   "שם"
-	next "תגים    "
-	next "#ידע    "
-	next "זמן משחק@"
+	next "תגים"
+	next "#ידע"
+	next "זמן@"
 
 DisplayOptionMenu:
 	coord hl, 0, 0

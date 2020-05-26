@@ -157,7 +157,7 @@ SaveSAV:
 	coord hl, 1, 13
 	lb bc, 4, 18
 	call ClearScreenArea
-	coord hl, 1, 14
+	coord hl, 18, 14
 	ld de, NowSavingString
 	call PlaceString
 	ld c, 120
@@ -171,12 +171,12 @@ SaveSAV:
 	jp DelayFrames
 
 NowSavingString:
-	db "Now saving...@"
+	db "שומר...@"
 
 SaveSAVConfirm:
 	call PrintText
 	coord hl, 0, 7
-	lb bc, 8, 1
+	lb bc, 8, 4
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
