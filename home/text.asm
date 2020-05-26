@@ -206,7 +206,9 @@ MonsterNameCharsCommon::
 	ld de, wEnemyMonNick ; enemy active monster name
 
 FinishDTE::
-	call PrintReversed
+	call PlaceString
+	ld h, b
+	ld l, c
 	pop de
 	inc de
 	jp PlaceNextChar
