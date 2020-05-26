@@ -213,14 +213,14 @@ DisplayNamingScreen:
 	cp $5 ; "ED" row
 	jr nz, .didNotPressED
 	ld a, [wTopMenuItemX]
-	cp $11 ; "ED" column
+	cp $12 ; "ED" column
 	jr z, .pressedStart
 .didNotPressED
 	ld a, [wCurrentMenuItem]
 	cp $6 ; case switch row
 	jr nz, .didNotPressCaseSwtich
 	ld a, [wTopMenuItemX]
-	cp $1 ; case switch column
+	cp $12 ; case switch column
 	jr z, .pressedA_changedCase
 .didNotPressCaseSwtich
 	ld hl, wMenuCursorLocation
@@ -280,25 +280,25 @@ DisplayNamingScreen:
 	cp $6
 	ret z ; can't scroll right on bottom row
 	ld a, [wTopMenuItemX]
-	cp $11 ; max
+	cp $12 ; max
 	jp z, .wrapToFirstColumn
 	inc a
 	inc a
 	jr .done
 .wrapToFirstColumn
-	ld a, $1
+	ld a, $2
 	jr .done
 .pressedLeft
 	ld a, [wCurrentMenuItem]
 	cp $6
-	ret z ; can't scroll right on bottom row
+	ret z ; can't scroll left on bottom row
 	ld a, [wTopMenuItemX]
 	dec a
+	dec a	
 	jp z, .wrapToLastColumn
-	dec a
 	jr .done
 .wrapToLastColumn
-	ld a, $11 ; max
+	ld a, $12 ; max
 	jr .done
 .pressedUp
 	ld a, [wCurrentMenuItem]
@@ -308,7 +308,7 @@ DisplayNamingScreen:
 	ret nz
 	ld a, $6 ; wrap to bottom row
 	ld [wCurrentMenuItem], a
-	ld a, $1 ; force left column
+	ld a, $12 ; force right column
 	jr .done
 .pressedDown
 	ld a, [wCurrentMenuItem]
@@ -318,11 +318,12 @@ DisplayNamingScreen:
 	jr nz, .wrapToTopRow
 	ld a, $1
 	ld [wCurrentMenuItem], a
+	ld a, $12
 	jr .done
 .wrapToTopRow
 	cp $6
 	ret nz
-	ld a, $1
+	ld a, $12
 .done
 	ld [wTopMenuItemX], a
 	jp EraseMenuCursor
@@ -364,16 +365,17 @@ PrintAlphabet:
 	pop bc
 	dec b
 	jr nz, .outerLoop
+	coord hl, $11, $f ; below keyboard, right aligned
 	call PlaceString
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
 HebrewKeyboard: ; 679e (1:679e)
-	db "קראטוןםפףשדגכעיחלךזסבהנמצתץ'ז'ג'צ'ת():;־ ?!♂♀/",$f2,",¥תילגנא@"
+	db "קראטוןםפףשדגכעיחלךזסבהנמצתץ'ז'ג'צ'ת():;־ ?!♂♀/",$f2,",¥אנגלית@"
 
 EnglishKeyboard: ; 67d6 (1:67d6)
-	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥תירבע @"
+	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥עברית @"
 
 PrintNicknameAndUnderscores:
 	call CalcStringLength
@@ -414,7 +416,7 @@ PrintNicknameAndUnderscores:
 	jr nz, .emptySpacesRemaining
 	; when all spaces are filled, force the cursor onto the ED tile
 	call EraseMenuCursor
-	ld a, $11 ; "ED" x coord
+	ld a, $12 ; "ED" x coord
 	ld [wTopMenuItemX], a
 	ld a, $5 ; "ED" y coord
 	ld [wCurrentMenuItem], a
