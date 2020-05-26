@@ -1568,7 +1568,7 @@ DisplayListMenuIDLoop::
 	cp ITEMLISTMENU
 	jr nz, .skipGettingQuantity
 ; if it's an item menu
-	inc hl
+	dec hl
 	ld a, [hl] ; a = item quantity
 	ld [wMaxItemQuantity], a
 .skipGettingQuantity
@@ -1731,7 +1731,7 @@ DisplayChooseQuantityMenu::
 	coord hl, 9, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
-	lb bc, LEADING_ZEROES | 1, 2 ; 1 byte, 2 digits
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2 ; 1 byte, 2 digits
 	call PrintNumber
 	jp .waitForKeyPressLoop
 .buttonAPressed ; the player chose to make the transaction
@@ -1907,10 +1907,10 @@ PrintListMenuEntries::
 	and a ; is the item unsellable?
 	jr nz, .skipPrintingItemQuantity ; if so, don't print the quantity
 	push hl
-	ld bc, SCREEN_WIDTH + 8 ; 1 row down and 8 columns right
+	ld bc, SCREEN_WIDTH - 9 ; 1 row down and 8 columns right
 	add hl, bc
 	ld a, "×"
-	ld [hli], a
+	ld [hld], a
 	ld a, [wd11e]
 	push af
 	ld a, [de]
@@ -1918,7 +1918,7 @@ PrintListMenuEntries::
 	push de
 	ld de, wd11e
 	ld [de], a
-	lb bc, 1, 2
+	lb bc, LEFT_ALIGN | 1, 1, 2
 	call PrintNumber
 	pop de
 	pop af
@@ -3059,6 +3059,7 @@ InitYesNoTextBoxParameters::
 	ld [wTwoOptionMenuID], a
 	coord hl, 14, 7
 	ld bc, $80f
+	ld c, 18
 	ret
 
 YesNoChoicePokeCenter::
@@ -3066,7 +3067,7 @@ YesNoChoicePokeCenter::
 	ld a, HEAL_CANCEL_MENU
 	ld [wTwoOptionMenuID], a
 	coord hl, 11, 6
-	lb bc, 8, 12
+	lb bc, 8, 18
 	jr DisplayYesNoChoice
 
 WideYesNoChoice:: ; unused
