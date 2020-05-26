@@ -27,13 +27,13 @@ PlayerPCMenu:
 	ld c, $e
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, PlayersPCMenuEntries
 	call PlaceString
 	ld hl, wTopMenuItemY
 	ld a, 2
 	ld [hli], a ; wTopMenuItemY
-	dec a
+	ld a, 13
 	ld [hli], a ; wTopMenuItemX
 	inc hl
 	inc hl
@@ -241,10 +241,10 @@ PlayerPCToss:
 	jp .loop
 
 PlayersPCMenuEntries:
-	db   "WITHDRAW ITEM"
-	next "DEPOSIT ITEM"
-	next "TOSS ITEM"
-	next "LOG OFF@"
+	db   "הוצא פריט"
+	next "הכנס פריט"
+	next "זרוק פריט"
+	next "התנתק@"
 
 TurnedOnPC2Text:
 	TX_FAR _TurnedOnPC2Text
