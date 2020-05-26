@@ -3191,8 +3191,6 @@ wBoxMonOT::    ds NAME_LENGTH * MONS_PER_BOX ; dd2a
 wBoxMonNicks:: ds NAME_LENGTH * MONS_PER_BOX ; de06
 wBoxMonNicksEnd:: ; dee2
 
-; TODO
-wRightAligned:: ds 1 ; Eventually, this should be removed. For now, removing this causes save data corruption.
 wReversedText:: ds 16
 wReversedTextEnd:: ds 1
 wBCDReverseTemp:: ds 16
