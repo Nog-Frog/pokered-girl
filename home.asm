@@ -571,7 +571,7 @@ PrintStatusConditionNotFainted:
 ; [wLoadedMonLevel] = level
 PrintLevel::
 	ld a, $6e ; ":L" tile ID
-	ld [hli], a
+	ld [hld], a
 	ld c, 2 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 	cp 100
@@ -587,7 +587,7 @@ PrintLevel::
 ; [wLoadedMonLevel] = level
 PrintLevelFull::
 	ld a, $6e ; ":L" tile ID
-	ld [hli], a
+	ld [hld], a
 	ld c, 3 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 
@@ -1481,7 +1481,7 @@ DisplayListMenuID::
 	ld [wMaxMenuItem], a
 	ld a, 4
 	ld [wTopMenuItemY], a
-	ld a, 5
+	ld a, 18
 	ld [wTopMenuItemX], a
 	ld a, A_BUTTON | B_BUTTON | SELECT
 	ld [wMenuWatchedKeys], a
@@ -1792,7 +1792,7 @@ PrintListMenuEntries::
 	jr nc, .noCarry
 	inc d
 .noCarry
-	coord hl, 6, 4 ; coordinates of first list entry name
+	coord hl, 17, 4 ; coordinates of first list entry name
 	ld b, 4 ; print 4 names
 .loop
 	ld a, b
@@ -1887,7 +1887,7 @@ PrintListMenuEntries::
 	ld [wLoadedMonLevel], a
 .skipCopyingLevel
 	pop hl
-	ld bc, $001c
+	ld bc, 12
 	add hl, bc
 	call PrintLevel
 	pop af
@@ -1946,7 +1946,7 @@ PrintListMenuEntries::
 	inc c
 	dec b
 	jp nz, .loop
-	ld bc, -8
+	ld bc, -32
 	add hl, bc
 	ld a, "▼"
 	ld [hl], a
@@ -1956,7 +1956,7 @@ PrintListMenuEntries::
 	jp PlaceString
 
 ListMenuCancelText::
-	db "CANCEL@"
+	db "ביטול@"
 
 GetMonName::
 	push hl
@@ -4242,7 +4242,7 @@ AutoTextBoxDrawingCommon::
 	ret
 
 PrintText::
-; Print text hl at (1, 14).
+; Print text hl at (18, 14).
 	push hl
 	ld a, MESSAGE_BOX
 	ld [wTextBoxID], a

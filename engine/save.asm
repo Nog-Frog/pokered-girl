@@ -342,7 +342,7 @@ BoxSRAMPointerTable:
 ChangeBox::
 	ld hl, WhenYouChangeBoxText
 	call PrintText
-	call YesNoChoice
+	call YesNoChoice ; TODO
 	ld a, [wCurrentMenuItem]
 	and a
 	ret nz ; return if No was chosen
@@ -418,7 +418,7 @@ CopyBoxToOrFromSRAM:
 	ld [MBC1SRamEnable], a
 	ret
 
-DisplayChangeBoxMenu:
+DisplayChangeBoxMenu: ; TODO
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ld a, A_BUTTON | B_BUTTON
@@ -427,7 +427,7 @@ DisplayChangeBoxMenu:
 	ld [wMaxMenuItem], a
 	ld a, 1
 	ld [wTopMenuItemY], a
-	ld a, 12
+	ld a, 18
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -448,7 +448,7 @@ DisplayChangeBoxMenu:
 	ld hl, hFlags_0xFFF6
 	set 2, [hl]
 	ld de, BoxNames
-	coord hl, 13, 1
+	coord hl, 16, 1
 	call PlaceString
 	ld hl, hFlags_0xFFF6
 	res 2, [hl]
@@ -457,19 +457,19 @@ DisplayChangeBoxMenu:
 	cp 9
 	jr c, .singleDigitBoxNum
 	sub 9
-	coord hl, 8, 2
+	coord hl, 1, 2
 	ld [hl], "1"
 	add "0"
 	jr .next
 .singleDigitBoxNum
 	add "1"
 .next
-	Coorda 9, 2
-	coord hl, 1, 2
+	Coorda 2, 2
+	coord hl, 8, 2
 	ld de, BoxNoText
 	call PlaceString
 	call GetMonCountsForAllBoxes
-	coord hl, 18, 1
+	coord hl, 17, 1
 	ld de, wBoxMonCounts
 	ld bc, SCREEN_WIDTH
 	ld a, $c
@@ -494,21 +494,21 @@ ChooseABoxText:
 	db "@"
 
 BoxNames:
-	db   "BOX 1"
-	next "BOX 2"
-	next "BOX 3"
-	next "BOX 4"
-	next "BOX 5"
-	next "BOX 6"
-	next "BOX 7"
-	next "BOX 8"
-	next "BOX 9"
-	next "BOX10"
-	next "BOX11"
-	next "BOX12@"
+	db   "תא 1"
+	next "תא 2"
+	next "תא 3"
+	next "תא 4"
+	next "תא 5"
+	next "תא 6"
+	next "תא 7"
+	next "תא 8"
+	next "תא 9"
+	next "תא 01" ; TODO
+	next "תא 11" ; TODO
+	next "תא 21@" ; TODO
 
 BoxNoText:
-	db "BOX No.@"
+	db "תא@"
 
 EmptyAllSRAMBoxes:
 ; marks all boxes in SRAM as empty (initialisation for the first time the
