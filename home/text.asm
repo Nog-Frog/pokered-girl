@@ -301,7 +301,7 @@ Char49::
 	call DelayFrames
 	pop de
 	pop hl
-	coord hl, 1, 11
+	coord hl, 18, 11
 	push hl
 	jp PlaceNextChar_inc
 
