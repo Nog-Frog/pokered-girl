@@ -81,7 +81,7 @@ HideSprites::
 
 INCLUDE "home/copy.asm"
 
-; Input: de points to a strings (Max 16 characters)
+; Input: de points to a string (Max 16 characters)
 ; Output: de pointers to the reversed string. de stays
 ;         unchanged if left aligned
 ReverseText::
@@ -4276,9 +4276,9 @@ PrintNumber::
 	set 6, a
 	ld [wd730], a
 	; Print to temp buffer
-	call PrintNumberInternal
+	call PrintNumberLTR
 	jp AfterPrintBCDNumberInternal
-PrintNumberInternal:: ; 3c5f (0:3c5f)
+PrintNumberLTR:: ; 3c5f (0:3c5f)
 	push bc
 	xor a
 	ld [H_PASTLEADINGZEROES], a

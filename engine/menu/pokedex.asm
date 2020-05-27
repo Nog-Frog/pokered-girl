@@ -176,15 +176,15 @@ HandlePokedexListMenu:
 	call CountSetBits
 	ld de, wNumSetBits
 	coord hl, 16, 3
-	lb bc, LEFT_ALIGN | 1, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	lb bc, 1, 3
+	call PrintNumberLTR ; print number of seen pokemon
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld de, wNumSetBits
 	coord hl, 16, 6
-	lb bc, LEFT_ALIGN | 1, 1, 3
-	call PrintNumber ; print number of owned pokemon
+	lb bc, 1, 3
+	call PrintNumberLTR ; print number of owned pokemon
 	coord hl, 16, 2
 	ld de, PokedexSeenText
 	call PlaceString
@@ -242,8 +242,8 @@ HandlePokedexListMenu:
 	ld de, -SCREEN_WIDTH
 	add hl, de
 	ld de, wd11e
-	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 3
-	call PrintNumber ; print the pokedex number
+	lb bc, LEADING_ZEROES | 1, 3
+	call PrintNumberLTR ; print the pokedex number
 	ld de, SCREEN_WIDTH
 	add hl, de
 	dec hl
@@ -481,8 +481,8 @@ ShowPokedexDataInternal:
 	ld a, "⠄"
 	ld [hld], a
 	ld de, wd11e
-	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 3
-	call PrintNumber ; print pokedex number
+	lb bc, LEADING_ZEROES | 1, 3
+	call PrintNumberLTR ; print pokedex number
 
 	ld hl, wPokedexOwned
 	call IsPokemonBitSet
@@ -515,18 +515,14 @@ ShowPokedexDataInternal:
 	jp z, .waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
 	inc de ; de = address of feet (height)
 	ld a, [de] ; reads feet, but a is overwritten without being used
-	coord hl, 12, 6
-	lb bc, LEFT_ALIGN | 1, 1, 2
-	call PrintNumber ; print feet (height)
-	ld a, $60 ; feet symbol tile (one tick)
-	ld [hl], a
+	coord hl, 9, 6
+	lb bc, 1, 2
+	call PrintNumberLTR ; print feet (height)
 	inc de
 	inc de ; de = address of inches (height)
-	coord hl, 15, 6
-	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
-	call PrintNumber ; print inches (height)
-	ld a, $61 ; inches symbol tile (two ticks)
-	ld [hl], a
+	coord hl, 12, 6
+	lb bc, LEADING_ZEROES | 1, 2
+	call PrintNumberLTR ; print inches (height)
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
 	inc de
@@ -544,10 +540,10 @@ ShowPokedexDataInternal:
 	ld a, [de] ; a = lower byte of weight
 	ld [hl], a ; store lower byte of weight in [hDexWeight + 1]
 	ld de, hDexWeight
+	coord hl, 8, 8
+	lb bc, 2, 5 ; 2 bytes, 5 digits
+	call PrintNumberLTR ; print weight
 	coord hl, 11, 8
-	lb bc, LEFT_ALIGN | 1, 2, 5 ; 2 bytes, 5 digits
-	call PrintNumber ; print weight
-	coord hl, 14, 8
 	ld a, [hDexWeight + 1]
 	sub 10
 	ld a, [hDexWeight]
@@ -565,7 +561,7 @@ ShowPokedexDataInternal:
 	ld [hDexWeight], a ; restore original value of [hDexWeight]
 	pop hl
 	inc hl ; hl = address of pokedex description text
-	coord bc, 19, 11
+	coord bc, 18, 11
 	ld a, 2
 	ld [$fff4], a
 	call TextCommandProcessor ; print pokedex description text
@@ -590,8 +586,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "HT  ?",$60,"??",$61
-	next "WT   ???lb@"
+	db   "גובה ??.?",$60
+	next "משקל ??? ",$62,$61,"@"
 
 ; XXX does anything point to this?
 PokeText:
