@@ -587,25 +587,26 @@ DrawTrainerInfo:
 	call TrainerInfo_DrawVerticalLine
 	coord hl, 19, 10
 	call TrainerInfo_DrawVerticalLine
-	coord hl, 6, 9
+	coord hl, 13, 9
 	ld de, TrainerInfo_BadgesText
 	call PlaceString
-	coord hl, 2, 2
+	coord hl, 14, 2
 	ld de, TrainerInfo_NameMoneyTimeText
 	call PlaceString
-	coord hl, 7, 2
+	coord hl, 9, 2
 	ld de, wPlayerName
 	call PlaceString
 	coord hl, 8, 4
 	ld de, wPlayerMoney
 	ld c, $e3
 	call PrintBCDNumber
-	coord hl, 9, 6
+	coord hl, 3, 6
 	ld de, wPlayTimeHours ; hours
 	lb bc, LEFT_ALIGN | 1, 3
 	call PrintNumber
+	coord hl, 4, 6
 	ld [hl], $d6 ; colon tile ID
-	inc hl
+	coord hl, 6, 6
 	ld de, wPlayTimeMinutes ; minutes
 	lb bc, LEADING_ZEROES | 1, 2
 	jp PrintNumber
@@ -615,13 +616,13 @@ TrainerInfo_FarCopyData:
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
-	db   "NAME/"
-	next "MONEY/"
-	next "TIME/@"
+	db   "שם/"
+	next "כסף/"
+	next "זמן/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"BADGES",$76,"@"
+	db $76,"תגים",$76,"@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6
