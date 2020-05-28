@@ -434,7 +434,7 @@ PartyMenuInit::
 	ld hl, wTopMenuItemY
 	inc a
 	ld [hli], a ; top menu item Y
-	xor a
+	ld a, 19
 	ld [hli], a ; top menu item X
 	ld a, [wPartyAndBillsPCSavedMenuItem]
 	push af
@@ -544,11 +544,11 @@ PrintStatusCondition::
 	pop de
 	jr nz, PrintStatusConditionNotFainted
 ; if the pokemon's HP is 0, print "FNT"
-	ld a, "F"
-	ld [hli], a
-	ld a, "N"
-	ld [hli], a
-	ld [hl], "T"
+	ld a, "ע"
+	ld [hld], a
+	ld a, "ל"
+	ld [hld], a
+	ld [hl], "ף"
 	and a
 	ret
 

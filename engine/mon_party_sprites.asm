@@ -337,6 +337,7 @@ UnusedPartyMonSpriteFunction:
 ; like it may have been intended to load the tile patterns and OAM data for
 ; the mon party sprite associated with the species in [wcf91].
 ; However, its calculations are off and it loads garbage data.
+; TODO UNUSED
 	ld a, [wcf91]
 	call GetPartyMonSpriteID
 	push af
@@ -374,7 +375,7 @@ WriteMonPartySpriteOAM:
 ; Write the OAM blocks for the first animation frame into the OAM buffer and
 ; make a copy at wMonPartySpritesSavedOAM.
 	push af
-	ld c, $10
+	ld c, $90
 	ld h, wOAMBuffer / $100
 	ld a, [hPartyMonIndex]
 	swap a
