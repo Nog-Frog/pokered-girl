@@ -2155,13 +2155,13 @@ DisplayBattleMenu:
 	ld b, 10 ; top menu item X
 	jr .rightColumn_WaitForInput
 .safariRightColumn
-	Coorda 13, 14  ; TODO: Fix coordinates (SAFARI ONLY)
-	Coorda 13, 16  ; TODO: Fix coordinates (SAFARI ONLY)
-	coord hl, 7, 14  ; TODO: Fix coordinates (SAFARI ONLY)
+	Coorda 8, 14 
+	Coorda 8, 16 
+	coord hl, 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	call PrintNumber
-	ld b, $1 ; top menu item X   ; TODO: Fix coordinates (SAFARI ONLY)
+	ld b, 18 ; top menu item X  
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
 	ld a, $e
@@ -2188,13 +2188,13 @@ DisplayBattleMenu:
 	ld b, 4 ; top menu item X
 	jr .leftColumn_WaitForInput
 .safariLeftColumn
-	Coorda 1, 14 ; TODO: Fix coordinates (SAFARI ONLY) ; clear upper cursor position in right column
-	Coorda 1, 16 ; TODO: Fix coordinates (SAFARI ONLY) ; clear lower cursor position in right column
-	coord hl, 7, 14  ; TODO: Fix coordinates (SAFARI ONLY)
+	Coorda 18, 14 ; 
+	Coorda 18, 16 ; 
+	coord hl, 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	call PrintNumber
-	ld b, $d ; top menu item X   ; TODO: Fix coordinates (SAFARI ONLY)
+	ld b, 8 ; top menu item X  
 .leftColumn_WaitForInput
 	ld hl, wTopMenuItemY
 	ld a, $e
@@ -2579,9 +2579,9 @@ MoveSelectionMenu:
     di ; out of pure coincidence, it is possible for vblank to occur between the di and ei
 	   ; so it is necessary to put the di ei block to not cause tearing
 	call TextBoxBorder
-	coord hl, 4, 12  ; TODO: Figure out if needs to change
+	coord hl, 4, 12
 	ld [hl], $7a
-	coord hl, 10, 12  ; TODO: Figure out if needs to change
+	coord hl, 10, 12
 	ld [hl], $7e
 	ei
 	coord hl, 13, 13

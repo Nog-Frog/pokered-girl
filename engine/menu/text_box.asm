@@ -188,7 +188,7 @@ TextBoxTextAndCoordTable:
 	db SAFARI_BATTLE_MENU_TEMPLATE
 	db 0,12,19,17  ; text box coordinates
 	dw SafariZoneBattleMenuText
-	db 2,14  ; text coordinates
+	db 17,14  ; text coordinates
 
 	db SWITCH_STATS_CANCEL_MENU_TEMPLATE
 	db 11,11,19,17 ; text box coordinates
@@ -249,8 +249,8 @@ BattleMenuText:
 	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   "כדור ×    פיתיון"
+	next "אבן       ברח@"
 
 SwitchStatsCancelText:
 	db   "החלף"
