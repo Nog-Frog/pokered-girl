@@ -43,7 +43,7 @@ DrawHP_:
 	ld a, [hFlags_0xFFF6]
 	bit 0, a
 	jr z, .printFractionBelowBar
-	ld bc, -2 ; right of bar TODO
+	ld bc, -9 ; right of bar TODO
 	jr .printFraction
 .printFractionBelowBar
 	ld bc, SCREEN_WIDTH + 1 ; below bar
@@ -51,12 +51,12 @@ DrawHP_:
 	add hl, bc
 	ld de, wLoadedMonHP
 	lb bc, 2, 3
-	call PrintNumber
+	call PrintNumberLTR
 	ld a, "/"
-	ld [hld], a
+	ld [hli], a
 	ld de, wLoadedMonMaxHP
 	lb bc, 2, 3
-	call PrintNumber
+	call PrintNumberLTR
 	pop hl
 	pop de
 	ret

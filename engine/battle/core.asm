@@ -1910,7 +1910,7 @@ DrawPlayerHUDAndHPBar:
 	coord hl, 18, 9
 	ld [hl], $73
 	ld de, wBattleMonNick
-	coord hl, 10, 7
+	coord hl, 18, 7
 	call CenterMonName
 	call PlaceString
 	ld hl, wBattleMonSpecies
@@ -1921,7 +1921,7 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
 	call CopyData
-	coord hl, 14, 8
+	coord hl, 15, 8
 	push hl
 	inc hl
 	ld de, wLoadedMonStatus
@@ -1969,12 +1969,12 @@ DrawEnemyHUDAndHPBar:
 	call ClearScreenArea
 	callab PlaceEnemyHUDTiles
 	ld de, wEnemyMonNick
-	coord hl, 1, 0
+	coord hl, 8, 0
 	call CenterMonName
 	call PlaceString
-	coord hl, 4, 1
+	coord hl, 5, 1
 	push hl
-	inc hl
+	dec hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
 	pop hl
@@ -2061,14 +2061,14 @@ GetBattleHealthBarColor:
 	jp RunPaletteCommand
 
 ; center's mon's name on the battle screen
-; if the name is 1 or 2 letters long, it is printed 2 spaces more to the right than usual
+; if the name is 1 or 2 letters long, it is printed 2 spaces more to the left than usual
 ; (i.e. for names longer than 4 letters)
-; if the name is 3 or 4 letters long, it is printed 1 space more to the right than usual
+; if the name is 3 or 4 letters long, it is printed 1 space more to the left than usual
 ; (i.e. for names longer than 4 letters)
 CenterMonName:
 	push de
-	inc hl
-	inc hl
+	dec hl
+	dec hl
 	ld b, $2
 .loop
 	inc de
@@ -2079,7 +2079,7 @@ CenterMonName:
 	ld a, [de]
 	cp "@"
 	jr z, .done
-	dec hl
+	inc hl
 	dec b
 	jr nz, .loop
 .done
