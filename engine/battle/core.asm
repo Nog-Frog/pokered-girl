@@ -2131,70 +2131,37 @@ DisplayBattleMenu:
 	call DelayFrames
 	ld [hl], "▷"
 	ld a, $2 ; select the "ITEM" menu
-	jp .upperLeftMenuItemWasNotSelected
+	jp .upperRightMenuItemWasNotSelected
 .oldManName
 	db "OLD MAN@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	sub 2 ; check if the cursor is in the left column
-	jr c, .leftColumn
-; cursor is in the right column
+	sub 2 ; check if the cursor is in the right column
+	jr c, .rightColumn
+; cursor is in the left column
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	jr .rightColumn
-.leftColumn ; put cursor in left column of menu
-	ld a, [wBattleType]
-	cp BATTLE_TYPE_SAFARI
-	ld a, " "
-	jr z, .safariLeftColumn
-; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
-	Coorda 15, 14 ; clear upper cursor position in right column
-	Coorda 15, 16 ; clear lower cursor position in right column
-	ld b, $9 ; top menu item X
-	jr .leftColumn_WaitForInput
-.safariLeftColumn
-	Coorda 13, 14
-	Coorda 13, 16
-	coord hl, 7, 14
-	ld de, wNumSafariBalls
-	lb bc, 1, 2
-	call PrintNumber
-	ld b, $1 ; top menu item X
-.leftColumn_WaitForInput
-	ld hl, wTopMenuItemY
-	ld a, $e
-	ld [hli], a ; wTopMenuItemY
-	ld a, b
-	ld [hli], a ; wTopMenuItemX
-	inc hl
-	inc hl
-	ld a, $1
-	ld [hli], a ; wMaxMenuItem
-	ld [hl], D_RIGHT | A_BUTTON ; wMenuWatchedKeys
-	call HandleMenuInput
-	bit 4, a ; check if right was pressed
-	jr nz, .rightColumn
-	jr .AButtonPressed ; the A button was pressed
+	jr .leftColumn
 .rightColumn ; put cursor in right column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
 	ld a, " "
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
-	Coorda 9, 14 ; clear upper cursor position in left column
-	Coorda 9, 16 ; clear lower cursor position in left column
-	ld b, $f ; top menu item X
+	Coorda 4, 14 ; clear upper cursor position in left column
+	Coorda 4, 16 ; clear lower cursor position in left column
+	ld b, 10 ; top menu item X
 	jr .rightColumn_WaitForInput
 .safariRightColumn
-	Coorda 1, 14 ; clear upper cursor position in left column
-	Coorda 1, 16 ; clear lower cursor position in left column
-	coord hl, 7, 14
+	Coorda 13, 14  ; TODO: Fix coordinates (SAFARI ONLY)
+	Coorda 13, 16  ; TODO: Fix coordinates (SAFARI ONLY)
+	coord hl, 7, 14  ; TODO: Fix coordinates (SAFARI ONLY)
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	call PrintNumber
-	ld b, $d ; top menu item X
+	ld b, $1 ; top menu item X   ; TODO: Fix coordinates (SAFARI ONLY)
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
 	ld a, $e
@@ -2205,13 +2172,46 @@ DisplayBattleMenu:
 	inc hl
 	ld a, $1
 	ld [hli], a ; wMaxMenuItem
-	ld a, D_LEFT | A_BUTTON
-	ld [hli], a ; wMenuWatchedKeys
+	ld [hl], D_LEFT | A_BUTTON ; wMenuWatchedKeys
 	call HandleMenuInput
 	bit 5, a ; check if left was pressed
-	jr nz, .leftColumn ; if left was pressed, jump
+	jr nz, .leftColumn
+	jr .AButtonPressed ; the A button was pressed
+.leftColumn ; put cursor in left column of menu
+	ld a, [wBattleType]
+	cp BATTLE_TYPE_SAFARI
+	ld a, " "
+	jr z, .safariLeftColumn
+; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
+	Coorda 10, 14 ; clear upper cursor position in right column
+	Coorda 10, 16 ; clear lower cursor position in right column
+	ld b, 4 ; top menu item X
+	jr .leftColumn_WaitForInput
+.safariLeftColumn
+	Coorda 1, 14 ; TODO: Fix coordinates (SAFARI ONLY) ; clear upper cursor position in right column
+	Coorda 1, 16 ; TODO: Fix coordinates (SAFARI ONLY) ; clear lower cursor position in right column
+	coord hl, 7, 14  ; TODO: Fix coordinates (SAFARI ONLY)
+	ld de, wNumSafariBalls
+	lb bc, 1, 2
+	call PrintNumber
+	ld b, $d ; top menu item X   ; TODO: Fix coordinates (SAFARI ONLY)
+.leftColumn_WaitForInput
+	ld hl, wTopMenuItemY
+	ld a, $e
+	ld [hli], a ; wTopMenuItemY
+	ld a, b
+	ld [hli], a ; wTopMenuItemX
+	inc hl
+	inc hl
+	ld a, $1
+	ld [hli], a ; wMaxMenuItem
+	ld a, D_RIGHT | A_BUTTON
+	ld [hli], a ; wMenuWatchedKeys
+	call HandleMenuInput
+	bit 4, a ; check if right was pressed
+	jr nz, .rightColumn ; if right was pressed, jump
 	ld a, [wCurrentMenuItem]
-	add $2 ; if we're in the right column, the actual id is +2
+	add $2 ; if we're in the left column, the actual id is +2
 	ld [wCurrentMenuItem], a
 .AButtonPressed
 	call PlaceUnfilledArrowMenuCursor
@@ -2235,8 +2235,8 @@ DisplayBattleMenu:
 	dec a ; decrement a to 1
 .handleMenuSelection
 	and a
-	jr nz, .upperLeftMenuItemWasNotSelected
-; the upper left menu item was selected
+	jr nz, .upperRightMenuItemWasNotSelected
+; the upper right menu item was selected
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
 	jr z, .throwSafariBallWasSelected
@@ -2249,7 +2249,7 @@ DisplayBattleMenu:
 	ld [wcf91], a
 	jr UseBagItem
 
-.upperLeftMenuItemWasNotSelected ; a menu item other than the upper left item was selected
+.upperRightMenuItemWasNotSelected ; a menu item other than the upper left item was selected
 	cp $2
 	jp nz, PartyMenuOrRockOrRun
 
@@ -2573,21 +2573,21 @@ MoveSelectionMenu:
 	ret z
 	ld hl, wBattleMonMoves
 	call .loadmoves
-	coord hl, 4, 12
+	coord hl, 0, 12
 	ld b, 4
 	ld c, 14
     di ; out of pure coincidence, it is possible for vblank to occur between the di and ei
 	   ; so it is necessary to put the di ei block to not cause tearing
 	call TextBoxBorder
-	coord hl, 4, 12
+	coord hl, 4, 12  ; TODO: Figure out if needs to change
 	ld [hl], $7a
-	coord hl, 10, 12
+	coord hl, 10, 12  ; TODO: Figure out if needs to change
 	ld [hl], $7e
 	ei
-	coord hl, 6, 13
+	coord hl, 13, 13
 	call .writemoves
-	ld b, $5
-	ld a, $c
+	ld b, 14
+	ld a, 12
 	jr .menuset
 .mimicmenu
 	ld hl, wEnemyMonMoves
@@ -2961,23 +2961,23 @@ PrintMenuItem:
 	and $3f
 	ld [wcd6d], a
 ; print TYPE/<type> and <curPP>/<maxPP>
-	coord hl, 1, 9
+	coord hl, 9, 9
 	ld de, TypeText
 	call PlaceString
-	coord hl, 7, 11
+	coord hl, 3, 11
 	ld [hl], "/"
-	coord hl, 5, 9
+	coord hl, 6, 9
 	ld [hl], "/"
-	coord hl, 5, 11
+	coord hl, 2, 11
 	ld de, wcd6d
 	lb bc, 1, 2
 	call PrintNumber
-	coord hl, 8, 11
+	coord hl, 5, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
 	call PrintNumber
 	call GetCurrentMove
-	coord hl, 2, 10
+	coord hl, 8, 10
 	predef PrintMoveType
 .moveDisabled
 	ld a, $1
@@ -2988,7 +2988,7 @@ DisabledText:
 	db "disabled!@"
 
 TypeText:
-	db "TYPE@"
+	db "סוג@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]

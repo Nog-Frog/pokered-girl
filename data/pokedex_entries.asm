@@ -191,8 +191,8 @@ PokedexEntryPointers:
 	dw VictreebelDexEntry
 
 ; string: species name
-; height in feet, inches
-; weight in pounds
+; height in meters, centimeters
+; weight in kilograms
 ; text entry
 
 RhydonDexEntry:
