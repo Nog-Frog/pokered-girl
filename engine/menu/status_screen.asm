@@ -253,16 +253,16 @@ PrintStatsBox:
 	ld b, 8
 	ld c, 8
 	call TextBoxBorder ; Draws the box
-	coord hl, 1, 9 ; Start printing stats from here
-	ld bc, $0019 ; Number offset
+	coord hl, 7, 9 ; Start printing stats from here
+	ld bc, $000e ; Number offset
 	jr .PrintStats
 .DifferentBox
 	coord hl, 9, 2
 	ld b, 8
 	ld c, 9
 	call TextBoxBorder
-	coord hl, 11, 3
-	ld bc, $0018
+	coord hl, 17, 3
+	ld bc, $000d
 .PrintStats
 	push bc
 	push hl
@@ -279,20 +279,20 @@ PrintStatsBox:
 	ld de, wLoadedMonSpeed
 	call PrintStat
 	ld de, wLoadedMonSpecial
-	jp PrintNumber
+	jp PrintNumberLTR
 PrintStat:
 	push hl
-	call PrintNumber
+	call PrintNumberLTR
 	pop hl
 	ld de, SCREEN_WIDTH * 2
 	add hl, de
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "התקפה"
+	next "הגנה"
+	next "מהירות"
+	next "מיוחד@"
 
 StatusScreen2:
 	ld a, [hTilesetType]
