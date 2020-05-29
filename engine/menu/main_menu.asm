@@ -357,7 +357,7 @@ DisplayContinueGameInfo:
 	call PrintNumBadges
 	coord hl, 10, 13
 	call PrintNumOwnedMons
-	coord hl, 9, 15
+	coord hl, 10, 15
 	call PrintPlayTime
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -414,9 +414,9 @@ PrintPlayTime:
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
 	call PrintNumber
-	;dec hl  ; Those three decs are necessary
-	;dec hl  ; if LIJI's wrappers around PrintNumber
-	;dec hl  ; are removed.
+	; dec hl  ; These three decs are necessary
+	; dec hl  ; if LIJI's wrappers around PrintNumber
+	; dec hl  ; are removed. TODO
 	ld [hl], $6d
 	dec hl
 	ld de, wPlayTimeHours
