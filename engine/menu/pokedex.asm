@@ -477,11 +477,11 @@ ShowPokedexDataInternal:
 	push af
 	call IndexToPokedex
 
-	coord hl, 6, 8
+	coord hl, 2, 8
 	ld a, "№"
-	ld [hld], a
+	ld [hli], a
 	ld a, "⠄"
-	ld [hld], a
+	ld [hli], a
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumberLTR ; print pokedex number
