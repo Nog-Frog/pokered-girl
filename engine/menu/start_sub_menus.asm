@@ -285,7 +285,7 @@ StartMenu_Pokemon:
 
 ; writes a blank tile to all possible menu cursor positions on the party menu
 ErasePartyMenuCursors:
-	coord hl, 0, 1
+	coord hl, 19, 1
 	ld bc, 2 * 20 ; menu cursor positions are 2 rows apart
 	ld a, 6 ; 6 menu cursor positions
 .loop

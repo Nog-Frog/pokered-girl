@@ -193,7 +193,7 @@ TextBoxTextAndCoordTable:
 	db SWITCH_STATS_CANCEL_MENU_TEMPLATE
 	db 11,11,19,17 ; text box coordinates
 	dw SwitchStatsCancelText
-	db 13,12 ; text coordinates
+	db 17,12 ; text coordinates
 
 	db BUY_SELL_QUIT_MENU_TEMPLATE
 	db 0,0,10,6    ; text box coordinates
@@ -253,9 +253,9 @@ SafariZoneBattleMenuText:
 	next "THROW ROCK  RUN@"
 
 SwitchStatsCancelText:
-	db   "SWITCH"
-	next "STATS"
-	next "CANCEL@"
+	db   "החלף"
+	next "נתונים"
+	next "ביטול@"
 
 JapaneseAhText:
 	db "アッ!@"
@@ -581,9 +581,9 @@ DisplayFieldMoveMonMenu:
 	ld c, 7
 	call TextBoxBorder
 	call UpdateSprites
-	ld a, 12
+	ld a, 18
 	ld [hFieldMoveMonMenuTopMenuItemX], a
-	coord hl, 13, 12
+	coord hl, 17, 12
 	ld de, PokemonMenuEntries
 	jp PlaceString
 
@@ -624,8 +624,7 @@ DisplayFieldMoveMonMenu:
 
 ; Calculate the position of the first field move name to print.
 	coord hl, 0, 12
-	ld a, [wFieldMovesLeftmostXCoord]
-	inc a
+	ld a, 17
 	ld e, a
 	ld d, 0
 	add hl, de
@@ -671,10 +670,8 @@ DisplayFieldMoveMonMenu:
 .donePrintingNames
 	pop hl
 	ld a, [wFieldMovesLeftmostXCoord]
-	ld [hFieldMoveMonMenuTopMenuItemX], a
 	coord hl, 0, 12
-	ld a, [wFieldMovesLeftmostXCoord]
-	inc a
+	ld a, 17
 	ld e, a
 	ld d, 0
 	add hl, de
@@ -693,9 +690,9 @@ FieldMoveNames:
 	db "SOFTBOILED@"
 
 PokemonMenuEntries:
-	db   "STATS"
-	next "SWITCH"
-	next "CANCEL@"
+	db   "נתונים"
+	next "החלף"
+	next "ביטול@"
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]
