@@ -540,4 +540,4 @@ NameTextString:
 	db "@"
 
 NicknameTextString:
-	db "@"
+	db "כינוי?@"
