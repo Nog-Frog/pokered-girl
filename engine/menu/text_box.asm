@@ -198,12 +198,12 @@ TextBoxTextAndCoordTable:
 	db BUY_SELL_QUIT_MENU_TEMPLATE
 	db 0,0,10,6    ; text box coordinates
 	dw BuySellQuitText
-	db 2,1   ; text coordinates
+	db 8,1   ; text coordinates
 
 	db MONEY_BOX_TEMPLATE
 	db 11,0,19,2   ; text box coordinates
 	dw MoneyText
-	db 13,0  ; text coordinates
+	db 16,0  ; text coordinates
 
 	db JP_AH_MENU_TEMPLATE
 	db 7,6,11,10   ; text box coordinates
@@ -235,7 +235,7 @@ JapaneseSpeedOptionsText:
 	next "おそい@"
 
 MoneyText:
-	db "MONEY@"
+	db "כסף@"
 
 JapaneseMochimonoText:
 	db "もちもの@"
@@ -279,7 +279,7 @@ DisplayMoneyBox:
 	coord hl, 12, 1
 	ld de, wPlayerMoney
 	ld c, $a3
-	call PrintBCDNumber
+	call PrintBCDNumberInternal
 	ld hl, wd730
 	res 6, [hl]
 	ret
@@ -302,7 +302,7 @@ DoBuySellQuitMenu:
 	ld [wMaxMenuItem], a
 	ld a, $1
 	ld [wTopMenuItemY], a
-	ld a, $1
+	ld a, $9
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wCurrentMenuItem], a

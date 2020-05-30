@@ -1848,10 +1848,11 @@ PrintListMenuEntries::
 	ld [wcf91], a
 	call GetItemPrice ; get price
 	pop hl
-	ld bc, SCREEN_WIDTH + 5 ; 1 row down and 5 columns right
+	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 5 columns right
 	add hl, bc
 	ld c, $a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
-	call PrintBCDNumber
+	set 6, c
+	call PrintBCDNumberInternal
 .skipPrintingItemPrice
 	ld a, [wListMenuID]
 	and a
