@@ -1969,10 +1969,10 @@ DrawEnemyHUDAndHPBar:
 	call ClearScreenArea
 	callab PlaceEnemyHUDTiles
 	ld de, wEnemyMonNick
-	coord hl, 8, 0
+	coord hl, 9, 0
 	call CenterMonName
 	call PlaceString
-	coord hl, 5, 1
+	coord hl, 6, 1
 	push hl
 	dec hl
 	ld de, wEnemyMonStatus
