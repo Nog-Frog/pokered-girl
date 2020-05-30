@@ -33,7 +33,7 @@ DisplayDiploma:
 	pop bc
 	dec c
 	jr nz, .asm_56715
-	coord hl, 10, 4
+	coord hl, 9, 6
 	ld de, wPlayerName
 	call PlaceString
 	callba DrawPlayerCharacter
@@ -44,7 +44,7 @@ DisplayDiploma:
 	lb bc, $80, $28
 .adjustPlayerGfxLoop
 	ld a, [hl] ; X
-	add 33
+	sub 76
 	ld [hli], a
 	inc hl
 	ld a, b
@@ -83,31 +83,31 @@ UnusedPlayerNameLengthFunc:
 
 DiplomaTextPointersAndCoords:
 	dw DiplomaText
-	dwCoord 5, 2
+	dwCoord 12, 2
 	dw DiplomaPlayer
-	dwCoord 3, 4
+	dwCoord 13, 4
 	dw DiplomaEmptyText
-	dwCoord 15, 4
+	dwCoord 5, 4
 	dw DiplomaCongrats
-	dwCoord 2, 6
+	dwCoord 17, 6
 	dw DiplomaGameFreak
-	dwCoord 9, 16
+	dwCoord 15, 14
 
 DiplomaText:
-	db $70,"Diploma",$70,"@"
+	db $70,"תעודה",$70,"@"
 
 DiplomaPlayer:
-	db "Player@"
+	db "ברכותינו!"
 
 DiplomaEmptyText:
 	db "@"
 
 DiplomaCongrats:
-	db   "Congrats! This"
-	next "diploma certifies"
-	next "that you have"
-	next "completed your"
-	next "#DEX.@"
+	db   "  לשחקן"
+	next "וזאת לתעודה כי"
+	next "השלמת את ה#ידע"
+	next "שלך.@"
 
 DiplomaGameFreak:
-	db "GAME FREAK@"
+	db "על החתום,"
+	next "    גיים פריק.@"
