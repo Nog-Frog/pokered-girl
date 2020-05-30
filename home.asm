@@ -253,9 +253,8 @@ DrawHPBar::
 	; Right
 	ld a, [wHPBarType]
 	dec a
-	ld a, $6d ; status screen and battle
+	ld a, $6c ; status screen and battle
 	jr z, .ok
-	dec a ; pokemon menu
 .ok
 	ld [hl], a
 
@@ -3991,6 +3990,7 @@ HandleMenuInput_::
 	and a ; was a key pressed?
 	jr nz, .keyPressed
 	push hl
+	; TODO: Figure out how to align this for Hebrew
 	coord hl, 18, 11 ; coordinates of blinking down arrow in some menus
 	call HandleDownArrowBlinkTiming ; blink down arrow (if any)
 	pop hl
