@@ -14,7 +14,7 @@ AskName:
 	ld hl, DoYouWantToNicknameText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
@@ -381,22 +381,26 @@ PrintNicknameAndUnderscores:
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
-	coord hl, 9, 2
+	coord hl, 1, 2
 	lb bc, 1, 11
 	call ClearScreenArea
 
-	coord hl, 18, 2 ; Right screen edge
+	coord hl, 7, 2 ; End of allowed name length for player/rival
+	ld a, [wNamingScreenType]
+	cp NAME_MON_SCREEN
+	jr c, .playerOrRival
+	coord hl, 10, 2 ; End of allowed name length for pokemon
 
+.playerOrRival
 	ld de, wcf4b
 	call PlaceString
-	coord hl, 12, 3
+	coord hl, 1, 3
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr nc, .pokemon1
 	ld b, 7 ; player or rival max name length
 	jr .playerOrRival1
-.pokemon1
-	coord hl, 9, 3
+.pokemon1 
 	ld b, 10 ; pokemon max name length
 .playerOrRival1
 	ld a, $76 ; underscore tile id
@@ -427,13 +431,23 @@ PrintNicknameAndUnderscores:
 	ld a, 6 ; keep the last underscore raised
 .pokemon3
 .emptySpacesRemaining
-	; c = 9 - a
+	; c = max string length - a
 	ld c, a
+	ld a, 6
+	push af
+	ld a, [wNamingScreenType]
+	cp NAME_MON_SCREEN
+	jr c, .playerOrRival3
+	pop af
 	ld a, 9
+	push af
+.playerOrRival3
+	; ld c, a
+	pop af
 	sub c
 	ld c, a
 	ld b, $0
-	coord hl, 9, 3
+	coord hl, 1, 3
 	add hl, bc
 	ld [hl], $77 ; raised underscore tile id
 	ret
@@ -497,7 +511,7 @@ PrintNamingText:
 	pop af
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 4, 1
+	coord hl, 15, 1
 	call PlaceString
 	; ld hl, $1
 	; add hl, bc
@@ -505,7 +519,7 @@ PrintNamingText:
 	; This used to be the "No" hiragana character (Meaning "'s"),
 	; but in the English version it's just one of the empty tiles.
 	; Since we use these empty tiles for Hebrew, it had to be removed.
-	coord hl, 1, 3
+	coord hl, 18, 3
 	ld de, NicknameTextString
 	jr .placeString
 .notNickname
