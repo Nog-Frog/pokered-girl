@@ -160,7 +160,7 @@ TextBoxCoordTable:
 ; 08: row of beginning of text
 ; table of window positions and corresponding text [key, start column, start row, end column, end row, text pointer [2 bytes], text column, text row]
 TextBoxTextAndCoordTable:
-	db JP_MOCHIMONO_MENU_TEMPLATE
+	db JP_MOCHIMONO_MENU_TEMPLATE ; UNUSED
 	db 0,0,14,17   ; text box coordinates
 	dw JapaneseMochimonoText
 	db 3,0   ; text coordinates
@@ -170,12 +170,12 @@ TextBoxTextAndCoordTable:
 	dw UseTossText
 	db 17,11 ; text coordinates
 
-	db JP_SAVE_MESSAGE_MENU_TEMPLATE
+	db JP_SAVE_MESSAGE_MENU_TEMPLATE ; UNUSED
 	db 0,0,7,5     ; text box coordinates
 	dw JapaneseSaveMessageText
 	db 2,2   ; text coordinates
 
-	db JP_SPEED_OPTIONS_MENU_TEMPLATE
+	db JP_SPEED_OPTIONS_MENU_TEMPLATE ; UNUSED
 	db 0,6,5,10    ; text box coordinates
 	dw JapaneseSpeedOptionsText
 	db 2,7   ; text coordinates
@@ -249,7 +249,7 @@ BattleMenuText:
 	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:
-	db   "כדור ×    פיתיון"
+	db   "כדור×     פיתיון"
 	next "אבן       ברח@"
 
 SwitchStatsCancelText:
@@ -349,6 +349,7 @@ DisplayTwoOptionMenu:
 	ld [wd730], a
 
 ; pointless because both values are overwritten before they are read
+; UNUSED
 	xor a
 	ld [wChosenMenuItem], a
 	ld [wMenuExitMethod], a
