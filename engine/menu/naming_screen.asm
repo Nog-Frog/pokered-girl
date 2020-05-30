@@ -103,7 +103,7 @@ DisplayNamingScreen:
 	ld a, 1
 	ld [wLastMenuItem], a
 	ld [wCurrentMenuItem], a
-	ld a, 16
+	ld a, 18
 	ld [wTopMenuItemX], a
 	ld a, $ff
 	ld [wMenuWatchedKeys], a
