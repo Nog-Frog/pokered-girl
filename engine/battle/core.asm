@@ -2426,6 +2426,7 @@ PartyMenuOrRockOrRun:
 	ld hl, wTopMenuItemY
 	ld a, $c
 	ld [hli], a ; wTopMenuItemY
+	add 6
 	ld [hli], a ; wTopMenuItemX
 	xor a
 	ld [hli], a ; wCurrentMenuItem
@@ -2968,14 +2969,14 @@ PrintMenuItem:
 	ld [hl], "/"
 	coord hl, 6, 9
 	ld [hl], "/"
-	coord hl, 2, 11
+	coord hl, 1, 11
 	ld de, wcd6d
 	lb bc, 1, 2
-	call PrintNumber
-	coord hl, 5, 11
+	call PrintNumberLTR
+	coord hl, 4, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
-	call PrintNumber
+	call PrintNumberLTR
 	call GetCurrentMove
 	coord hl, 8, 10
 	predef PrintMoveType
