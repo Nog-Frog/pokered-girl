@@ -347,7 +347,7 @@ StartMenu_Item:
 	ld hl, wTopMenuItemY
 	ld a, 11
 	ld [hli], a ; top menu item Y
-	ld a, 14
+	ld a, 18
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
