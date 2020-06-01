@@ -248,19 +248,18 @@ Credits:
 	ld hl, vChars2 + $600
 	lb bc, BANK(TheEndGfx), (TheEndGfxEnd - TheEndGfx) / $10
 	call CopyVideoData
-	coord hl, 4, 8
+	coord hl, 12, 7
 	ld de, TheEndTextString
 	call PlaceString
-	coord hl, 4, 9
+	coord hl, 12, 8
 	inc de
 	call PlaceString
 	jp FadeInCreditsText
 
 TheEndTextString:
-; "T H E  E N D"
-	db $60," ",$62," ",$64,"  ",$64," ",$66," ",$68,"@"
-	db $61," ",$63," ",$65,"  ",$65," ",$67," ",$69,"@"
-
+; "ה ס ו ף"
+	db $60," ",$62," ",$64," ",$66,"@"
+	db $61," ",$63," ",$65," ",$67,"@"
 INCLUDE "data/credits_order.asm"
 
 INCLUDE "text/credits_text.asm"
