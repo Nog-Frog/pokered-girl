@@ -87,7 +87,7 @@ RedrawPartyMenu_:
 	call PrintStatusCondition
 	pop hl
 	push hl
-	ld bc, 12; down 1 row and left 1 column - length of health bar and HP: symbol TODO
+	ld bc, 4; down 1 row and left 1 column - length of health bar and HP: symbol TODO
 	ld a, [hFlags_0xFFF6]
 	set 0, a
 	ld [hFlags_0xFFF6], a
