@@ -2612,9 +2612,9 @@ MoveSelectionMenu:
 	ld b, 4
 	ld c, 14
 	call TextBoxBorder
-	coord hl, 6, 8
+	coord hl, 17, 8
 	call .writemoves
-	ld b, $5
+	ld b, 18
 	ld a, $7
 .menuset
 	ld hl, wTopMenuItemY
