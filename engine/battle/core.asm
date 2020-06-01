@@ -1299,7 +1299,7 @@ SlideDownFaintedMonPic:
 	pop bc
 	dec b
 	jr nz, .rowLoop
-	ld bc, SCREEN_WIDTH
+	ld bc, SCREEN_WIDTH + 6
 	add hl, bc
 	ld de, SevenSpacesText
 	call PlaceString
