@@ -576,7 +576,7 @@ PrintLevel::
 	cp 100
 	jr c, PrintLevelCommon
 ; if level at least 100, write over the ":L" tile
-	dec hl
+	inc hl
 	inc c ; increment number of digits to 3
 	jr PrintLevelCommon
 
