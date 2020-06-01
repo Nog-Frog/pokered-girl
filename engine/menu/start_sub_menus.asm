@@ -50,7 +50,7 @@ StartMenu_Pokemon:
 	ld hl, wTopMenuItemY
 	ld a, c
 	ld [hli], a ; top menu item Y
-	ld a, [hFieldMoveMonMenuTopMenuItemX]
+	ld a, 18
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
