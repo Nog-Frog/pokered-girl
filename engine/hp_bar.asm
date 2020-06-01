@@ -230,7 +230,7 @@ UpdateHPBar_PrintHPNumber:
 	pop hl
 	ld de, wHPBarTempHP
 	lb bc, 2, 3
-	call PrintNumber
+	call PrintNumberLTR
 	call DelayFrame
 	pop hl
 .done

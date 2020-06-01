@@ -1174,7 +1174,7 @@ ItemUseMedicine:
 	xor a
 	ld [wBattleMonStatus], a ; remove the status ailment in the in-battle pokemon data
 .calculateHPBarCoords
-	ld hl, wOAMBuffer + $90
+	ld hl, wOAMBuffer + $8e
 	ld bc, 2 * SCREEN_WIDTH
 	inc d
 .calculateHPBarCoordsLoop
