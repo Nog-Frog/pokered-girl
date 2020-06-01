@@ -103,17 +103,17 @@ LeaguePCShowMon:
 	ld b, 2
 	ld c, $12
 	call TextBoxBorder
-	coord hl, 1, 15
+	coord hl, 18, 15
 	ld de, HallOfFameNoText
 	call PlaceString
-	coord hl, 16, 15
+	coord hl, 1, 15
 	ld de, wHoFTeamNo
 	lb bc, 1, 3
-	call PrintNumber
+	call PrintNumberLTR
 	jpba HoFDisplayMonInfo
 
 HallOfFameNoText:
-	db "HALL OF FAME No   @"
+	db "היכל התהילה מס   @"
 
 AccessedHoFPCText:
 	TX_FAR _AccessedHoFPCText
