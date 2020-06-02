@@ -1,98 +1,98 @@
 ItemNames:
-	db "MASTER BALL@"
-	db "ULTRA BALL@"
-	db "GREAT BALL@"
-	db "POKé BALL@"
-	db "TOWN MAP@"
-	db "BICYCLE@"
-	db "?????@"
-	db "SAFARI BALL@"
-	db "POKéDEX@"
-	db "MOON STONE@"
-	db "ANTIDOTE@"
-	db "BURN HEAL@"
-	db "ICE HEAL@"
-	db "AWAKENING@"
-	db "PARLYZ HEAL@"
-	db "FULL RESTORE@"
-	db "MAX POTION@"
-	db "HYPER POTION@"
-	db "SUPER POTION@"
-	db "POTION@"
-	db "BOULDERBADGE@"
-	db "CASCADEBADGE@"
-	db "THUNDERBADGE@"
-	db "RAINBOWBADGE@"
-	db "SOULBADGE@"
-	db "MARSHBADGE@"
-	db "VOLCANOBADGE@"
-	db "EARTHBADGE@"
-	db "ESCAPE ROPE@"
-	db "REPEL@"
-	db "OLD AMBER@"
-	db "FIRE STONE@"
-	db "THUNDERSTONE@"
-	db "WATER STONE@"
-	db "HP UP@"
-	db "PROTEIN@"
-	db "IRON@"
-	db "CARBOS@"
-	db "CALCIUM@"
-	db "RARE CANDY@"
-	db "DOME FOSSIL@"
-	db "HELIX FOSSIL@"
-	db "SECRET KEY@"
-	db "?????@"
-	db "BIKE VOUCHER@"
-	db "X ACCURACY@"
-	db "LEAF STONE@"
-	db "CARD KEY@"
-	db "NUGGET@"
-	db "PP UP@"
-	db "POKé DOLL@"
-	db "FULL HEAL@"
-	db "REVIVE@"
-	db "MAX REVIVE@"
-	db "GUARD SPEC.@"
-	db "SUPER REPEL@"
-	db "MAX REPEL@"
-	db "DIRE HIT@"
-	db "COIN@"
-	db "FRESH WATER@"
-	db "SODA POP@"
-	db "LEMONADE@"
-	db "S.S.TICKET@"
-	db "GOLD TEETH@"
-	db "X ATTACK@"
-	db "X DEFEND@"
-	db "X SPEED@"
-	db "X SPECIAL@"
-	db "COIN CASE@"
-	db "OAK's PARCEL@"
-	db "ITEMFINDER@"
-	db "SILPH SCOPE@"
-	db "POKé FLUTE@"
-	db "LIFT KEY@"
-	db "EXP.ALL@"
-	db "OLD ROD@"
-	db "GOOD ROD@"
-	db "SUPER ROD@"
-	db "PP UP@"
-	db "ETHER@"
-	db "MAX ETHER@"
-	db "ELIXER@"
-	db "MAX ELIXER@"
-	db "B2F@"
-	db "B1F@"
-	db "1F@"
-	db "2F@"
-	db "3F@"
-	db "4F@"
-	db "5F@"
-	db "6F@"
-	db "7F@"
-	db "8F@"
-	db "9F@"
-	db "10F@"
-	db "11F@"
-	db "B4F@"
+	db "כדור על@"         ; MASTER BALL
+	db "כדור יתר@"        ; ULTRA BALL
+	db "כדור רב@"         ; GREAT BALL
+	db "#כדור@"           ; POKé BALL
+	db "מפת העיר@"        ; TOWN MAP
+	db "אופניים@"         ; BICYCLE
+	db "?????@"           ; ?????
+	db "כדור ספארי@"      ; SAFARI BALL
+	db "#ידע@"            ; POKéDEX
+	db "אבן ירח@"         ; MOON STONE
+	db "נוגדן@"           ; ANTIDOTE
+	db "רפא כוויה@"       ; BURN HEAL
+	db "רפא קיפאון@"      ; ICE HEAL
+	db "שיקוי מעורר@"     ; AWAKENING
+	db "רפא שיתוק@"       ; PARLYZ HEAL
+	db "ריפוי מלא@"       ; FULL RESTORE
+	db "שיקוי על@"        ; MAX POTION
+	db "שיקוי יתר@"       ; HYPER POTION
+	db "שיקוי רב@"        ; SUPER POTION
+	db "שיקוי@"           ; POTION
+	db "תג הסלע@"         ; BOULDERBADGE
+	db "תג האדווה@"       ; CASCADEBADGE
+	db "תג הרעם@"         ; THUNDERBADGE
+	db "תג הקשת בענן@"    ; RAINBOWBADGE
+	db "תג הלב@"          ; SOULBADGE
+	db "תג הזהב@"         ; MARSHBADGE
+	db "תג הר הגעש@"      ; VOLCANOBADGE
+	db "תג האדמה@"        ; EARTHBADGE
+	db "חבל הימלטות@"     ; ESCAPE ROPE
+	db "דוחה@"            ; REPEL
+	db "שרף עתיק@"        ; OLD AMBER
+	db "אבן אש@"          ; FIRE STONE
+	db "אבן ברק@"         ; THUNDERSTONE
+	db "אבן מים@"         ; WATER STONE
+	db "עוד HP@"          ; HP UP
+	db "חלבון@"           ; PROTEIN
+	db "ברזל@"            ; IRON
+	db "פחמן@"            ; CARBOS
+	db "סידן@"           ; CALCIUM
+	db "ממתק נדיר@"       ; RARE CANDY
+	db "מאובן כיפתי@"     ; DOME FOSSIL
+	db "מאובן סלילי@"     ; HELIX FOSSIL
+	db "מפתח סודי@"       ; SECRET KEY
+	db "?????@"           ; ?????
+	db "שובר לאופניים@"   ; BIKE VOUCHER
+	db "X דיוק@"          ; X ACCURACY
+	db "אבן עלה@"         ; LEAF STONE
+	db "כרטיס מפתח@"      ; CARD KEY
+	db "גוש זהב@"         ; NUGGET
+	db "עוד PP@"          ; PP UP
+	db "בובת #ימון@"      ; POKé DOLL
+	db "ריפוי מלא@"       ; FULL HEAL
+	db "החייאה@"          ; REVIVE
+	db "החייאת על@"       ; MAX REVIVE
+	db "הגנה מיוחדת@"     ; GUARD SPEC.
+	db "דוחה על@"         ; SUPER REPEL
+	db "דוחה יתר@"        ; MAX REPEL
+	db "X הרסנות@"        ; DIRE HIT
+	db "מטבע@"            ; COIN
+	db "מים מינרלים@"     ; FRESH WATER
+	db "משקה קל@"         ; SODA POP
+	db "לימונדה	@"        ; LEMONADE
+	db "כרטיס לשיט@"      ; S.S.TICKET
+	db "שיני זהב@"        ; GOLD TEETH
+	db "X מתקפה@"         ; X ATTACK
+	db "X הגנה@"          ; X DEFEND
+	db "X מהירות@"        ; X SPEED
+	db "X מיוחדת@"        ; X SPECIAL
+	db "ארנק למטבעות@"    ; COIN CASE
+	db "חבילה של אלון@"   ; OAK's PARCEL
+	db "מאתר חפצים@"      ; ITEMFINDER
+	db "משקף סילף@"       ; SILPH SCOPE
+	db "חלילית קסם@"      ; POKé FLUTE
+	db "מפתח למעלית@"     ; LIFT KEY
+	db "שיתוף EXP@"       ; EXP.ALL
+	db "חכה בלויה@"       ; OLD ROD
+	db "חכה איכותית@"     ; GOOD ROD
+	db "חכת על@"          ; SUPER ROD
+	db "עוד PP@"          ; PP UP
+	db "אתר@"             ; ETHER
+	db "אתר על@"          ; MAX ETHER
+	db "סם חיים@"         ; ELIXER
+	db "סם חיים על@"      ; MAX ELIXER
+	db "B2F@"             ; B2F
+	db "B1F@"             ; B1F
+	db "1F@"              ; 1F
+	db "2F@"              ; 2F
+	db "3F@"              ; 3F
+	db "4F@"              ; 4F
+	db "5F@"              ; 5F
+	db "6F@"              ; 6F
+	db "7F@"              ; 7F
+	db "8F@"              ; 8F
+	db "9F@"              ; 9F
+	db "10F@"             ; 10F
+	db "11F@"             ; 11F
+	db "B4F@"             ; B4F

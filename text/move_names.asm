@@ -164,4 +164,3 @@ MoveNames::
 	db "חיתוך@"         ; SLASH
 	db "ממלא מקום@"     ; SUBSTITUTE
 	db "מאבק@"          ; STRUGGLE
-

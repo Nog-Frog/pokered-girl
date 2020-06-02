@@ -1,107 +1,107 @@
 MapNames:
 PalletTownName:
-	db "PALLET TOWN@"
+	db "העיירה פאלט@" ; PALLET TOWN
 ViridianCityName:
-	db "VIRIDIAN CITY@"
+	db "עיר הברקת@" ; VIRIDIAN CITY
 PewterCityName:
-	db "PEWTER CITY@"
+	db "עיר הכספית@" ; PEWTER CITY
 CeruleanCityName:
-	db "CERULEAN CITY@"
+	db "עיר הטורקיז@" ; CERULEAN CITY
 LavenderTownName:
-	db "LAVENDER TOWN@"
+	db "עיר הלבנדר@" ; LAVENDER TOWN
 VermilionCityName:
-	db "VERMILION CITY@"
+	db "עיר הארגמן@" ; VERMILION CITY
 CeladonCityName:
-	db "CELADON CITY@"
+	db "עיר האביב@" ; CELADON CITY
 FuchsiaCityName:
-	db "FUCHSIA CITY@"
+	db "עיר השושנה@" ; FUCHSIA CITY
 CinnabarIslandName:
-	db "CINNABAR ISLAND@"
+	db "עיר הצנובר@" ; CINNABAR ISLAND
 IndigoPlateauName:
-	db "INDIGO PLATEAU@"
+	db "עיר הניל@" ; INDIGO PLATEAU
 SaffronCityName:
-	db "SAFFRON CITY@"
+	db "עיר הזעפרן@" ; SAFFRON CITY
 Route1Name:
-	db "ROUTE 1@"
+	db "דרך 1@" ; ROUTE 1
 Route2Name:
-	db "ROUTE 2@"
+	db "דרך 2@" ; ROUTE 2
 Route3Name:
-	db "ROUTE 3@"
+	db "דרך 3@" ; ROUTE 3
 Route4Name:
-	db "ROUTE 4@"
+	db "דרך 4@" ; ROUTE 4
 Route5Name:
-	db "ROUTE 5@"
+	db "דרך 5@" ; ROUTE 5
 Route6Name:
-	db "ROUTE 6@"
+	db "דרך 6@" ; ROUTE 6
 Route7Name:
-	db "ROUTE 7@"
+	db "דרך 7@" ; ROUTE 7
 Route8Name:
-	db "ROUTE 8@"
+	db "דרך 8@" ; ROUTE 8
 Route9Name:
-	db "ROUTE 9@"
+	db "דרך 9@" ; ROUTE 9
 Route10Name:
-	db "ROUTE 10@"
+	db "דרך 10@" ; ROUTE 10
 Route11Name:
-	db "ROUTE 11@"
+	db "דרך 11@" ; ROUTE 11
 Route12Name:
-	db "ROUTE 12@"
+	db "דרך 12@" ; ROUTE 12
 Route13Name:
-	db "ROUTE 13@"
+	db "דרך 13@" ; ROUTE 13
 Route14Name:
-	db "ROUTE 14@"
+	db "דרך 14@" ; ROUTE 14
 Route15Name:
-	db "ROUTE 15@"
+	db "דרך 15@" ; ROUTE 15
 Route16Name:
-	db "ROUTE 16@"
+	db "דרך 16@" ; ROUTE 16
 Route17Name:
-	db "ROUTE 17@"
+	db "דרך 17@" ; ROUTE 17
 Route18Name:
-	db "ROUTE 18@"
+	db "דרך 18@" ; ROUTE 18
 Route19Name:
-	db "SEA ROUTE 19@"
+	db "דרך החוף 19@" ; SEA ROUTE 19
 Route20Name:
-	db "SEA ROUTE 20@"
+	db "דרך החוף 20@" ; SEA ROUTE 20
 Route21Name:
-	db "SEA ROUTE 21@"
+	db "דרך החוף 21@" ; SEA ROUTE 21
 Route22Name:
-	db "ROUTE 22@"
+	db "דרך 22@" ; ROUTE 22
 Route23Name:
-	db "ROUTE 23@"
+	db "דרך 23@" ; ROUTE 23
 Route24Name:
-	db "ROUTE 24@"
+	db "דרך 24@" ; ROUTE 24
 Route25Name:
-	db "ROUTE 25@"
+	db "דרך 25@" ; ROUTE 25
 ViridianForestName:
-	db "VIRIDIAN FOREST@"
+	db "יער ירוק-עד@" ; VIRIDIAN FOREST
 MountMoonName:
-	db "MT.MOON@"
+	db "הר הירח@" ; MT.MOON
 RockTunnelName:
-	db "ROCK TUNNEL@"
+	db "מנהרת הסלע@" ; ROCK TUNNEL
 SeaCottageName:
-	db "SEA COTTAGE@"
+	db "בקתת חוף@" ; SEA COTTAGE
 SSAnneName:
-	db "S.S.ANNE@"
+	db "הספינה אנה@" ; S.S.ANNE
 PokemonLeagueName:
-	db "#MON LEAGUE@"
+	db "ליגת ה#ימון@" ; #MON LEAGUE
 UndergroundPathName:
-	db "UNDERGROUND PATH@"
+	db "מעבר תת-קרקעי@" ; UNDERGROUND PATH
 PokemonTowerName:
-	db "#MON TOWER@"
+	db "מגדל הפוקימון@" ; #MON TOWER
 SeafoamIslandsName:
-	db "SEAFOAM ISLANDS@"
+	db "איי אדווה@" ; SEAFOAM ISLANDS
 VictoryRoadName:
-	db "VICTORY ROAD@"
+	db "דרך הניצחון@" ; VICTORY ROAD
 DiglettsCaveName:
-	db "DIGLETT's CAVE@"
+	db "המערה של חפיד@" ; DIGLETT's CAVE
 RocketHQName:
-	db "ROCKET HQ@"
+	db "מפקדת צוות רוקט@" ; ROCKET HQ
 SilphCoName:
-	db "SILPH CO.@"
+	db "סילף בע″מ@" ; SILPH CO.
 PokemonMansionName:
-	db $4a," MANSION@"
+	db "אחוזת ה@", $4a ;  MANSION
 SafariZoneName:
-	db "SAFARI ZONE@"
+	db "אזור הספארי@" ; SAFARI ZONE
 CeruleanCaveName:
-	db "CERULEAN CAVE@"
+	db "מערת עיר הטורקיז@" ; CERULEAN CAVE
 PowerPlantName:
-	db "POWER PLANT@"
+	db "תחנת הכוח@" ; POWER PLANT

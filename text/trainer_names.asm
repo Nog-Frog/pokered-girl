@@ -1,48 +1,48 @@
 TrainerNames:
-	db "YOUNGSTER@"
-	db "BUG CATCHER@"
-	db "LASS@"
-	db "SAILOR@"
-	db "JR.TRAINER♂@"
-	db "JR.TRAINER♀@"
-	db "POKéMANIAC@"
-	db "SUPER NERD@"
-	db "HIKER@"
-	db "BIKER@"
-	db "BURGLAR@"
-	db "ENGINEER@"
-	db "JUGGLER@"
-	db "FISHERMAN@"
-	db "SWIMMER@"
-	db "CUE BALL@"
-	db "GAMBLER@"
-	db "BEAUTY@"
-	db "PSYCHIC@"
-	db "ROCKER@"
-	db "JUGGLER@"
-	db "TAMER@"
-	db "BIRD KEEPER@"
-	db "BLACKBELT@"
-	db "RIVAL1@"
-	db "PROF.OAK@"
-	db "CHIEF@"
-	db "SCIENTIST@"
-	db "GIOVANNI@"
-	db "ROCKET@"
-	db "COOLTRAINER♂@"
-	db "COOLTRAINER♀@"
-	db "BRUNO@"
-	db "BROCK@"
-	db "MISTY@"
-	db "LT.SURGE@"
-	db "ERIKA@"
-	db "KOGA@"
-	db "BLAINE@"
-	db "SABRINA@"
-	db "GENTLEMAN@"
-	db "RIVAL2@"
-	db "RIVAL3@"
-	db "LORELEI@"
-	db "CHANNELER@"
-	db "AGATHA@"
-	db "LANCE@"
+	db "נער@" ; YOUNGSTER
+	db "אספן חרקים@" ; BUG CATCHER
+	db "נערה@" ; LASS
+	db "מלח@" ; SAILOR
+	db "מאמן צעיר@" ; JR.TRAINER♂
+	db "מאמנת צעירה@" ; JR.TRAINER♀
+	db "פוקיטורף@" ; POKéMANIAC
+	db "חנון על@" ; SUPER NERD
+	db "מטייל@" ; HIKER
+	db "אופנוען@" ; BIKER
+	db "פורץ@" ; BURGLAR
+	db "מהנדס@" ; ENGINEER
+	db "להטוטן@" ; JUGGLER
+	db "דייג@" ; FISHERMAN
+	db "שחיין@" ; SWIMMER
+	db "בריון@" ; CUE BALL
+	db "מהמר@" ; GAMBLER
+	db "יפהפיה@" ; BEAUTY
+	db "בעלת אוב@" ; PSYCHIC
+	db "רוקסטאר@" ; ROCKER
+	db "להטוטן@" ; JUGGLER
+	db "מאלף@" ; TAMER
+	db "צפר@" ; BIRD KEEPER
+	db "מאסטר@" ; BLACKBELT
+	db "יריב1@" ; RIVAL1
+	db "פרופ. אלון@" ; PROF.OAK
+	db "מפקד גליץ'@" ; CHIEF
+	db "מדען@" ; SCIENTIST
+	db "אלפרון@" ; GIOVANNI
+	db "רוקט@" ; ROCKET
+	db "מאמן על@" ; COOLTRAINER♂
+	db "מאמנת על@" ; COOLTRAINER♀
+	db "איתן@" ; BRUNO
+	db "צור@" ; BROCK
+	db "טל@" ; MISTY
+	db "סרן ברק@" ; LT.SURGE
+	db "איריס@" ; ERIKA
+	db "צפע@" ; KOGA
+	db "להב@" ; BLAINE
+	db "קסם@" ; SABRINA
+	db "אדון@" ; GENTLEMAN
+	db "יריב2@" ; RIVAL2
+	db "יריב3@" ; RIVAL3
+	db "אירנה@" ; LORELEI
+	db "מדיום@" ; CHANNELER
+	db "רוחמה@" ; AGATHA
+	db "גנץ@" ; LANCE
