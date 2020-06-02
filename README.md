@@ -4,6 +4,13 @@ This is a disassembly of Pokémon Red and Blue.
 It has been modified to allow Hebrew language compatibility,
 and is in the process of being translated into Hebrew.
 
+If you'd like to contribute Hebrew translations, please do contact
+me either or on Discord (I'm Nog#4061) for a short style guide (style guide
+link TBA).
+
+# Credit
+
+
 Almost all of the code for Hebrew compatibility is from
 [**LIJI32**](https://github.com/LIJI32)'s old modification on top
 of pokered, called [pokeadom](https://github.com/LIJI32/pokeadom).
@@ -11,10 +18,8 @@ of pokered, called [pokeadom](https://github.com/LIJI32/pokeadom).
 Thanks so much to Eyal Seelig (link TBA) for porting LIJI32's
 6-year-old for the still-currently-updating pokered.
 
-If you'd like to contribute Hebrew translations, please do contact
-me either or on Discord (I'm Nog#4061) for a short style guide (style guide
-link TBA).
-
+Hebrew translations of Pokemon names are from the wonderful כיסלצות project by Michael Elboim.\
+Find him on Facebook at https://www.facebook.com/Elboim.
 
 # Pokémon Red and Blue
 
