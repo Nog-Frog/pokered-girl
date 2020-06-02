@@ -447,7 +447,7 @@ TextCommand01::
 	push hl
 	ld h, b
 	ld l, c
-	call PrintReversed
+	call PlaceString
 	pop hl
 	jr NextTextCommand
 
