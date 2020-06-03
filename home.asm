@@ -1567,7 +1567,7 @@ DisplayListMenuIDLoop::
 	cp ITEMLISTMENU
 	jr nz, .skipGettingQuantity
 ; if it's an item menu
-	dec hl
+	inc hl
 	ld a, [hl] ; a = item quantity
 	ld [wMaxItemQuantity], a
 .skipGettingQuantity
@@ -1638,11 +1638,11 @@ DisplayChooseQuantityMenu::
 	ld c, 11 ; width
 .drawTextBox
 	call TextBoxBorder
-	coord hl, 16, 10
+	coord hl, 18, 10
 	ld a, [wListMenuID]
 	cp PRICEDITEMLISTMENU
 	jr nz, .printInitialQuantity
-	coord hl, 8, 10
+	coord hl, 18, 10
 .printInitialQuantity
 	ld de, InitialQuantityText
 	call PlaceString
@@ -1682,7 +1682,7 @@ DisplayChooseQuantityMenu::
 	ld a, [wMaxItemQuantity]
 	ld [hl], a
 .handleNewQuantity
-	coord hl, 17, 10
+	coord hl, 18, 10
 	ld a, [wListMenuID]
 	cp PRICEDITEMLISTMENU
 	jr nz, .printQuantity
@@ -1721,16 +1721,17 @@ DisplayChooseQuantityMenu::
 	ld a, [hDivideBCDQuotient + 2]
 	ld [hMoney + 2], a
 .skipHalvingPrice
-	coord hl, 12, 10
+	coord hl, 15, 10
 	ld de, SpacesBetweenQuantityAndPriceText
 	call PlaceString
 	ld de, hMoney ; total price
-	ld c, $a3
-	call PrintBCDNumber
-	coord hl, 9, 10
+	ld c, $e3
+	coord hl, 8, 10
+	call PrintBCDNumberInternal ; TODO
+	coord hl, 18, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
-	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2 ; 1 byte, 2 digits
+	lb bc, LEADING_ZEROES | 1, 2 ; 1 byte, 2 digits
 	call PrintNumber
 	jp .waitForKeyPressLoop
 .buttonAPressed ; the player chose to make the transaction
@@ -1744,7 +1745,7 @@ DisplayChooseQuantityMenu::
 	ret
 
 InitialQuantityText::
-	db "×01@"
+	db "10x@"
 
 SpacesBetweenQuantityAndPriceText::
 	db "      @"
@@ -1850,8 +1851,7 @@ PrintListMenuEntries::
 	pop hl
 	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 5 columns right
 	add hl, bc
-	ld c, $a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
-	set 6, c
+	ld c, $e3 ; no leading zeroes, left-aligned, print currency symbol, 3 bytes
 	call PrintBCDNumberInternal
 .skipPrintingItemPrice
 	ld a, [wListMenuID]
