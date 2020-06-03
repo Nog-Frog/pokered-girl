@@ -1639,10 +1639,6 @@ DisplayChooseQuantityMenu::
 .drawTextBox
 	call TextBoxBorder
 	coord hl, 18, 10
-	ld a, [wListMenuID]
-	cp PRICEDITEMLISTMENU
-	jr nz, .printInitialQuantity
-	coord hl, 18, 10
 .printInitialQuantity
 	ld de, InitialQuantityText
 	call PlaceString
@@ -1682,7 +1678,7 @@ DisplayChooseQuantityMenu::
 	ld a, [wMaxItemQuantity]
 	ld [hl], a
 .handleNewQuantity
-	coord hl, 18, 10
+	coord hl, 17, 10
 	ld a, [wListMenuID]
 	cp PRICEDITEMLISTMENU
 	jr nz, .printQuantity
@@ -1728,11 +1724,11 @@ DisplayChooseQuantityMenu::
 	ld c, $e3
 	coord hl, 8, 10
 	call PrintBCDNumberInternal ; TODO
-	coord hl, 18, 10
+	coord hl, 17, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
 	lb bc, LEADING_ZEROES | 1, 2 ; 1 byte, 2 digits
-	call PrintNumber
+	call PrintNumberLTR
 	jp .waitForKeyPressLoop
 .buttonAPressed ; the player chose to make the transaction
 	xor a
@@ -1745,7 +1741,7 @@ DisplayChooseQuantityMenu::
 	ret
 
 InitialQuantityText::
-	db "10x@"
+	db "10×@"
 
 SpacesBetweenQuantityAndPriceText::
 	db "      @"
@@ -1907,10 +1903,10 @@ PrintListMenuEntries::
 	and a ; is the item unsellable?
 	jr nz, .skipPrintingItemQuantity ; if so, don't print the quantity
 	push hl
-	ld bc, SCREEN_WIDTH - 9 ; 1 row down and 8 columns right
+	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 8 columns right
 	add hl, bc
 	ld a, "×"
-	ld [hld], a
+	ld [hli], a
 	ld a, [wd11e]
 	push af
 	ld a, [de]
@@ -1918,8 +1914,9 @@ PrintListMenuEntries::
 	push de
 	ld de, wd11e
 	ld [de], a
-	lb bc, LEFT_ALIGN | 1, 1, 2
-	call PrintNumber
+	lb bc, 1, 2
+	set 6, b
+	call PrintNumberLTR
 	pop de
 	pop af
 	ld [wd11e], a
@@ -4279,7 +4276,7 @@ PrintNumber::
 	; Print to temp buffer
 	call PrintNumberLTR
 	jp AfterPrintBCDNumberInternal
-PrintNumberLTR:: ; 3c5f (0:3c5f)
+PrintNumberLTR::
 	push bc
 	xor a
 	ld [H_PASTLEADINGZEROES], a

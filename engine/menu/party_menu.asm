@@ -87,7 +87,7 @@ RedrawPartyMenu_:
 	call PrintStatusCondition
 	pop hl
 	push hl
-	ld bc, 4; down 1 row and left 1 column - length of health bar and HP: symbol TODO
+	ld bc, 4
 	ld a, [hFlags_0xFFF6]
 	set 0, a
 	ld [hFlags_0xFFF6], a
@@ -139,7 +139,7 @@ RedrawPartyMenu_:
 	add a
 	rl b
 	ld c, a
-	add hl, bc ; TODO
+	add hl, bc
 	ld de, wEvosMoves
 	ld a, BANK(EvosMovesPointerTable)
 	ld bc, 2
@@ -176,17 +176,17 @@ RedrawPartyMenu_:
 ; if it does match
 	ld de, .ableToEvolveText
 .placeEvolutionStoneString
-	ld bc, 20 + 9 ; down 1 row and right 9 columns
+	ld bc, 11
 	pop hl
 	push hl
-	add hl, bc ; TODO
+	add hl, bc
 	call PlaceString
 	pop hl
 	jr .printLevel
 .ableToEvolveText
-	db "ABLE@"
+	db "יכול@"
 .notAbleToEvolveText
-	db "NOT ABLE@"
+	db "לא יכול@"
 .afterDrawingMonEntries
 	ld b, SET_PAL_PARTY_MENU
 	call RunPaletteCommand
