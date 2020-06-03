@@ -2222,7 +2222,7 @@ ItemUseTMHM:
 	ld hl, TeachMachineMoveText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -2608,7 +2608,7 @@ TossItem_:
 	ld hl, IsItOKToTossItemText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu

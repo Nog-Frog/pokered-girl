@@ -109,13 +109,13 @@ RedrawPartyMenu_:
 	jr nz, .placeMoveLearnabilityString
 	ld de, .notAbleToLearnMoveText
 .placeMoveLearnabilityString
-	ld bc, 20 + 9 ; down 1 row and right 9 columns TODO
+	ld bc, 11
 	push hl
 	add hl, bc
 	call PlaceString
 	pop hl
 .printLevel
-	ld bc, -10 ; move 10 columns to the right TODO
+	ld bc, -10 ; move 10 columns to the right
 	add hl, bc
 	call PrintLevel
 	pop hl
@@ -127,9 +127,9 @@ RedrawPartyMenu_:
 	inc c
 	jp .loop
 .ableToLearnMoveText
-	db "ABLE@"
+	db "יכול@"
 .notAbleToLearnMoveText
-	db "NOT ABLE@"
+	db "לא יכול@"
 .evolutionStoneMenu
 	push hl
 	ld hl, EvosMovesPointerTable

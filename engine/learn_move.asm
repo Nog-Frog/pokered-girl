@@ -77,7 +77,7 @@ AbandonLearning:
 	ld hl, AbandonLearningText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -100,7 +100,7 @@ TryingToLearn:
 	ld hl, TryingToLearnText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID ; yes/no menu
@@ -124,7 +124,7 @@ TryingToLearn:
 	ld b, 4
 	ld c, 14
 	call TextBoxBorder
-	coord hl, 6, 8
+	coord hl, 17, 8
 	ld de, wMovesString
 	ld a, [hFlags_0xFFF6]
 	set 2, a
@@ -136,7 +136,7 @@ TryingToLearn:
 	ld hl, wTopMenuItemY
 	ld a, 8
 	ld [hli], a ; wTopMenuItemY
-	ld a, 5
+	ld a, 18
 	ld [hli], a ; wTopMenuItemX
 	xor a
 	ld [hli], a ; wCurrentMenuItem
