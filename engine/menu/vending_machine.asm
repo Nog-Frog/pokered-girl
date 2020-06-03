@@ -13,7 +13,7 @@ VendingMachineMenu:
 	ld [wMaxMenuItem], a
 	ld a, 5
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 12
 	ld [wTopMenuItemX], a
 	ld hl, wd730
 	set 6, [hl]
@@ -22,10 +22,10 @@ VendingMachineMenu:
 	ld c, 12
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 2, 5
+	coord hl, 11, 5
 	ld de, DrinkText
 	call PlaceString
-	coord hl, 9, 6
+	coord hl, 5, 6
 	ld de, DrinkPriceText
 	call PlaceString
 	ld hl, wd730
@@ -85,15 +85,15 @@ VendingMachineText1:
 	db "@"
 
 DrinkText:
-	db   "FRESH WATER"
-	next "SODA POP"
-	next "LEMONADE"
+	db   "מים מינרלים"
+	next "משקה קל"
+	next "לימונדה"
 	next "CANCEL@"
 
 DrinkPriceText:
-	db   "¥200"
-	next "¥300"
-	next "¥350"
+	db   "002¥"
+	next "003¥"
+	next "053¥"
 	next "@"
 
 VendingMachineText4:
