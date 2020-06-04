@@ -5,12 +5,14 @@ _Route3Text1::
 
 	para "המנהרה הזאת"
 	line "מעיר הטורקיז"
-	cont "ממש מוציאה ממך את המיץ!"
+	cont "ממש מוציאה ממך את"
+	cont "המיץ!"
 	done
 
 _Route3BattleText1::
-	text "היי! אני פגשתי אותך"
-	line "ביער ירוק-העד!"
+	text "היי! פגשתי אותך"
+	line "כבר ביער ירוק-"
+	cont "העד!"
 	done
 
 _Route3EndBattleText1::
@@ -26,14 +28,15 @@ _Route3AfterBattleText1::
 	done
 
 _Route3BattleText2::
-	text "היי! אני אוהב מכנסיים קצרים"
-	line "הם נוחים וגם"
-	cont "קלים ללבישה!"
+	text "היי! אני אוהב"
+	line "מכנסיים קצרים!"
+	cont "הם נוחים וקלים"
+	cont "ללבישה!"
 	done
 
 _Route3EndBattleText2::
 	text "אני לא"
-	line "מאמין לזה!"
+	line "מאמין!"
 	prompt
 
 _Route3AfterBattleText2::
@@ -61,7 +64,7 @@ _Route3AfterBattleText3::
 	done
 
 _Route3BattleText4::
-	text "אתה מאמן פוקימונים?"
+	text "אתה מאמן #ימון?"
 	line "בוא נלחם!"
 	done
 
@@ -72,9 +75,9 @@ _Route3EndBattleText4::
 	prompt
 
 _Route3AfterBattleText4::
-	text "אם קופסת #ימונים"
-	line "במחשב מלאה עד אפס מקום,"
-	cont "פשוט תחליף"
+	text "אם תא #ימונים"
+	line "במחשב מלא עד אפס"
+	cont "מקום, פשוט תחליף"
 	cont "לקופסה אחרת!"
 	done
 
@@ -89,8 +92,8 @@ _Route3EndBattleText5::
 
 _Route3AfterBattleText5::
 	text "כדי להמנע מקרבות,"
-	line "אל תיתן"
-	cont "לאנשים לראות אותך!"
+	line "אל תיתן לאנשים"
+	cont "לראות אותך!"
 	done
 
 _Route3BattleText6::
@@ -100,7 +103,8 @@ _Route3BattleText6::
 
 _Route3EndBattleText6::
 	text "הפסדתי!"
-	line "אני לא מאמינה שהפסדתי!"
+	line "אני לא מאמינה"
+	cont "שהפסדתי!"
 	prompt
 
 _Route3AfterBattleText6::

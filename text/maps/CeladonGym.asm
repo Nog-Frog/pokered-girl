@@ -20,7 +20,8 @@ _CeladonGymText_48a5e::
 
 	para "אה, אני מצטערת,"
 	line "לא היה לי מושג"
-	cont "שרצית לאתגר אותי."
+	cont "שרצית לאתגר"
+	cont "אותי."
 
 	para "בסדר גמור, אך"
 	line "אני לא אפסיד."
@@ -28,7 +29,8 @@ _CeladonGymText_48a5e::
 
 _CeladonGymText_48a63::
 	text "הו!"
-	line "אני מודה בתבוסתי."
+	line "אני מודה"
+	cont "בתבוסתי."
 
 	para "אתה חזק להפליא."
 
@@ -58,7 +60,7 @@ _CeladonGymText9::
 	cont "בעוצמה בזמן קרב"
 	cont "וגם מחוץ לקרב."
 
-	para "בבקשה, קח איתך גם"
+	para "בבקשה, קח גם"
 	line "את זה."
 	done
 
@@ -74,10 +76,10 @@ _TM21ExplanationText::
 	line "יניקת על."
 
 	para "ה#ימון יונק HP"
-	line "מה#ימון היריב, כך"
-	cont "שחצי מהנזק שנגרם"
-	cont "ליריב מרפא את"
-	cont "ה#ימון שלך!"
+	line "מה#ימון היריב,"
+	cont "כך שחצי מהנזק"
+	cont "שנגרם ליריב מרפא"
+	cont "את ה#ימון שלך!"
 	done
 
 _TM21NoRoomText::
@@ -100,7 +102,7 @@ _CeladonGymEndBattleText2::
 _CeladonGymAfterBattleText2::
 	text "פיכס!"
 	line "אני מקווה שאיריס"
-	cont "תכסח לך את הצורה!"
+	cont "תכסח לך ת'צורה!"
 	done
 
 _CeladonGymBattleText3::
@@ -118,8 +120,8 @@ _CeladonGymAfterBattleText3::
 	line "חזקים נגד אלה"
 	cont "מסוג מים!"
 
-	para "יש להם יתרון גם על"
-	line "סוגי הסלע"
+	para "יש להם יתרון גם"
+	line "על סוגי הסלע"
 	cont "והאדמה!"
 	done
 
@@ -152,13 +154,12 @@ _CeladonGymEndBattleText5::
 	prompt
 
 _CeladonGymAfterBattleText5::
-	text "במכון שלנו, אנחנו"
+	text "במכון הזה, אנחנו"
 	line "משתמשות רק"
 	cont "ב#יימוני דשא!"
 
-	para "אנחנו משתמשות בהם"
-	line "גם כדי לסדר זרי"
-	cont "פרחים!"
+	para "הם גם עוזרים לנו"
+	line "לסדר זרי פרחים!"
 	done
 
 _CeladonGymBattleText6::
@@ -190,9 +191,10 @@ _CeladonGymEndBattleText7::
 	prompt
 
 _CeladonGymAfterBattleText7::
-	text "יש לי בליינד דייט"
-	line "בקרוב. אני צריכה"
-	cont "ללמוד להיות יותר"
+	text "יש לי בליינד"
+	line "דייט בקרוב. אני"
+	cont "צריכה ללמוד"
+	cont "להיות יותר"
 	cont "מנומסת."
 	done
 

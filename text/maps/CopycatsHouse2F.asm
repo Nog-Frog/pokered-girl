@@ -9,7 +9,9 @@ _CopycatsHouse2FText_5ccd4::
 	line "את מוזרה!"
 
 	para "חקיינית: מה?"
-	line "להפסיק לחקות אותך?"
+	line "אתה רוצה שאני"
+	cont "אפסיק לחקות"
+	cont "אותך?"
 
 	para "אבל התחביב שלי"
 	line "הוא לחקות אנשים!"
@@ -48,8 +50,9 @@ _TM31ExplanationText2::
 	para "<PLAYER>: סליחה?"
 
 	para "<PLAYER>: זה באמת"
-	line "כל כך כיף לך לחקות"
-	cont "כל דבר שאני עושה?"
+	line "כל כך כיף לחקות"
+	cont "כל דבר שאני"
+	cont "עושה?"
 
 	para "חקיינית: לגמרי!"
 	line "זה הכי כיף שיש!"

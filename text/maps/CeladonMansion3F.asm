@@ -9,26 +9,26 @@ _GraphicArtistText::
 	done
 
 _WriterText::
-	text "אני כתבתי את הסיפור!"
-	line " נכון ERIKA כה נהדרת?" ;TODO
+	text "אני כתבתי את"
+	line "הסיפור! איריס"
+	cont "נהדרת, נכון?"
 
-	para "אני גם אוהב את MISTY" ;TODO
+	para "אני גם אוהב את טל"
 	line "מאוד!"
 
-	para "הו, וגם את SABRINA," ;TODO
-	line "אני מת עליה!"
+	para "אה, וגם קסם,"
+	line "אני מחבב אותה"
+	cont "מאוד!"
 	done
 
 _GameDesignerText::
-	text "Is that right?"
+	text "באמת?"
 
-	para "אניו יוצר"
-	line "המשחק!"
+	para "אני יוצר המשחק!"
 
-	para "למלא את"
-	line "ה#DEX שלך זה"
-	cont "קשה, אבל אל"
-	cont "תתייאש!"
+	para "השלמת ה#ידע"
+	line "היא משימה קשה,"
+	cont "אבל אל תתיאש!"
 
 	para "כשתסיים,"
 	line "תחזור לספר לי!"
@@ -44,7 +44,8 @@ _CompletedDexText::
 _CeladonMansion3Text5::
 	text "זו תוכנית המשחק!"
 	line "עדיף שלא לגעת בה"
-	cont "כדי לא לגרום לבאגים במשחק!"
+	cont "כדי לא לגרום"
+	cont "לתקלות במשחק!"
 	done
 
 _CeladonMansion3Text6::
@@ -54,12 +55,12 @@ _CeladonMansion3Text6::
 
 _CeladonMansion3Text7::
 	text "זה התסריט!"
-	line "אל תקרא ותהרוס לעצמך"
-	cont "את הסוף שלו!"
+	line "אל תקרא! זה"
+	cont "ספוילרים!"
 	done
 
 _CeladonMansion3Text8::
-	text "GAME FREAK"
+	text "גיים פריק"
 	line "חדר פיתוח"
 	done
 

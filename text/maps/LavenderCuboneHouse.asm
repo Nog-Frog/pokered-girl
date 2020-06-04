@@ -1,15 +1,16 @@
 _LavenderHouse2Text1::
-	text "CUBONE: Kyarugoo!@@" ; TODO
+	text "רשרש: קיארווו!@@"
 
 _LavenderHouse2Text_1d9dc::
-	text "אני מתעבת את כנופיית" ; TODO ROCKET
-	line "רוקט האכזרית!"
+	text "אני שונאת את"
+	line "כנופיית רוקט!"
 
-	para "CUBONE המסכן..." ; TODO
+	para "רשרש המסכן..."
 
 	para "אמא שלו נהרגה "
-	line "כשהיא ניסתה להימלט"
-	cont "מכנופיית רוקט!" ; TODO ROCKET
+	line "כשהיא ניסתה"
+	cont "להימלט מכנופיית"
+	cont "רוקט!"
 	done
 
 _LavenderHouse2Text_1d9e1::

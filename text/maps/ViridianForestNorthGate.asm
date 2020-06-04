@@ -5,7 +5,8 @@ _ViridianForestExitText1::
 
 	para "אתה צריך לחפש"
 	line "בכל מקום"
-	cont "בכדי למצוא סוגים שונים!"
+	cont "כדי למצוא סוגים"
+	cont "שונים."
 	done
 
 _ViridianForestExitText2::

@@ -34,20 +34,23 @@ _CeruleanGymText_5c7c8::
 
 	para "ויש אפילו עוד,"
 	line "עכשיו אתה יכול"
-	cont "להשתמש במהלך חיתוך"
-	cont "גם מחוץ לקרב!"
+	cont "להשתמש במהלך"
+	cont "חיתוך גם מחוץ"
+	cont "לקרב!"
 
 	para "אתה יכול לחתוך"
 	line "שיחים קטנים כדי"
-	cont "לגשת לשבילים חדשים!"
+	cont "לגשת לשבילים"
+	cont "חדשים!"
 
 	para "אתה יכול גם לקחת"
-	line "את הTM האהוב עלי!"
+	line "את הTM האהוב" ; TODO
+	cont "עליי!"
 	done
 
 _ReceivedTM11Text::
 	text "<PLAYER> קיבל"
-	line "TM11!@@"
+	line "TM11!@@" ; TODO
 
 _CeruleanGymText_5c7d3::
 	text "תפנה מקום בתיק"
@@ -61,7 +64,7 @@ _CeruleanGymText_5c7d8::
 	para "אוקיי!"
 
 	para "אתה יכול לקחת את"
-	line "תג הזהב כדי להוכיח"
+	line "תג הזהב שיוכיח"
 	cont "שניצחת אותי!@@"
 
 _CeruleanGymBattleText1::
@@ -107,13 +110,13 @@ _CeruleanGymText_5c82a::
 
 	para "שמע עצה!"
 
-	para "מנהיגת המכון, טל,"
+	para ",מנהיגת המכון טל"
 	line "היא מקצוענית"
 	cont "שמשתמשת רק"
 	cont "ב#ימוני מים!"
 
 	para "אתה יכול לשתות"
-	line "להם את כל המים עם"
+	line "לה את כל המים עם"
 	cont "#ימוני צמח!"
 
 	para "או שתהמם אותם עם"
@@ -122,7 +125,7 @@ _CeruleanGymText_5c82a::
 
 _CeruleanGymText_5c82f::
 	text "ניצחת את טל!"
-	line "בדיוק כמו שאמרתי!"
+	line "בול כמו שאמרתי!"
 
 	para "אחי, אתה ואני,"
 	line "אנחנו צוות די"

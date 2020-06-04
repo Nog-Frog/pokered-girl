@@ -1,15 +1,17 @@
 _BlaineBattleText::
 	text "אה!"
 
-	para "אני BLAINE! אני" ;TODO
+	para "אני להב! אני"
 	line "המנהיג של"
-	cont "CINNABAR GYM!" ;TODO
+	cont "מכון הצנובר!"
 
-	para "ה#ימונים הלוהטים שלי"
-	line "יבעירו כל אתגר שבפניהם!"
+	para "ה#ימונים"
+	line "הלוהטים שלי"
+	cont "יבעירו כל אתגר"
+	cont "שיעמוד בפניהם!"
 
-	para "חה! כדאי שיהיה לך"
-	line "BURN HEAL!" ;TODO
+	para "חה! אני מקווה"
+	line "שהבאת רפא כויה!"
 	done
 
 _BlaineEndBattleText::
@@ -17,10 +19,10 @@ _BlaineEndBattleText::
 	line "הפסדתי"
 
 	para "הרווחת ביושר את"
-	line "VOLCANOBADGE!@@" ;TODO
+	line "תג המגמה!@@"
 
 _BlaineFireBlastText::
-	text "FIRE BLAST הוא" ;TODO
+	text "להבה מתפרצת זו"
 	line "מתקפת האש"
 	cont "האולטימטיבית!"
 
@@ -31,7 +33,7 @@ _BlaineFireBlastText::
 _BlaineBadgeText::
 	text "חה!"
 
-	para "VOLCANOBADGE" ;TODO
+	para "תג המגמה"
 	line "מגביר את"
 	cont "היכולות המיוחדות"
 	cont "של ה#ימון שלך!"
@@ -50,14 +52,15 @@ _TM38ExplanationText::
 	text ""
 
 	para "TM38 מכיל" ;TODO
-	line "FIRE BLAST!" ;TODO
+	line "את המתקפה להבה"
+	cont "מתפרצת!"
 
-	para "למד #ימון מסוג אש"
+	para "למד #ימון אש"
 	line "את המתקפה הזו!"
 
-	para "CHARMELEON או" ;TODO
-	line "PONYTA ישתמשו" ;TODO
-	cont "בה בצורה מעולה!"
+	para "היא תתאים נהדר"
+	line "לחזיזיקית או"
+	cont "לסיחום!"
 	done
 
 _TM38NoRoomText::
@@ -66,27 +69,27 @@ _TM38NoRoomText::
 	done
 
 _CinnabarGymText_7595f::
-	text "אתה יודע כמה נשימת"
-	line "#ימון מסוג אש"
+	text "אתה יודע כמה"
+	line "#נשימת ימון אש"
 	cont "חמה?"
 	done
 
 _CinnabarGymText_75964::
 	text "יו!"
-	line "חמה, חמה, חמה!"
+	line "חם, חם, חם!"
 	prompt
 
 _CinnabarGymText_75969::
 	text "אש,"
 	line "או ליתר דיוק,"
-	cont "בעירה..."  ;TODO (אולי לא תרגום נכון)
+	cont "בעירה..."
 
 	para "בלה, בלה, בלה,"
 	line "בלה..."
 	done
 
 _CinnabarGymText_75994::
-	text "הייתי גנב אבל,"
+	text "הייתי גנב, אבל"
 	line "עברתי לדרך הישר"
 	cont "כמאמן!"
 	done
@@ -98,14 +101,15 @@ _CinnabarGymText_75999::
 
 _CinnabarGymText_7599e::
 	text "אני לא יכול"
-	line "שלא לגנוב #ימונים"
-	cont "של אנשים אחרים!"
+	line "להפסיק לגנוב"
+	cont "#ימונים של"
+	cont "אנשים אחרים!"
 	done
 
 _CinnabarGymText_759c9::
-	text "אתה לא יכול לנצח!"
-	line "אני למדתי על #ימונים"
-	cont "באופן אין סופי!"
+	text "אתה לא תנצח!"
+	line "אני למדתי #ימון"
+	cont "אינספור שעות!"
 	done
 
 _CinnabarGymText_759ce::
@@ -120,13 +124,13 @@ _CinnabarGymText_759d3::
 	done
 
 _CinnabarGymText_759fe::
-	text "אתה רק אוהב"
-	line "להשתמש ב#ימוני אש!"
+	text "אני פשוט נהנה"
+	line "להשתמש ב#ימוני"
+	cont "אש!"
 	done
 
 _CinnabarGymText_75a03::
-	text "חם מידי"
-	line "מכדי להתמודד עם זה!"
+	text "אתה לוהט מדי!"
 	prompt
 
 _CinnabarGymText_75a08::
@@ -136,7 +140,7 @@ _CinnabarGymText_75a08::
 	done
 
 _CinnabarGymText_75a33::
-	text "אני יודע למה BLAINE" ;TODO
+	text "אני יודע למה להב"
 	line "נהפך למאמן!"
 	done
 
@@ -145,36 +149,36 @@ _CinnabarGymText_75a38::
 	prompt
 
 _CinnabarGymText_75a3d::
-	text "BLAINE היה אבוד" ;TODO
-	line "בהרים כאשר"
-	cont "#ימון ציפור לוהטת"
-	cont "נגלה בפניו."
+	text "כשלהב היה אבוד"
+	line "בהרים, #ימון"
+	cont "ציפור אש נגלתה"
+	cont "בפניו."
 
-	para "האור שלו הנחה"
-	line "למצוא BLAINE את "
-	cont "את דרכו החדשה!"
+	para "האור שלה הראה"
+	line "ללהב את דרכו"
+	cont "החדשה!"
 	done
 
 _CinnabarGymText_75a68::
 	text "הייתי בהרבה"
-	line "GYMs, אבל זה" ;TODO
+	line "מכונים, אבל זה"
 	cont "המועדף עליי!"
 	done
 
 _CinnabarGymText_75a6d::
-	text "יו!"
-	line "חם מידי!"
+	text "אווץ'!"
+	line "עשית לי כויה!"
 	prompt
 
 _CinnabarGymText_75a72::
 	text "מעריצי #ימוני אש"
 	line "כמונו אוהבים את"
-	cont "PONYTA ו- NINETALES!" ;TODO
+	cont "סיחום ותשעלים!"
 	done
 
 _CinnabarGymText_75a9d::
 	text "אש לא אפקטיבית"
-	line "מול H2O!" ;TODO
+	line "מול H2O!"
 	done
 
 _CinnabarGymText_75aa2::
@@ -189,18 +193,18 @@ _CinnabarGymText_75aa7::
 	done
 
 _CinnabarGymText_75ac2::
-	text "יו! אלוף"
-	line "בהתהוות!"
+	text "יו! "
+	line "אלופצ'יק!"
 
-	para "BLAINE חמום המוח"
-	line "הוא מומחה ב#ימוני"
+	para "להב חמום המוח"
+	line "מומחה ב#ימוני"
 	cont "אש!"
 
 	para "תחסל אותו"
 	line "עם סוגי מים!"
 
-	para "וכדאי שיהיו איתך"
-	line "כמה BURN HEALs!" ;TODO
+	para "וכדאי שתיקח איתך"
+	line "כמה רפא כויה!"
 	done
 
 _CinnabarGymText_75ac7::

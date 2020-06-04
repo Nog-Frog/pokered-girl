@@ -13,16 +13,17 @@ _CeladonDinerText2::
 	done
 
 _CeladonDinerText3::
-	text "פססס! יש מרתף נסתר"
-	line "מתחת ל GAME CORNER." ;TODO
+	text "פססט! יש מרתף"
+	line "נסתר מתחת לGAME CORNER..." ; TODO
 	done
 
 _CeladonDinerText4::
 	text "לעיסה..."
 
-	para "האיש הזה שליד השולחן"
-	line "איבד את כל מה שהיה לו"
-	cont "במכונות המזל הללו."
+	para "האיש הזה שליד"
+	line "השולחן איבד את"
+	cont "כל מה שהיה לו"
+	cont "במכונות המזל."
 	done
 
 _CeladonDinerText_491a7::
@@ -31,16 +32,17 @@ _CeladonDinerText_491a7::
 	para "אני הובסתי"
 	line "לחלוטין!"
 
-	para "סיימתי עם ההימורים"
-	line "אני הולך מעתה"
-	cont "בדרך הישר!"
+	para "סיימתי עם"
+	line "ההימורים. מהיום"
+	cont "אני הולך בדרך"
+	cont "הישר!"
 
 	para "קח! אני לא"
-	line "אצטרך את זה יותר!"
+	line "צריך את זה יותר!"
 	prompt
 
 _ReceivedCoinCaseText::
-	text "<PLAYER> התקבל"
+	text "<PLAYER> קיבל"
 	line "a @"
 	TX_RAM wcf4b
 	text "!@@"
@@ -53,6 +55,6 @@ _CoinCaseNoRoomText::
 _CeladonDinerText_491b7::
 	text "תמיד חשבתי"
 	line "שאולי עוד אזכה"
-	cont "בכסף שלי בחזרה..."
+	cont "בכסף שלי חזרה..."
 	done
 

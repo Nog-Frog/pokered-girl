@@ -92,7 +92,8 @@ ExplainBikeVoucherText::
 	db $0
 
 	para "ניתן להחליף את"
-	line "הקופון בעד אופניים!"
+	line "הקופון בעד"
+	cont "אופניים!"
 
 	para "אל תדאג לגבי,"
 	line "הFEAROW שלי ייקח" ; TODO
@@ -102,14 +103,15 @@ ExplainBikeVoucherText::
 	para "אז אין לי צורך"
 	line "באופניים!"
 
-	para "אני מקווה שאתה אוהב"
-	line "לרכב!"
+	para "אני מקווה שאתה "
+	line "אוהב רכיבה!"
 	done
 
 FanClubNoStoryText::
 	text "הו, תחזור"
 	line "כשתרצה"
-	cont "לשמוע את הסיפור שלי!"
+	cont "לשמוע את הסיפור"
+	cont "שלי!"
 	done
 
 FanClubChairFinalText::

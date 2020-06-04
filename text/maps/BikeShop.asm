@@ -2,18 +2,21 @@ _BikeShopText_1d810::
 	text "שלום! ברוך הבא"
 	line "לחנות האופניים."
 
-	para "יש לנו זוג אופניים"
-	line "בדיוק בשבילך!"
+	para "יש לנו זוג"
+	line "אופניים בדיוק!"
+	cont "בשבילך!"
 	prompt
 
 _BikeShopText_1d815::
-	text "אלה אופניים שווים!"
-	line "אתה מעוניין בהם?"
+	text "אלה אופניים"
+	line "שווים! אתה רוצה"
+	cont "אותם?"
 	done
 
 _BikeShopCantAffordText::
 	text "אני מצטער, אבל"
-	line "אין לך מספיק כסף!"
+	line "אין לך מספיק!"
+	cont "כסף!"
 	prompt
 
 _BikeShopText_1d81f::

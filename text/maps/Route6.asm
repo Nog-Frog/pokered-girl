@@ -5,8 +5,8 @@ _Route6BattleText1::
 	done
 
 _Route6EndBattleText1::
-	text "אני"
-	line "פשוט לא יכול לנצח!"
+	text "אני פשוט לא"
+	line "מצליח לנצח!"
 	prompt
 
 _Route6AfterBattleText1::
@@ -16,8 +16,7 @@ _Route6AfterBattleText1::
 
 _Route6BattleText2::
 	text "תסלח לי!"
-	line "זו שיחה"
-	cont "פרטית למדי!"
+	line "זו שיחה פרטית!"
 	done
 
 _Route6EndBattleText2::
@@ -37,8 +36,9 @@ _Route6EndBattleText3::
 
 _Route6AfterBattleText3::
 	text "אני אוהב חרקים,"
-	line "אז אני מתכוון לחזור"
-	cont "ליער ירוק-עד."
+	line "אז אני מתכוון"
+	cont "לחזור ליער ירוק-"
+	cont "עד."
 	done
 
 _Route6BattleText4::
@@ -86,8 +86,8 @@ _Route6EndBattleText6::
 
 _Route6AfterBattleText6::
 	text "אוף. האם ה#ימונים"
-	line "שלי חלשים? או שאני"
-	cont "פשוט גרוע?"
+	line "שלי חלשים? או"
+	cont "שאני פשוט גרוע?"
 	done
 
 _Route6Text7::

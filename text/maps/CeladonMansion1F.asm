@@ -1,25 +1,25 @@
 _CeladonMansion1Text1::
-	text "MEOWTH: Meow!@@" ; TODO
+	text "מיצי: מיאו!@@"
 
 _CeladonMansion1Text2::
 	text "ה#ימונים"
-	line "האהובים שלי מארחים"
-	cont "לי חברה."
+	line "האהובים שלי"
+	cont "מארחים לי חברה."
 
-	para "MEOWTH אפילו מביא" ; TODO
+	para "מיצי אפילו מביא"
 	line "הביתה כסף!"
 	done
 
 _CeladonMansion1Text3::
-	text "CLEFAIRY: Pi" ; TODO
-	line "pippippi!@@"
+	text "חמשדון: פיפ"
+	line "פיפיפ פיפ!@@"
 
 _CeladonMansion1Text4::
-	text "NIDORAN: Kya"
-	line "kyaoo!@@"
+	text "עקצחלב: קיה"
+	line "קיה-הו!@@"
 
 _CeladonMansion1Text5::
-	text "CELADON MANSION"
-	line "Manager's Suite"
+	text "אחוזת האביב"
+	line "סוויטת המנהל
 	done
 

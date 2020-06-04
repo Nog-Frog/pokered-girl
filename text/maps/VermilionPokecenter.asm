@@ -1,14 +1,15 @@
 _VermilionPokecenterText2::
 _VermilionPokecenterText1::
-	text "אפילו כשהם"
-	line "באותה הרמה,"
-	cont "#ימונים יכולים להיות"
-	cont "בעלי יכולות שונות לגמרי"
+	text "אפילו כשהם באותה"
+	line "הרמה, #ימונים"
+	cont "עשוים להיות בעלי"
+	cont "יכולות שונות"
+	cont "לגמרי."
 
-	para "#ימון שאומן "
+	para "#ימון שאומן"
 	line "בידי מאמן יהיה"
 	cont "חזק יותר מאשר אחד"
-	cont "שיימצא בטבע."
+	cont "שגדל בטבע."
 	done
 
 _VermilionPokecenterText3::

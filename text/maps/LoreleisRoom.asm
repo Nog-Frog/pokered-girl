@@ -1,40 +1,41 @@
 _LoreleiBeforeBattleText::
-	text "ברוכים הבאים"
-	line " ה#ימונים LEAGUEל!" ;TODO
+	text "ברוך הבא לליגת"
+	line "ה#ימון!"
 
-	para "אני LORELEI " ;TODO
-	line "מה ELITE FOUR!" ;TODO
+	para "אני אירנה"
+	line "מהרביעיה העילית!"
 
-	para "אף אחד לא"
-	line "טוב יותר ממני כשמדובר"
-	cont "באימון #ימוני קרח!"
+	para "אין טוב ממנר"
+	line "כשזה נוגע לאימון"
+	cont "לאימון #ימוני"
+	cont "קרח!"
 
 	para "מתקפות הקפאה"
 	line "הן עוצמתיות!"
 
 	para "ה#ימונים שלך"
-	line "יהיו נתונים לחסדיי"
-	cont "כשהם יהיו"
-	cont "קפואים לצמיתות!" ;TODO (אולי לא מדויק)
+	line "יהיו נתונים"
+	cont "לחסדיי ברגע"
+	cont "שאקפיא אותם!"
 
-	para "חה חה!"
+	para "חה חה חה!"
 	line "אתה מוכן?"
 	done
 
 _LoreleiEndBattleText::
-	text "עכשיו"
-	line "תעז לנסות!" ;TODO (אולי לא מדויק)
+	text "חוצפה שכזו!"
 	prompt
 
 _LoreleiAfterBattleText::
-	text "אתה טוב יותר משחשבתי"
-	line "קדימה!"
+	text "אתה טוב משחשבתי!"
+	line "תתקדם לחדר הבא!"
 
-	para "קיבלת רק טעימה קטנה"
-	line "מעוצמת ליגת ה#ימונים!"
+	para "עוד לא ראית את כל"
+	line "מה שיש לליגת"
+	cont "ה#ימון להציע!"
 	done
 
 _LoreleiDontRunAwayText::
-	text "Someone's voice:"  ;TODO (זכור לי שזה משהו קבוע אבל לא זוכרת מה רושמים אז אשמח שתשנו לפי זה)
-	line "Don't run away!" ;TODO (זכור לי שזה משהו קבוע אבל לא זוכרת מה רושמים אז אשמח שתשנו לפי זה)
+	text "קול מוכר קורא:"
+	line "אל תיסוג!"
 	done

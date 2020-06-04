@@ -8,13 +8,14 @@ _Route20EndBattleText1::
 	prompt
 
 _Route20AfterBattleText1::
-	text "הלוואי שיכלתי"
-	line "לרכב על ה#ימונים שלי."
+	text "הלוואי שיכולתי"
+	line "לרכב על ה#ימון"
+	cont "שלי."
 	done
 
 _Route20BattleText2::
-	text "איי אדווה"
-	line "זה מקום נפלא לחופשה!"
+	text "איי אדווה זה"
+	line "מקום נפלא לחופשה!"
 	done
 
 _Route20EndBattleText2::
@@ -52,13 +53,13 @@ _Route20EndBattleText4::
 	prompt
 
 _Route20AfterBattleText4::
-	text "איי אדווה"
-	line "היו פעם 'אי אדווה'"
+	text "איי אדווה היו"
+	line "פעם רק אי אחד!"
 	done
 
 _Route20BattleText5::
-	text "שם לב"
-	line "למבנה הגוף המרשים שלי!"
+	text "קלוט ת'שרירים"
+	line "שלי!"
 	done
 
 _Route20EndBattleText5::
@@ -66,25 +67,27 @@ _Route20EndBattleText5::
 	prompt
 
 _Route20AfterBattleText5::
-	text "הייתי צריך"
-	line "לפתח שרירים ל#ימונים"
-	cont "שלי, לא לעצמי!"
+	text "הייתי צריך לאמן"
+	line "את ה#ימונים שלי"
+	cont "במקום את עצמי!"
 	done
 
 _Route20BattleText6::
 	text "למה אתה רוכב"
 	line "על #ימון?"
-	cont "אתה לא יודע לשחות?"
+	cont "אתה לא יודע"
+	cont "לשחות?"
 	done
 
 _Route20EndBattleText6::
 	text "אווץ'!"
-	line "טורפדו!!"
+	line "טרפדת אותי!"
 	prompt
 
 _Route20AfterBattleText6::
-	text "רכיבה על #ימונים בהחלט"
-	line "נראית כמו כיף גדול!"
+	text "רכיבה על #ימון"
+	line "נראית כמו כיף"
+	cont "גדול!"
 	done
 
 _Route20BattleText7::
@@ -93,34 +96,36 @@ _Route20BattleText7::
 	done
 
 _Route20EndBattleText7::
-	text "אוי!"
-	line "לא!"
+	text "אוי לא!"
 	prompt
 
 _Route20AfterBattleText7::
-	text "הציפורים שלי לא יכולות"
-	line "לשאת אותי בחזרה!"
+	text "הציפורים שלי לא"
+	line "יצליחו לשאת אותי"
+	cont "חזרה!"
 	done
 
 _Route20BattleText8::
-	text "בן הזוג שלי הביא לי"
-	line "פנינים גדולות ויפות!"
+	text "החבר שלי הביא לי"
+	line "פנינים גדולות"
+	cont "ויפות!"
 	done
 
 _Route20EndBattleText8::
-	text "שלא תעז"
-	line "לגעת בפנינים שלי!"
+	text "שלא תעז לגעת"
+	line "בפנינים שלי!"
 	prompt
 
 _Route20AfterBattleText8::
-	text "האם הפנינים שלי"
-	line "יהפכו לגדולות יותר"
-	cont "בתוך CLOYSTER?" ;TODO
+	text "אתה חושב שהפנינים"
+	line "שלי יגדלו בתוך"
+	cont "מבוצדף?"
 	done
 
 _Route20BattleText9::
 	text "שחיתי לכאן"
-	line "כל הדרך מאי הצנובר!"
+	line "כל הדרך מאי"
+	cont "הצנובר!"
 	done
 
 _Route20EndBattleText9::

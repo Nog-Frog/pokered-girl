@@ -5,7 +5,8 @@ _CinnabarPokecenterText1::
 
 	para "כאשר #ימון"
 	line "מתפתח, אתה יכול"
-	cont "לעצור זאת ולהשאיר"
+	cont "לעצור את"
+	cont "ההתפתחות ולהשאיר"
 	cont "אותו כמו שהוא."
 	done
 

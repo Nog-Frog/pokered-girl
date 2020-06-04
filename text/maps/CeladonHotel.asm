@@ -3,7 +3,8 @@ _CeladonHotelText1::
 	line "כאן זה מלון של"
 	cont "אנשים."
 
-	para "אנחנו בתפוסה מלאה."
+	para "אנחנו בתפוסה"
+	line "מלאה."
 	done
 
 _CeladonHotelText2::

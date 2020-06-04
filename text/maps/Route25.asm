@@ -130,12 +130,13 @@ _Route25EndBattleText8::
 _Route25AfterBattleText8::
 	text "לאספן יש"
 	line "כל מיני סוגים"
-	cont "של #ימונים נדירים!"
+	cont "של #ימונים"
+	cont "נדירים."
 	done
 
 _Route25BattleText9::
 	text "אתה הולך לראות"
-	line "את BILL?" ; TODO
+	line "את הדר?"
 	cont "קודם, בוא נלחם!"
 	done
 

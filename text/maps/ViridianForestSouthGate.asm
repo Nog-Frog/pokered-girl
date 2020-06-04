@@ -6,8 +6,8 @@ _ViridianForestEntranceText1::
 	done
 
 _ViridianForestEntranceText2::
-	text "RATTATA אולי" ; TODO
-	line "קטן, אבל הנשיכה שלו"
+	text "עכברסס אולי"
+	line "קטן, אבל הנשיכה"
 	cont "שלו כל כך כואבת!"
 	cont "חטפת אחת?"
 	done

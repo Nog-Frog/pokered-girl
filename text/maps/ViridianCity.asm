@@ -1,31 +1,32 @@
 _ViridianCityText1::
 	text "אלו פוכדורים"
-	line "שתלויים על חגורתך!"
-	cont "אם כך, יש לך #ימונים!"
+	line "שתלויים על"
+	cont "חגורתך! אם כן,"
+	cont "יש לך #ימונים."
 
 	para "זה נהדר שאתה"
-	line "יכול לסחוב ולהשתמש"
-	cont "ב#ימונים שלך"
-	cont "בכל זמן ומקום שתרצה!"
+	line "יכול לסחב אותם"
+	cont "איתך ולהשתמש בהם"
+	cont "בכל זמן ומקום!"
 	done
 
 _ViridianCityText_19122::
-	text "מכון ה#ימונים הזה"
+	text "מכון ה#ימון הזה"
 	line "תמיד סגור."
 
-	para "אני תוהה מי"
-	line "מנהיג המכון הזה?"
+	para "מעניין מי המנהיג"
+	line "במכון הזה?"
 	done
 
 _ViridianCityText_19127::
-	text "VIRIDIAN GYM's" ;TODO
-	line "LEADER חזר!"
+	text "המנהיג של מכון"
+	line "הארגמן חזר!"
 	done
 
 _ViridianCityText_1914d::
 	text "רוצה ללמוד"
 	line "על 2 סוגי"
-	cont "#ימוני הזחלים"
+	cont "#ימוני הזחלים?"
 	done
 
 _ViridianCityText_19152::
@@ -33,141 +34,141 @@ _ViridianCityText_19152::
 	done
 
 _ViridianCityText_19157::
-	text "לCATERPIE אין" ;TODO
-	line "רעל, אבל"
-	cont "לWEEDLE יש." ;TODO
+	text "לזחי אין עוקץ,"
+	line "אבל לתולחט יש."
 
-	para "היזהר ממתקפת ה"
-	line "POISON STING שלו!" ;TODO
+	para "כדי להיזהר ממתקפת"
+	line "עקיצת הרעל שלו!"
 	done
 
 _ViridianCityText_19175::
-	text "הו סבתא! אל"
-	line "תהיי כה רעה!"
-	cont "הוא אפילו לא שתה"
-	cont "את הקפה שלו עדיין."
+	text "נו באמת, סבא!"
+	line "אל תדבר ככה!"
+	cont "הוא עדיין לא שתה"
+	cont "את הקפה של הבוקר."
 	done
 
 _ViridianCityText_1917a::
 	text "כשאני הולך לקניות"
-	line " בPEWTER CITY, אני" ;TODO
+	line "בעיר הכספית, אני"
 	cont "חייב לעבור דרך"
-	cont "השביל המתפתל של"
-	cont "VIRIDIAN FOREST." ;TODO
+	cont "השביל המתפתל"
+	cont "ביער ירוק-עד." ; TODO
 	done
 
 _ViridianCityText_19191::
-	text "אתה לא יכול ללכת"
-	line "דרך שם!"
+	text "אתה לא יכול לעבור"
+	line "פה!"
 
-	para "זה נכס"
-	line "פרטי!"
+	para "זה שטח פרטי!"
 	done
 
 _ViridianCityText_191ca::
 	text "הא!"
-	line "כנראה שנרדמתי קצת בשמש."
+	line "כנראה שנרדמתי קצת"
+	cont "בשמש."
 
 	para "היה לי חלום"
-	line "על DROWZEE" ;TODO
-	cont "שאוכל את החלום שלי."
+	line "על ישנום שאוכל"
+	cont "את החלום שלי."
 	cont "מה זה?"
-	cont "מהיכן ה TM הזה" ;TODO
-	cont "הגיע פתאום?"
+	cont "מאיפה הגיע הTM" ; TODO
+	cont "הזה?"
 
 	para "זה מפחיד!"
 	line "הנה, אתה יכול"
-	cont "לקבל את ה TM הזה." ;TODO
+	cont "לקבל את ה TM הזה." ; TODO
 	prompt
 
 _ReceivedTM42Text::
 	text "<PLAYER> קיבל"
-	line "TM42!@@"
+	line "TM42!@@" ; TODO
 
 _TM42Explanation::
 	text "TM42 מכיל את מתקפת"
-	line "DREAM EATER..." ;TODO
+	line "זלילת חלומות..."
 	cont "...נחירה..."
 	done
 
 _TM42NoRoomText::
-	text "הגעת למכסה של החפצים"
-	line "שאתה יכול להחזיק בתיק."
+	text "הגעת למכסת החפצים"
+	line "שאפשר לסחוב בתיק."
 	done
 
 _ViridianCityText_1920a::
-	text "אע, סוף סוף שתיתי"
-	line "את הקפה שלי ועכשיו"
-	cont "אני מרגיש מצוין!"
+	text "הה, סוף סוף שתיתי"
+	line "את הקפה שלי, ואני"
+	cont "מרגיש מצוין!"
 
 	para "כמובן שאתה יכול"
 	line "לעבור כאן!"
 
-	para "האם אתה"
-	line "ממהר?"
+	para "אתה ממהר?"
 	done
 
 _ViridianCityText_1920f::
-	text "אני רואה שאתה משתמש ב"
-	line "שלך #DEX." ;TODO
+	text "אני רואה שאתה עושה"
+	line "שימוש ב#ידע שלך."
 
-	para "כאשר אתה תופס"
-	line "#ימון, ה#DEX"
-	cont "מתעדכן אוטומטית"
+	para "כשאתה תופס"
+	line "#ימון, ה#ידע"
+	cont ".מתעדכן אוטומטית"
 
 	para "מה? אתה לא יודע"
 	line "איך לתפוס"
 	cont "#ימון?"
 
-	para "אם כך,"
-	line "אני אראה לך כיצד."
+	para "אם כך, אני אראה"
+	line "לך איך."
 	done
 
 _ViridianCityText_19214::
 	text "זמן זה כסף..."
-	line "המשך בדרכך."
+	line "תמשיך ללכת."
 	done
 
 _ViridianCityText_19219::
-	text "תחילה, אתה צריך"
+	text "בהתחלה, אתה צריך"
 	line "להחליש את"
-	cont "ה#ימון הרצוי."
+	cont "ה#ימון שאתה."
+	cont "מנסה לתפוס."
 	done
 
 _ViridianCityText8::
-	text "VIRIDIAN CITY " ;TODO
-	line "גן העדן הירוק"
-	cont "והנצחי"
+	text "עיר הברקת"
+	line "גן העדן ירוק-"
+	cont "העד"
 	done
 
 _ViridianCityText9::
-	text "TRAINER TIPS" ;TODO
+	text "TRAINER TIPS" ; TODO
 
 	para "תפוס #ימונים"
-	line "והגדל את"
+	line "והרחב את"
 	cont "האוסף שלך!"
 
 	para "ככל שיהיו לך יותר,"
-	line "כך יהיה לך קל יותר"
+	line "כך יהיה לך קל"
 	cont "להילחם בקרבות!"
 	done
 
 _ViridianCityText10::
-	text "TRAINER TIPS" ;TODO
+	text "TRAINER TIPS" ; TODO
 
-	para "מתקפות הלחימה"
-	line "של ה#ימונים"
-	cont "מוגבלים"
-	cont "בPOWER POINTs, PP. שלהם" ;TODO
+	para "המהלכים של"
+	line "ה#ימונים מוגבלים"
+	cont "בנקודות השימוש"
+	cont "שלהם, או בקיצור"
+	cont "PP." ;TODO
 
-	para "בכדי לחדש את מלאי ה PP," ;TODO
+	para "כדי לשחזר את הPP," ; TODO
 	line "רפא את ה#ימון שלך"
-	cont "במרכז ה#ימונים!"
+	cont "במרכז ה#ימונים!" ; TODO
 	done
 
 _ViridianCityText13::
-	text "VIRIDIAN CITY" ;TODO
-	line "מכון ה#ימונים"
+	text "עיר הברקת"
+	line "מכון ה#ימון"
 	done
 
 _ViridianCityText14::

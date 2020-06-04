@@ -16,7 +16,8 @@ _VictoryRoad1AfterBattleText1::
 
 _VictoryRoad1BattleText2::
 	text "אני רואה שאתה טוב"
-	line "אבל בוא נראה עד כמה!"
+	line "אבל בוא נראה עד"
+	cont "כמה!"
 	done
 
 _VictoryRoad1EndBattleText2::
@@ -26,6 +27,7 @@ _VictoryRoad1EndBattleText2::
 
 _VictoryRoad1AfterBattleText2::
 	text "אני מודה,"
-	line "אתה טוב יותר ממני!"
+	line "אתה טוב יותר"
+	cont "ממני!"
 	done
 

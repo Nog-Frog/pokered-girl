@@ -24,9 +24,9 @@ _ViridianFrstAfterBattleText1::
 	done
 
 _ViridianForestBattleText2::
-	text "יו! אתה לא יכול להתחמק"
-	line "אם אתה"
-	cont "#ימונים מאמן!"
+	text "יו! אתה לא יכול"
+	line "סתם לנוח כשאתה"
+	cont "מאמן #ימון!"
 	done
 
 _ViridianForestEndBattleText2::
@@ -47,8 +47,8 @@ _ViridianForestBattleText3::
 	done
 
 _ViridianForestEndBattleText3::
-	text "אני"
-	line "נותן! אתה טוב בזה!" ;TODO
+	text "ויתרתי!"
+	line "אתה טוב!"
 	prompt
 
 _ViridianFrstAfterBattleText3::
@@ -62,11 +62,11 @@ _ViridianFrstAfterBattleText3::
 
 _ViridianForestText8::
 	text "נגמרו לי"
-	line "ה#דורים לתפוס !"
-	cont "#איתם ימונים !"
+	line "הפוכדורים לתפוס"
+	cont "#איתם ימונים!"
 
-	para "כדאי שתמיד ישארו לך"
-	line "כמה נותרים!"
+	para "כדאי שתמיד יהיו"
+	line "לך כמה ספיירים!"
 	done
 
 _ViridianForestText9::
@@ -74,31 +74,34 @@ _ViridianForestText9::
 
 	para "אם אתה רוצה"
 	line "להימנע מקרבות,"
-	cont "היזהר מאזורי הדשא!"
+	cont "תתרחק מהדשא!"
 	done
 
 _ViridianForestText10::
-	text "בכדי לרפא רעל השתמש"
-	line "ANTIDOTEב!" ;TODO
-	cont "#ימון MARTsהשג אותם ב !";TODO
+	text "השתמש בנוגדן כדי"
+	line "לרפא הרעלה!"
+	cont "אפשר לקנות אותם"
+	cont "ב#יוסק!" ; TODO
 	done
 
 _ViridianForestText11::
 	text "TRAINER TIPS" ;TODO
 	
-
-	para "צור קשר עם PROF.OAK" ;TODO
-	line "דרך המחשב כדי לקבל"
-	cont "הערכה על ה #DEX" ;TODO
+	para "אם תיצור קשר דרך"
+	line "המחשב עם פרופ'"
+	cont "אלון, הוא ייתן לך"
+	cont "ציון על ה#ידע"
 	cont "שלך!"
 	done
 
 _ViridianForestText12::
 	text "TRAINER TIPS" ;TODO
 
-	para "לא ניתן לגנוב"
-	line "#ימונים ממאמנים אחרים"
-	cont "תפוס רק #ימונים מהטבע"
+	para "אסור לגנוב"
+	line "#ימונים ממאמנים"
+	cont "אחרים! תפוס"
+	cont "#ימונים רק"
+	cont "בטבע!"
 	done
 
 _ViridianForestText13::
@@ -108,13 +111,14 @@ _ViridianForestText13::
 	line "לפני שתנסה"
 	cont "לתפוס אותם!"
 
-	para "כאשר הם ללא פגע"
+	para "אם הם בריאים,"
 	line "הם עלולים לברוח!"
 	done
 
 _ViridianForestText14::
-	text "LEAVING" ;TODO
-	line "VIRIDIAN FOREST" ;TODO
-	cont "PEWTER CITY AHEAD" ;TODO
+	text "יציאה"
+	line "מיער ירוק-העד"
+	cont "בהמשך הדרך:"
+	cont "עיר הכספית"
 	done
 

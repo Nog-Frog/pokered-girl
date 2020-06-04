@@ -1,20 +1,20 @@
 _LTSurgePostBattleAdviceText::
-	text "עצה קטנה ממני"
+	text "עצה קטנה ממני,"
 	line "ילד!"
 
 	para "מתקפות חשמל"
 	line "בהחלט עוצמתיות!"
 
-	para "אבל, הן יהיו חסרות תועלת"
-	line "מול #ימונים מסוג אדמה!"
+	para "אבל, הן יהיו חסרות"
+	line "מול #ימוני אדמה!"
 	done
 
 _LTSurgeThunderbadgeInfoText::
-	text "The THUNDERBADGE" ; TODO
-	line "יגביר את"
-	cont "מהירות ה#ימון שלך!"
+	text "תג הרעם יגביר"
+	line "את מהירות"
+	cont "ה#ימון שלך!"
 
-	para "זה גם יאפשר"
+	para "הוא גם יאפשר"
 	line "ל#ימון שלך לעוף"
 	cont "בכל זמן, ילד!"
 
@@ -23,115 +23,114 @@ _LTSurgeThunderbadgeInfoText::
 	done
 
 _ReceivedTM24Text::
-	text "<PLAYER> התקבל "
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM24ExplanationText::
-	db $0
-	para "TM24 מכיל"
-	line "THUNDERBOLT!" ;TODO
+	text ""
 
-	para "למד #ימון מסוג חשמל"
+	para "TM24 מכיל" ; TODO
+	line "המתקפה חזיז ורעם!"
+
+	para "למד #ימון חשמל"
 	line "את המתקפה!"
 	done
 
 _TM24NoRoomText::
 	text "הי ילד, פנה מקום"
-	line "בתיק החפצים שלך!"
+	line "בתיק!"
 	done
 
 _ReceivedThunderbadgeText::
-	text "והא!"
+	text "וואה!"
 
-	para "אתה בהחלט משהו מיוחד"
+	para "אתה יריב רציני,"
 	line "ילד!"
 
 	para "בסדר, קח את"
-	line "ה THUNDERBADGE!" ;TODO
+	line "תג הרעם!"
 	prompt
 
 _VermilionGymBattleText1::
-	text "כשאני הייתי בצבא"
-	line "LT.SURGE" ;TODO
-	cont "המפקח הקפדני שלי!"
+	text "כשהייתי בצבא, סרן"
+	line "ברק היה המפקד"
+	cont "הקשוח שלי!"
 	done
 
 _VermilionGymEndBattleText1::
-	text "עצור!"
+	text "די!"
 	line "אתה טוב מאוד!"
 	prompt
 
 _VermilionGymAfterBattleText1::
-	text "הדלת לא"
-	line "תיפתח?"
+	text "הדלת לא נפתחת?"
 
-	para "LT.SURGE תמיד היה" ;TODO
-	line "כל כך זהיר!" 
+	para "סרן ברק תמיד היה"
+	line "זהיר כזה!" 
 	done
 
 _VermilionGymBattleText2::
-	text "אני lightweight," ;TODO (יש פה בדיחה אולי?)
+	text "אולי אני שחיף,"
 	line "אבל אני טוב עם"
 	cont "חשמל!" 
 	done
 
 _VermilionGymEndBattleText2::
-	text "חבר!"
+	text "עשית ממני קציצות!"
 	prompt
 
 _VermilionGymAfterBattleText2::
 	text "אוקי, אני אדבר!"
 
-	para "LT.SURGE אמר שהוא" ;TODO
+	para "סרן ברק אמר שהוא"
 	line "הסתיר מתגי דלתות"
-	cont "חבויים היכן שהוא!"
+	cont "חבויים איפשהו!"
 	done
 
 _VermilionGymBattleText3::
-	text "זה לא מקום עבור"
-	line "ילדים!"
+	text "זה לא מקום לילדים!"
 	done
 
 _VermilionGymEndBattleText3::
 	text "ואו!"
-	line "הפתיע אותי!"
+	line "הפתעת אותי!"
 	prompt
 
 _VermilionGymAfterBattleText3::
-	text "LT.SURGE הטמין" ;TODO
-	line "מנעולים כפולים!"
+	text "סרן ברק החביא"
+	line "שני מתגים לדלת!"
 	cont "הנה רמז!"
 
-	para "כאשר אתה פותח את"
-	line "המנעול הראשון, המנעול השני"
-	cont "יהיה בדיוק לצידו!"
+	para "כשתמצא את המתג"
+	line "הראשון, השני יהיה"
+	cont "בדיוק לידו!"
 	done
 
 _VermilionGymFanPreBattleText::
-	text "יו!אתה אלוף"
-	line "בזה!"
+	text "יו! אלופצ'יק!"
 
-	para "לLT.SURGE יש" ;TODO
+	para "לסרן ברק יש"
 	line "כינוי. אנשים"
 	cont "מכנים אותו"
-	cont "the Lightning"
-	cont "American!" ;TODO (עוד סוג של בדיחה שאפשר לתרגם יפה)
+	cont "האמריקאי המחשמל!"
 
 	para "הוא מומחה"
 	line "ל#ימוני חשמל!"
 
-	para "#ימוני מים ותעופה"
-	line "נמצאים בסכנה"
-	cont "זהירות ממתקפות השיתוק!"
+	para "#ימוני מים"
+	line "ותעופה נמצאים"
+	cont "בסכנה כאן! תיזהר"
+	cont "ממהלכי השיתוק"
+	cont "שלו!"
 
-	para "LT.SURGE מאוד" 
+	para "סרן ברק מאוד" 
 	line "זהיר!"
 
-	para "אתה חייב לפתור"
-	line "את הקוד"
-	cont "כדי להגיע אליו!"
+	para "תצטרך לפצח את"
+	line "את הקוד כדי"
+	cont "להגיע אליו!"
 	done
 
 _VermilionGymFanPostBattleText::

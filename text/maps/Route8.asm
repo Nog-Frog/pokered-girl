@@ -1,7 +1,7 @@
 _Route8BattleText1::
 	text "נראה שאתה לא רע ב"
-	line "#ימונים, אבל"
-	cont "מה הציון שלך בכימיה?"
+	line "#ימון, אבל מה"
+	cont "הציון שלך בכימיה?"
 	done
 
 _Route8EndBattleText1::
@@ -10,8 +10,9 @@ _Route8EndBattleText1::
 	prompt
 
 _Route8AfterBattleText1::
-	text "אני טוב יותר בלימודים"
-	line "מאשר בקרבות!"
+	text "אני טוב יותר"
+	line "בלימודים מאשר"
+	cont "בקרבות!"
 	done
 
 _Route8BattleText2::
@@ -46,29 +47,32 @@ _Route8AfterBattleText3::
 	done
 
 _Route8BattleText4::
-	text "אני אוהבת את ה#ימון NIDORAN," ; TODO
-	line "אז אני אוספת אותם!"
+	text "אני אוהבת את"
+	line "ה#ימון עקצחלב,"
+	line "אז אני אוספת"
+	cont "כאלה!"
 	done
 
 _Route8EndBattleText4::
-	text "למה? למה??"
+	text "למה? למה???"
 	prompt
 
 _Route8AfterBattleText4::
 	text "כש#ימונים גדלים"
-	line "הם הופכים למכוערים!"
+	line "הם נהיים מכוערים!"
 	cont "אסור לתת להם"
 	cont "להתפתח!"
 	done
 
 _Route8BattleText5::
-	text "אני אוהב את בית הספר,"
-	line "אבל גם #ימונים!"
+	text "אני אוהב את בית"
+	line "הספר, אבל אני גם"
+	cont "אוהב #ימון!"
 	done
 
 _Route8EndBattleText5::
-	text "אני חושב"
-	line "שאשאר עם בית הספר."
+	text "אני חושב שאשאר"
+	line "עם בית הספר."
 	prompt
 
 _Route8AfterBattleText5::
@@ -104,47 +108,47 @@ _Route8EndBattleText7::
 	prompt
 
 _Route8AfterBattleText7::
-	text "שומר הסף"
-	line "של עיר הזעפרן"
-	cont "לא מרשה לנו לעבוד."
-	cont "הוא רשע מרושע!"
+	text "שומר הסף של עיר"
+	line "הזעפרן לא מרשה"
+	cont "לא מרשה לנו"
+	cont "להיכנס. הוא כזה"
+	cont "לא נחמד!"
 	done
 
 _Route8BattleText8::
-	text "אני רק בחור"
-	line "מהמר ומסחרר!"
+	text "אני בחור שאוהב"
+	line "להמר ולמלמל!"
 	done
 
 _Route8EndBattleText8::
 	text "הפסדתי!"
-	line "פספסתי את כל הקופה!"
+	line "פספסתי את כל"
+	cont "הקופה!"
 	prompt
 
 _Route8AfterBattleText8::
 	text "משחקי הימורים"
-	line "ו#ימונים"
-	cont "הם כמו אכילת בוטנים"
-	cont "אני פשוט לא יכול להפסיק!"
+	line "ו#ימון הם כמו"
+	cont "הם כמו בוטנים!"
+	cont "אני מכור לגמרי!"
 	done
 
 _Route8BattleText9::
-	text "מי זה ה#ימון"
-	line "העגלגל והצמרירי"
-	cont "הזה?"
+	text "איזה #ימון הוא"
+	line "חמוד, עגול, ורך?"
 	done
 
 _Route8EndBattleText9::
 	text "דיי!"
 
-	para "אל תהיה כל כך מרושע"
-	line "לCLEFAIRY שלי!" ; TODO
+	para "אל תהיה כזה מרושע"
+	line "לחמשדון שלי!"
 	prompt
 
 _Route8AfterBattleText9::
-	text "שמעתי שCLEFAIRY" ; TODO
-	line "מתפתחת"
-	cont "כשהיא נחשפת"
-	cont "לMOON STONE" ; TODO
+	text "שמעתי שחמשדון"
+	line "מתפתחת כשהיא"
+	cont "נחשפת לאבן ירח!"
 	done
 
 _Route8Text10::

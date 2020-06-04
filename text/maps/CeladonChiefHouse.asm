@@ -1,6 +1,7 @@
 _CeladonHouseText1::
-	text "חה חה! מכונות המזל האלו"
-	line "מרוויחות עבורנו בגדול!"
+	text "חה חה! מכונות"
+	line "המזל מרוויחות"
+	cont "לנו בוכטות!"
 	done
 
 _CeladonHouseText2::
@@ -8,7 +9,8 @@ _CeladonHouseText2::
 
 	para "בדיוק העברנו"
 	line "2000 #ימונים"
-	cont "כפרסים במשחקי המזל!"
+	cont "כפרסים במשחקי"
+	cont "המזל!"
 	done
 
 _CeladonHouseText3::
@@ -17,6 +19,7 @@ _CeladonHouseText3::
 	cont "GAME CORNERב!" ;TODO
 
 	para "זה לא שמתחבא"
-	line "מאחוריו איזה מתג חבוי!"
+	line "מאחוריו איזה מתג"
+	cont "סודי!"
 	done
 

@@ -1,22 +1,24 @@
 _VermilionHouse1Text1::
 	text "אני מכין את"
-	line "הPIDGEY שלי להעביר" ;TODO
-	cont "עבורי מכתב ל SAFFRON" ;TODO
-	cont "שנמצא בצפון!"
+	line "היונדי שלי להעביר"
+	cont "עבורי מכתב לעיר"
+	cont "הזעפרן, צפונה"
+	cont "מכאן!"
 	done
 
 _VermilionHouse1Text2::
-	text "PIDGEY: Kurukkoo!@@" ;TODO
+	text "יונדי: קורוקווו!@@"
 
 _VermilionHouse1Text3::
-	text "היקרה PIPPI, אני מקווה" ;TODO
-	line "לראות אותך בקרוב."
+	text "בילבי היקרה, אני"
+	line "מקווה לראות אותך"
+	cont "בקרוב."
 
-	para "שמעתי של SAFFRON" ;TODO
+	para "שמעתי שבעיר הזעפרן"
 	line "יש בעיות עם"
-	cont "TEAM ROCKET." ;TODO
+	cont "כנופיית רוקט."
 
-	para "VERMILION נראת" ;TODO
-	line "עיר בטוחה."
+	para "עיר הארגמן נראית"
+	line "כמו עיר בטוחה."
 	done
 

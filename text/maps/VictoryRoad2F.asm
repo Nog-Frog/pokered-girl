@@ -1,8 +1,8 @@
 _MoltresBattleText::
-	text "Gyaoo!@@" ;TODO
+	text "גיאהוו!@@"
 
 _VictoryRoad2BattleText1::
-	text "VICTORY ROAD היא" ;TO DO
+	text "דרך הניצחון היא"
 	line "המבחן האחרון"
 	cont "עבור מאמני #ימון!"
 	done
@@ -50,26 +50,26 @@ _VictoryRoad2AfterBattleText3::
 	done
 
 _VictoryRoad2BattleText4::
-	text "אם אתה ללכת"
-	line "דרך כאן אתה "
-	cont "יכול ללכת לפגוש את"
-	cont "ELITE FOURה!" ;TO DO
+	text "אם תצליח לעבור"
+	line "את החלק הזה, אתה"
+	cont "תוכל לפגוש את"
+	cont "הרביעיה העילית!"
 	done
 
 _VictoryRoad2EndBattleText4::
 	text "לא!"
-	line "בלתי יאומן!"
+	line "לא יאמן!"
 	prompt
 
 _VictoryRoad2AfterBattleText4::
-	text "אני יכול להביס אותך"
+	text "אני טוב ממך בהרבה"
 	line "כשזה נוגע לידע"
-	cont "אודות ה#ימונים!"
+	cont "ב#ימון!"
 	done
 
 _VictoryRoad2BattleText5::
-	text "האם ה VICTORY ROAD" ;TO DO
-	line "קשה מידי?"
+	text "דרך הניצחון קשה"
+	line "לך מדי?"
 	done
 
 _VictoryRoad2EndBattleText5::
@@ -78,6 +78,6 @@ _VictoryRoad2EndBattleText5::
 	prompt
 
 _VictoryRoad2AfterBattleText5::
-	text "הרבה מאמנים מוותרים"
-	line "על האתגר כאן"
+	text "הרבה מאמנים פורשים"
+	line "בחלק הזה של המסע."
 	done

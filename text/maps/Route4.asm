@@ -1,16 +1,16 @@
 _Route4Text1::
 	text "אווץ'! מעדתי על"
-	line "#ימון סלעי במיוחד"
-	cont "GEODUDE!" ; TODO
+	line "#ימון סלעי"
+	cont "בחורקע!"
 	done
 
 _Route4BattleText1::
-	text "הגעתי לקחת"
-	line "את#ימון הפטרייה שלי!"
+	text "הגעתי לתפוס לי"
+	line "#ימון פטריה!"
 	done
 
 _Route4EndBattleText1::
-	text "הו! #ימון פטרייה"
+	text "אה! #ימון פטריה"
 	line "מתוק שלי!"
 	prompt
 

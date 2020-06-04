@@ -1,6 +1,7 @@
 _ViridianMartText1::
-	text "אוקי! מסור דרישת שלום"
-	line "לפרופסור אלון ממני!"
+	text "אוקי! מסור דרישת"
+	line "שלום לפרופ' אלון"
+	cont "ממני!"
 	done
 
 _ViridianMartText4::
@@ -9,7 +10,7 @@ _ViridianMartText4::
 	done
 
 ViridianMartParcelQuestText::
-	text "אתה מכיר את פרופסור"
+	text "אתה מכיר את פרופ'"
 	line "אלון, נכון?"
 
 	para "ההזמנה שלו הגיעה."
@@ -25,6 +26,6 @@ _ViridianMartText2::
 	done
 
 _ViridianMartText3:: 
-	text "לא! לא נותרו שיקויים"
+	text "אוף! נגמרו השיקוים"
 	line "במלאי."
 	done

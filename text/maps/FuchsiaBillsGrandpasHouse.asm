@@ -1,5 +1,5 @@
 _FuchsiaHouse1Text1::
-	text "הפקח של אזור"	; TODO WARDEN
+	text "השומר של אזור"
 	line "הספארי כבר מבוגר,"
 	cont "אבל הוא עדיין"
 	cont "פעיל!"
@@ -11,7 +11,7 @@ _FuchsiaHouse1Text1::
 
 _FuchsiaHouse1Text2::
 	text "מה אתה אומר?"
-	line "פגשת את BILL?" ; TODO
+	line "פגשת את הדר?"
 
 	para "הוא הנכד שלי!"
 
@@ -21,7 +21,7 @@ _FuchsiaHouse1Text2::
 	done
 
 _FuchsiaHouse1Text3::
-	text "BILL מתייק את"
+	text "הדר מתייק את"
 	line "פרטי ה#ימונים"
 	cont "שלו במחשב!"
 

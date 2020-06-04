@@ -1,13 +1,15 @@
 _DaisyInitialText::
 	text "<PLAYER>, היי!"
 	line "<RIVAL> לא כאן."
-	cont "הוא במעבדה של סבא."
+	cont "הוא במעבדה של"
+	cont "סבא."
 	done
 
 _DaisyOfferMapText::
-	text "סבא ביקש ממך לעשות"
-	line "בשבילו סידורים?"
-	cont "קח, זה יעזור לך!"
+	text "סבא ביקש ממך"
+	line "לעשות בשבילו"
+	cont "סידורים? קח, זה"
+	cont "יעזור לך!"
 	prompt
 
 _GotMapText::
@@ -17,13 +19,13 @@ _GotMapText::
 	text "!@@"
 
 _DaisyBagFullText::
-	text "התיק שלך מלא מדי."
+	text "התיק שלך מלא."
 	done
 
 _DaisyUseMapText::
 	text "אתה יכול להשתמש"
-	line "במפת העיר כדי לדעת"
-	cont "איפה אתה נמצא."
+	line "במפת העיר כדי"
+	cont "לדעת איפה אתה."
 	done
 
 _BluesHouseText2::
@@ -35,6 +37,7 @@ _BluesHouseText2::
 
 _BluesHouseText3::
 	text "זו מפה גדולה!"
-	line "היא שימושית מאוד!"
+	line "היא שימושית"
+	cont "מאוד!"
 	done
 
