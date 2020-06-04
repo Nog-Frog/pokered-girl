@@ -94,7 +94,7 @@ VictoryRoadName:
 DiglettsCaveName:
 	db "המערה של חפיד@" ; DIGLETT's CAVE
 RocketHQName:
-	db "מפקדת צוות רוקט@" ; ROCKET HQ
+	db "מפקדת רוקט@" ; ROCKET HQ
 SilphCoName:
 	db "סילף בע″מ@" ; SILPH CO.
 PokemonMansionName:
@@ -102,6 +102,6 @@ PokemonMansionName:
 SafariZoneName:
 	db "אזור הספארי@" ; SAFARI ZONE
 CeruleanCaveName:
-	db "מערת עיר הטורקיז@" ; CERULEAN CAVE
+	db "מערת הטורקיז@" ; CERULEAN CAVE
 PowerPlantName:
 	db "תחנת הכוח@" ; POWER PLANT

@@ -10,7 +10,7 @@ ItemNames:
 	db "#ידע@"            ; POKéDEX
 	db "אבן ירח@"         ; MOON STONE
 	db "נוגדן@"           ; ANTIDOTE
-	db "רפא כוויה@"       ; BURN HEAL
+	db "רפא כויה@"       ; BURN HEAL
 	db "רפא קיפאון@"      ; ICE HEAL
 	db "שיקוי מעורר@"     ; AWAKENING
 	db "רפא שיתוק@"       ; PARLYZ HEAL
@@ -25,7 +25,7 @@ ItemNames:
 	db "תג הקשת בענן@"    ; RAINBOWBADGE
 	db "תג הלב@"          ; SOULBADGE
 	db "תג הזהב@"         ; MARSHBADGE
-	db "תג הר הגעש@"      ; VOLCANOBADGE
+	db "תג המגמה@"        ; VOLCANOBADGE
 	db "תג האדמה@"        ; EARTHBADGE
 	db "חבל הימלטות@"     ; ESCAPE ROPE
 	db "דוחה@"            ; REPEL
