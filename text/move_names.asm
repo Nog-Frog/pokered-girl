@@ -55,7 +55,7 @@ MoveNames::
 	db "ערפל@"          ; MIST
 	db "רובה מים@"      ; WATER GUN
 	db "זרנוק@"         ; HYDRO PUMP
-	db "גלשן@"          ; SURF
+	db "גלישה@"          ; SURF
 	db "קרן קרח@"       ; ICE BEAM
 	db "סופת שלג@"      ; BLIZZARD
 	db "קרן על-חושית@"  ; PSYBEAM
