@@ -17,7 +17,7 @@ MoveNames::
 	db "רוח פרצים@"     ; GUST
 	db "מכת כנף@"       ; WING ATTACK
 	db "מערבולת רוח@"   ; WHIRLWIND
-	db "עוף@"           ; FLY
+	db "תעופה@"           ; FLY
 	db "עקידה@"         ; BIND
 	db "מהלומה@"        ; SLAM
 	db "שוט גפן@"       ; VINE WHIP
