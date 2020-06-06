@@ -392,10 +392,10 @@ GetCryData::
 	call BankswitchBack
 
 	; Cry headers have 3 channels,
-	; and start from index $14,
+	; and start from index CRY_SFX_START,
 	; so add 3 times the cry id.
 	ld a, b
-	ld c, $14
+	ld c, CRY_SFX_START
 	rlca ; * 2
 	add b
 	add c
@@ -3627,7 +3627,7 @@ PrintLetterDelay::
 	pop hl
 	ret
 
-; Copies [hl, bc) to [de, bc - hl).
+; Copies [hl, bc) to [de, de + bc - hl).
 ; In other words, the source data is from hl up to but not including bc,
 ; and the destination is de.
 CopyDataUntil::

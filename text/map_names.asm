@@ -98,7 +98,7 @@ RocketHQName:
 SilphCoName:
 	db "סילף בע″מ@" ; SILPH CO.
 PokemonMansionName:
-	db "אחוזת ה@", $4a ;  MANSION
+	db "אחוזת ה<pkmn>@" ;  MANSION
 SafariZoneName:
 	db "אזור הספארי@" ; SAFARI ZONE
 CeruleanCaveName:
