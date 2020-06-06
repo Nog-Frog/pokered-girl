@@ -16,11 +16,11 @@ _OakWalksUpText::
 	done
 
 _PalletTownText2::
-	text "גם אני מאמן"
+	text "גם אני מאמנת"
 	line "#ימונים!"
 
-	para "כשהם יהיו חזקים,"
-	line "הם יוכלו להגן"
+	para "כשהם יגדלו ויהיו"
+	line "חזקים, הם יגנו"
 	cont "עלי!"
 	done
 
