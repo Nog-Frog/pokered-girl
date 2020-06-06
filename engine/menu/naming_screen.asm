@@ -372,7 +372,7 @@ PrintAlphabet:
 	jp Delay3
 
 HebrewKeyboard: ; 679e (1:679e)
-	db "קראטוןםפףשדגכעיחלךזסבהנמצתץ'ז'ג'צ'ת():;־ ?!♂♀/",$f2,",¥אנגלית@"
+	db "קראטוןםפףשדגכעיחלךזסבהנמצתץז'ג'צ'ת'():;־ ?!♂♀/",$f2,",¥אנגלית@"
 
 EnglishKeyboard: ; 67d6 (1:67d6)
 	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥עברית @"
