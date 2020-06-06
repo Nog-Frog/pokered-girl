@@ -17,7 +17,7 @@ MoveNames::
 	db "רוח פרצים@"     ; GUST
 	db "מכת כנף@"       ; WING ATTACK
 	db "מערבולת רוח@"   ; WHIRLWIND
-	db "עוף@"           ; FLY
+	db "תעופה@"           ; FLY
 	db "עקידה@"         ; BIND
 	db "מהלומה@"        ; SLAM
 	db "שוט גפן@"       ; VINE WHIP
@@ -55,7 +55,7 @@ MoveNames::
 	db "ערפל@"          ; MIST
 	db "רובה מים@"      ; WATER GUN
 	db "זרנוק@"         ; HYDRO PUMP
-	db "גלשן@"          ; SURF
+	db "גלישה@"          ; SURF
 	db "קרן קרח@"       ; ICE BEAM
 	db "סופת שלג@"      ; BLIZZARD
 	db "קרן על-חושית@"  ; PSYBEAM
