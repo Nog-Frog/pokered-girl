@@ -2766,7 +2766,7 @@ MoveDisabledText:
 	db "@"
 
 WhichTechniqueString:
-	db "WHICH TECHNIQUE?@"
+	db "איזה מהלך?@"
 
 SelectMenuItem_CursorUp:
 	ld a, [wCurrentMenuItem]
@@ -2986,7 +2986,7 @@ PrintMenuItem:
 	jp Delay3
 
 DisabledText:
-	db "disabled!@"
+	db "מושבת!@"
 
 TypeText:
 	db "סוג@"
@@ -6907,16 +6907,12 @@ InitWildBattle:
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld a, "G"
-	ld [hli], a
-	ld a, "H"
-	ld [hli], a
-	ld a, "O"
-	ld [hli], a
-	ld a, "S"
-	ld [hli], a
-	ld a, "T"
-	ld [hli], a
+	ld a, "ר"
+	ld [hld], a
+	ld a, "ו"
+	ld [hld], a
+	ld a, "ח"
+	ld [hld], a
 	ld [hl], "@"
 	ld a, [wcf91]
 	push af
@@ -7718,6 +7714,7 @@ MonsStatsRoseText:
 	TX_FAR _MonsStatsRoseText
 	TX_ASM
 	ld hl, GreatlyRoseText
+.jumpBack
 	ld a, [H_WHOSETURN]
 	and a
 	ld a, [wPlayerMoveEffect]
@@ -7732,7 +7729,9 @@ MonsStatsRoseText:
 GreatlyRoseText:
 	TX_DELAY
 	TX_FAR _GreatlyRoseText
-; fallthrough
+	db "@"
+    jr MonsStatsRoseText.jumpBack ; I KNOW this is an ugly solution, but it works and isn't wasteful.
+; Used to fallthrough; Doesn't anymore
 RoseText:
 	TX_FAR _RoseText
 	db "@"
@@ -7920,6 +7919,7 @@ MonsStatsFellText:
 	TX_FAR _MonsStatsFellText
 	TX_ASM
 	ld hl, FellText
+.jumpBack
 	ld a, [H_WHOSETURN]
 	and a
 	ld a, [wPlayerMoveEffect]
@@ -7937,7 +7937,8 @@ MonsStatsFellText:
 GreatlyFellText:
 	TX_DELAY
 	TX_FAR _GreatlyFellText
-; fallthrough
+	jr MonsStatsFellText.jumpBack ; It's an ugly solution, but it works and isn't wasteful.
+; Used to fallthrough; doesn't anymore
 FellText:
 	TX_FAR _FellText
 	db "@"
@@ -7959,12 +7960,12 @@ PrintStatText:
 	jp CopyData
 
 StatsTextStrings:
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
-	db "ACCURACY@"
-	db "EVADE@"
+	db "התקפה@"
+	db "הגנה@"
+	db "מהירות@"
+	db "מיוחדת@"
+	db "דיוק@"
+	db "התחמקות@"
 
 StatModifierRatios:
 ; first byte is numerator, second byte is denominator
