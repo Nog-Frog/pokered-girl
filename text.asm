@@ -25,17 +25,17 @@ INCLUDE "hram.asm"
 SECTION "Text 1", ROMX ; BANK $20
 
 _CardKeySuccessText1::
-	text "Bingo!@@"
+	text "יש!@@"
 
 _CardKeySuccessText2::
 	text ""
-	line "The CARD KEY"
-	cont "opened the door!"
+	line "כרטיס המפתח פתח"
+	cont "את הדלת!"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text "אוף! צריך להשתמש"
+	line "בכרטיס מפתח!"
 	done
 
 _TrainerNameText::
@@ -43,131 +43,125 @@ _TrainerNameText::
 	text ": @@"
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text "אף לא כירסום!"
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text "אין כאן כלום."
 	prompt
 
 _ItsABiteText::
-	text "Oh!"
-	line "It's a bite!"
+	text "אה!"
+	line "תפסת משהו!"
 	prompt
 
 _ExclamationText::
 	text "!"
 	done
 
-_GroundRoseText::
+_GroundRoseText:: ; UNUSED
 	text "Ground rose up"
 	line "somewhere!"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	text "דרושה עוצמה כדי"
+	line "להזיז את זה!"
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	text "יש לנו כל פריט"
+	line "שרק תרצו!"
+	cont "#יוסק"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "אנחנו מרפאים"
+	line "#ימונים!"
+	cont "מרכז ה#ימון"
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> מצא"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	text "אתה לא יכול לסחוב"
+	line "עוד פריטים!"
 	done
 
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	text "היי! זוכר אותי?"
+	line "אני העוזר של פרופ'"
+	cont "אלון!"
 
-	para "If you caught @"
+	para "אם תפסת @"
 	TX_NUM hOaksAideRequirement, 1, 3
 	text ""
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
+	line "סוגים שונים של"
+	cont "#ימון, אלון ביקש"
+	cont "שאני אתן לך"
 	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "!"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	para "<PLAYER>! כבר"
+	line "תפסת לפחות @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text "סוגי #ימון שונים?"
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text "בוא נראה..."
+	line "אוי לא! נראה שתפסת"
+	cont "רק @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
 	text ""
-	cont "kinds of #MON!"
+	cont "סוגי #ימון!"
 
-	para "You need @"
+	para "תצטרך לתפוס @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
-	cont "@"
+	text " סוגים"
+	line "כדי לקבל את"
+	cont "ה@"
 	TX_RAM wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text "המ. טוב, לא נורא."
 
-	para "When you get @"
+	para "כשתשיג @"
 	TX_NUM hOaksAideRequirement, 1, 3
 	text ""
-	line "kinds, come back"
-	cont "for @"
+	line "סוגים, בוא לדבר"
+	cont "איתי ואתן לך@@"
 	TX_RAM wOaksAideRewardItemName
 	text "."
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text "מצוין! תפסת"
+	line "@"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text " סוגי "
+	cont "#ימון!"
+	cont "כל הכבוד!"
 
-	para "Here you go!"
+	para "הנה לך!"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
-	line "@"
+	text "<PLAYER> קיבל את"
+	line "ה@"
 	TX_RAM wOaksAideRewardItemName
 	text "!@@"
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
-	cont "@"
-	TX_RAM wOaksAideRewardItemName
-	text "."
+	text "אוי! נראה שאין"
+	line "לך מספיק מקום בתיק."
 	done
 
 INCLUDE "text/maps/ViridianForest.asm"
@@ -234,867 +228,874 @@ INCLUDE "text/maps/SeafoamIslandsB4F.asm"
 
 _AIBattleWithdrawText::
 	TX_RAM wTrainerName
-	text " with-"
-	line "drew @"
+	text " החזיר"
+	line "את @"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text "לכדור!"
 	prompt
 
 _AIBattleUseItemText::
 	TX_RAM wTrainerName
 	text ""
-	line "used @"
+	line "השתמש"
+	cont "ב@"
 	TX_RAM wcd6d
 	text ""
-	cont "on @"
+	cont "על @"
 	TX_RAM wEnemyMonNick
 	text "!"
 	prompt
 
 _TradeWentToText::
 	TX_RAM wcf4b
-	text " went"
-	line "to @"
-	TX_RAM wLinkEnemyTrainerName
+	text " נשלח"
+	line "ל@"
+	TX_RAM wGrassRate
 	text "."
 	done
 
 _TradeForText::
-	text "For <PLAYER>'s"
-	line "@"
+	text "בעבור"
+	line "ה@"
 	TX_RAM wcf4b
-	text ","
+	text ""
+	line "של <PLAYER>,"
 	done
 
 _TradeSendsText::
-	TX_RAM wLinkEnemyTrainerName
-	text " sends"
+	TX_RAM wGrassRate
+	text " שלח"
 	line "@"
 	TX_RAM wcd6d
 	text "."
 	done
 
 _TradeWavesFarewellText::
-	TX_RAM wLinkEnemyTrainerName
-	text " waves"
-	line "farewell as"
+	TX_RAM wGrassRate
+	text " מנפנף"
+	line "את ידו לשלום"
+	cont "לעבר"
 	done
 
 _TradeTransferredText::
 	TX_RAM wcd6d
-	text " is"
-	line "transferred."
+	text "."
 	done
 
 _TradeTakeCareText::
-	text "Take good care of"
-	line "@"
+	text "טפל היטב"
+	line "ב@"
 	TX_RAM wcd6d
 	text "."
 	done
 
 _TradeWillTradeText::
-	TX_RAM wLinkEnemyTrainerName
-	text " will"
-	line "trade @"
+	TX_RAM wGrassRate
+	text " מוכן"
+	line "להחליף @"
 	TX_RAM wcd6d
 	text ""
 	done
 
 _TradeforText::
-	text "for <PLAYER>'s"
-	line "@"
+	text "בעד ה@"
 	TX_RAM wcf4b
-	text "."
+	text "@"
+	line "של <PLAYER>."
 	done
 
 _PlaySlotMachineText::
-	text "A slot machine!"
-	line "Want to play?"
+	text "זו מכונת מזל!"
+	line "רוצה לשחק?"
 	done
 
 _OutOfCoinsSlotMachineText::
-	text "Darn!"
-	line "Ran out of coins!"
+	text "אוח!"
+	line "נגמרו המטבעות!"
 	done
 
 _BetHowManySlotMachineText::
-	text "Bet how many"
-	line "coins?"
+	text "על כמה מטבעות"
+	line "תרצה להמר?"
 	done
 
 _StartSlotMachineText::
-	text "Start!"
+	text "בהצלחה!"
 	done
 
 _NotEnoughCoinsSlotMachineText::
-	text "Not enough"
-	line "coins!"
+	text "אין לך מספיק"
+	line "מטבעות!"
 	prompt
 
 _OneMoreGoSlotMachineText::
-	text "One more "
-	line "go?"
+	text "עוד פעם?"
 	done
 
 _LinedUpText::
-	text " lined up!"
-	line "Scored @"
+	text " השגת שורה!"
+	line "זכית ב@"
 	TX_RAM wcf4b
-	text " coins!"
+	text " מטבעות!"
 	done
 
 _NotThisTimeText::
-	text "Not this time!"
+	text "לא זכית הפעם!"
 	prompt
 
 _YeahText::
-	text "Yeah!@@"
+	text "יש!@@"
 
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	text "#ידע   נראו:@"
 	TX_NUM wDexRatingNumMonsSeen, 1, 3
 	text ""
-	line "         Owned:@"
+	line "         נתפסו:@"
 	TX_NUM wDexRatingNumMonsOwned, 1, 3
 	db "@"
 
 _DexRatingText::
-	text "#DEX Rating", $6d
+	text "דירוג ה#ידע", $6d
 	done
 
 _GymStatueText1::
+	text "מכון ה#ימון של"
+	line "@"
 	TX_RAM wGymCityName
 	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	cont "מנהיג: @"
 	TX_RAM wGymLeaderName
 	text ""
 
-	para "WINNING TRAINERS:"
+	para "מאמנים מנצחים:"
 	line "<RIVAL>"
 	done
 
 _GymStatueText2::
+	text "מכון ה#ימון של"
+	line "@"
 	TX_RAM wGymCityName
 	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	cont "מנהיג: @"
 	TX_RAM wGymLeaderName
 	text ""
 
-	para "WINNING TRAINERS:"
+	para "מאמנים מנצחים:"
 	line "<RIVAL>"
 	cont "<PLAYER>"
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
-	cont "#MON!"
+	text "מרכזי #ימון"
+	line "מרפאים #ימונים"
+	cont "מותשים או"
+	cont "פצועים!"
 	done
 
 _PewterCityPokecenterGuyText::
-	text "Yawn!"
+	text "פיהוק!"
 
-	para "When JIGGLYPUFF"
-	line "sings, #MON"
-	cont "get drowsy..."
+	para "כשניענפוח שר,"
+	line "#ימונים מתחילים"
+	cont "להתעייף..."
 
-	para "...Me too..."
-	line "Snore..."
+	para "...גם אני..."
+	line "חרררר..."
 	done
 
 _CeruleanPokecenterGuyText::
-	text "BILL has lots of"
-	line "#MON!"
+	text "להדר יש המון"
+	line "#ימונים!"
 
-	para "He collects rare"
-	line "ones too!"
+	para "הוא אוסף גם כאלה"
+	line "נדירים!"
 	done
 
 _LavenderPokecenterGuyText::
-	text "CUBONEs wear"
-	line "skulls, right?"
+	text "רשרשים חובשים"
+	line "גולגלות על הראש,"
+	cont "כן?"
 
-	para "People will pay a"
-	line "lot for one!"
+	para "הרבה אנשים מוכנים"
+	line "לשלם סכומים נאים"
+	cont "בעד אחת כזו!"
 	done
 
 _MtMoonPokecenterBenchGuyText::
-	text "If you have too"
-	line "many #MON, you"
-	cont "should store them"
-	cont "via PC!"
+	text "אם יש לך יותר מדי"
+	line "#ימונים, אני מציע"
+	cont "שתאחסן אותם במחשב!"
 	done
 
 _RockTunnelPokecenterGuyText::
-	text "I heard that"
-	line "GHOSTs haunt"
-	cont "LAVENDER TOWN!"
+	text "שמעתי שעיר הלבנדר"
+	line "רדופת רוחות!"
 	done
 
-_UnusedBenchGuyText1::
+_UnusedBenchGuyText1:: ; UNUSED
 	text "I wish I could"
 	line "catch #MON."
 	done
 
-_UnusedBenchGuyText2::
+_UnusedBenchGuyText2:: ; UNUSED
 	text "I'm tired from"
 	line "all the fun..."
 	done
 
-_UnusedBenchGuyText3::
+_UnusedBenchGuyText3:: ; UNUSED
 	text "SILPH's manager"
 	line "is hiding in the"
 	cont "SAFARI ZONE."
 	done
 
 _VermilionPokecenterGuyText::
-	text "It is true that a"
-	line "higher level"
-	cont "#MON will be"
-	cont "more powerful..."
+	text "אמנם #ימון ברמה"
+	line "גבוהה יותר חזק"
+	cont "מאחד ברמה נמוכה..."
 
-	para "But, all #MON"
-	line "will have weak"
-	cont "points against"
-	cont "specific types."
+	para "אבל לכל"
+	line "ה#ימונים יש"
+	cont "חולשה לסוגים"
+	cont "מסוימים."
 
-	para "So, there is no"
-	line "universally"
-	cont "strong #MON."
+	para "כך שאין באמת"
+	line "#ימון אחד שיותר"
+	cont "חזק מכולם."
 	done
 
 _CeladonCityPokecenterGuyText::
-	text "If I had a BIKE,"
-	line "I would go to"
-	cont "CYCLING ROAD!"
+	text "אם היו לי אופניים,"
+	line "הייתי הולך לדרך"
+	cont "האופניים!"
 	done
 
 _FuchsiaCityPokecenterGuyText::
-	text "If you're studying "
-	line "#MON, visit"
-	cont "the SAFARI ZONE."
+	text "אם אתה חוקר"
+	line "#ימונים, כדאי"
+	cont "לך לבקר באיזור"
+	cont "הספארי."
 
-	para "It has all sorts"
-	line "of rare #MON."
+	para "יש שם כל מיני"
+	line "#ימונים נדירים."
 	done
 
 _CinnabarPokecenterGuyText::
-	text "#MON can still"
-	line "learn techniques"
-	cont "after canceling"
-	cont "evolution."
+	text "#ימונים עדיין"
+	line "יכולים ללמוד"
+	cont "מהלכים חדשים, גם"
+	cont "אחרי התפתחות"
+	cont "שבוטלה."
 
-	para "Evolution can wait"
-	line "until new moves"
-	cont "have been learned."
+	para "אפשר לעכב את"
+	line "ההתפתחות עד אחריs"
+	cont "שה#ימון למד"
+	cont "עוד מהלכים."
 	done
 
 _SaffronCityPokecenterGuyText1::
-	text "It would be great"
-	line "if the ELITE FOUR"
-	cont "came and stomped"
-	cont "TEAM ROCKET!"
+	text "הלוואי שהרביעיה"
+	line "העילית יבואו"
+	cont "לכסח לצוות רוקט"
+	cont "את הצורה!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "TEAM ROCKET took"
-	line "off! We can go"
-	cont "out safely again!"
-	cont "That's great!"
+	text "צוות רוקט הסתלקו!"
+	line "אנחנו יכולים שוב"
+	cont "להסתובב ברחוב"
+	cont "בלי לפחד! תודה!"
 	done
 
 _CeladonCityHotelText::
-	text "My sis brought me"
-	line "on this vacation!"
+	text "אחותי הזמינה אותי"
+	line "לחופשה!"
 	done
 
 _BookcaseText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "אינספור ספרי"
+	line "#ימון!"
 	done
 
 _NewBicycleText::
-	text "A shiny new"
-	line "BICYCLE!"
+	text "זוג אופניים חדש"
+	line "ונוצץ!"
 	done
 
 _PushStartText::
-	text "Push START to"
-	line "open the MENU!"
+	text "לחץ על START"
+	line "כדי לפתוח את"
+	cont "התפריט!"
 	done
 
 _SaveOptionText::
-	text "The SAVE option is"
-	line "on the MENU"
-	cont "screen."
+	text "כפתור שמירת המשחק"
+	line "נמצא בתפריט."
 	done
 
 _StrengthsAndWeaknessesText::
-	text "All #MON types"
-	line "have strong and"
-	cont "weak points"
-	cont "against others."
+	text "לכל סוגי ה#ימון"
+	line "יש נקודות חזקות"
+	cont "וחלשות מול סוגים"
+	cont "אחרים."
 	done
 
 _TimesUpText::
-	text "PA: Ding-dong!"
+	text "כריזה: דינג-דונג!"
 
-	para "Time's up!"
+	para "נגמר הזמן!"
 	prompt
 
 _GameOverText::
-	text "PA: Your SAFARI"
-	line "GAME is over!"
+	text "כריזה: משחק הספארי"
+	line "נגמר!"
 	done
 
 _CinnabarGymQuizIntroText::
-	text "#MON Quiz!"
+	text "חידון #ימון!"
 
-	para "Get it right and"
-	line "the door opens to"
-	cont "the next room!"
+	para "אם תענה נכון, הדלת"
+	line "לחדר הבא תיפתח!"
 
-	para "Get it wrong and"
-	line "face a trainer!"
+	para "אם תטעה, תיאלץ"
+	line "להילחם במאמן!"
 
-	para "If you want to"
-	line "conserve your"
-	cont "#MON for the"
-	cont "GYM LEADER..."
+	para "אם אתה רוצה לשמור"
+	line "את בריאות"
+	cont "ה#ימונים שלך לקרב"
+	cont "מול המנהיג..."
 
-	para "Then get it right!"
-	line "Here we go!"
+	para "כדאי לך לענות"
+	line "נכון! קדימה,"
+	cont "מתחילים!"
 	prompt
 
 _CinnabarQuizQuestionsText1::
-	text "CATERPIE evolves"
-	line "into BUTTERFREE?"
+	text "כשזחי מתפתח, הוא"
+	line "הופך לפרפרץ?"
 	done
 
 _CinnabarQuizQuestionsText2::
-	text "There are 9"
-	line "certified #MON"
-	cont "LEAGUE BADGEs?"
+	text "קיימים 9 תגי"
+	line "מכונים רשמיים"
+	cont "של ליגת ה#ימון?"
 	done
 
 _CinnabarQuizQuestionsText3::
-	text "POLIWAG evolves 3"
-	line "times?"
+	text "ראשנע מתפתח"
+	line "3 פעמים?"
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Are thunder moves"
-	line "effective against"
-	cont "ground element-"
-	cont "type #MON?"
+	text "האם מהלכים מסוג"
+	line "חשמל אפקטיבים מול"
+	cont "#ימונים מסוג"
+	cont "אדמה?"
 	done
 
 _CinnabarQuizQuestionsText5::
-	text "#MON of the"
-	line "same kind and"
-	cont "level are not"
-	cont "identical?"
+	text "#ימונים מאותו"
+	line "זן ובאותה רמה"
+	cont "אינם זהים?"
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "TM28 contains"
-	line "TOMBSTONER?"
+	text "82MT מכיל את המהלך"
+	line "קרן מוות?"
 	done
 
 _CinnabarGymQuizCorrectText::
-	text "You're absolutely"
-	line "correct!"
+	text "אתה לגמרי"
+	line "צודק!"
 
-	para "Go on through!@@"
+	para "עבור לחדר הבא!@@"
 
 _CinnabarGymQuizIncorrectText::
-	text "Sorry! Bad call!"
+	text "אופס! ניחוש"
+	line "שגוי!"
 	prompt
 
 _MagazinesText::
-	text "#MON magazines!"
+	text "עלוני #ימון!"
 
-	para "#MON notebooks!"
+	para "מחברות #ימון!"
 
-	para "#MON graphs!"
+	para "טבלאות #ימון!"
 	done
 
 _BillsHouseMonitorText::
-	text "TELEPORTER is"
-	line "displayed on the"
-	cont "PC monitor."
+	text "על צג המחשב מוצג"
+	line "ממשק המשגר."
 	done
 
 _BillsHouseInitiatedText::
-	text "<PLAYER> initiated"
-	line "TELEPORTER's Cell"
-	cont "Separator!@@"
+	text "<PLAYER> הפעיל את"
+	line "מערכת הפרדת התאים"
+	cont "של המשגר!@@"
 
 _BillsHousePokemonListText1::
-	text "BILL's favorite"
-	line "#MON list!"
+	text "רשימת ה#ימונים"
+	line "האהובה על הדר!"
 	prompt
 
 _BillsHousePokemonListText2::
-	text "Which #MON do"
-	line "you want to see?"
+	text "איזה #ימון תרצה"
+	line "לראות?"
 	done
 
 _OakLabEmailText::
-	text "There's an e-mail"
-	line "message here!"
+	text "יש כאן הודעת"
+	line "דואר אלקטרוני!"
 
 	para "..."
 
-	para "Calling all"
-	line "#MON trainers!"
+	para "הקשיבו, הקשיבו,"
+	line "כל מאמני"
+	cont "ה#ימון!"
 
-	para "The elite trainers"
-	line "of #MON LEAGUE"
-	cont "are ready to take"
-	cont "on all comers!"
+	para "מאמני העילית של"
+	line "ליגת ה#ימון"
+	cont "מוכנים ומזומנים"
+	cont "להילחם מול כל אחד"
+	cont "שיבוא לאתגר אותם!"
 
-	para "Bring your best"
-	line "#MON and see"
-	cont "how you rate as a"
-	cont "trainer!"
+	para "הביאו את ה#ימונים"
+	line "הטובים ביותר שלכם"
+	cont "ובחנו את כישוריכם"
+	cont "בתור מאמנים!"
 
-	para "#MON LEAGUE HQ"
-	line "INDIGO PLATEAU"
+	para "מפקדת ליגת"
+	line "ה#ימון"
+	cont "רמת הניל"
 
-	para "PS: PROF.OAK,"
-	line "please visit us!"
+	para "נ.ב: פרופ' אלון,"
+	line "בבקשה, בוא לבקר!"
 	cont "..."
 	done
 
 _GameCornerCoinCaseText::
-	text "A COIN CASE is"
-	line "required!"
+	text "צריך ארנק למטבעות!"
 	done
 
 _GameCornerNoCoinsText::
-	text "You don't have"
-	line "any coins!"
+	text "אין לך מטבעות!"
 	done
 
 _GameCornerOutOfOrderText::
-	text "OUT OF ORDER"
-	line "This is broken."
+	text "לא תקין!"
+	line "המכונה הזו לא"
+	cont "עובדת."
 	done
 
 _GameCornerOutToLunchText::
-	text "OUT TO LUNCH"
-	line "This is reserved."
+	text "תכף אשוב"
+	line "המקום הזה שמור."
 	done
 
 _GameCornerSomeonesKeysText::
-	text "Someone's keys!"
-	line "They'll be back."
+	text "מפתחות של מישהו!"
+	line "הוא עוד יחזור."
 	done
 
 _JustAMomentText::
-	text "Just a moment."
+	text "רק רגע."
 	done
 
 TMNotebookText::
-	text "It's a pamphlet"
-	line "on TMs."
+	text "זה עלון מידע"
+	line "לגבי MTים."
 
 	para "..."
 
-	para "There are 50 TMs"
-	line "in all."
+	para "בסך-הכל, ישנם 50"
+	line "MTים."
 
-	para "There are also 5"
-	line "HMs that can be"
-	cont "used repeatedly."
+	para "קיימים גם 5 MHים"
+	line "שניתנים לשימוש"
+	cont "חוזר."
 
-	para "SILPH CO.@@"
+	para "סילף בע″מ.@@"
 
 _TurnPageText::
-	text "Turn the page?"
+	text "לדפדף לעמוד הבא?"
 	done
 
 _ViridianSchoolNotebookText5::
-	text "GIRL: Hey! Don't"
-	line "look at my notes!@@"
+	text "ילדה: היי! אל תציץ"
+	line "במחברת שלי!@@"
 
 _ViridianSchoolNotebookText1::
-	text "Looked at the"
-	line "notebook!"
+	text "הצצת במחברת!"
 
-	para "First page..."
+	para "עמוד ראשון..."
 
-	para "# BALLs are"
-	line "used to catch"
-	cont "#MON."
+	para "פוכדורים משמשים"
+	line "לתפיסת #ימונים."
 
-	para "Up to 6 #MON"
-	line "can be carried."
+	para "אפשר לקחת איתך עד"
+	line "6 #ימונים בכל"
+	cont "רגע נתון."
 
-	para "People who raise"
-	line "and make #MON"
-	cont "fight are called"
-	cont "#MON trainers."
+	para "אנשים שמגדלים"
+	line "#ימונים ועורכים"
+	cont "קרבות #ימון"
+	cont "נקראים מאמני"
+	cont "#ימון."
 	prompt
 
 _ViridianSchoolNotebookText2::
-	text "Second page..."
+	text "עמוד שני..."
 
-	para "A healthy #MON"
-	line "may be hard to"
-	cont "catch, so weaken"
-	cont "it first!"
+	para "קשה לתפוס #ימון"
+	line "בריא, אז כדאי"
+	cont "להחליש אותו קודם!"
 
-	para "Poison, burns and"
-	line "other damage are"
-	cont "effective!"
+	para "רעל, כויות,"
+	line "ופגיעות אחרות הן"
+	cont "יעילות מאוד למטרה"
+	cont "זו!"
 	prompt
 
 _ViridianSchoolNotebookText3::
-	text "Third page..."
+	text "עמוד שלישי..."
 
-	para "#MON trainers"
-	line "seek others to"
-	cont "engage in #MON"
-	cont "fights."
+	para "מאמני #ימון"
+	line "מחפשים מאמנים"
+	cont "אחרים כדי להילחם"
+	cont "בקרבות #ימון"
+	cont "מולם."
 
-	para "Battles are"
-	line "constantly fought"
-	cont "at #MON GYMs."
+	para "במכוני #ימון,"
+	line "כל הזמן מתקיימים"
+	cont "קרבות."
 	prompt
 
 _ViridianSchoolNotebookText4::
-	text "Fourth page..."
+	text "עמוד רביעי..."
 
-	para "The goal for"
-	line "#MON trainers"
-	cont "is to beat the "
-	cont "top 8 #MON"
-	cont "GYM LEADERs."
+	para "המטרה הסופית של"
+	line "כל מאמן #ימון"
+	cont "היא להביא את 8"
+	cont "מנהיגי מכוני"
+	cont "ה#ימון."
 
-	para "Do so to earn the"
-	line "right to face..."
+	para "אלה שמביסים את כל"
+	line "ה8 זוכים בהזדמנות"
+	cont "לקרב מול..."
 
-	para "The ELITE FOUR of"
-	line "#MON LEAGUE!"
+	para "הרביעיה העילית של"
+	line "ליגת ה#ימון!"
 	prompt
 
 _EnemiesOnEverySideText::
-	text "Enemies on every"
-	line "side!"
+	text "אויבים מסתתרים"
+	line "בכל פינה!"
 	done
 
 _WhatGoesAroundComesAroundText::
-	text "What goes around"
-	line "comes around!"
+	text "עין תחת עין!"
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "דוג'ו"
 	done
 
 _IndigoPlateauHQText::
-	text "INDIGO PLATEAU"
-	line "#MON LEAGUE HQ"
+	text "רמת הניל"
+	line "מפקדת ליגת"
+	cont "ה#ימון"
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+	text "<PLAYER> משחק"
+	line "בSNES!"
+	cont "...אוקיי!"
+	cont "צריך ללכת!"
 	done
 
 _Route15UpstairsBinocularsText::
-	text "Looked into the"
-	line "binoculars..."
+	text "הסתכלת"
+	line "במשקפת..."
 
-	para "A large, shining"
-	line "bird is flying"
-	cont "toward the sea."
+	para "ציפור גדולה"
+	line "ומבריקה עפה לכיוון"
+	cont "הים."
 	done
 
 _AerodactylFossilText::
-	text "AERODACTYL Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text "מאובן אווירונעף."
+	line "#ימון קדום"
+	cont "ונדיר."
 	done
 
 _KabutopsFossilText::
-	text "KABUTOPS Fossil"
-	line "A primitive and"
-	cont "rare #MON."
+	text "מאובן פרצודה."
+	line "#ימון קדום"
+	cont "ונדיר."
 	done
 
 _LinkCableHelpText1::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
-	para "Using a Game Link"
-	line "Cable"
+	para "שימוש בכבל לקישור"
+	line "בין מכשירים"
 	prompt
 
 _LinkCableHelpText2::
-	text "Which heading do"
-	line "you want to read?"
+	text "איזו כותרת תרצה"
+	line "לקרוא?"
 	done
 
 _LinkCableInfoText1::
-	text "When you have"
-	line "linked your GAME"
-	cont "BOY with another"
-	cont "GAME BOY, talk to"
-	cont "the attendant on"
-	cont "the right in any"
-	cont "#MON CENTER."
+	text "ברגע שתחבר את"
+	line "הגיים בוי שלך עם"
+	cont ",גיים בוי נוסף"
+	cont "דבר עם הנציגה"
+	cont "שבצד ימין בכל"
+	cont "מרכז #ימון."
 	prompt
 
 _LinkCableInfoText2::
-	text "COLOSSEUM lets"
-	line "you play against"
-	cont "a friend."
+	text "הקולוסאום מאפשר לך"
+	line "לשחק בקרב מול"
+	cont "חבר."
 	prompt
 
 _LinkCableInfoText3::
-	text "TRADE CENTER is"
-	line "used for trading"
-	cont "#MON."
+	text "מרכז ההחלפות משמש"
+	line "להחלפת #ימונים."
 	prompt
 
 _ViridianSchoolBlackboardText1::
-	text "The blackboard"
-	line "describes #MON"
-	cont "STATUS changes"
-	cont "during battles."
+	text "הלוח מתאר שינויי"
+	line "מצב ש#ימונים"
+	cont "עשוים לעבור במהלך"
+	cont "קרב."
 	prompt
 
 _ViridianSchoolBlackboardText2::
-	text "Which heading do"
-	line "you want to read?"
+	text "איזו כותרת תרצה"
+	line "לקרוא?"
 	done
 
 _ViridianBlackboardSleepText::
-	text "A #MON can't"
-	line "attack if it's"
-	cont "asleep!"
+	text "#ימון לא יכול"
+	line "לתקוף אם הוא"
+	cont "ישן!"
 
-	para "#MON will stay"
-	line "asleep even after"
-	cont "battles."
+	para "#ימון יישאר ישן"
+	line "אפילו אחרי סוף"
+	cont "הקרב."
 
-	para "Use AWAKENING to"
-	line "wake them up!"
+	para "השתמש בשיקוי מעורר"
+	line "כדי להעיר אותו!"
 	prompt
 
 _ViridianBlackboardPoisonText::
-	text "When poisoned, a"
-	line "#MON's health"
-	cont "steadily drops."
+	text "אם #ימון מורעל,"
+	line "הוא יאבד נקודות"
+	cont "בריאות לאט-לאט."
 
-	para "Poison lingers"
-	line "after battles."
+	para "הרעלה נשארת גם"
+	line "אחרי קרבות."
 
-	para "Use an ANTIDOTE"
-	line "to cure poison!"
+	para "כדי לרפא הרעלה,"
+	line "השתמש בנוגדן!"
 	prompt
 
 _ViridianBlackboardPrlzText::
-	text "Paralysis could"
-	line "make #MON"
-	cont "moves misfire!"
+	text "שיתוק עשוי לגרום"
+	line "ל#ימון שלך לפספס"
+	cont "את תורו בקרב!"
 
-	para "Paralysis remains"
-	line "after battles."
+	para "שיתוק ממשיך להשפיע"
+	line "אפילו אחרי סוף"
+	cont "הקרב."
 
-	para "Use PARLYZ HEAL"
-	line "for treatment!"
+	para "כדי לרפא שיתוק,"
+	line "השתמש ברפא שיתוק!"
 	prompt
 
 _ViridianBlackboardBurnText::
-	text "A burn reduces"
-	line "power and speed."
-	cont "It also causes"
-	cont "ongoing damage."
+	text "כויה מפחיתה את"
+	line "עוצמת ומהירות"
+	cont "ה#ימון. היא גם"
+	cont "גורמת לנזק מתמשך."
 
-	para "Burns remain"
-	line "after battles."
+	para "כויות משפיעות גם"
+	line "אחרי הקרב."
 
-	para "Use BURN HEAL to"
-	line "cure a burn!"
+	para "כדי לרפא כויה,"
+	line "השתמש ברפא כויה!"
 	prompt
 
 _ViridianBlackboardFrozenText::
-	text "If frozen, a"
-	line "#MON becomes"
-	cont "totally immobile!"
+	text "#ימון קפוא הופך"
+	line "לדומם לחלוטין!"
 
-	para "It stays frozen"
-	line "even after the"
-	cont "battle ends."
+	para "הוא נשאר קפוא"
+	line "אפילו אחרי סוף"
+	cont "הקרב."
 
-	para "Use ICE HEAL to"
-	line "thaw out #MON!"
+	para "כדי להפשיר #ימון"
+	line "קפוא, השתמש ברפא"
+	cont "קרח!"
 	prompt
 
 _VermilionGymTrashText::
-	text "Nope, there's"
-	line "only trash here."
+	text "נה, כאן יש"
+	line "רק אשפה."
 	done
 
 _VermilionGymTrashSuccessText1::
-	text "Hey! There's a"
-	line "switch under the"
-	cont "trash!"
-	cont "Turn it on!"
+	text "היי, יש מתג מתחת"
+	line "לכל האשפה!"
+	cont "תדליק אותו!"
 
-	para "The 1st electric"
-	line "lock opened!@@"
+	para "המנעול החשמלי"
+	line "הראשון נפתח!@@"
 
 _VermilionGymTrashSuccessText2::
-	text "Hey! There's"
-	line "another switch"
-	cont "under the trash!"
-	cont "Turn it on!"
+	text "היי! יש כאן עוד"
+	line "מתג מתחת לאשפה!"
+	cont "תדליק אותו!"
 	prompt
 
 _VermilionGymTrashSuccessText3::
-	text "The 2nd electric"
-	line "lock opened!"
+	text "המנעול החשמלי"
+	line "השני נפתח!"
 
-	para "The motorized door"
-	line "opened!@@"
+	para "הדלת הממונעת"
+	line "נפתחה!@@"
 
 _VermilionGymTrashFailText::
-	text "Nope! There's"
-	line "only trash here."
-	cont "Hey! The electric"
-	cont "locks were reset!@@"
+	text "נה, כאן יש"
+	line "רק אשפה."
+	cont "היי! המנעולים"
+	cont "החשמליים נעלו"
+	cont "שוב!"
 
 _FoundHiddenItemText::
-	text "<PLAYER> found"
+	text "<PLAYER> מצא"
 	line "@"
 	TX_RAM wcd6d
 	text "!@@"
 
 _HiddenItemBagFullText::
-	text "But, <PLAYER> has"
-	line "no more room for"
-	cont "other items!"
+	text "אבל, ל<PLAYER> אין"
+	line "עוד מקום בתיק!"
 	done
 
 _FoundHiddenCoinsText::
-	text "<PLAYER> found"
+	text "<PLAYER> מצא"
 	line "@"
 	TX_BCD hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@@"
+	text " מטבעות!@@"
 
 _FoundHiddenCoins2Text::
-	text "<PLAYER> found"
+	text "<PLAYER> מצא"
 	line "@"
 	TX_BCD hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " coins!@@"
+	text " מטבעות!@@"
 
 _DroppedHiddenCoinsText::
 	text ""
-	para "Oops! Dropped"
-	line "some coins!"
+	para "אופס! נפלו"
+	line "לך מטבעות!"
 	done
 
 _IndigoPlateauStatuesText1::
-	text "INDIGO PLATEAU"
+	text "רמת הניל"
 	prompt
 
 _IndigoPlateauStatuesText2::
-	text "The ultimate goal"
-	line "of trainers!"
-	cont "#MON LEAGUE HQ"
+	text "המטרה הסופית של"
+	line "מאמני #ימון!"
+	cont "מפקדת ליגת"
+	cont "ה#ימון"
 	done
 
 _IndigoPlateauStatuesText3::
-	text "The highest"
-	line "#MON authority"
-	cont "#MON LEAGUE HQ"
+	text "המסמכות הגבוהה"
+	line "בנוגע ל#ימון!"
+	cont "מפקדת ליגת"
+	cont "ה#ימון"
 	done
 
 _PokemonBooksText::
-	text "Crammed full of"
-	line "#MON books!"
+	text "עמוס בספרי"
+	line "#ימון!"
 	done
 
 _DiglettSculptureText::
-	text "It's a sculpture"
-	line "of DIGLETT."
+	text "זה פסל של"
+	line "חפיד."
 	done
 
 _ElevatorText::
-	text "This is an"
-	line "elevator."
+	text "זו מעלית."
 	done
 
 _TownMapText::
-	text "A TOWN MAP.@@"
+	text "מפת העיר.@@"
 
 _PokemonStuffText::
-	text "Wow! Tons of"
-	line "#MON stuff!"
+	text "וואו! טונה של"
+	line "דברי #ימון!"
 	done
 
 _OutOfSafariBallsText::
-	text "PA: Ding-dong!"
+	text "כריזה: דינד-דונג!"
 
-	para "You are out of"
-	line "SAFARI BALLs!"
+	para "נגמרו לך כדורי"
+	line "הספארי!"
 	prompt
 
 _WildRanText::
-	text "Wild @"
+	text "ה@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "ran!"
+	text " הפראי"
+	line "ברח!"
 	prompt
 
 _EnemyRanText::
-	text "Enemy @"
+	text "ה@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "ran!"
+	text " היריב"
+	line "ברח!"
 	prompt
 
 _HurtByPoisonText::
-	text "<USER>'s"
-	line "hurt by poison!"
+	text "<USER>"
+	line "ניזוק מהרעל!"
 	prompt
 
 _HurtByBurnText::
-	text "<USER>'s"
-	line "hurt by the burn!"
+	text "<USER>"
+	line "ניזוק מהכויה!"
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
-	line "<USER>!"
+	text "זרע היניקה ינק"
+	line "בריאות"
+	cont "מ<USER>!"
 	prompt
 
 _EnemyMonFaintedText::
-	text "Enemy @"
+	text "ה@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "fainted!"
+	text " היריב"
+	line "התמוטט!"
 	prompt
 
 _MoneyForWinningText::
-	text "<PLAYER> got ¥@"
+	text "<PLAYER> זכה"
+	line "ב@"
 	TX_BCD wAmountMoneyWon, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text ""
-	line "for winning!"
+	text "¥!"
 	prompt
 
 _TrainerDefeatedText::
-	text "<PLAYER> defeated"
+	text "<PLAYER> הביס את"
 	line "@"
 	TX_RAM wTrainerName
 	text "!"
@@ -1103,198 +1104,201 @@ _TrainerDefeatedText::
 _PlayerMonFaintedText::
 	TX_RAM wBattleMonNick
 	text ""
-	line "fainted!"
+	line "התמוטט!"
 	prompt
 
 _UseNextMonText::
-	text "Use next #MON?"
+	text "לשלוח #ימון"
+	line "נוסף?"
 	done
 
 _Sony1WinText::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: כן! אני"
+	line "מדהים או מה?"
 	prompt
 
 _PlayerBlackedOutText2::
-	text "<PLAYER> is out of"
-	line "useable #MON!"
+	text "ל<PLAYER> אין"
+	line "עוד #ימונים"
+	cont "שיכולים להילחם!"
 
-	para "<PLAYER> blacked"
-	line "out!"
+	para "<PLAYER> התעלף!"
 	prompt
 
 _LinkBattleLostText::
-	text "<PLAYER> lost to"
-	line "@"
+	text "<PLAYER> הפסיד"
+	line "ל@"
 	TX_RAM wTrainerName
 	text "!"
 	prompt
 
 _TrainerAboutToUseText::
 	TX_RAM wTrainerName
-	text " is"
-	line "about to use"
+	text " עומד"
+	line "לשלוח"
 	cont"@"
 	TX_RAM wEnemyMonNick
 	text "!"
 
-	para "Will <PLAYER>"
-	line "change #MON?"
+	para "האם <PLAYER>"
+	line "יחליף #ימון?"
 	done
 
 _TrainerSentOutText::
+	text "ה@"
 	TX_RAM wTrainerName
-	text " sent"
-	line "out @"
+	text " שלח"
+	line "את @"
 	TX_RAM wEnemyMonNick
 	text "!"
 	done
 
 _NoWillText::
-	text "There's no will"
-	line "to fight!"
+	text "אין חשק להילחם!"
 	prompt
 
 _CantEscapeText::
-	text "Can't escape!"
+	text "לא יכול לברוח!"
 	prompt
 
 _NoRunningText::
-	text "No! There's no"
-	line "running from a"
-	cont "trainer battle!"
+	text "לא! לא בורחים"
+	line "מקרב מול מאמן!"
 	prompt
 
 _GotAwayText::
-	text "Got away safely!"
+	text "הצלחת לברוח"
+	line "בלי פגע!"
 	prompt
 
 _ItemsCantBeUsedHereText::
-	text "Items can't be"
-	line "used here."
+	text "אי אפשר להשתמש"
+	line "בפריטים כאן."
 	prompt
 
 _AlreadyOutText::
 	TX_RAM wBattleMonNick
-	text " is"
-	line "already out!"
+	text " כבר"
+	line "בקרב!"
 	prompt
 
 _MoveNoPPText::
-	text "No PP left for"
-	line "this move!"
+	text "למהלך הזה נגמר"
+	line "הPP!"
 	prompt
 
 _MoveDisabledText::
-	text "The move is"
-	line "disabled!"
+	text "המהלך הזה"
+	line "מושבת!"
 	prompt
 
 _NoMovesLeftText::
+	text "ל@"
 	TX_RAM wBattleMonNick
-	text " has no"
-	line "moves left!"
+	text " לא"
+	line "נשארו מהלכים!"
 	done
 
 _MultiHitText::
-	text "Hit the enemy"
+	text "המתקפה פגעה"
 	line "@"
 	TX_NUM wPlayerNumHits,1,1
-	text " times!"
+	text " פעמים!"
 	prompt
 
 _ScaredText::
 	TX_RAM wBattleMonNick
-	text " is too"
-	line "scared to move!"
+	text " משותק"
+	line "מפחד!"
 	prompt
 
 _GetOutText::
-	text "GHOST: Get out..."
-	line "Get out..."
+	text "רוח: הסתלק..."
+	line "הסתלק מכאן..."
 	prompt
 
 _FastAsleepText::
 	text "<USER>"
-	line "is fast asleep!"
+	line "ישן עמוק!"
 	prompt
 
 _WokeUpText::
 	text "<USER>"
-	line "woke up!"
+	line "התעורר!"
 	prompt
 
 _IsFrozenText::
 	text "<USER>"
-	line "is frozen solid!"
+	line "קפוא לגמרי!"
 	prompt
 
 _FullyParalyzedText::
-	text "<USER>'s"
-	line "fully paralyzed!"
+	text "<USER>"
+	line "משותק לחלוטין!"
 	prompt
 
 _FlinchedText::
 	text "<USER>"
-	line "flinched!"
+	line "נרתע!"
 	prompt
 
 _MustRechargeText::
 	text "<USER>"
-	line "must recharge!"
+	line "אוגר כוחות מחדש!"
 	prompt
 
 _DisabledNoMoreText::
-	text "<USER>'s"
-	line "disabled no more!"
+	text "<USER> כבר"
+	line "לא מושבת!"
 	prompt
 
 _IsConfusedText::
 	text "<USER>"
-	line "is confused!"
+	line "מבולבל!"
 	prompt
 
 _HurtItselfText::
-	text "It hurt itself in"
-	line "its confusion!"
+	text "הוא פגע בעצמו"
+	line "מתוך בלבול!"
 	prompt
 
 _ConfusedNoMoreText::
-	text "<USER>'s"
-	line "confused no more!"
+	text "<USER> כבר"
+	line "לא מבולבל!"
 	prompt
 
 _SavingEnergyText::
 	text "<USER>"
-	line "is saving energy!"
+	line "צובר אנרגיה!"
 	prompt
 
 _UnleashedEnergyText::
 	text "<USER>"
-	line "unleashed energy!"
+	line "שחרר אנרגיה!"
 	prompt
 
 _ThrashingAboutText::
-	text "<USER>'s"
-	line "thrashing about!"
+	text "<USER>"
+	line "משתולל!"
 	done
 
 _AttackContinuesText::
-	text "<USER>'s"
-	line "attack continues!"
+	text "המתקפה של"
+	line "<USER>"
+	cont "ממשיכה!"
 	done
 
 _CantMoveText::
 	text "<USER>"
-	line "can't move!"
+	line "לא יכול לזוז!"
 	prompt
 
 _MoveIsDisabledText::
-	text "<USER>'s"
+	text "המהלך"
 	line "@"
 	TX_RAM wcd6d
-	text " is"
-	cont "disabled!"
+	text "של <USER>"
+	cont "הושבת!"
 	prompt
 
 _MonName1Text::
@@ -1302,14 +1306,14 @@ _MonName1Text::
 
 _Used1Text::
 	text ""
-	line "used @@"
+	line "השתמש ב@@"
 
 _Used2Text::
 	text ""
-	line "used @@"
+	line "השתמש ב@@"
 
 _InsteadText::
-	text "instead,"
+	text "במקום,"
 	cont "@@"
 
 _CF4BText::
@@ -1337,166 +1341,165 @@ _ExclamationPoint5Text::
 	done
 
 _AttackMissedText::
-	text "<USER>'s"
-	line "attack missed!"
+	text "המהלך של"
+	line "<USER> החטיא!"
 	prompt
 
 _KeptGoingAndCrashedText::
 	text "<USER>"
-	line "kept going and"
-	cont "crashed!"
+	line "פספס ונפל!"
 	prompt
 
 _UnaffectedText::
-	text "<TARGET>'s"
-	line "unaffected!"
+	text "<TARGET>"
+	line "לא מושפע!"
 	prompt
 
 _DoesntAffectMonText::
-	text "It doesn't affect"
+	text "זה לא משפיע על"
 	line "<TARGET>!"
 	prompt
 
 _CriticalHitText::
-	text "Critical hit!"
+	text "זו מכה הרסנית!"
 	prompt
 
 _OHKOText::
-	text "One-hit KO!"
+	text "זו מכה קטלנית!"
 	prompt
 
 _LoafingAroundText::
 	TX_RAM wBattleMonNick
-	text " is"
-	line "loafing around."
+	text " מתעצל."
 	prompt
 
 _BeganToNapText::
 	TX_RAM wBattleMonNick
-	text " began"
-	line "to nap!"
+	text " התחיל"
+	line "לנמנם!"
 	prompt
 
 _WontObeyText::
 	TX_RAM wBattleMonNick
-	text " won't"
-	line "obey!"
+	text " לא"
+	line "מוכן לציית!"
 	prompt
 
 _TurnedAwayText::
 	TX_RAM wBattleMonNick
-	text " turned"
-	line "away!"
+	text " הפנה"
+	line "את הגב!"
 	prompt
 
 _IgnoredOrdersText::
 	TX_RAM wBattleMonNick
 	text ""
-	line "ignored orders!"
+	line "התעלם מהפקודה!"
 	prompt
 
 _SubstituteTookDamageText::
-	text "The SUBSTITUTE"
-	line "took damage for"
+	text "ממלא המקום ספג"
+	line "את המכה במקום"
 	cont "<TARGET>!"
 	prompt
 
 _SubstituteBrokeText::
-	text "<TARGET>'s"
-	line "SUBSTITUTE broke!"
+	text "ממלא המקום של"
+	line "<TARGET> נשבר!"
 	prompt
 
 _BuildingRageText::
-	text "<USER>'s"
-	line "RAGE is building!"
+	text "<USER> צובר"
+	line "זעם!"
 	prompt
 
 _MirrorMoveFailedText::
-	text "The MIRROR MOVE"
-	next "failed!"
+	text "העתקת המהלך"
+	next "נכשלה!"
 	prompt
 
 _HitXTimesText::
-	text "Hit @"
+	text "@"
 	TX_NUM wEnemyNumHits, 1, 1
-	text " times!"
+	text " פגיעות!"
 	prompt
 
 _GainedText::
 	TX_RAM wcd6d
-	text " gained"
+	text " קיבל" 
 	line "@@"
 
 _WithExpAllText::
-	text "with EXP.ALL,"
+	text "בזכות שיתוף"
+	cont "PXE,"
 	cont "@@"
 
 _BoostedText::
-	text "a boosted"
+	text "כמות מוגברת של"
 	cont "@@"
 
 _ExpPointsText::
 	TX_NUM wExpAmountGained, 2, 4
-	text " EXP. Points!"
+	text " נקודות"
+	cont "PXE!"
 	prompt
 
 _GrewLevelText::
 	TX_RAM wcd6d
-	text " grew"
-	line "to level @"
+	text " עלה"
+	line "לרמה @"
 	TX_NUM wCurEnemyLVL, 1, 3
 	text "!@@"
 
 _WildMonAppearedText::
-	text "Wild @"
+	text "@"
 	TX_RAM wEnemyMonNick
 	text ""
-	line "appeared!"
+	line "פראי הופיע!"
 	prompt
 
 _HookedMonAttackedText::
-	text "The hooked"
-	line "@"
+	text "ה@"
 	TX_RAM wEnemyMonNick
 	text ""
-	cont "attacked!"
+	line "שדגת תקף!"
 	prompt
 
 _EnemyAppearedText::
 	TX_RAM wEnemyMonNick
 	text ""
-	line "appeared!"
+	line "הופיע!"
 	prompt
 
 _TrainerWantsToFightText::
 	TX_RAM wTrainerName
-	text " wants"
-	line "to fight!"
+	text " רוצה"
+	line "להילחם!"
 	prompt
 
 _UnveiledGhostText::
-	text "SILPH SCOPE"
-	line "unveiled the"
-	cont "GHOST's identity!"
+	text "משקף הסילף חשף"
+	line "את זהותה של"
+	cont "הרוח!"
 	prompt
 
 _GhostCantBeIDdText::
-	text "Darn! The GHOST"
-	line "can't be ID'd!"
+	text "אוף! אי אפשר"
+	line "לזהות את הרוח!"
 	prompt
 
 _GoText::
-	text "Go! @@"
+	text "קדימה! @@"
 
 _DoItText::
-	text "Do it! @@"
+	text "צא! @@"
 
 _GetmText::
-	text "Get'm! @@"
+	text "חסכ'תו! @@"
 
 _EnemysWeakText::
-	text "The enemy's weak!"
-	line "Get'm! @@"
+	text "היריב כבר חלש!"
+	line "כסח'תו! @@"
 
 _PlayerMon1Text::
 	TX_RAM wBattleMonNick
@@ -1508,246 +1511,247 @@ _PlayerMon2Text::
 	text " @@"
 
 _EnoughText::
-	text "enough!@@"
+	text "מספיק!@@"
 
 _OKExclamationText::
-	text "OK!@@"
+	text "בסדר!@@"
 
 _GoodText::
-	text "good!@@"
+	text "יופי!@@"
 
 _ComeBackText::
 	text ""
-	line "Come back!"
+	line "בוא חזרה!"
 	done
 
 _SuperEffectiveText::
-	text "It's super"
-	line "effective!"
+	text "זה אפקטיבי"
+	line "במיוחד!"
 	prompt
 
 _NotVeryEffectiveText::
-	text "It's not very"
-	line "effective..."
+	text "זה לא מאוד"
+	line "אפקטיבי..."
 	prompt
 
 _SafariZoneEatingText::
-	text "Wild @"
+	text "ה@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "is eating!"
+	text "הפראי"
+	line "אוכל!"
 	prompt
 
 _SafariZoneAngryText::
-	text "Wild @"
+	text "ה@"
 	TX_RAM wEnemyMonNick
-	text ""
-	line "is angry!"
+	text " הפראי"
+	line "כועס!"
 	prompt
 
 ; money related
 _PickUpPayDayMoneyText::
-	text "<PLAYER> picked up"
-	line "¥@"
+	text "<PLAYER> אסף"
+	line "מהרצפה"
+	cont "@"
 	TX_BCD wTotalPayDayMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text "!"
+	text "¥!"
 	prompt
 
 _ClearSaveDataText::
-	text "Clear all saved"
-	line "data?"
+	text "למחוק את כל"
+	line "המידע השמור?"
 	done
 
 _WhichFloorText::
-	text "Which floor do"
-	line "you want? "
+	text "איזו קומה?"
 	done
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "בחר #ימון."
 	done
 
 _PartyMenuItemUseText::
-	text "Use item on which"
-	line "#MON?"
+	text "על איזה #ימון"
+	line "להשתמש בפריט?"
 	done
 
 _PartyMenuBattleText::
-	text "Bring out which"
-	line "#MON?"
+	text "איזה #ימון"
+	line "לשלוח?"
 	done
 
 _PartyMenuUseTMText::
-	text "Use TM on which"
-	line "#MON?"
+	text "על איזה #ימון"
+	line "להשתמש בMT?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
-	line "where?"
+	text "לאן להעביר את"
+	line "ה#ימון?"
 	done
 
 _PotionText::
 	TX_RAM wcd6d
 	text ""
-	line "recovered by @"
+	line "נרפא ב@"
 	TX_NUM wHPBarHPDifference, 2, 3
-	text "!"
+	text ""
+	line "נקודות PH!"
 	done
 
 _AntidoteText::
 	TX_RAM wcd6d
-	text " was"
-	line "cured of poison!"
+	text " כבר"
+	line "לא מורעל!"
 	done
 
 _ParlyzHealText::
 	TX_RAM wcd6d
-	text "'s"
-	line "rid of paralysis!"
+	text " כבר"
+	line "לא משותק!"
 	done
 
 _BurnHealText::
+	text "הכויה של"
+	line "@"
 	TX_RAM wcd6d
-	text "'s"
-	line "burn was healed!"
+	text ""
+	line "החלימה!"
 	done
 
 _IceHealText::
 	TX_RAM wcd6d
-	text " was"
-	line "defrosted!"
+	text ""
+	line "הפשיר!"
 	done
 
 _AwakeningText::
 	TX_RAM wcd6d
 	text ""
-	line "woke up!"
+	line "התעורר!"
 	done
 
 _FullHealText::
+	text "הבריאות של"
+	line "@"
 	TX_RAM wcd6d
-	text "'s"
-	line "health returned!"
+	text ""
+	line "שוחזרה!"
 	done
 
 _ReviveText::
 	TX_RAM wcd6d
 	text ""
-	line "is revitalized!"
+	line "הוברא!"
 	done
 
 _RareCandyText::
 	TX_RAM wcd6d
-	text " grew"
-	line "to level @"
+	text " עלה"
+	line "לרמה @"
 	TX_NUM wCurEnemyLVL, 1, 3
 	text "!@@"
 
 _TurnedOnPC1Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> הדליק"
+	line "את המחשב."
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text "נכנסת למחשב של"
+	line "הדר."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "נכנסת למערכת"
+	line "אחסון #ימונים."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
+	text "נכנסת למחשב של"
+	line "???."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "נכנסת למערכת"
+	line "אחסון #ימונים."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text "נכנסת למחשב שלך."
 
-	para "Accessed Item"
-	line "Storage System."
+	para "נכנסת למערכת"
+	line "אחסון הפריטים."
 	prompt
 
 _TurnedOnPC2Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> הדליק"
+	line "את המחשב."
 	prompt
 
 _WhatDoYouWantText::
-	text "What do you want"
-	line "to do?"
+	text "מה תרצה לעשות?"
 	done
 
 _WhatToDepositText::
-	text "What do you want"
-	line "to deposit?"
+	text "מה לאחסן?"
 	done
 
 _DepositHowManyText::
-	text "How many?"
+	text "כמה?"
 	done
 
 _ItemWasStoredText::
 	TX_RAM wcd6d
-	text " was"
-	line "stored via PC."
+	text ""
+	line "מאוחסן במחשב."
 	prompt
 
 _NothingToDepositText::
-	text "You have nothing"
-	line "to deposit."
+	text "אין לך אף פריט"
+	line "לאחסן."
 	prompt
 
 _NoRoomToStoreText::
-	text "No room left to"
-	line "store items."
+	text "אין עוד מקום"
+	line "באחסון."
 	prompt
 
 _WhatToWithdrawText::
-	text "What do you want"
-	line "to withdraw?"
+	text "מה להוציא?"
 	done
 
 _WithdrawHowManyText::
-	text "How many?"
+	text "כמה?"
 	done
 
 _WithdrewItemText::
-	text "Withdrew"
+	text "לקחת"
 	line "@"
 	TX_RAM wcd6d
 	text "."
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text "אין שום דבר"
+	line "באחסון."
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text "אין לך עוד מקום"
+	line "בתיק."
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text "מה לזרוק?"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text "כמה?"
 	done
 
 _AccessedHoFPCText::
-	text "Accessed #MON"
-	line "LEAGUE's site."
+	text "נכנסת לאתר ליגת"
+	line "ה#ימון."
 
-	para "Accessed the HALL"
-	line "OF FAME List."
+	para "נכנסת לרשימת היכל"
+	line "התהילה."
 	prompt
 
 _SwitchOnText::
@@ -1759,68 +1763,71 @@ _WhatText::
 	done
 
 _DepositWhichMonText::
-	text "Deposit which"
-	line "#MON?"
+	text "איזה #ימון"
+	line "להכניס?"
 	done
 
 _MonWasStoredText::
 	TX_RAM wcf4b
-	text " was"
-	line "stored in Box @"
+	text ""
+	line "מאוחסן בתא @"
 	TX_RAM wBoxNumString
 	text "."
 	prompt
 
 _CantDepositLastMonText::
-	text "You can't deposit"
-	line "the last #MON!"
+	text "אתה לא יכול"
+	line "להכניס את!"
+	cont "ה#ימון האחרון!"
 	prompt
 
 _BoxFullText::
-	text "Oops! This Box is"
-	line "full of #MON."
+	text "אופס! התא הזה כבר"
+	line "מלא ב#ימונים."
 	prompt
 
 _MonIsTakenOutText::
 	TX_RAM wcf4b
-	text " is"
-	line "taken out."
-	cont "Got @"
+	text " יצא."
+	line "לקחת את"
+	cont "@"
 	TX_RAM wcf4b
 	text "."
 	prompt
 
 _NoMonText::
-	text "What? There are"
-	line "no #MON here!"
+	text "מה? אין כאן"
+	line "#ימונים!"
 	prompt
 
 _CantTakeMonText::
-	text "You can't take"
-	line "any more #MON."
+	text "אתה לא יכול לקחת"
+	line "עוד #ימונים."
 
-	para "Deposit #MON"
-	line "first."
+	para "הכנס כמה"
+	line "#ימונים כדי"
+	cont "לפנות מקום."
 	prompt
 
 _ReleaseWhichMonText::
-	text "Release which"
-	line "#MON?"
+	text "איזה #ימון"
+	line "לשחרר?"
 	done
 
 _OnceReleasedText::
-	text "Once released,"
-	line "@"
+	text "אם תשחרר"
+	line "את @"
 	TX_RAM wcf4b
-	text " is"
-	cont "gone forever. OK?"
+	text ", הוא"
+	cont "יעלם לנצח. בסדר?"
 	done
 
 _MonWasReleasedText::
 	TX_RAM wcf4b
-	text " was"
-	line "released outside."
-	cont "Bye @"
+	text " שוחרר"
+	line "וחזר לטבע."
+	cont "להתראות,"
+	cont "@"
 
 _CF4BExclamationText::
 	TX_RAM wcf4b
@@ -1828,105 +1835,104 @@ _CF4BExclamationText::
 	prompt
 
 _RequireCoinCaseText::
-	text "A COIN CASE is"
-	line "required!@@"
+	text "צריך ארנק"
+	line "למטבעות!@@"
 
 _ExchangeCoinsForPrizesText::
-	text "We exchange your"
-	line "coins for prizes."
+	text "אנחנו מחליפים את"
+	line "המטבעות שלך בעבור"
+	cont "פרסים."
 	prompt
 
 _WhichPrizeText::
-	text "Which prize do"
-	line "you want?"
+	text "איזה פרס תרצה?"
 	done
 
 _HereYouGoText::
-	text "Here you go!@@"
+	text "בבקשה!@@"
 
 _SoYouWantPrizeText::
-	text "So, you want"
-	line "@"
+	text "אז אתה רוצה את"
+	line "ה@"
 	TX_RAM wcd6d
 	text "?"
 	done
 
 _SorryNeedMoreCoinsText::
-	text "Sorry, you need"
-	line "more coins.@@"
+	text "אני מצטער, אבל"
+	line "אתה צריך עוד"
+	cont "מטבעות.@@"
 
 _OopsYouDontHaveEnoughRoomText::
-	text "Oops! You don't"
-	line "have enough room.@@"
+	text "אופס! אין מספיק"
+	line "מקום בתיק!.@@"
 
 _OhFineThenText::
-	text "Oh, fine then.@@"
+	text "אה. טוב.@@"
 
 _GetDexRatedText::
-	text "Want to get your"
-	line "#DEX rated?"
+	text "רוצה לקבל ציון"
+	line "על ה#ידע שלך?"
 	done
 
 _ClosedOaksPCText::
-	text "Closed link to"
-	line "PROF.OAK's PC.@@"
+	text "החיבור למחשב של"
+	line "פרופ' אלון נסדר.@@"
 
 _AccessedOaksPCText::
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "נכנסת למחשב של"
+	line "פרופ' אלון."
 
-	para "Accessed #DEX"
-	line "Rating System."
+	para "נכנסת למערכת ציון"
+	line "ה#ידע."
 	prompt
 
 _WhereWouldYouLikeText::
-	text "Where would you"
-	line "like to go?"
+	text "לאן תרצה ללכת?"
 	done
 
 _PleaseWaitText::
-	text "OK, please wait"
-	line "just a moment."
+	text "בסדר, המתן רק"
+	line "רגע."
 	done
 
 _LinkCanceledText::
-	text "The link was"
-	line "canceled."
+	text "החיבור בוטל."
 	done
 
 INCLUDE "text/oakspeech.asm"
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "אתה רוצה לתת"
+	line "ל@"
 	TX_RAM wcd6d
-	text "?"
+	text ""
+	line "כינוי?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "טוב! אז קוראים"
+	line "לך <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "כמובן, עכשיו אני"
+	line "אני זוכר! קוראים"
+	cont "לו <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
 	TX_RAM wNameOfPlayerMonToBeTraded
-	text " and"
-	line "@"
+	text ""
+	line "ו@"
 	TX_RAM wcd6d
-	text " will"
-	cont "be traded."
+	text ""
+	cont "יוחלפו."
 	done
 
 _Char00Text::
 	TX_NUM hSpriteIndexOrTextID,1,2
-	text " ERROR."
+	text " שגיאה."
 	done
 
 _Char55Text::
@@ -2005,62 +2011,62 @@ INCLUDE "text/maps/Route24_2.asm"
 INCLUDE "text/maps/Route25.asm"
 
 _FileDataDestroyedText::
-	text "The file data is"
-	line "destroyed!"
+	text "המידע בקובץ השמירה"
+	line "נהרס! לא ניתן"
+	cont "לקרוא את הקובץ!"
 	prompt
 
 _WouldYouLikeToSaveText::
-	text "Would you like to"
-	line "SAVE the game?"
+	text "לשמור את"
+	line "המשחק?"
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "<PLAYER> שמר"
+	line "את המשחק!"
 	done
 
 _OlderFileWillBeErasedText::
-	text "The older file"
-	line "will be erased to"
-	cont "save. Okay?"
+	text "קובץ השמירה הישן"
+	line "יימחק כדי לפנות"
+	cont "לחדש. בסדר?"
 	done
 
 _WhenYouChangeBoxText::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved."
+	text "כשאתה מחליף בין"
+	line "תאים במחשב, המשחק"
+	cont "יישמר."
 
-	para "Is that okay?"
+	para "בסדר?"
 	done
 
 _ChooseABoxText::
-	text "Choose a"
-	line "<pkmn> BOX.@@"
+	text "בחר תא.@@"
 
 _EvolvedText::
 	TX_RAM wcf4b
-	text " evolved"
+	text " התפתח"
 	done
 
 _IntoText::
-	text ""
-	line "into @"
+	text "והפך"
+	line "ל@"
 	TX_RAM wcd6d
 	text "!"
 	done
 
 _StoppedEvolvingText::
-	text "Huh? @"
+	text "הא? @"
 	TX_RAM wcf4b
 	text ""
-	line "stopped evolving!"
+	line "הפסיק להתפתח!"
 	prompt
 
 _IsEvolvingText::
-	text "What? @"
+	text "מה? @"
 	TX_RAM wcf4b
 	text ""
-	line "is evolving!"
+	line "מתפתח!"
 	done
 
 _FellAsleepText::
@@ -2069,59 +2075,63 @@ _FellAsleepText::
 	prompt
 
 _AlreadyAsleepText::
-	text "<TARGET>'s"
-	line "already asleep!"
+	text "<TARGET>"
+	line "כבר ישן!"
 	prompt
 
 _PoisonedText::
 	text "<TARGET>"
-	line "was poisoned!"
+	line "הורעל!"
 	prompt
 
 _BadlyPoisonedText::
-	text "<TARGET>'s"
-	line "badly poisoned!"
+	text "<TARGET>"
+	line "מורעל קשות!"
 	prompt
 
 _BurnedText::
 	text "<TARGET>"
-	line "was burned!"
+	line "נכווה!"
 	prompt
 
 _FrozenText::
 	text "<TARGET>"
-	line "was frozen solid!"
+	line "קפא!"
 	prompt
 
 _FireDefrostedText::
-	text "Fire defrosted"
+	text "האש הפשירה את"
 	line "<TARGET>!"
 	prompt
 
 _MonsStatsRoseText::
-	text "<USER>'s"
-	line "@"
+	text "ה@"
 	TX_RAM wcf4b
-	text "@@"
+	text ""
+	line "של <USER>"
+	cont "@@"
 
 _GreatlyRoseText::
-	text $4c, "greatly@@"
+	text "גדלה מאוד!"
+	prompt
 
 _RoseText::
-	text " rose!"
+	text "גדלה!"
 	prompt
 
 _MonsStatsFellText::
-	text "<TARGET>'s"
-	line "@"
+	text "ה@"
 	TX_RAM wcf4b
-	text "@@"
+	text ""
+	line "של <TARGET>"
+	cont "@@"
 
 _GreatlyFellText::
-	text $4c, "greatly@@"
+	text "הופחתה מאוד!"
+	prompt
 
 _FellText::
-	text " fell!"
+	text "הופחתה!"
 	prompt
 
 _RanFromBattleText::
@@ -2131,12 +2141,12 @@ _RanFromBattleText::
 
 _RanAwayScaredText::
 	text "<TARGET>"
-	line "ran away scared!"
+	line "ברח מרוב פחד!"
 	prompt
 
 _WasBlownAwayText::
 	text "<TARGET>"
-	line "was blown away!"
+	line "הועף!"
 	prompt
 
 _ChargeMoveEffectText::
@@ -2144,181 +2154,182 @@ _ChargeMoveEffectText::
 
 _MadeWhirlwindText::
 	text ""
-	line "made a whirlwind!"
+	line "יצר מערבולת רוח!"
 	prompt
 
 _TookInSunlightText::
 	text ""
-	line "took in sunlight!"
+	line "ספג אור שמש!"
 	prompt
 
 _LoweredItsHeadText::
 	text ""
-	line "lowered its head!"
+	line "הנמיך את הראש!"
 	prompt
 
 _SkyAttackGlowingText::
 	text ""
-	line "is glowing!"
+	line "זורח!"
 	prompt
 
 _FlewUpHighText::
 	text ""
-	line "flew up high!"
+	line "עף גבוה!"
 	prompt
 
 _DugAHoleText::
 	text ""
-	line "dug a hole!"
+	line "חפר בחור!"
 	prompt
 
 _BecameConfusedText::
 	text "<TARGET>"
-	line "became confused!"
+	line "נהיה מבולבל!"
 	prompt
 
 _MimicLearnedMoveText::
 	text "<USER>"
-	line "learned"
+	line "למד"
 	cont "@"
 	TX_RAM wcd6d
 	text "!"
 	prompt
 
 _MoveWasDisabledText::
-	text "<TARGET>'s"
-	line "@"
+	text "המהלך @"
 	TX_RAM wcd6d
-	text " was"
-	cont "disabled!"
+	text ""
+	line "@"
+	text "של <TARGET>"
+	line "הושבת!"
 	prompt
 
 _NothingHappenedText::
-	text "Nothing happened!"
+	text "לא קרה כלום!"
 	prompt
 
 _NoEffectText::
-	text "No effect!"
+	text "אין השפעה!"
 	prompt
 
 _ButItFailedText::
-	text "But, it failed! "
+	text "אבל, זה נכשל! "
 	prompt
 
 _DidntAffectText::
-	text "It didn't affect"
+	text "זה לא השפיע על"
 	line "<TARGET>!"
 	prompt
 
 _IsUnaffectedText::
 	text "<TARGET>"
-	line "is unaffected!"
+	line "לא מושפע!"
 	prompt
 
 _ParalyzedMayNotAttackText::
-	text "<TARGET>'s"
-	line "paralyzed! It may"
-	cont "not attack!"
+	text "<TARGET>"
+	line "משותק! הוא לא"
+	cont "יכול לתקוף!"
 	prompt
 
 _SubstituteText::
-	text "It created a"
-	line "SUBSTITUTE!"
+	text "הוא הפיק ממלא"
+	line "מקום!"
 	prompt
 
 _HasSubstituteText::
-	text "<USER>"
-	line "has a SUBSTITUTE!"
+	text "ל<USER>"
+	line "יש ממלא מקום!"
 	prompt
 
 _TooWeakSubstituteText::
-	text "Too weak to make"
-	line "a SUBSTITUTE!"
+	text "חלש מדי כדי להפיק"
+	line "ממלא מקום!"
 	prompt
 
 _CoinsScatteredText::
-	text "Coins scattered"
-	line "everywhere!"
+	text "מטבעות התפזרו"
+	line "לכל עבר!"
 	prompt
 
 _GettingPumpedText::
-	text "<USER>'s"
-	line "getting pumped!"
+	text "<USER>"
+	line "צובר אנרגיה!"
 	prompt
 
 _WasSeededText::
-	text "<TARGET>"
-	line "was seeded!"
+	text "זרע נזרע אצל"
+	line "<TARGET>!"
 	prompt
 
 _EvadedAttackText::
 	text "<TARGET>"
-	line "evaded attack!"
+	line "חמק מהמתקפה!"
 	prompt
 
 _HitWithRecoilText::
-	text "<USER>'s"
-	line "hit with recoil!"
+	text "<USER> נפגע"
+	line "מההדף!"
 	prompt
 
 _ConvertedTypeText::
-	text "Converted type to"
-	line "<TARGET>'s!"
+	text "שינה סוג לסוג של"
+	line "<TARGET>!"
 	prompt
 
 _StatusChangesEliminatedText::
-	text "All STATUS changes"
-	line "are eliminated!"
+	text "כל שינויי הסטטוס"
+	line "נמחקו!"
 	prompt
 
 _StartedSleepingEffect::
 	text "<USER>"
-	line "started sleeping!"
+	line "נרדם!"
 	done
 
 _FellAsleepBecameHealthyText::
 	text "<USER>"
-	line "fell asleep and"
-	cont "became healthy!"
+	line "נרדם והבריא!"
 	done
 
 _RegainedHealthText::
 	text "<USER>"
-	line "regained health!"
+	line "הבריא!"
 	prompt
 
 _TransformedText::
 	text "<USER>"
-	line "transformed into"
-	cont "@"
+	line "שינה צורה והפך"
+	cont "ל@"
 	TX_RAM wcd6d
 	text "!"
 	prompt
 
 _LightScreenProtectedText::
-	text "<USER>'s"
-	line "protected against"
-	cont "special attacks!"
+	text "<USER> מוגן"
+	line "נגד מתקפות"
+	cont "מיוחדות!"
 	prompt
 
 _ReflectGainedArmorText::
 	text "<USER>"
-	line "gained armor!"
+	line "שיפר את ההגנה"
+	cont "שלו!"
 	prompt
 
 _ShroudedInMistText::
-	text "<USER>'s"
-	line "shrouded in mist!"
+	text "<USER> לוט"
+	line "בערפל!"
 	prompt
 
 _SuckedHealthText::
-	text "Sucked health from"
-	line "<TARGET>!"
+	text "<TARGET> איבד"
+	line "PH בגלל היניקה!"
 	prompt
 
 _DreamWasEatenText::
-	text "<TARGET>'s"
-	line "dream was eaten!"
+	text "החלום של <TARGET>"
+	line "נאכל!"
 	prompt
 
 _TradeCenterText1::
@@ -2431,102 +2442,100 @@ INCLUDE "text/maps/SaffronPokecenter.asm"
 INCLUDE "text/maps/MrPsychicsHouse.asm"
 
 _PokemartGreetingText::
-	text "Hi there!"
-	next "May I help you?"
+	text "שלום!"
+	next "אפשר לעזור לך?"
 	done
 
 _PokemonFaintedText::
 	TX_RAM wcd6d
 	text ""
-	line "fainted!"
+	line "התמוטט!"
 	done
 
 _PlayerBlackedOutText::
-	text "<PLAYER> is out of"
-	line "useable #MON!"
+	text "ל<PLAYER> אין עוד"
+	line "#ימונים שיכולים"
+	cont "להילחם!"
 
-	para "<PLAYER> blacked"
-	line "out!"
+	para "<PLAYER> התעלף!"
 	prompt
 
 _RepelWoreOffText::
-	text "REPEL's effect"
-	line "wore off."
+	text "השפעת הדוחה"
+	line "התפוגגה."
 	done
 
 _PokemartBuyingGreetingText::
-	text "Take your time."
+	text "קח את הזמן."
 	done
 
 _PokemartTellBuyPriceText::
 	TX_RAM wcf4b
 	text "?"
-	line "That will be"
-	cont "¥@"
+	line "זה יעלה לך"
+	cont "@"
 	TX_BCD hMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text ". OK?"
+	text "¥. בסדר?"
 	done
 
 _PokemartBoughtItemText::
-	text "Here you are!"
-	line "Thank you!"
+	text "אין בעיה!"
+	line "בבקשה!"
 	prompt
 
 _PokemartNotEnoughMoneyText::
-	text "You don't have"
-	line "enough money."
+	text "אין לך מספיק"
+	line "כסף."
 	prompt
 
 _PokemartItemBagFullText::
-	text "You can't carry"
-	line "any more items."
+	text "אין לך מקום"
+	line "לעוד פריטים."
 	prompt
 
 _PokemonSellingGreetingText::
-	text "What would you"
-	line "like to sell?"
+	text "מה תרצה למכור?"
 	done
 
 _PokemartTellSellPriceText::
-	text "I can pay you"
-	line "¥@"
+	text "אני יכול לשלם"
+	line "@"
 	TX_BCD hMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
-	text " for that."
+	text "¥ בעד זה."
 	done
 
 _PokemartItemBagEmptyText::
-	text "You don't have"
-	line "anything to sell."
+	text "אין לך שום דבר"
+	line "למכור."
 	prompt
 
 _PokemartUnsellableItemText::
-	text "I can't put a"
-	line "price on that."
+	text "אני לא יכול לשים"
+	line "מחיר על פריט כזה."
 	prompt
 
 _PokemartThankYouText::
-	text "Thank you!"
+	text "תודה רבה!"
 	done
 
 _PokemartAnythingElseText::
-	text "Is there anything"
-	line "else I can do?"
+	text "זה הכל?"
 	done
 
 _LearnedMove1Text::
 	TX_RAM wLearnMoveMonName
-	text " learned"
+	text " למד"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _WhichMoveToForgetText::
-	text "Which move should"
-	next "be forgotten?"
+	text "למחוק איזה"
+	next "מהלך?"
 	done
 
 _AbandonLearningText::
-	text "Abandon learning"
+	text "לוותר על המהלך"
 	line "@"
 	TX_RAM wcf4b
 	text "?"
@@ -2535,7 +2544,7 @@ _AbandonLearningText::
 _DidNotLearnText::
 	TX_RAM wLearnMoveMonName
 	text ""
-	line "did not learn"
+	line "לא למד"
 	cont "@"
 	TX_RAM wcf4b
 	text "!"
@@ -2543,37 +2552,37 @@ _DidNotLearnText::
 
 _TryingToLearnText::
 	TX_RAM wLearnMoveMonName
-	text " is"
-	line "trying to learn"
+	text " מנסה"
+	line "ללמוד את המהלך"
 	cont "@"
 	TX_RAM wcf4b
 	text "!"
 
-	para "But, @"
+	para "אבל, @"
 	TX_RAM wLearnMoveMonName
 	text ""
-	line "can't learn more"
-	cont "than 4 moves!"
+	line "לא יכול ללמוד"
+	cont "יותר מ-3 מהלכים!"
 
-	para "Delete an older"
-	line "move to make room"
-	cont "for @"
+	para "למחוק מהלך קיים"
+	line "כדי לפנות מקום"
+	cont "ל@"
 	TX_RAM wcf4b
 	text "?"
 	done
 
 _OneTwoAndText::
-	text "1, 2 and...@@"
+	text "1, 2 ו...@@"
 
 _PoofText::
-	text " Poof!@@"
+	text " פוף!@@"
 
 _ForgotAndText::
 	text ""
 	para "@"
 	TX_RAM wLearnMoveMonName
-	text " forgot"
-	line "@"
+	text " שכח"
+	line "את @"
 	TX_RAM wcd6d
 	text "!"
 
@@ -2581,152 +2590,154 @@ _ForgotAndText::
 	prompt
 
 _HMCantDeleteText::
-	text "HM techniques"
-	line "can't be deleted!"
+	text "לא ניתן לשכוח"
+	line "מהלכי MH!"
 	prompt
 
 _PokemonCenterWelcomeText::
-	text "Welcome to our"
-	line "#MON CENTER!"
+	text "ברוך הבא למרכז"
+	line "ה#ימון!"
 
-	para "We heal your"
-	line "#MON back to"
-	cont "perfect health!"
+	para "אנחנו מרפאים"
+	line "#ימונים שהתעייפו"
+	cont "או נפצעו?"
 	prompt
 
 _ShallWeHealYourPokemonText::
-	text "Shall we heal your"
-	line "#MON?"
+	text "תרצה שנרפא את"
+	line "ה#ימונים שלך?"
 	done
 
 _NeedYourPokemonText::
-	text "OK. We'll need"
-	line "your #MON."
+	text "אוקיי. אקח"
+	line "את ה#ימונים שלך"
+	cont "רק לרגע."
 	done
 
 _PokemonFightingFitText::
-	text "Thank you!"
-	line "Your #MON are"
-	cont "fighting fit!"
+	text "תודה!"
+	line "ה#ימונים שלך"
+	cont "שוב בריאים"
+	cont "ובכושר!"
 	prompt
 
 _PokemonCenterFarewellText::
-	text "We hope to see"
-	line "you again!"
+	text "נשמח לראותך"
+	line "שוב!"
 	done
 
 _CableClubNPCAreaReservedFor2FriendsLinkedByCableText::
-	text "This area is"
-	line "reserved for 2"
-	cont "friends who are"
-	cont "linked by cable."
+	text "האיזור הזה שמור"
+	line "עבור שני חברים"
+	cont "שמתקשרים בחיבור"
+	cont "כבל."
 	done
 
 _CableClubNPCWelcomeText::
-	text "Welcome to the"
-	line "Cable Club!"
+	text "ברוך הבא"
+	line "למועדון החיבור!" ; TODO
 	done
 
 _CableClubNPCPleaseApplyHereHaveToSaveText::
-	text "Please apply here."
+	text "ההרשמה כאן."
 
-	para "Before opening"
-	line "the link, we have"
-	cont "to save the game."
+	para "לפני שנפתח את"
+	line "החיבור, צריך"
+	cont "לשמור את המשחק."
 	done
 
 _CableClubNPCPleaseWaitText::
-	text "Please wait.@@"
+	text "אנא המתן.@@"
 
 _CableClubNPCLinkClosedBecauseOfInactivityText::
-	text "The link has been"
-	line "closed because of"
-	cont "inactivity."
+	text "החיבור נסגר עקב"
+	line "חוסר פעילות."
 
-	para "Please contact"
-	line "your friend and"
-	cont "come again!"
+	para "אנא, צור קשר עם"
+	line "חברך. נשמח לראותך"
+	cont "שוב!"
 	done
 
 
 SECTION "Text 10", ROMX ; BANK $29
 
 _CableClubNPCPleaseComeAgainText::
-	text "Please come again!"
+	text "נשמח לראותך שוב!"
 	done
 
 _CableClubNPCMakingPreparationsText::
-	text "We're making"
-	line "preparations."
-	cont "Please wait."
+	text "אנחנו מתכוננים."
+	line "כמה רגעים..."
 	done
 
 _UsedStrengthText::
 	TX_RAM wcd6d
-	text " used"
-	line "STRENGTH.@@"
+	text " השתמש"
+	line "בעוצמה.@@"
 
 _CanMoveBouldersText::
 	TX_RAM wcd6d
-	text " can"
-	line "move boulders."
+	text " יכול"
+	line "להזיז סלעים."
 	prompt
 
 _CurrentTooFastText::
-	text "The current is"
-	line "much too fast!"
+	text "הזרמים חזקים"
+	line "מדי!"
 	prompt
 
 _CyclingIsFunText::
-	text "Cycling is fun!"
-	line "Forget SURFing!"
+	text "רכיבה על אופניים"
+	line "זה הכי! גלישה זה"
+	line "פאסה!"
 	prompt
 
 _FlashLightsAreaText::
-	text "A blinding FLASH"
-	line "lights the area!"
+	text "הבזק אור מסנוור"
+	line "האיר את האיזור!"
 	prompt
 
 _WarpToLastPokemonCenterText::
-	text "Warp to the last"
-	line "#MON CENTER."
+	text "משתגר למרכז ה#ימון"
+	line "האחרון שביקרת בו."
 	done
 
 _CannotUseTeleportNowText::
 	TX_RAM wcd6d
-	text " can't"
-	line "use TELEPORT now."
+	text " לא"
+	line "יכול להשתמש"
+	cont "בהשתגרות כרגע."
 	prompt
 
 _CannotFlyHereText::
 	TX_RAM wcd6d
-	text " can't"
-	line "FLY here."
+	text " לא יכול"
+	line "לעוף כאן."
 	prompt
 
 _NotHealthyEnoughText::
-	text "Not healthy"
-	line "enough."
+	text "לא בריא"
+	line "מספיק."
 	prompt
 
 _NewBadgeRequiredText::
-	text "No! A new BADGE"
-	line "is required."
+	text "לא! צריך תג נוסף"
+	line "בשביל זה."
 	prompt
 
 _CannotUseItemsHereText::
-	text "You can't use items"
-	line "here."
+	text "אי אפשר להשתמש"
+	line "בפריטים כאן."
 	prompt
 
 _CannotGetOffHereText::
-	text "You can't get off"
-	line "here."
+	text "אי אפשר לרדת"
+	line "כאן."
 	prompt
 
 _GotMonText::
-	text "<PLAYER> got"
-	line "@"
+	text "<PLAYER> קיבל"
+	line "את @"
 	TX_RAM wcd6d
 	text "!@@"
 
@@ -2743,15 +2754,16 @@ _SentToBoxText::
 	done
 
 _BoxIsFullText::
-	text "There's no more"
-	line "room for #MON!"
+	text "אין עוד מקום"
+	line "ל#ימונים!"
 
-	para "The #MON BOX"
-	line "is full and can't"
-	cont "accept any more!"
+	para "התא במחשב מלא ואי"
+	line "אפשר לשלוח אליו"
+	cont "עוד #ימונים!"
 
-	para "Change the BOX at"
-	line "a #MON CENTER!"
+	para "לך למרכז ה#ימון"
+	line "ותחליף את התא"
+	cont "במחשב!"
 	done
 
 INCLUDE "text/maps/PalletTown.asm"
@@ -2766,432 +2778,433 @@ INCLUDE "text/maps/CinnabarIsland.asm"
 INCLUDE "text/maps/SaffronCity.asm"
 
 _ItemUseBallText00::
-	text "It dodged the"
-	line "thrown BALL!"
+	text "הוא התחמק מהכדור"
+	line "שזרקת!"
 
-	para "This #MON"
-	line "can't be caught!"
+	para "אי אפשר לתפוס"
+	line "את ה#ימון הזה!"
 	prompt
 
 _ItemUseBallText01::
-	text "You missed the"
-	line "#MON!"
+	text "פספסת את"
+	line "ה#ימון!"
 	prompt
 
 _ItemUseBallText02::
-	text "Darn! The #MON"
-	line "broke free!"
+	text "אוח! ה#ימון"
+	line "ברח!"
 	prompt
 
 _ItemUseBallText03::
-	text "Aww! It appeared"
-	line "to be caught! "
+	text "אוי! חשבתי שהוא"
+	line "נתפס! "
 	prompt
 
 _ItemUseBallText04::
-	text "Shoot! It was so"
-	line "close too!"
+	text "אוף! זה היה ממש"
+	line "קרוב!"
 	prompt
 
 _ItemUseBallText05::
-	text "All right!"
+	text "מעולה!"
 	line "@"
 	TX_RAM wEnemyMonNick
-	text " was"
-	cont "caught!@@"
+	text ""
+	cont "נתפס!@@"
 
 _ItemUseBallText07::
 	TX_RAM wBoxMonNicks
-	text " was"
-	line "transferred to"
-	cont "BILL's PC!"
+	text " נשלח"
+	line "למחשב של הדר!"
 	prompt
 
 _ItemUseBallText08::
 	TX_RAM wBoxMonNicks
-	text " was"
-	line "transferred to"
-	cont "someone's PC!"
+	text " נשלח"
+	line "למחשב של ???!"
 	prompt
 
 _ItemUseBallText06::
-	text "New #DEX data"
-	line "will be added for"
-	cont "@"
+	text "מידע חדש על"
+	line "@"
 	TX_RAM wEnemyMonNick
-	text "!@@"
+	text ""
+	text "נוסף ל@#ידע!@@"
 
 _SurfingGotOnText::
-	text "<PLAYER> got on"
+	text "<PLAYER> עלה על"
 	line "@"
 	TX_RAM wcd6d
 	text "!"
 	prompt
 
 _SurfingNoPlaceToGetOffText::
-	text "There's no place"
-	line "to get off!"
+	text "אין איפה לרדת!"
 	prompt
 
 _VitaminStatRoseText::
-	TX_RAM wcd6d
-	text "'s"
-	line "@"
+	text "ה@"
 	TX_RAM wcf4b
-	text " rose."
+	text " של"
+	line "@"
+	TX_RAM wcd6d
+	text " הוגבר."
 	prompt
 
 _VitaminNoEffectText::
-	text "It won't have any"
-	line "effect."
+	text "זה לא ישפיע."
 	prompt
 
 _ThrewBaitText::
-	text "<PLAYER> threw"
-	line "some BAIT."
+	text "<PLAYER> זרק"
+	line "קצת אוכל."
 	done
 
 _ThrewRockText::
-	text "<PLAYER> threw a"
-	line "ROCK."
+	text "<PLAYER> זרק אבן."
 	done
 
 _PlayedFluteNoEffectText::
-	text "Played the #"
-	line "FLUTE."
+	text "ניגן בחלילית"
+	line "הקסם."
 
-	para "Now, that's a"
-	line "catchy tune!"
+	para "זה מה שנקרא"
+	line "מנגינה קליטה!"
 	prompt
 
 _FluteWokeUpText::
-	text "All sleeping"
-	line "#MON woke up."
+	text "כל ה#ימונים"
+	line "שישנו התעוררו."
 	prompt
 
 _PlayedFluteHadEffectText::
-	text "<PLAYER> played the"
-	line "# FLUTE.@@"
+	text "<PLAYER> ניגן"
+	line "בחלילית הקסם.@@"
 
 _CoinCaseNumCoinsText::
-	text "Coins"
+	text "מטבעות"
 	line "@"
 	TX_BCD wPlayerCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
 	text " "
 	prompt
 
 _ItemfinderFoundItemText::
-	text "Yes! ITEMFINDER"
-	line "indicates there's"
-	cont "an item nearby."
+	text "יש! מאתר החפצים"
+	line "מראה שיש חפץ"
+	cont "בקרבת מקום."
 	prompt
 
 _ItemfinderFoundNothingText::
-	text "Nope! ITEMFINDER"
-	line "isn't responding."
+	text "כלום! מאתר החפצים"
+	line "לא מגיב!"
 	prompt
 
 _RaisePPWhichTechniqueText::
-	text "Raise PP of which"
-	line "technique?"
+	text "להגדיל PP של איזה"
+	line "מהלך?"
 	done
 
 _RestorePPWhichTechniqueText::
-	text "Restore PP of"
-	line "which technique?"
+	text "לשחזר PP של איזה"
+	line "מהלך?"
 	done
 
 _PPMaxedOutText::
+	text "הPP של"
+	line "@"
 	TX_RAM wcf4b
-	text "'s PP"
-	line "is maxed out."
+	text " כבר"
+	line "נמצא בערך המרבי!"
 	prompt
 
 _PPIncreasedText::
+	text "הPP של המהלך"
+	line "@"
 	TX_RAM wcf4b
-	text "'s PP"
-	line "increased."
+	text " גדל."
 	prompt
 
 _PPRestoredText::
-	text "PP was restored."
+	text "PP שוחזר."
 	prompt
 
 _BootedUpTMText::
-	text "Booted up a TM!"
+	text "הדלקת מכשיר MT!"
 	prompt
 
 _BootedUpHMText::
-	text "Booted up an HM!"
+	text "הדלקת מכשיר MH!"
 	prompt
 
 _TeachMachineMoveText::
-	text "It contained"
+	text "הוא מכיל את המהלך"
 	line "@"
 	TX_RAM wcf4b
 	text "!"
 
-	para "Teach @"
+	para "ללמד #ימון את"
+	line "המהלך @"
 	TX_RAM wcf4b
-	text ""
-	line "to a #MON?"
+	text "?"
 	done
 
 _MonCannotLearnMachineMoveText::
 	TX_RAM wcd6d
-	text " is not"
-	line "compatible with"
+	text " לא"
+	line "יכול ללמוד"
 	cont "@"
-	TX_RAM wcf4b
-	text "."
-
-	para "It can't learn"
-	line "@"
 	TX_RAM wcf4b
 	text "."
 	prompt
 
 _ItemUseNotTimeText::
-	text "OAK: <PLAYER>!"
-	line "This isn't the"
-	cont "time to use that! "
+	text "אלון: <PLAYER>!"
+	line "זה לא הזמן המתאים"
+	cont "להשתמש בפריט הזה!"
 	prompt
 
 _ItemUseNotYoursToUseText::
-	text "This isn't yours"
-	line "to use!"
+	text "אל תשתמש במה"
+	line "שלא שלך!"
 	prompt
 
 _ItemUseNoEffectText::
-	text "It won't have any"
-	line "effect."
+	text "זה לא ישפיע."
 	prompt
 
 _ThrowBallAtTrainerMonText1::
-	text "The trainer"
-	line "blocked the BALL!"
+	text "המאמן חסם את"
+	line "הכדור!"
 	prompt
 
 _ThrowBallAtTrainerMonText2::
-	text "Don't be a thief!"
+	text "אל תהיה גנב!"
 	prompt
 
 _NoCyclingAllowedHereText::
-	text "No cycling"
-	next "allowed here."
+	text "אסור לרכב"
+	next "על אופניים כאן."
 	prompt
 
 _NoSurfingHereText::
-	text "No SURFing on"
+	text "אי אפשר לגלוש על"
 	line "@"
 	TX_RAM wcd6d
-	text " here!"
+	text " כאן!"
 	prompt
 
 _BoxFullCannotThrowBallText::
-	text "The #MON BOX"
-	line "is full! Can't"
-	cont "use that item!"
+	text "אתה לא יכול"
+	line "להשתמש בפריט הזה"
+	cont "כי התא במחשב מלא!"
 	prompt
 
 
 SECTION "Text 11", ROMX ; BANK $2a
 
 _ItemUseText001::
-	text "<PLAYER> used@@"
+	text "<PLAYER> השתמש@@"
 
 _ItemUseText002::
+	text "ב@"
 	TX_RAM wcf4b
 	text "!"
 	done
 
 _GotOnBicycleText1::
-	text "<PLAYER> got on the@@"
+	text "<PLAYER> עלה על@@"
 
 _GotOnBicycleText2::
+	text "ה@"
 	TX_RAM wcf4b
 	text "!"
 	prompt
 
 _GotOffBicycleText1::
-	text "<PLAYER> got off@@"
+	text "<PLAYER> ירד@@"
 
 _GotOffBicycleText2::
-	text "the @"
+	text "מה@"
 	TX_RAM wcf4b
 	text "."
 	prompt
 
 _ThrewAwayItemText::
-	text "Threw away"
-	line "@"
+	text "<PLAYER> זרק"
+	line "את ה@"
 	TX_RAM wcd6d
 	text "."
 	prompt
 
 _IsItOKToTossItemText::
-	text "Is it OK to toss"
-	line "@"
+	text "אתה בטוח שאתה"
+	line "רוצה לזרוק את"
+	cont "ה@"
 	TX_RAM wcf4b
 	text "?"
 	prompt
 
 _TooImportantToTossText::
-	text "That's too impor-"
-	line "tant to toss!"
+	text "זה פריט חשוב!"
+	line "לא כדאי לזרוק"
+	cont "אותו!"
 	prompt
 
 _AlreadyKnowsText::
 	TX_RAM wcd6d
-	text " knows"
-	line "@"
+	text ""
+	line "כבר יודע את"
+	cont "המהלך"
+	cont "@"
 	TX_RAM wcf4b
 	text "!"
 	prompt
 
 _ConnectCableText::
-	text "Okay, connect the"
-	line "cable like so!"
+	text "אוקיי, ככה מחברים"
+	line "את הכבל!"
 	prompt
 
 _TradedForText::
-	text "<PLAYER> traded"
+	text "<PLAYER> החליף"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
-	text " for"
-	cont "@"
+	text " בעד"
+	line "@"
 	TX_RAM wInGameTradeReceiveMonName
 	text "!@@"
 
 _WannaTrade1Text::
-	text "I'm looking for"
+	text "אני מחפש"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
-	text "! Wanna"
+	text "! רוצה"
 
-	para "trade one for"
+	para "להחליף אחד בשביל"
 	line "@"
 	TX_RAM wInGameTradeReceiveMonName
 	text "? "
 	done
 
 _NoTrade1Text::
-	text "Awww!"
-	line "Oh well..."
+	text "אוף!!"
+	line "הפסד שלך..."
 	done
 
 _WrongMon1Text::
-	text "What? That's not"
+	text "מה? זה ממש לא"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text "!"
 
-	para "If you get one,"
-	line "come back here!"
+	para "אם אתה משיג אחד,"
+	line "תחזור לכאן!"
 	done
 
 _Thanks1Text::
-	text "Hey thanks!"
+	text "היי, תודה!"
 	done
 
 _AfterTrade1Text::
-	text "Isn't my old"
-	line "@"
+	text "איך אתה מסתדר עם"
+	line "ה@"
 	TX_RAM wInGameTradeReceiveMonName
-	text " great?"
+	text ""
+	line "שנתתי לך?"
 	done
 
 _WannaTrade2Text::
-	text "Hello there! Do"
-	line "you want to trade"
-
-	para "your @"
+	text "שלום לך! אתה"
+	line "מעוניין במקרה"
+	cont "להחליף את"
+	para "ה@"
 	TX_RAM wInGameTradeGiveMonName
-	text ""
-	line "for @"
+	text " שלך"
+	line "בעד @"
 	TX_RAM wInGameTradeReceiveMonName
 	text "?"
 	done
 
 _NoTrade2Text::
-	text "Well, if you"
-	line "don't want to..."
+	text "לא רוצה, לא"
+	line "צריך..."
 	done
 
 _WrongMon2Text::
-	text "Hmmm? This isn't"
+	text "המ? זה לא"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text "."
 
-	para "Think of me when"
-	line "you get one."
+	para "כשתתפוס אחד,"
+	line "תזכור לחזור"
+	cont "ולהחליף אותו."
 	done
 
 _Thanks2Text::
-	text "Thanks!"
+	text "תודה!"
 	done
 
 _AfterTrade2Text::
-	text "The @"
+	text "ה@"
 	TX_RAM wInGameTradeGiveMonName
-	text " you"
-	line "traded to me"
+	text ""
+	line "שנתת לי"
 
-	para "went and evolved!"
+	para "התפתח!"
 	done
 
 _WannaTrade3Text::
-	text "Hi! Do you have"
+	text "היי! יש לך"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text "?"
 
-	para "Want to trade it"
-	line "for @"
+	para "רוצה להחליף אותו"
+	line "ב@"
 	TX_RAM wInGameTradeReceiveMonName
 	text "?"
 	done
 
 _NoTrade3Text::
-	text "That's too bad."
+	text "חבל."
 	done
 
 _WrongMon3Text::
-	text "...This is no"
+	text "...זה לא"
 	line "@"
 	TX_RAM wInGameTradeGiveMonName
 	text "."
 
-	para "If you get one,"
-	line "trade it with me!"
+	para "אם אתה תופס אחד,"
+	line "בוא להחליף אותו!"
 	done
 
 _Thanks3Text::
-	text "Thanks pal!"
+	text "תודה חבר!"
 	done
 
 _AfterTrade3Text::
-	text "How is my old"
-	line "@"
+	text "מה שלום"
+	line "ה@"
 	TX_RAM wInGameTradeReceiveMonName
-	text "?"
+	text "שנתתי לך?"
 
-	para "My @"
+	para "ה@"
 	TX_RAM wInGameTradeGiveMonName
-	text " is"
-	line "doing great!"
+	text " שלי"
+	line "מסתדר מצוין!"
 	done
 
 _NothingToCutText::
-	text "There isn't"
-	line "anything to CUT!"
+	text "אין כאן שום דבר"
+	line "לחתוך!"
 	prompt
 
 _UsedCutText::
 	TX_RAM wcd6d
-	text " hacked"
-	line "away with CUT!"
+	text " השתמש"
+	line "בחיתוך!"
 	prompt
 
 
