@@ -1,55 +1,54 @@
 _OakAppearsText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@@"
+	text "אלון: היי! חכה"
+	line "רגע! אל תלך!@@"
 
 _OakWalksUpText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "אלון: זה מסוכן!"
+	line "#ימונים פראים"
+	cont "חיים בדשא!"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "כדאי שיהיו לך"
+	line "#ימונים משלך"
+	cont "שיגנו עליך."
+	cont "יש לי רעיון!"
 
-	para "Here, come with"
-	line "me!"
+	para "בוא איתי!"
 	done
 
 _PalletTownText2::
-	text "I'm raising"
-	line "#MON too!"
+	text "גם אני מאמן"
+	line "#ימונים!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "כשהם יהיו חזקים,"
+	line "הם יוכלו להגן"
+	cont "עלי!"
 	done
 
 _PalletTownText3::
-	text "Technology is"
-	line "incredible!"
+	text "אפשר לאחסן"
+	line "דיגיטלית פריטים"
+	cont "ואפילו #ימונים,"
+	cont "דרך מחשב!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "ממש פלאי"
+	line "הטכנולוגיה!"
 	done
 
 _PalletTownText4::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "מעבדת ה#ימון"
+	line "של פרופ' אלון"
 	done
 
 _PalletTownText5::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "העיירה פאלט"
+	line "המסע המגוון"
+	cont "שלך עומד להתחיל!"
 	done
 
 _PalletTownText6::
-	text "<PLAYER>'s house "
+	text "הבית של <PLAYER>"
 	done
 
 _PalletTownText7::
-	text "<RIVAL>'s house "
+	text "הבית של <RIVAL>"
 	done
