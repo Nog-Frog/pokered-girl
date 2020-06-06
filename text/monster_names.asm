@@ -41,7 +41,7 @@ MonsterNames:
 	db "בת-מזל@@@@" ; CHANSEY
 	db "גברנק@@@@@" ; MACHOKE
 	db "מרחקיין@@@" ; MR.MIME
-	db "הכמפמדג'ה@" ; HITMONLEE
+	db "הכמפמדג'ה@@" ; HITMONLEE
 	db "הכמפארד@@@" ; HITMONCHAN
 	db "נתף@@@@@@@" ; ARBOK
 	db "טפרק@@@@@@" ; PARASECT
