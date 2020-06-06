@@ -18,7 +18,7 @@ FuchsiaCityName:
 CinnabarIslandName:
 	db "עיר הצנובר@" ; CINNABAR ISLAND
 IndigoPlateauName:
-	db "עיר הניל@" ; INDIGO PLATEAU
+	db "רמת הניל@" ; INDIGO PLATEAU
 SaffronCityName:
 	db "עיר הזעפרן@" ; SAFFRON CITY
 Route1Name:
