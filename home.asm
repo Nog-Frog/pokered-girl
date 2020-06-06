@@ -81,6 +81,66 @@ HideSprites::
 
 INCLUDE "home/copy.asm"
 
+; Input: de points to a string (Max 16 characters)
+; Output: de pointers to the reversed string. de stays
+;         unchanged if left aligned
+ReverseText::
+	push hl
+	ld hl, wReversedTextEnd 
+	ld a, "@"
+	ld [hld], a
+.reverseLoop
+	ld [hld], a
+	ld a, [de]
+	inc de
+	cp a, "@"
+	jr nz, .reverseLoop
+	inc hl
+	ld d, h
+	ld e, l
+	pop hl
+	ret
+	
+; function to print a BCD (Binary-coded decimal) number
+; de = address of BCD number
+; hl = destination address
+; c = flags and length
+; bit 7: if set, do not print leading zeroes
+;        if unset, print leading zeroes
+; bit 6: if set, left-align the string (do not pad empty digits with spaces)
+;        if unset, right-align the string
+; bit 5: if set, print currency symbol at the beginning of the string
+;        if unset, do not print the currency symbol
+; bits 0-4: length of BCD number in bytes
+; Note that bits 5 and 7 are modified during execution. The above reflects
+; their meaning at the beginning of the functions's execution.
+PrintBCDNumber::
+	; This wrapper prints the string
+	; to a temporary buffer, reverses it, and prints the
+	; reversed string.
+	; Save hl
+	push hl
+	; Set dest to the temp buffer
+	ld hl, wBCDReverseTemp
+	; Turn delay off
+	ld a,[wd730]
+	push af
+	set 6, a
+	ld [wd730], a
+	; Print to temp buffer
+	call PrintBCDNumberInternal
+AfterPrintBCDNumberInternal::
+	; Restore flags
+	pop af
+	ld [wd730], a
+	; Put a null terminator after the string
+	ld a, "@"
+	ld [hl], a
+	; Restore original dest
+	pop hl
+	; Reverse and print the text
+	ld de, wBCDReverseTemp
+	jp PrintReversed
 
 SECTION "Entry", ROM0
 
@@ -193,9 +253,8 @@ DrawHPBar::
 	; Right
 	ld a, [wHPBarType]
 	dec a
-	ld a, $6d ; status screen and battle
+	ld a, $6c ; status screen and battle
 	jr z, .ok
-	dec a ; pokemon menu
 .ok
 	ld [hl], a
 
@@ -374,7 +433,7 @@ PartyMenuInit::
 	ld hl, wTopMenuItemY
 	inc a
 	ld [hli], a ; top menu item Y
-	xor a
+	ld a, 19
 	ld [hli], a ; top menu item X
 	ld a, [wPartyAndBillsPCSavedMenuItem]
 	push af
@@ -484,11 +543,11 @@ PrintStatusCondition::
 	pop de
 	jr nz, PrintStatusConditionNotFainted
 ; if the pokemon's HP is 0, print "FNT"
-	ld a, "F"
-	ld [hli], a
-	ld a, "N"
-	ld [hli], a
-	ld [hl], "T"
+	ld a, "ע"
+	ld [hld], a
+	ld a, "ל"
+	ld [hld], a
+	ld [hl], "ף"
 	and a
 	ret
 
@@ -511,13 +570,13 @@ PrintStatusConditionNotFainted:
 ; [wLoadedMonLevel] = level
 PrintLevel::
 	ld a, $6e ; ":L" tile ID
-	ld [hli], a
+	ld [hld], a
 	ld c, 2 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 	cp 100
 	jr c, PrintLevelCommon
 ; if level at least 100, write over the ":L" tile
-	dec hl
+	inc hl
 	inc c ; increment number of digits to 3
 	jr PrintLevelCommon
 
@@ -527,7 +586,7 @@ PrintLevel::
 ; [wLoadedMonLevel] = level
 PrintLevelFull::
 	ld a, $6e ; ":L" tile ID
-	ld [hli], a
+	ld [hld], a
 	ld c, 3 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 
@@ -644,7 +703,7 @@ GetPartyMonName::
 ; bits 0-4: length of BCD number in bytes
 ; Note that bits 5 and 7 are modified during execution. The above reflects
 ; their meaning at the beginning of the functions's execution.
-PrintBCDNumber::
+PrintBCDNumberInternal::
 	ld b, c ; save flags in b
 	res 7, c
 	res 6, c
@@ -707,6 +766,15 @@ PrintBCDDigit::
 	bit 6, b ; left or right alignment?
 	ret nz
 	inc hl ; if right-aligned, "print" a space by advancing the pointer
+	ret
+
+; Input: String at de, dest on hl
+; Output: Prints de on hl, hl advances to new end
+PrintReversed::
+	call ReverseText
+	call PlaceString
+	ld h,b
+	ld l,c
 	ret
 
 ; uncompresses the front or back sprite of the specified mon
@@ -1412,7 +1480,7 @@ DisplayListMenuID::
 	ld [wMaxMenuItem], a
 	ld a, 4
 	ld [wTopMenuItemY], a
-	ld a, 5
+	ld a, 18
 	ld [wTopMenuItemX], a
 	ld a, A_BUTTON | B_BUTTON | SELECT
 	ld [wMenuWatchedKeys], a
@@ -1570,11 +1638,7 @@ DisplayChooseQuantityMenu::
 	ld c, 11 ; width
 .drawTextBox
 	call TextBoxBorder
-	coord hl, 16, 10
-	ld a, [wListMenuID]
-	cp PRICEDITEMLISTMENU
-	jr nz, .printInitialQuantity
-	coord hl, 8, 10
+	coord hl, 18, 10
 .printInitialQuantity
 	ld de, InitialQuantityText
 	call PlaceString
@@ -1653,17 +1717,18 @@ DisplayChooseQuantityMenu::
 	ld a, [hDivideBCDQuotient + 2]
 	ld [hMoney + 2], a
 .skipHalvingPrice
-	coord hl, 12, 10
+	coord hl, 15, 10
 	ld de, SpacesBetweenQuantityAndPriceText
 	call PlaceString
 	ld de, hMoney ; total price
-	ld c, $a3
-	call PrintBCDNumber
-	coord hl, 9, 10
+	ld c, $e3
+	coord hl, 8, 10
+	call PrintBCDNumberInternal ; TODO
+	coord hl, 17, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
 	lb bc, LEADING_ZEROES | 1, 2 ; 1 byte, 2 digits
-	call PrintNumber
+	call PrintNumberLTR
 	jp .waitForKeyPressLoop
 .buttonAPressed ; the player chose to make the transaction
 	xor a
@@ -1676,7 +1741,7 @@ DisplayChooseQuantityMenu::
 	ret
 
 InitialQuantityText::
-	db "×01@"
+	db "10×@"
 
 SpacesBetweenQuantityAndPriceText::
 	db "      @"
@@ -1723,7 +1788,7 @@ PrintListMenuEntries::
 	jr nc, .noCarry
 	inc d
 .noCarry
-	coord hl, 6, 4 ; coordinates of first list entry name
+	coord hl, 17, 4 ; coordinates of first list entry name
 	ld b, 4 ; print 4 names
 .loop
 	ld a, b
@@ -1780,10 +1845,10 @@ PrintListMenuEntries::
 	ld [wcf91], a
 	call GetItemPrice ; get price
 	pop hl
-	ld bc, SCREEN_WIDTH + 5 ; 1 row down and 5 columns right
+	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 5 columns right
 	add hl, bc
-	ld c, $a3 ; no leading zeroes, right-aligned, print currency symbol, 3 bytes
-	call PrintBCDNumber
+	ld c, $e3 ; no leading zeroes, left-aligned, print currency symbol, 3 bytes
+	call PrintBCDNumberInternal
 .skipPrintingItemPrice
 	ld a, [wListMenuID]
 	and a
@@ -1818,7 +1883,7 @@ PrintListMenuEntries::
 	ld [wLoadedMonLevel], a
 .skipCopyingLevel
 	pop hl
-	ld bc, $001c
+	ld bc, 12
 	add hl, bc
 	call PrintLevel
 	pop af
@@ -1838,7 +1903,7 @@ PrintListMenuEntries::
 	and a ; is the item unsellable?
 	jr nz, .skipPrintingItemQuantity ; if so, don't print the quantity
 	push hl
-	ld bc, SCREEN_WIDTH + 8 ; 1 row down and 8 columns right
+	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 8 columns right
 	add hl, bc
 	ld a, "×"
 	ld [hli], a
@@ -1850,7 +1915,8 @@ PrintListMenuEntries::
 	ld de, wd11e
 	ld [de], a
 	lb bc, 1, 2
-	call PrintNumber
+	set 6, b
+	call PrintNumberLTR
 	pop de
 	pop af
 	ld [wd11e], a
@@ -1877,7 +1943,7 @@ PrintListMenuEntries::
 	inc c
 	dec b
 	jp nz, .loop
-	ld bc, -8
+	ld bc, -32
 	add hl, bc
 	ld a, "▼"
 	ld [hl], a
@@ -1887,7 +1953,7 @@ PrintListMenuEntries::
 	jp PlaceString
 
 ListMenuCancelText::
-	db "CANCEL@"
+	db "ביטול@"
 
 GetMonName::
 	push hl
@@ -2989,6 +3055,7 @@ InitYesNoTextBoxParameters::
 	ld [wTwoOptionMenuID], a
 	coord hl, 14, 7
 	ld bc, $80f
+	ld c, 18
 	ret
 
 YesNoChoicePokeCenter::
@@ -2996,7 +3063,7 @@ YesNoChoicePokeCenter::
 	ld a, HEAL_CANCEL_MENU
 	ld [wTwoOptionMenuID], a
 	coord hl, 11, 6
-	lb bc, 8, 12
+	lb bc, 8, 18
 	jr DisplayYesNoChoice
 
 WideYesNoChoice:: ; unused
@@ -3920,6 +3987,7 @@ HandleMenuInput_::
 	and a ; was a key pressed?
 	jr nz, .keyPressed
 	push hl
+	; TODO: Figure out how to align this for Hebrew
 	coord hl, 18, 11 ; coordinates of blinking down arrow in some menus
 	call HandleDownArrowBlinkTiming ; blink down arrow (if any)
 	pop hl
@@ -4172,7 +4240,7 @@ AutoTextBoxDrawingCommon::
 	ret
 
 PrintText::
-; Print text hl at (1, 14).
+; Print text hl at (18, 14).
 	push hl
 	ld a, MESSAGE_BOX
 	ld [wTextBoxID], a
@@ -4181,8 +4249,9 @@ PrintText::
 	call Delay3
 	pop hl
 PrintText_NoCreatingTextBox::
-	coord bc, 1, 14
-	jp TextCommandProcessor
+	coord bc, 18, 14
+	call TextCommandProcessor
+	ret
 
 
 PrintNumber::
@@ -4191,6 +4260,22 @@ PrintNumber::
 ; the value to char "0" instead of calling PrintNumber.
 ; Flags LEADING_ZEROES and LEFT_ALIGN can be given
 ; in bits 7 and 6 of b respectively.
+	; This wrapper prints the string
+	; to a temporary buffer, reverses it, and prints the
+	; reversed string.
+	; Save hl
+	push hl
+	; Set dest to the temp buffer
+	ld hl, wBCDReverseTemp
+	; Turn delay off
+	ld a,[wd730]
+	push af
+	set 6, a
+	ld [wd730], a
+	; Print to temp buffer
+	call PrintNumberLTR
+	jp AfterPrintBCDNumberInternal
+PrintNumberLTR::
 	push bc
 	xor a
 	ld [H_PASTLEADINGZEROES], a

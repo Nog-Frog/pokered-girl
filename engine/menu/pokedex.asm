@@ -19,7 +19,7 @@ ShowPokedexMenu:
 	ld hl, wTopMenuItemY
 	ld a, 3
 	ld [hli], a ; top menu item Y
-	xor a
+	ld a, 19
 	ld [hli], a ; top menu item X
 	inc a
 	ld [wMenuWatchMovingOutOfBounds], a
@@ -81,7 +81,7 @@ HandlePokedexSideMenu:
 	ld hl, wTopMenuItemY
 	ld a, 10
 	ld [hli], a ; top menu item Y
-	ld a, 15
+	ld a, 4
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -119,7 +119,7 @@ HandlePokedexSideMenu:
 	pop af
 	ld [wCurrentMenuItem], a
 	push bc
-	coord hl, 0, 3
+	coord hl, 19, 3
 	ld de, 20
 	lb bc, " ", 13
 	call DrawTileLine ; cover up the menu cursor in the pokemon list
@@ -128,7 +128,7 @@ HandlePokedexSideMenu:
 
 .buttonBPressed
 	push bc
-	coord hl, 15, 10
+	coord hl, 5, 10
 	ld de, 20
 	lb bc, " ", 7
 	call DrawTileLine ; cover up the menu cursor in the side menu
@@ -158,43 +158,43 @@ HandlePokedexListMenu:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 ; draw the horizontal line separating the seen and owned amounts from the menu
-	coord hl, 15, 8
+	coord hl, 0, 8
 	ld a, "─"
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
-	coord hl, 14, 0
+	coord hl, 5, 0
 	ld [hl], $71 ; vertical line tile
-	coord hl, 14, 1
+	coord hl, 5, 1
 	call DrawPokedexVerticalLine
-	coord hl, 14, 9
+	coord hl, 5, 9
 	call DrawPokedexVerticalLine
 	ld hl, wPokedexSeen
 	ld b, wPokedexSeenEnd - wPokedexSeen
 	call CountSetBits
 	ld de, wNumSetBits
-	coord hl, 16, 3
+	coord hl, 2, 3
 	lb bc, 1, 3
-	call PrintNumber ; print number of seen pokemon
+	call PrintNumberLTR ; print number of seen pokemon
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld de, wNumSetBits
-	coord hl, 16, 6
+	coord hl, 2, 6
 	lb bc, 1, 3
-	call PrintNumber ; print number of owned pokemon
-	coord hl, 16, 2
+	call PrintNumberLTR ; print number of owned pokemon
+	coord hl, 4, 2
 	ld de, PokedexSeenText
 	call PlaceString
-	coord hl, 16, 5
+	coord hl, 4, 5
 	ld de, PokedexOwnText
 	call PlaceString
-	coord hl, 1, 1
+	coord hl, 19, 1
 	ld de, PokedexContentsText
 	call PlaceString
-	coord hl, 16, 10
+	coord hl, 3, 10
 	ld de, PokedexMenuItemsText
 	call PlaceString
 ; find the highest pokedex number among the pokemon the player has seen
@@ -217,10 +217,10 @@ HandlePokedexListMenu:
 .loop
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 2
+	coord hl, 6, 2
 	lb bc, 14, 10
 	call ClearScreenArea
-	coord hl, 1, 3
+	coord hl, 16, 3
 	ld a, [wListScrollOffset]
 	ld [wd11e], a
 	ld d, 7
@@ -243,9 +243,11 @@ HandlePokedexListMenu:
 	add hl, de
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumber ; print the pokedex number
+	call PrintNumberLTR ; print the pokedex number
 	ld de, SCREEN_WIDTH
 	add hl, de
+	dec hl
+	dec hl
 	dec hl
 	push hl
 	ld hl, wPokedexOwned
@@ -269,7 +271,7 @@ HandlePokedexListMenu:
 	call GetMonName
 .skipGettingName
 	pop hl
-	inc hl
+	dec hl
 	call PlaceString
 	pop hl
 	ld bc, 2 * SCREEN_WIDTH
@@ -360,19 +362,19 @@ DrawPokedexVerticalLine:
 	ret
 
 PokedexSeenText:
-	db "SEEN@"
+	db "נראו@"
 
 PokedexOwnText:
-	db "OWN@"
+	db "נתפסו@"
 
 PokedexContentsText:
-	db "CONTENTS@"
+	db "תוכן העניינים@"
 
 PokedexMenuItemsText:
-	db   "DATA"
-	next "CRY"
-	next "AREA"
-	next "QUIT@"
+	db   "מידע"
+	next "צליל"
+	next "מקום"
+	next "בטל@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
@@ -442,16 +444,16 @@ ShowPokedexDataInternal:
 	ld a, $6e ; lower right corner tile
 	Coorda 19, 17
 
-	coord hl, 0, 9
+	coord hl, 19, 9
 	ld de, PokedexDataDividerLine
 	call PlaceString ; draw horizontal divider line
 
-	coord hl, 9, 6
+	coord hl, 18, 6
 	ld de, HeightWeightText
 	call PlaceString
 
 	call GetMonName
-	coord hl, 9, 2
+	coord hl, 18, 2
 	call PlaceString
 
 	ld hl, PokedexEntryPointers
@@ -465,7 +467,7 @@ ShowPokedexDataInternal:
 	ld e, a
 	ld d, [hl] ; de = address of pokedex entry
 
-	coord hl, 9, 4
+	coord hl, 18, 4
 	call PlaceString ; print species name
 
 	ld h, b
@@ -482,7 +484,7 @@ ShowPokedexDataInternal:
 	ld [hli], a
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumber ; print pokedex number
+	call PrintNumberLTR ; print pokedex number
 
 	ld hl, wPokedexOwned
 	call IsPokemonBitSet
@@ -515,18 +517,14 @@ ShowPokedexDataInternal:
 	jp z, .waitForButtonPress ; if the pokemon has not been owned, don't print the height, weight, or description
 	inc de ; de = address of feet (height)
 	ld a, [de] ; reads feet, but a is overwritten without being used
-	coord hl, 12, 6
+	coord hl, 9, 6
 	lb bc, 1, 2
-	call PrintNumber ; print feet (height)
-	ld a, $60 ; feet symbol tile (one tick)
-	ld [hl], a
+	call PrintNumberLTR ; print feet (height)
 	inc de
 	inc de ; de = address of inches (height)
-	coord hl, 15, 6
+	coord hl, 12, 6
 	lb bc, LEADING_ZEROES | 1, 2
-	call PrintNumber ; print inches (height)
-	ld a, $61 ; inches symbol tile (two ticks)
-	ld [hl], a
+	call PrintNumberLTR ; print inches (height)
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
 	inc de
@@ -544,10 +542,10 @@ ShowPokedexDataInternal:
 	ld a, [de] ; a = lower byte of weight
 	ld [hl], a ; store lower byte of weight in [hDexWeight + 1]
 	ld de, hDexWeight
-	coord hl, 11, 8
+	coord hl, 8, 8
 	lb bc, 2, 5 ; 2 bytes, 5 digits
-	call PrintNumber ; print weight
-	coord hl, 14, 8
+	call PrintNumberLTR ; print weight
+	coord hl, 11, 8
 	ld a, [hDexWeight + 1]
 	sub 10
 	ld a, [hDexWeight]
@@ -565,7 +563,7 @@ ShowPokedexDataInternal:
 	ld [hDexWeight], a ; restore original value of [hDexWeight]
 	pop hl
 	inc hl ; hl = address of pokedex description text
-	coord bc, 1, 11
+	coord bc, 18, 11
 	ld a, 2
 	ld [$fff4], a
 	call TextCommandProcessor ; print pokedex description text
@@ -590,8 +588,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "HT  ?",$60,"??",$61
-	next "WT   ???lb@"
+	db   "גובה ??.?",$60
+	next "משקל ??? ",$62,$61,"@"
 
 ; XXX does anything point to this?
 PokeText:
@@ -599,10 +597,10 @@ PokeText:
 
 ; horizontal line that divides the pokedex text description from the rest of the data
 PokedexDataDividerLine:
-	db $68,$69,$6B,$69,$6B
+	db $6A,$69,$6B,$69,$6B
 	db $69,$6B,$69,$6B,$6B
 	db $6B,$6B,$69,$6B,$69
-	db $6B,$69,$6B,$69,$6A
+	db $6B,$69,$6B,$69,$68
 	db "@"
 
 ; draws a line of tiles

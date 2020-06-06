@@ -61,7 +61,7 @@ AnimateHallOfFame:
 	ld b, 3
 	ld c, 14
 	call TextBoxBorder
-	coord hl, 4, 15
+	coord hl, 14, 15
 	ld de, HallOfFameText
 	call PlaceString
 	ld c, 180
@@ -92,7 +92,7 @@ AnimateHallOfFame:
 	ret
 
 HallOfFameText:
-	db "HALL OF FAME@"
+	db "היכל התהילה@"
 
 HoFShowMonOrPlayer:
 	call ClearScreen
@@ -161,26 +161,26 @@ HoFDisplayMonInfo:
 	ld b, 9
 	ld c, 10
 	call TextBoxBorder
-	coord hl, 2, 6
+	coord hl, 9, 6
 	ld de, HoFMonInfoText
 	call PlaceString
-	coord hl, 1, 4
+	coord hl, 10, 4
 	ld de, wcd6d
 	call PlaceString
 	ld a, [wHoFMonLevel]
-	coord hl, 8, 7
+	coord hl, 4, 7
 	call PrintLevelCommon
 	ld a, [wHoFMonSpecies]
 	ld [wd0b5], a
-	coord hl, 3, 9
+	coord hl, 8, 9
 	predef PrintMonType
 	ld a, [wHoFMonSpecies]
 	jp PlayCry
 
 HoFMonInfoText:
-	db   "LEVEL/"
-	next "TYPE1/"
-	next "TYPE2/@"
+	db   "רמה/"
+	next "סוג1/"
+	next "סוג2/@"
 
 HoFLoadPlayerPics:
 	ld de, RedPicFront
@@ -217,28 +217,29 @@ HoFDisplayPlayerStats:
 	ld b, 2
 	ld c, 9
 	call TextBoxBorder
-	coord hl, 7, 2
+	coord hl, 12, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 1, 6
+	coord hl, 10, 6
 	ld de, HoFPlayTimeText
 	call PlaceString
-	coord hl, 5, 7
+	coord hl, 1, 7
 	ld de, wPlayTimeHours
-	lb bc, 1, 3
-	call PrintNumber
+	lb bc, LEFT_ALIGN | 1, 1, 3
+	call PrintNumberLTR
 	ld [hl], $6d
 	inc hl
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2
-	call PrintNumber
-	coord hl, 1, 9
+	call PrintNumberLTR
+	coord hl, 10, 9
 	ld de, HoFMoneyText
 	call PlaceString
-	coord hl, 4, 10
+	coord hl, 1, 10
 	ld de, wPlayerMoney
 	ld c, $a3
-	call PrintBCDNumber
+	; set 6, c
+	call PrintBCDNumberInternal
 	ld hl, DexSeenOwnedText
 	call HoFPrintTextAndDelay
 	ld hl, DexRatingText

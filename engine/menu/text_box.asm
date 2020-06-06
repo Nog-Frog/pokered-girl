@@ -160,50 +160,50 @@ TextBoxCoordTable:
 ; 08: row of beginning of text
 ; table of window positions and corresponding text [key, start column, start row, end column, end row, text pointer [2 bytes], text column, text row]
 TextBoxTextAndCoordTable:
-	db JP_MOCHIMONO_MENU_TEMPLATE
+	db JP_MOCHIMONO_MENU_TEMPLATE ; UNUSED
 	db 0,0,14,17   ; text box coordinates
 	dw JapaneseMochimonoText
 	db 3,0   ; text coordinates
 
 	db USE_TOSS_MENU_TEMPLATE
-	db 13,10,19,14 ; text box coordinates
+	db 12,10,19,14 ; text box coordinates
 	dw UseTossText
-	db 15,11 ; text coordinates
+	db 17,11 ; text coordinates
 
-	db JP_SAVE_MESSAGE_MENU_TEMPLATE
+	db JP_SAVE_MESSAGE_MENU_TEMPLATE ; UNUSED
 	db 0,0,7,5     ; text box coordinates
 	dw JapaneseSaveMessageText
 	db 2,2   ; text coordinates
 
-	db JP_SPEED_OPTIONS_MENU_TEMPLATE
+	db JP_SPEED_OPTIONS_MENU_TEMPLATE ; UNUSED
 	db 0,6,5,10    ; text box coordinates
 	dw JapaneseSpeedOptionsText
 	db 2,7   ; text coordinates
 
 	db BATTLE_MENU_TEMPLATE
-	db 8,12,19,17  ; text box coordinates
+	db 0,12,11,17  ; text box coordinates
 	dw BattleMenuText
-	db 10,14 ; text coordinates
+	db 9,14 ; text coordinates
 
 	db SAFARI_BATTLE_MENU_TEMPLATE
 	db 0,12,19,17  ; text box coordinates
 	dw SafariZoneBattleMenuText
-	db 2,14  ; text coordinates
+	db 17,14  ; text coordinates
 
 	db SWITCH_STATS_CANCEL_MENU_TEMPLATE
 	db 11,11,19,17 ; text box coordinates
 	dw SwitchStatsCancelText
-	db 13,12 ; text coordinates
+	db 17,12 ; text coordinates
 
 	db BUY_SELL_QUIT_MENU_TEMPLATE
 	db 0,0,10,6    ; text box coordinates
 	dw BuySellQuitText
-	db 2,1   ; text coordinates
+	db 8,1   ; text coordinates
 
 	db MONEY_BOX_TEMPLATE
 	db 11,0,19,2   ; text box coordinates
 	dw MoneyText
-	db 13,0  ; text coordinates
+	db 16,0  ; text coordinates
 
 	db JP_AH_MENU_TEMPLATE
 	db 7,6,11,10   ; text box coordinates
@@ -235,7 +235,7 @@ JapaneseSpeedOptionsText:
 	next "おそい@"
 
 MoneyText:
-	db "MONEY@"
+	db "כסף@"
 
 JapaneseMochimonoText:
 	db "もちもの@"
@@ -245,17 +245,17 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "FIGHT ",$E1,$E2
-	next "ITEM  RUN@"
+	db   "תקוף  ",$E2,$E1
+	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   "כדור×     פיתיון"
+	next "אבן       ברח@"
 
 SwitchStatsCancelText:
-	db   "SWITCH"
-	next "STATS"
-	next "CANCEL@"
+	db   "החלף"
+	next "נתונים"
+	next "ביטול@"
 
 JapaneseAhText:
 	db "アッ!@"
@@ -279,7 +279,7 @@ DisplayMoneyBox:
 	coord hl, 12, 1
 	ld de, wPlayerMoney
 	ld c, $a3
-	call PrintBCDNumber
+	call PrintBCDNumberInternal
 	ld hl, wd730
 	res 6, [hl]
 	ret
@@ -302,7 +302,7 @@ DoBuySellQuitMenu:
 	ld [wMaxMenuItem], a
 	ld a, $1
 	ld [wTopMenuItemY], a
-	ld a, $1
+	ld a, $9
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wCurrentMenuItem], a
@@ -349,6 +349,7 @@ DisplayTwoOptionMenu:
 	ld [wd730], a
 
 ; pointless because both values are overwritten before they are read
+; UNUSED
 	xor a
 	ld [wChosenMenuItem], a
 	ld [wMenuExitMethod], a
@@ -405,9 +406,9 @@ DisplayTwoOptionMenu:
 	pop hl
 	ld a, [hli]
 	and a ; put blank line before first menu item?
-	ld bc, 20 + 2
+	ld bc, 20 + 3
 	jr z, .noBlankLine
-	ld bc, 2 * 20 + 2
+	ld bc, 2 * 20 + 6
 .noBlankLine
 	ld a, [hli]
 	ld e, a
@@ -540,11 +541,11 @@ TwoOptionMenuStrings:
 	dw .NoYesMenu
 
 .NoYesMenu
-	db   "NO"
-	next "YES@"
+	db   "לא"
+	next "כן@"
 .YesNoMenu
-	db   "YES"
-	next "NO@"
+	db   "כן"
+	next "לא@"
 .NorthWestMenu
 	db   "צפון" ; UNUSED
 	next "מערב@" ; UNUSED
@@ -581,9 +582,9 @@ DisplayFieldMoveMonMenu:
 	ld c, 7
 	call TextBoxBorder
 	call UpdateSprites
-	ld a, 12
+	ld a, 18
 	ld [hFieldMoveMonMenuTopMenuItemX], a
-	coord hl, 13, 12
+	coord hl, 17, 12
 	ld de, PokemonMenuEntries
 	jp PlaceString
 
@@ -624,8 +625,7 @@ DisplayFieldMoveMonMenu:
 
 ; Calculate the position of the first field move name to print.
 	coord hl, 0, 12
-	ld a, [wFieldMovesLeftmostXCoord]
-	inc a
+	ld a, 17
 	ld e, a
 	ld d, 0
 	add hl, de
@@ -671,10 +671,8 @@ DisplayFieldMoveMonMenu:
 .donePrintingNames
 	pop hl
 	ld a, [wFieldMovesLeftmostXCoord]
-	ld [hFieldMoveMonMenuTopMenuItemX], a
 	coord hl, 0, 12
-	ld a, [wFieldMovesLeftmostXCoord]
-	inc a
+	ld a, 17
 	ld e, a
 	ld d, 0
 	add hl, de
@@ -693,9 +691,9 @@ FieldMoveNames:
 	db "הטלת ביצה@"
 
 PokemonMenuEntries:
-	db   "STATS"
-	next "SWITCH"
-	next "CANCEL@"
+	db   "נתונים"
+	next "החלף"
+	next "ביטול@"
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]

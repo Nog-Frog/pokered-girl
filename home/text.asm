@@ -76,7 +76,7 @@ Char4ETest::
 	cp $4F ; line
 	jr nz, .next3
 	pop hl
-	coord hl, 1, 16
+	coord hl, 18, 16
 	push hl
 	jp PlaceNextChar_inc
 
@@ -111,7 +111,7 @@ endm
 	dict $59, Char59 ; TARGET
 	dict $5A, Char5A ; USER
 
-	ld [hli], a
+	ld [hld], a
 	call PrintLetterDelay
 PlaceNextChar_inc::
 	inc de
@@ -222,7 +222,7 @@ Char5BText::
 Char5EText::
 	db "רוקט@"
 Char54Text::
-	db "POKé@"
+	db "פוק@"
 Char56Text::
 	db "……@"
 Char5AText::
@@ -258,12 +258,12 @@ Char58:: ; prompt
 	cp LINK_STATE_BATTLING
 	jp z, .ok
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 .ok
 	call ProtectedDelay3
 	call ManualTextScroll
 	ld a, " "
-	Coorda 18, 16
+	Coorda 1, 16
 Char57:: ; done
 	pop hl
 	ld de, Char58Text
@@ -276,7 +276,7 @@ Char58Text::
 Char51:: ; para
 	push de
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	call ManualTextScroll
 	coord hl, 1, 13
@@ -285,13 +285,13 @@ Char51:: ; para
 	ld c, 20
 	call DelayFrames
 	pop de
-	coord hl, 1, 14
+	coord hl, 18, 14
 	jp PlaceNextChar_inc
 
 Char49::
 	push de
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	call ManualTextScroll
 	coord hl, 1, 10
@@ -301,25 +301,25 @@ Char49::
 	call DelayFrames
 	pop de
 	pop hl
-	coord hl, 1, 11
+	coord hl, 18, 11
 	push hl
 	jp PlaceNextChar_inc
 
 Char4B::
 	ld a, "▼"
-	Coorda 18, 16
+	Coorda 1, 16
 	call ProtectedDelay3
 	push de
 	call ManualTextScroll
 	pop de
 	ld a, " "
-	Coorda 18, 16
+	Coorda 1, 16
 	;fall through
 Char4C::
 	push de
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
-	coord hl, 1, 16
+	coord hl, 18, 16
 	pop de
 	jp PlaceNextChar_inc
 
@@ -492,7 +492,7 @@ TextCommand03::
 ; (no arguments)
 TextCommand05::
 	pop hl
-	coord bc, 1, 16 ; address of second line of dialogue text box
+	coord bc, 18, 16 ; address of second line of dialogue text box
 	jp NextTextCommand
 
 ; blink arrow and wait for A or B to be pressed
@@ -503,12 +503,12 @@ TextCommand06::
 	cp LINK_STATE_BATTLING
 	jp z, TextCommand0D
 	ld a, "▼"
-	Coorda 18, 16 ; place down arrow in lower right corner of dialogue text box
+	Coorda 1, 16 ; place down arrow in lower left corner of dialogue text box
 	push bc
 	call ManualTextScroll ; blink arrow and wait for A or B to be pressed
 	pop bc
 	ld a, " "
-	Coorda 18, 16 ; overwrite down arrow with blank space
+	Coorda 1, 16 ; overwrite down arrow with blank space
 	pop hl
 	jp NextTextCommand
 
@@ -517,11 +517,11 @@ TextCommand06::
 ; (no arguments)
 TextCommand07::
 	ld a, " "
-	Coorda 18, 16 ; place blank space in lower right corner of dialogue text box
+	Coorda 1, 16 ; place blank space in lower left corner of dialogue text box
 	call ScrollTextUpOneLine
 	call ScrollTextUpOneLine
 	pop hl
-	coord bc, 1, 16 ; address of second line of dialogue text box
+	coord bc, 18, 16 ; address of second line of dialogue text box
 	jp NextTextCommand
 
 ; execute asm inline

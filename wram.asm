@@ -1046,7 +1046,7 @@ wHiddenObjectY:: ; cd40
 
 wTrainerScreenY:: ; cd40
 
-wUnusedCD40:: ; cd40
+wOptionsCancelCursorX:: ; cd40
 	ds 1
 
 wDayCarePerLevelCost:: ; cd41
@@ -3190,6 +3190,10 @@ wBoxMon2:: ds box_struct_length * (MONS_PER_BOX + -1) ; dab7
 wBoxMonOT::    ds NAME_LENGTH * MONS_PER_BOX ; dd2a
 wBoxMonNicks:: ds NAME_LENGTH * MONS_PER_BOX ; de06
 wBoxMonNicksEnd:: ; dee2
+
+wReversedText:: ds 16
+wReversedTextEnd:: ds 1
+wBCDReverseTemp:: ds 16
 
 wBoxDataEnd::
 

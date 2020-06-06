@@ -20,6 +20,7 @@ DisplayPokemartDialogue_:
 
 ; This code is useless. It copies the address of the pokemart's inventory to hl,
 ; but the address is never used.
+; UNUSED
 	ld hl, wItemListPointer
 	ld a, [hli]
 	ld l, [hl]
@@ -38,6 +39,7 @@ DisplayPokemartDialogue_:
 .sellMenu
 
 ; the same variables are set again below, so this code has no effect
+; UNUSED
 	xor a
 	ld [wPrintItemPrices], a
 	ld a, INIT_BAG_ITEM_LIST
@@ -122,6 +124,7 @@ DisplayPokemartDialogue_:
 .buyMenu
 
 ; the same variables are set again below, so this code has no effect
+; UNUSED
 	ld a, 1
 	ld [wPrintItemPrices], a
 	ld a, INIT_OTHER_ITEM_LIST

@@ -10,18 +10,18 @@ PrintStatusAilment:
 	jr nz, .par
 	and SLP
 	ret z
-	ld a, "S"
-	ld [hli], a
-	ld a, "L"
-	ld [hli], a
-	ld [hl], "P"
+	ld a, "י"
+	ld [hld], a
+	ld a, "ש"
+	ld [hld], a
+	ld [hl], "ן"
 	ret
 .psn
-	ld a, "P"
-	ld [hli], a
-	ld a, "S"
-	ld [hli], a
-	ld [hl], "N"
+	ld a, "ר"
+	ld [hld], a
+	ld a, "ע"
+	ld [hld], a
+	ld [hl], "ל"
 	ret
 .brn
 	ld a, "כ"
@@ -31,16 +31,16 @@ PrintStatusAilment:
 	ld [hl], "ה"
 	ret
 .frz
-	ld a, "F"
-	ld [hli], a
-	ld a, "R"
-	ld [hli], a
-	ld [hl], "Z"
+	ld a, "ק"
+	ld [hld], a
+	ld a, "פ"
+	ld [hld], a
+	ld [hl], "א"
 	ret
 .par
-	ld a, "P"
-	ld [hli], a
-	ld a, "A"
-	ld [hli], a
-	ld [hl], "R"
+	ld a, "ש"
+	ld [hld], a
+	ld a, "ת"
+	ld [hld], a
+	ld [hl], "ק"
 	ret

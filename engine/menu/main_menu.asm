@@ -37,7 +37,7 @@ MainMenu:
 	ld b, 6
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, ContinueText
 	call PlaceString
 	jr .next2
@@ -46,7 +46,7 @@ MainMenu:
 	ld b, 4
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, NewGameText
 	call PlaceString
 .next2
@@ -57,9 +57,9 @@ MainMenu:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ld [wMenuJoypadPollCount], a
-	inc a
+	ld a, $d
 	ld [wTopMenuItemX], a
-	inc a
+	ld a, 2
 	ld [wTopMenuItemY], a
 	ld a, A_BUTTON | B_BUTTON | START
 	ld [wMenuWatchedKeys], a
@@ -329,11 +329,11 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
+	db "המשך משחק", $4e
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "משחק חדש"
+	next "אפשרויות@"
 
 CableClubOptionsText:
 	db   "מרכז ההחלפות"
@@ -343,21 +343,21 @@ CableClubOptionsText:
 DisplayContinueGameInfo:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
-	coord hl, 4, 7
+	coord hl, 3, 7
 	ld b, 8
-	ld c, 14
+	ld c, 15
 	call TextBoxBorder
-	coord hl, 5, 9
+	coord hl, 18, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 9
+	coord hl, 10, 9
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 17, 11
+	coord hl, 10, 11
 	call PrintNumBadges
-	coord hl, 16, 13
+	coord hl, 10, 13
 	call PrintNumOwnedMons
-	coord hl, 13, 15
+	coord hl, 10, 15
 	call PrintPlayTime
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -373,17 +373,17 @@ PrintSaveScreenText:
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	coord hl, 5, 2
+	coord hl, 18, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 12, 2
+	coord hl, 11, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 17, 4
+	coord hl, 11, 4
 	call PrintNumBadges
-	coord hl, 16, 6
+	coord hl, 11, 6
 	call PrintNumOwnedMons
-	coord hl, 13, 8
+	coord hl, 10, 8
 	call PrintPlayTime
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -397,7 +397,7 @@ PrintNumBadges:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, 1, 2
+	lb bc, LEFT_ALIGN | 1, 2
 	jp PrintNumber
 
 PrintNumOwnedMons:
@@ -407,24 +407,27 @@ PrintNumOwnedMons:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, 1, 3
+	lb bc, LEFT_ALIGN | 1, 3
 	jp PrintNumber
 
 PrintPlayTime:
-	ld de, wPlayTimeHours
-	lb bc, 1, 3
-	call PrintNumber
-	ld [hl], $6d
-	inc hl
 	ld de, wPlayTimeMinutes
-	lb bc, LEADING_ZEROES | 1, 2
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
+	call PrintNumber
+	; dec hl  ; These three decs are necessary
+	; dec hl  ; if LIJI's wrappers around PrintNumber
+	; dec hl  ; are removed. TODO
+	ld [hl], $6d
+	dec hl
+	ld de, wPlayTimeHours
+	lb bc, LEFT_ALIGN | 1, 3
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "שם"
+	next "תגים"
+	next "#ידע"
+	next "זמן@"
 
 DisplayOptionMenu:
 	coord hl, 0, 0
@@ -439,16 +442,16 @@ DisplayOptionMenu:
 	ld b, 3
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 1, 1
+	coord hl, 18, 1
 	ld de, TextSpeedOptionText
 	call PlaceString
-	coord hl, 1, 6
+	coord hl, 18, 6
 	ld de, BattleAnimationOptionText
 	call PlaceString
-	coord hl, 1, 11
+	coord hl, 18, 11
 	ld de, BattleStyleOptionText
 	call PlaceString
-	coord hl, 2, 16
+	coord hl, 17, 16
 	ld de, OptionMenuCancelText
 	call PlaceString
 	xor a
@@ -456,7 +459,8 @@ DisplayOptionMenu:
 	ld [wLastMenuItem], a
 	inc a
 	ld [wLetterPrintingDelayFlags], a
-	ld [wUnusedCD40], a
+	ld a, 18
+	ld [wOptionsCancelCursorX], a
 	ld a, 3 ; text speed cursor Y coordinate
 	ld [wTopMenuItemY], a
 	call SetCursorPositionsFromOptions
@@ -545,53 +549,52 @@ DisplayOptionMenu:
 	jp .loop
 .cursorInBattleAnimation
 	ld a, [wOptionsBattleAnimCursorX] ; battle animation cursor X coordinate
-	xor $0b ; toggle between 1 and 10
+	xor $14 ; toggle between 1 and 10
 	ld [wOptionsBattleAnimCursorX], a
 	jp .eraseOldMenuCursor
 .cursorInBattleStyle
 	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	xor $0b ; toggle between 1 and 10
+	xor $1b ; toggle between 1 and 10 ; TODO
 	ld [wOptionsBattleStyleCursorX], a
 	jp .eraseOldMenuCursor
 .pressedLeftInTextSpeed
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
-	cp 1
+	cp 6
 	jr z, .updateTextSpeedXCoord
-	cp 7
+	cp 13
 	jr nz, .fromSlowToMedium
-	sub 6
+	sub 7
 	jr .updateTextSpeedXCoord
 .fromSlowToMedium
-	sub 7
+	sub 5
 	jr .updateTextSpeedXCoord
 .pressedRightInTextSpeed
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
-	cp 14
+	cp 18
 	jr z, .updateTextSpeedXCoord
-	cp 7
+	cp 13
 	jr nz, .fromFastToMedium
-	add 7
+	add 5
 	jr .updateTextSpeedXCoord
 .fromFastToMedium
-	add 6
+	add 7
 .updateTextSpeedXCoord
 	ld [wOptionsTextSpeedCursorX], a ; text speed cursor X coordinate
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "מהירות טקסט"
+	next " איטי בינוני מהיר@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
-
+	db   "אנימציות קרב" ; TODO הנפשות אולי?
+	next " כבוי        דולק@"
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "סגנון קרב"
+	next " משתנה    קבוע@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "ביטול@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:
@@ -642,27 +645,27 @@ SetCursorPositionsFromOptions:
 	dec hl
 	ld a, [hl]
 	ld [wOptionsTextSpeedCursorX], a ; text speed cursor X coordinate
-	coord hl, 0, 3
+	coord hl, 0, 3 ; TODO
 	call .placeUnfilledRightArrow
 	sla c
-	ld a, 1 ; On
+	ld a, 6 ; On
 	jr nc, .storeBattleAnimationCursorX
-	ld a, 10 ; Off
+	ld a, 18 ; Off
 .storeBattleAnimationCursorX
 	ld [wOptionsBattleAnimCursorX], a ; battle animation cursor X coordinate
 	coord hl, 0, 8
 	call .placeUnfilledRightArrow
 	sla c
-	ld a, 1
+	ld a, 6
 	jr nc, .storeBattleStyleCursorX
-	ld a, 10
+	ld a, 18
 .storeBattleStyleCursorX
 	ld [wOptionsBattleStyleCursorX], a ; battle style cursor X coordinate
 	coord hl, 0, 13
 	call .placeUnfilledRightArrow
 ; cursor in front of Cancel
 	coord hl, 0, 16
-	ld a, 1
+	ld a, 18
 .placeUnfilledRightArrow
 	ld e, a
 	ld d, 0
@@ -675,10 +678,10 @@ SetCursorPositionsFromOptions:
 ; 00: X coordinate of menu cursor
 ; 01: delay after printing a letter (in frames)
 TextSpeedOptionData:
-	db 14,5 ; Slow
-	db  7,3 ; Medium
-	db  1,1 ; Fast
-	db 7 ; default X coordinate (Medium)
+	db 18,5 ; Slow
+	db 13,3 ; Medium
+	db 6,1 ; Fast
+	db 13 ; default X coordinate (Medium)
 	db $ff ; terminator
 
 CheckForPlayerNameInSRAM:

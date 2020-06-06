@@ -1755,7 +1755,7 @@ _SwitchOnText::
 	prompt
 
 _WhatText::
-	text "What?"
+	text "מה?"
 	done
 
 _DepositWhichMonText::
@@ -2730,16 +2730,16 @@ _GotMonText::
 	TX_RAM wcd6d
 	text "!@@"
 
-_SentToBoxText::
-	text "There's no more"
-	line "room for #MON!"
+_SetToBoxText::
+	text "אין עוד מקום"
+	line "ל#ימונים!"
 	cont "@"
 	TX_RAM wBoxMonNicks
-	text " was"
-	cont "sent to #MON"
-	cont "BOX @"
+	text " הוכנס"
+	cont "לתא"
+	cont "מס. @"
 	TX_RAM wcf4b
-	text " on PC!"
+	text " במחשב!"
 	done
 
 _BoxIsFullText::

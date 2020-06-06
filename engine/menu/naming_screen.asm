@@ -14,7 +14,7 @@ AskName:
 	ld hl, DoYouWantToNicknameText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
@@ -101,9 +101,10 @@ DisplayNamingScreen:
 	ld a, 3
 	ld [wTopMenuItemY], a
 	ld a, 1
-	ld [wTopMenuItemX], a
 	ld [wLastMenuItem], a
 	ld [wCurrentMenuItem], a
+	ld a, 18
+	ld [wTopMenuItemX], a
 	ld a, $ff
 	ld [wMenuWatchedKeys], a
 	ld a, 7
@@ -212,18 +213,20 @@ DisplayNamingScreen:
 	cp $5 ; "ED" row
 	jr nz, .didNotPressED
 	ld a, [wTopMenuItemX]
-	cp $11 ; "ED" column
+	cp $12 ; "ED" column
 	jr z, .pressedStart
 .didNotPressED
 	ld a, [wCurrentMenuItem]
 	cp $6 ; case switch row
 	jr nz, .didNotPressCaseSwtich
 	ld a, [wTopMenuItemX]
-	cp $1 ; case switch column
+	cp $12 ; case switch column
 	jr z, .pressedA_changedCase
 .didNotPressCaseSwtich
 	ld hl, wMenuCursorLocation
 	ld a, [hli]
+	dec a
+	dec a
 	ld h, [hl]
 	ld l, a
 	inc hl
@@ -260,6 +263,7 @@ DisplayNamingScreen:
 	ld a, [wNamingScreenLetter]
 	ld [hli], a
 	ld [hl], "@"
+
 	ld a, SFX_PRESS_AB
 	call PlaySound
 	ret
@@ -276,25 +280,25 @@ DisplayNamingScreen:
 	cp $6
 	ret z ; can't scroll right on bottom row
 	ld a, [wTopMenuItemX]
-	cp $11 ; max
+	cp $12 ; max
 	jp z, .wrapToFirstColumn
 	inc a
 	inc a
 	jr .done
 .wrapToFirstColumn
-	ld a, $1
+	ld a, $2
 	jr .done
 .pressedLeft
 	ld a, [wCurrentMenuItem]
 	cp $6
-	ret z ; can't scroll right on bottom row
+	ret z ; can't scroll left on bottom row
 	ld a, [wTopMenuItemX]
 	dec a
+	dec a	
 	jp z, .wrapToLastColumn
-	dec a
 	jr .done
 .wrapToLastColumn
-	ld a, $11 ; max
+	ld a, $12 ; max
 	jr .done
 .pressedUp
 	ld a, [wCurrentMenuItem]
@@ -304,7 +308,7 @@ DisplayNamingScreen:
 	ret nz
 	ld a, $6 ; wrap to bottom row
 	ld [wCurrentMenuItem], a
-	ld a, $1 ; force left column
+	ld a, $12 ; force right column
 	jr .done
 .pressedDown
 	ld a, [wCurrentMenuItem]
@@ -314,11 +318,12 @@ DisplayNamingScreen:
 	jr nz, .wrapToTopRow
 	ld a, $1
 	ld [wCurrentMenuItem], a
+	ld a, $12
 	jr .done
 .wrapToTopRow
 	cp $6
 	ret nz
-	ld a, $1
+	ld a, $12
 .done
 	ld [wTopMenuItemX], a
 	jp EraseMenuCursor
@@ -340,11 +345,11 @@ PrintAlphabet:
 	ld [H_AUTOBGTRANSFERENABLED], a
 	ld a, [wAlphabetCase]
 	and a
-	ld de, LowerCaseAlphabet
+	ld de, EnglishKeyboard
 	jr nz, .lowercase
-	ld de, UpperCaseAlphabet
+	ld de, HebrewKeyboard
 .lowercase
-	coord hl, 2, 5
+	coord hl, 1, 5
 	lb bc, 5, 9 ; 5 rows, 9 columns
 .outerLoop
 	push bc
@@ -360,34 +365,42 @@ PrintAlphabet:
 	pop bc
 	dec b
 	jr nz, .outerLoop
+	coord hl, $11, $f ; below keyboard, right aligned
 	call PlaceString
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
-LowerCaseAlphabet:
-	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥UPPER CASE@"
+HebrewKeyboard: ; 679e (1:679e)
+	db "קראטוןםפףשדגכעיחלךזסבהנמצתץ'ז'ג'צ'ת():;־ ?!♂♀/",$f2,",¥אנגלית@"
 
-UpperCaseAlphabet:
-	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥lower case@"
+EnglishKeyboard: ; 67d6 (1:67d6)
+	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥עברית @"
 
 PrintNicknameAndUnderscores:
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
-	coord hl, 10, 2
-	lb bc, 1, 10
+	coord hl, 1, 2
+	lb bc, 1, 11
 	call ClearScreenArea
-	coord hl, 10, 2
+
+	coord hl, 7, 2 ; End of allowed name length for player/rival
+	ld a, [wNamingScreenType]
+	cp NAME_MON_SCREEN
+	jr c, .playerOrRival
+	coord hl, 10, 2 ; End of allowed name length for pokemon
+
+.playerOrRival
 	ld de, wcf4b
 	call PlaceString
-	coord hl, 10, 3
+	coord hl, 1, 3
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr nc, .pokemon1
 	ld b, 7 ; player or rival max name length
 	jr .playerOrRival1
-.pokemon1
+.pokemon1 
 	ld b, 10 ; pokemon max name length
 .playerOrRival1
 	ld a, $76 ; underscore tile id
@@ -407,7 +420,7 @@ PrintNicknameAndUnderscores:
 	jr nz, .emptySpacesRemaining
 	; when all spaces are filled, force the cursor onto the ED tile
 	call EraseMenuCursor
-	ld a, $11 ; "ED" x coord
+	ld a, $12 ; "ED" x coord
 	ld [wTopMenuItemX], a
 	ld a, $5 ; "ED" y coord
 	ld [wCurrentMenuItem], a
@@ -418,9 +431,23 @@ PrintNicknameAndUnderscores:
 	ld a, 6 ; keep the last underscore raised
 .pokemon3
 .emptySpacesRemaining
+	; c = max string length - a
+	ld c, a
+	ld a, 6
+	push af
+	ld a, [wNamingScreenType]
+	cp NAME_MON_SCREEN
+	jr c, .playerOrRival3
+	pop af
+	ld a, 9
+	push af
+.playerOrRival3
+	; ld c, a
+	pop af
+	sub c
 	ld c, a
 	ld b, $0
-	coord hl, 10, 3
+	coord hl, 1, 3
 	add hl, bc
 	ld [hl], $77 ; raised underscore tile id
 	ret
@@ -439,20 +466,21 @@ DakutensAndHandakutens:
 	ld [wNamingScreenLetter], a
 	ret
 
-Dakutens:
-	db "かが", "きぎ", "くぐ", "けげ", "こご"
-	db "さざ", "しじ", "すず", "せぜ", "そぞ"
-	db "ただ", "ちぢ", "つづ", "てで", "とど"
-	db "はば", "ひび", "ふぶ", "へべ", "ほぼ"
-	db "カガ", "キギ", "クグ", "ケゲ", "コゴ"
-	db "サザ", "シジ", "スズ", "セゼ", "ソゾ"
-	db "タダ", "チヂ", "ツヅ", "テデ", "トド"
-	db "ハバ", "ヒビ", "フブ", "へべ", "ホボ"
-	db $ff
+Dakutens: ; 6885 (1:6885)
+; Commented out to save on space (Unused in English version)
+;	db "かが", "きぎ", "くぐ", "けげ", "こご"
+;	db "さざ", "しじ", "すず", "せぜ", "そぞ"
+;	db "ただ", "ちぢ", "つづ", "てで", "とど"
+;	db "はば", "ひび", "ふぶ", "へべ", "ほぼ"
+;	db "カガ", "キギ", "クグ", "ケゲ", "コゴ"
+;	db "サザ", "シジ", "スズ", "セゼ", "ソゾ"
+;	db "タダ", "チヂ", "ツヅ", "テデ", "トド"
+;	db "ハバ", "ヒビ", "フブ", "へべ", "ホボ"
+;	db $ff
 
-Handakutens:
-	db "はぱ", "ひぴ", "ふぷ", "へぺ", "ほぽ"
-	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
+Handakutens: ; 68d6 (1:68d6)
+;	db "はぱ", "ひぴ", "ふぷ", "へぺ", "ほぽ"
+;	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
 	db $ff
 
 ; calculates the length of the string at wcf4b and stores it in c
@@ -468,7 +496,7 @@ CalcStringLength:
 	jr .loop
 
 PrintNamingText:
-	coord hl, 0, 1
+	coord hl, 18, 1
 	ld a, [wNamingScreenType]
 	ld de, YourTextString
 	and a
@@ -483,12 +511,15 @@ PrintNamingText:
 	pop af
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 4, 1
+	coord hl, 15, 1
 	call PlaceString
-	ld hl, $1
-	add hl, bc
-	ld [hl], $c9
-	coord hl, 1, 3
+	; ld hl, $1
+	; add hl, bc
+	; ld [hl], $c9 ; A leftover from the Japanese version.
+	; This used to be the "No" hiragana character (Meaning "'s"),
+	; but in the English version it's just one of the empty tiles.
+	; Since we use these empty tiles for Hebrew, it had to be removed.
+	coord hl, 18, 3
 	ld de, NicknameTextString
 	jr .placeString
 .notNickname
@@ -499,14 +530,14 @@ PrintNamingText:
 .placeString
 	jp PlaceString
 
-YourTextString:
-	db "YOUR @"
+YourTextString: ; 693f (1:693f)
+	db "איך קוראים לך?@"
 
-RivalsTextString:
-	db "RIVAL's @"
+RivalsTextString: ; 6945 (1:6945)
+	db "איך קוראים ליריבך?@"
 
 NameTextString:
-	db "NAME?@"
+	db "@"
 
 NicknameTextString:
-	db "NICKNAME?@"
+	db "כינוי?@"

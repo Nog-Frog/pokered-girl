@@ -39,7 +39,7 @@ DrawBadges:
 
 ; Draw two rows of badges.
 	ld hl, wBadgeNumberTile
-	ld a, $d8 ; [1]
+	ld a, $a0 ; [1]
 	ld [hli], a
 	ld [hl], $60 ; First name
 

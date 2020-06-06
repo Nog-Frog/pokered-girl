@@ -1299,7 +1299,7 @@ SlideDownFaintedMonPic:
 	pop bc
 	dec b
 	jr nz, .rowLoop
-	ld bc, SCREEN_WIDTH
+	ld bc, SCREEN_WIDTH + 6
 	add hl, bc
 	ld de, SevenSpacesText
 	call PlaceString
@@ -1910,7 +1910,7 @@ DrawPlayerHUDAndHPBar:
 	coord hl, 18, 9
 	ld [hl], $73
 	ld de, wBattleMonNick
-	coord hl, 10, 7
+	coord hl, 18, 7
 	call CenterMonName
 	call PlaceString
 	ld hl, wBattleMonSpecies
@@ -1921,7 +1921,7 @@ DrawPlayerHUDAndHPBar:
 	ld de, wLoadedMonLevel
 	ld bc, wBattleMonPP - wBattleMonLevel
 	call CopyData
-	coord hl, 14, 8
+	coord hl, 15, 8
 	push hl
 	inc hl
 	ld de, wLoadedMonStatus
@@ -1969,12 +1969,12 @@ DrawEnemyHUDAndHPBar:
 	call ClearScreenArea
 	callab PlaceEnemyHUDTiles
 	ld de, wEnemyMonNick
-	coord hl, 1, 0
+	coord hl, 9, 0
 	call CenterMonName
 	call PlaceString
-	coord hl, 4, 1
+	coord hl, 6, 1
 	push hl
-	inc hl
+	dec hl
 	ld de, wEnemyMonStatus
 	call PrintStatusConditionNotFainted
 	pop hl
@@ -2061,14 +2061,14 @@ GetBattleHealthBarColor:
 	jp RunPaletteCommand
 
 ; center's mon's name on the battle screen
-; if the name is 1 or 2 letters long, it is printed 2 spaces more to the right than usual
+; if the name is 1 or 2 letters long, it is printed 2 spaces more to the left than usual
 ; (i.e. for names longer than 4 letters)
-; if the name is 3 or 4 letters long, it is printed 1 space more to the right than usual
+; if the name is 3 or 4 letters long, it is printed 1 space more to the left than usual
 ; (i.e. for names longer than 4 letters)
 CenterMonName:
 	push de
-	inc hl
-	inc hl
+	dec hl
+	dec hl
 	ld b, $2
 .loop
 	inc de
@@ -2079,7 +2079,7 @@ CenterMonName:
 	ld a, [de]
 	cp "@"
 	jr z, .done
-	dec hl
+	inc hl
 	dec b
 	jr nz, .loop
 .done
@@ -2131,70 +2131,37 @@ DisplayBattleMenu:
 	call DelayFrames
 	ld [hl], "▷"
 	ld a, $2 ; select the "ITEM" menu
-	jp .upperLeftMenuItemWasNotSelected
+	jp .upperRightMenuItemWasNotSelected
 .oldManName
 	db "OLD MAN@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	sub 2 ; check if the cursor is in the left column
-	jr c, .leftColumn
-; cursor is in the right column
+	sub 2 ; check if the cursor is in the right column
+	jr c, .rightColumn
+; cursor is in the left column
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	jr .rightColumn
-.leftColumn ; put cursor in left column of menu
-	ld a, [wBattleType]
-	cp BATTLE_TYPE_SAFARI
-	ld a, " "
-	jr z, .safariLeftColumn
-; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
-	Coorda 15, 14 ; clear upper cursor position in right column
-	Coorda 15, 16 ; clear lower cursor position in right column
-	ld b, $9 ; top menu item X
-	jr .leftColumn_WaitForInput
-.safariLeftColumn
-	Coorda 13, 14
-	Coorda 13, 16
-	coord hl, 7, 14
-	ld de, wNumSafariBalls
-	lb bc, 1, 2
-	call PrintNumber
-	ld b, $1 ; top menu item X
-.leftColumn_WaitForInput
-	ld hl, wTopMenuItemY
-	ld a, $e
-	ld [hli], a ; wTopMenuItemY
-	ld a, b
-	ld [hli], a ; wTopMenuItemX
-	inc hl
-	inc hl
-	ld a, $1
-	ld [hli], a ; wMaxMenuItem
-	ld [hl], D_RIGHT | A_BUTTON ; wMenuWatchedKeys
-	call HandleMenuInput
-	bit 4, a ; check if right was pressed
-	jr nz, .rightColumn
-	jr .AButtonPressed ; the A button was pressed
+	jr .leftColumn
 .rightColumn ; put cursor in right column of menu
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
 	ld a, " "
 	jr z, .safariRightColumn
 ; put cursor in right column for normal battle menu (i.e. when it's not a Safari battle)
-	Coorda 9, 14 ; clear upper cursor position in left column
-	Coorda 9, 16 ; clear lower cursor position in left column
-	ld b, $f ; top menu item X
+	Coorda 4, 14 ; clear upper cursor position in left column
+	Coorda 4, 16 ; clear lower cursor position in left column
+	ld b, 10 ; top menu item X
 	jr .rightColumn_WaitForInput
 .safariRightColumn
-	Coorda 1, 14 ; clear upper cursor position in left column
-	Coorda 1, 16 ; clear lower cursor position in left column
-	coord hl, 7, 14
+	Coorda 8, 14 
+	Coorda 8, 16 
+	coord hl, 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
 	call PrintNumber
-	ld b, $d ; top menu item X
+	ld b, 18 ; top menu item X  
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
 	ld a, $e
@@ -2205,13 +2172,46 @@ DisplayBattleMenu:
 	inc hl
 	ld a, $1
 	ld [hli], a ; wMaxMenuItem
-	ld a, D_LEFT | A_BUTTON
-	ld [hli], a ; wMenuWatchedKeys
+	ld [hl], D_LEFT | A_BUTTON ; wMenuWatchedKeys
 	call HandleMenuInput
 	bit 5, a ; check if left was pressed
-	jr nz, .leftColumn ; if left was pressed, jump
+	jr nz, .leftColumn
+	jr .AButtonPressed ; the A button was pressed
+.leftColumn ; put cursor in left column of menu
+	ld a, [wBattleType]
+	cp BATTLE_TYPE_SAFARI
+	ld a, " "
+	jr z, .safariLeftColumn
+; put cursor in left column for normal battle menu (i.e. when it's not a Safari battle)
+	Coorda 10, 14 ; clear upper cursor position in right column
+	Coorda 10, 16 ; clear lower cursor position in right column
+	ld b, 4 ; top menu item X
+	jr .leftColumn_WaitForInput
+.safariLeftColumn
+	Coorda 18, 14 ; 
+	Coorda 18, 16 ; 
+	coord hl, 12, 14 
+	ld de, wNumSafariBalls
+	lb bc, 1, 2
+	call PrintNumber
+	ld b, 8 ; top menu item X  
+.leftColumn_WaitForInput
+	ld hl, wTopMenuItemY
+	ld a, $e
+	ld [hli], a ; wTopMenuItemY
+	ld a, b
+	ld [hli], a ; wTopMenuItemX
+	inc hl
+	inc hl
+	ld a, $1
+	ld [hli], a ; wMaxMenuItem
+	ld a, D_RIGHT | A_BUTTON
+	ld [hli], a ; wMenuWatchedKeys
+	call HandleMenuInput
+	bit 4, a ; check if right was pressed
+	jr nz, .rightColumn ; if right was pressed, jump
 	ld a, [wCurrentMenuItem]
-	add $2 ; if we're in the right column, the actual id is +2
+	add $2 ; if we're in the left column, the actual id is +2
 	ld [wCurrentMenuItem], a
 .AButtonPressed
 	call PlaceUnfilledArrowMenuCursor
@@ -2235,8 +2235,8 @@ DisplayBattleMenu:
 	dec a ; decrement a to 1
 .handleMenuSelection
 	and a
-	jr nz, .upperLeftMenuItemWasNotSelected
-; the upper left menu item was selected
+	jr nz, .upperRightMenuItemWasNotSelected
+; the upper right menu item was selected
 	ld a, [wBattleType]
 	cp BATTLE_TYPE_SAFARI
 	jr z, .throwSafariBallWasSelected
@@ -2249,7 +2249,7 @@ DisplayBattleMenu:
 	ld [wcf91], a
 	jr UseBagItem
 
-.upperLeftMenuItemWasNotSelected ; a menu item other than the upper left item was selected
+.upperRightMenuItemWasNotSelected ; a menu item other than the upper left item was selected
 	cp $2
 	jp nz, PartyMenuOrRockOrRun
 
@@ -2426,6 +2426,7 @@ PartyMenuOrRockOrRun:
 	ld hl, wTopMenuItemY
 	ld a, $c
 	ld [hli], a ; wTopMenuItemY
+	add 6
 	ld [hli], a ; wTopMenuItemX
 	xor a
 	ld [hli], a ; wCurrentMenuItem
@@ -2573,7 +2574,7 @@ MoveSelectionMenu:
 	ret z
 	ld hl, wBattleMonMoves
 	call .loadmoves
-	coord hl, 4, 12
+	coord hl, 0, 12
 	ld b, 4
 	ld c, 14
     di ; out of pure coincidence, it is possible for vblank to occur between the di and ei
@@ -2584,10 +2585,10 @@ MoveSelectionMenu:
 	coord hl, 10, 12
 	ld [hl], $7e
 	ei
-	coord hl, 6, 13
+	coord hl, 13, 13
 	call .writemoves
-	ld b, $5
-	ld a, $c
+	ld b, 14
+	ld a, 12
 	jr .menuset
 .mimicmenu
 	ld hl, wEnemyMonMoves
@@ -2611,9 +2612,9 @@ MoveSelectionMenu:
 	ld b, 4
 	ld c, 14
 	call TextBoxBorder
-	coord hl, 6, 8
+	coord hl, 17, 8
 	call .writemoves
-	ld b, $5
+	ld b, 18
 	ld a, $7
 .menuset
 	ld hl, wTopMenuItemY
@@ -2765,7 +2766,7 @@ MoveDisabledText:
 	db "@"
 
 WhichTechniqueString:
-	db "WHICH TECHNIQUE?@"
+	db "איזה מהלך?@"
 
 SelectMenuItem_CursorUp:
 	ld a, [wCurrentMenuItem]
@@ -2961,23 +2962,23 @@ PrintMenuItem:
 	and $3f
 	ld [wcd6d], a
 ; print TYPE/<type> and <curPP>/<maxPP>
-	coord hl, 1, 9
+	coord hl, 9, 9
 	ld de, TypeText
 	call PlaceString
-	coord hl, 7, 11
+	coord hl, 3, 11
 	ld [hl], "/"
-	coord hl, 5, 9
+	coord hl, 6, 9
 	ld [hl], "/"
-	coord hl, 5, 11
+	coord hl, 1, 11
 	ld de, wcd6d
 	lb bc, 1, 2
-	call PrintNumber
-	coord hl, 8, 11
+	call PrintNumberLTR
+	coord hl, 4, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
-	call PrintNumber
+	call PrintNumberLTR
 	call GetCurrentMove
-	coord hl, 2, 10
+	coord hl, 8, 10
 	predef PrintMoveType
 .moveDisabled
 	ld a, $1
@@ -2985,10 +2986,10 @@ PrintMenuItem:
 	jp Delay3
 
 DisabledText:
-	db "disabled!@"
+	db "מושבת!@"
 
 TypeText:
-	db "TYPE@"
+	db "סוג@"
 
 SelectEnemyMove:
 	ld a, [wLinkState]
@@ -6906,16 +6907,12 @@ InitWildBattle:
 	ld [hli], a   ; write front sprite pointer
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
-	ld a, "G"
-	ld [hli], a
-	ld a, "H"
-	ld [hli], a
-	ld a, "O"
-	ld [hli], a
-	ld a, "S"
-	ld [hli], a
-	ld a, "T"
-	ld [hli], a
+	ld a, "ר"
+	ld [hld], a
+	ld a, "ו"
+	ld [hld], a
+	ld a, "ח"
+	ld [hld], a
 	ld [hl], "@"
 	ld a, [wcf91]
 	push af
@@ -7717,6 +7714,7 @@ MonsStatsRoseText:
 	TX_FAR _MonsStatsRoseText
 	TX_ASM
 	ld hl, GreatlyRoseText
+.jumpBack
 	ld a, [H_WHOSETURN]
 	and a
 	ld a, [wPlayerMoveEffect]
@@ -7731,7 +7729,9 @@ MonsStatsRoseText:
 GreatlyRoseText:
 	TX_DELAY
 	TX_FAR _GreatlyRoseText
-; fallthrough
+	db "@"
+    jr MonsStatsRoseText.jumpBack ; I KNOW this is an ugly solution, but it works and isn't wasteful.
+; Used to fallthrough; Doesn't anymore
 RoseText:
 	TX_FAR _RoseText
 	db "@"
@@ -7919,6 +7919,7 @@ MonsStatsFellText:
 	TX_FAR _MonsStatsFellText
 	TX_ASM
 	ld hl, FellText
+.jumpBack
 	ld a, [H_WHOSETURN]
 	and a
 	ld a, [wPlayerMoveEffect]
@@ -7936,7 +7937,8 @@ MonsStatsFellText:
 GreatlyFellText:
 	TX_DELAY
 	TX_FAR _GreatlyFellText
-; fallthrough
+	jr MonsStatsFellText.jumpBack ; It's an ugly solution, but it works and isn't wasteful.
+; Used to fallthrough; doesn't anymore
 FellText:
 	TX_FAR _FellText
 	db "@"
@@ -7958,12 +7960,12 @@ PrintStatText:
 	jp CopyData
 
 StatsTextStrings:
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
-	db "ACCURACY@"
-	db "EVADE@"
+	db "התקפה@"
+	db "הגנה@"
+	db "מהירות@"
+	db "מיוחדת@"
+	db "דיוק@"
+	db "התחמקות@"
 
 StatModifierRatios:
 ; first byte is numerator, second byte is denominator

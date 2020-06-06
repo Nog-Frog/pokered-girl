@@ -165,7 +165,7 @@ DisplayIntroNameTextBox:
 	ld b, $a
 	ld c, $9
 	call TextBoxBorder
-	coord hl, 3, 0
+	coord hl, 7, 0
 	ld de, .namestring
 	call PlaceString
 	pop de
@@ -175,8 +175,9 @@ DisplayIntroNameTextBox:
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	ld a, 9
+	ld a, 8
 	ld [wTopMenuItemX], a
+	ld a, 1
 	ld [wMenuWatchedKeys], a ; A_BUTTON
 	inc a
 	ld [wTopMenuItemY], a
@@ -185,7 +186,7 @@ DisplayIntroNameTextBox:
 	jp HandleMenuInput
 
 .namestring
-	db "NAME@"
+	db "שם@"
 
 IF DEF(_RED)
 DefaultNamesPlayer:
@@ -245,27 +246,27 @@ GetDefaultName:
 
 IF DEF(_RED)
 DefaultNamesPlayerList:
-	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "שם חדש@"
+	db "אדום@"
+	db "אש@"
+	db "'גור'ג@"
 DefaultNamesRivalList:
-	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "שם חדש@"
+	db "כחול@"
+	db "יוסי@"
+	db "'גון@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
-	db "NEW NAME@"
-	db "BLUE@"
-	db "GARY@"
-	db "JOHN@"
+	db "שם חדש@"
+	db "כחול@"
+	db "יוסי@"
+	db "'גון@"
 DefaultNamesRivalList:
-	db "NEW NAME@"
-	db "RED@"
-	db "ASH@"
-	db "JACK@"
+	db "שם חדש@"
+	db "אדום@"
+	db "אש@"
+	db "'גור'ג@"
 ENDC
 
 TextTerminator_6b20:
