@@ -175,7 +175,7 @@ DisplayIntroNameTextBox:
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	ld a, 8
+	ld a, 9
 	ld [wTopMenuItemX], a
 	ld a, 1
 	ld [wMenuWatchedKeys], a ; A_BUTTON
