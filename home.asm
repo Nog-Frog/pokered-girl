@@ -2638,7 +2638,6 @@ TrainerEndBattleText::
 	TX_FAR _TrainerNameText
 	TX_ASM
 	call GetSavedEndBattleTextPointer
-	coord bc, 18, 14
 	call TextCommandProcessor
 	jp TextScriptEnd
 
