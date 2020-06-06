@@ -155,7 +155,7 @@ _Route17Text11::
 	done
 
 _Route17Text12::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "All #MON are"
 	line "unique."
@@ -167,7 +167,7 @@ _Route17Text12::
 	done
 
 _Route17Text13::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Press the A or B"
 	line "Button to stay in"

@@ -77,7 +77,7 @@ _PewterCityText14::
 	done
 
 _PewterCityText6::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Any #MON that"
 	line "takes part in"

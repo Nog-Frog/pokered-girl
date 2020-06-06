@@ -85,7 +85,7 @@ _CeladonCityText9::
 	done
 
 _CeladonCityText10::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "X ACCURACY boosts"
 	line "the accuracy of"
@@ -126,7 +126,7 @@ _CeladonCityText15::
 	done
 
 _CeladonCityText16::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "GUARD SPEC."
 	line "protects #MON"

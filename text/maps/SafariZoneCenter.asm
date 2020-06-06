@@ -3,7 +3,7 @@ _SafariZoneCenterText2::
 	done
 
 _SafariZoneCenterText3::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Press the START"
 	line "Button to check"

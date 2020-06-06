@@ -158,14 +158,14 @@ _Route13AfterBattleText11::
 	done
 
 _Route13Text11::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Look to the left"
 	line "of that post!"
 	done
 
 _Route13Text12::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Use SELECT to"
 	line "switch items in"

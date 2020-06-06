@@ -16,7 +16,7 @@ _SafariZoneWestText6::
 	done
 
 _SafariZoneWestText7::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "Zone Exploration"
 	line "Campaign!"

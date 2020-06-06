@@ -141,7 +141,7 @@ _ViridianCityText8::
 	done
 
 _ViridianCityText9::
-	text "TRAINER TIPS" ; TODO
+	text "טיפים למאמנים" ;TODO
 
 	para "תפוס #ימונים"
 	line "והרחב את"
@@ -153,7 +153,7 @@ _ViridianCityText9::
 	done
 
 _ViridianCityText10::
-	text "TRAINER TIPS" ; TODO
+	text "טיפים למאמנים" ;TODO
 
 	para "המהלכים של"
 	line "ה#ימונים מוגבלים"

@@ -109,7 +109,7 @@ _SaffronCityText18::
 	done
 
 _SaffronCityText20::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "FULL HEAL cures"
 	line "all ailments like"
@@ -121,7 +121,7 @@ _SaffronCityText20::
 	done
 
 _SaffronCityText21::
-	text "TRAINER TIPS"
+	text "טיפים למאמנים"
 
 	para "New GREAT BALL"
 	line "offers improved"

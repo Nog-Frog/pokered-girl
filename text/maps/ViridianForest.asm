@@ -70,7 +70,7 @@ _ViridianForestText8::
 	done
 
 _ViridianForestText9::
-	text "TRAINER TIPS" ;TODO
+	text "טיפים למאמנים" ;TODO
 
 	para "אם אתה רוצה"
 	line "להימנע מקרבות,"
@@ -85,7 +85,7 @@ _ViridianForestText10::
 	done
 
 _ViridianForestText11::
-	text "TRAINER TIPS" ;TODO
+	text "טיפים למאמנים" ;TODO
 	
 	para "אם תיצור קשר דרך"
 	line "המחשב עם פרופ'"
@@ -95,7 +95,7 @@ _ViridianForestText11::
 	done
 
 _ViridianForestText12::
-	text "TRAINER TIPS" ;TODO
+	text "טיפים למאמנים" ;TODO
 
 	para "אסור לגנוב"
 	line "#ימונים ממאמנים"
@@ -105,7 +105,7 @@ _ViridianForestText12::
 	done
 
 _ViridianForestText13::
-	text "TRAINER TIPS" ;TODO
+	text "טיפים למאמנים" ;TODO
 
 	para "החלש את ה#ימונים"
 	line "לפני שתנסה"
