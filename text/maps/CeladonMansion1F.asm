@@ -20,6 +20,6 @@ _CeladonMansion1Text4::
 
 _CeladonMansion1Text5::
 	text "אחוזת האביב"
-	line "סוויטת המנהל
+	line "סוויטת המנהל"
 	done
 
