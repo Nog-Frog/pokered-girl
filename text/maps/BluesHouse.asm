@@ -24,8 +24,8 @@ _DaisyBagFullText::
 
 _DaisyUseMapText::
 	text "אתה יכול להשתמש"
-	line "במפת העיר כדי"
-	cont "לדעת איפה אתה."
+	line "במפה כדי להתמצא"
+	cont "באיזור."
 	done
 
 _BluesHouseText2::

@@ -3,7 +3,7 @@ ItemNames:
 	db "כדור יתר@"        ; ULTRA BALL
 	db "כדור רב@"         ; GREAT BALL
 	db "#כדור@"           ; POKé BALL
-	db "מפת העיר@"        ; TOWN MAP
+	db "מפה@"        ; TOWN MAP
 	db "אופניים@"         ; BICYCLE
 	db "?????@"           ; ?????
 	db "כדור ספארי@"      ; SAFARI BALL
