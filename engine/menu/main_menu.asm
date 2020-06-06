@@ -336,9 +336,9 @@ NewGameText:
 	next "OPTION@"
 
 CableClubOptionsText:
-	db   "TRADE CENTER"
-	next "COLOSSEUM"
-	next "CANCEL@"
+	db   "מרכז ההחלפות"
+	next "הקולוסאום"
+	next "ביטול@"
 
 DisplayContinueGameInfo:
 	xor a

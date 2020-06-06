@@ -151,10 +151,10 @@ LinkCableHelpText2:
 	db "@"
 
 HowToLinkText:
-	db   "HOW TO LINK"
-	next "COLOSSEUM"
-	next "TRADE CENTER"
-	next "STOP READING@"
+	db   "איך לחבר"
+	next "הקולוסאום"
+	next "מרכז ההחלפות"
+	next "להפסיק לקרוא@"
 
 LinkCableInfoTexts:
 	dw LinkCableInfoText1
@@ -268,14 +268,14 @@ ViridianSchoolBlackboardText2:
 	db "@"
 
 StatusAilmentText1:
-	db   " SLP"
-	next " PSN"
-	next " PAR@"
+	db   " ישן"
+	next " רעל"
+	next " שתק@"
 
 StatusAilmentText2:
-	db   " BRN"
-	next " FRZ"
-	next " QUIT@@"
+	db   " כוה"
+	next " קפא"
+	next " ביטול@@"
 
 ViridianBlackboardStatusPointers:
 	dw ViridianBlackboardSleepText

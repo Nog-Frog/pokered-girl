@@ -218,13 +218,13 @@ TextBoxTextAndCoordTable:
 ; note that there is no terminator
 
 BuySellQuitText:
-	db   "BUY"
-	next "SELL"
-	next "QUIT@@"
+	db   "קנה"
+	next "מכר"
+	next "ביטול@@"
 
 UseTossText:
-	db   "USE"
-	next "TOSS@"
+	db   "השתמש"
+	next "זרוק@"
 
 JapaneseSaveMessageText:
 	db   "きろく"
@@ -546,20 +546,20 @@ TwoOptionMenuStrings:
 	db   "YES"
 	next "NO@"
 .NorthWestMenu
-	db   "NORTH"
-	next "WEST@"
+	db   "צפון" ; UNUSED
+	next "מערב@" ; UNUSED
 .SouthEastMenu
-	db   "SOUTH"
-	next "EAST@"
+	db   "דרום" ; UNUSED
+	next "מזרח@" ; UNUSED
 .NorthEastMenu
-	db   "NORTH"
-	next "EAST@"
+	db   "צפון" ; UNUSED
+	next "מזרח@" ; UNUSED
 .TradeCancelMenu
-	db   "TRADE"
-	next "CANCEL@"
+	db   "החף"
+	next "ביטול@"
 .HealCancelMenu
-	db   "HEAL"
-	next "CANCEL@"
+	db   "רפא"
+	next "ביטול@"
 
 DisplayFieldMoveMonMenu:
 	xor a

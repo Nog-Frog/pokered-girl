@@ -24,11 +24,11 @@ PrintStatusAilment:
 	ld [hl], "N"
 	ret
 .brn
-	ld a, "B"
-	ld [hli], a
-	ld a, "R"
-	ld [hli], a
-	ld [hl], "N"
+	ld a, "כ"
+	ld [hld], a
+	ld a, "ו"
+	ld [hld], a
+	ld [hl], "ה"
 	ret
 .frz
 	ld a, "F"

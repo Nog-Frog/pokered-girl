@@ -445,11 +445,11 @@ BillsHousePokemonListText1:
 	db "@"
 
 BillsMonListText:
-	db   "EEVEE"
-	next "FLAREON"
-	next "JOLTEON"
-	next "VAPOREON"
-	next "CANCEL@"
+	db   "פאתו"
+	next "נורידן"
+	next "זעידן"
+	next "אדידן"
+	next "ביטול@"
 
 BillsHousePokemonListText2:
 	TX_FAR _BillsHousePokemonListText2

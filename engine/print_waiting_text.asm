@@ -10,11 +10,11 @@ PrintWaitingText:
 .asm_4c17
 	call CableClub_TextBoxBorder
 .asm_4c1a
-	coord hl, 4, 11
+	coord hl, 15, 11
 	ld de, WaitingText
 	call PlaceString
 	ld c, 50
 	jp DelayFrames
 
 WaitingText:
-	db "Waiting...!@"
+	db "ממתין...!@"

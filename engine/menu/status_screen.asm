@@ -214,7 +214,7 @@ IDNoText:
 	db $73, "№/", $4e
 
 OTText:
-	db   "OT/"
+	db   "מאמן/"
 	next "@"
 
 StatusText:
@@ -463,8 +463,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "EXP POINTS"
-	next "LEVEL UP@"
+	db   "נקודות נסיון"
+	next "עד הרמה הבאה@"
 
 StatusScreen_ClearName:
 	ld bc, 10
