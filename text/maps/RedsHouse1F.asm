@@ -1,37 +1,39 @@
 _MomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "אמא: זה טבעי"
+	line "שילדים רוצים"
+	cont "לעזוב את הבית."
+	cont "זה מה שאמרו"
+	cont "בטלויזיה."
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "פרופ' אלון מחפש"
+	line "אותך. המעבדה שלו"
+	cont "במורד הרחוב."
 	done
 
 _MomHealText1::
-	text "MOM: <PLAYER>!"
-	line "You should take a"
-	cont "quick rest."
+	text "אמא: <PLAYER>!"
+	line "אולי כדאי שתנוח"
+	cont "רגע?"
 	prompt
 
 _MomHealText2::
-	text "MOM: Oh good!"
-	line "You and your"
-	cont "#MON are"
-	cont "looking great!"
-	cont "Take care now!"
+	text "אמא: יופי!"
+	line "ה#ימונים שלך"
+	cont "ואתה נראים רעננים"
+	cont "ומוכנים לצאת"
+	cont "לדרך!"
 	done
 
 _StandByMeText::
-	text "There's a movie"
-	line "on TV. Four boys"
-	cont "are walking on"
-	cont "railroad tracks."
+	text "יש סרט בטלויזיה."
+	line "ארבעה ילדים"
+	cont "הולכים על פסי"
+	cont "רכבת."
 
-	para "I better go too."
+	para "כדאי שגם אני אלך."
 	done
 
 _TVWrongSideText::
-	text "Oops, wrong side."
+	text "לא רואים כלום"
+	line "מהצד הזה!"
 	done
