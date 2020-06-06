@@ -1,55 +1,56 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "שלום לכם!"
+	line "ברוכים הבאים"
+	cont "לעולם ה#ימון!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "שמי הוא אלון,"
+	line "אבל כולם קוראים"
+	cont "לי הפרופסור"
+	cont "ל#ימון!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@@"
+	text "בעולם שלנו חיים"
+	line "יצורים בשם"
+	cont "#ימונים!@@"
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	text $51,"חלק מהאנשים"
+	line "רואים ב#ימונים"
+	cont "רק חיות מחמד."
+	cont "אחרים משתמשים בהם"
+	cont "בקרבות."
 
-	para "Myself..."
+	para "ואני..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "אני חוקר"
+	line "#ימונים כמקצוע."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "קודם כל,"
+	line "מה שמך?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "זה הנכד שלי."
+	line "אתה והוא יריבים"
+	cont "עוד מאז שהיתם"
+	cont "פעוטות."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...אה, מה השם"
+	line "שלו שוב?"
 	prompt
 
 _OakSpeechText3::
-	text "<PLAYER>!"
+	text $52,"!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "הרפתקת ה#ימון"
+	line "שלך עומדת להתחיל!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "עולם של חלומות"
+	line "והרפתקאות עם"
+	cont "#ימונים ממתין"
+	cont "רק לך! בוא נתחיל!"
 	done
+
