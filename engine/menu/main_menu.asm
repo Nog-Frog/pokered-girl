@@ -554,7 +554,7 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 .cursorInBattleStyle
 	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	xor $1b ; toggle between 1 and 10 ; TODO
+	xor $1b ; toggle between 1 and 10
 	ld [wOptionsBattleStyleCursorX], a
 	jp .eraseOldMenuCursor
 .pressedLeftInTextSpeed
@@ -611,7 +611,7 @@ SetOptionsFromCursorPositions:
 	ld a, [hl]
 	ld d, a
 	ld a, [wOptionsBattleAnimCursorX] ; battle animation cursor X coordinate
-	dec a
+	cp a, 6
 	jr z, .battleAnimationOn
 .battleAnimationOff
 	set 7, d
@@ -620,7 +620,7 @@ SetOptionsFromCursorPositions:
 	res 7, d
 .checkBattleStyle
 	ld a, [wOptionsBattleStyleCursorX] ; battle style cursor X coordinate
-	dec a
+	cp a, 9
 	jr z, .battleStyleShift
 .battleStyleSet
 	set 6, d
@@ -656,7 +656,7 @@ SetCursorPositionsFromOptions:
 	coord hl, 0, 8
 	call .placeUnfilledRightArrow
 	sla c
-	ld a, 6
+	ld a, 9
 	jr nc, .storeBattleStyleCursorX
 	ld a, 18
 .storeBattleStyleCursorX
