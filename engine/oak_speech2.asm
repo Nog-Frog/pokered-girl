@@ -169,13 +169,13 @@ DisplayIntroNameTextBox:
 	ld de, .namestring
 	call PlaceString
 	pop de
-	coord hl, 2, 2
+	coord hl, 8, 2
 	call PlaceString
 	call UpdateSprites
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
-	inc a
+	ld a, 9
 	ld [wTopMenuItemX], a
 	ld [wMenuWatchedKeys], a ; A_BUTTON
 	inc a
@@ -189,33 +189,33 @@ DisplayIntroNameTextBox:
 
 IF DEF(_RED)
 DefaultNamesPlayer:
-	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
+	db   "שם חדש"
+	next "אדום"
+	next "אש"
+	next "רון"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	db   "שם חדש"
+	next "כחול"
+	next "יוסי"
+	next "יובל"
 	db   "@"
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer:
-	db   "NEW NAME"
-	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	db   "שם חדש"
+	next "כחול"
+	next "יוסי"
+	next "יובל"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
-	next "RED"
-	next "ASH"
-	next "JACK"
+	db   "שם חדש"
+	next "אדום"
+	next "אש"
+	next "רון"
 	db   "@"
 ENDC
 
