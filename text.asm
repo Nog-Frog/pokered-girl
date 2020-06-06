@@ -807,7 +807,7 @@ _IndigoPlateauHQText::
 
 _RedBedroomSNESText::
 	text "<PLAYER> משחק"
-	line "בSNES!"
+	line "בSENS!"
 	cont "...אוקיי!"
 	cont "צריך ללכת!"
 	done
