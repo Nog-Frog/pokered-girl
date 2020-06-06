@@ -20,7 +20,7 @@ _BillsHouseText_1e865::
 
 _BillsHouseText_1e86a::
 	text "כשאני נכנס"
-	line "לTELEPORTER, לך" ; TODO
+	line "למשגר, לך"
 	cont "למחשב שלי ותפעיל"
 	cont "את מערכת הפרדת"
 	cont "התאים!"
