@@ -40,37 +40,37 @@ Route8Name:
 Route9Name:
 	db "דרך 9@" ; ROUTE 9
 Route10Name:
-	db "דרך 10@" ; ROUTE 10
+	db "דרך 01@" ; ROUTE 10
 Route11Name:
 	db "דרך 11@" ; ROUTE 11
 Route12Name:
-	db "דרך 12@" ; ROUTE 12
+	db "דרך 21@" ; ROUTE 12
 Route13Name:
-	db "דרך 13@" ; ROUTE 13
+	db "דרך 31@" ; ROUTE 13
 Route14Name:
-	db "דרך 14@" ; ROUTE 14
+	db "דרך 41@" ; ROUTE 14
 Route15Name:
-	db "דרך 15@" ; ROUTE 15
+	db "דרך 51@" ; ROUTE 15
 Route16Name:
-	db "דרך 16@" ; ROUTE 16
+	db "דרך 61@" ; ROUTE 16
 Route17Name:
-	db "דרך 17@" ; ROUTE 17
+	db "דרך 71@" ; ROUTE 17
 Route18Name:
-	db "דרך 18@" ; ROUTE 18
+	db "דרך 81@" ; ROUTE 18
 Route19Name:
-	db "דרך החוף 19@" ; SEA ROUTE 19
+	db "דרך החוף 91 @" ; SEA ROUTE 19
 Route20Name:
-	db "דרך החוף 20@" ; SEA ROUTE 20
+	db "דרך החוף 02@" ; SEA ROUTE 20
 Route21Name:
-	db "דרך החוף 21@" ; SEA ROUTE 21
+	db "דרך החוף 12@" ; SEA ROUTE 21
 Route22Name:
 	db "דרך 22@" ; ROUTE 22
 Route23Name:
-	db "דרך 23@" ; ROUTE 23
+	db "דרך 32@" ; ROUTE 23
 Route24Name:
-	db "דרך 24@" ; ROUTE 24
+	db "דרך 42@" ; ROUTE 24
 Route25Name:
-	db "דרך 25@" ; ROUTE 25
+	db "דרך 52@" ; ROUTE 25
 ViridianForestName:
 	db "יער ירוק-עד@" ; VIRIDIAN FOREST
 MountMoonName:
