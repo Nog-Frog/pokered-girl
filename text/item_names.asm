@@ -11,7 +11,7 @@ ItemNames:
 	db "אבן ירח@"         ; MOON STONE
 	db "נוגדן@"           ; ANTIDOTE
 	db "רפא כויה@"       ; BURN HEAL
-	db "רפא קיפאון@"      ; ICE HEAL
+	db "רפא קרח@"         ; ICE HEAL
 	db "שיקוי מעורר@"     ; AWAKENING
 	db "רפא שיתוק@"       ; PARLYZ HEAL
 	db "ריפוי מלא@"       ; FULL RESTORE
