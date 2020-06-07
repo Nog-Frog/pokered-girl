@@ -1,11 +1,11 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
+	text "מוגן על ידי"
+	next "עור דמוי-שריון,"
+	next "מסוגל לחיות"
 
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+	page "בלבה מותכת"
+	next "בטמפרטורה של"
+	next "006,3 מעלות"
 	dex
 
 _KangaskhanDexEntry::
