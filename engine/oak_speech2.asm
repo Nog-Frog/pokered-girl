@@ -193,7 +193,7 @@ DefaultNamesPlayer:
 	db   "שם חדש"
 	next "אדום"
 	next "אש"
-	next "רון"
+	next "דוד"
 	db   "@"
 
 DefaultNamesRival:
@@ -249,24 +249,24 @@ DefaultNamesPlayerList:
 	db "שם חדש@"
 	db "אדום@"
 	db "אש@"
-	db "'גור'ג@"
+	db "דוד@"
 DefaultNamesRivalList:
 	db "שם חדש@"
 	db "כחול@"
 	db "יוסי@"
-	db "'גון@"
+	db "יובל@"
 ENDC
 IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "שם חדש@"
 	db "כחול@"
 	db "יוסי@"
-	db "'גון@"
+	db "יובל@"
 DefaultNamesRivalList:
 	db "שם חדש@"
 	db "אדום@"
 	db "אש@"
-	db "'גור'ג@"
+	db "דוד@"
 ENDC
 
 TextTerminator_6b20:
