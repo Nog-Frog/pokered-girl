@@ -388,8 +388,7 @@ _GymStatueText2::
 _ViridianCityPokecenterGuyText::
 	text "מרכזי #ימון"
 	line "מרפאים #ימונים"
-	cont "מותשים או"
-	cont "פצועים!"
+	cont "מותשים או פצועים!"
 	done
 
 _PewterCityPokecenterGuyText::
@@ -522,7 +521,7 @@ _NewBicycleText::
 	done
 
 _PushStartText::
-	text "לחץ על START"
+	text "לחץ על כפתור TRATS"
 	line "כדי לפתוח את"
 	cont "התפריט!"
 	done
@@ -655,10 +654,10 @@ _OakLabEmailText::
 	para "מאמני העילית של"
 	line "ליגת ה#ימון"
 	cont "מוכנים ומזומנים"
-	cont "להילחם מול כל אחד"
+	cont "להילחם מול כל מי"
 	cont "שיבוא לאתגר אותם!"
 
-	para "הביאו את ה#ימונים"
+	para "בואו עם ה#ימונים"
 	line "הטובים ביותר שלכם"
 	cont "ובחנו את כישוריכם"
 	cont "בתור מאמנים!"
@@ -1036,7 +1035,7 @@ _ElevatorText::
 	done
 
 _TownMapText::
-	text "מפת העיר.@@"
+	text "זו מפה.@@"
 
 _PokemonStuffText::
 	text "וואו! טונה של"
@@ -1145,7 +1144,7 @@ _TrainerAboutToUseText::
 	done
 
 _TrainerSentOutText::
-	text "ה@"
+	text "@"
 	TX_RAM wTrainerName
 	text " שלח"
 	line "את @"
@@ -1592,11 +1591,10 @@ _PartyMenuSwapMonText::
 
 _PotionText::
 	TX_RAM wcd6d
-	text ""
-	line "נרפא ב@"
+	text " נרפא"
+	line "ב@"
 	TX_NUM wHPBarHPDifference, 2, 3
-	text ""
-	line "נקודות PH!"
+	text "נק' PH!"
 	done
 
 _AntidoteText::
@@ -1906,8 +1904,8 @@ _DoYouWantToNicknameText::
 	text "אתה רוצה לתת"
 	line "ל@"
 	TX_RAM wcd6d
-	text ""
-	line "כינוי?"
+	text " כינוי?"
+	; line "כינוי?"
 	done
 
 _YourNameIsText::
@@ -2213,7 +2211,7 @@ _NoEffectText::
 	prompt
 
 _ButItFailedText::
-	text "אבל, זה נכשל! "
+	text "אבל, זה לא עבד! "
 	prompt
 
 _DidntAffectText::
@@ -2442,7 +2440,7 @@ INCLUDE "text/maps/SaffronPokecenter.asm"
 INCLUDE "text/maps/MrPsychicsHouse.asm"
 
 _PokemartGreetingText::
-	text "שלום!"
+	text "שלום! איך"
 	next "אפשר לעזור לך?"
 	done
 
@@ -2599,8 +2597,8 @@ _PokemonCenterWelcomeText::
 	line "ה#ימון!"
 
 	para "אנחנו מרפאים"
-	line "#ימונים שהתעייפו"
-	cont "או נפצעו?"
+	line "#ימונים עייפים"
+	cont "או פצועים!"
 	prompt
 
 _ShallWeHealYourPokemonText::
