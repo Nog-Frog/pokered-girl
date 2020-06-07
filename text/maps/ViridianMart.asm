@@ -14,8 +14,8 @@ ViridianMartParcelQuestText::
 	line "אלון, נכון?"
 
 	para "ההזמנה שלו הגיעה."
-	line "האם אתה מוכן"
-	cont "למסור לו אותה?"
+	line "אתה יכול למסור"
+	cont "לו אותה?"
 
 	para "<PLAYER> קיבל את"
 	line "החבילה של אלון!@@"
