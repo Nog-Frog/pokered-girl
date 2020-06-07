@@ -1499,12 +1499,12 @@ DisplayListMenuIDLoop::
 	jr z, .notOldManBattle
 .oldManBattle
 	ld a, "▶"
-	Coorda 5, 4 ; place menu cursor in front of first menu entry
+	Coorda 18, 4 ; place menu cursor in front of first menu entry
 	ld c, 80
 	call DelayFrames
 	xor a
 	ld [wCurrentMenuItem], a
-	coord hl, 5, 4
+	coord hl, 18, 4
 	ld a, l
 	ld [wMenuCursorLocation], a
 	ld a, h

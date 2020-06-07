@@ -2120,12 +2120,12 @@ DisplayBattleMenu:
 	ld bc, NAME_LENGTH
 	call CopyData
 ; the following simulates the keystrokes by drawing menus on screen
-	coord hl, 9, 14
+	coord hl, 10, 14
 	ld [hl], "▶"
 	ld c, 80
 	call DelayFrames
 	ld [hl], " "
-	coord hl, 9, 16
+	coord hl, 10, 16
 	ld [hl], "▶"
 	ld c, 50
 	call DelayFrames
@@ -2133,7 +2133,7 @@ DisplayBattleMenu:
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperRightMenuItemWasNotSelected
 .oldManName
-	db "OLD MAN@"
+	db "האיש הזקן@"
 .handleBattleMenuInput
 	ld a, [wBattleAndStartSavedMenuItem]
 	ld [wCurrentMenuItem], a
