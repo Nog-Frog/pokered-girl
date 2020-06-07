@@ -1,49 +1,49 @@
 _Route1ViridianMartSampleText::
-	text "Hi! I work at a"
-	line "#MON MART."
+	text "היי! אני עובד"
+	line "ב#יוסק."
 
-	para "It's a convenient"
-	line "shop, so please"
-	cont "visit us in"
-	cont "VIRIDIAN CITY."
+	para "זה כמו כלבו."
+	line "אתה מוזמן לבוא"
+	cont "ולהתרשם בעצמך"
+	cont "מהסניף בעיר"
+	cont "הברקת!"
 
-	para "I know, I'll give"
-	line "you a sample!"
-	cont "Here you go!"
+	para "אני אפילו אתן"
+	line "לך דוגמית!"
 	prompt
 
 _Route1Text_1cae8::
-	text "<PLAYER> got"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _Route1Text_1caee::
-	text "We also carry"
-	line "# BALLs for"
-	cont "catching #MON!"
+	text "אנחנו גם מוכרים"
+	line "פוכדורים שמשמשים"
+	cont "לתפיסת #ימונים!"
 	done
 
 _Route1Text_1caf3::
-	text "You have too much"
-	line "stuff with you!"
+	text "התיק שלך מלא!"
 	done
 
 _Route1Text2::
-	text "See those ledges"
-	line "along the road?"
+	text "ראית את השיפועים"
+	line "שנמצאים לאורך"
+	cont "הדרך?"
 
-	para "It's a bit scary,"
-	line "but you can jump"
-	cont "from them."
+	para "זה אולי קצת מפחיד,"
+	line "אבל אפשר לקפוץ"
+	cont "מעליהם."
 
-	para "You can get back"
-	line "to PALLET TOWN"
-	cont "quicker that way."
+	para "ככה יותר קל לחזור"
+	line "לעיירה פאלט"
+	cont "במהירות."
 	done
 
 _Route1Text3::
-	text "ROUTE 1"
-	line "PALLET TOWN -"
-	cont "VIRIDIAN CITY"
+	text "דרך 1"
+	line "העיירה פאלט -"
+	cont "עיר הברקת"
 	done
