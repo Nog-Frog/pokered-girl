@@ -37,7 +37,7 @@ _ViridianCityText_19157::
 	text "לזחי אין עוקץ,"
 	line "אבל לתולחט יש."
 
-	para "כדי להיזהר ממתקפת"
+	para "כדאי להיזהר ממתקפת"
 	line "עקיצת הרעל שלו!"
 	done
 
@@ -49,11 +49,11 @@ _ViridianCityText_19175::
 	done
 
 _ViridianCityText_1917a::
-	text "כשאני הולך לקניות"
+	text "כשאני הולכת לקניות"
 	line "בעיר הכספית, אני"
-	cont "חייב לעבור דרך"
+	cont "חייבת לעבור דרך"
 	cont "השביל המתפתל"
-	cont "ביער ירוק-עד." ; TODO
+	cont "ביער ירוק-עד."
 	done
 
 _ViridianCityText_19191::
@@ -108,14 +108,14 @@ _ViridianCityText_1920a::
 
 _ViridianCityText_1920f::
 	text "אני רואה שאתה עושה"
-	line "שימוש ב#ידע שלך."
+	line "שימוש ב#ידע."
 
 	para "כשאתה תופס"
 	line "#ימון, ה#ידע"
-	cont ".מתעדכן אוטומטית"
+	cont "מתעדכן אוטומטית."
 
 	para "מה? אתה לא יודע"
-	line "איך לתפוס"
+	line "איך תופסים"
 	cont "#ימון?"
 
 	para "אם כך, אני אראה"
@@ -130,7 +130,7 @@ _ViridianCityText_19214::
 _ViridianCityText_19219::
 	text "בהתחלה, אתה צריך"
 	line "להחליש את"
-	cont "ה#ימון שאתה."
+	cont "ה#ימון שאתה"
 	cont "מנסה לתפוס."
 	done
 
@@ -156,13 +156,13 @@ _ViridianCityText10::
 	text "טיפים למאמנים" ;TODO
 
 	para "המהלכים של"
-	line "ה#ימונים מוגבלים"
+	line "#ימונים מוגבלים"
 	cont "בנקודות השימוש"
 	cont "שלהם, או בקיצור"
 	cont "PP." ;TODO
 
 	para "כדי לשחזר את הPP," ; TODO
-	line "רפא את ה#ימון שלך"
+	line "רפא את ה#ימון"
 	cont "במרכז ה#ימונים!" ; TODO
 	done
 
