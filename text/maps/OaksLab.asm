@@ -1,7 +1,7 @@
 _OaksLabGaryText1::
-	text "<RIVAL>: יו"
+	text "<RIVAL>: יו,"
 	line "<PLAYER>!"
-	cont "סבא'לה לא כאן!"
+	cont "סבאל'ה לא כאן!"
 	done
 
 _OaksLabText40::
@@ -20,9 +20,8 @@ _OaksLabText41::
 	done
 
 _OaksLabText39::
-	text "אלה הפוכדורים"
-	line "שלי. יש בתוכם"
-	cont "#ימונים!"
+	text "זה פוכדור."
+	line "יש בתוכו #ימון!"
 	done
 
 _OaksLabCharmanderText::
@@ -56,7 +55,7 @@ _OaksLabReceivedMonText::
 
 _OaksLabLastMonText::
 	text "זה ה#ימון האחרון"
-	line "של פרופ אלון!'"
+	line "של פרופ' אלון!"
 	done
 
 _OaksLabText_1d2f0::
@@ -106,8 +105,8 @@ _OaksLabDeliverParcelText2::
 	done
 
 _OaksLabAroundWorldText::
-	text "#ימונים בכל העולם"
-	line "ממתינים לך,"
+	text "#ימונים בכל"
+	line "העולם ממתינים לך,"
 	cont "<PLAYER>!"
 	done
 
@@ -163,9 +162,10 @@ _OaksLabText_1d31d::
 	prompt
 
 _OaksLabText_1d32c::
-	text "זה דומה"
-	line "לאנציקלופדיה, אבל"
-	cont "כל הדפים ריקים!"
+	text "זה נראה כמו"
+	line "אנציקלופדיה,"
+	cont "אבל כל הדפים"
+	cont "ריקים!"
 	done
 
 _OaksLabText8::
@@ -175,7 +175,7 @@ _OaksLabText8::
 _OaksLabText_1d340::
 	text "פרופ' אלון הוא"
 	line "ה-מומחה בכל מה"
-	cont "שנוגע ל#ימונים!"
+	cont "שנוגע ל#ימון!"
 
 	para "מאמני #ימון"
 	line "רבים רוחשים כלפיו"
@@ -200,7 +200,7 @@ _OaksLabChooseMonText::
 	para "יש 3 #ימונים"
 	line "על השולחן!"
 
-	para "חה חה!"
+	para "איפה? חה חה!"
 
 	para "הם בתוך"
 	line "הפוכדורים."
@@ -216,12 +216,11 @@ _OaksLabChooseMonText::
 
 _OaksLabRivalInterjectionText::
 	text "<RIVAL>: היי!"
-	line "סבאל'ה! מה"
-	cont "איתי?"
+	line "סבאל'ה! מה איתי?"
 	done
 
 _OaksLabBePatientText::
-	text "OAK: סבלנות,"
+	text "אלון: סבלנות,"
 	line "<RIVAL>! גם אתה"
 	cont "תקבל אחד!"
 	done
@@ -261,217 +260,226 @@ _OaksLabText_1d3be::
 	prompt
 
 _OaksLabText_1d3c3::
-	text "<RIVAL>: Yeah! Am"
-	line "I great or what?"
+	text "<RIVAL>: כן! אני"
+	line "מדהים או מה?"
 	prompt
 
 _OaksLabRivalToughenUpText::
-	text "<RIVAL>: Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
+	text "<RIVAL>: בסדר!"
+	line "אני הולך לגרום"
+	cont "ל#ימון שלי"
+	cont "להילחם כדי שיהיה"
+	cont "קצת יותר קשוח!"
 
-	para "<PLAYER>! Gramps!"
-	line "Smell you later!"
+	para "<PLAYER>! סבאל'ה!"
+	line "נתרחרח אחר-כך!"
 	done
 
 _OaksLabText21::
-	text "<RIVAL>: Gramps!"
+	text "<RIVAL>: סבאל'ה!"
 	done
 
 _OaksLabText22::
-	text "<RIVAL>: What did"
-	line "you call me for?"
+	text "<RIVAL>: למה קראת"
+	line "לי?"
 	done
 
 _OaksLabText23::
-	text "OAK: Oh right! I"
-	line "have a request"
-	cont "of you two."
+	text "אלון: יש לי בקשה"
+	line "עבור שניכם."
 	done
 
 _OaksLabText24::
-	text "On the desk there"
-	line "is my invention,"
-	cont "#DEX!"
+	text "על השולחן נמצאת"
+	line "ההמצאה החדשה שלי,"
+	cont "ה#ידע!"
 
-	para "It automatically"
-	line "records data on"
-	cont "#MON you've"
-	cont "seen or caught!"
+	para "ה#ידע מתעד מידע"
+	line "לגבי #ימונים"
+	cont "שתפסתם או ראיתם!"
+	cont "הוא אוטומטי"
+	cont "לחלוטין!"
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
+	para "זה כמו"
+	line "אנציקלופדיה"
+	cont "מתקדמת!"
 	done
 
 _OaksLabText25::
-	text "OAK: <PLAYER> and"
-	line "<RIVAL>! Take"
-	cont "these with you!"
+	text "אלון: <PLAYER>"
+	line "ו<RIVAL>! קחו"
+	cont "לכם אחד!"
 
-	para "<PLAYER> got"
-	line "#DEX from OAK!@@"
+	para "<PLAYER> קיבל"
+	line "מאלון את ה#ידע!@@"
 
 _OaksLabText26::
-	text "To make a complete"
-	line "guide on all the"
-	cont "#MON in the"
-	cont "world..."
+	text "החלום שלי תמיד"
+	line "היה..."
 
-	para "That was my dream!"
+	para "לכתוב מדריך מפורט"
+	line "על כל סוגי"
+	cont "ה#ימון שיש!"
 
-	para "But, I'm too old!"
-	line "I can't do it!"
+	para "אבל אני כבר לא"
+	line "צעיר כמו שהייתי."
+	cont "זה כבר לא בשבילי."
 
-	para "So, I want you two"
-	line "to fulfill my"
-	cont "dream for me!"
+	para "אז אני רוצה שאתם"
+	line "תגשימו את החלום"
+	cont "שלי!"
 
-	para "Get moving, you"
-	line "two!"
+	para "קדימה, צאו"
+	line "לדרך!"
 
-	para "This is a great"
-	line "undertaking in"
-	cont "#MON history!"
+	para "זה רגע משמעותי"
+	line "בהיסטוריה של"
+	cont "#ימון!"
 	done
 
 _OaksLabText27::
-	text "<RIVAL>: Alright"
-	line "Gramps! Leave it"
-	cont "all to me!"
+	text "<RIVAL>: אין בעיה,"
+	line "סבאל'ה! תשאיר"
+	cont "את זה לי!"
 
-	para "<PLAYER>, I hate to"
-	line "say it, but I"
-	cont "don't need you!"
+	para "<PLAYER>, לא נעים"
+	line "לי לומר, אבל אני"
+	cont "לא צריך את עזרתך!"
 
-	para "I know! I'll"
-	line "borrow a TOWN MAP"
-	cont "from my sis!"
+	para "יש לי רעיון!"
+	line "אני אבקש מאחותי"
+	cont "לשאול ממנה מפה!"
 
-	para "I'll tell her not"
-	line "to lend you one,"
-	cont "<PLAYER>! Hahaha!"
+	para "אני אומר לה שלא"
+	line "תשאיל לך מפה,"
+	cont "<PLAYER>! חה חה!"
 	done
 
 _OaksLabText_1d405::
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "אני העוזר של"
+	line "פרופ' אלון."
+	cont "אני חוקר"
+	cont "#ימונים."
 	done
 
 _OaksLabText_441cc::
-	text "#DEX comp-"
-	line "letion is:"
+	text "מצב ה#ידע:"
 
 	para "@"
 	TX_NUM hDexRatingNumMonsSeen, 1, 3
-	text " #MON seen"
-	line "@"
+	text " #ימונים"
+	line "נראו"
+	
+	para "@"
 	TX_NUM hDexRatingNumMonsOwned, 1, 3
-	text " #MON owned"
+	text " #ימונים"
+	line "נתפסו"
 
-	para "PROF.OAK's"
-	line "Rating:"
+	para "פרופ' אלון"
+	line "אומר:"
 	prompt
 
 _OaksLabText_44201::
-	text "You still have"
-	line "lots to do."
-	cont "Look for #MON"
-	cont "in grassy areas!"
+	text "עוד יש לך הרבה"
+	line "עבודה לפניך."
+	cont "חפש #ימונים"
+	cont "באיזורים עם"
+	cont "דשא!"
 	done
 
 _OaksLabText_44206::
-	text "You're on the"
-	line "right track! "
-	cont "Get a FLASH HM"
-	cont "from my AIDE!"
+	text "אתה בכיוון הנכון!"
+	line "קבל MH הבזק"
+	cont "מהעוזר שלי!"
 	done
 
 _OaksLabText_4420b::
-	text "You still need"
-	line "more #MON!"
-	cont "Try to catch"
-	cont "other species!"
+	text "עדיין חסרים לך"
+	line "#ימונים! נסה"
+	cont "לתפוס זנים"
+	cont "שונים!"
 	done
 
 _OaksLabText_44210::
-	text "Good, you're"
-	line "trying hard!"
-	cont "Get an ITEMFINDER"
-	cont "from my AIDE!"
+	text "יופי, התקדמת"
+	line "הרבה! קבל"
+	cont "מאתר חפצים"
+	cont "מהעוזר שלי!"
 	done
 
 _OaksLabText_44215::
-	text "Looking good!"
-	line "Go find my AIDE"
-	cont "when you get 50!"
+	text "נראה טוב!"
+	line "כשתגיע ל-05,"
+	cont "חפש את העוזר שלי!"
 	done
 
 _OaksLabText_4421a::
-	text "You finally got at"
-	line "least 50 species!"
-	cont "Be sure to get"
-	cont "EXP.ALL from my"
-	cont "AIDE!"
+	text "השגת לפחות 05"
+	line "זנים! ברכותיי!"
+	cont "קבל שייתוף PXE"
+	cont "מהעוזר שלי!"
 	done
 
 _OaksLabText_4421f::
-	text "Ho! This is geting"
-	line "even better!"
+	text "הו! זה הולך"
+	line "ומשתפר!"
 	done
 
 _OaksLabText_44224::
-	text "Very good!"
-	line "Go fish for some"
-	cont "marine #MON!"
+	text "טוב מאוד!"
+	line "לך לדוג, אולי"
+	cont "תמצא #ימוני מים"
+	cont "חדשים!"
 	done
 
 _OaksLabText_44229::
-	text "Wonderful!"
-	line "Do you like to"
-	cont "collect things?"
+	text "נפלא!"
+	line "אתה אוהב"
+	cont "אוספים?"
 	done
 
 _OaksLabText_4422e::
-	text "I'm impressed!"
-	line "It must have been"
-	cont "difficult to do!"
+	text "מרשים!"
+	line "בטח נדרש מאמץ"
+	cont "רב כדי להגיע לשלב"
+	cont "הזה!"
 	done
 
 _OaksLabText_44233::
-	text "You finally got at"
-	line "least 100 species!"
-	cont "I can't believe"
-	cont "how good you are!"
+	text "תפסת לפחות 001"
+	line "זנים שונים! אתה"
+	cont "כל כך טוב, אני"
+	cont "כמעט לא מאמין!"
 	done
 
 _OaksLabText_44238::
-	text "You even have the"
-	line "evolved forms of"
-	cont "#MON! Super!"
+	text "תיעדת אפילו את"
+	line "הצורות המפותחות"
+	cont "של #ימונים!"
+	cont "מצוין!"
 	done
 
 _OaksLabText_4423d::
-	text "Excellent! Trade"
-	line "with friends to"
-	cont "get some more!"
+	text "נהדר! הצע לחברים"
+	line "להחליף כדי להשיג"
+	cont "עוד #ימונים!"
 	done
 
 _OaksLabText_44242::
-	text "Outstanding!"
-	line "You've become a"
-	cont "real pro at this!"
+	text "יוצא מן הכלל!"
+	line "הפכת למקצוען של"
+	cont "ממש!"
 	done
 
 _OaksLabText_44247::
-	text "I have nothing"
-	line "left to say!"
-	cont "You're the"
-	cont "authority now!"
+	text "אין מילים בפי!"
+	line "התלמיד התעלה"
+	cont "על רבו!"
 	done
 
 _OaksLabText_4424c::
-	text "Your #DEX is"
-	line "entirely complete!"
-	cont "Congratulations!"
+	text "ה#ידע שלך מלא"
+	line "לגמרי! תפסת את כל"
+	cont "ה#ימונים שיש"
+	cont "לתפוס!"
 	done
