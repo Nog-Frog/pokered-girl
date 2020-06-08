@@ -29,13 +29,13 @@ _NidoranMDexEntry::
 	dex
 
 _ClefairyDexEntry::
-	text "Its magical and"
-	next "cute appeal has"
-	next "many admirers."
+	text "בעל קסם אישי"
+	next "מתוק וכובש, לו"
+	next "יש מעריצים רבים."
 
-	page "It is rare and"
-	next "found only in"
-	next "certain areas"
+	page "הוא נדיר וניתן"
+	next "למצוא אותו רק"
+	next "באזורים מסוימים"
 	dex
 
 _SpearowDexEntry::
