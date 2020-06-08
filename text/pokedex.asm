@@ -19,13 +19,13 @@ _KangaskhanDexEntry::
 	dex
 
 _NidoranMDexEntry::
-	text "Stiffens its ears"
-	next "to sense danger."
-	next "The larger its"
+	text "מקשיח את אוזניו"
+	next "כדי לזהות סכנה."
+	next "ככל שקרניו"
 
-	page "horns, the more"
-	next "powerful its"
-	next "secreted venom"
+	page "גדולות יותר, כך"
+	next "עוצמתי יותר"
+	next "הארס שמפריש"
 	dex
 
 _ClefairyDexEntry::
