@@ -1,15 +1,14 @@
 _BrunoBeforeBattleText::
-	text "אני הוא Bruno" ;TODO
-	line "מה ELITE FOUR!" ;TODO
+	text "אני Bruno" ;TODO
+	line "מהELITE FOUR!" ;TODO
 
 	para "בעזרת אימונים "
 	line "מפרכים, אנשים"
-	cont "ו #ימונים "
+	cont "ו#ימונים "
 	cont "יהפכו חזקים יותר!"
 
-	para "הרמתי"
-	line "משקולות"
-	cont "עם ה#ימונים שלי!"
+	para "הרמתי משקולות"
+	line "עם ה#ימונים שלי!"
 
 	para "<PLAYER>!"
 
@@ -26,12 +25,12 @@ _BrunoEndBattleText::
 	prompt
 
 _BrunoAfterBattleText::
-	text "אני גמרתי כאן!!"
+	text "אני גמרתי כאן!"
 	line "לך להתמודד עם"
 	cont "אתגר אחר!"
 	done
 
 _BrunoDontRunAwayText::
-	text "קול של מישהו:"
-	line "אל תברח!"
+	text "קול מוכר קורא:"
+	line "אל תיסוג!"
 	done
