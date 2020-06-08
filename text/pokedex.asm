@@ -243,103 +243,100 @@ _GastlyDexEntry::
 	dex
 
 _ScytherDexEntry::
-	text "With ninja-like"
-	next "agility and speed,"
-	next "it can create the"
+	text "עם זריזות"
+	next "ומהירות של"
+	next "נינג'ה, הוא"
 
-	page "illusion that"
-	next "there is more"
-	next "than one"
+	page "מסוגל ליצור"
+	next "אשליה שיש"
+	next "יותר מאחד"
 	dex
 
 _StaryuDexEntry::
-	text "An enigmatic"
-	next "#MON that can"
-	next "effortlessly"
+	text "#ימון חידתי זה"
+	next "יכול להצמיח"
+	next "מחדש כל זרוע"
 
-	page "regenerate any"
-	next "appendage it"
-	next "loses in battle"
+	page "שאיבד בקרב"
+	next "ללא כל"
+	next "מאמץ"
 	dex
 
 _BlastoiseDexEntry::
-	text "A brutal #MON"
-	next "with pressurized"
-	next "water jets on its"
+	text "#ימון ברוטלי"
+	next "בעל סילוני מים"
+	next "בלחץ גבוה על"
 
-	page "shell. They are"
-	next "used for high"
-	next "speed tackles"
+	page "גבי שריונו."
+	next "הוא משתמש בהם"
+	next "למתקפות מהירות"
 	dex
 
 _PinsirDexEntry::
-	text "If it fails to"
-	next "crush the victim"
-	next "in its pincers,"
+	text "אם הוא נכשל"
+	next "במחיצת הקורבן"
+	next "בצבתותיו,"
 
-	page "it will swing it"
-	next "around and toss"
-	next "it hard"
+	page "הוא ינדנד אותו"
+	next "סביב ויזרוק"
+	next "אותו רחוק"
 	dex
 
 _TangelaDexEntry::
-	text "The whole body is"
-	next "swathed with wide"
-	next "vines that are"
+	text "כל גופו כרוך"
+	next "בגפנים רחבים"
+	next "שמזכירים אצות-ים."
 
-	page "similar to sea-"
-	next "weed. Its vines"
-	next "shake as it walks"
+	page "גפניו מתנענעים"
+	next "כשהוא הולך"
 	dex
 
 _GrowlitheDexEntry::
-	text "Very protective"
-	next "of its territory."
-	next "It will bark and"
+	text "מאוד  מגונן על"
+	next "הטריטוריה שלו."
+	next "הוא ינבח וינשך"
 
-	page "bite to repel"
-	next "intruders from"
-	next "its space"
+	page "כדי למנוע ממסיגי"
+	next "גבול לחדור"
+	next "למרחב שלו"
 	dex
 
 _OnixDexEntry::
-	text "As it grows, the"
-	next "stone portions of"
-	next "its body harden"
+	text "כשהוא גדל, חלקי"
+	next "האבן שעל גופו"
+	next "מתקשים והופכים"
 
-	page "to become similar"
-	next "to a diamond, but"
-	next "colored black"
+	page "לדמויי יהלום,"
+	next "אבל בצבע שחור"
 	dex
 
 _FearowDexEntry::
-	text "With its huge and"
-	next "magnificent wings,"
-	next "it can keep aloft"
+	text "עם כנפיו האדירות"
+	next "והמפוארות, הוא"
+	next "מסוגל להמשיך"
 
-	page "without ever"
-	next "having to land"
-	next "for rest"
+	page "לרחף מבלי"
+	next "לעולם להזדקק"
+	next "לנחיתת מנוחה"
 	dex
 
 _PidgeyDexEntry::
-	text "A common sight in"
-	next "forests and woods."
-	next "It flaps its"
+	text "מחזה נפוץ ביערות"
+	next "ובחורשות. הוא"
+	next "מנפנף בכנפיו"
 
-	page "wings at ground"
-	next "level to kick up"
-	next "blinding sand"
+	page "בגובה קרקע כדי"
+	next "לסמא את עיני"
+	next "האויב עם חול"
 	dex
 
 _SlowpokeDexEntry::
-	text "Incredibly slow"
-	next "and dopey. It"
-	next "takes 5 seconds"
+	text "איטי ועצל"
+	next "להפליא. לוקח"
+	next "לו 5 שניות"
 
-	page "for it to feel"
-	next "pain when under"
-	next "attack"
+	page "לחוש כאב כאשר"
+	next "הוא מותקף"
 	dex
 
 _KadabraDexEntry::
