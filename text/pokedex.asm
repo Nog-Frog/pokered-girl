@@ -39,13 +39,13 @@ _ClefairyDexEntry::
 	dex
 
 _SpearowDexEntry::
-	text "Eats bugs in"
-	next "grassy areas. It"
-	next "has to flap its"
+	text "אוכל חרקים"
+	next "באזורים עשביים."
+	next "מוכרח לנפנף"
 
-	page "short wings at"
-	next "high speed to"
-	next "stay airborne"
+	page "בכנפיו הקצרות"
+	next "במהירות כדי"
+	next "להישאר באוויר"
 	dex
 
 _VoltorbDexEntry::
