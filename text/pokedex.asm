@@ -51,9 +51,9 @@ _SpearowDexEntry::
 _VoltorbDexEntry::
 	text "בדרך כלל נמצא"
 	next "בתחנות כוח."
-	next "קל להתבלבל"
+	next "קל להתבלבל בינו"
 
-	page "בינו ובין פוכדור,"
+	page "ובין פוכדור,"
 	next "הם חישמלו"
 	next "הרבה אנשים"
 	dex
@@ -89,10 +89,10 @@ _IvysaurDexEntry::
 _ExeggutorDexEntry::
 	text "האגדה מספרת"
 	next "שבמקרים נדירים,"
-	next "אחד מראשיו"
+	next "אחד מראשיו יצנח"
 
-	page "יצנח וימשיך"
-	next "להתקיים כביצמודות"
+	page "וימשיך להתקיים"
+	next "כביצמודות"
 	dex
 
 _LickitungDexEntry::
@@ -135,7 +135,7 @@ _GengarDexEntry::
 	dex
 
 _NidoranFDexEntry::
-	text "למרות גודלה הקטן,"
+	text "חרף גודלו הקטן,"
 	next "העוקץ הארסי"
 	next "שלה הופך אותה"
 
@@ -157,7 +157,7 @@ _NidoqueenDexEntry::
 _CuboneDexEntry::
 	text "מכיוון שהוא אף"
 	next "פעם לא מסיר את"
-	next "הגולגולת שעל ראשו"
+	next "הגולגולת מראשו"
 
 	page "איש מעולם לא ראה"
 	next "את פניו האמיתיים"
@@ -174,9 +174,9 @@ _RhyhornDexEntry::
 	dex
 
 _LaprasDexEntry::
-	text "צייד לא מבוקר הביא"
-	next "את ה#ימון הזה"
-	next "לסכנת הכחדה."
+	text "צייד לא מבוקר"
+	next "הביא את ה#ימון"
+	next "הזה לסכנת הכחדה."
 
 	page "הוא יכול לשאת"
 	next "אנשים כמעבורת"
@@ -224,13 +224,13 @@ _ShellderDexEntry::
 	dex
 
 _TentacoolDexEntry::
-	text "נעים במים רדודים."
-	next "דייגים חובבים שדגים"
-	next "אותם בטעות"
+	text "נעים במים"
+	next "רדודים. דייגים"
+	next "שדגים אותם"
 
-	page "לעיתים נענשים"
-	next "על ידי צריבתם"
-	next "החומצית"
+	page "בטעות לעיתים"
+	next "נענשים על ידי"
+	next "צריבתם החומצית"
 	dex
 
 _GastlyDexEntry::
@@ -285,7 +285,7 @@ _PinsirDexEntry::
 _TangelaDexEntry::
 	text "כל גופו כרוך"
 	next "בגפנים רחבים"
-	next "שמזכירים אצות-ים."
+	next "דמויי אצות-ים."
 
 	page "גפניו מתנענעים"
 	next "כשהוא הולך"
@@ -374,8 +374,9 @@ _MachokeDexEntry::
 	next "כה עוצמתי, שהוא"
 	next "מוכרח ללבוש חגורה"
 
-	page "מרסנת שתווסת"
-	next "את תנועותיו"
+	page "חגורה מרסנת"
+	next "שתווסת את"
+	next "תנועותיו"
 	dex
 
 _MrMimeDexEntry::
