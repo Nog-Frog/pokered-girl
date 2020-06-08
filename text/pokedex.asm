@@ -135,9 +135,9 @@ _GengarDexEntry::
 	dex
 
 _NidoranFDexEntry::
-	text "למרות גודלו הקטן,"
+	text "למרות גודלה הקטן,"
 	next "העוקץ הארסי"
-	next "שלו הופך אותו"
+	next "שלה הופך אותה"
 
 	page "ל#ימון מסוכן."
 	next "לנקבה קרניים"
