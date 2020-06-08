@@ -1,6 +1,6 @@
 _SilphCo9Text_5d8e5::
 	text "אתה נראה עייף!"
-	line "כדאי שנוח רגע!"
+	line "כדאי שתנוח רגע!"
 	prompt
 
 _SilphCo9Text_5d8ea::
