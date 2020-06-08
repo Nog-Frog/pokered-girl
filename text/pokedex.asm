@@ -49,113 +49,109 @@ _SpearowDexEntry::
 	dex
 
 _VoltorbDexEntry::
-	text "Usually found in"
-	next "power plants."
-	next "Easily mistaken"
+	text "בדרך כלל נמצא"
+	next "בתחנות כוח."
+	next "קל להתבלבל"
 
-	page "for a # BALL,"
-	next "they have zapped"
-	next "many people"
+	page "בינו ובין פוכדור,"
+	next "הם חישמלו"
+	next "הרבה אנשים"
 	dex
 
 _NidokingDexEntry::
-	text "It uses its"
-	next "powerful tail in"
-	next "battle to smash,"
+	text "משתמש בזנבו"
+	next "העוצמתי בקרב"
+	next "לריסוק, לכבילת"
 
-	page "constrict, then"
-	next "break the prey's"
-	next "bones"
+	page "ולשבירת עצמותיו"
+	next "של הטרף"
 	dex
 
 _SlowbroDexEntry::
-	text "The SHELLDER that"
-	next "is latched onto"
-	next "SLOWPOKE's tail"
+	text "הקונכך שנצמד"
+	next "לזנבו של כיסלאט"
+	next "לכאורה ניזון"
 
-	page "is said to feed"
-	next "on the host's left"
-	next "over scraps"
+	page "משאריות האוכל"
+	next "של הפונדקאי שלו"
 	dex
 
 _IvysaurDexEntry::
-	text "When the bulb on"
-	next "its back grows"
-	next "large, it appears"
+	text "כשהפקעת על"
+	next "גבו גדלה,"
+	next "נדמה שהוא מאבד"
 
-	page "to lose the"
-	next "ability to stand"
-	next "on its hind legs"
+	page "את היכולת"
+	next "לעמוד על"
+	next "רגליו האחוריות"
 	dex
 
 _ExeggutorDexEntry::
-	text "Legend has it that"
-	next "on rare occasions,"
-	next "one of its heads"
+	text "האגדה מספרת"
+	next "שבמקרים נדירים,"
+	next "אחד מראשיו"
 
-	page "will drop off and"
-	next "continue on as an"
-	next "EXEGGCUTE"
+	page "יצנח וימשיך"
+	next "להתקיים כביצמודות"
 	dex
 
 _LickitungDexEntry::
-	text "Its tongue can be"
-	next "extended like a"
-	next "chameleon's. It"
+	text "לשונו יכולה"
+	next "להתארך כמו"
+	next "זיקית. הוא"
 
-	page "leaves a tingling"
-	next "sensation when it"
-	next "licks enemies"
+	page "משאיר תחושה"
+	next "מעקצצת כשהוא"
+	next "מלקק את אויביו"
 	dex
 
 _ExeggcuteDexEntry::
-	text "Often mistaken"
-	next "for eggs."
-	next "When disturbed,"
+	text "לעיתים מתבלבלים"
+	next "בינם ובין ביצים."
+	next "כשמפריעים להם,"
 
-	page "they quickly"
-	next "gather and attack"
-	next "in swarms"
+	page "הם מתקבצים"
+	next "בזריזות ותוקפים"
+	next "בהמוניהם"
 	dex
 
 _GrimerDexEntry::
-	text "Appears in filthy"
-	next "areas. Thrives by"
-	next "sucking up"
+	text "נמצא באזורים"
+	next "מטונפים. גדל"
+	next "על ידי שאיבת"
 
-	page "polluted sludge"
-	next "that is pumped"
-	next "out of factories"
+	page "בוץ ורפש מזוהמים"
+	next "שנפלטים ממפעלים"
 	dex
 
 _GengarDexEntry::
-	text "Under a full moon,"
-	next "this #MON"
-	next "likes to mimic"
+	text "תחת ירח מלא,"
+	next "ה#ימון הזה"
+	next "אוהב לחקות"
 
-	page "the shadows of"
-	next "people and laugh"
-	next "at their fright"
+	page "את הצללים של"
+	next "אנשים ולצחוק על"
+	next "הפחד שלהם"
 	dex
 
 _NidoranFDexEntry::
-	text "Although small,"
-	next "its venomous"
-	next "barbs render this"
+	text "למרות גודלו הקטן,"
+	next "העוקץ הארסי"
+	next "שלו הופך אותו"
 
-	page "#MON dangerous."
-	next "The female has"
-	next "smaller horns"
+	page "ל#ימון מסוכן."
+	next "לנקבה קרניים"
+	next "קטנות יותר"
 	dex
 
 _NidoqueenDexEntry::
-	text "Its hard scales"
-	next "provide strong"
-	next "protection. It"
+	text "קשקשיה הקשיחים"
+	next "מספקים לה הגנה"
+	next "חזקה. היא משתמשת"
 
-	page "uses its hefty"
-	next "bulk to execute"
-	next "powerful moves"
+	page "בגודל גופה"
+	next "האדיר לביצוע"
+	next "מהלכים עוצמתיים"
 	dex
 
 _CuboneDexEntry::
