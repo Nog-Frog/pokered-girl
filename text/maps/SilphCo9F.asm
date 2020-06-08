@@ -1,7 +1,6 @@
 _SilphCo9Text_5d8e5::
 	text "אתה נראה עייף!"
-	line "כדאי שתיקח"
-	cont "תנומה קצרה!"
+	line "כדאי שנוח רגע!"
 	prompt
 
 _SilphCo9Text_5d8ea::
@@ -31,19 +30,19 @@ _SilphCo9AfterBattleText1::
 _SilphCo9BattleText2::
 	text "ל#ימונים שלך יש"
 	line "נקודות תורפה!"
-	cont "אני יכול לנצח אותם!"
+	cont "אני יכול לפגוע בהן!"
 	done
 
 _SilphCo9EndBattleText2::
-	text "אתה"
-	line "ניצחת אותי!"
+	text "אתה פגעת"
+	line "בי!"
 	prompt
 
 _SilphCo9AfterBattleText2::
-	text "ניצול נקודות חולשה"
-	line "אכן עובד!"
-	cont "תחשוב על"
-	cont "סוגי אלמנטים!"
+	text "ניצול נקודות תורפה"
+	line "באמת עובד!"
+	cont "תתיחס לסוגי"
+	cont "#ימונים!"
 	done
 
 _SilphCo9BattleText3::
