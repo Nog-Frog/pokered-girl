@@ -9,13 +9,13 @@ _RhydonDexEntry::
 	dex
 
 _KangaskhanDexEntry::
-	text "The infant rarely"
-	next "ventures out of"
-	next "its mother's"
+	text "הגור בקושי"
+	next "מגיח החוצה"
+	next "מכיסה המגונן"
 
-	page "protective pouch"
-	next "until it is 3"
-	next "years old"
+	page "של אימו"
+	next "עד שהוא"
+	next "בן 3"
 	dex
 
 _NidoranMDexEntry::
