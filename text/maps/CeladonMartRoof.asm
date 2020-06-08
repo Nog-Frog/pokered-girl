@@ -1,20 +1,19 @@
 _CeladonMartRoofText_484ee::
-	text "Give her which"
-	line "drink?"
+	text "איזה משקה לתת לה?"
 	done
 
 _CeladonMartRoofText_484f3::
-	text "Yay!"
+	text "יאי!"
 
-	para "FRESH WATER!"
+	para "FRESH WATER!" ; TODO
 
-	para "Thank you!"
+	para "תודה רבה!"
 
-	para "You can have this"
-	line "from me!@@"
+	para "אתה יכול לקבל ממני"
+	line "את זה!@@"
 
 _CeladonMartRoofText_484f9::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
@@ -24,24 +23,24 @@ _CeladonMartRoofText_484fe::
 
 	para "@"
 	TX_RAM wcf4b
-	text " contains"
-	line "ICE BEAM!"
+	text " מכיל"
+	line "ICE BEAM!" ; TODO
 
-	para "It can freeze the"
-	line "target sometimes!@@"
+	para "זה יכול להקפיא את"
+	line "האויב לפעמים!@@"
 
 _CeladonMartRoofText_48504::
-	text "Yay!"
+	text "יאי!"
 
-	para "SODA POP!"
+	para "SODA POP!" ; TODO
 
-	para "Thank you!"
+	para "תודה רבה!"
 
-	para "You can have this"
-	line "from me!@@"
+	para "אתה יכול לקבל ממני"
+	line "את זה!@@"
 
 _CeladonMartRoofText_4850a::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
@@ -51,91 +50,90 @@ _CeladonMartRoofText_4850f::
 
 	para "@"
 	TX_RAM wcf4b
-	text " contains"
-	line "ROCK SLIDE!"
+	text " מכיל"
+	line "ROCK SLIDE!" ; TODO
 
-	para "It can spook the"
-	line "target sometimes!@@"
+	para "זה יכול להרתיע את"
+	line "האויב לפעמים!@@"
 
 _CeladonMartRoofText_48515::
-	text "Yay!"
+	text "יאי!"
 
-	para "LEMONADE!"
+	para "LEMONADE!" ; TODO
 
-	para "Thank you!"
+	para "תודה רבה!"
 
-	para "You can have this"
-	line "from me!@@"
+	para "אתה יכול לקבל ממני"
+	line "את זה!@@"
 
 _ReceivedTM49Text::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "TM49!@@"
 
 _CeladonMartRoofText_48520::
 	text ""
 
-	para "TM49 contains"
-	line "TRI ATTACK!@@"
+	para "TM49 מכיל"
+	line "TRI ATTACK!@@" ; TODO
 
 _CeladonMartRoofText_48526::
-	text "You don't have"
-	line "space for this!@@"
+	text "אין לך מקום"
+	line "בתיק בשביל זה!@@"
 
 _CeladonMartRoofText_4852c::
-	text "No thank you!"
-	line "I'm not thirsty"
-	cont "after all!@@"
+	text "לא, תודה!"
+	line "אני לא צמאה"
+	cont "אחרי הכל!@@"
 
 _CeladonMartRoofText1::
-	text "My sister is a"
-	line "trainer, believe"
-	cont "it or not."
+	text "אחותי מאמנת, תאמין"
+	cont "לי או לא."
 
-	para "But, she's so"
-	line "immature, she"
-	cont "drives me nuts!"
+	para "אבל, היא כל כך"
+	line "לא בוגרת,"
+	cont "זה מטריף אותי!"
 	done
 
 _CeladonMartRoofText_48598::
-	text "I'm thirsty!"
-	line "I want something"
-	cont "to drink!"
+	text "אני צמאה!"
+	line "אני רוצה"
+	cont "משהו לשתות!"
 	done
 
 _CeladonMartRoofText4::
-	text "I'm thirsty!"
-	line "I want something"
-	cont "to drink!"
+	text "אני צמאה!"
+	line "אני רוצה"
+	cont "משהו לשתות!"
 
-	para "Give her a drink?"
+	para "לתת לה משקה?"
 	done
 
 _CeladonMartRoofText6::
-	text "ROOFTOP SQUARE:"
-	line "VENDING MACHINES"
+	text "ROOFTOP SQUARE:" ; TODO
+	line "VENDING MACHINES" ; TODO
 	done
 
 _VendingMachineText1::
-	text "A vending machine!"
-	line "Here's the menu!"
+	text "מכונת משקאות!"
+	line "הנה התפריט!"
 	prompt
 
 _VendingMachineText4::
-	text "Oops, not enough"
-	line "money!"
+	text "אופס, אין מספיק"
+	line "כסף!"
 	done
 
 _VendingMachineText5::
 	TX_RAM wcf4b
 	text ""
-	line "popped out!"
+	line "יצא החוצה!"
 	done
 
 _VendingMachineText6::
-	text "There's no more"
-	line "room for stuff!"
+	text "אין יותר"
+	line "מקום לדברים!"
 	done
 
 _VendingMachineText7::
-	text "Not thirsty!"
+	text "לא צמא!"
 	done
