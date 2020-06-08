@@ -155,93 +155,91 @@ _NidoqueenDexEntry::
 	dex
 
 _CuboneDexEntry::
-	text "Because it never"
-	next "removes its skull"
-	next "helmet, no one"
+	text "מכיוון שהוא אף"
+	next "פעם לא מסיר את"
+	next "הגולגולת שעל ראשו"
 
-	page "has ever seen"
-	next "this #MON's"
-	next "real face"
+	page "איש מעולם לא ראה"
+	next "את פניו האמיתיים"
+	next "של #ימון זה"
 	dex
 
 _RhyhornDexEntry::
-	text "Its massive bones"
-	next "are 1000 times"
-	next "harder than human"
+	text "עצמותיו האדירות"
+	next "קשות פי 0001"
+	next "מעצמות אדם."
 
-	page "bones. It can"
-	next "easily knock a"
-	next "trailer flying"
+	page "הוא בקלות יכול"
+	next "להפיל קרון מעופף"
 	dex
 
 _LaprasDexEntry::
-	text "A #MON that"
-	next "has been over-"
-	next "hunted almost to"
+	text "צייד לא מבוקר הביא"
+	next "את ה#ימון הזה"
+	next "לסכנת הכחדה."
 
-	page "extinction. It"
-	next "can ferry people"
-	next "across the water"
+	page "הוא יכול לשאת"
+	next "אנשים כמעבורת"
+	next "ששטה מעל המים"
 	dex
 
 _ArcanineDexEntry::
-	text "A #MON that"
-	next "has been admired"
-	next "since the past"
+	text "#ימון זה נערץ"
+	next "עוד מימי קדם"
+	next "בשל יופיו."
 
-	page "for its beauty."
-	next "It runs agilely"
-	next "as if on wings"
+	page "הוא רץ בזריזות"
+	next "כאילו הוא מרחף"
+	next "על כנפיים"
 	dex
 
 _MewDexEntry::
-	text "So rare that it"
-	next "is still said to"
-	next "be a mirage by"
+	text "כל כך נדיר"
+	next "שעדיין נחשב"
+	next "כדמיוני על ידי"
 
-	page "many experts. Only"
-	next "a few people have"
-	next "seen it worldwide"
+	page "מומחים רבים. רק"
+	next "אנשים ספורים ראו"
+	next "אותו בכל העולם"
 	dex
 
 _GyaradosDexEntry::
-	text "Rarely seen in"
-	next "the wild. Huge"
-	next "and vicious, it"
+	text "בקושי נצפה בטבע."
+	next "עצום ואכזרי,"
+	next "הוא מסוגל"
 
-	page "is capable of"
-	next "destroying entire"
-	next "cities in a rage"
+	page "להחריב ערים"
+	next "שלמות בהתקף"
+	next "של זעם"
 	dex
 
 _ShellderDexEntry::
-	text "Its hard shell"
-	next "repels any kind"
-	next "of attack."
+	text "הצדפה הקשה שלו"
+	next "דוחה כל סוג"
+	next "של התקפה."
 
-	page "It is vulnerable"
-	next "only when its"
-	next "shell is open"
+	page "הוא פגיע רק"
+	next "כאשר הצדפה שלו"
+	next "פתוחה"
 	dex
 
 _TentacoolDexEntry::
-	text "Drifts in shallow"
-	next "seas. Anglers who"
-	next "hook them by"
+	text "נעים במים רדודים."
+	next "דייגים חובבים שדגים"
+	next "אותם בטעות"
 
-	page "accident are"
-	next "often punished by"
-	next "its stinging acid"
+	page "לעיתים נענשים"
+	next "על ידי צריבתם"
+	next "החומצית"
 	dex
 
 _GastlyDexEntry::
-	text "Almost invisible,"
-	next "this gaseous"
-	next "#MON cloaks"
+	text "כמעט בלתי נראה,"
+	next "ה#ימון הגזי הזה"
+	next "מאפיל על יעדו"
 
-	page "the target and"
-	next "puts it to sleep"
-	next "without notice"
+	page "ומרדים אותו"
+	next "ללא התראה"
 	dex
 
 _ScytherDexEntry::
