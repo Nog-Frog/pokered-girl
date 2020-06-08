@@ -340,53 +340,51 @@ _SlowpokeDexEntry::
 	dex
 
 _KadabraDexEntry::
-	text "It emits special"
-	next "alpha waves from"
-	next "its body that"
+	text "הוא פולט"
+	next "קרני אלפא"
+	next "מיוחדות מגופו"
 
-	page "induce headaches"
-	next "just by being"
-	next "close by"
+	page "שגורמות לכאבי"
+	next "ראש רק מהימצאות"
+	next "בקרבתו"
 	dex
 
 _GravelerDexEntry::
-	text "Rolls down slopes"
-	next "to move. It rolls"
-	next "over any obstacle"
+	text "מתגלגל במורדות"
+	next "כדי לנוע."
+	next "עובר מעל"
 
-	page "without slowing"
-	next "or changing its"
-	next "direction"
+	page "מכשולים מבלי"
+	next "להאט או לשנות"
+	next "את כיוונו"
 	dex
 
 _ChanseyDexEntry::
-	text "A rare and elusive"
-	next "#MON that is"
-	next "said to bring"
+	text "#ימון נדיר"
+	next "וחמקמק אשר"
+	next "לכאורה מביא"
 
-	page "happiness to those"
-	next "who manage to get"
-	next "it"
+	page "אושר לאלו"
+	next "שמצליחים להשיג"
+	next "אותו"
 	dex
 
 _MachokeDexEntry::
-	text "Its muscular body"
-	next "is so powerful, it"
-	next "must wear a power"
+	text "גופו השרירי"
+	next "כה עוצמתי, שהוא"
+	next "מוכרח ללבוש חגורה"
 
-	page "save belt to be"
-	next "able to regulate"
-	next "its motions"
+	page "מרסנת שתווסת"
+	next "את תנועותיו"
 	dex
 
 _MrMimeDexEntry::
-	text "If interrupted"
-	next "while it is"
-	next "miming, it will"
+	text "אם מפריעים"
+	next "לו בזמן שעושה"
+	next "פנטומימה, הוא"
 
-	page "slap around the"
-	next "offender with its"
-	next "broad hands"
+	page "יסטור למפריע"
+	next "עם ידיו הרחבות"
 	dex
 
 _HitmonleeDexEntry::
