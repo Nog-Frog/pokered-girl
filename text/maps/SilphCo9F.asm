@@ -1,62 +1,62 @@
 _SilphCo9Text_5d8e5::
-	text "You look tired!"
-	line "You should take a"
-	cont "quick nap!"
+	text "אתה נראה עייף!"
+	line "כדאי שתיקח"
+	cont "תנומה קצרה!"
 	prompt
 
 _SilphCo9Text_5d8ea::
-	text "Don't give up!"
+	text "אל תוותר!"
 	done
 
 _SilphCo9Text_5d8ef::
-	text "Thank you so"
-	line "much!"
+	text "תודה רבה"
+	line "לך!"
 	done
 
 _SilphCo9BattleText1::
-	text "Your #MON seem"
-	line "to adore you, kid!"
+	text "נראה שה#ימון שלך"
+	line "מעריץ אותך, ילד!"
 	done
 
 _SilphCo9EndBattleText1::
-	text "Ghaaah!"
+	text "גאאע!"
 	prompt
 
 _SilphCo9AfterBattleText1::
-	text "If I had started"
-	line "as a trainer at"
-	cont "your age..."
+	text "אם הייתי מתחיל"
+	line "להיות מאמן"
+	cont "כשהייתי בגילך..."
 	done
 
 _SilphCo9BattleText2::
-	text "Your #MON have"
-	line "weak points! I"
-	cont "can nail them!"
+	text "ל#ימונים שלך יש"
+	line "נקודות תורפה!"
+	cont "אני יכול לנצח אותם!"
 	done
 
 _SilphCo9EndBattleText2::
-	text "You"
-	line "hammered me!"
+	text "אתה"
+	line "ניצחת אותי!"
 	prompt
 
 _SilphCo9AfterBattleText2::
-	text "Exploiting weak"
-	line "spots does work!"
-	cont "Think about"
-	cont "element types!"
+	text "ניצול נקודות חולשה"
+	line "אכן עובד!"
+	cont "תחשוב על"
+	cont "סוגי אלמנטים!"
 	done
 
 _SilphCo9BattleText3::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "אני אחד מארבעת"
+	line "ROCKET BROTHERS!" ; TODO
 	done
 
 _SilphCo9EndBattleText3::
-	text "Warg!"
-	line "Brothers, I lost!"
+	text "וארג!"
+	line "אחים, הפסדתי!"
 	prompt
 
 _SilphCo9AfterBattleText3::
-	text "My brothers will"
-	line "avenge me!"
+	text "אחיי ינקמו"
+	line "בשמי!"
 	done
