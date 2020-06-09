@@ -188,7 +188,7 @@ ViridianSchoolBlackboard:
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 10
 	ld [wTopMenuItemX], a
 .blackboardLoop
 	ld hl, wd730
@@ -196,7 +196,7 @@ ViridianSchoolBlackboard:
 	coord hl, 0, 0
 	lb bc, 6, 10
 	call TextBoxBorder
-	coord hl, 1, 2
+	coord hl, 10, 2
 	ld de, StatusAilmentText1
 	call PlaceString
 	coord hl, 6, 2
@@ -214,9 +214,9 @@ ViridianSchoolBlackboard:
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 6
+	ld a, 10
 	ld [wTopMenuItemX], a
-	ld a, 3 ; in the the right column, use an offset to prevent overlap
+	xor a
 	ld [wMenuItemOffset], a
 	jr .blackboardLoop
 .didNotPressRight
@@ -227,9 +227,9 @@ ViridianSchoolBlackboard:
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 6
 	ld [wTopMenuItemX], a
-	xor a
+	ld a, 3 ; in the the left column, use an offset to prevent overlap
 	ld [wMenuItemOffset], a
 	jr .blackboardLoop
 .didNotPressLeftOrRight

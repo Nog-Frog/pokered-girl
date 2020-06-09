@@ -903,8 +903,9 @@ _ViridianBlackboardPoisonText::
 
 _ViridianBlackboardPrlzText::
 	text "שיתוק עשוי לגרום"
-	line "ל#ימון שלך לפספס"
-	cont "את תורו בקרב!"
+	line "ל#ימון שלך"
+	cont "לפספס את תורו"
+	cont "בקרב!"
 
 	para "שיתוק ממשיך להשפיע"
 	line "אפילו אחרי סוף"
