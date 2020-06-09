@@ -399,5 +399,5 @@ IF DEF(_BLUE)
 	db $68, $67, $66, $65, $64, $63, $62, $61, "@" ; "Blue Version"
 ENDC
 
-NintenText: db "NINTEN@"
-SonyText:   db "SONY@"
+NintenText: db "נינטן@"
+SonyText:   db "סוני@"
