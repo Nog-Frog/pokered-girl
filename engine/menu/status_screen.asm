@@ -463,8 +463,8 @@ CalcExpToLevelUp:
 	ret
 
 StatusScreenExpText:
-	db   "נקודות נסיון"
-	next "עד הרמה הבאה@"
+	db   "נק' נסיון"
+	next "הרמה הבאה@"
 
 StatusScreen_ClearName:
 	ld bc, 10
