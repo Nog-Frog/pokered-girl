@@ -1,37 +1,36 @@
 _BrunoBeforeBattleText::
-	text "I am BRUNO of"
-	line "the ELITE FOUR!"
+	text "אני Bruno" ;TODO
+	line "מהELITE FOUR!" ;TODO
 
-	para "Through rigorous"
-	line "training, people"
-	cont "and #MON can"
-	cont "become stronger!"
+	para "בעזרת אימונים "
+	line "מפרכים, אנשים"
+	cont "ו#ימונים "
+	cont "יהפכו חזקים יותר!"
 
-	para "I've weight"
-	line "trained with"
-	cont "my #MON!"
+	para "הרמתי משקולות"
+	line "עם ה#ימונים שלי!"
 
 	para "<PLAYER>!"
 
-	para "We will grind you"
-	line "down with our"
-	cont "superior power!"
+	para "אנחנו נחסל"
+	line "אותך בעזרת"
+	cont "!כוחות העל שלנו"
 
-	para "Hoo hah!"
+	para "!הא"
 	done
 
 _BrunoEndBattleText::
-	text "Why?"
-	line "How could I lose?"
+	text "?למה"
+	line "?איך הפסדתי"
 	prompt
 
 _BrunoAfterBattleText::
-	text "My job is done!"
-	line "Go face your next"
-	cont "challenge!"
+	text "אני גמרתי כאן!"
+	line "לך להתמודד עם"
+	cont "אתגר אחר!"
 	done
 
 _BrunoDontRunAwayText::
-	text "Someone's voice:"
-	line "Don't run away!"
+	text "קול מוכר קורא:"
+	line "אל תיסוג!"
 	done
