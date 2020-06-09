@@ -1,63 +1,63 @@
 _VictoryRoad3BattleText2::
-	text "I heard rumors of"
-	line "a child prodigy!"
+	text "שמעתי שמועות"
+	line "!על ילד פלא"
 	done
 
 _VictoryRoad3EndBattleText2::
-	text "The"
-	line "rumors were true!"
+	text "השמועות"
+	line "באמת נכונות!"
 	prompt
 
 _VictoryRoad3AfterBattleText2::
-	text "You beat GIOVANNI"
-	line "of TEAM ROCKET?"
+	text "הבסת את GIOVANNI" ;TODO
+	line "מTEAM ROCKET?" ;TODO
 	done
 
 _VictoryRoad3BattleText3::
-	text "I'll show you just"
-	line "how good you are!"
+	text "בוא נראה"
+	line "כמה אתה טוב!"
 	done
 
 _VictoryRoad3EndBattleText3::
-	text "I'm"
-	line "furious!"
+	text "אני"
+	line "כועס!"
 	prompt
 
 _VictoryRoad3AfterBattleText3::
-	text "You showed me just"
-	line "how good I was!"
+	text "הראת לי"
+	line "כמה אני טוב!"
 	done
 
 _VictoryRoad3BattleText4::
-	text "Only the chosen"
-	line "can pass here!"
+	text "רק הנבחרים יכולים"
+	line "לעבור כאן!"
 	done
 
 _VictoryRoad3EndBattleText4::
-	text "I"
-	line "don't believe it!"
+	text "אני"
+	line "לא מאמין!"
 	prompt
 
 _VictoryRoad3AfterBattleText4::
-	text "All trainers here"
-	line "are headed to the"
-	cont "#MON LEAGUE!"
-	cont "Be careful!"
+	text "כל המאמנים פה"
+	line "מיועדים ל"
+	cont "#ימון LEAGUE!"
+	cont "תיזהר!"
 	done
 
 _VictoryRoad3BattleText5::
-	text "Trainers live to"
-	line "seek stronger"
-	cont "opponents!"
+	text "מאמנים מחפשים"
+	line "יריבים חזקים"
+	cont "מהם!"
 	done
 
 _VictoryRoad3EndBattleText5::
-	text "Oh!"
-	line "So strong!"
+	text "אה!"
+	line "כלכך עוצמתי!"
 	prompt
 
 _VictoryRoad3AfterBattleText5::
-	text "By fighting tough"
-	line "battles, you get"
-	cont "stronger!"
+	text "קרבות קשים"
+	line "גורמים לך"
+	cont "להיות חזק יותר!"
 	done
