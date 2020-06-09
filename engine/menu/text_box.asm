@@ -249,7 +249,7 @@ BattleMenuText:
 	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:
-	db   "כדור×     פיתיון"
+	db   "כדור  ×   פיתיון"
 	next "אבן       ברח@"
 
 SwitchStatsCancelText:

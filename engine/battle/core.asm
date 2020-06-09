@@ -2159,8 +2159,8 @@ DisplayBattleMenu:
 	Coorda 8, 16 
 	coord hl, 12, 14 
 	ld de, wNumSafariBalls
-	lb bc, 1, 2
-	call PrintNumber
+	lb bc, 1 | LEFT_ALIGN, 2
+	call PrintNumberLTR
 	ld b, 18 ; top menu item X  
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
@@ -2192,8 +2192,8 @@ DisplayBattleMenu:
 	Coorda 18, 16 ; 
 	coord hl, 12, 14 
 	ld de, wNumSafariBalls
-	lb bc, 1, 2
-	call PrintNumber
+	lb bc, 1 | LEFT_ALIGN, 2
+	call PrintNumberLTR
 	ld b, 8 ; top menu item X  
 .leftColumn_WaitForInput
 	ld hl, wTopMenuItemY
