@@ -45,4 +45,4 @@ TrainerNames:
 	db "אירנה@" ; LORELEI
 	db "מדיום@" ; CHANNELER
 	db "רוחמה@" ; AGATHA
-	db "גנץ@" ; LANCE
+	db "אברי@" ; LANCE
