@@ -556,7 +556,7 @@ TwoOptionMenuStrings:
 	db   "צפון" ; UNUSED
 	next "מזרח@" ; UNUSED
 .TradeCancelMenu
-	db   "החף"
+	db   "החלף"
 	next "ביטול@"
 .HealCancelMenu
 	db   "רפא"
