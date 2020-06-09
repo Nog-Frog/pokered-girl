@@ -19,6 +19,7 @@ SaveTrainerName:
 	ret
 
 TrainerNamePointers:
+; TODO appear to be unused?
 ; what is the point of these?
 	dw YoungsterName
 	dw BugCatcherName
@@ -69,44 +70,44 @@ TrainerNamePointers:
 	dw wTrainerName
 
 YoungsterName:
-	db "YOUNGSTER@"
+	db "נער@"
 BugCatcherName:
-	db "BUG CATCHER@"
+	db "אספן חרקים@"
 LassName:
-	db "LASS@"
+	db "נערה@"
 JrTrainerMName:
-	db "JR.TRAINER♂@"
+	db "מאמן צעיר@"
 JrTrainerFName:
-	db "JR.TRAINER♀@"
+	db "מאמנת צעירה@"
 PokemaniacName:
-	db "POKéMANIAC@"
+	db "פוקיטורף@"
 SuperNerdName:
-	db "SUPER NERD@"
+	db "חנון על@"
 BurglarName:
-	db "BURGLAR@"
+	db "פורץ@"
 EngineerName:
-	db "ENGINEER@"
+	db "מהנדס@"
 JugglerXName:
-	db "JUGGLER@"
+	db "להטוטן@"
 SwimmerName:
-	db "SWIMMER@"
+	db "שחיין@"
 BeautyName:
-	db "BEAUTY@"
+	db "יפהפיה@"
 RockerName:
-	db "ROCKER@"
+	db "רוקסטאר@"
 JugglerName:
-	db "JUGGLER@"
+	db "להטוטן@"
 BlackbeltName:
-	db "BLACKBELT@"
+	db "מאסטר@"
 ProfOakName:
-	db "PROF.OAK@"
+	db "פרופ' אלון@"
 ChiefName:
-	db "CHIEF@"
+	db "מפקד גליץ'@"
 ScientistName:
-	db "SCIENTIST@"
+	db "מדען@"
 RocketName:
-	db "ROCKET@"
+	db "רוקט@"
 CooltrainerMName:
-	db "COOLTRAINER♂@"
+	db "מאמן על@"
 CooltrainerFName:
-	db "COOLTRAINER♀@"
+	db "מאמנת על@"
