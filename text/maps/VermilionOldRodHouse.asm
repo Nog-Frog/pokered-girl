@@ -2,7 +2,7 @@ _VermilionHouse2Text_560b1::
 	text "אני ה FISHING"
 	line "GURU!" ;TODO
 
-	para "אני ממש אוהב"
+	para "אני ממש אוהההב"
 	line "לדוג!"
 
 	para "אתה אוהב"
@@ -34,7 +34,7 @@ _VermilionHouse2Text_560bb::
 	done
 
 _VermilionHouse2Text_560c0::
-	text "הו... זה כלכך"
+	text "הו... זה כל כך"
 	line "מאכזב..."
 	done
 
