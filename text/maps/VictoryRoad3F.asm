@@ -1,6 +1,6 @@
 _VictoryRoad3BattleText2::
-	text "יש שמועות על"
-	line "!ילד פלא"
+	text "שמעתי שמועות"
+	line "!על ילד פלא"
 	done
 
 _VictoryRoad3EndBattleText2::
@@ -10,11 +10,11 @@ _VictoryRoad3EndBattleText2::
 
 _VictoryRoad3AfterBattleText2::
 	text "הבסת את GIOVANNI" ;TODO
-	line "מ TEAM ROCKET?" ;TODO
+	line "מTEAM ROCKET?" ;TODO
 	done
 
 _VictoryRoad3BattleText3::
-	text "אני אראה לך"
+	text "בוא נראה"
 	line "כמה אתה טוב!"
 	done
 
@@ -29,8 +29,8 @@ _VictoryRoad3AfterBattleText3::
 	done
 
 _VictoryRoad3BattleText4::
-	text "רק הנבחר "
-	line " יכול לעבור כאן!"
+	text "רק הנבחרים יכולים"
+	line "לעבור כאן!"
 	done
 
 _VictoryRoad3EndBattleText4::
@@ -47,12 +47,12 @@ _VictoryRoad3AfterBattleText4::
 
 _VictoryRoad3BattleText5::
 	text "מאמנים מחפשים"
-	line "יריבים"
-	cont "חזקים מהם!"
+	line "יריבים חזקים"
+	cont "מהם!"
 	done
 
 _VictoryRoad3EndBattleText5::
-	text "הו!"
+	text "אה!"
 	line "כלכך עוצמתי!"
 	prompt
 
