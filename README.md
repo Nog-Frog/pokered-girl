@@ -54,3 +54,11 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 [pokeemerald]: https://github.com/pret/pokeemerald
 [Discord]: https://discord.gg/d5dubZ3
 [irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
+
+### Shameless to-do list
+
+These are to be done after translation has been fully completed. For now, I'd like to focus on translation first.
+
+[ ] Add player gender choice and player gender pronouns
+[ ] Add enemy trainer gendered pronouns
+[ ] Adjust mon-related text to be as gender neutral as possible
