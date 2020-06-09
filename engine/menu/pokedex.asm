@@ -300,7 +300,7 @@ HandlePokedexListMenu:
 	jp .loop
 .checkIfDownPressed
 	bit 7, a ; was Down pressed?
-	jr z, .checkIfRightPressed
+	jr z, .checkIfLeftPressed
 .downPressed ; scroll down one row
 	ld a, [wDexMaxSeenMon]
 	cp 7
@@ -313,10 +313,10 @@ HandlePokedexListMenu:
 	inc a
 	ld [wListScrollOffset], a
 	jp .loop
-.checkIfRightPressed
-	bit 4, a ; was Right pressed?
-	jr z, .checkIfLeftPressed
-.rightPressed ; scroll down 7 rows
+.checkIfLeftPressed
+	bit 5, a ; was Left pressed?
+	jr z, .checkIfRightPressed
+.leftPressed ; scroll down 7 rows
 	ld a, [wDexMaxSeenMon]
 	cp 7
 	jp c, .loop ; can't if the list is shorter than 7
@@ -331,10 +331,10 @@ HandlePokedexListMenu:
 	ld a, b
 	ld [wListScrollOffset], a
 	jp .loop
-.checkIfLeftPressed ; scroll up 7 rows
-	bit 5, a ; was Left pressed?
+.checkIfRightPressed ; scroll up 7 rows
+	bit 4, a ; was right pressed?
 	jr z, .buttonAPressed
-.leftPressed
+.rightPressed
 	ld a, [wListScrollOffset]
 	sub 7
 	ld [wListScrollOffset], a
