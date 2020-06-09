@@ -59,6 +59,6 @@ To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
 These are to be done after translation has been fully completed. For now, I'd like to focus on translation first.
 
-[ ] Add player gender choice and player gender pronouns
-[ ] Add enemy trainer gendered pronouns
+[ ] Add player gender choice and player gender pronouns\
+[ ] Add enemy trainer gendered pronouns\
 [ ] Adjust mon-related text to be as gender neutral as possible
