@@ -387,415 +387,408 @@ _MrMimeDexEntry::
 	page "יסטור למפריע"
 	next "עם ידיו הרחבות"
 	dex
-
-_HitmonleeDexEntry::
-	text "When in a hurry,"
-	next "its legs lengthen"
-	next "progressively."
-
-	page "It runs smoothly"
-	next "with extra long,"
-	next "loping strides"
+	
+_HitmonleeDexEntry::	
+	text "בעת חיפזון"
+	next "רגליו מתארכות"
+	next "בהדרגה."
+	
+	page "ריצתו חלקה"
+	next "וצעדיו הארוכים"
+	next "נדמים כדהרה"
 	dex
-
-_HitmonchanDexEntry::
-	text "While apparently"
-	next "doing nothing, it"
-	next "fires punches in"
-
-	page "lightning fast"
-	next "volleys that are"
-	next "impossible to see"
+	
+_HitmonchanDexEntry::	
+	text "כשנדמה שאינו"
+	next "עושה דבר, הוא"
+	next "למעשה מטיח"
+	
+	page "צרורות אגרופים"
+	next "בלתי נראים"
+	next "במהירות האור"
 	dex
-
-_ArbokDexEntry::
-	text "It is rumored that"
-	next "the ferocious"
-	next "warning markings"
-
-	page "on its belly"
-	next "differ from area"
-	next "to area"
+	
+_ArbokDexEntry::	
+	text "השמועה אומרת"
+	next "שסימני האזהרה"
+	next "האימתניים"
+	
+	page "שעל גחונו"
+	next "שונים מאזור"
+	next "לאזור"
 	dex
-
-_ParasectDexEntry::
-	text "A host-parasite"
-	next "pair in which the"
-	next "parasite mushroom"
-
-	page "has taken over the"
-	next "host bug. Prefers"
-	next "damp places"
+	
+_ParasectDexEntry::	
+	text "צמד פונדקאי-"
+	next "טפיל בו הפטריה"
+	next "הטפילית השתלטה"
+	
+	page "על החרק המארח."
+	next "מעדיף מקומות"
+	next "לחים"
 	dex
-
-_PsyduckDexEntry::
-	text "While lulling its"
-	next "enemies with its"
-	next "vacant look, this"
-
-	page "wily #MON will"
-	next "use psychokinetic"
-	next "powers"
+	
+_PsyduckDexEntry::	
+	text "בזמן שמביט ברוגע"
+	next "ובמבט חלול"
+	next "באויביו,"
+	
+	page "#ימון זה"
+	next "ישתמש בכוחות"
+	next "על-תנועתיים"
 	dex
-
-_DrowzeeDexEntry::
-	text "Puts enemies to"
-	next "sleep then eats"
-	next "their dreams."
-
-	page "Occasionally gets"
-	next "sick from eating"
-	next "bad dreams"
+	
+_DrowzeeDexEntry::	
+	text "מרדים את"
+	next "אויביו ואז אוכל"
+	next "את חלומותיהם."
+	
+	page "מדי פעם חולה"
+	next "מאכילת חלומות"
+	next "רעים"
 	dex
-
-_GolemDexEntry::
-	text "Its boulder-like"
-	next "body is extremely"
-	next "hard. It can"
-
-	page "easily withstand"
-	next "dynamite blasts"
-	next "without damage"
+	
+_GolemDexEntry::	
+	text "גופו דמוי הסלע"
+	next "הוא קשה"
+	next "במיוחד. הוא"
+	
+	page "מסוגל לעמוד"
+	next "בפיצוצי דינמיט"
+	next "מבלי להינזק"
 	dex
-
-_MagmarDexEntry::
-	text "Its body always"
-	next "burns with an"
-	next "orange glow that"
-
-	page "enables it to"
-	next "hide perfectly"
-	next "among flames"
+	
+_MagmarDexEntry::	
+	text "גופו תמיד"
+	next "בוער בלהבה"
+	next "כתומה שמאפשרת"
+	
+	page "לו להסוות את"
+	next "עצמו באופן"
+	next "מושלם בתוך אש"
 	dex
-
-_ElectabuzzDexEntry::
-	text "Normally found"
-	next "near power plants,"
-	next "they can wander"
-
-	page "away and cause"
-	next "major blackouts"
-	next "in cities"
+	
+_ElectabuzzDexEntry::	
+	text "בדרך כלל נמצאים"
+	next "בקרבת תחנות"
+	next "כוח, הם יכולים"
+	
+	page "לשוטט ולגרום"
+	next "להפסקות חשמל"
+	next "גדולות בערים"
 	dex
-
-_MagnetonDexEntry::
-	text "Formed by several"
-	next "MAGNEMITEs linked"
-	next "together. They"
-
-	page "frequently appear"
-	next "when sunspots"
-	next "flare up"
+	
+_MagnetonDexEntry::	
+	text "התגבשו על ידי"
+	next "חיבור מספר"
+	next "שואבנים יחד. הם"
+	
+	page "לרוב מופיעים"
+	next "בסמיכות להופעתם"
+	next "של כתמי שמש"
 	dex
-
-_KoffingDexEntry::
-	text "Because it stores"
-	next "several kinds of"
-	next "toxic gases in"
-
-	page "its body, it is"
-	next "prone to exploding"
-	next "without warning"
+	
+_KoffingDexEntry::	
+	text "מכיוון שהוא"
+	next "אוגר בתוכו כמה"
+	next "סוגים של גזים"
+	
+	page "רעילים, יש לו"
+	next "נטייה להתפוצץ"
+	next "ללא התראה"
 	dex
-
-_MankeyDexEntry::
-	text "Extremely quick to"
-	next "anger. It could"
-	next "be docile one"
-
-	page "moment then"
-	next "thrashing away"
-	next "the next instant"
+	
+_MankeyDexEntry::	
+	text "מתעצבן בקלות"
+	next "רבה. רגע אחד"
+	next "הוא יכול להיות"
+	
+	page "נינוח ושלו"
+	next "וברגע הבא"
+	next "לפתוח במתקפה"
 	dex
-
-_SeelDexEntry::
-	text "The protruding"
-	next "horn on its head"
-	next "is very hard."
-
-	page "It is used for"
-	next "bashing through"
-	next "thick ice"
+	
+_SeelDexEntry::	
+	text "הקרן המזדקרת"
+	next "מראשו קשה מאוד."
+	next "היא משמשת"
+	
+	page "לחציבת שכבות"
+	next "קרח עבות"
 	dex
-
-_DiglettDexEntry::
-	text "Lives about one"
-	next "yard underground"
-	next "where it feeds on"
-
-	page "plant roots. It"
-	next "sometimes appears"
-	next "above ground"
+	
+_DiglettDexEntry::	
+	text "חי בעומק של מטר"
+	next "אחד מתחת לאדמה"
+	next "שם הוא ניזון"
+	
+	page "משורשי צמחים."
+	next "מדי פעם הוא"
+	next "מופיע מעל הקרקע"
 	dex
-
-_TaurosDexEntry::
-	text "When it targets"
-	next "an enemy, it"
-	next "charges furiously"
-
-	page "while whipping its"
-	next "body with its"
-	next "long tails"
+	
+_TaurosDexEntry::	
+	text "כשהוא מתמקד"
+	next "באויב, הוא מסתער"
+	next "עליו בזעם"
+	
+	page "תוך כדי הלקאת"
+	next "גופו עם זנבותיו"
+	next "הארוכים"
 	dex
-
-_FarfetchdDexEntry::
-	text "The sprig of"
-	next "green onions it"
-	next "holds is its"
-
-	page "weapon. It is"
-	next "used much like a"
-	next "metal sword"
+	
+_FarfetchdDexEntry::	
+	text "הזלזל של הבצל"
+	next "הירוק משמש אותו"
+	next "ככלי נשק."
+	
+	page "הוא משתמש"
+	next "בו כמו בחרב"
+	next "מתכת"
 	dex
-
-_VenonatDexEntry::
-	text "Lives in the"
-	next "shadows of tall"
-	next "trees where it"
-
-	page "eats insects. It"
-	next "is attracted by"
-	next "light at night"
+	
+_VenonatDexEntry::	
+	text "חי בצללים של"
+	next "עצים גבוהים שם"
+	next "הוא אוכל"
+	
+	page "חרקים. הוא נמשך"
+	next "לאור בלילות"
 	dex
-
-_DragoniteDexEntry::
-	text "An extremely"
-	next "rarely seen"
-	next "marine #MON."
-
-	page "Its intelligence"
-	next "is said to match"
-	next "that of humans"
+	
+_DragoniteDexEntry::	
+	text "#ימון ימי"
+	next "נדיר במיוחד."
+	next "נאמר עליו"
+	
+	page "שחוכמתו לא"
+	next "נופלת מחוכמתם"
+	next "של בני אדם"
 	dex
-
-_DoduoDexEntry::
-	text "A bird that makes"
-	next "up for its poor"
-	next "flying with its"
-
-	page "fast foot speed."
-	next "Leaves giant"
-	next "footprints"
+	
+_DoduoDexEntry::	
+	text "ציפור שמפצה על"
+	next "יכולות תעופה"
+	next "דלות עם מהירות"
+	
+	page "רגלית מרשימה."
+	next "משאיר טביעות"
+	next "רגל ענקיות"
 	dex
-
-_PoliwagDexEntry::
-	text "Its newly grown"
-	next "legs prevent it"
-	next "from running. It"
-
-	page "appears to prefer"
-	next "swimming than"
-	next "trying to stand"
+	
+_PoliwagDexEntry::	
+	text "רגליו הטריות"
+	next "מונעות ממנו"
+	next "לרוץ. נראה שהוא"
+	
+	page "מעדיף שחייה"
+	next "מאשר נסיונות"
+	next "לעמוד על רגליו"
 	dex
-
-_JynxDexEntry::
-	text "It seductively"
-	next "wiggles its hips"
-	next "as it walks. It"
-
-	page "can cause people"
-	next "to dance in"
-	next "unison with it"
+	
+_JynxDexEntry::	
+	text "מנענעת את מותניה"
+	next "בצורה מפתה"
+	next "כשהיא הולכת."
+	
+	page "היא יכולה לגרום"
+	next "לאנשים לרקוד"
+	next "איתה בהתאמה"
 	dex
-
-_MoltresDexEntry::
-	text "Known as the"
-	next "legendary bird of"
-	next "fire. Every flap"
-
-	page "of its wings"
-	next "creates a dazzling"
-	next "flash of flames"
+	
+_MoltresDexEntry::	
+	text "ידוע כציפור"
+	next "האש האגדית."
+	next "כל נפנוף בכנפיו"
+	
+	page "יוצר הבזק"
+	next "מסנוור של"
+	next "להבות אש"
 	dex
-
-_ArticunoDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear to"
-
-	page "doomed people who"
-	next "are lost in icy"
-	next "mountains"
+	
+_ArticunoDexEntry::	
+	text "#ימון ציפור"
+	next "אגדי שלכאורה"
+	next "מופיע לאנשים"
+	
+	page "נואשים"
+	next "שאבדו בהרי"
+	next "קרח"
 	dex
-
-_ZapdosDexEntry::
-	text "A legendary bird"
-	next "#MON that is"
-	next "said to appear"
-
-	page "from clouds while"
-	next "dropping enormous"
-	next "lightning bolts"
+	
+_ZapdosDexEntry::	
+	text "#ימון ציפור"
+	next "אגדי שלכאורה"
+	next "מופיע מתוך"
+	
+	page "עננים תוך"
+	next "הטלת מכות"
+	next "ברקים עצומות"
 	dex
-
-_DittoDexEntry::
-	text "Capable of copying"
-	next "an enemy's genetic"
-	next "code to instantly"
-
-	page "transform itself"
-	next "into a duplicate"
-	next "of the enemy"
+	
+_DittoDexEntry::	
+	text "מסוגל להעתיק"
+	next "את הקוד הגנטי"
+	next "של האויב כדי"
+	
+	page "להפוך מיד"
+	next "לשכפול של"
+	next "האויב"
 	dex
-
-_MeowthDexEntry::
-	text "Adores circular"
-	next "objects. Wanders"
-	next "the streets on a"
-
-	page "nightly basis to"
-	next "look for dropped"
-	next "loose change"
+	
+_MeowthDexEntry::	
+	text "מעריץ עצמים"
+	next "עגולים. משוטט"
+	next "ברחובות על"
+	
+	page "בסיס לילי"
+	next "ומחפש כסף קטן"
+	next "שאבד ונשכח"
 	dex
-
-_KrabbyDexEntry::
-	text "Its pincers are"
-	next "not only powerful"
-	next "weapons, they are"
-
-	page "used for balance"
-	next "when walking"
-	next "sideways"
+	
+_KrabbyDexEntry::	
+	text "צבתותיו הן לא"
+	next "רק כלי נשק"
+	next "עוצמתיים, הם"
+	
+	page "משמשים לייצוב"
+	next "גופו בעת"
+	next "הליכה לצדדים"
 	dex
-
-_VulpixDexEntry::
-	text "At the time of"
-	next "birth, it has"
-	next "just one tail."
-
-	page "The tail splits"
-	next "from its tip as"
-	next "it grows older"
+	
+_VulpixDexEntry::	
+	text "בזמן היוולדו,"
+	next "יש לו רק זנב"
+	next "אחד. הזנב"
+	
+	page "מתפצל מהקצה"
+	next "כשהוא מתבגר"
 	dex
-
-_NinetalesDexEntry::
-	text "Very smart and"
-	next "very vengeful."
-	next "Grabbing one of"
-
-	page "its many tails"
-	next "could result in a"
-	next "1000-year curse"
+	
+_NinetalesDexEntry::	
+	text "חכם מאוד"
+	next "ונקמן מאוד."
+	next "לפיתת אחד"
+	
+	page "מזנבותיו הרבים"
+	next "יכולה להסתיים"
+	next "בקללה למילניום"
 	dex
-
-_PikachuDexEntry::
-	text "When several of"
-	next "these #MON"
-	next "gather, their"
-
-	page "electricity could"
-	next "build and cause"
-	next "lightning storms"
+	
+_PikachuDexEntry::	
+	text "כשכמה"
+	next "#ימונים אלה"
+	next "מתקבצים יחד,"
+	
+	page "החשמל שלהם יכול"
+	next "להצטבר וליצור"
+	next "סופות ברקים"
 	dex
-
-_RaichuDexEntry::
-	text "Its long tail"
-	next "serves as a"
-	next "ground to protect"
-
-	page "itself from its"
-	next "own high voltage"
-	next "power"
+	
+_RaichuDexEntry::	
+	text "זנבו הארוך"
+	next "משמש כארקה"
+	next "כדי להגן על"
+	
+	page "עצמו מפני המתח"
+	next "הגבוה שבכוחו"
 	dex
-
-_DratiniDexEntry::
-	text "Long considered a"
-	next "mythical #MON"
-	next "until recently"
-
-	page "when a small"
-	next "colony was found"
-	next "living underwater"
+	
+_DratiniDexEntry::	
+	text "תקופה ארוכה"
+	next "שנחשב #ימון"
+	next "מיסטי עד לאחרונה"
+	
+	page "כשנתגלתה מושבה"
+	next "קטנה מתחת"
+	next "למים"
 	dex
-
-_DragonairDexEntry::
-	text "A mystical #MON"
-	next "that exudes a"
-	next "gentle aura."
-
-	page "Has the ability"
-	next "to change climate"
-	next "conditions"
+	
+_DragonairDexEntry::	
+	text "#ימון מיסטי"
+	next "שפולט הילה"
+	next "עדינה. בעל"
+	
+	page "יכולת לשנות"
+	next "את תנאי האקלים"
+	next
 	dex
-
-_KabutoDexEntry::
-	text "A #MON that"
-	next "was resurrected"
-	next "from a fossil"
-
-	page "found in what was"
-	next "once the ocean"
-	next "floor eons ago"
+	
+_KabutoDexEntry::	
+	text "#ימון ששוחזר"
+	next "ממאובן שנמצא"
+	next "במה שהיה פעם"
+	
+	page "האוקיינוס לפני"
+	next "עידן ועידנים"
+	next
 	dex
-
-_KabutopsDexEntry::
-	text "Its sleek shape is"
-	next "perfect for swim-"
-	next "ming. It slashes"
-
-	page "prey with its"
-	next "claws and drains"
-	next "the body fluids"
+	
+_KabutopsDexEntry::	
+	text "צורתו החלקה"
+	next "מושלמת לשחייה."
+	next "הוא חותך את"
+	
+	page "טרפו עם טפריו"
+	next "ושואב את נוזלי"
+	next "גופו"
 	dex
-
-_HorseaDexEntry::
-	text "Known to shoot"
-	next "down flying bugs"
-	next "with precision"
-
-	page "blasts of ink"
-	next "from the surface"
-	next "of the water"
+	
+_HorseaDexEntry::	
+	text "נוהג להפיל"
+	next "חרקים מעופפים"
+	next "באמצעות התזות"
+	
+	page "דיו מדויקות"
+	next "מעל פני הים"
 	dex
-
-_SeadraDexEntry::
-	text "Capable of swim-"
-	next "ming backwards by"
-	next "rapidly flapping"
-
-	page "its wing-like"
-	next "pectoral fins and"
-	next "stout tail"
+	
+_SeadraDexEntry::	
+	text "מסוגל לשחות"
+	next "אחורנית באמצעות"
+	next "נפנוף מהיר"
+	
+	page "בסנפירי החזה"
+	next "דמויי הכנף שלו"
+	next "ובזנבו האיתן"
 	dex
-
-_SandshrewDexEntry::
-	text "Burrows deep"
-	next "underground in"
-	next "arid locations"
-
-	page "far from water."
-	next "It only emerges"
-	next "to hunt for food"
+	
+_SandshrewDexEntry::	
+	text "מתחפר עמוק"
+	next "מתחת לאדמה"
+	next "במקומות צחיחים"
+	
+	page "רחוק ממים."
+	next "הוא מגיח למעלה"
+	next "רק לציד מזון"
 	dex
-
-_SandslashDexEntry::
-	text "Curls up into a"
-	next "spiny ball when"
-	next "threatened. It"
-
-	page "can roll while"
-	next "curled up to"
-	next "attack or escape"
+	
+_SandslashDexEntry::	
+	text "מתקפל לכדור"
+	next "קוצני כשמאוים."
+	next "הוא יכול"
+	
+	page "להתגלגל ככדור"
+	next "כדי לתקוף או"
+	next "כדי לברוח"
 	dex
-
-_OmanyteDexEntry::
-	text "Although long"
-	next "extinct, in rare"
-	next "cases, it can be"
-
-	page "genetically"
-	next "resurrected from"
-	next "fossils"
+	
+_OmanyteDexEntry::	
+	text "למרות שנכחד"
+	next "מזמן, במקרים"
+	next "נדירים,  ניתן"
+	
+	page "להחיות אותו"
+	next "גנטית ממאובנים"
 	dex
-
-_OmastarDexEntry::
-	text "A prehistoric"
-	next "#MON that died"
-	next "out when its"
-
-	page "heavy shell made"
-	next "it impossible to"
-	next "catch prey"
+	
+_OmastarDexEntry::	
+	text "#ימון"
+	next "פרה-היסטורי"
+	next "שמת כשקונכייתו"
+	
+	page "הכבדה לא אפשרה"
+	next "לו לצוד טרף"
 	dex
 
 _JigglypuffDexEntry::
