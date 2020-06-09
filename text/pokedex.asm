@@ -791,114 +791,114 @@ _OmastarDexEntry::
 	next "לו לצוד טרף"
 	dex
 
-_JigglypuffDexEntry::
-	text "When its huge eyes"
-	next "light up, it sings"
-	next "a mysteriously"
-
-	page "soothing melody"
-	next "that lulls its"
-	next "enemies to sleep"
+_JigglypuffDexEntry::	
+	text "כשעיניו הענקיות"
+	next "מוארות, הוא שר"
+	next "מנגינה קסומה"
+	
+	page "ומרגיעה שגורמת"
+	next "לאויביו לשקוע"
+	next "בשינה עמוקה"
 	dex
-
-_WigglytuffDexEntry::
-	text "The body is soft"
-	next "and rubbery. When"
-	next "angered, it will"
-
-	page "suck in air and"
-	next "inflate itself to"
-	next "an enormous size"
+	
+_WigglytuffDexEntry::	
+	text "הגוף רך וגמיש."
+	next "בעת זעם, הוא"
+	next "ישאב אוויר"
+	
+	page "פנימה וינפח"
+	next "עצמו לגודל"
+	next "עצום"
 	dex
-
-_EeveeDexEntry::
-	text "Its genetic code"
-	next "is irregular."
-	next "It may mutate if"
-
-	page "it is exposed to"
-	next "radiation from"
-	next "element STONEs"
+	
+_EeveeDexEntry::	
+	text "בעל קוד גנטי"
+	next "חריג שמסוגל"
+	next "להשתנות"
+	
+	page "בחשיפה לקרינה"
+	next "של אבני יסוד"
+	next
 	dex
-
-_FlareonDexEntry::
-	text "When storing"
-	next "thermal energy in"
-	next "its body, its"
-
-	page "temperature could"
-	next "soar to over 1600"
-	next "degrees"
+	
+_FlareonDexEntry::	
+	text "כשאוגר אנרגיית"
+	next "חום בגופו,"
+	next "הטמפרטורה שלו"
+	
+	page "יכולה לנסוק"
+	next "מעל ל-0061"
+	next "מעלות"
 	dex
-
-_JolteonDexEntry::
-	text "It accumulates"
-	next "negative ions in"
-	next "the atmosphere to"
-
-	page "blast out 10000-"
-	next "volt lightning"
-	next "bolts"
+	
+_JolteonDexEntry::	
+	text "הוא צובר"
+	next "יונים שליליים"
+	next "באטמוספירה כדי"
+	
+	page "לשגר מכות ברק"
+	next "בעוצמה של"
+	next "00001 וולט"
 	dex
-
-_VaporeonDexEntry::
-	text "Lives close to"
-	next "water. Its long"
-	next "tail is ridged"
-
-	page "with a fin which"
-	next "is often mistaken"
-	next "for a mermaid's"
+	
+_VaporeonDexEntry::	
+	text "חי בקרבת מים."
+	next "קל לטעות ולחשוב"
+	next "שזנבו הארוך"
+	
+	page "שבקצהו סנפיר"
+	next "שייך לבתולת ים"
+	next
 	dex
-
-_MachopDexEntry::
-	text "Loves to build"
-	next "its muscles."
-	next "It trains in all"
-
-	page "styles of martial"
-	next "arts to become"
-	next "even stronger"
+	
+_MachopDexEntry::	
+	text "אוהב לבנות את"
+	next "שריריו. מתאמן"
+	next "בכל סגנונות"
+	
+	page "אמנויות הלחימה"
+	next "כדי להפוך לחזק"
+	next "אפילו יותר"
 	dex
-
-_ZubatDexEntry::
-	text "Forms colonies in"
-	next "perpetually dark"
-	next "places. Uses"
-
-	page "ultrasonic waves"
-	next "to identify and"
-	next "approach targets"
+	
+_ZubatDexEntry::	
+	text "יוצרים מושבות"
+	next "במקומות חשוכים"
+	next "תמידית."
+	
+	page "משתמש בגלים"
+	next "על-קוליים לזיהוי"
+	next "אויבים"
 	dex
-
-_EkansDexEntry::
-	text "Moves silently"
-	next "and stealthily."
-	next "Eats the eggs of"
-
-	page "birds, such as"
-	next "PIDGEY and"
-	next "SPEAROW, whole"
+	
+_EkansDexEntry::	
+	text "נע בשקט ובהחבא."
+	next "אוכל ביצי"
+	next "ציפורים, למשל"
+	
+	page "של יונדי"
+	next "ושל כידרור,"
+	next "בשלמותן"
 	dex
-
-_ParasDexEntry::
-	text "Burrows to suck"
-	next "tree roots. The"
-	next "mushrooms on its"
-
-	page "back grow by draw-"
-	next "ing nutrients from"
-	next "the bug host"
+	
+_ParasDexEntry::	
+	text "מכרסם שורשי"
+	next "עצים. הפטריות"
+	next "שעל גבו גדלות"
+	
+	page "על ידי שאיבת"
+	next "חומרים מזינים"
+	next "מהחרק הפונדקאי"
 	dex
-
-_PoliwhirlDexEntry::
-	text "Capable of living"
-	next "in or out of"
-	next "water. When out"
-
-	page "of water, it"
-	next "sweats to keep"
-	next "its body slimy"
+	
+_PoliwhirlDexEntry::	
+	text "מסוגל לחיות בתוך"
+	next "או מחוץ למים."
+	next "כשהוא מחוץ"
+	
+	page "למים, הוא מזיע"
+	next "כדי לשמור על"
+	next "גופו חלקלק"
 	dex
 
 _PoliwrathDexEntry::
