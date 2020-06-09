@@ -74,7 +74,7 @@ _FuchsiaGymBattleText2::
 	text "רציתי ללמוד להיות"
 	line "נינג'ה, אז"
 	cont "הצטרפתי למכון"
-	ccont "הזה!"
+	cont "הזה!"
 	done
 
 _FuchsiaGymEndBattleText2::
@@ -166,10 +166,10 @@ _FuchsiaGymEndBattleText6::
 
 _FuchsiaGymAfterBattleText6::
 	text "איפה שיש אור, יש"
-	line "גם חושך!
+	line "גם חושך!"
 
 	para "אור וחושך!"
-	line "באיזה צד תבחר?
+	line "באיזה צד תבחר?"
 	done
 
 _FuchsiaGymText_7564e::
