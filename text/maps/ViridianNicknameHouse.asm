@@ -1,15 +1,15 @@
 _ViridianHouseText1::
-	text " להמציא שמות"
-	line ",חיבה זה כיף"
+	text "להמציא כינויים"
+	line ",זה כיף"
 	cont ".אבל לא פשוט"
 
-	para " הכי קל לזכור  "
+	para " הכי קל לזכור"
 	line " שמות "
 	cont ".רגילים"
 	done
 
 _ViridianHouseText2::
-	text " גם אבא שלי "
+	text "אבא שלי"
 	line ".אוהב #ימונים"
 	done
 
