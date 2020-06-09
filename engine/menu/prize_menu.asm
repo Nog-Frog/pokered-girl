@@ -19,7 +19,7 @@ CeladonPrizeMenu:
 	ld [wMaxMenuItem], a
 	ld a, $04
 	ld [wTopMenuItemY], a
-	ld a, $01
+	ld a, 16
 	ld [wTopMenuItemX], a
 	call PrintPrizePrice
 	coord hl, 0, 2
@@ -93,37 +93,37 @@ GetPrizeMenuId:
 	ld a, [wPrize1]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 2, 4
+	coord hl, 15, 4
 	call PlaceString
 	ld a, [wPrize2]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 2, 6
+	coord hl, 15, 6
 	call PlaceString
 	ld a, [wPrize3]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 2, 8
+	coord hl, 15, 8
 	call PlaceString
 	jr .putNoThanksText
 .putMonName
 	ld a, [wPrize1]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 2, 4
+	coord hl, 15, 4
 	call PlaceString
 	ld a, [wPrize2]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 2, 6
+	coord hl, 15, 6
 	call PlaceString
 	ld a, [wPrize3]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 2, 8
+	coord hl, 15, 8
 	call PlaceString
 .putNoThanksText
-	coord hl, 2, 10
+	coord hl, 15, 10
 	ld de, NoThanksText
 	call PlaceString
 ; put prices on the right side of the textbox
@@ -148,25 +148,25 @@ GetPrizeMenuId:
 INCLUDE "data/prizes.asm"
 
 PrintPrizePrice:
-	coord hl, 11, 0
+	coord hl, 10, 0
 	ld b, 1
-	ld c, 7
+	ld c, 8
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 12, 0
+	coord hl, 17, 0
 	ld de, .CoinString
 	call PlaceString
-	coord hl, 13, 1
+	coord hl, 17, 1
 	ld de, .SixSpacesString
 	call PlaceString
 	coord hl, 13, 1
 	ld de, wPlayerCoins
-	ld c, %10000010
-	call PrintBCDNumber
+	ld c, %11000010
+	call PrintBCDNumberInternal
 	ret
 
 .CoinString:
-	db "מטבע@"
+	db "מטבעות@"
 
 .SixSpacesString:
 	db "      @"
