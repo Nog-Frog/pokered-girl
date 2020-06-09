@@ -9,8 +9,8 @@ _CeladonGymText_48a5e::
 	cont "ברוך הבא."
 
 	para "שמי הוא איריס."
-	line "אני מנהיגת המכון"
-	cont "של עיר האביב."
+	line "אני מנהיגת מכון"
+	cont "האביב."
 
 	para "אני מלמדת את"
 	line "האומנות של סידור"
@@ -200,7 +200,7 @@ _CeladonGymAfterBattleText7::
 
 _CeladonGymBattleText8::
 	text "ברוך הבא למכון"
-	line "עיר האביב!"
+	line "האביב!"
 
 	para "אל תעז להמעיט"
 	line "בערכו של הכוח"
