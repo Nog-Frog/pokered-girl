@@ -1,146 +1,146 @@
 _GaryChampionIntroText::
-	text "<RIVAL>: Hey!"
+	text "<RIVAL>: היי!"
 
-	para "I was looking"
-	line "forward to seeing"
-	cont "you, <PLAYER>!"
+	para "ציפיתי לראות"
+	line "אותך כאן,"
+	cont "<PLAYER>!"
 
-	para "My rival should"
-	line "be strong to keep"
-	cont "me sharp!"
+	para "חשוב שיהיה לי"
+	line "יריב חזק, כדי"
+	cont "שיהיה לי אתגר!"
 
-	para "While working on"
-	line "#DEX, I looked"
-	cont "all over for"
-	cont "powerful #MON!"
+	para "העבודה על ה#ידע"
+	line "הובילה אותי למצוא"
+	cont "#ימונים חזקים"
+	cont "ונדירים!"
 
-	para "Not only that, I"
-	line "assembled teams"
-	cont "that would beat"
-	cont "any #MON type!"
+	para "הרכבתי מהם צוותים"
+	line "שיוכלו להביס"
+	cont "#ימונים מכל"
+	cont "סוג!"
 
-	para "And now!"
+	para "ולכן!"
 
-	para "I'm the #MON"
-	line "LEAGUE champion!"
+	para "אני אלוף ליגת"
+	line "ה#ימון!"
 
-	para "<PLAYER>! Do you"
-	line "know what that"
-	cont "means?"
+	para "<PLAYER>! אתה"
+	line "מבין מה זה"
+	cont "אומר?"
 
-	para "I'll tell you!"
+	para "אני אגיד לך"
+	line "בדיוק מה זה אומר!"
 
-	para "I am the most"
-	line "powerful trainer"
-	cont "in the world!"
+	para "אני מאמן ה#ימון"
+	line "החזק ביותר בכל"
+	cont "העולם!"
 	done
 
 _GaryDefeatedText::
-	text "NO!"
-	line "That can't be!"
-	cont "You beat my best!"
+	text "לא!!!"
+	line "זה לא יכול להיות!"
+	cont "ניצחת את הצוות"
+	cont "הטוב ביותר שלי!"
 
-	para "After all that"
-	line "work to become"
-	cont "LEAGUE champ?"
+	para "ואחרי שעבדתי כל"
+	line "כך קשה כדי להיות"
+	cont "אלוף ליגת"
+	cont "ה#ימון?"
 
-	para "My reign is over"
-	line "already?"
-	cont "It's not fair!"
+	para "התואר נלקח ממני"
+	line "כל כך מהר?"
+	cont "זה לא הוגן!"
 	prompt
 
 _GaryVictoryText::
-	text "Hahaha!"
-	line "I won, I won!"
+	text "חה!"
+	line "ניצחתי וניצחתי!"
 
-	para "I'm too good for"
-	line "you, <PLAYER>!"
+	para "אני חזק מדי"
+	line "בשבילך, <PLAYER>!"
 
-	para "You did well to"
-	line "even reach me,"
-	cont "<RIVAL>, the"
-	cont "#MON genius!"
+	para "העובדה שבכלל הגעת"
+	line "עד לכאן, לקרב מול"
+	cont "<RIVAL>, גאון"
+	cont "ה#ימון! זה הישג"
+	cont "מרשים!"
 
-	para "Nice try, loser!"
-	line "Hahaha!"
+	para "ניסיון נחמד,"
+	line "לוזר! פחחחה!"
 	prompt
 
 _GaryText_76103::
-	text "Why?"
-	line "Why did I lose?"
+	text "למה?"
+	line "למה הובסתי?"
 
-	para "I never made any"
-	line "mistakes raising"
-	cont "my #MON..."
+	para "לא טעיתי אפילו"
+	line "פעם אחת באימון"
+	cont "ה#ימונים שלי..."
 
-	para "Darn it! You're"
-	line "the new #MON"
-	cont "LEAGUE champion!"
+	para "לעזאזל! אתה אלוף"
+	line "ליגת ה#ימון"
+	cont "החדש!"
 
-	para "Although I don't"
-	line "like to admit it."
+	para "למרות שאני לא שמח"
+	line "להודות בזה."
 	done
 
 _GaryText2::
-	text "OAK: <PLAYER>!"
+	text "אלון: <PLAYER>!"
 	done
 
 _GaryText_76120::
-	text "OAK: So, you won!"
-	line "Congratulations!"
-	cont "You're the new"
-	cont "#MON LEAGUE"
-	cont "champion!"
+	text "אלון: אז, ניצחת!"
+	line "ברכותי!"
+	cont "אתה אלוך ליגת"
+	cont "ה#ימון החדש!"
 
-	para "You've grown up so"
-	line "much since you"
-	cont "first left with"
+	para "התבגרת כל כך מאז"
+	line "היום ההוא, שעזבת"
+	cont "את העיירה פאלט עם"
 	cont "@"
 	TX_RAM wcd6d
 	text "!"
 
-	para "<PLAYER>, you have"
-	line "come of age!"
+	para "<PLAYER>, בגרת"
+	line "והשכלת!"
 	done
 
 _GaryText_76125::
-	text "OAK: <RIVAL>! I'm"
-	line "disappointed!"
+	text "אלון: <RIVAL>! אני"
+	line "מאוכזב!"
 
-	para "I came when I"
-	line "heard you beat"
-	cont "the ELITE FOUR!"
+	para "כששמעתי שהבסת את"
+	line "הרביעיה העילית,"
+	cont "מיהרתי לבוא!"
 
-	para "But, when I got"
-	line "here, you had"
-	cont "already lost!"
+	para "אבל עד שהספקתי"
+	line "להגיע, כבר הפסדת"
+	cont "את התואר!"
 
-	para "<RIVAL>! Do you"
-	line "understand why"
-	cont "you lost?"
+	para "<RIVAL>! אתה מבין"
+	line "מדוע הובסת?"
 
-	para "You have forgotten"
-	line "to treat your"
-	cont "#MON with"
-	cont "trust and love!"
+	para "שכחת להתיחס"
+	line "ל#ימונים שלך"
+	cont "באהבה ולהאמין"
+	cont "בהם!"
 
-	para "Without them, you"
-	line "will never become"
-	cont "a champ again!"
+	para "בלעדיהם, לעולם לא"
+	line "תצליח להפוך שוב"
+	cont "לאלוף!"
 	done
 
 _GaryText_7612a::
-	text "OAK: <PLAYER>!"
+	text "אלון: <PLAYER>!"
 
-	para "You understand"
-	line "that your victory"
-	cont "was not just your"
-	cont "own doing!"
+	para "אתה מבין שהניצחון"
+	line "שלך קרה לא רק"
+	cont "בזכותך!"
 
-	para "The bond you share"
-	line "with your #MON"
-	cont "is marvelous!"
+	para "יש לך ול#ימונים"
+	line "שלך קשר נפלא!"
 
 	para "<PLAYER>!"
-	line "Come with me!"
+	line "בוא אחרי!"
 	done
