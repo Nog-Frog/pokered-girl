@@ -1,26 +1,27 @@
 _KogaBeforeBattleText::
-	text "KOGA: Fwahahaha!"
+	text "צפע: פחהחהחהחה!"
 
-	para "A mere child like"
-	line "you dares to"
-	cont "challenge me?"
+	para "ילדון קטן כמוך,"
+	line "מעז לאתגר..."
+	cont "אותי?"
 
-	para "Very well, I"
-	line "shall show you"
-	cont "true terror as a"
-	cont "ninja master!"
+	para "בסדר גמור, אני"
+	line "אראה לך איך"
+	cont "מרגישה האימה"
+	cont "שמאסטר נינג'ה"
+	cont "מסוגל להשרות"
+	cont "עליך!"
 
-	para "You shall feel"
-	line "the despair of"
-	cont "poison and sleep"
-	cont "techniques!"
+	para "התכונן להרגיש את"
+	line "היאוש המחלחל של"
+	cont "מתקפות רעל ושינה!"
 	done
 
 _KogaAfterBattleText::
-	text "Humph!"
-	line "You have proven"
-	cont "your worth!"
+	text "האמפף!"
+	line "הראית מה אתה"
+	cont "באמת שווה!"
 
-	para "Here! Take the"
-	line "SOULBADGE!"
+	para "הנה! קח את תג"
+	line "הלב!"
 	prompt
