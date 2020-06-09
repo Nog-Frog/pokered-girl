@@ -73,17 +73,17 @@ MainSlotMachineLoop:
 	ld [wMaxMenuItem], a
 	ld a, 12
 	ld [wTopMenuItemY], a
-	ld a, 15
+	ld a, 4
 	ld [wTopMenuItemX], a
 	xor a
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ld [wMenuWatchMovingOutOfBounds], a
-	coord hl, 14, 11
+	coord hl, 0, 11
 	ld b, 5
 	ld c, 4
 	call TextBoxBorder
-	coord hl, 16, 12
+	coord hl, 3, 12
 	ld de, CoinMultiplierSlotMachineText
 	call PlaceString
 	call HandleMenuInput
@@ -133,8 +133,8 @@ MainSlotMachineLoop:
 .skip2
 	ld hl, OneMoreGoSlotMachineText
 	call PrintText
-	coord hl, 14, 12
-	lb bc, 13, 15
+	coord hl, 0, 12
+	lb bc, 13, 4
 	xor a ; YES_NO_MENU
 	ld [wTwoOptionMenuID], a
 	ld a, TWO_OPTION_MENU
@@ -147,9 +147,9 @@ MainSlotMachineLoop:
 	jp MainSlotMachineLoop
 
 CoinMultiplierSlotMachineText:
-	db   "×3"
-	next "×2"
-	next "×1@"
+	db   "3×"
+	next "2×"
+	next "1×@"
 
 OutOfCoinsSlotMachineText:
 	TX_FAR _OutOfCoinsSlotMachineText
@@ -481,10 +481,6 @@ SymbolLinedUpSlotMachineText:
 	call SlotMachine_PrintWinningSymbol
 	ld hl, LinedUpText
 	pop bc
-	inc bc
-	inc bc
-	inc bc
-	inc bc
 	ret
 
 LinedUpText:
@@ -506,16 +502,16 @@ SlotRewardPointers:
 	dw SlotReward15Text
 
 SlotReward300Text:
-	db "300@"
+	db "003@"
 
 SlotReward100Text:
-	db "100@"
+	db "001@"
 
 SlotReward8Text:
 	db "8@"
 
 SlotReward15Text:
-	db "15@"
+	db "51@"
 
 NotThisTimeText:
 	TX_FAR _NotThisTimeText
@@ -615,7 +611,9 @@ YeahText:
 
 SlotMachine_PrintWinningSymbol:
 ; prints winning symbol and down arrow in text box
-	coord hl, 2, 14
+	coord hl, 8, 14
+	ld [hl], "!"
+	coord hl, 9, 14
 	ld a, [wSlotMachineWinningSymbol]
 	add $25
 	ld [hli], a
@@ -627,7 +625,7 @@ SlotMachine_PrintWinningSymbol:
 	ld [hli], a
 	inc a
 	ld [hl], a
-	coord hl, 18, 16
+	coord hl, 1, 16
 	ld [hl], "▼"
 	ret
 
@@ -645,13 +643,13 @@ SlotMachine_PrintCreditCoins:
 	coord hl, 5, 1
 	ld de, wPlayerCoins
 	ld c, $2
-	jp PrintBCDNumber
+	jp PrintBCDNumberInternal
 
 SlotMachine_PrintPayoutCoins:
 	coord hl, 11, 1
 	ld de, wPayoutCoins
 	lb bc, LEADING_ZEROES | 2, 4 ; 2 bytes, 4 digits
-	jp PrintNumber
+	jp PrintNumberLTR
 
 SlotMachine_PayCoinsToPlayer:
 	ld a, $1

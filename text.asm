@@ -333,7 +333,7 @@ _OneMoreGoSlotMachineText::
 	done
 
 _LinedUpText::
-	text " השגת שורה!"
+	text "שורה של"
 	line "זכית ב@"
 	TX_RAM wcf4b
 	text " מטבעות!"
