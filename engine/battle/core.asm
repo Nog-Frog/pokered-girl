@@ -1467,7 +1467,7 @@ EnemySendOutFirstMon:
 	ld hl, TrainerAboutToUseText
 	call PrintText
 	coord hl, 0, 7
-	lb bc, 8, 1
+	lb bc, 8, 4
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
