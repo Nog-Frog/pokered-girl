@@ -592,8 +592,9 @@ HeightWeightText:
 	next "משקל ??? ",$62,$61,"@"
 
 ; XXX does anything point to this?
+; TODO unused
 PokeText:
-	db "#@"
+	db "#י@"
 
 ; horizontal line that divides the pokedex text description from the rest of the data
 PokedexDataDividerLine:
