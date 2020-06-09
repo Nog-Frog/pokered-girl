@@ -109,7 +109,8 @@ _VermilionGymAfterBattleText3::
 	done
 
 _VermilionGymFanPreBattleText::
-	text "יו! אלופצ'יק!"
+	text "יו!"
+	line "אלופצ'יק!"
 
 	para "לסרן ברק יש"
 	line "כינוי. אנשים"
