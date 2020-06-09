@@ -825,8 +825,8 @@ ItemUseMedicine:
 	ld [wActionResultOrTookBattleTurn], a ; item use failed
 	jp PrintText
 .emptyPartyText
-	text "You don't have"
-	line "any #MON!"
+	text "אין לך"
+	line "#ימונים!"
 	prompt
 .notUsingSoftboiled
 	call DisplayPartyMenu
@@ -1425,11 +1425,11 @@ VitaminNoEffectText:
 	db "@"
 
 VitaminText:
-	db "HEALTH@"
-	db "ATTACK@"
-	db "DEFENSE@"
-	db "SPEED@"
-	db "SPECIAL@"
+	db "בריאות@"
+	db "התקפה@"
+	db "הגנה@"
+	db "מהירות@"
+	db "מיוחדת@"
 
 ItemUseBait:
 	ld hl, ThrewBaitText
