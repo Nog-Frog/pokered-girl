@@ -1,193 +1,196 @@
 _KogaExplainToxicText::
-	text "When afflicted by"
-	line "TOXIC, #MON"
-	cont "suffer more and"
-	cont "more as battle"
-	cont "progresses!"
+	text "תחת השפעת המהלך"
+	line "הרעלה, #ימון"
+	cont "יסבול מהרעל יותר"
+	cont "ויותר ככל שהקרב"
+	cont "יתקדם!"
 
-	para "It will surely"
-	line "terrorize foes!"
+	para "אויביך ירעדו"
+	line "מפחד!"
 	done
 
 _FuchsiaGymText9::
-	text "Now that you have"
-	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
-	cont "increases!"
+	text "בזכות תג הלב,"
+	line "נתוני ההגנה"
+	cont "של ה#ימונים שלך"
+	cont "הוגברו!"
 
-	para "It also lets you"
-	line "SURF outside of"
-	cont "battle!"
+	para "התג גם מאפשר לך"
+	line "להשתמש בגלישה"
+	cont "מחוץ לקרב!"
 
-	para "Ah! Take this"
-	line "too!"
+	para "אה! קח גם את"
+	line "זה!"
 	done
 
 _ReceivedTM06Text::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM06ExplanationText::
 	text ""
-	para "TM06 contains"
-	line "TOXIC!"
+	para "60MT מכיל את"
+	line "המהלך הרעלה!"
 
-	para "It is a secret"
-	line "technique over"
-	cont "400 years old!"
+	para "זה מהלך סודי"
+	line "בן יותר מ-004"
+	cont "שנים!"
 	done
 
 _TM06NoRoomText::
-	text "Make space for"
-	line "this, child!"
+	text "פנה מקום בתיק,"
+	line "ילד!"
 	done
 
 _FuchsiaGymBattleText1::
-	text "Strength isn't"
-	line "the key for"
-	cont "#MON!"
+	text "כוח הוא לא המפתח"
+	line "לניצחון בקרבות"
+	cont "#ימון!"
 
-	para "It's strategy!"
+	para "המפתח האמיתי הוא"
+	line "אסטרטגיה!"
 
-	para "I'll show you how"
-	line "strategy can beat"
-	cont "brute strength!"
+	para "אני אראה לך איך"
+	line "אסטרטגיה מסוגלת"
+	cont "להביס גישה"
+	cont "כוחנית!"
 	done
 
 _FuchsiaGymEndBattleText1::
-	text "What?"
-	line "Extraordinary!"
+	text "מה?"
+	line "יוצא מן הכלל!"
 	prompt
 
 _FuchsiaGymAfterBattleText1::
-	text "So, you mix brawn"
-	line "with brains?"
-	cont "Good strategy!"
+	text "אז אתה משתמש"
+	line "בשילוב בין כוח"
+	cont "למוח? אסטרטגיה"
+	cont "טובה!"
 	done
 
 _FuchsiaGymBattleText2::
-	text "I wanted to become"
-	line "a ninja, so I"
-	cont "joined this GYM!"
+	text "רציתי ללמוד להיות"
+	line "נינג'ה, אז"
+	cont "הצטרפתי למכון"
+	ccont "הזה!"
 	done
 
 _FuchsiaGymEndBattleText2::
-	text "I'm done"
-	line "for!"
+	text "הלך"
+	line "עליי!"
 	prompt
 
 _FuchsiaGymAfterBattleText2::
-	text "I will keep on"
-	line "training under"
-	cont "KOGA, my ninja"
-	cont "master!"
+	text "אני אמשיך להתאמן"
+	line "בהדרכתו של צפע,"
+	cont "מאסטר הנינג'ה"
+	cont "שלי!"
 	done
 
 _FuchsiaGymBattleText3::
-	text "Let's see you"
-	line "beat my special"
-	cont "techniques!"
+	text "בוא נראה אותך"
+	line "מנצח את הטכניקות"
+	cont "המיוחדות שלי!"
 	done
 
 _FuchsiaGymEndBattleText3::
-	text "You"
-	line "had me fooled!"
+	text "הטעית"
+	line "אותי!"
 	prompt
 
 _FuchsiaGymAfterBattleText3::
-	text "I like poison and"
-	line "sleep techniques,"
-	cont "as they linger"
-	cont "after battle!"
+	text "אני אוהב מהלכים"
+	line "שגורמים לשינה"
+	cont "ולהרעלה, כי"
+	cont "ההשפעה שלהם נמשכת"
+	cont "גם אחרי הקרב!"
 	done
 
 _FuchsiaGymBattleText4::
-	text "Stop right there!"
+	text "עצור!"
 
-	para "Our invisible"
-	line "walls have you"
-	cont "frustrated?"
+	para "הקירות הבלתי-"
+	line "נראים שלנו"
+	cont "מתסכלים אותך?"
 	done
 
 _FuchsiaGymEndBattleText4::
-	text "Whoa!"
-	line "He's got it!"
+	text "וואו!"
+	line "הוא קלט את זה!"
 	prompt
 
 _FuchsiaGymAfterBattleText4::
-	text "You impressed me!"
-	line "Here's a hint!"
+	text "אני ממש מתרשם!"
+	line "קח רמז!"
 
-	para "Look very closely"
-	line "for gaps in the"
-	cont "invisible walls!"
+	para "חפש את המעברים"
+	line "שבין הקירות הבלתי"
+	cont "-נראים!"
 	done
 
 _FuchsiaGymBattleText5::
-	text "I also study the"
-	line "way of the ninja"
-	cont "with master KOGA!"
+	text "גם אני לומד את"
+	line "סודות הנינג'ה"
+	cont "ממאסטר צפע!"
 
-	para "Ninja have a long"
-	line "history of using"
-	cont "animals!"
+	para "לנינג'ות יש מסורת"
+	line "של שימוש בחיות!"
 	done
 
 _FuchsiaGymEndBattleText5::
-	text "Awoo!"
+	text "אעוו!"
 	prompt
 
 _FuchsiaGymAfterBattleText5::
-	text "I still have much"
-	line "to learn!"
+	text "עדיין יש לי הרבה"
+	line "מה ללמוד!"
 	done
 
 _FuchsiaGymBattleText6::
-	text "Master KOGA comes"
-	line "from a long line"
-	cont "of ninjas!"
+	text "מאסטר צפע מגיע"
+	line "לשושלת ארוכה של"
+	cont "נינג'ות!"
 
-	para "What did you"
-	line "descend from?"
+	para "מאיזו שושלת אתה"
+	line "מגיע?"
 	done
 
 _FuchsiaGymEndBattleText6::
-	text "Dropped"
-	line "my balls!"
+	text "הפלתי"
+	line "את הכדורים שלי!" ; It's not a mistranslation.
+	; If you look at the actual fight, the trainer (JUGGLER) sprite shows him
+	; juggling balls during the fight. That's what this line refers to.
 	prompt
 
 _FuchsiaGymAfterBattleText6::
-	text "Where there is"
-	line "light, there is"
-	cont "shadow!"
+	text "איפה שיש אור, יש"
+	line "גם חושך!
 
-	para "Light and shadow!"
-	line "Which do you"
-	cont "choose?"
+	para "אור וחושך!"
+	line "באיזה צד תבחר?
 	done
 
 _FuchsiaGymText_7564e::
-	text "Yo! Champ in"
-	line "making!"
+	text "יו!"
+	line "אלופצ'יק!"
 
-	para "FUCHSIA GYM is"
-	line "riddled with"
-	cont "invisible walls!"
+	para "מכון השושנה מלא"
+	line "בקירות בלתי-"
+	cont "נראים!"
 
-	para "KOGA might appear"
-	line "close, but he's"
-	cont "blocked off!"
+	para "אולי זה נראה שצפע"
+	line "קרוב, אבל הדרך"
+	cont "אליו חסומה!"
 
-	para "You have to find"
-	line "gaps in the walls"
-	cont "to reach him!"
+	para "תצטרך למצוא מרווחים"
+	line "בין הקירות כדי"
+	cont "להגיע אליו!"
 	done
 
 _FuchsiaGymText_75653::
-	text "It's amazing how"
-	line "ninja can terrify"
-	cont "even now!"
+	text "זה מדהים, לנינג'ות"
+	line "יש כוח הרתעה,"
+	cont "אפילו בימינו!"
 	done
