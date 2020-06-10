@@ -126,7 +126,7 @@ _VendingMachineText4::
 _VendingMachineText5::
 	TX_RAM wcf4b
 	text ""
-	line "יצא החוצה!"
+	line "יצא מהמכונה!"
 	done
 
 _VendingMachineText6::
