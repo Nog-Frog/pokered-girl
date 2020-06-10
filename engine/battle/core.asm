@@ -7964,7 +7964,7 @@ StatsTextStrings:
 	db "הגנה@"
 	db "מהירות@"
 	db "מיוחדת@"
-	db "דיוק@"
+	db "דייקנות@"
 	db "התחמקות@"
 
 StatModifierRatios:
