@@ -2048,8 +2048,8 @@ _EvolvedText::
 	done
 
 _IntoText::
-	text "והפך"
-	line "ל@"
+	text ""
+	line "והפך ל@"
 	TX_RAM wcd6d
 	text "!"
 	done
