@@ -1,8 +1,7 @@
 _CeladonPokecenterText2::
-	text "# FLUTE awakens"
-	line "#MON with a"
-	cont "sound that only"
-	cont "they can hear!"
+	text "# FLUTE מעורר"; TODO
+	line "קול #ימון שרק"
+	cont "הם יכולים לשמוע!"
 	done
 
 _CeladonPokecenterText3::
