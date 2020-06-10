@@ -274,7 +274,7 @@ _TradeWavesFarewellText::
 	TX_RAM wGrassRate
 	text " מנפנף"
 	line "את ידו לשלום"
-	cont "לעבר"
+	cont "לעבר @"
 	done
 
 _TradeTransferredText::
@@ -1754,7 +1754,7 @@ _AccessedHoFPCText::
 	prompt
 
 _SwitchOnText::
-	text "Switch on!"
+	text "דולק!"
 	prompt
 
 _WhatText::
@@ -2070,7 +2070,7 @@ _IsEvolvingText::
 
 _FellAsleepText::
 	text "<TARGET>"
-	line "fell asleep!"
+	line "נרדם!"
 	prompt
 
 _AlreadyAsleepText::
@@ -2135,7 +2135,7 @@ _FellText::
 
 _RanFromBattleText::
 	text "<USER>"
-	line "ran from battle!"
+	line "נמלט מהקרב!"
 	prompt
 
 _RanAwayScaredText::
@@ -2585,7 +2585,7 @@ _ForgotAndText::
 	TX_RAM wcd6d
 	text "!"
 
-	para "And..."
+	para "ו..."
 	prompt
 
 _HMCantDeleteText::

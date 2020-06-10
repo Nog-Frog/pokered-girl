@@ -216,7 +216,7 @@ FinishDTE::
 Char5CText::
 	db "MT@"
 Char5DText::
-	db "TRAINER@"
+	db "TRAINER@" ; What does this do?
 Char5BText::
 	db "CP@"
 Char5EText::
