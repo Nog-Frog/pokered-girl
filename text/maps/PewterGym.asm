@@ -1,18 +1,17 @@
 _PewterGymText_5c49e::
-	text "I'm BROCK!"
-	line "I'm PEWTER's GYM"
-	cont "LEADER!"
+	text "אני BROCK!";TODO
+	line "אני PEWTER's GYM";TODO
+	cont "LEADER!";TODO
 
-	para "I believe in rock"
-	line "hard defense and"
-	cont "determination!"
+	para "אני מאמין בכוחם"
+	line "של סלעים,הגנה !"
+	cont "ונחישות!"
 
-	para "That's why my"
-	line "#MON are all"
-	cont "the rock-type!"
+	para "וזו הסיבה"
+	line "שכל ה#ימונים שלי"
+	cont "הם מסוג אבן"
 
-	para "Do you still want"
-	line "to challenge me?"
-	cont "Fine then! Show"
-	cont "me your best!"
+	para "אתה עדיין רוצה "
+	line "להילחם בי?"
+	cont "בסדר גמור! בוא נראה אותך!"
 	done
