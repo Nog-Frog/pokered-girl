@@ -350,14 +350,14 @@ DisplayContinueGameInfo:
 	coord hl, 18, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 10, 9
+	coord hl, 11, 9
 	ld de, wPlayerName
 	call PlaceString
 	coord hl, 10, 11
 	call PrintNumBadges
-	coord hl, 10, 13
+	coord hl, 9, 13
 	call PrintNumOwnedMons
-	coord hl, 10, 15
+	coord hl, 6, 15
 	call PrintPlayTime
 	ld a, 1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -379,11 +379,11 @@ PrintSaveScreenText:
 	coord hl, 11, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 11, 4
+	coord hl, 10, 4
 	call PrintNumBadges
-	coord hl, 11, 6
+	coord hl, 9, 6
 	call PrintNumOwnedMons
-	coord hl, 10, 8
+	coord hl, 6, 8
 	call PrintPlayTime
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a
@@ -397,8 +397,8 @@ PrintNumBadges:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, LEFT_ALIGN | 1, 2
-	jp PrintNumber
+	lb bc, 1, 2
+	jp PrintNumberLTR
 
 PrintNumOwnedMons:
 	push hl
@@ -407,21 +407,18 @@ PrintNumOwnedMons:
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
-	lb bc, LEFT_ALIGN | 1, 3
-	jp PrintNumber
+	lb bc, 1, 3
+	jp PrintNumberLTR
 
 PrintPlayTime:
-	ld de, wPlayTimeMinutes
-	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
-	call PrintNumber
-	; dec hl  ; These three decs are necessary
-	; dec hl  ; if LIJI's wrappers around PrintNumber
-	; dec hl  ; are removed. TODO
-	ld [hl], $6d
-	dec hl
 	ld de, wPlayTimeHours
-	lb bc, LEFT_ALIGN | 1, 3
-	jp PrintNumber
+	lb bc, 1, 3
+	call PrintNumberLTR
+	ld [hl], $6d
+	inc hl
+	ld de, wPlayTimeMinutes
+	lb bc, LEADING_ZEROES | 1, 2
+	jp PrintNumberLTR
 
 SaveScreenInfoText:
 	db   "שם"
