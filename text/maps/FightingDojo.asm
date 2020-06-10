@@ -5,9 +5,9 @@ _FightingDojoText_5ce8e::
 	line "MASTER! אני ה";TODO
 	cont "LEADER כאן!";TODO
 
-	para "אתה קורא "
-	line "לאתגר?"
-	cont "אל תצפה שנרחם עליך!"
+	para "אתה קורא"
+	line "עלינו תיגר?"
+	cont "צפה לצרות!"
 
 	para "פוואה!"
 	done
@@ -23,22 +23,21 @@ _FightingDojoText_5ce98::
 
 	para "אבל, אני מפציר"
 	line "בך, אל תיקח"
-	cont "את הסמל שלנו"
+	cont "את הemblem";TODO
 	cont "כפרס!"
 
 	para "בתמורה, אני אעניק"
 	line "לך פרס"
-	cont "!ימון מלחמה#"
+	cont "!ימון מסוג לחימה#"
 
-	para "אתה יכול לבחור"
-	line "!מה שתרצה"
+	para "בחר אחד מהם!"
 	done
 
 _FightingDojoText_5ce9d::
 	text "הו!"
 
-	para "אתה יכול להישאר"
-	line "להתאמן בקארטה איתנו!"
+	para "תישאר כאן"
+	line "להתאמן בקארטה!"
 	done
 
 _FightingDojoBattleText1::
@@ -89,8 +88,8 @@ _FightingDojoEndBattleText3::
 
 _FightingDojoAfterBattleText3::
 	text "הדבר היחיד"
-	line "שמרתיע אותנו"
-	cont  "!כוחות על טבעיים"
+	line "שמרתיע אותנו הם"
+	cont "!כוחות על טבעיים"
 	done
 
 _FightingDojoBattleText4::
