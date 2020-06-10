@@ -6,7 +6,7 @@ DoClearSaveDialogue:
 	ld hl, ClearSaveDataText
 	call PrintText
 	coord hl, 14, 7
-	lb bc, 8, 15
+	lb bc, 8, 18
 	ld a, NO_YES_MENU
 	ld [wTwoOptionMenuID], a
 	ld a, TWO_OPTION_MENU
