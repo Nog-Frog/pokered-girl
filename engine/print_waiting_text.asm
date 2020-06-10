@@ -10,7 +10,7 @@ PrintWaitingText:
 .asm_4c17
 	call CableClub_TextBoxBorder
 .asm_4c1a
-	coord hl, 15, 11
+	coord hl, 13, 11
 	ld de, WaitingText
 	call PlaceString
 	ld c, 50

@@ -146,7 +146,7 @@ LinkMenu:
 	ld c, $d
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 7, 7
+	coord hl, 17, 7
 	ld de, CableClubOptionsText
 	call PlaceString
 	xor a
@@ -155,7 +155,7 @@ LinkMenu:
 	ld hl, wTopMenuItemY
 	ld a, $7
 	ld [hli], a
-	ld a, $6
+	ld a, 18
 	ld [hli], a
 	xor a
 	ld [hli], a
@@ -240,11 +240,11 @@ LinkMenu:
 	ld c, d
 .updateCursorPosition
 	ld a, b
-	Coorda 6, 7
+	Coorda 18, 7
 	ld a, c
-	Coorda 6, 9
+	Coorda 18, 9
 	ld a, d
-	Coorda 6, 11
+	Coorda 18, 11
 	ld c, 40
 	call DelayFrames
 	call LoadScreenTilesFromBuffer1

@@ -273,6 +273,7 @@ Trade_DrawOpenEndOfLinkCable:
 
 ; This function call is pointless. It just copies blank tiles to VRAM that was
 ; already filled with blank tiles.
+; UNUSED
 	ld hl, vBGMap1 + $8c
 	call Trade_CopyCableTilesOffScreen
 
@@ -482,7 +483,7 @@ Trade_DrawLeftGameboy:
 	ld b, 2
 	ld c, 7
 	call TextBoxBorder
-	coord hl, 5, 14
+	coord hl, 11, 14
 	ld de, wPlayerName
 	call PlaceString
 
@@ -529,7 +530,7 @@ Trade_DrawRightGameboy:
 	ld b, 2
 	ld c, 7
 	call TextBoxBorder
-	coord hl, 7, 2
+	coord hl, 13, 2
 	ld de, wLinkEnemyTrainerName
 	call PlaceString
 
