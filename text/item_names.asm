@@ -2,7 +2,7 @@ ItemNames:
 	db "כדור על@"         ; MASTER BALL
 	db "כדור יתר@"        ; ULTRA BALL
 	db "כדור רב@"         ; GREAT BALL
-	db "#כדור@"           ; POKé BALL
+	db "פוכדור@"           ; POKé BALL
 	db "מפה@"        ; TOWN MAP
 	db "אופניים@"         ; BICYCLE
 	db "?????@"           ; ?????
