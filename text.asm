@@ -2828,7 +2828,7 @@ _ItemUseBallText06::
 	line "@"
 	TX_RAM wEnemyMonNick
 	text ""
-	text "נוסף ל@#ידע!@@"
+	cont "נוסף ל#ידע!@@"
 
 _SurfingGotOnText::
 	text "<PLAYER> עלה על"
