@@ -7,8 +7,7 @@ _FuchsiaMartText2::
 	done
 
 _FuchsiaMartText3::
-	text "ניסית "
-	line "X SPEED? זה";TODO
-	cont "מגביר מהירות אצל #ימונים"
-	cont "בקרב!"
+	text "ניסית את X SPEED?";TODO
+	line "זה מגביר את המהירות"
+	cont "של ה#ימונים בקרב!"
 	done
