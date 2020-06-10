@@ -1,9 +1,8 @@
 _LavenderMartText2::
-	text "אני מחפש"
-	line "חפצים שמגבירים"
-	cont "את יכולות"
-	cont "ה#ימונים"
-	cont ".בזמן קרב"
+	text "אני מחפש חפצים"
+	line "שמעצימים את"
+	cont "יכולות ה#ימון"
+        cont ".בזמן קרב"
 
 	para "X ATTACK, X";TODO
 	line "DEFEND, X SPEED";TODO
@@ -15,9 +14,9 @@ _LavenderMartText2::
 	done
 
 _LavenderMartReviveText::
-	text "אתה מכיר REVIVE?";TODO
+	text "שמעת על REVIVE?";TODO
 	line "זה מחזיר לחיים"
-	cont "כל #ימון מעולף!"
+	cont "כל #ימון ממוטט!"
 	done
 
 _LavenderMartNuggetText::
