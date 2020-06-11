@@ -3518,7 +3518,7 @@ WaitForTextScrollButtonPress::
 	jr z, .skipAnimation
 	call TownMapSpriteBlinkingAnimation
 .skipAnimation
-	coord hl, 18, 16
+	coord hl, 1, 16
 	call HandleDownArrowBlinkTiming
 	pop hl
 	call JoypadLowSensitivity
@@ -3993,7 +3993,7 @@ HandleMenuInput_::
 	jr nz, .keyPressed
 	push hl
 	; TODO: Figure out how to align this for Hebrew
-	coord hl, 18, 11 ; coordinates of blinking down arrow in some menus
+	coord hl, 1, 11 ; coordinates of blinking down arrow in some menus
 	call HandleDownArrowBlinkTiming ; blink down arrow (if any)
 	pop hl
 	ld a, [wMenuJoypadPollCount]
