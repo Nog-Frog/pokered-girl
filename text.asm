@@ -2048,8 +2048,8 @@ _EvolvedText::
 	done
 
 _IntoText::
-	text "והפך"
-	line "ל@"
+	text ""
+	line "והפך ל@"
 	TX_RAM wcd6d
 	text "!"
 	done
@@ -2828,7 +2828,7 @@ _ItemUseBallText06::
 	line "@"
 	TX_RAM wEnemyMonNick
 	text ""
-	text "נוסף ל@#ידע!@@"
+	cont "נוסף ל#ידע!@@"
 
 _SurfingGotOnText::
 	text "<PLAYER> עלה על"

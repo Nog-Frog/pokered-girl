@@ -1,130 +1,129 @@
 _FightingDojoText_5ce8e::
-	text "Grunt!"
+	text "אוח!"
 
-	para "I am the KARATE"
-	line "MASTER! I am the"
-	cont "LEADER here!"
+	para "אני הוא ה KARATE";TODO
+	line "MASTER! אני ה";TODO
+	cont "LEADER כאן!";TODO
 
-	para "You wish to"
-	line "challenge us?"
-	cont "Expect no mercy!"
+	para "אתה קורא"
+	line "עלינו תיגר?"
+	cont "צפה לצרות!"
 
-	para "Fwaaa!"
+	para "פוואה!"
 	done
 
 _FightingDojoText_5ce93::
-	text "Hwa!"
-	line "Arrgh! Beaten!"
+	text "וואהה!"
+	line "אררג! הובסתי!"
 	prompt
 
 _FightingDojoText_5ce98::
-	text "Indeed, I have"
-	line "lost!"
+	text "בהחלט, אני"
+	line "!הפסדתי"
 
-	para "But, I beseech"
-	line "you, do not take"
-	cont "our emblem as"
-	cont "your trophy!"
+	para "אבל, אני מפציר"
+	line "בך, אל תיקח"
+	cont "את הemblem";TODO
+	cont "כפרס!"
 
-	para "In return, I will"
-	line "give you a prized"
-	cont "fighting #MON!"
+	para "בתמורה, אני אעניק"
+	line "לך פרס"
+	cont "!ימון מסוג לחימה#"
 
-	para "Choose whichever"
-	line "one you like!"
+	para "בחר אחד מהם!"
 	done
 
 _FightingDojoText_5ce9d::
-	text "Ho!"
+	text "הו!"
 
-	para "Stay and train at"
-	line "Karate with us!"
+	para "תישאר כאן"
+	line "להתאמן בקארטה!"
 	done
 
 _FightingDojoBattleText1::
-	text "Hoargh! Take your"
-	line "shoes off!"
+	text "הוארג! תוריד"
+	line "!את הנעליים שלך"
 	done
 
 _FightingDojoEndBattleText1::
-	text "I give"
-	line "up!"
+	text "אני"
+	line "מוותר!"
 	prompt
 
 _FightingDojoAfterBattleText1::
-	text "You wait 'til you"
-	line "see our Master!"
+	text "חכה שתראה"
+	line "את המאסטר שלנו!"
 
-	para "I'm a small fry"
-	line "compared to him!"
+	para "אני אפס"
+	line "לידו!"
 	done
 
 _FightingDojoBattleText2::
-	text "I hear you're"
-	line "good! Show me!"
+	text "שמעתי שאתה"
+	line "!טוב! תראה לי"
 	done
 
 _FightingDojoEndBattleText2::
-	text "Judge!"
-	line "1 point!"
+	text "שופט!"
+	line "נקודה אחת!"
 	prompt
 
 _FightingDojoAfterBattleText2::
-	text "Our Master is a"
-	line "pro fighter!"
+	text "המאסטר שלנו"
+	line "מומחה בלחימה!"
 	done
 
 _FightingDojoBattleText3::
-	text "Nothing tough"
-	line "frightens me!"
+	text "שום אתגר"
+	line "לא מרתיע אותי!"
 
-	para "I break boulders"
-	line "for training!"
+	para "אני שובר סלעים"
+	line "באימונים!"
 	done
 
 _FightingDojoEndBattleText3::
-	text "Yow!"
-	line "Stubbed fingers!"
+	text "יוו!"
+	line "אצבעות מגושמות!"
 	prompt
 
 _FightingDojoAfterBattleText3::
-	text "The only thing"
-	line "that frightens us"
-	cont "is psychic power!"
+	text "הדבר היחיד"
+	line "שמרתיע אותנו הם"
+	cont "!כוחות על טבעיים"
 	done
 
 _FightingDojoBattleText4::
-	text "Hoohah!"
+	text "הואהה!"
 
-	para "You're trespassing"
-	line "in our FIGHTING"
-	cont "DOJO!"
+	para "אתה עובר את הגבול"
+	line "ב FIGHTING"
+	cont "DOJO!";TODO
 	done
 
 _FightingDojoEndBattleText4::
-	text "Oof!"
-	line "I give up!"
+	text "אוף!"
+	line "אני פורש!"
 	prompt
 
 _FightingDojoAfterBattleText4::
-	text "The prime fighters"
-	line "across the land"
-	cont "train here."
+	text "הלוחמים הכי טובים"
+	line "מרחבי העולם"
+	cont "מתאמנים כאן."
 	done
 
 _WantHitmonleeText::
-	text "You want the"
-	line "hard kicking"
-	cont "HITMONLEE?"
+	text "אתה רוצה את"
+	line "ה#ימון הבועט"
+	cont "HITMONLEE?";TODO
 	done
 
 _WantHitmonchanText::
-	text "You want the"
-	line "piston punching"
-	cont "HITMONCHAN?"
+	text "אתה רוצה את"
+	line "ה#ימון המתאגרף"
+	cont "HITMONCHAN?";TODO
 	done
 
 _OtherHitmonText::
-	text "Better not get"
-	line "greedy..."
+	text "רק אל תהיה"
+	line "חמדן..."
 	done
