@@ -1,30 +1,29 @@
 _LavenderMartText2::
-	text "I'm searching for"
-	line "items that raise"
-	cont "the abilities of"
-	cont "#MON during a"
-	cont "single battle."
+	text "אני מחפש חפצים"
+	line "שמעצימים את"
+	cont "יכולות ה#ימון"
+        cont ".בזמן קרב"
 
-	para "X ATTACK, X"
-	line "DEFEND, X SPEED"
-	cont "and X SPECIAL are"
-	cont "what I'm after."
+	para "X ATTACK, X";TODO
+	line "DEFEND, X SPEED";TODO
+	cont "ו SPECIAL הם";TODO
+	cont "מה שאני מחפש."
 
-	para "Do you know where"
-	line "I can get them?"
+	para "אתה יודע איפה"
+	line "?אוכל למצוא אותם"
 	done
 
 _LavenderMartReviveText::
-	text "You know REVIVE?"
-	line "It revives any"
-	cont "fainted #MON!"
+	text "שמעת על REVIVE?";TODO
+	line "זה מחזיר לחיים"
+	cont "כל #ימון ממוטט!"
 	done
 
 _LavenderMartNuggetText::
-	text "I found a NUGGET"
-	line "in the mountains."
+	text "מצאתי NUGGET";TODO
+	line "בהרים."
 
-	para "I thought it was"
-	line "useless, but it"
-	cont "sold for ¥5000!"
+	para "חשבתי שלא"
+	line "יהיה לזה שימוש, אבל"
+	cont "מכרתי את זה ב ¥5000!";TODO
 	done
