@@ -136,16 +136,16 @@ StatusScreen:
 	coord hl, 18, 6
 	ld de, StatusText
 	call PlaceString ; "STATUS/"
-	coord hl, 14, 2
+	coord hl, 13, 2
 	call PrintLevel ; Pokémon level
 	ld a, [wMonHIndex]
 	ld [wd11e], a
 	ld [wd0b5], a
 	predef IndexToPokedex
-	coord hl, 3, 7
+	coord hl, 1, 7
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumber ; Pokémon dex no.
+	call PrintNumberLTR ; Pokémon dex no.
 	coord hl, 17, 10
 	predef PrintMonType
 	ld hl, NamePointers2
@@ -160,10 +160,10 @@ StatusScreen:
 	ld e, l
 	coord hl, 16, 16
 	call PlaceString ; OT
-	coord hl, 16, 14
+	coord hl, 13, 14
 	ld de, wLoadedMonOTID
 	lb bc, LEADING_ZEROES | 2, 5
-	call PrintNumber ; ID Number
+	call PrintNumberLTR ; ID Number
 	ld d, $0
 	call PrintStatsBox
 	call Delay3
@@ -326,7 +326,7 @@ StatusScreen2:
 	ld a, $4
 	sub c
 	ld b, a ; Number of moves ?
-	coord hl, 1, 10
+	coord hl, 8, 10
 	ld de, SCREEN_WIDTH * 2
 	ld a, $72 ; special P tile id
 	call StatusScreen_PrintPP ; Print "PP"
@@ -338,7 +338,7 @@ StatusScreen2:
 	call StatusScreen_PrintPP ; Fill the rest with --
 .InitPP
 	ld hl, wLoadedMonMoves
-	coord de, 8, 10
+	coord de, 1, 10
 	ld b, 0
 .PrintPP
 	ld a, [hli]
@@ -370,12 +370,12 @@ StatusScreen2:
 	push hl
 	ld de, wStatusScreenCurrentPP
 	lb bc, 1, 2
-	call PrintNumber
+	call PrintNumberLTR
 	ld a, "/"
-	ld [hld], a
+	ld [hli], a
 	ld de, wMaxPP
 	lb bc, 1, 2
-	call PrintNumber
+	call PrintNumberLTR
 	pop hl
 	ld de, SCREEN_WIDTH * 2
 	add hl, de
@@ -406,8 +406,8 @@ StatusScreen2:
 	pop af
 	ld [wLoadedMonLevel], a
 	ld de, wLoadedMonExp
-	coord hl, 8, 4
-	lb bc, 3, 7
+	coord hl, 9, 4
+	lb bc, 3 | LEFT_ALIGN, 7
 	call PrintNumberLTR ; exp
 	call CalcExpToLevelUp
 	ld de, wLoadedMonExp

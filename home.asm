@@ -571,12 +571,12 @@ PrintStatusConditionNotFainted:
 PrintLevel::
 	ld a, $6e ; ":L" tile ID
 	ld [hld], a
+	dec hl
 	ld c, 2 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 	cp 100
 	jr c, PrintLevelCommon
 ; if level at least 100, write over the ":L" tile
-	inc hl
 	inc c ; increment number of digits to 3
 	jr PrintLevelCommon
 
@@ -587,14 +587,19 @@ PrintLevel::
 PrintLevelFull::
 	ld a, $6e ; ":L" tile ID
 	ld [hld], a
+	dec hl
 	ld c, 3 ; number of digits
 	ld a, [wLoadedMonLevel] ; level
 
 PrintLevelCommon::
 	ld [wd11e], a
+	; cp 10
+	; jr nc, .levelOverTen
+	; inc hl
+; .levelOverTen
 	ld de, wd11e
-	ld b, LEFT_ALIGN | 1 ; 1 byte
-	jp PrintNumber
+	ld b, 1 ; 1 byte
+	jp PrintNumberLTR
 
 GetwMoves::
 ; Unused. Returns the move at index a from wMoves in a
