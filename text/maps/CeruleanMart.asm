@@ -1,19 +1,20 @@
 _CeruleanMartText2::
-	text "Use REPEL to keep"
-	line "bugs and weak"
-	cont "#MON away."
+	text "השתמש ב-REPEL כדי" ; TODO
+	line "להרחיק חרקים"
+	cont "ו#ימונים חלשים."
 
-	para "Put your strongest"
-	line "#MON at the"
-	cont "top of the list"
-	cont "for best results!"
+	para "שים את ה#ימונים"
+	line "הכי חזקים שלך"
+	cont "בראש הרשימה"
+	cont "בשביל התוצאות"
+	cont "הכי טובות!"
 	done
 
 _CeruleanMartText3::
-	text "Have you seen any"
-	line "RARE CANDY?"
+	text "ראית איזו"
+	line "RARE CANDY?" ; TODO
 
-	para "It's supposed to"
-	line "make #MON go"
-	cont "up one level!"
+	para "היא אמורה לגרום"
+	line "ל#ימון לעלות"
+	cont "רמה אחת!"
 	done
