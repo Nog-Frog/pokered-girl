@@ -372,7 +372,7 @@ _ChanseyDexEntry::
 _MachokeDexEntry::
 	text "גופו השרירי"
 	next "כה עוצמתי, שהוא"
-	next "מוכרח ללבוש חגורה"
+	next "מוכרח ללבוש"
 
 	page "חגורה מרסנת"
 	next "שתווסת את"
