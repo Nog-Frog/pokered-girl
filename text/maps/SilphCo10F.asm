@@ -1,42 +1,40 @@
 _SilphCo10Text_5a1d3::
-	text "Waaaaa!"
-	cont "I'm scared!"
+	text "!וואההה"
+	cont "!אני מפחד"
 	done
 
 _SilphCo10Text_5a1d8::
-	text "Please keep quiet"
-	line "about my crying!"
+	text "בבקשה אל תספר"
+	line "!לאף אחד שבכיתי"
 	done
 
 _SilphCo10BattleText1::
-	text "Welcome to the"
-	line "10F! So good of"
-	cont "you to join me!"
+	text "!10Fברוך הבא ל"
+	line "!נחמד שהיצטרםת אליי"
 	done
 
 _SilphCo10EndBattleText1::
-	text "I'm"
-	line "stunned!"
+	text "!אני המום"
 	prompt
 
 _SilphCo10AfterBattleText1::
-	text "Nice try, but the"
-	line "boardroom is up"
-	cont "one more floor!"
+	text "נסיון נחמד, אבל"
+	line "חדר הישיבות נמצא"
+	cont "!קומה למעלה"
 	done
 
 _SilphCo10BattleText2::
-	text "Enough of your"
-	line "silly games!"
+	text "מספיק עם המשחקים"
+	line "!המטופשים שלך"
 	done
 
 _SilphCo10EndBattleText2::
-	text "No"
-	line "continues left!"
+	text "לא"
+	line "continues left!";TODO
 	prompt
 
 _SilphCo10AfterBattleText2::
-	text "Are you satisfied"
-	line "with beating me?"
-	cont "Then go on home!"
+	text "אתה מרוצה עכשיו"
+	line "?כשהבסת אותי"
+	cont "אז לך לדרכך!"
 	done
