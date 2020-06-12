@@ -43,17 +43,17 @@ _SpearowDexEntry::
 	next "באזורים עשביים."
 	next "מוכרח לנפנף"
 
-	page "בכנפיו הקצרות"
-	next "במהירות כדי"
+	page "במהירות בכנפיו"
+	next "הקצרות כדי"
 	next "להישאר באוויר"
 	dex
 
 _VoltorbDexEntry::
-	text "בדרך כלל נמצא"
+	text "בדרך כלל נמצאים"
 	next "בתחנות כוח."
-	next "קל להתבלבל בינו"
+	next "קל להתבלבל בינם"
 
-	page "ובין פוכדור,"
+	page "ובין פוכדורים,"
 	next "הם חישמלו"
 	next "הרבה אנשים"
 	dex
@@ -117,19 +117,19 @@ _ExeggcuteDexEntry::
 
 _GrimerDexEntry::
 	text "נמצא באזורים"
-	next "מטונפים. גדל"
-	next "על ידי שאיבת"
+	next "מטונפים. ניזון"
+	next "משאיבת בוץ"
 
-	page "בוץ ורפש מזוהמים"
+	page "ורפש מזוהמים"
 	next "שנפלטים ממפעלים"
 	dex
 
 _GengarDexEntry::
 	text "תחת ירח מלא,"
-	next "ה#ימון הזה"
+	next "#ימון הזה"
 	next "אוהב לחקות"
 
-	page "את הצללים של"
+	page "את צלליהם של"
 	next "אנשים ולצחוק על"
 	next "הפחד שלהם"
 	dex
@@ -155,8 +155,8 @@ _NidoqueenDexEntry::
 	dex
 
 _CuboneDexEntry::
-	text "מכיוון שהוא אף"
-	next "פעם לא מסיר את"
+	text "מכיוון שלעולם"
+	next "אינו מסיר את"
 	next "הגולגולת מראשו"
 
 	page "איש מעולם לא ראה"
@@ -175,12 +175,12 @@ _RhyhornDexEntry::
 
 _LaprasDexEntry::
 	text "צייד לא מבוקר"
-	next "הביא את ה#ימון"
-	next "הזה לסכנת הכחדה."
+	next "הביא #ימון"
+	next "זה לסכנת הכחדה."
 
 	page "הוא יכול לשאת"
 	next "אנשים כמעבורת"
-	next "ששטה מעל המים"
+	next "ששטה על המים"
 	dex
 
 _ArcanineDexEntry::
@@ -189,28 +189,28 @@ _ArcanineDexEntry::
 	next "בשל יופיו."
 
 	page "הוא רץ בזריזות"
-	next "כאילו הוא מרחף"
-	next "על כנפיים"
+	next "ונראה כאילו"
+	next "הוא מעופף"
 	dex
 
 _MewDexEntry::
 	text "כל כך נדיר"
-	next "שעדיין נחשב"
-	next "כדמיוני על ידי"
+	next "שמומחים רבים"
+	next "עדיין טוענים"
 
-	page "מומחים רבים. רק"
+	page "שהוא דמיוני. רק"
 	next "אנשים ספורים ראו"
 	next "אותו בכל העולם"
 	dex
 
 _GyaradosDexEntry::
-	text "בקושי נצפה בטבע."
-	next "עצום ואכזרי,"
-	next "הוא מסוגל"
+	text "נצפה בטבע לעיתים"
+	next "נדירות. עצום"
+	next "ואכזרי, הוא"
 
-	page "להחריב ערים"
-	next "שלמות בהתקף"
-	next "של זעם"
+	page "מסוגל להחריב"
+	next "ערים שלמות"
+	next "בהתקף של זעם"
 	dex
 
 _ShellderDexEntry::
@@ -292,7 +292,7 @@ _TangelaDexEntry::
 	dex
 
 _GrowlitheDexEntry::
-	text "מאוד  מגונן על"
+	text "מאוד מגונן על"
 	next "הטריטוריה שלו."
 	next "הוא ינבח וינשך"
 
@@ -307,7 +307,7 @@ _OnixDexEntry::
 	next "מתקשים והופכים"
 
 	page "לדמויי יהלום,"
-	next "אבל בצבע שחור"
+	next "רק בצבע שחור"
 	dex
 
 _FearowDexEntry::
@@ -315,9 +315,9 @@ _FearowDexEntry::
 	next "והמפוארות, הוא"
 	next "מסוגל להמשיך"
 
-	page "לרחף מבלי"
-	next "לעולם להזדקק"
-	next "לנחיתת מנוחה"
+	page "לעופף מבלי"
+	next "לעצור למנוחה על"
+	next "הקרקע לעולם"
 	dex
 
 _PidgeyDexEntry::
@@ -360,13 +360,12 @@ _GravelerDexEntry::
 	dex
 
 _ChanseyDexEntry::
-	text "#ימון נדיר"
-	next "וחמקמק אשר"
-	next "לכאורה מביא"
+	text "#ימונית נדירה"
+	next "וחמקמקה אשר"
+	next "הלכאורה מביא"
 
 	page "אושר לאלו"
-	next "שמצליחים להשיג"
-	next "אותו"
+	next "המצליחים להשיגה"
 	dex
 
 _MachokeDexEntry::
@@ -433,8 +432,8 @@ _PsyduckDexEntry::
 	next "ובמבט חלול"
 	next "באויביו,"
 	
-	page "#ימון זה"
-	next "ישתמש בכוחות"
+	page "#ימון נכלולי"
+	next "זה ישתמש בכוחות"
 	next "על-תנועתיים"
 	dex
 	
