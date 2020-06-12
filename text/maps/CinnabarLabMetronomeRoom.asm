@@ -1,63 +1,62 @@
 _TM35PreReceiveText::
-	text "Tch-tch-tch!"
-	line "I made a cool TM!"
+	text "טיק-טיק-טיק!"
+	line "יצרתי TM מגניב!"
 
-	para "It can cause all"
-	line "kinds of fun!"
+	para "הוא יכול לגרום"
+	line "לכל מיני סוגים"
+	line "של כיף!"
 	prompt
 
 _ReceivedTM35Text::
-	text "<PLAYER> received "
+	text "<PLAYER> קיבל "
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM35ExplanationText::
-	text "Tch-tch-tch!"
-	line "That's the sound"
-	cont "of a METRONOME!"
+	text "טיק-טיק-טיק!"
+	line "זה הצליל של"
+	cont "METRONOME!" ; TODO
 
-	para "It tweaks your"
-	line "#MON's brain"
-	cont "into using moves"
-	cont "it doesn't know!"
+	para "זה מכוונן את המח"
+	line "של ה#ימון שלך"
+	cont "להשתמש בהתקפות"
+	cont "שהוא לא מכיר!"
 	done
 
 _TM35NoRoomText::
-	text "Your pack is"
-	line "crammed full!"
+	text "התרמיל שלך"
+	line "דחוס במלואו!"
 	done
 
 _Lab3Text2::
-	text "EEVEE can evolve"
-	line "into 1 of 3 kinds"
-	cont "of #MON."
+	text "EEVEE יכול להתפתח" ; TODO
+	line "ל-1 מתוך 3 סוגים"
+	cont "של #ימונים."
 	done
 
 _Lab3Text3::
-	text "There's an e-mail"
-	line "message!"
+	text "יש הודעת אימייל!"
 
 	para "..."
 
-	para "The 3 legendary"
-	line "bird #MON are"
-	cont "ARTICUNO, ZAPDOS"
-	cont "and MOLTRES."
+	para "3 הציפורים האגדיות"
+	line "הם ה#ימונים"
+	cont "ARTICUNO, ZAPDOS" ; TODO
+	cont "and MOLTRES." ; TODO
 
-	para "Their whereabouts"
-	line "are unknown."
+	para "מיקומם אינו ידוע."
 
-	para "We plan to explore"
-	line "the cavern close"
-	cont "to CERULEAN."
+	para "אנחנו מתכננים"
+	line "לחקור את המערה"
+	cont "בקרבת CERULEAN." ; TODO
 
-	para "From: #MON"
-	line "RESEARCH TEAM"
+	para "מאת: #MON" ; TODO
+	line "RESEARCH TEAM" ; TODO
 
 	para "..."
 	done
 
 _Lab3Text5::
-	text "An amber pipe!"
+	text "מקטרת ענבר!"
 	done
