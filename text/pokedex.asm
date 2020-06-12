@@ -512,8 +512,8 @@ _SeelDexEntry::
 	next "מראשו קשה מאוד."
 	next "היא משמשת"
 	
-	page "לחציבת שכבות"
-	next "קרח עבות"
+	page "לחציבה דרך"
+	next "שכבות קרח עבות"
 	dex
 	
 _DiglettDexEntry::	
@@ -622,7 +622,7 @@ _ZapdosDexEntry::
 	
 	page "עננים תוך"
 	next "הטלת מכות"
-	next "ברקים עצומות"
+	next "ברק עצומות"
 	dex
 	
 _DittoDexEntry::	
@@ -630,13 +630,13 @@ _DittoDexEntry::
 	next "את הקוד הגנטי"
 	next "של האויב כדי"
 	
-	page "להפוך מיד"
+	page "להפוך עצמו מיד"
 	next "לשכפול של"
 	next "האויב"
 	dex
 	
 _MeowthDexEntry::	
-	text "מעריץ עצמים"
+	text "חובב עצמים"
 	next "עגולים. משוטט"
 	next "ברחובות על"
 	
@@ -652,7 +652,7 @@ _KrabbyDexEntry::
 	
 	page "משמשים לייצוב"
 	next "גופו בעת"
-	next "הליכה לצדדים"
+	next "הליכה צדדית"
 	dex
 	
 _VulpixDexEntry::	
@@ -671,7 +671,7 @@ _NinetalesDexEntry::
 	
 	page "מזנבותיו הרבים"
 	next "יכולה להסתיים"
-	next "בקללה למילניום"
+	next "בקללה לאלף שנים"
 	dex
 	
 _PikachuDexEntry::	
@@ -696,11 +696,11 @@ _RaichuDexEntry::
 _DratiniDexEntry::	
 	text "תקופה ארוכה"
 	next "שנחשב #ימון"
-	next "מיסטי עד לאחרונה"
+	next "דמיוני עד"
 	
-	page "כשנתגלתה מושבה"
-	next "קטנה מתחת"
-	next "למים"
+	page "לאחרונה כשנתגלתה"
+	next "מושבה קטנה"
+	next "מתחת למים"
 	dex
 	
 _DragonairDexEntry::	
@@ -710,7 +710,6 @@ _DragonairDexEntry::
 	
 	page "יכולת לשנות"
 	next "את תנאי האקלים"
-	next
 	dex
 	
 _KabutoDexEntry::	
@@ -720,7 +719,6 @@ _KabutoDexEntry::
 	
 	page "האוקיינוס לפני"
 	next "עידן ועידנים"
-	next
 	dex
 	
 _KabutopsDexEntry::	
@@ -729,8 +727,8 @@ _KabutopsDexEntry::
 	next "הוא חותך את"
 	
 	page "טרפו עם טפריו"
-	next "ושואב את נוזלי"
-	next "גופו"
+	next "ומרוקן את גופו"
+	next "מנוזלים"
 	dex
 	
 _HorseaDexEntry::	
@@ -739,7 +737,7 @@ _HorseaDexEntry::
 	next "באמצעות התזות"
 	
 	page "דיו מדויקות"
-	next "מעל פני הים"
+	next "מעל פני המים"
 	dex
 	
 _SeadraDexEntry::	
@@ -817,15 +815,14 @@ _EeveeDexEntry::
 	
 	page "בחשיפה לקרינה"
 	next "של אבני יסוד"
-	next
 	dex
 	
 _FlareonDexEntry::	
-	text "כשאוגר אנרגיית"
-	next "חום בגופו,"
-	next "הטמפרטורה שלו"
+	text "בזמן שאוגר"
+	next " אנרגיית חום"
+	next " בגופו, הטמפרטורה"
 	
-	page "יכולה לנסוק"
+	page "שלו יכולה לנסוק"
 	next "מעל ל-0061"
 	next "מעלות"
 	dex
@@ -847,7 +844,6 @@ _VaporeonDexEntry::
 	
 	page "שבקצהו סנפיר"
 	next "שייך לבתולת ים"
-	next
 	dex
 	
 _MachopDexEntry::	
@@ -861,7 +857,7 @@ _MachopDexEntry::
 	dex
 	
 _ZubatDexEntry::	
-	text "יוצרים מושבות"
+	text "יוצר מושבות"
 	next "במקומות חשוכים"
 	next "תמידית."
 	
@@ -916,11 +912,11 @@ _WeedleDexEntry::
 	next "עלים."
 	
 	page "בעל עוקץ"
-	next "ארסי על ראשו"
+	next "ארסי חד על ראשו"
 	dex
 	
 _KakunaDexEntry::	
-	text "כמעט שלא"
+	text "כמעט ולא"
 	next "מסוגל לזוז,"
 	next "#ימון זה יכול"
 	
@@ -941,7 +937,7 @@ _BeedrillDexEntry::
 	
 _DodrioDexEntry::	
 	text "נעזר בשלושת"
-	next "מוחיו בביצוע"
+	next "מוחיו לביצוע"
 	next "תוכניות מורכבות."
 	
 	page "בזמן ששניים"
@@ -950,17 +946,17 @@ _DodrioDexEntry::
 	dex
 	
 _PrimeapeDexEntry::	
-	text "תמיד כועס ועקשן"
-	next "למוות. הוא לא"
-	next "יפסיק לרדוף"
+	text "תמיד רותח מזעם"
+	next "ועקשן למוות."
+	next "הוא לא יפסיק"
 	
-	page "אחרי הטרף"
-	next "שלו עד שייתפס"
+	page "לרדוף אחרי טרפו"
+	next "עד שייתפס"
 	dex
 	
 _DugtrioDexEntry::	
 	text "חבורה של שלושה"
-	next "#דיגלטים. הוא"
+	next "חפידים. הוא"
 	next "מעורר רעידות"
 	
 	page "אדמה כבירות על"
@@ -969,11 +965,11 @@ _DugtrioDexEntry::
 	dex
 	
 _VenomothDexEntry::	
-	text "הקשקשים דמויי"
-	next "החול שמכסים את"
-	next "כנפיו בצבע"
+	text "צבעם של הקשקשים"
+	next "דמויי האבק"
+	next "שמכסים את כנפיו"
 	
-	page "שמסמן את סוג"
+	page "מסמנים את סוגי"
 	next "הרעל שלו"
 	dex
 	
@@ -993,6 +989,7 @@ _CaterpieDexEntry::
 	
 	page "לו לטפס על קירות"
 	next "ועל מדרונות"
+	next "מבלי להתעייף"
 	dex
 	
 _MetapodDexEntry::	
@@ -1007,7 +1004,7 @@ _MetapodDexEntry::
 _ButterfreeDexEntry::	
 	text "בקרב, הוא מנפנף"
 	next "בכנפיו במהירות"
-	next "כדי לשחרר חול"
+	next "כדי לשחרר אבק"
 	
 	page "רעיל במיוחד אל"
 	next "האוויר"
