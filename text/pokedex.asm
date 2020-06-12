@@ -25,7 +25,7 @@ _NidoranMDexEntry::
 
 	page "גדולות יותר, כך"
 	next "עוצמתי יותר"
-	next "הארס שמפריש"
+	next "הארס המופרש מהן"
 	dex
 
 _ClefairyDexEntry::
