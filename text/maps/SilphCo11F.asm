@@ -1,134 +1,131 @@
 _SilphCoPresidentText::
-	text "PRESIDENT: Thank"
-	line "you for saving"
-	cont "SILPH!"
+	text "תודה:PRESIDENT";TODO
+	line "!SILPH שהצלת את";TODO
 
-	para "I will never"
-	line "forget you saved"
-	cont "us in our moment"
-	cont "of peril!"
+	para "לעולם לא אשכח לך"
+	line  "שהצלת אותנו"
+	cont  "!בשעת מצוקה"
 
-	para "I have to thank"
-	line "you in some way!"
+	para "אני חייב "
+	line "להודות לך"
+	cont "!איכשהו"
 
-	para "Because I am rich,"
-	line "I can give you"
-	cont "anything!"
+	para ",היות ואני עשיר"
+	line "אני יכול לתת לך "
+	cont "!כל דבר"
 
-	para "Here, maybe this"
-	line "will do!"
+	para "הנה, אולי אתן"
+	line "!לך את זה" 
 	prompt
 
 _ReceivedSilphCoMasterBallText::
-	text "<PLAYER> got a"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _SilphCo10Text_6231c::
-	text "PRESIDENT: You"
-	line "can't buy that"
-	cont "anywhere!"
+	text "לא תמצא:PRESIDENT";TODO
+	line "דבר כזה"
+	cont "!בשום מקום"
 
-	para "It's our secret"
-	line "prototype MASTER"
-	cont "BALL!"
+	para "זה הדגם הסודי"
+	line "והראשוני"
+	cont "!MASTER BALLשל ה";TODO
 
-	para "It will catch any"
-	line "#MON without"
-	cont "fail!"
+	para "תוכל לתפוס איתו"
+	line "כל #ימון"
+	cont "!בלי בעיה"
 
-	para "You should be"
-	line "quiet about using"
-	cont "it, though."
+	para  "אך תהייה חייב"
+	line ".לשמור על זה בסוד"
 	done
 
 _SilphCoMasterBallNoRoomText::
-	text "You have no"
-	line "room for this."
+	text ".אין לך מקום לזה"
 	done
 
 _SilphCo11Text2::
-	text "SECRETARY: Thank"
-	line "you for rescuing"
-	cont "all of us!"
+	text "תודה:SECRETARY";TODO
+	line "!שהצלת אותנו"
 
-	para "We admire your"
-	line "courage."
+	para "אנו מעריכים את"
+	line ".התעוזה שלך"
 	done
 
 _SilphCo11Text3::
-	text "Ah <PLAYER>!"
-	line "So we meet again!"
+	text "<PLAYER>!אה"
+	line "אז אנחנו"
+	cont "!נפגשים שוב"
 
-	para "The PRESIDENT and"
-	line "I are discussing"
-	cont "a vital business"
-	cont "proposition."
+	para "PRESIDENTה";TODO
+	line "ואני דנים"
+	cont "בהצעות עסקיות"
+	cont ".חשובות"
+	
+	para "אל תדחף"
+	line "את האף שלך"
+	cont "בעניינים"
+	cont "...של מבוגרים"
 
-	para "Keep your nose"
-	line "out of grown-up"
-	cont "matters..."
-
-	para "Or, experience a"
-	line "world of pain!"
+	para "ולא, תתכונן "
+	cont "!לסבול"
 	done
 
 _SilphCo10Text_62330::
-	text "Arrgh!!"
-	line "I lost again!?"
+	text "!ארגג"
+	line "?!הובסתי שוב"
 	prompt
 
 _SilphCo10Text_62335::
-	text "Blast it all!"
-	line "You ruined our"
-	cont "plans for SILPH!"
+	text "!תפוצצו הכל"
+	line "הרסת את התכניות"
+	cont "!SILPHשהיו לנו ל";TODO
 
-	para "But, TEAM ROCKET"
-	line "will never fall!"
+	para "TEAM ROCKET ,אבל";TODO
+	line "!לעולם לא יובסו"
 
-	para "<PLAYER>! Never"
-	line "forget that all"
-	cont "#MON exist"
-	cont "for TEAM ROCKET!"
+	para " לעולם <PLAYER>!"
+	line "אל תשכח שכל"
+	cont "ה#ימונים שייכים"
+	cont "!TEAM ROCKETל";TODO
 
-	para "I must go, but I"
-	line "shall return!"
+	para "אני חייב ללכת, אך"
+	line "!אני עוד אחזור"
 	done
 
 _SilphCo11BattleText1::
-	text "Stop right there!"
-	line "Don't you move!"
+	text "!עצור"
+	line "!אל תזוז"
 	done
 
 _SilphCo11EndBattleText1::
-	text "Don't..."
-	line "Please!"
+	text "...אל"
+	line "!בבקשה"
 	prompt
 
 _SilphCo11AfterBattleText1::
-	text "So, you want to"
-	line "see my BOSS?"
+	text "אז, תרצה לראת את"
+	line "?שלי BOSSה";TODO
 	done
 
 _SilphCo11BattleText2::
-	text "Halt! Do you have"
-	line "an appointment"
-	cont "with my BOSS?"
+	text "עצור! יש לך פגישה"
+	line "?שלי BOSSעם ה";TODO
 	done
 
 _SilphCo11EndBattleText2::
-	text "Gaah!"
-	line "Demolished!"
+	text "!גההה"
+	line "!מובס"
 	prompt
 
 _SilphCo11AfterBattleText2::
-	text "Watch your step,"
-	line "my BOSS likes his"
-	cont "#MON tough!"
+	text ",כדאי שתיזהר"
+	line "BOSSה#ימונים של ה";TODO
+	cont "!שלי חזקים"
 	done
 
 _SilphCo10Text_6237b::
-	text "The monitor has"
-	line "#MON on it!"
+	text "יש #ימון על"
+	line "!המוניטור"
 	done
