@@ -1,21 +1,20 @@
 _LTSurgePreBattleText::
-	text "Hey, kid! What do"
-	line "you think you're"
-	cont "doing here?"
+	text "היי ילד! מה"
+	line "אתה חושב שאתה"
+	cont "?עושה פה"
 
-	para "You won't live"
-	line "long in combat!"
-	cont "That's for sure!"
+	para "אתה לא תשרוד"
+	line "זמן רב בקרב"
+	cont "!זה בטוח"
 
-	para "I tell you kid,"
-	line "electric #MON"
-	cont "saved me during"
-	cont "the war!"
+	para ",אני אומר לך"
+	line "ימונים מסוג#"
+	cont "חשמל הצילו"
+	cont "!אותי בקרב"
 
-	para "They zapped my"
-	line "enemies into"
-	cont "paralysis!"
+	para "הם שיתקו את"
+	line "!האויבים שלי"
 
-	para "The same as I'll"
-	line "do to you!"
+	para "וזה מה שהולך"
+	line "!לקרות לך"
 	done
