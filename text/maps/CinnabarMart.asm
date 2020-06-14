@@ -1,10 +1,11 @@
 _CinnabarMartText2::
-	text "Don't they have X"
-	line "ATTACK? It's good"
-	cont "for battles!"
+	text "אין להם X"
+	line "ATTACK? זה מעולה" ; TODO
+	cont "לקרבות!"
 	done
 
 _CinnabarMartText3::
-	text "It never hurts to"
-	line "have extra items!"
+	text "זה אף פעם לא מזיק"
+	line "לצבור חפצים"
+	cont "נוספים!"
 	done

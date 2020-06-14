@@ -21,7 +21,7 @@ _Lab1Text3::
 
 _Lab1Text4::
 	text "מעבדת ה#ימון"
-	line "חדר מו″פ"
+	line "חדר מו''פ"
 	done
 
 _Lab1Text5::
