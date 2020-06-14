@@ -773,7 +773,7 @@ _ViridianSchoolNotebookText4::
 
 	para "המטרה הסופית של"
 	line "כל מאמן #ימון"
-	cont "היא להביא את 8"
+	cont "היא להביס את 8"
 	cont "מנהיגי מכוני"
 	cont "ה#ימון."
 
