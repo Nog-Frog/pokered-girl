@@ -67,18 +67,18 @@ _CeruleanHouse2Text_74ea5::
 	cont ".להשתלט עליו"
 
 	para "בנוסף, זה"
-	line "יאפשר לך 
+	line "יאפשר לך"
 	cont "STRENGTHלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74eaa::
 	text "של כל DEFENSEה";TODO
-	line  ".ה#ימונים 
+	line  ".ה#ימונים"
 	cont  ".יעלה מעט"
 
 	para "בנוסף, זה "
-	line "יאפשר לך
+	line "יאפשר לך"
 	cont "SURFלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
