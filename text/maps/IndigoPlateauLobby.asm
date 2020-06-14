@@ -1,5 +1,5 @@
 _IndigoPlateauLobbyText2::
-	text "!יו! אלוף"
+	text "!יו! אלופצ'יק"
 
 	para "#MON LEAGUEב";TODO
 	line "תאלץ להילחם נגד"
@@ -12,11 +12,12 @@ _IndigoPlateauLobbyText2::
 	done
 
 _IndigoPlateauLobbyText3::
-	text "מרגע זה, אתה תילחם"
+	text "מרגע זה,תלחם"
 	line "ELITE FOURנגד ה";TODO
 	cont "!אחד אחרי השני"
 
 	para ",אם תביס את כולם"
-	line "!הדלת תיפתח למאמן הבא"
+	line "הדלת תיפתח"
+	cont "!למאמן הבא"
 	cont "!בהצלחה"
 	done
