@@ -9,13 +9,13 @@ _RhydonDexEntry::
 	dex
 
 _KangaskhanDexEntry::
-	text "הגור בקושי"
-	next "מגיח החוצה"
+	text "הגורה בקושי"
+	next "מגיחה החוצה"
 	next "מכיסה המגונן"
 
-	page "של אימו"
-	next "עד שהוא"
-	next "בן 3"
+	page "של אימה"
+	next "עד שהיא"
+	next "בת 3"
 	dex
 
 _NidoranMDexEntry::
@@ -29,12 +29,12 @@ _NidoranMDexEntry::
 	dex
 
 _ClefairyDexEntry::
-	text "בעל קסם אישי"
+	text "בעלת קסם אישי"
 	next "מתוק וכובש, לו"
 	next "יש מעריצים רבים."
 
-	page "הוא נדיר וניתן"
-	next "למצוא אותו רק"
+	page "היא נדירה וניתן"
+	next "למצוא אותה רק"
 	next "באזורים מסוימים"
 	dex
 
@@ -45,7 +45,7 @@ _SpearowDexEntry::
 
 	page "במהירות בכנפיו"
 	next "הקצרות כדי"
-	next "להישאר באוויר"
+	next "להישאר בתעופה"
 	dex
 
 _VoltorbDexEntry::
@@ -59,12 +59,13 @@ _VoltorbDexEntry::
 	dex
 
 _NidokingDexEntry::
-	text "משתמש בזנבו"
-	next "העוצמתי בקרב"
-	next "לריסוק, לכבילת"
+	text "בזמן קרב,"
+	next "משתמש בזנבו"
+	next "העוצמתי כדי"
 
-	page "ולשבירת עצמותיו"
-	next "של הטרף"
+	page "לרסק, לכבול"
+	next "ולשבור את"
+	next "עצמותיו של הטרף"
 	dex
 
 _SlowbroDexEntry::
@@ -87,9 +88,9 @@ _IvysaurDexEntry::
 	dex
 
 _ExeggutorDexEntry::
-	text "האגדה מספרת"
-	next "שבמקרים נדירים,"
-	next "אחד מראשיו יצנח"
+	text "מספרים שבמקרים"
+	next "נדירים, אחד"
+	next "מראשיו ינשור"
 
 	page "וימשיך להתקיים"
 	next "כביצמודות"
@@ -98,7 +99,7 @@ _ExeggutorDexEntry::
 _LickitungDexEntry::
 	text "לשונו יכולה"
 	next "להתארך כמו"
-	next "זיקית. הוא"
+	next "של זיקית. הוא"
 
 	page "משאיר תחושה"
 	next "מעקצצת כשהוא"
@@ -126,7 +127,7 @@ _GrimerDexEntry::
 
 _GengarDexEntry::
 	text "תחת ירח מלא,"
-	next "#ימון הזה"
+	next "ה#ימון הזה"
 	next "אוהב לחקות"
 
 	page "את צלליהם של"
@@ -151,7 +152,7 @@ _NidoqueenDexEntry::
 
 	page "בגודל גופה"
 	next "האדיר לביצוע"
-	next "מהלכים עוצמתיים"
+	next "מתקפות עוצמתיות"
 	dex
 
 _CuboneDexEntry::
@@ -263,7 +264,7 @@ _StaryuDexEntry::
 	dex
 
 _BlastoiseDexEntry::
-	text "#ימון ברוטלי"
+	text "#ימון אכזרי"
 	next "בעל סילוני מים"
 	next "בלחץ גבוה על"
 
@@ -277,7 +278,7 @@ _PinsirDexEntry::
 	next "במחיצת הקורבן"
 	next "בצבתותיו,"
 
-	page "הוא ינדנד אותו"
+	page "הוא ינפנף אותו"
 	next "סביב ויזרוק"
 	next "אותו רחוק"
 	dex
@@ -293,7 +294,7 @@ _TangelaDexEntry::
 
 _GrowlitheDexEntry::
 	text "מאוד מגונן על"
-	next "הטריטוריה שלו."
+	next "התחום שלו."
 	next "הוא ינבח וינשך"
 
 	page "כדי למנוע ממסיגי"
@@ -362,7 +363,7 @@ _GravelerDexEntry::
 _ChanseyDexEntry::
 	text "#ימונית נדירה"
 	next "וחמקמקה אשר"
-	next "הלכאורה מביא"
+	next "לכאורה מביאה"
 
 	page "אושר לאלו"
 	next "המצליחים להשיגה"
@@ -547,7 +548,7 @@ _FarfetchdDexEntry::
 	dex
 	
 _VenonatDexEntry::	
-	text "חי בצללים של"
+	text "חי בצילם של"
 	next "עצים גבוהים שם"
 	next "הוא אוכל"
 	
@@ -608,11 +609,11 @@ _MoltresDexEntry::
 _ArticunoDexEntry::	
 	text "#ימון ציפור"
 	next "אגדי שלכאורה"
-	next "מופיע לאנשים"
+	next "מתגלה לאנשים"
 	
 	page "נואשים"
-	next "שאבדו בהרי"
-	next "קרח"
+	next "שאבדו בהרים"
+	next "מושלגים"
 	dex
 	
 _ZapdosDexEntry::	
@@ -656,20 +657,20 @@ _KrabbyDexEntry::
 	dex
 	
 _VulpixDexEntry::	
-	text "בזמן היוולדו,"
-	next "יש לו רק זנב"
+	text "בזמן היוולדה,"
+	next "יש לה רק זנב"
 	next "אחד. הזנב"
 	
 	page "מתפצל מהקצה"
-	next "כשהוא מתבגר"
+	next "כשהיא מתבגרת"
 	dex
 	
 _NinetalesDexEntry::	
-	text "חכם מאוד"
-	next "ונקמן מאוד."
+	text "חכמה מאוד"
+	next "ונקמנית מאוד."
 	next "לפיתת אחד"
 	
-	page "מזנבותיו הרבים"
+	page "מזנבותיה הרבים"
 	next "יכולה להסתיים"
 	next "בקללה לאלף שנים"
 	dex
@@ -782,29 +783,30 @@ _OmanyteDexEntry::
 _OmastarDexEntry::	
 	text "#ימון"
 	next "פרה-היסטורי"
-	next "שמת כשקונכייתו"
+	next "שנכחד"
 	
-	page "הכבדה לא אפשרה"
+	page "כשקונכייתו"
+	next "הכבדה לא אפשרה"
 	next "לו לצוד טרף"
 	dex
 
 _JigglypuffDexEntry::	
-	text "כשעיניו הענקיות"
-	next "מוארות, הוא שר"
+	text "כשעיניה הענקיות"
+	next "מוארות, היא שרה"
 	next "מנגינה קסומה"
 	
 	page "ומרגיעה שגורמת"
-	next "לאויביו לשקוע"
+	next "לאויביה לשקוע"
 	next "בשינה עמוקה"
 	dex
 	
 _WigglytuffDexEntry::	
 	text "הגוף רך וגמיש."
-	next "בעת זעם, הוא"
-	next "ישאב אוויר"
+	next "כשכועסת, היא"
+	next "תשאב אוויר"
 	
-	page "פנימה וינפח"
-	next "עצמו לגודל"
+	page "פנימה ותנפח"
+	next "עצמה לגודל"
 	next "עצום"
 	dex
 	
@@ -903,7 +905,7 @@ _PoliwrathDexEntry::
 	
 	page "בקלות את"
 	next "טובי השחיינים"
-	next "בני האדם"
+	next "האנושיים"
 	dex
 	
 _WeedleDexEntry::	
@@ -1121,10 +1123,10 @@ _ElectrodeDexEntry::
 	
 _ClefableDexEntry::	
 	text "#ימון פיה"
-	next "ביישן ונדיר."
-	next "הוא ירוץ להתחבא"
+	next "ביישנית ונדירה."
+	next "היא תרוץ להתחבא"
 	
-	page "ברגע שיחוש"
+	page "ברגע שתחוש"
 	next "שאנשים מתקרבים"
 	dex
 	
@@ -1149,7 +1151,7 @@ _PersianDexEntry::
 	
 _MarowakDexEntry::	
 	text "העצם שבידו היא"
-	next "כלי הנשק המרכזי"
+	next "כלי הנשק העיקרי"
 	next "שלו. הוא זורק"
 	
 	page "את העצם במדויק"
@@ -1204,6 +1206,7 @@ _PidgeotDexEntry::
 	next "חסר זהירות כמו"
 	next "קסמנון"
 	dex
+	
 _StarmieDexEntry::	
 	text  "הליבה המרכזית"
 	next  "שלו זוהרת בשבעת"
@@ -1340,7 +1343,7 @@ _PorygonDexEntry::
 	dex
 	
 _AerodactylDexEntry::	
-	text  "#ימון פרה"
+	text  "#ימון פרה-"
 	next  "היסטורי אכזרי"
 	next  "שהולך על גרונו"
 	
@@ -1372,7 +1375,7 @@ _CharmanderDexEntry::
 _SquirtleDexEntry::	
 	text  "לאחר הלידה, גבו"
 	next  "מתנפח ומתקשה"
-	next  "והופך לקונכייה."
+	next  "והופך לשריון."
 	
 	page  "מתיז קצף מפיו"
 	next  "בעוצמה"
@@ -1448,7 +1451,7 @@ _BellsproutDexEntry::
 	
 _WeepinbellDexEntry::	
 	text  "הוא יורק אבקת"
-	next  "רעל כדי לרתק"
+	next  "רעל כדי לשתק"
 	next  "את האויב ואז"
 	
 	page  "מסיים את זה"
