@@ -27,10 +27,10 @@ _CeladonDinerText4::
 	done
 
 _CeladonDinerText_491a7::
-	text "לך על זה! חה חה!" ;TODO (הLaugh זה שיצחק או שהוא צוחק?)
+	text "קדימה! תצחק עלי!"
 
-	para "אני הובסתי"
-	line "לחלוטין!"
+	para "הפסדתי כל מה"
+	line "שהיה לי!"
 
 	para "סיימתי עם"
 	line "ההימורים. מהיום"
