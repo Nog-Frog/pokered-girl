@@ -1,13 +1,14 @@
 _SilphCoPresidentText::
-	text "תודה שהצלת:PRESIDENT";TODO
-	line "!SILPH את";TODO
+	text "תודה:PRESIDENT";TODO
+	line "!SILPH שהצלת את";TODO
 
 	para "לעולם לא אשכח לך"
 	line  "שהצלת אותנו"
 	cont  "!בשעת מצוקה"
 
-	para "אני חייב להודות לך "
-	line "!איכשהו"
+	para "אני חייב "
+	line "להודות לך"
+	cont "!איכשהו"
 
 	para ",היות ואני עשיר"
 	line "אני יכול לתת לך "
@@ -24,16 +25,19 @@ _ReceivedSilphCoMasterBallText::
 	text "!@@"
 
 _SilphCo10Text_6231c::
-	text "לא תמצא דבר כזה:PRESIDENT";TODO
-	line "!בשום מקום"
+	text "לא תמצא:PRESIDENT";TODO
+	line "דבר כזה"
+	cont "!בשום מקום"
 
-	para "זה הדגם הראשוני הסודי"
-	line "!MASTER BALL שלנו";TODO
+	para "זה הדגם הסודי"
+	line "והראשוני"
+	cont "!MASTER BALLשל ה";TODO
 
 	para "תוכל לתפוס איתו"
-	line "!כל #ימון בלי בעיה"
+	line "כל #ימון"
+	cont "!בלי בעיה"
 
-	para "אבל תהייה חייב"
+	para  "אך תהייה חייב"
 	line ".לשמור על זה בסוד"
 	done
 
@@ -42,8 +46,8 @@ _SilphCoMasterBallNoRoomText::
 	done
 
 _SilphCo11Text2::
-	text "תודה שהצלת:SECRETARY";TODO
-	line "!את כולנו"
+	text "תודה:SECRETARY";TODO
+	line "!שהצלת אותנו"
 
 	para "אנו מעריכים את"
 	line ".התעוזה שלך"
@@ -51,17 +55,21 @@ _SilphCo11Text2::
 
 _SilphCo11Text3::
 	text "<PLAYER>!אה"
-	line "!אז אנחנו נפגשים שוב"
+	line "אז אנחנו"
+	cont "!נפגשים שוב"
 
-	para "ואני PRESIDENTה";TODO
-	line "דנים בהצעות עסקיות"
+	para "PRESIDENTה";TODO
+	line "ואני דנים"
+	cont "בהצעות עסקיות"
 	cont ".חשובות"
 	
-	para "אל תדחוף את האף"
-	line "שלך בעניינים של"
-	cont "...מבוגרים"
+	para "אל תדחף"
+	line "את האף שלך"
+	cont "בעניינים"
+	cont "...של מבוגרים"
 
-	para "!ולא, תתכונן לסבול"
+	para "ולא, תתכונן "
+	cont "!לסבול"
 	done
 
 _SilphCo10Text_62330::
@@ -78,8 +86,9 @@ _SilphCo10Text_62335::
 	line "!לעולם לא יובסו"
 
 	para " לעולם <PLAYER>!"
-	line "אל תשכח שכל ה#ימונים"
-	cont "!TEAM ROCKETשייכים ל";TODO
+	line "אל תשכח שכל"
+	cont "ה#ימונים שייכים"
+	cont "!TEAM ROCKETל";TODO
 
 	para "אני חייב ללכת, אך"
 	line "!אני עוד אחזור"
