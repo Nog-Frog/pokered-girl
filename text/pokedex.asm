@@ -820,7 +820,7 @@ _EeveeDexEntry::
 _FlareonDexEntry::	
 	text "בזמן שאוגר"
 	next " אנרגיית חום"
-	next " בגופו, הטמפרטורה"
+	next "בגופו, הטמפרטורה"
 	
 	page "שלו יכולה לנסוק"
 	next "מעל ל-0061"
@@ -1023,7 +1023,7 @@ _MachampDexEntry::
 _GolduckDexEntry::	
 	text "לעיתים נצפה"
 	next "שוחה באלגנטיות"
-	next "בחופי אגמים. קל"
+	next "בגדות אגמים. קל"
 	
 	page "להתבלבל בינו"
 	next "ובין המפלצת"
@@ -1031,9 +1031,9 @@ _GolduckDexEntry::
 	dex
 	
 _HypnoDexEntry::	
-	text "כשעיניו ננעלות"
-	next "על אויב, הוא"
-	next "ישתמש במגוון"
+	text "כשעיניו פוגשות"
+	next "את עיני האויב,"
+	next "הוא ישתמש במגוון"
 	
 	page "מהלכים על-חושיים"
 	next "כגון היפנוזה"
@@ -1041,7 +1041,7 @@ _HypnoDexEntry::
 	dex
 	
 _GolbatDexEntry::	
-	text "ברגע שהוא מכה,"
+	text "ברגע שהוא פוגע,"
 	next "הוא לא יפסיק"
 	next "לשאוב אנרגיה"
 	
@@ -1133,9 +1133,9 @@ _WeezingDexEntry::
 	next "גזים רעילים"
 	next "נפגשים, שני"
 	
-	page "#קופינגים"
+	page "משתעשנים"
 	next "יכולים להתמזג"
-	next "ל#וויזינג"
+	next "למשתעשניים"
 	dex
 	
 _PersianDexEntry::	
@@ -1179,7 +1179,7 @@ _AbraDexEntry::
 _AlakazamDexEntry::	
 	text "מוחו יכול"
 	next "להתעלות על מחשב"
-	next "על. נאמר עליו"
+	next "על. אומרים"
 	
 	page "שמנת המשכל"
 	next "שלו היא 000,5"
@@ -1202,7 +1202,7 @@ _PidgeotDexEntry::
 	
 	page "כדי לתפוס טרף"
 	next "חסר זהירות כמו"
-	next "#מג'יקארפ"
+	next "קסמנון"
 	dex
 _StarmieDexEntry::	
 	text  "הליבה המרכזית"
@@ -1306,9 +1306,8 @@ _NidorinoDexEntry::
 	next  "שנחפז לתקוף."
 	next  "הקרן שעל"
 	
-	page  "ראשו טומנת"
-	next  "בחובה ארס"
-	next  "קטלני"
+	page  "ראשו מפרישה"
+	next  "ארס קטלני"
 	dex
 	
 _NidorinaDexEntry::	
@@ -1376,7 +1375,7 @@ _SquirtleDexEntry::
 	next  "והופך לקונכייה."
 	
 	page  "מתיז קצף מפיו"
-	next  "בצורה חזקה"
+	next  "בעוצמה"
 	dex
 	
 _CharmeleonDexEntry::	
@@ -1458,7 +1457,7 @@ _WeepinbellDexEntry::
 	
 _VictreebelDexEntry::	
 	text  "נאמר עליו שהוא"
-	next  "במושבות ענק"
+	next  "חי במושבות ענק"
 	next  "עמוק בג'ונגלים,"
 	
 	page  "למרות שאיש"
