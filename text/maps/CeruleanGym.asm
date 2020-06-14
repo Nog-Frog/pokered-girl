@@ -26,7 +26,7 @@ _CeruleanGymText_5c7c3::
 _CeruleanGymText_5c7c8::
 	text "תג הזהב גורם"
 	line "ל#ימונים עד רמה"
-	cont "30 לציית לך!"
+	cont "03 לציית לך!"
 
 	para "זה כולל אפילו"
 	line "#ימונים שקיבלת"
