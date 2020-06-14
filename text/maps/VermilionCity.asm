@@ -79,7 +79,7 @@ _VermilionCityText14::
 _VermilionCityText6::
 	text "היא S.S.ANNE";TODO
 	line "ספינת תענוגות "
-	cobt ".יוקרתית"
+	cont ".יוקרתית"
 
 	para "אנו מגיעים"
 	line "VERMILIONל";TODO
