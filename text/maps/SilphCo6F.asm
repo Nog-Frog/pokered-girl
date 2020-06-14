@@ -1,78 +1,79 @@
 _SilphCo6Text_1a24a::
-	text "הגיעו ROCKETS";TODO
-	line "והשתלטו על"
-	cont "!הבניין"
+	text "בריוני רוקט הגיעו"
+	line "והשתלטו על כל"
+	cont "הבניין!"
 	done
 
 _SilphCo6Text_1a24f::
-	text "ובכן, כדאי שנחזור"
-	line "!לעניינו"
+	text "טוב, כדאי שאחזור"
+	line "לעבודה!"
 	done
 
 _SilphCo6Text_1a261::
-	text "!אוי לי. אוי לי"
-	line "!עיזרו לי בבקשה"
+	text "אוי לי. אוי לי!"
+	line "בבקשה, עזור לי!"
 	done
 
 _SilphCo6Text_1a266::
-	text "!אנחנו מאורסים"
-	line "!היהיהי"
+	text "אנחנו מאורסים!"
+	line "היהיהי!"
 	done
 
 _SilphCo6Text_1a278::
 	text "תראה אותו! הוא"
-	line "!כזה נמושה"
+	line "כזה פחדן!"
 	done
 
 _SilphCo6Text_1a27d::
-	text "אני ממש "
-	line "מרחמת עליו, אנחנו"
-	cont "!עומדים להתחתן"
+	text "אני מרחמת עליו כל"
+	line "כך, אז אני נאלצת"
+	cont "להינשא לו!"
 	done
 
 _SilphCo6Text_1a28f::
-	text "מנסים TEAM ROCKET"
+	text "כנופיית רוקט מנסים"
 	line "להשתלט על העולם"
-	cont "!בעזרת ה#ימונים"
+	cont "!בעזרת #ימונים"
 	done
 
 _SilphCo6Text_1a294::
-	text "נסוגו TEAM ROCKET"
-	line "!בגללך"
+	text "כנופיית רוקט נסוגו"
+	line "בזכותך!"
 	done
 
 _SilphCo6Text_1a2a6::
 	text "הם וודאי הגיעו"
-	line  "בשביל SILPHל"
-	cont  "!ה#ימון שלנו"
+	line  "לסילף כדי לקחת"
+	cont  "!את ה#ימון שלנו"
 	done
 
 _SilphCo6Text_1a2ab::
-	text "SILPHבוא לעבוד ב";TODO
+	text "בוא לעבוד בסילף"
 	line ".כשתגדל"
 	done
 
 _SilphCo6BattleText2::
-	text "אני אחד מרביעיית"
-	line "ROCKET BROTHERS!";TODO
+	text "אני אחד מארבעת"
+	line "אחי כנופיית רוקט!"
 	done
 
 _SilphCo6EndBattleText2::
-	text "Flame"
-	line "out!";TODO
+	text "הלהבה"
+	line "שלי כבתה!"
 	prompt
 
 _SilphCo6AfterBattleText2::
 	text "!לא חשוב"
-	line "!אחיי יינקמו בשמי"
+	line "!אחיי ינקמו בשמי"
 	done
 
 _SilphCo6BattleText3::
-	text "!העלוב הזה PRESIDENTה";TODO
+	text "הנשיא המטונף"
+	line "הזה!"
 
-	para "הוא לא היה צריך"
-	line "לשלוח לי את ה"
-	cont "TIKSI BRANCH!";TODO
+	para "חבל שהוא שלח אותי"
+	line "לעבוד בסניף"
+	cont "בטיקסי!"
 	done
 
 _SilphCo6EndBattleText3::
@@ -80,21 +81,21 @@ _SilphCo6EndBattleText3::
 	prompt
 
 _SilphCo6AfterBattleText3::
-	text "TIKSI BRANCH?";TODO
-	line "זה אומר שטח הפקר"
-	cont "!ברוסית"
+	text "הסניף בטיקסי?"
+	line "זה באמצע שום מקום"
+	cont "ברוסיה!"
 	done
 
 _SilphCo6BattleText4::
-	text "איך אתה מעז לבגוד ב"
-	line "TEAM ROCKET?";TODO
+	text "איך אתה מעז לבגוד"
+	line "בכנופיית רוקט?"
 	done
 
 _SilphCo6EndBattleText4::
-	text "!בוגד"
+	text "בוגד!"
 	prompt
 
 _SilphCo6AfterBattleText4::
-	text ",אם אתה בעד צדק"
-	line "!אתה בוגד ברוע"
+	text "אם אתה בעד צדק,"
+	line "אתה בוגד ברוע!"
 	done
