@@ -2,32 +2,34 @@ _BrunoBeforeBattleText::
 	text "אני איתן מהרביעיה"
 	line "העילית!"
 
-	para "בעזרת אימונים "
+	para "בעזרת אימונים"
 	line "מפרכים, אנשים"
-	cont "ו#ימונים "
-	cont "יהפכו חזקים יותר!"
+	cont "ו#ימונים יכולים"
+	cont "להתחזק!"
 
-	para "הרמתי משקולות"
-	line "עם ה#ימונים שלי!"
+	para "עשיתי אימוני"
+	line "משקולות עם"
+	cont "ה#ימונים שלי!"
 
 	para "<PLAYER>!"
 
-	para "אנחנו נחסל"
-	line "אותך בעזרת"
-	cont "כוחות העל שלנו!"
+	para "אנחנו נעשה ממך"
+	line "קציצות בעזרת הכוח"
+	cont "האדיר שלנו!"
 
-	para "הא!"
+	para "הו הא!"
 	done
 
 _BrunoEndBattleText::
 	text "למה?"
-	line "איך הפסדתי?"
+	line "איך ייתכן"
+	cont "שהפסדתי?"
 	prompt
 
 _BrunoAfterBattleText::
 	text "אני גמרתי כאן!"
 	line "לך להתמודד עם"
-	cont "אתגר אחר!"
+	cont "האתגר הבא!"
 	done
 
 _BrunoDontRunAwayText::
