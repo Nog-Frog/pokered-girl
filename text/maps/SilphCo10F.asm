@@ -10,7 +10,8 @@ _SilphCo10Text_5a1d8::
 
 _SilphCo10BattleText1::
 	text "!10Fברוך הבא ל"
-	line "!נחמד שהיצטרםת אליי"
+	line "נחמד שהצטרפת"
+	cont "!אליי"
 	done
 
 _SilphCo10EndBattleText1::
