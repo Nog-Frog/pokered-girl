@@ -9,8 +9,8 @@ _VictoryRoad3EndBattleText2::
 	prompt
 
 _VictoryRoad3AfterBattleText2::
-	text "הבסת את GIOVANNI" ;TODO
-	line "מTEAM ROCKET?" ;TODO
+	text "הבסת את אלפרון"
+	line "מצוות רוקט?"
 	done
 
 _VictoryRoad3BattleText3::
@@ -40,9 +40,8 @@ _VictoryRoad3EndBattleText4::
 
 _VictoryRoad3AfterBattleText4::
 	text "כל המאמנים פה"
-	line "מיועדים ל"
-	cont "#ימון LEAGUE!"
-	cont "תיזהר!"
+	line "מיועדים לליגת"
+	cont "ה#ימון! תיזהר!"
 	done
 
 _VictoryRoad3BattleText5::
@@ -53,11 +52,10 @@ _VictoryRoad3BattleText5::
 
 _VictoryRoad3EndBattleText5::
 	text "אה!"
-	line "כלכך עוצמתי!"
+	line "חזק כל כך!"
 	prompt
 
 _VictoryRoad3AfterBattleText5::
-	text "קרבות קשים"
-	line "גורמים לך"
-	cont "להיות חזק יותר!"
+	text "קרבות קשים יסייעו"
+	line "לך להתחזק!"
 	done
