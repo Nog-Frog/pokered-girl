@@ -8,8 +8,9 @@ _CeladonDinerText1::
 _CeladonDinerText2::
 	text "הפוקימונים שלי"
 	line "חלשים אז אני"
-	cont "מבקר הרבה ב"
-	cont "DRUGה STORE." ;TODO
+	cont "נאלץ לבקר במרכז"
+	cont "ה#ימון לעיתים"
+	cont "קרובות."
 	done
 
 _CeladonDinerText3::

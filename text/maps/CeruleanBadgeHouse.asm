@@ -1,20 +1,20 @@
 _CeruleanHouse2Text_74e77::
 	text "רק למאמנים"
 	line "מיומנים"
-	cont "ימון# BADGEs יש";TODO
+	cont "יש תגי מכונים."
 
 	para "אני רואה שיש לך"
 	line ".לפחות אחד"
 
-	para "יש BADGEsל";TODO
+	para "התגים אוצרים"
 	line "!סודות מופלאים"
 	prompt
 
 _CeruleanHouse2Text_74e7c::
 	text "...ובכן"
 
-	para "איזה משמונת ה"
-	line "?עליי לתאר BADGEs";TODO
+	para "איזה משמונת התגים"
+	line "עליי לתאר?"
 	done
 
 _CeruleanHouse2Text_74e81::
@@ -23,14 +23,13 @@ _CeruleanHouse2Text_74e81::
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "של ATTACKה";TODO
-	line ".כל ה#ימונים"
-	cont ".יעלה מעט"
+	text "נתון המתקפה של"
+	line "כל ה#ימונים"
+	cont ".יגדל מעט"
 
-	para "בנוסף, זה "
-	line "יאפשר לך"
-	cont "FLASHלהשתמש ב";TODO
-	cont ".מתי שתרצה"
+	para "בנוסף, זה יאפשר"
+	line "להשתמש במהלך"
+	cont "הבזק מתי שתרצה."
 	prompt
 
 _CeruleanHouse2Text_74e9b::
@@ -41,20 +40,19 @@ _CeruleanHouse2Text_74e9b::
 	line "לא תוכל "
 	cont "!להשתלט עליו"
 
-	para "בנוסף, זה"
-	line "יאפשר לך"
-	cont "CUTלהשתמש ב";TODO
-	cont ".לא רק בקרב"
+	para "בנוסף, זה יאפשר"
+	line "לך להשתמש במהלך"
+	cont "חיתוך לא רק בקרב."
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "של כל SPEEDה";TODO
-	line "ה#ימונים"
-	cont ".יעלה מעט"
+	text "נתון המהירות של"
+	line "כל ה#ימונים"
+	cont "יגדל מעט."
 	
 	para "בנוסף, זה"
 	line "יאפשר לך"
-	cont "FLYלהשתמש ב";TODO
+	cont "להשתמש בתעופה"
 	cont ".לא רק בקרב"
 	prompt
 
@@ -68,18 +66,18 @@ _CeruleanHouse2Text_74ea5::
 
 	para "בנוסף, זה"
 	line "יאפשר לך"
-	cont "STRENGTHלהשתמש ב";TODO
+	cont "להשתמש בעוצמה"
 	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74eaa::
-	text "של כל DEFENSEה";TODO
-	line  ".ה#ימונים"
-	cont  ".יעלה מעט"
+	text  "נתון ההגנה של"
+	line  "כל ה#ימונים"
+	cont  ".יגדל מעט"
 
 	para "בנוסף, זה "
-	line "יאפשר לך"
-	cont "SURFלהשתמש ב";TODO
+	line "יאפשר לך להשתמש"
+	cont "במהלך גלישה"
 	cont ".לא רק בקרב"
 	prompt
 
@@ -93,9 +91,9 @@ _CeruleanHouse2Text_74eaf::
 	prompt
 
 _CeruleanHouse2Text_74eb4::
-	text "SPECIALיכולות ה";TODO
+	text "יכולת ההתקפה המיוחד"
 	line "של ה#ימון שלך"
-	cont ".יעלו מעט"
+	cont "תגדל מעט."
 	prompt
 
 _CeruleanHouse2Text_74eb9::
