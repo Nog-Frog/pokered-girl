@@ -1,97 +1,104 @@
 _CeruleanHouse2Text_74e77::
-	text "#MON BADGEs"
-	line "are owned only by"
-	cont "skilled trainers."
+	text "רק למאמנים"
+	line "מיומנים"
+	cont "ימון# BADGEs יש";TODO
 
-	para "I see you have"
-	line "at least one."
+	para "אני רואה שיש לך"
+	line ".לפחות אחד"
 
-	para "Those BADGEs have"
-	line "amazing secrets!"
+	para "יש BADGEsל";TODO
+	line "!סודות מופלאים"
 	prompt
 
 _CeruleanHouse2Text_74e7c::
-	text "Now then..."
+	text "...ובכן"
 
-	para "Which of the 8"
-	line "BADGEs should I"
-	cont "describe?"
+	para "איזה משמונת ה"
+	line "?עליי לתאר BADGEs";TODO
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "Come visit me any"
-	line "time you wish."
+	text "תחזור לבקר"
+	line ".בכל זמן שתרצה"
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "The ATTACK of all"
-	line "#MON increases"
-	cont "a little bit."
+	text "של ATTACKה";TODO
+	line ".כל ה#ימונים"
+	cont ".יעלה מעט"
 
-	para "It also lets you"
-	line "use FLASH any"
-	cont "time you desire."
+	para "בנוסף, זה "
+	line "יאפשר לך"
+	cont "FLASHלהשתמש ב";TODO
+	cont ".מתי שתרצה"
 	prompt
 
 _CeruleanHouse2Text_74e9b::
-	text "#MON up to L30"
-	line "will obey you."
+	text "30 ימון עד רמה#"
+	line ".יציית לך"
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "מרמה 30 ומעלה"
+	line "לא תוכל "
+	cont "!להשתלט עליו"
 
-	para "It also lets you"
-	line "use CUT outside"
-	cont "of battle."
+	para "בנוסף, זה"
+	line "יאפשר לך"
+	cont "CUTלהשתמש ב";TODO
+	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "The SPEED of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
-	line "use FLY outside"
-	cont "of battle."
+	text "של כל SPEEDה";TODO
+	line "ה#ימונים"
+	cont ".יעלה מעט"
+	
+	para "בנוסף, זה"
+	line "יאפשר לך"
+	cont "FLYלהשתמש ב";TODO
+	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74ea5::
-	text "#MON up to L50"
-	line "will obey you."
+	text "50 ימון עד רמה#"
+	line ".יציית לך"
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "מרמה 50 ומעלה"
+	line "לא תוכל"
+	cont ".להשתלט עליו"
 
-	para "It also lets you"
-	line "use STRENGTH out-"
-	cont "side of battle."
+	para "בנוסף, זה"
+	line "יאפשר לך 
+	cont "STRENGTHלהשתמש ב";TODO
+	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74eaa::
-	text "The DEFENSE of all"
-	line "#MON increases"
-	cont "a little bit."
+	text "של כל DEFENSEה";TODO
+	line  ".ה#ימונים 
+	cont  ".יעלה מעט"
 
-	para "It also lets you"
-	line "use SURF outside"
-	cont "of battle."
+	para "בנוסף, זה "
+	line "יאפשר לך
+	cont "SURFלהשתמש ב";TODO
+	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74eaf::
-	text "#MON up to L70"
-	line "will obey you."
+	text "70 ימון עד רמה#"
+	line ".יציית לך"
 
-	para "Any higher, they"
-	line "become unruly!"
+	para "מרמה 70 ומעלה"
+	line "לא תוכל" 
+	cont "להשתלט עליו"
 	prompt
 
 _CeruleanHouse2Text_74eb4::
-	text "Your #MON's"
-	line "SPECIAL abilities"
-	cont "increase a bit."
+	text "SPECIALיכולות ה";TODO
+	line "של ה#ימון שלך"
+	cont ".יעלו מעט"
 	prompt
 
 _CeruleanHouse2Text_74eb9::
-	text "All #MON will"
-	line "obey you!"
+	text "כל ה#ימונים"
+	line "!יצייתו לך"
 	prompt
