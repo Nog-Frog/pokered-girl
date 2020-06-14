@@ -1,6 +1,7 @@
 _SilphCo6Text_1a24a::
-	text "הגיעו והשתלטו  ROCKETS";TODO
-	line "!על הבניין"
+	text "הגיעו ROCKETS";TODO
+	line "והשתלטו על"
+	cont "!הבניין"
 	done
 
 _SilphCo6Text_1a24f::
@@ -24,13 +25,15 @@ _SilphCo6Text_1a278::
 	done
 
 _SilphCo6Text_1a27d::
-	text ",אני ממש מרחמת עליו"
-	line "!אני צריכה להתחתן איתו"
+	text "אני ממש "
+	line "מרחמת עליו, אנחנו"
+	cont "!עומדים להתחתן"
 	done
 
 _SilphCo6Text_1a28f::
-	text "מנסים להשתלט על TEAM ROCKET"
-	line "!העולם עם #ימונים"
+	text "מנסים TEAM ROCKET"
+	line "להשתלט על העולם"
+	cont "!בעזרת ה#ימונים"
 	done
 
 _SilphCo6Text_1a294::
@@ -39,8 +42,9 @@ _SilphCo6Text_1a294::
 	done
 
 _SilphCo6Text_1a2a6::
-	text "SILPH הם בטח הגיעו ל";TODO
-	line  ".בשביל מוצרי ה#ימון שלנו"
+	text "הם וודאי הגיעו"
+	line  "בשביל SILPHל"
+	cont  "!ה#ימון שלנו"
 	done
 
 _SilphCo6Text_1a2ab::
@@ -64,7 +68,7 @@ _SilphCo6AfterBattleText2::
 	done
 
 _SilphCo6BattleText3::
-	text "!העלוב הזה PRESIDENTה"
+	text "!העלוב הזה PRESIDENTה";TODO
 
 	para "הוא לא היה צריך"
 	line "לשלוח לי את ה"
