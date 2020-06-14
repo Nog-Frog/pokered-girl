@@ -13,7 +13,8 @@ _VermilionCityTextDidYouSee::
 	done
 
 _VermilionCityTextSSAnneDeparted::
-	text "!הפליגה S.S.ANNE,ובכן";TODO
+	text "S.S.ANNE,ובכן";TODO
+	cont "!הפליגה"
 
 	para "היא תחזור בעוד"
 	line ".שנה בערך"
@@ -35,14 +36,15 @@ _SSAnneWelcomeText9::
 _SSAnneFlashedTicketText::
 	text "מציג את<PLAYER>"
 	line "!S.S.TICKET ה";TODO
-
-	para "נהדר! ברוכים הבאים"
+	
+	text "ברוך הבא"
 	line "!S.S.ANNE ל"
 	done
 
 _SSAnneNoTicketText::
 	text "אין <PLAYER> ל"
-	line "הנחוץ S.S.TICKET את ה";TODO
+	line "S.S.TICKET את ה";TODO
+	cont ".הנחוץ"
 
 	para "!מצטערים"
 
@@ -51,12 +53,13 @@ _SSAnneNoTicketText::
 	done
 
 _SSAnneNotHereText::
-	text ".הספינה יוצאת להפלגה"
+	text ".הספינה מפליגה"
 	done
 
 _VermilionCityText4::
 	text "אני מקים בניין"
-	line ".על חלקת האדמה הזאת"
+	line "על חלקת"
+	cont ".האדמה הזאת"
 
 	para "ה#ימון שלי"
 	line ".מהדק את האדמה"
@@ -69,15 +72,18 @@ _VermilionCityText5::
 _VermilionCityText14::
 	text ""
 	para "דורך על MACHOP";TODO
-	line ".האדמה כדי לשטח אותה"
+	line "האדמה כדי "
+	cont ".לשטח אותה"
 	done
 
 _VermilionCityText6::
-	text "היא ספינת S.S.ANNE"
-	line ".תענוגות יוקרתית"
+	text "היא S.S.ANNE";TODO
+	line "ספינת תענוגות "
+	cobt ".יוקרתית"
 
-	para "VERMILIONאנו מגיעים ל";TODO
-	line ".פעם בשנה"
+	para "אנו מגיעים"
+	line "VERMILIONל";TODO
+	cont ".פעם בשנה"
 	done
 
 _VermilionCityText7::
@@ -90,12 +96,14 @@ _VermilionCityText8::
 	text "NOTICE!";TODO
 
 	para "ייתכן שהכניסה ל"
-	line "חסומה על ידי ROUTE 12";TODO
+	line "חסומה ROUTE 12";TODO
+	cont "על ידי"
 	cont ".ימון ישנוני#"
 
-	para "תוכל לקחת קיצור דרך"
+	para "קיים קיצור דרך"
 	line "ROCK TUNNELב";TODO
-	cont "LAVENDER TOWN כדי להגיע ל.";TODO
+	cont "כדי להגיע"
+	cont "LAVENDER TOWNל";TODO
 
 	para "VERMILION POLICE";TODO
 	done
