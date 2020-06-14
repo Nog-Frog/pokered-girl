@@ -1,41 +1,43 @@
 _SilphCo10Text_5a1d3::
-	text "!וואההה"
-	cont "!אני מפחד"
+	text "וואההה!"
+	cont "אני מפחד!"
 	done
 
 _SilphCo10Text_5a1d8::
 	text "בבקשה אל תספר"
-	line "!לאף אחד שבכיתי"
+	line "לאף אחד שבכיתי!"
 	done
 
 _SilphCo10BattleText1::
-	text "!10Fברוך הבא ל"
-	line "נחמד שהצטרפת"
-	cont "!אליי"
+	text "ברוך הבא לקומה"
+	line "העשירית! כמה נחמד"
+	cont "מצידך שהצטרפת"
+	cont "אלי כאן!"
 	done
 
 _SilphCo10EndBattleText1::
-	text "!אני המום"
+	text "אני"
+	line "המום!"
 	prompt
 
 _SilphCo10AfterBattleText1::
-	text "נסיון נחמד, אבל"
+	text "ניסיון נחמד, אבל"
 	line "חדר הישיבות נמצא"
-	cont "!קומה למעלה"
+	cont "קומה למעלה!"
 	done
 
 _SilphCo10BattleText2::
 	text "מספיק עם המשחקים"
-	line "!המטופשים שלך"
+	line "המטופשים שלך!"
 	done
 
 _SilphCo10EndBattleText2::
-	text "לא"
-	line "continues left!";TODO
+	text "אין"
+	line "לאן להמשיך!"
 	prompt
 
 _SilphCo10AfterBattleText2::
 	text "אתה מרוצה עכשיו"
-	line "?כשהבסת אותי"
-	cont "אז לך לדרכך!"
+	line "כשהבסת אותי!"
+	cont "אז הסתלק לך!"
 	done
