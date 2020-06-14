@@ -2,7 +2,7 @@ _LavenderMartText2::
 	text "אני מחפש חפצים"
 	line "שמעצימים את"
 	cont "יכולות ה#ימון"
-        cont ".בזמן קרב"
+    cont "בזמן קרב."
 
 	para "X ATTACK, X";TODO
 	line "DEFEND, X SPEED";TODO
@@ -10,7 +10,7 @@ _LavenderMartText2::
 	cont "מה שאני מחפש."
 
 	para "אתה יודע איפה"
-	line "?אוכל למצוא אותם"
+	line "אוכל למצוא אותם?"
 	done
 
 _LavenderMartReviveText::

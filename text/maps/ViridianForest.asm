@@ -54,10 +54,10 @@ _ViridianForestEndBattleText3::
 _ViridianFrstAfterBattleText3::
 	text "לפעמים אתה יכול"
 	line "למצוא חפצים"
-	cont "!על האדמה"
+	cont "על האדמה!"
 
 	para "אני מחפש"
-	line "!חפץ שהפלתי"
+	line "חפץ שהפלתי!"
 	done
 
 _ViridianForestText8::

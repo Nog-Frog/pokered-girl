@@ -14,14 +14,14 @@ _BrunoBeforeBattleText::
 
 	para "אנחנו נחסל"
 	line "אותך בעזרת"
-	cont "!כוחות העל שלנו"
+	cont "כוחות העל שלנו!"
 
-	para "!הא"
+	para "הא!"
 	done
 
 _BrunoEndBattleText::
-	text "?למה"
-	line "?איך הפסדתי"
+	text "למה?"
+	line "איך הפסדתי?"
 	prompt
 
 _BrunoAfterBattleText::

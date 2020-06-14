@@ -6,12 +6,12 @@ _VermilionHouse2Text_560b1::
 	line "לדוג!"
 
 	para "אתה אוהב"
-	line "?לדוג"
+	line "לדוג?"
 	done
 
 _VermilionHouse2Text_560b6::
 	text "אדיר! אני אוהב"
-	line "!את הסגנון שלך"
+	line "את הסגנון שלך!"
 
 	para "קח את זה"
 	line "ותתחיל לדוג, חבוב!"
@@ -25,11 +25,11 @@ _VermilionHouse2Text_560bb::
 	text ""
 
 	para "דייג"
-	line "! זה דרך חיים"
+	line "זה דרך חיים!"
 
-	para "בים ,בנהרות"
-	line " צא לדוג"
-	cont "ותתפוס משהו כביר"
+	para "בים, בנהרות"
+	line "צא לדוג ותתפוס"
+	cont "משהו כביר,"
 	cont "צעיר!"
 	done
 
@@ -43,12 +43,12 @@ _VermilionHouse2Text_560c5::
 	line "<PLAYER>!"
 
 	para "איך הדגים"
-	line "?נושכים"
+	line "נושכים?"
 	done
 
 _VermilionHouse2Text_560ca::
 	text "הו לא!"
 
 	para "אין לך מקום"
-	line "!למתנה שלי"
+	line "למתנה שלי!"
 	done

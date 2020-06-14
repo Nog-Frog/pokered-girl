@@ -3,7 +3,7 @@ _FuchsiaMartText2::
 	line "SAFARI ZONE דגל?";TODO
 
 	para "מה לגבי קלפים"
-	line "?או לוחות שנה"
+	line "או לוחות שנה?"
 	done
 
 _FuchsiaMartText3::

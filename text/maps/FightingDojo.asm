@@ -19,7 +19,7 @@ _FightingDojoText_5ce93::
 
 _FightingDojoText_5ce98::
 	text "בהחלט, אני"
-	line "!הפסדתי"
+	line "הפסדתי!"
 
 	para "אבל, אני מפציר"
 	line "בך, אל תיקח"
@@ -27,8 +27,8 @@ _FightingDojoText_5ce98::
 	cont "כפרס!"
 
 	para "בתמורה, אני אעניק"
-	line "לך פרס"
-	cont "!ימון מסוג לחימה#"
+	line "לך פרס - #ימון"
+	cont "מסוג לחימה!"
 
 	para "בחר אחד מהם!"
 	done
@@ -42,7 +42,7 @@ _FightingDojoText_5ce9d::
 
 _FightingDojoBattleText1::
 	text "הוארג! תוריד"
-	line "!את הנעליים שלך"
+	line "את הנעליים שלך!"
 	done
 
 _FightingDojoEndBattleText1::
@@ -60,7 +60,7 @@ _FightingDojoAfterBattleText1::
 
 _FightingDojoBattleText2::
 	text "שמעתי שאתה"
-	line "!טוב! תראה לי"
+	line "טוב! תראה לי!"
 	done
 
 _FightingDojoEndBattleText2::
@@ -89,7 +89,7 @@ _FightingDojoEndBattleText3::
 _FightingDojoAfterBattleText3::
 	text "הדבר היחיד"
 	line "שמרתיע אותנו הם"
-	cont "!כוחות על טבעיים"
+	cont "כוחות על טבעיים!"
 	done
 
 _FightingDojoBattleText4::

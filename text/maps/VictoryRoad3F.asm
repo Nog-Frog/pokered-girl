@@ -1,6 +1,6 @@
 _VictoryRoad3BattleText2::
 	text "שמעתי שמועות"
-	line "!על ילד פלא"
+	line "על ילד פלא!"
 	done
 
 _VictoryRoad3EndBattleText2::
