@@ -1,6 +1,7 @@
 _CeruleanHouse2Text_74e77::
-	text "רק למאמנים מיומנים";
-	line "#MON BADGEs יש";TODO
+	text "רק למאמנים"
+	line "מיומנים"
+	cont "ימון# BADGEs יש";TODO
 
 	para "אני רואה שיש לך"
 	line ".לפחות אחד"
@@ -22,11 +23,13 @@ _CeruleanHouse2Text_74e81::
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "של כל ה#ימונים ATTACKה";TODO
-	line ".יעלה מעט"
+	text "של ATTACKה";TODO
+	line ".כל ה#ימונים"
+	cont ".יעלה מעט"
 
-	para "בנוסף, זה יאפשר לך"
-	line "FLASHלהשתמש ב";TODO
+	para "בנוסף, זה "
+	line "יאפשר לך"
+	cont "FLASHלהשתמש ב";TODO
 	cont ".מתי שתרצה"
 	prompt
 
@@ -35,19 +38,23 @@ _CeruleanHouse2Text_74e9b::
 	line ".יציית לך"
 
 	para "מרמה 30 ומעלה"
-	line "!לא תוכל להשתלט עליו"
+	line "לא תוכל "
+	cont "!להשתלט עליו"
 
-	para "בנוסף, זה יאפשר לך"
-	line "CUTלהשתמש ב";TODO
+	para "בנוסף, זה"
+	line "יאפשר לך"
+	cont "CUTלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74ea0::
 	text "של כל SPEEDה";TODO
-	line ".ה#ימונים יעלה מעט"
-
-	para "בנוסף, זה יאפשר לך"
-	line "FLYלהשתמש ב";TODO
+	line "ה#ימונים"
+	cont ".יעלה מעט"
+	
+	para "בנוסף, זה"
+	line "יאפשר לך"
+	cont "FLYלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
 
@@ -56,19 +63,23 @@ _CeruleanHouse2Text_74ea5::
 	line ".יציית לך"
 
 	para "מרמה 50 ומעלה"
-	line "!לא תוכל להשתלט עליו"
+	line "לא תוכל"
+	cont ".להשתלט עליו"
 
-	para "בנוסף, זה יאפשר לך"
-	line "STRENGTHלהשתמש ב";TODO
+	para "בנוסף, זה"
+	line "יאפשר לך 
+	cont "STRENGTHלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
 
 _CeruleanHouse2Text_74eaa::
 	text "של כל DEFENSEה";TODO
-	line  ".ה#ימונים יעלה מעט"
+	line  ".ה#ימונים 
+	cont  ".יעלה מעט"
 
-	para "בנוסף, זה יאפשר לך"
-	line "SURFלהשתמש ב";TODO
+	para "בנוסף, זה "
+	line "יאפשר לך
+	cont "SURFלהשתמש ב";TODO
 	cont ".לא רק בקרב"
 	prompt
 
@@ -77,7 +88,8 @@ _CeruleanHouse2Text_74eaf::
 	line ".יציית לך"
 
 	para "מרמה 70 ומעלה"
-	line "!לא תוכל להשתלט עליו"
+	line "לא תוכל" 
+	cont "להשתלט עליו"
 	prompt
 
 _CeruleanHouse2Text_74eb4::
