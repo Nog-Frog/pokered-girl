@@ -1,25 +1,28 @@
 _TM29PreReceiveText::
-	text "...Wait! Don't"
-	line "say a word!"
+	text "חכה! אל"
+	line "...תגיד מילה"
 
-	para "You wanted this!"
+	para "!אתה רצית בזה"
 	prompt
 
 _ReceivedTM29Text::
-	text "<PLAYER> received"
+	text "קיבל <PLAYER>"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM29ExplanationText::
-	text "TM29 is PSYCHIC!"
+	text "!PSYCHIC זה TM29";TODO
 
-	para "It can lower the"
-	line "target's SPECIAL"
-	cont "abilities."
+	para "זה מאפשר"
+	line "להחליש את"
+	cont "יכולות"
+	cont "SPECIALה"
+	cont ".של היריב"
 	done
 
 _TM29NoRoomText::
-	text "Where do you plan"
-	line "to put this?"
+	text "היכן אתה"
+	line "מתכוון לשים"
+	cont "?את זה"
 	done
