@@ -1,48 +1,50 @@
 _CeruleanHouse2Text_74e77::
 	text "רק למאמנים"
-	line "מיומנים"
-	cont "יש תגי מכונים."
+	line "מיומנים יש תגי"
+	cont "מכונים."
 
 	para "אני רואה שיש לך"
-	line ".לפחות אחד"
+	line "לפחות אחד."
 
 	para "התגים אוצרים"
-	line "!סודות מופלאים"
+	line "בחובם סודות"
+	cont "מופלאים!"
 	prompt
 
 _CeruleanHouse2Text_74e7c::
-	text "...ובכן"
+	text "ובכן..."
 
 	para "איזה משמונת התגים"
 	line "עליי לתאר?"
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "תחזור לבקר"
-	line ".בכל זמן שתרצה"
+	text "תחזור לבקר מתי"
+	line "שתרצה."
 	done
 
 _CeruleanHouse2Text_74e96::
 	text "נתון המתקפה של"
 	line "כל ה#ימונים"
-	cont ".יגדל מעט"
+	cont "יגדל מעט."
 
-	para "בנוסף, זה יאפשר"
-	line "להשתמש במהלך"
+	para "בנוסף, התג יאפשר"
+	line "לך להשתמש במהלך"
 	cont "הבזק מתי שתרצה."
 	prompt
 
 _CeruleanHouse2Text_74e9b::
-	text "30 ימון עד רמה#"
-	line ".יציית לך"
+	text "#ימונים עד רמה"
+	line "03 יצייתו לך."
 
-	para "מרמה 30 ומעלה"
-	line "לא תוכל "
-	cont "!להשתלט עליו"
+	para "מרמה 03 ומעלה"
+	line "לא תוכל להשתלט"
+	cont "עליהם!"
 
-	para "בנוסף, זה יאפשר"
+	para "בנוסף, התג יאפשר"
 	line "לך להשתמש במהלך"
-	cont "חיתוך לא רק בקרב."
+	cont "חיתוך גם מחוץ"
+	cont "לקרב."
 	prompt
 
 _CeruleanHouse2Text_74ea0::
@@ -50,53 +52,54 @@ _CeruleanHouse2Text_74ea0::
 	line "כל ה#ימונים"
 	cont "יגדל מעט."
 	
-	para "בנוסף, זה"
-	line "יאפשר לך"
-	cont "להשתמש בתעופה"
-	cont ".לא רק בקרב"
+	para "בנוסף, התג יאפשר"
+	line "לך להשתמש במהלך"
+	cont "תעופה גם מחוץ"
+	cont "לקרב."
 	prompt
 
 _CeruleanHouse2Text_74ea5::
-	text "50 ימון עד רמה#"
-	line ".יציית לך"
+	text "#ימונים עד רמה"
+	line "05 יצייתו לך."
 
-	para "מרמה 50 ומעלה"
-	line "לא תוכל"
-	cont ".להשתלט עליו"
+	para "מרמה 05 ומעלה"
+	line "לא תוכל להשתלט"
+	cont "עליהם!"
 
-	para "בנוסף, זה"
-	line "יאפשר לך"
-	cont "להשתמש בעוצמה"
-	cont ".לא רק בקרב"
+	para "בנוסף, התג יאפשר"
+	line "לך להשתמש במהלך"
+	cont "עוצמה גם מחוץ"
+	cont "לקרב."
 	prompt
 
 _CeruleanHouse2Text_74eaa::
 	text  "נתון ההגנה של"
 	line  "כל ה#ימונים"
-	cont  ".יגדל מעט"
+	cont  "יגדל מעט."
 
-	para "בנוסף, זה "
-	line "יאפשר לך להשתמש"
-	cont "במהלך גלישה"
-	cont ".לא רק בקרב"
+	para "בנוסף, התג יאפשר"
+	line "לך להשתמש במהלך"
+	cont "גלישה גם מחוץ"
+	cont "לקרב."
 	prompt
 
 _CeruleanHouse2Text_74eaf::
-	text "70 ימון עד רמה#"
-	line ".יציית לך"
+	text "#ימונים עד רמה"
+	line "07 יצייתו לך."
 
-	para "מרמה 70 ומעלה"
-	line "לא תוכל" 
-	cont "להשתלט עליו"
+	para "מרמה 07 ומעלה"
+	line "לא תוכל להשתלט"
+	cont "עליהם!"
 	prompt
 
 _CeruleanHouse2Text_74eb4::
-	text "יכולת ההתקפה המיוחד"
-	line "של ה#ימון שלך"
-	cont "תגדל מעט."
+	text "נתון ההתקפה"
+	line "המיוחדת של כל"
+	cont "ה#ימונים יגדל"
+	cont "מעט."
 	prompt
 
 _CeruleanHouse2Text_74eb9::
 	text "כל ה#ימונים"
-	line "!יצייתו לך"
+	line "יצייתו לך!"
 	prompt
