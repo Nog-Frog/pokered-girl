@@ -4,7 +4,8 @@ _MoltresBattleText::
 _VictoryRoad2BattleText1::
 	text "דרך הניצחון היא"
 	line "המבחן האחרון"
-	cont "עבור מאמני #ימון!"
+	cont "עבור מאמני"
+	cont "#ימון!"
 	done
 
 _VictoryRoad2EndBattleText1::

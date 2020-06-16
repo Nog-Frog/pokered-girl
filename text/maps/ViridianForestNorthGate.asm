@@ -1,6 +1,6 @@
 _ViridianForestExitText1::
-	text "#ימונים רבים חיים"
-	line "רק ביערות"
+	text "#ימונים רבים"
+	line "חיים רק ביערות"
 	cont "ובמערות."
 
 	para "אתה צריך לחפש"

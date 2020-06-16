@@ -114,9 +114,9 @@ _OaksLabGivePokeballsText1::
 	text "אלון: אם אתה רוצה"
 	line "לדעת פרטים"
 	cont "מדויקים על"
-	cont "#ימון, עליך לעשות"
-	cont "יותר מרק לראות"
-	cont "אותו."
+	cont "#ימון, עליך"
+	cont "לעשות יותר מרק"
+	cont "לראות אותו."
 
 	para "עליך לתפוס אותו!"
 	line "השתמש באלה כדי"
@@ -138,7 +138,8 @@ _OaksLabGivePokeballsText2::
 	cont "אותו!"
 
 	para "לא תמיד תצליח"
-	line "לתפוס את ה#ימון."
+	line "לתפוס את"
+	cont "ה#ימון."
 
 	para "#ימון בריא יכול"
 	line "להימלט מהכדור."

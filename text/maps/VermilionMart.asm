@@ -1,7 +1,8 @@
 _VermilionMartText2::
 	text "יש אנשים רעים"
-	line "שמשתמשים ב#ימונים"
-	cont "כדי לבצע פשעים."
+	line "שמשתמשים"
+	cont "ב#ימונים כדי"
+	cont "לבצע פשעים."
 
 	para "כנופיית רוקט"
 	line "סוחרים ב#ימונים"
@@ -14,9 +15,10 @@ _VermilionMartText2::
 	done
 
 _VermilionMartText3::
-	text "אני חושב ש#ימונים"
-	line "יכולים להיות"
-	cont "טובים או רעים,"
-	cont "תלוי במאמן שלהם."
+	text "אני חושב"
+	line "ש#ימונים יכולים"
+	cont "להיות טובים או"
+	cont "רעים, תלוי במאמן"
+	cont "שלהם."
 	done
 

@@ -6,7 +6,8 @@ _LTSurgePostBattleAdviceText::
 	line "בהחלט עוצמתיות!"
 
 	para "אבל, הן יהיו חסרות"
-	line "מול #ימוני אדמה!"
+	line "תועלת מול"
+	cont "#ימוני אדמה!"
 	done
 
 _LTSurgeThunderbadgeInfoText::

@@ -42,8 +42,8 @@ _BillThankYouText::
 	cont "חייב לך!"
 
 	para "רגע, באת לראות"
-	line "את אוסף ה#ימונים"
-	cont "שלי?"
+	line "את אוסף"
+	cont "ה#ימונים שלי?"
 	cont "לא?"
 	cont "איזה באסה."
 

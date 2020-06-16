@@ -13,8 +13,8 @@ _VermilionHouse2Text_560b6::
 	text "אדיר! אני אוהב"
 	line "את הסגנון שלך!"
 
-	para "קח את זה"
-	line "ותתחיל לדוג, חבוב!"
+	para "קח את זה, ותתחיל"
+	line "לדוג, חבוב!"
 
 	para "<PLAYER> received"
 	line "an @"

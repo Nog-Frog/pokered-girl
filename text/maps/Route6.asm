@@ -52,8 +52,8 @@ _Route6EndBattleText4::
 	prompt
 
 _Route6AfterBattleText4::
-	text "אני צריך לשאת"
-	line "יותר #ימונים איתי"
+	text "אני צריך לשאת יותר"
+	line "#ימונים איתי"
 	cont "לבטחוני האישי."
 	done
 
@@ -85,9 +85,10 @@ _Route6EndBattleText6::
 	prompt
 
 _Route6AfterBattleText6::
-	text "אוף. האם ה#ימונים"
-	line "שלי חלשים? או"
-	cont "שאני פשוט גרוע?"
+	text "אוף. האם"
+	line "ה#ימונים שלי"
+	cont "חלשים? או שאני"
+	cont "פשוט גרוע?"
 	done
 
 _Route6Text7::

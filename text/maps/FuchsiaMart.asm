@@ -8,6 +8,8 @@ _FuchsiaMartText2::
 
 _FuchsiaMartText3::
 	text "ניסית X מהירות?"
-	line "זה מגביר את המהירות"
-	cont "של ה#ימונים בקרב!"
+	line "זה מגביר את"
+	cont "המהירות של"
+	cont "ה#ימון שלך"
+	cont "בקרב!"
 	done

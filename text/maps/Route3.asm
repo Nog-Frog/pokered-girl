@@ -21,8 +21,8 @@ _Route3EndBattleText1::
 	prompt
 
 _Route3AfterBattleText1::
-	text "ישנם סוגים"
-	line "נוספים של #ימונים"
+	text "ישנם סוגים נוספים"
+	line "של #ימונים"
 	cont "מלבד אלו"
 	cont "שמצאת ביער!"
 	done
@@ -127,7 +127,8 @@ _Route3EndBattleText7::
 _Route3AfterBattleText7::
 	text "#ימונים מאומנים"
 	line "חזקים יותר"
-	cont "מ#ימונים פראיים!"
+	cont "מ#ימונים"
+	cont "פראים!"
 	done
 
 _Route3BattleText8::
