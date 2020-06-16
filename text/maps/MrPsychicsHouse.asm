@@ -12,12 +12,12 @@ _ReceivedTM29Text::
 	text "!@@"
 
 _TM29ExplanationText::
-	text "!PSYCHIC זה TM29";TODO
+	text "!זה על-חושי TM29";TODO
 
 	para "זה מאפשר"
 	line "להחליש את"
-	cont "יכולות"
-	cont "SPECIALה"
+	cont "היכולות"
+	cont "המיוחדות"
 	cont ".של היריב"
 	done
 
