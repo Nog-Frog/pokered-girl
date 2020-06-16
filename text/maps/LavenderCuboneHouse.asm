@@ -14,8 +14,8 @@ _LavenderHouse2Text_1d9dc::
 	done
 
 _LavenderHouse2Text_1d9e1::
-	text "הרוח שב#MON" ; TODO
-	line "TOWER נעלמה!" ; TODO
+	text "הרוח שבמגדל"
+	line "ה#ימון נעלמה!"
 
 	para "מישהו כנראה"
 	line "עזר לה להירגע!"

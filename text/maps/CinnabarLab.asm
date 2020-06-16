@@ -11,20 +11,20 @@ _Lab1Text1::
 
 _Lab1Text2::
 	text "תמונה של מייסד"
-	line "ה-LAB, DR.FUJI!" ; TODO
+	line "המעבדה, ד″ר דרדר!" 
 	done
 
 _Lab1Text3::
-	text "#MON LAB" ; TODO
+	text "מעבדת ה#ימון"
 	line "חדר ישיבות"
 	done
 
 _Lab1Text4::
-	text "#MON LAB" ; TODO
+	text "מעבדת ה#ימון"
 	line "חדר מו″פ"
 	done
 
 _Lab1Text5::
-	text "#MON LAB" ; TODO
+	text "מעבדת ה#ימון"
 	line "חדר בדיקות"
 	done

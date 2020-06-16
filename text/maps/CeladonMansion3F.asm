@@ -37,7 +37,7 @@ _GameDesignerText::
 _CompletedDexText::
 	text "ואו! מעולה!"
 	line "סיימת למלא את"
-	cont "שלך ה#DEX!" ;TODO
+	cont "ה#ידע שלך!"
 	cont "ברכותיי!"
 	cont "...@@"
 

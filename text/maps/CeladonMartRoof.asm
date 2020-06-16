@@ -5,7 +5,7 @@ _CeladonMartRoofText_484ee::
 _CeladonMartRoofText_484f3::
 	text "יאי!"
 
-	para "FRESH WATER!" ; TODO
+	para "מים מינרלים!"
 
 	para "תודה רבה!"
 
@@ -23,16 +23,16 @@ _CeladonMartRoofText_484fe::
 
 	para "@"
 	TX_RAM wcf4b
-	text " מכיל"
-	line "ICE BEAM!" ; TODO
+	text " מכיל את"
+	line "המתקפה קרן קרח!"
 
-	para "זה יכול להקפיא את"
+	para "היא יכולה להקפיא"
 	line "האויב לפעמים!@@"
 
 _CeladonMartRoofText_48504::
 	text "יאי!"
 
-	para "SODA POP!" ; TODO
+	para "משקה קל!"
 
 	para "תודה רבה!"
 
@@ -50,8 +50,9 @@ _CeladonMartRoofText_4850f::
 
 	para "@"
 	TX_RAM wcf4b
-	text " מכיל"
-	line "ROCK SLIDE!" ; TODO
+	text " מכיל את"
+	line "המתקפה מפולת"
+	cont "סלעים!"
 
 	para "זה יכול להרתיע את"
 	line "האויב לפעמים!@@"
@@ -59,7 +60,7 @@ _CeladonMartRoofText_4850f::
 _CeladonMartRoofText_48515::
 	text "יאי!"
 
-	para "LEMONADE!" ; TODO
+	para "לימונדה!"
 
 	para "תודה רבה!"
 
@@ -73,8 +74,8 @@ _ReceivedTM49Text::
 _CeladonMartRoofText_48520::
 	text ""
 
-	para "TM49 מכיל"
-	line "TRI ATTACK!@@" ; TODO
+	para "94MT מכיל"
+	line "מתקפה משולשת!"
 
 _CeladonMartRoofText_48526::
 	text "אין לך מקום"
@@ -109,8 +110,8 @@ _CeladonMartRoofText4::
 	done
 
 _CeladonMartRoofText6::
-	text "ROOFTOP SQUARE:" ; TODO
-	line "VENDING MACHINES" ; TODO
+	text "קומת גג:"
+	line "מכונות ממכר"
 	done
 
 _VendingMachineText1::

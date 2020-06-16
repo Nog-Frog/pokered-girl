@@ -14,12 +14,12 @@ _CeruleanHouse2Text_74e77::
 _CeruleanHouse2Text_74e7c::
 	text "ובכן..."
 
-	para "איזה משמונת ה"
-	line "?עליי לתאר BADGEs";TODO
+	para "איזה משמונת התגים"
+	line "עלי לתאר?"
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "תחזור לבקר מתי"
+	text "חזור לבקר מתי"
 	line "שתרצה."
 	done
 

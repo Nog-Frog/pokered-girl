@@ -1,9 +1,8 @@
 _FightingDojoText_5ce8e::
 	text "אוח!"
 
-	para "אני הוא ה KARATE";TODO
-	line "MASTER! אני ה";TODO
-	cont "LEADER כאן!";TODO
+	para "אני מאסטר הקאראטה!"
+	line "אני המנהיג כאן!"
 
 	para "אתה קורא"
 	line "עלינו תיגר?"
@@ -95,9 +94,8 @@ _FightingDojoAfterBattleText3::
 _FightingDojoBattleText4::
 	text "הואהה!"
 
-	para "אתה עובר את הגבול"
-	line "ב FIGHTING"
-	cont "DOJO!";TODO
+	para "אתה מסיג גבול"
+	line "בדוג'ו שלנו!"
 	done
 
 _FightingDojoEndBattleText4::
@@ -114,13 +112,13 @@ _FightingDojoAfterBattleText4::
 _WantHitmonleeText::
 	text "אתה רוצה את"
 	line "ה#ימון הבועט"
-	cont "HITMONLEE?";TODO
+	cont "הכמפמדג'ה?"
 	done
 
 _WantHitmonchanText::
 	text "אתה רוצה את"
 	line "ה#ימון המתאגרף"
-	cont "HITMONCHAN?";TODO
+	cont "הכמפארד?"
 	done
 
 _OtherHitmonText::
