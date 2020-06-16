@@ -1,6 +1,6 @@
 _FuchsiaCityText1::
-	text "ניסית את"
-	line "?SAFARI GAMEה";TODO
+	text "ביקרת ב"
+	line "?איזור הספארי"
 	cont "רק שם תוכל"
 	cont ".לתפוס #ימונים"
 	done
@@ -8,12 +8,12 @@ _FuchsiaCityText1::
 _FuchsiaCityText2::
 	text "יש גן חיות"
 	line "מול הכניסה"
-	cont "SAFARI ZONEל";TODO
+	cont ".איזור הספארי"
 
 	para "בחוץ מאחורה"
-	line "SAFARI GAME נמצא";TODO
-	cont "כדי לתפוס"
-	cont "ימונים#"
+	line "נמצא משחק ספארי"
+	cont "שם ניתן לתפוס"
+	cont ".ימונים#"
 	done
 
 _FuchsiaCityText3::
@@ -33,18 +33,18 @@ _FuchsiaCityText5::
 	done
 
 _FuchsiaCityText11::
-	text "FUCHSIA CITY";TODO
+	text "עיר השושנה"
 	line "היזהרו! זה"
 	cont "Passion Pink!";TODO
 	done
 
 _FuchsiaCityText13::
-	text "SAFARI GAME";TODO
+	text "משחק ספארי"
 	line "#MON-U-CATCH!";TODO
 	done
 
 _FuchsiaCityText16::
-	text "SAFARI ZONE";TODO
+	text "איזור ספארי"
 	line "WARDEN's HOME";TODO
 	done
 
