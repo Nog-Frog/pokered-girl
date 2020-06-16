@@ -1,13 +1,13 @@
 _LavenderPokecenterText2::
-	text "TEAM ROCKET";TODO
+	text "צוות רוקט"
 	line "יעשו הכל"
 	cont "!כדי להשיג זהב"
 	done
 
 _LavenderPokecenterText3::
 	text "ראיתי את אמו"
-	line "CUBONE של";TODO
+	line "של רשרש"
 	cont "מתה בנסיון"
 	cont "לברוח מ"
-	cont "TEAM ROCKET";TODO
+	cont ".צוות רוקט"
 	done
