@@ -1,128 +1,125 @@
 _VermilionCityText1::
-	text "אנו מקפידים לשמור"
-	line "!על אוויר נקי"
+	text "אנחנו נזהרים"
+	line "מזיהום אוויר!"
 
-	para "GRIMERשמענו ש";TODO
-	line "מכפיל את עצמו"
-	cont "!כשנמצא ברפש רעיל"
+	para "שמענו שטנפאי מתרבה"
+	line "כשהוא בא במגע עם"
+	cont "רפש מזוהם!"
 	done
 
 _VermilionCityTextDidYouSee::
-	text "S.S.ANNE ראית את ";TODO
-	line "?עוגנת בנמל"
+	text "ראית שהספינה אנה"
+	line "עגנה בנמל?"
 	done
 
 _VermilionCityTextSSAnneDeparted::
-	text "S.S.ANNE,ובכן";TODO
+	text "אז, הספינה אנה"
 	cont "!הפליגה"
 
 	para "היא תחזור בעוד"
-	line ".שנה בערך"
+	line "כשנה."
 	done
 
 _SSAnneWelcomeText4::
-	text "ברוכים הבאים ל"
-	line "!S.S.ANNE";TODO
+	text "ברוך הבא לספינה"
+	line "אנה!"
 	done
 
 _SSAnneWelcomeText9::
-	text "ברוכים הבאים ל"
-	line "!S.S.ANNE";TODO
+	text "ברוך הבא לספינה"
+	line "אנה!"
 
-	para "סלח לי, האם יש"
-	line "?לך כרטיס"
+	para "סלח לי, יש לך"
+	line "כרטיס?"
 	prompt
 
 _SSAnneFlashedTicketText::
-	text "מציג את<PLAYER>"
-	line "!S.S.TICKET ה";TODO
+	text "<PLAYER> הציג את"
+	line "הכרטיס לשיט!"
 	
-	text "ברוך הבא"
-	line "!S.S.ANNE ל"
+	text "נהדר! ברוך הבא"
+	line "לספינה אנה!"
 	done
 
 _SSAnneNoTicketText::
-	text "אין <PLAYER> ל"
-	line "S.S.TICKET את ה";TODO
-	cont ".הנחוץ"
+	text "ל<PLAYER> אין את"
+	line "הכרטיס לשיט"
+	cont "הדרוש."
 
-	para "!מצטערים"
+	para "מצטער!"
 
 	para "אתה צריך כרטיס"
-	line ".כדי לעלות לספינה"
+	line "כדי לעלות לספינה."
 	done
 
 _SSAnneNotHereText::
-	text ".הספינה מפליגה"
+	text "הספינה הפליגה."
 	done
 
 _VermilionCityText4::
-	text "אני מקים בניין"
-	line "על חלקת"
-	cont ".האדמה הזאת"
+	text "אני מתכנן להקים"
+	line "בניין בחלקה הזאת."
 
 	para "ה#ימון שלי"
-	line ".מהדק את האדמה"
+	line "מהדק את האדמה."
 	done
 
 _VermilionCityText5::
-	text "!גואהה:MACHOP";TODO
-	line "Gogogoh!@@"
+	text "גברכה: גואו!"
+	line "גוגוגו!@@"
 
 _VermilionCityText14::
 	text ""
-	para "דורך על MACHOP";TODO
-	line "האדמה כדי "
-	cont ".לשטח אותה"
+	para "גברכה רוקע את"
+	line "האדמה ברגליו כדי"
+	cont "לשטח אותה."
 	done
 
 _VermilionCityText6::
-	text "היא S.S.ANNE";TODO
-	line "ספינת תענוגות "
-	cont ".יוקרתית"
+	text "הספינה אנה היא"
+	line "ספינת תענוגות"
+	cont "יוקרתית ידועה."
 
-	para "אנו מגיעים"
-	line "VERMILIONל";TODO
-	cont ".פעם בשנה"
+	para "אנחנו מבקרים בעיר"
+	line "הארגמן פעם בשנה."
 	done
 
 _VermilionCityText7::
-	text "VERMILION CITY";TODO
-	line "The Port of";TODO
-	cont "Exquisite Sunsets";TODO
+	text "עיר הארגמן"
+	line "עיר הנמל הצבועה"
+	cont "בצבעי השקיעה"
 	done
 
 _VermilionCityText8::
-	text "NOTICE!";TODO
+	text "שימו לב!"
 
-	para "ייתכן שהכניסה ל"
-	line "חסומה ROUTE 12";TODO
-	cont "על ידי"
-	cont ".ימון ישנוני#"
+	para "דרך 21 חסומה עקב"
+	line "#ימון שנרדם על"
+	cont "השביל."
 
-	para "קיים קיצור דרך"
-	line "ROCK TUNNELב";TODO
-	cont "כדי להגיע"
-	cont "LAVENDER TOWNל";TODO
+	para "כדי להגיע לעיר"
+	line "הלבנדר, השתמשו"
+	cont "במסלול החלופי דרך"
+	cont "מנהרת הסלע."
 
-	para "VERMILION POLICE";TODO
+	para "משטרת עיר הארגמן"
 	done
 
 _VermilionCityText11::
-	text "#MON FAN CLUB";TODO
-	line "כל חובבי ה#ימונים"
-	cont "!מוזמנים"
+	text "מועדון מעריצי"
+	line "#ימון"
+	cont "כל חובבי #ימון"
+	cont "יתקבלו בברכה!"
 	done
 
 _VermilionCityText12::
-	text "VERMILION CITY";TODO
-	line "ימונים# GYM";TODO
-	cont "LEADER: LT.SURGE";TODO
+	text "עיר הארגמן"
+	line "מכון ה#ימון"
+	cont "מנהיג: סרן ברק"
 
-	para "The Lightning "
-	line "American!";TODO
+	para "האמריקאי המחשמל!"
 	done
 
 _VermilionCityText13::
-	text "VERMILION HARBOR";TODO
+	text "נמל הארגמן"
 	done
