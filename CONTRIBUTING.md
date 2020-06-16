@@ -118,6 +118,8 @@ If you'd like an English version of this document ~~despite not being able to fo
 הנה רשימה שלהם:\
 + BILL = הדר
 + MR. FUJI / DR. FUJI = מר דרדר / ד"ר דרדר
++ FISHING GURU = כהן הדיג
+
 [חזרה להתחלה](#המדריך-למתרגם-~~בגלקסיה~~)
 
 ### תווים מיוחדים
