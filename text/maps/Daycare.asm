@@ -1,62 +1,61 @@
 _DayCareIntroText::
-	text "I run a DAYCARE."
-	line "Would you like me"
-	cont "to raise one of"
-	cont "your #MON?"
+	text "אני מנהל DAYCARE." ; TODO
+	line "תרצה שאגדל את אחד"
+	cont "ה#ימונים שלך?"
 	done
 
 _DayCareWhichMonText::
-	text "Which #MON"
-	line "should I raise?"
+	text "איזה #ימון תרצה"
+	line "שאגדל?"
 	prompt
 
 _DayCareWillLookAfterMonText::
-	text "Fine, I'll look"
-	line "after @"
+	text "בסדר, אני אטפל"
+	line "ב@"
 	TX_RAM wcd6d
 	text ""
-	cont "for a while."
+	cont "לזמן מה."
 	prompt
 
 _DayCareComeSeeMeInAWhileText::
-	text "Come see me in"
-	line "a while."
+	text "בוא לראות אותי"
+	line "בעוד כמה זמן."
 	done
 
 _DayCareMonHasGrownText::
-	text "Your @"
+	text "@"
 	TX_RAM wcd6d
 	text ""
-	line "has grown a lot!"
+	line "שלך גדל בהרבה!"
 
-	para "By level, it's"
-	line "grown by @"
+	para "הוא עלה"
+	line "@"
 	TX_NUM wDayCareNumLevelsGrown,$1,$3
-	text "!"
+	text " רמות!"
 
-	para "Aren't I great?"
+	para "אני מדהים, לא?"
 	prompt
 
 _DayCareOweMoneyText::
-	text "You owe me ¥@"
+	text "אתה חייב לי@"
 	TX_BCD wDayCareTotalCost, $c2
-	text ""
-	line "for the return"
-	cont "of this #MON."
+	text "¥"
+	line "עבור החזרה של"
+	cont "ה#ימון הזה."
 	done
 
 _DayCareGotMonBackText::
-	text "<PLAYER> got"
+	text "<PLAYER> קיבל את"
 	line "@"
 	TX_RAM wDayCareMonName
-	text " back!"
+	text " בחזרה!"
 	done
 
 _DayCareMonNeedsMoreTimeText::
-	text "Back already?"
-	line "Your @"
+	text "כבר חזרת?"
+	line "ה@"
 	TX_RAM wcd6d
 	text ""
-	cont "needs some more"
-	cont "time with me."
+	cont "שלך זקוק לזמן"
+	cont "נוסף איתי."
 	prompt
