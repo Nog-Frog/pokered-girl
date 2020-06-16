@@ -1,7 +1,7 @@
 _FuchsiaHouse3Text_561bd::
 	text "אני אחיו"
 	line "הגדול של"
-	cont "!FISHING GURU";TODO
+	cont "!גורו הדייגים";TODO
 
 	para "אני אוההההב"
 	line "!לדוג"
