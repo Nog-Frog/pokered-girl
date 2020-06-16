@@ -1,30 +1,30 @@
 _LavenderMartText2::
-	text "אני מחפש חפצים"
+	text "אני מחפש פריטים"
 	line "שמעצימים את"
 	cont "יכולות ה#ימון"
     cont "בזמן קרב."
 
-	para "X מתקפה, X הגנה,"
-	line "Xמהירות, וX"
-	cont "מיוחדת הם מה"
-	cont "שאני מחפש."
+	para "פריטים כמו"
+	line "X מתקפה, X הגנה,"
+	cont "Xמהירות, וX"
+	cont "מיוחדת."
 
 	para "אתה יודע איפה"
-	line "אוכל למצוא אותם?"
+	line "אוכל למצוא כאלה?"
 	done
 
 _LavenderMartReviveText::
 	text "שמעת על החייאה?"
-	line "זה מחזיר לחיים"
-	cont "כל #ימון ממוטט!"
+	line "זה פריט שמסוגל"
+	cont "לעורר #ימון"
+	cont "שהתמוטט!"
 	done
 
 _LavenderMartNuggetText::
 	text "מצאתי גוש זהב"
 	line "בהרים."
 
-	para "חשבתי שלא"
-	line "יהיה לזה שימוש, אבל"
-	cont "מכרתי את זה בעבור"
-	cont "0005¥!"
+	para "חשבתי שזה חסר"
+	line "תועלת, אבל מכרתי"
+	cont "אותו בעד 0005¥!"
 	done
