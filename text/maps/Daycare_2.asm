@@ -1,33 +1,33 @@
 _DayCareAllRightThenText::
-	text "All right then,"
+	text "אז בסדר,"
 	line "@@"
 
 _DayCareComeAgainText::
-	text "come again."
+	text "בוא שוב."
 	done
 
 _DayCareNoRoomForMonText::
-	text "You have no room"
-	line "for this #MON!"
+	text "אין לך מקום עבור"
+	line "ה#ימון הזה!"
 	done
 
 _DayCareOnlyHaveOneMonText::
-	text "You only have one"
-	line "#MON with you."
+	text "יש לך רק #ימון"
+	line "אחד איתך."
 	done
 
 _DayCareCantAcceptMonWithHMText::
-	text "I can't accept a"
-	line "#MON that"
-	cont "knows an HM move."
+	text "אני לא יכול לקבל"
+	line "#ימון שיודע"
+	cont "התקפת HM."
 	done
 
 _DayCareHeresYourMonText::
-	text "Thank you! Here's"
-	line "your #MON!"
+	text "תודה! הנה"
+	line "ה#ימון שלך!"
 	prompt
 
 _DayCareNotEnoughMoneyText::
-	text "Hey, you don't"
-	line "have enough ¥!"
+	text "היי, אין לך מספיק"
+	line "¥!"
 	done
