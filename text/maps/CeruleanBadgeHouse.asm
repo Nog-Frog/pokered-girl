@@ -48,14 +48,13 @@ _CeruleanHouse2Text_74e9b::
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "של כל SPEEDה";TODO
-	line "ה#ימונים"
-	cont ".יעלה מעט"
-	
+	text "נתון המהירות של"
+	line "כל ה#ימונים"
+	cont "יגדל מעט."
+
 	para "בנוסף, התג יאפשר"
 	line "לך להשתמש במהלך"
-	cont "תעופה גם מחוץ"
-	cont "לקרב."
+	cont "תעופה מתי שתרצה."
 	prompt
 
 _CeruleanHouse2Text_74ea5::

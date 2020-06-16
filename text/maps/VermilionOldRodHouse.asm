@@ -1,8 +1,7 @@
 _VermilionHouse2Text_560b1::
-	text "אני ה FISHING"
-	line "GURU!" ;TODO
+	text "אני כהן הדיג!"
 
-	para "אני ממש אוהההב"
+	para "אני פשוט אווווהב"
 	line "לדוג!"
 
 	para "אתה אוהב"
@@ -16,25 +15,25 @@ _VermilionHouse2Text_560b6::
 	para "קח את זה, ותתחיל"
 	line "לדוג, חבוב!"
 
-	para "<PLAYER> received"
-	line "an @"
+	para "<PLAYER> קיבל"
+	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _VermilionHouse2Text_560bb::
 	text ""
 
-	para "דייג"
-	line "זה דרך חיים!"
+	para "דיג זו דרך"
+	line "חיים!"
 
-	para "בים, בנהרות"
-	line "צא לדוג ותתפוס"
+	para "גם בים וגם בנהר,"
+	line "צא לדוג ותפוס"
 	cont "משהו כביר,"
 	cont "צעיר!"
 	done
 
 _VermilionHouse2Text_560c0::
-	text "הו... זה כל כך"
+	text "הו... כמה"
 	line "מאכזב..."
 	done
 
@@ -42,12 +41,12 @@ _VermilionHouse2Text_560c5::
 	text "שלום לך,"
 	line "<PLAYER>!"
 
-	para "איך הדגים"
-	line "נושכים?"
+	para "איך הדגים?"
+	line "תפסת משהו?"
 	done
 
 _VermilionHouse2Text_560ca::
-	text "הו לא!"
+	text "אוי!"
 
 	para "אין לך מקום"
 	line "למתנה שלי!"

@@ -30,7 +30,8 @@ _SilphCo9AfterBattleText1::
 _SilphCo9BattleText2::
 	text "ל#ימונים שלך יש"
 	line "נקודות תורפה!"
-	cont "אני יכול לפגוע בהן!"
+	cont "אני יכול לפגוע"
+	cont "בהן!"
 	done
 
 _SilphCo9EndBattleText2::
@@ -47,7 +48,7 @@ _SilphCo9AfterBattleText2::
 
 _SilphCo9BattleText3::
 	text "אני אחד מארבעת"
-	line "ROCKET BROTHERS!" ; TODO
+	line "אחי כנופיית רוקט!"
 	done
 
 _SilphCo9EndBattleText3::

@@ -1,18 +1,18 @@
 PikachuFanText::
 	text "הבט בזנב המתוק"
-	line "של הPIKACHU שלי!" ; TODO
+	line "של הצויצוץ שלי!"
 	cont "נכון שהוא מדהים?"
 	done
 
 PikachuFanBetterText::
-	text "חה! הPIKACHU שלי" ; TODO
+	text "חה! הצויצוץ שלי"
 	line "חמוד כפליים"
 	cont "מה#ימון ההוא!"
 	done
 
 SeelFanText::
 	text "אני פשוט מתה על"
-	line "הSEEL שלי!" ; TODO
+	line "הנבים שלי!"
 
 	para "הוא מצפצף כשאני"
 	line "מחבקת אותו!"
@@ -21,22 +21,22 @@ SeelFanText::
 SeelFanBetterText::
 	text "הו!"
 
-	para "הSEEL שלי" ; TODO
+	para "הנבים שלי"
 	line "הרבה יותר חמוד!"
 	done
 
 FanClubPikachuText::
-	text "PIKACHU: Chu!" ; TODO
-	line "Pikachu!" ; TODO
+	text "צויצוץ: צוץ!"
+	line "צוי-צוץ!"
 	done
 
 FanClubSeelText::
-	text "SEEL: Kyuoo!" ; TODO
+	text "נבים: קייוו!"
 	done
 
 FanClubMeetChairText::
 	text "אני נשיא מועדון"
-	line "מעריצי ה#ימונים!"
+	line "מעריצי #ימון!"
 
 	para "האוסף שלי מונה מעל"
 	line "100 #ימונים!"
@@ -57,7 +57,7 @@ FanClubChairStoryText::
 	line "אז תקשיב טוב טוב!"
 
 	para "בבת עיני..."
-	line "RAPIDASH..." ; TODO
+	line "סוסורף..."
 
 	para "הוא...חמוד..."
 	line "מקסים...חכם..."
@@ -96,7 +96,7 @@ ExplainBikeVoucherText::
 	cont "אופניים!"
 
 	para "אל תדאג לגבי,"
-	line "הFEAROW שלי ייקח" ; TODO
+	line "הפחדרור שלי ייקח"
 	cont "אותי בתעופה לאן"
 	cont "שארצה!"
 

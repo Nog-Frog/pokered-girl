@@ -1,6 +1,6 @@
 _BrunoBeforeBattleText::
-	text "אני Bruno" ;TODO
-	line "מהELITE FOUR!" ;TODO
+	text "אני איתן מהרביעיה"
+	line "העילית!"
 
 	para "בעזרת אימונים"
 	line "מפרכים, אנשים"

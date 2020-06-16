@@ -63,7 +63,7 @@ _Route20BattleText5::
 	done
 
 _Route20EndBattleText5::
-	text "Wimpy!" ; TODO
+	text "חלשלוש!"
 	prompt
 
 _Route20AfterBattleText5::
@@ -141,7 +141,8 @@ _Route20AfterBattleText9::
 
 _Route20BattleText10::
 	text "בצנובר, האי במערב,"
-	line "יש מעבדת #ימונים."
+	line "יש מעבדת"
+	cont "#ימון."
 	cont 
 	done
 

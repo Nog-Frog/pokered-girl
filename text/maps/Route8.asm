@@ -41,7 +41,7 @@ _Route8EndBattleText3::
 	prompt
 
 _Route8AfterBattleText3::
-	text "תשלח את GRIMER" ; TODO
+	text "תשלח את טנפאי"
 	line "ראשון.. ואז.."
 	cont "ו.. ואז.."
 	done
@@ -82,7 +82,7 @@ _Route8AfterBattleText5::
 	done
 
 _Route8BattleText6::
-	text "MEOWTH כל כך מתוק!" ; TODO
+	text "מיצי כל כך מתוק!"
 	line "מיאו, מיאו, מיאו!"
 	done
 
@@ -91,14 +91,14 @@ _Route8EndBattleText6::
 	prompt
 
 _Route8AfterBattleText6::
-	text "אני חושבת שPIDGEY" ; TODO
-	line "וRATTATA" ; TODO
-	cont "חמודים גם הם!"
+	text "אני חושבת שיונדי"
+	line "ועכברסס גם"
+	cont "חמודים!"
 	done
 
 _Route8BattleText7::
 	text "אנחנו בוודאי נראות"
-	line "כמו טפשות, סתם"
+	line "כמו טיפשות, סתם"
 	cont "עומדות כאן כך!"
 	done
 

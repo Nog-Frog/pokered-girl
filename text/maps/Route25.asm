@@ -1,5 +1,5 @@
 _Route25BattleText1::
-	text "Local trainers" ; TODO 
+	text "מאמנים מקומיים,"
 	line "בואו הנה"
 	cont "והתאמנו!"
 	done
@@ -25,11 +25,11 @@ _Route25BattleText2::
 
 _Route25EndBattleText2::
 	text "אני"
-	line "לא כועס!" ; TODO 'משוגע?'
+	line "לא כועס!"
 	prompt
 
 _Route25AfterBattleText2::
-	text "בספינה אנה"
+	text "על הספינה אנה"
 	line "פגשתי מאמנים"
 	cont "מכל רחבי תבל."
 	done
@@ -77,9 +77,10 @@ _Route25EndBattleText5::
 
 _Route25AfterBattleText5::
 	text "אם ה#ימון שלך"
-	line "gets confused or" ; TODO
-	cont "falls asleep," ; TODO
-	cont "תחליף אותו!"
+	line "נהיה מבולבל או"
+	cont "נרדם, תחזיר אותו"
+	cont "לכדור ותשלח אחד"
+	cont "אחר במקומו!"
 	done
 
 _Route25BattleText6::
@@ -96,7 +97,7 @@ _Route25EndBattleText6::
 _Route25AfterBattleText6::
 	text "אתה הגעת מהר הירח?"
 	line "תוכל להביא לי"
-	cont "a CLEFAIRY?" ; TODO
+	cont "חמשדון?"
 	done
 
 _Route25BattleText7::
@@ -112,8 +113,8 @@ _Route25EndBattleText7::
 
 _Route25AfterBattleText7::
 	text "אוף!"
-	line "A ZUBAT bit me" ; TODO
-	cont "back in there." ; TODO
+	line "כשהייתי במערה,"
+	cont "אצלף נשך אותי."
 	done
 
 _Route25BattleText8::
@@ -152,7 +153,7 @@ _Route25AfterBattleText9::
 	done
 
 _Route25Text11::
-	text "SEA COTTAGE" ; TODO
-	line "BILL גר כאן!" ; TODO
+	text "בקתת חוף"
+	line "הדר גר כאן!"
 	done
 
