@@ -28,18 +28,18 @@ _DayCareMonHasGrownText::
 	text ""
 	line "שלך גדל בהרבה!"
 
-	para "לפי רמות, הוא עלה"
+	para "הוא עלה"
 	line "@"
 	TX_NUM wDayCareNumLevelsGrown,$1,$3
-	text "!"
+	text " רמות!"
 
 	para "אני מדהים, לא?"
 	prompt
 
 _DayCareOweMoneyText::
-	text "אתה חייב לי ¥@"
+	text "אתה חייב לי@"
 	TX_BCD wDayCareTotalCost, $c2
-	text ""
+	text "¥"
 	line "עבור החזרה של"
 	cont "ה#ימון הזה."
 	done
