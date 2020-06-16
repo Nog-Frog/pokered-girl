@@ -1,7 +1,7 @@
 _PewterGymText_5c49e::
-	text "אני צור!"
-	line "אני המנהיג של"
-	cont "מכון הכספית!"
+	text "אני BROCK!";TODO
+	line "אני PEWTER's GYM";TODO
+	cont "LEADER!";TODO
 
 	para "אני מאמין בכוחם"
 	line "של סלעים, הגנה,"

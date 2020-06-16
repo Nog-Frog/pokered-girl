@@ -63,7 +63,7 @@ _TM31NoRoomText::
 	line "את זה?@@"
 
 _CopycatsHouse2FText2::
-	text "שנישלו: גיייה!"
+	text "DODUO: Giiih!" ; TODO
 
 	para "מראה, מראה,"
 	line "שעל הקיר,"
@@ -91,7 +91,7 @@ _CopycatsHouse2FText_5cd17::
 	line "תחביב: לאסוף"
 	cont "בובות!"
 	cont "#ימון אהוב:"
-	cont "חמשדון!"
+	cont "CLEFAIRY!" ; TODO
 	done
 
 _CopycatsHouse2FText_5cd1c::

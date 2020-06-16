@@ -1,5 +1,5 @@
 _CeruleanPokecenterText2::
-	text "הדר הזה!"
+	text "ה-BILL הזה!" ; TODO
 
 	para "שמעתי שהוא יעשה"
 	line "כל דבר כדי להשיג"
@@ -7,14 +7,14 @@ _CeruleanPokecenterText2::
 	done
 
 _CeruleanPokecenterText3::
-	text "שמעת על הדר?"
+	text "שמעת על BILL?"
 
 	para "כולם קוראים"
-	line "לו #יטורף!"
+	line "לו #MANIAC!" ; TODO
 
 	para "אבל אני חושב"
 	line "שאנשים סתם"
-	cont "מקנאים בהדר."
+	cont "מקנאים ב-BILL." ; TODO
 
 	para "מי לא היה"
 	line "רוצה להשוויץ"

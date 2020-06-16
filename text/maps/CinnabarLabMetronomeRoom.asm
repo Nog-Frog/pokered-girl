@@ -16,9 +16,9 @@ _ReceivedTM35Text::
 _TM35ExplanationText::
 	text "טיק-טיק-טיק!"
 	line "זה הצליל של"
-	cont "פעמן!"
+	cont "METRONOME!" ; TODO
 
-	para "זה מכוון את המוח"
+	para "זה מכוונן את המח"
 	line "של ה#ימון שלך"
 	cont "להשתמש בהתקפות"
 	cont "שהוא לא מכיר!"
@@ -30,7 +30,7 @@ _TM35NoRoomText::
 	done
 
 _Lab3Text2::
-	text "פאתו יכול להתפתח"
+	text "EEVEE יכול להתפתח" ; TODO
 	line "ל-1 מתוך 3 סוגים"
 	cont "של #ימונים."
 	done
@@ -41,18 +41,18 @@ _Lab3Text3::
 	para "..."
 
 	para "3 הציפורים האגדיות"
-	line "הן ה#ימונים"
-	cont "קיפאוואחד, חשמתנן,"
-	cont "ומותלאתה."
+	line "הם ה#ימונים"
+	cont "ARTICUNO, ZAPDOS" ; TODO
+	cont "and MOLTRES." ; TODO
 
 	para "מיקומם אינו ידוע."
 
 	para "אנחנו מתכננים"
 	line "לחקור את המערה"
-	cont "שליד עיר הטורקיז."
+	cont "בקרבת CERULEAN." ; TODO
 
-	para "מאת: צוות מחקר"
-	line "ה#ימון"
+	para "מאת: #MON" ; TODO
+	line "RESEARCH TEAM" ; TODO
 
 	para "..."
 	done

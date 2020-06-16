@@ -1,5 +1,5 @@
 _CeruleanMartText2::
-	text "השתמש בדוחה כדי"
+	text "השתמש ב-REPEL כדי" ; TODO
 	line "להרחיק חרקים"
 	cont "ו#ימונים חלשים."
 
@@ -11,8 +11,8 @@ _CeruleanMartText2::
 	done
 
 _CeruleanMartText3::
-	text "ראית איזה"
-	line "ממתק נדיר?"
+	text "ראית איזו"
+	line "RARE CANDY?" ; TODO
 
 	para "היא אמורה לגרום"
 	line "ל#ימון לעלות"

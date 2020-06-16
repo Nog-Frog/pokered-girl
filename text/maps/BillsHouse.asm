@@ -3,8 +3,8 @@ _BillsHouseText_1e865::
 	line "#ימון!"
 	cont "...עובדים עליך!"
 
-	para "תקרא לי הדר!"
-	line "אני #יטורף בדם"
+	para "תקרא לי BILL!" ; TODO
+	line "אני #MANIAC בדם" ; TODO
 	cont "ובנשמה!"
 	cont "מה יש לך? אתה לא"
 	cont "מאמין לי?"
@@ -37,7 +37,7 @@ _BillsHouseText_1e86f::
 	prompt
 
 _BillThankYouText::
-	text "הדר: יש!"
+	text "BILL: יש!" ; TODO
 	line "תודה, חביבי! אני"
 	cont "חייב לך!"
 
@@ -81,7 +81,7 @@ _BillsHouseText_1e8cb::
 	done
 
 _BillsHouseText_1e8da::
-	text "הדר: אחי, אתה"
+	text "BILL: אחי, אתה" ; TODO
 	line "חייב להסתכל על"
 	cont "ה#ימונים"
 	cont "הנדירים שיש"

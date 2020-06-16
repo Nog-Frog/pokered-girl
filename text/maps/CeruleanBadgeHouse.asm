@@ -14,8 +14,8 @@ _CeruleanHouse2Text_74e77::
 _CeruleanHouse2Text_74e7c::
 	text "ובכן..."
 
-	para "איזה משמונת התגים"
-	line "עליי לתאר?"
+	para "איזה משמונת ה"
+	line "?עליי לתאר BADGEs";TODO
 	done
 
 _CeruleanHouse2Text_74e81::
@@ -48,9 +48,9 @@ _CeruleanHouse2Text_74e9b::
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "נתון המהירות של"
-	line "כל ה#ימונים"
-	cont "יגדל מעט."
+	text "של כל SPEEDה";TODO
+	line "ה#ימונים"
+	cont ".יעלה מעט"
 	
 	para "בנוסף, התג יאפשר"
 	line "לך להשתמש במהלך"

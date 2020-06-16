@@ -1,25 +1,23 @@
 _IndigoPlateauLobbyText2::
-	text "יו!"
-	line "אלופצ'יק!"
+	text "!יו! אלופצ'יק"
 
-	para "בליגת ה#ימון"
+	para "#MON LEAGUEב";TODO
 	line "תאלץ להילחם נגד"
-	cont "חברי הרביעיה"
-	cont "העילית אחד אחרי"
-	cont "השני."
+	cont "ELITE FOURה";TODO
+	cont ".אחד אחרי השני"
 
 	para "אם תפסיד, תאלץ"
-	line "להתחיל הכל מחדש!"
-	cont "קדימה! אתה יכול!"
+	line "!להתחיל הכל מחדש"
+	cont "!קדימה! אתה יכול"
 	done
 
 _IndigoPlateauLobbyText3::
-	text "מרגע זה, תלחם"
-	line "נגד חברי הרביעיה"
-	cont "אחד-אחד ברצף!"
+	text "מרגע זה,תלחם"
+	line "ELITE FOURנגד ה";TODO
+	cont "!אחד אחרי השני"
 
-	para "אם תביס את כולם!"
+	para ",אם תביס את כולם"
 	line "הדלת תיפתח"
-	cont "למאמן הבא!"
-	cont "בהצלחה!"
+	cont "!למאמן הבא"
+	cont "!בהצלחה"
 	done

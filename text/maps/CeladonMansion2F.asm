@@ -1,4 +1,4 @@
 _CeladonMansion2Text1::
-	text "גיים פריק"
+	text "GAME FREAK" ;TODO
 	line "חדר פגישות"
 	done

@@ -86,7 +86,7 @@ DisplayPCMainMenu::
 	ret
 
 SomeonesPCText:   db "המחשב של ?@"
-BillsPCText:      db "המחשב של הדר@"
+BillsPCText:      db "המחשב של BILL@" ; TODO
 PlayersPCText:    db "המחשב של @"
 OaksPCText:       db "המחשב של אלון@"
 PKMNLeaguePCText: db "היכל התהילה@"

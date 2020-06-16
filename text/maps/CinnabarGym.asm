@@ -51,7 +51,7 @@ _ReceivedTM38Text::
 _TM38ExplanationText::
 	text ""
 
-	para "83MT מכיל"
+	para "TM38 מכיל" ;TODO
 	line "את המתקפה להבה"
 	cont "מתפרצת!"
 

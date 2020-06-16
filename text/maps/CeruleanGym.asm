@@ -44,13 +44,13 @@ _CeruleanGymText_5c7c8::
 	cont "חדשים!"
 
 	para "אתה יכול גם לקחת"
-	line "את הMT האהוב"
+	line "את הTM האהוב" ; TODO
 	cont "עליי!"
 	done
 
 _ReceivedTM11Text::
 	text "<PLAYER> קיבל"
-	line "11MT!@@"
+	line "TM11!@@" ; TODO
 
 _CeruleanGymText_5c7d3::
 	text "תפנה מקום בתיק"
@@ -105,8 +105,8 @@ _CeruleanGymAfterBattleText2::
 	done
 
 _CeruleanGymText_5c82a::
-	text "יו!"
-	line "אלופצ'יק!"
+	text "Yo! Champ in" ; TODO
+	line "making!" ; TODO
 
 	para "שמע עצה!"
 

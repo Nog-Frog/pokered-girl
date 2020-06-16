@@ -3,8 +3,8 @@ _CinnabarIslandText8::
 	done
 
 _CinnabarIslandText1::
-	text "להב ממכון"
-	line "הצנובר הוא אדם"
+	text "CINNABAR GYM's" ; TODO
+	line "BLAINE הוא אדם" ; TODO
 	cont "משונה שחי באי"
 	cont "כבר עשרות שנים."
 	done
@@ -16,19 +16,19 @@ _CinnabarIslandText2::
 	done
 
 _CinnabarIslandText3::
-	text "אי הצנובר"
+	text "CINNABAR ISLAND" ; TODO
 	line "העיירה הבוערת של"
 	cont "תשוקה לוהטת"
 	done
 
 _CinnabarIslandText6::
-	text "מעבדת ה#ימון"
+	text "#MON LAB" ; TODO
 	done
 
 _CinnabarIslandText7::
-	text "אי הצנובר"
-	line "מכון ה#ימון"
-	cont "מנהיג: להב"
+	text "CINNABAR ISLAND" ; TODO
+	line "#MON GYM" ; TODO
+	cont "LEADER: BLAINE" ; TODO
 
 	para "אלוף החידות"
 	line "חמום המח!"
