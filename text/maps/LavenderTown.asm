@@ -1,6 +1,6 @@
 _LavenderTownText_4413c::
 	text "אתה מאמין ב"
-	line "GHOSTs?";TODO
+	line "רוחות?"
 	done
 
 _LavenderTownText_44141::
@@ -24,37 +24,39 @@ _LavenderTownText2::
 
 	para "טקסי אזכרה"
 	line "מתקיימים ב"
-	cont "#MON TOWER.";TODO
+	cont "מגדל הפוקימון"
 	done
 
 _LavenderTownText3::
-	text "מופיעים GHOST";TODO
-	line "ימונים# TOWER";TODO
+	text "רוחות נמצאים"
+	line "במגדל הפוקימון"
 
 	para "אני חושב"
 	line "שהם רוחות"
 	cont "של #ימונים"
-	cont ".הרגו ROCKETsש.";TODO
+	cont "שצוות רוקט"
+	cont ".השמידו"
 	done
 
 _LavenderTownText4::
-	text "LAVENDER TOWN";TODO
-	line "The Noble Purple";TODO
-	cont "Town";TODO
+	text "עיר הלבנדר"
+	line "העיר הסגולה"
+	cont ".והאצילית"
 	done
 
 _LavenderTownText5::
 	text "!חדש SILPH SCOPE!";TODO
 
-	para "Make the Invisible";TODO
-	line "Plain to See!";TODO
+	para "להפוך את"
+	line "את הבלתי נראה"
+	cont "!לנראה"
 
-	para "SILPH CO.";TODO
+	para "סילף בע"מ"
 	done
 
 _LavenderTownText8::
 	text "LAVENDER VOLUNTEER";TODO
-	line "#MON HOUSE";TODO
+	line ".בית ה#ימון"
 	done
 
 _LavenderTownText9::
