@@ -4,7 +4,7 @@ _LTSurgePreBattleText::
 	cont "עושה פה?"
 
 	para "אתה לא תשרוד"
-	line "זמן רב בקרב"
+	line "זמן רב בקרב!"
 	cont "זה בטוח!"
 
 	para "אני אומר לך,"
