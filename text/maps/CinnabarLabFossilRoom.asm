@@ -3,8 +3,8 @@ _Lab4Text_75dc6::
 
 	para "אני דוקטור חשוב!"
 
-	para "אני לחקור כאן"
-	line "מאובנים #ימון"
+	para "אני חוקר כאן"
+	line "מאובני #ימון"
 	cont "נדירים!"
 
 	para "אתה! יש לך מאובן"
@@ -12,7 +12,7 @@ _Lab4Text_75dc6::
 	prompt
 
 _Lab4Text_75dcb::
-	text "לא! רע מדי!"
+	text "לא! חבל!"
 	done
 
 _Lab4Text_75dd0::
@@ -44,13 +44,12 @@ _Lab4Text_610ae::
 	line "@"
 	TX_RAM wcf4b
 	text ","
-	cont "#ימון שכבר!"
+	cont "#ימון שכבר"
 	cont "נכחד!"
 
 	para "מכונת ההחייאה שלי"
-	line "שלי תהפוך את"
-	cont "ה#ימון הזה לחי"
-	cont "שוב!"
+	line "תהפוך את ה#ימון"
+	cont "הזה לחי שוב!"
 	done
 
 _Lab4Text_610b3::
