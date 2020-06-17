@@ -12,7 +12,7 @@ _SaffronGateText_8aaa9::
 	cont "..."
 	cont "הא? אני יכול"
 	cont "לקבל את המשקה הזה?"
-	cont "אלוהים, תודה!@@"
+	cont "וואי, תודה!@@"
 
 _SaffronGateText_1dff1::
 	text ""
