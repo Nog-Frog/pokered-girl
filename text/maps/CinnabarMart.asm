@@ -6,6 +6,6 @@ _CinnabarMartText2::
 
 _CinnabarMartText3::
 	text "זה אף פעם לא מזיק"
-	line "לצבור חפצים"
-	cont "נוספים!"
+	line "לקחת איתך"
+	cont "ספיירים!"
 	done
