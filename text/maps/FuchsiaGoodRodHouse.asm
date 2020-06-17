@@ -27,7 +27,7 @@ _FuchsiaHouse3Text_56212::
 	done
 
 _FuchsiaHouse3Text_56217::
-	text "שלום לך."
+	text "שלום לך!"
 	line "<PLAYER>!"
 
 	para "איך הולך"
