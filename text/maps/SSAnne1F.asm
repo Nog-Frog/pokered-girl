@@ -1,13 +1,13 @@
 _SSAnne1Text1::
 	text "בונז'ור!"
-	line "אני לה מלצר"
+	line "אני המלצר"
 	cont "של הספינה!"
 
-	para "אשמח להכין לך"
+	para "אשמח להגיש לך"
 	line "כל דבר שרק תרצה!"
 
-	para "הא! לה טיפוס"
-	line "שקט אתה!"
+	para "הא! אתה טיפוס"
+	line "שקט!"
 	done
 
 _SSAnne1Text2::
@@ -16,5 +16,5 @@ _SSAnne1Text2::
 
 	para "תצפה לאתגרים"
 	line "מהאורחים" 
-	cont "המשועממים."
+	cont "המשועממים!"
 	done
