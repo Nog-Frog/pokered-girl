@@ -12,8 +12,9 @@ _LTSurgePreBattleText::
 	cont "הצילו אותי בקרב!"
 	cont 
 
-	para "הם שיתקו את"
-	line "האויבים שלי!"
+	para "הם חישמלו את"
+	line "האויבים שלי ושיתקו"
+	cont "אותם!"
 
 	para "וזה מה שהולך"
 	line "לקרות לך!"
