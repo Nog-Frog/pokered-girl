@@ -1,5 +1,5 @@
 _LTSurgePreBattleText::
-	text "היי ילד! מה"
+	text "היי, ילד! מה"
 	line "אתה חושב שאתה"
 	cont "עושה פה?"
 
