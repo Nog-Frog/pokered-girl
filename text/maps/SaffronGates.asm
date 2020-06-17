@@ -7,8 +7,8 @@ _SaffronGateText_1dfe7::
 	done
 
 _SaffronGateText_8aaa9::
-	text "בחיי!"
-	line "גרוני ניחר!"
+	text "וואי אחי!"
+	line "אני מיובש!"
 	cont "..."
 	cont "הא? אני יכול"
 	cont "לקבל את המשקה הזה?"
