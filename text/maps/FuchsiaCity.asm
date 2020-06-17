@@ -1,31 +1,31 @@
 _FuchsiaCityText1::
-	text "ביקרת ב"
-	line "?איזור הספארי"
+	text "ביקרת"
+	line "באיזור הספארי?"
 	cont "רק שם תוכל"
-	cont ".לתפוס #ימונים"
+	cont "לתפוס #ימונים."
 	done
 
 _FuchsiaCityText2::
 	text "יש גן חיות"
 	line "מול הכניסה"
-	cont ".איזור הספארי"
+	cont "לאיזור הספארי."
 
 	para "בחוץ מאחורה"
 	line "נמצא משחק ספארי"
 	cont "שם ניתן לתפוס"
-	cont ".ימונים#"
+	cont "ימונים#."
 	done
 
 _FuchsiaCityText3::
 	text "איפה :ERIK";TODO
 	line "היא ?SARA";TODO
-	cont ".אמרה שנפגש כאן"
+	cont "אמרה שנפגש כאן."
 	done
 
 _FuchsiaCityText4::
 	text "הזה item ballה";TODO
 	line "שם הוא בעצם"
-	cont ".ימון#"
+	cont "ימון#."
 	done
 
 _FuchsiaCityText5::
@@ -50,70 +50,70 @@ _FuchsiaCityText16::
 
 _FuchsiaCityText17::
 	text "#MON PARADISE";TODO
-	line "SAFARI ZONE";TODO
+	line "איזור הספארי"
 	done
 
 _FuchsiaCityText18::
-	text "FUCHSIA CITY";TODO
-	line "#MON GYM";TODO
-	cont "LEADER: KOGA";TODO
+	text "עיר השושנה"
+	line "מועדון #ימון"
+	cont "מאמן: צפע"
 
 	para "מאסטר הנינג'ה"
-	line ".הרעיל"
+	line "הרעיל."
 	done
 
 _FuchsiaCityChanseyText::
-	text "CHANSEY:שם";TODO
+	text "שם: בת מזל"
 
 	para "לתפוס אחד"
 	line "כזה זה עניין"
-	cont ".של מזל"
+	cont "של מזל."
 	prompt
 
 _FuchsiaCityVoltorbText::
-	text "VOLTORB:שם";TODO
+	text "שם: חשמלמל"
 
 	para "נראה ממש"
-	line ".כמו #כדור"
+	line "כמו פוכדור."
 	prompt
 
 _FuchsiaCityKangaskhanText::
-	text "KANGASKHAN:שם";TODO
+	text "שם: כיסבל"
 	
         para "ימון אמהי#"
-	line "שמגדל את"
-	cont "צאצאיו בתוך"
-	cont ".כיס בבטן שלו"
+	line "שמגדלת את"
+	cont "צאצאיה בתוך"
+	cont "כיס בבטן שלה."
 	prompt
 
 _FuchsiaCitySlowpokeText::
-	text "SLOWPOKE:שם";TODO
+	text "שם: כיסלאט"
 
 	para "חביב ומאוד"
-	line ".איטי"
+	line "איטי."
 	prompt
 
 _FuchsiaCityLaprasText::
-	text "LAPRAS:שם";TODO
+	text "שם: תכוגית"
 
 	para "ידוע גם"
-	line ".כמלך הימים"
+	line "כמלך הימים."
 	prompt
 
 _FuchsiaCityOmanyteText::
-	text "OMANYTE:שם";TODO
-
-	para "ימון שהפך#"
-	line ".למאובן"
-	cont ".והוחזר לחיים"
-	prompt
-
-_FuchsiaCityKabutoText::
-	text "KABUTO:שם"
+	text "שם: סילוני"
 
 	para "ימון שהפך#"
 	line "למאובן"
-	cont ".והוחזר לחיים"
+	cont "והוחזר לחיים."
+	prompt
+
+_FuchsiaCityKabutoText::
+	text "שם: פרסדה"
+
+	para "ימון שהפך#"
+	line "למאובן"
+	cont "והוחזר לחיים."
 	prompt
 
 _FuchsiaCityText_19b2a::
