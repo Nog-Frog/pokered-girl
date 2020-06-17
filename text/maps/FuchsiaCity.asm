@@ -79,7 +79,6 @@ _FuchsiaCityVoltorbText::
 
 _FuchsiaCityKangaskhanText::
 	text "שם: כיסבל"
-	
         para "ימון אמהי#"
 	line "שמגדלת את"
 	cont "צאצאיה בתוך"
