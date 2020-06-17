@@ -1,64 +1,65 @@
 _LavenderTownText_4413c::
-	text "Do you believe in"
-	line "GHOSTs?"
+	text "אתה מאמין"
+	line "ברוחות?"
 	done
 
 _LavenderTownText_44141::
-	text "Really? So there"
-	line "are believers..."
+	text "באמת? אז"
+	line "בהחלט יש מאמינים!"
 	done
 
 _LavenderTownText_44146::
-	text "Hahaha, I guess"
-	line "not."
+	text "האהאה, אני"
+	line ".מניח שלא"
 
-	para "That white hand"
-	line "on your shoulder,"
-	cont "it's not real."
+	para "היד החיוורת"
+	line "על הכתף שלך"
+	cont "היא לא אמיתית."
 	done
 
 _LavenderTownText2::
-	text "This town is known"
-	line "as the grave site"
-	cont "of #MON."
+	text "העיר הזאת מוכרת"
+	line "כבית קברות"
+	cont "ל#ימונים."
 
-	para "Memorial services"
-	line "are held in"
-	cont "#MON TOWER."
+	para "טקסי אזכרה"
+	line "מתקיימים"
+	cont "במגדל הפוקימון."
 	done
 
 _LavenderTownText3::
-	text "GHOSTs appeared"
-	line "in #MON TOWER."
+	text "רוחות נמצאים"
+	line "במגדל הפוקימון."
 
-	para "I think they're"
-	line "the spirits of"
-	cont "#MON that the"
-	cont "ROCKETs killed."
+	para "אני חושב"
+	line "שאלו רוחות של"
+	cont "ימונים# שכנופיית"
+	cont "רוקט השמידו."
 	done
 
 _LavenderTownText4::
-	text "LAVENDER TOWN"
-	line "The Noble Purple"
-	cont "Town"
+	text "עיר הלבנדר"
+	line "העיר הסגולה"
+	cont "והאצילית"
 	done
 
 _LavenderTownText5::
-	text "New SILPH SCOPE!"
+	text "חדש SILPH SCOPE!";TODO
 
-	para "Make the Invisible"
-	line "Plain to See!"
+	para "הפוך את הבלתי"
+	line "נראה לנראה!"
 
-	para "SILPH CO."
+	para "סילף בע"מ"
 	done
 
 _LavenderTownText8::
-	text "LAVENDER VOLUNTEER"
-	line "#MON HOUSE"
+	text "LAVENDER VOLUNTEER";TODO
+	line "בית ה#ימון."
 	done
 
 _LavenderTownText9::
-	text "May the Souls of"
-	line "#MON Rest Easy"
-	cont "#MON TOWER"
+	text "מי ייתן"
+	line "וה#ימונים ינוחו"
+	cont "בשלום."
+	cont "מגדל ה#ימון"
 	done
