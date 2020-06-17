@@ -30,8 +30,8 @@ _NidoranMDexEntry::
 
 _ClefairyDexEntry::
 	text "בעלת קסם אישי"
-	next "מתוק וכובש, לו"
-	next "יש מעריצים רבים."
+	next "מתוק וכובש, יש"
+	next "לה מעריצים רבים."
 
 	page "היא נדירה וניתן"
 	next "למצוא אותה רק"
@@ -244,13 +244,13 @@ _GastlyDexEntry::
 	dex
 
 _ScytherDexEntry::
-	text "עם זריזות"
+	text "בעל זריזות"
 	next "ומהירות של"
-	next "נינג'ה, הוא"
+	next "נינג'ה, אשר בעזרתן"
 
-	page "מסוגל ליצור"
-	next "אשליה שיש"
-	next "יותר מאחד"
+	page "הוא מסוגל"
+	next "לייצר אשליה"
+	next "שיש יותר מאחד"
 	dex
 
 _StaryuDexEntry::
@@ -649,9 +649,9 @@ _MeowthDexEntry::
 _KrabbyDexEntry::	
 	text "צבתותיו הן לא"
 	next "רק כלי נשק"
-	next "עוצמתיים, הם"
+	next "עוצמתיים, הן"
 	
-	page "משמשים לייצוב"
+	page "משמשות לייצוב"
 	next "גופו בעת"
 	next "הליכה צדדית"
 	dex
