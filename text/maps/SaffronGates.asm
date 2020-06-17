@@ -21,7 +21,7 @@ _SaffronGateText_1dff1::
 	line "גלאג גלאג..."
 	cont "..."
 	cont "גולפ..."
-	cont "אם ברצונך להגיע"
+	cont "אם אתה רוצה להגיע"
 	cont "לעיר הזעפרן..."
 	cont "..."
 	cont "אתה מוזמן לעבור"
