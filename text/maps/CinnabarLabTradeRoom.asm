@@ -1,9 +1,9 @@
 _Lab2Text1::
 	text "מצאתי את המאובן"
-	line "המאד מוזר הזה"
+	line "המאוד מוזר הזה"
 	cont "in MT.MOON!" ; TODO
 
 	para "אני חושב שזה"
-	line "#ימון"
-	cont "פרה-היסטורי נדיר!"
+	line "#ימון פרה-"
+	cont "היסטורי נדיר!"
 	done
