@@ -1,11 +1,11 @@
 _LavenderTownText_4413c::
-	text "אתה מאמין ב"
-	line "רוחות?"
+	text "אתה מאמין"
+	line "ברוחות?"
 	done
 
 _LavenderTownText_44141::
 	text "באמת? אז"
-	line "!באמת יש מאמינים"
+	line "בהחלט יש מאמינים!"
 	done
 
 _LavenderTownText_44146::
@@ -14,54 +14,52 @@ _LavenderTownText_44146::
 
 	para "היד החיוורת"
 	line "על הכתף שלך"
-	cont ".היא לא אמיתית"
+	cont "היא לא אמיתית."
 	done
 
 _LavenderTownText2::
 	text "העיר הזאת מוכרת"
 	line "כבית קברות"
-	cont ".ל#ימונים"
+	cont "ל#ימונים."
 
 	para "טקסי אזכרה"
-	line "מתקיימים ב"
-	cont "מגדל הפוקימון"
+	line "מתקיימים"
+	cont "במגדל הפוקימון."
 	done
 
 _LavenderTownText3::
 	text "רוחות נמצאים"
-	line "במגדל הפוקימון"
+	line "במגדל הפוקימון."
 
 	para "אני חושב"
-	line "שהם רוחות"
-	cont "של #ימונים"
-	cont "שצוות רוקט"
-	cont ".השמידו"
+	line "שאלו רוחות של"
+	cont "ימונים# שכנופיית"
+	cont "רוקט השמידו."
 	done
 
 _LavenderTownText4::
 	text "עיר הלבנדר"
 	line "העיר הסגולה"
-	cont ".והאצילית"
+	cont "והאצילית"
 	done
 
 _LavenderTownText5::
-	text "!חדש SILPH SCOPE!";TODO
+	text "חדש SILPH SCOPE!";TODO
 
-	para "להפוך את"
-	line "את הבלתי נראה"
-	cont "!לנראה"
+	para "הפוך את הבלתי"
+	line "נראה לנראה!"
 
 	para "סילף בע"מ"
 	done
 
 _LavenderTownText8::
 	text "LAVENDER VOLUNTEER";TODO
-	line ".בית ה#ימון"
+	line "בית ה#ימון."
 	done
 
 _LavenderTownText9::
 	text "מי ייתן"
 	line "וה#ימונים ינוחו"
-	cont ".בשלום"
-	cont "#MON TOWER";TODO
+	cont "בשלום."
+	cont "מגדל ה#ימון"
 	done
