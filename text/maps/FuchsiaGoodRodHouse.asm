@@ -1,6 +1,6 @@
 _FuchsiaHouse3Text_561bd::
 	text "אני אחיו הגדול של"
-	line "גורו הדייגים!"
+	line "כהן הדיג!"
 
 	para "אני אוההההב"
 	line "לדוג!"
