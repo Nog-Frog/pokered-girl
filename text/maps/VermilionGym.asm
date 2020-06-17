@@ -9,7 +9,8 @@ _LTSurgePreBattleText::
 
 	para "אני אומר לך,"
 	line "ימונים מסוג חשמל#"
-	cont "הצילו אותי בקרב!"
+	cont "הצילו אותי כשהייתי"
+	cont "סרן במלחמה!"
 	cont 
 
 	para "הם חישמלו את"
