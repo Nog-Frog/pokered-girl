@@ -13,10 +13,10 @@ _ViridianHouseText2::
 	done
 
 _ViridianHouseText_1d5b1::
-	text "SPEARY: !טטוויט" ; TODO
+	text "כידי: !טטוויט"
 	done
 
 _ViridianHouseText4::
-	text "SPEAROW" ; TODO
-	line "שם: SPEARY" ; TODO
+	text "כידרור"
+	line "כינוי: כידי"
 	done

@@ -1,5 +1,5 @@
-_FuchsiaHouse1Text1::
-	text "השומר של אזור"
+2_FuchsiaHouse1Text1::
+	text "הפקח של אזור"
 	line "הספארי כבר מבוגר,"
 	cont "אבל הוא עדיין"
 	cont "פעיל!"

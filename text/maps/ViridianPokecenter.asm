@@ -8,9 +8,9 @@ _ViridianPokeCenterText2::
 	done
 
 _ViridianPokeCenterText3::
-	text "יש #MON"
-	line "CENTER בכל עיר"; TODO
-	cont "בהמשך הדרך."
+	text "יש מרכז #ימון"
+	line "בכל עיר בהמשך"
+	cont "הדרך."
 
 	para "הם גם לא מבקשים"
 	line "תשלום!"

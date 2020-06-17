@@ -72,17 +72,17 @@ _ViridianCityText_191ca::
 	line "על ישנום שאוכל"
 	cont "את החלום שלי."
 	cont "מה זה?"
-	cont "מאיפה הגיע הTM" ; TODO
+	cont "מאיפה הגיע הMT"
 	cont "הזה?"
 
 	para "זה מפחיד!"
 	line "הנה, אתה יכול"
-	cont "לקבל את ה TM הזה." ; TODO
+	cont "לקבל את הMT הזה."
 	prompt
 
 _ReceivedTM42Text::
 	text "<PLAYER> קיבל"
-	line "TM42!@@" ; TODO
+	line "24MT!@@"
 
 _TM42Explanation::
 	text "TM42 מכיל את מתקפת"
@@ -141,7 +141,7 @@ _ViridianCityText8::
 	done
 
 _ViridianCityText9::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 
 	para "תפוס #ימונים"
 	line "והרחב את"
@@ -153,17 +153,17 @@ _ViridianCityText9::
 	done
 
 _ViridianCityText10::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 
 	para "המהלכים של"
 	line "#ימונים מוגבלים"
 	cont "בנקודות השימוש"
 	cont "שלהם, או בקיצור"
-	cont "PP." ;TODO
+	cont "PP."
 
-	para "כדי לשחזר את הPP," ; TODO
+	para "כדי לשחזר את הPP,"
 	line "רפא את ה#ימון"
-	cont "במרכז ה#ימונים!" ; TODO
+	cont "במרכז ה#ימונים!"
 	done
 
 _ViridianCityText13::

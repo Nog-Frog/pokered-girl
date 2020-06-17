@@ -1,5 +1,5 @@
 _WardenGibberishText1::
-	text "WARDEN: פה הופא!" ; TODO
+	text "פקח: פה הופא!"
 
 	para "איפהי אה הפיאיי"
 	line "פלי פהאפאהי. עפור"
@@ -18,20 +18,21 @@ _WardenGibberishText3::
 
 _WardenTeethText1::
 	text "<PLAYER> נתן את"
-	line "ה-GOLD TEETH" ; TODO
-	cont "ל-WARDEN!@@" ; TODO
+	line "שיני הזהב"
+	cont "לפקח!@@"
 
 _WardenTeethText2::
 	text ""
 
-	para "ה-WARDEN הכניס" ; TODO
-	line "את שיניו פנימה!"
+	para "הפקח הכניס את"
+	line "את השיניים"
+	cont "לפה!"
 	prompt
 
 _WardenThankYouText::
-	text "WARDEN: תודה," ; TODO
-	line "ילד! אף אחד לא"
-	cont "הבין מילה שאמרתי."
+	text "פקח: תודה, ילד!"
+	line "אף אחד לא הבין"
+	cont "אף מילה שאמרתי."
 
 	para "לא יכולתי לעבוד"
 	line "ככה. הרשה לי"
@@ -46,8 +47,8 @@ _ReceivedHM04Text::
 	text "!@@"
 
 _HM04ExplanationText::
-	text "WARDEN: HM04" ; TODO
-	line "מלמד STRENGTH!" ; TODO
+	text "פקח: 40MH מכיל"
+	line "את המהלך עוצמה!"
 
 	para "זה מאפשר ל#ימון"
 	line "להזיז סלעים"
@@ -55,14 +56,14 @@ _HM04ExplanationText::
 	cont "מחוץ לקרב."
 
 	para "אה כן, מצאת את"
-	line "SECRET HOUSE" ; TODO
-	cont "ב-SAFARI ZONE?" ; TODO
+	line "הביתן הסודי באזור"
+	cont "הספארי?"
 
 	para "אם אתה מוצא, אתה"
-	line "זוכה ב-HM!"
+	line "זוכה בMH!"
 
 	para "השמועה אומרת שזה"
-	line "ףSURF HM הנדיר." ; TODO
+	line "MH גלישה הנדיר."
 	done
 
 _HM04NoRoomText::

@@ -14,12 +14,12 @@ _ViridianForestBattleText1::
 
 _ViridianForestEndBattleText1::
 	text "לא!"
-	line "CATERPIE לא יכול" ;TODO
-	cont "לחתוך את זה!"
+	line "זחי לא טוב"
+	cont "מספיק!"
 	prompt
 
 _ViridianFrstAfterBattleText1::
-	text "שש! אתה תבריח"
+	text "ששש! אתה תבריח"
 	line "את החרקים מכאן!"
 	done
 
@@ -70,7 +70,7 @@ _ViridianForestText8::
 	done
 
 _ViridianForestText9::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 
 	para "אם אתה רוצה"
 	line "להימנע מקרבות,"
@@ -81,11 +81,11 @@ _ViridianForestText10::
 	text "השתמש בנוגדן כדי"
 	line "לרפא הרעלה!"
 	cont "אפשר לקנות אותם"
-	cont "ב#יוסק!" ; TODO
+	cont "ב#יוסק!"
 	done
 
 _ViridianForestText11::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 	
 	para "אם תיצור קשר דרך"
 	line "המחשב עם פרופ'"
@@ -95,7 +95,7 @@ _ViridianForestText11::
 	done
 
 _ViridianForestText12::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 
 	para "אסור לגנוב"
 	line "#ימונים ממאמנים"
@@ -105,7 +105,7 @@ _ViridianForestText12::
 	done
 
 _ViridianForestText13::
-	text "טיפים למאמנים" ;TODO
+	text "טיפים למאמנים"
 
 	para "החלש את ה#ימונים"
 	line "לפני שתנסה"
