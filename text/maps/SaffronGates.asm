@@ -3,7 +3,7 @@ _SaffronGateText_1dfe7::
 	line "אלוהים, אני צמא!"
 
 	para "היי חכה שם,"
-	line "הכניסה חסומה."
+	line "הכניסה סגורה."
 	done
 
 _SaffronGateText_8aaa9::
