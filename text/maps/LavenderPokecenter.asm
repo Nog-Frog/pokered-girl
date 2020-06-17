@@ -1,12 +1,11 @@
 _LavenderPokecenterText2::
-	text "TEAM ROCKET will"
-	line "do anything for"
-	cont "the sake of gold!"
+	text "כנופיית רוקט"
+	line "יעשו הכל"
+	cont "כדי להשיג זהב!"
 	done
 
 _LavenderPokecenterText3::
-	text "I saw CUBONE's"
-	line "mother die trying"
-	cont "to escape from"
-	cont "TEAM ROCKET!"
+	text "ראיתי את אמו של"
+	line "רשרש מתה בנסיון"
+	cont "לברוח מכנופיית רוקט."
 	done
