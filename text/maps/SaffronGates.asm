@@ -24,7 +24,7 @@ _SaffronGateText_1dff1::
 	cont "אם אתה רוצה להגיע"
 	cont "לעיר הזעפרן..."
 	cont "..."
-	cont "אתה מוזמן לעבור"
+	cont "אתה יכול לעבור."
 	cont "אני אעדכן את שאר"
 	cont "השומרים!"
 	done
