@@ -12,7 +12,8 @@ _ReceivedTM29Text::
 	text "!@@"
 
 _TM29ExplanationText::
-	text "זה אשליה TM29!";TODO
+	text "זה המהלך TM29" ;TODO
+	line "אשליה!"
 
 	para "זה מאפשר לך"
 	line "להחליש את"
