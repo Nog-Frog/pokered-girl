@@ -31,7 +31,7 @@ _FuchsiaHouse3Text_56217::
 	line "<PLAYER>!"
 
 	para "איך הולך"
-	line "עם הדייג?"
+	line "עם הדיג?"
 	done
 
 _FuchsiaHouse3Text_5621c::
