@@ -1,112 +1,113 @@
 _SSAnne10Text8::
-	text "MACHOKE: Gwoh!"
-	line "Goggoh!@@"
+	text "גברנק: גואהה!"
+	line "גוגווה!@@"
 
 _SSAnne10BattleText1::
-	text "You know what they"
-	line "say about sailors"
-	cont "and fighting!"
+	text "אתה יודע מה"
+	line "אומרים על"
+	cont "מלחים וקרבות!"
 	done
 
 _SSAnne10EndBattleText1::
-	text "Right!"
-	line "Good fight, mate!"
+	text "נכון!"
+	line "אחלה קרב, חברצ'יק!"
 	prompt
 
 _SSAnne10AfterBattleText1::
-	text "Haha! Want to be"
-	line "a sailor, mate?"
+	text "האהא! רוצה"
+	line "להיות מלח, חברצ'יק?"
 	done
 
 _SSAnne10BattleText2::
-	text "My sailor's pride"
-	line "is at stake!"
+	text "גאוות המלח שלי"
+	line "בסכנה!"
 	done
 
 _SSAnne10EndBattleText2::
-	text "Your"
-	line "spirit sank me!"
+	text "הורדת לי"
+	line "את מצב הרוח!"
 	prompt
 
 _SSAnne10AfterBattleText2::
-	text "Did you see the"
-	line "FISHING GURU in"
-	cont "VERMILION CITY?"
+	text "ראית את"
+	line "את כהן הדיג"
+	cont "בעיר הארגמן?"
 	done
 
 _SSAnne10BattleText3::
-	text "Us sailors have"
-	line "#MON too!"
+	text "גם לנו, המלחים,"
+	line "יש #ימונים!"
 	done
 
 _SSAnne10EndBattleText3::
-	text "OK, "
-	line "you're not bad."
+	text "בסדר, "
+	line "אתה לא כזה גרוע."
 	prompt
 
 _SSAnne10AfterBattleText3::
-	text "We caught all our"
-	line "#MON while"
-	cont "out at sea!"
+	text "תפסנו את כל"
+	line "ה#ימונים שלנו"
+	cont "בים!"
 	done
 
 _SSAnne10BattleText4::
-	text "I like feisty"
-	line "kids like you!@@"
+	text "אני מחבב ילדים"
+	line "לוחמניים כמוך!@@"
 
 _SSAnne10EndBattleText4::
-	text "Argh!"
-	line "Lost it!"
+	text "ארג!"
+	line "הפסדתי את זה!"
 	prompt
 
 _SSAnne10AfterBattleText4::
-	text "Sea #MON live"
-	line "in deep water."
-	cont "You'll need a ROD!"
+	text "#ימונים מסוג"
+	line "מים נמצאים"
+	cont "במים עמוקים!"
+	cont "אתה תצטרך חכה."
 	done
 
 _SSAnne10BattleText5::
-	text "Matey, you're"
-	line "walking the plank"
-	cont "if you lose!"
+	text "חברצ'יק, אתה תאלץ"
+	line "לשאת בתוצאות"
+	cont "אם תפסיד!"
 	done
 
 _SSAnne10EndBattleText5::
-	text "Argh!"
-	line "Beaten by a kid!"
+	text "ארג!"
+	line "הפסדתי לילד!"
 	prompt
 
 _SSAnne10AfterBattleText5::
-	text "Jellyfish some-"
-	line "times drift into"
-	cont "the ship."
+	text "לפעמים מדוזות"
+	line "נסחפות לתוך הספינה."
 	done
 
 _SSAnne10BattleText6::
-	text "Hello stranger!"
-	line "Stop and chat!"
+	text "שלום לך!"
+	line "עצור לפטפט!"
 
-	para "All my #MON"
-	line "are from the sea!"
+	para "כל ה#ימונים שלי"
+	line "הם מסוג מים!"
 	done
 
 _SSAnne10EndBattleText6::
-	text "Darn!"
-	line "I let that one"
-	cont "get away!"
+	text "אוף!"
+	line "איך נתתי לו"
+	cont "לברוח?"
 	prompt
 
 _SSAnne10AfterBattleText6::
-	text "I was going to"
-	line "make you my"
-	cont "assistant too!"
+	text "עמדתי להפוך"
+	line "גם אותך לעוזר"
+	cont "שלי!"
 	done
 
 _SSAnne10Text7::
-	text "My buddy, MACHOKE,"
-	line "is super strong!"
+	text "ידידי, גברנק,"
+	line "ממש עוצמתי!"
 
-	para "He has enough"
-	line "STRENGTH to move"
-	cont "big rocks!"
+	para "יש לו כל כך"
+	line "הרבה עוצמה"
+	cont "שהוא מסוגל להזיז"
+	cont "סלעים כבדים!"
 	done
