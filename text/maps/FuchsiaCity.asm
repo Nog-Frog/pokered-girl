@@ -8,7 +8,7 @@ _FuchsiaCityText1::
 _FuchsiaCityText2::
 	text "יש גן חיות"
 	line "מול הכניסה"
-	cont "לאיזור הספארי."
+	cont "באיזור הספארי."
 
 	para "מאחורה"
 	line "נמצא משחק הספארי"
