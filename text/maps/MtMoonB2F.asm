@@ -1,122 +1,120 @@
 _MtMoon3Text_49f24::
-	text "You want the"
-	line "DOME FOSSIL?"
+	text "רוצה את המאובן"
+	line "הכיפתי?"
 	done
 
 _MtMoon3Text_49f64::
-	text "You want the"
-	line "HELIX FOSSIL?"
+	text "רוצה את המאובן"
+	line "הסלילי?"
 	done
 
 _MtMoon3Text_49f6f::
-	text "<PLAYER> got the"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _MtMoon3Text_49f7f::
-	text "Look, you've got"
-	line "no room for this.@@"
+	text "תראה, אין לך מקום"
+	line "בשביל זה.@@"
 
 _MtMoon3Text_49f85::
-	text "Hey, stop!"
+	text "היי, עצור!"
 
-	para "I found these"
-	line "fossils! They're"
-	cont "both mine!"
+	para "אני מצאתי את"
+	line "המאובנים האלו! הם"
+	cont "שניהם שלי!"
 	done
 
 _MtMoon3Text_49f8a::
-	text "OK!"
-	line "I'll share!"
+	text "אוקיי!"
+	line "אני אחלוק!"
 	prompt
 
 _MtMoon3Text_49f8f::
-	text "We'll each take"
-	line "one!"
-	cont "No being greedy!"
+	text "כל אחד מאיתנו יקח"
+	line "אחד!"
+	cont "לא נהיה חמדנים!"
 	done
 
 _MtMoon3Text_49f94::
-	text "Far away, on"
-	line "CINNABAR ISLAND,"
-	cont "there's a #MON"
-	cont "LAB."
+	text "רחוק מכאן, באי"
+	line "הצנובר, נמצאת"
+	cont "מעבדת ה#ימון."
 
-	para "They do research"
-	line "on regenerating"
-	cont "fossils."
+	para "הם מבצעים מחקר על"
+	line "החזרה לחיים של"
+	cont "מאובנים."
 	done
 
 _MtMoon3Text_49f99::
-	text "All right. Then"
-	line "this is mine!@@"
+	text "בסדר גמור. אז זה"
+	line "שלי!@@"
 
 _MtMoon3BattleText2::
-	text "TEAM ROCKET will"
-	line "find the fossils,"
-	cont "revive and sell"
-	cont "them for cash!"
+	text "צוות רוקט ימצא את"
+	line "המאובנים, יחייה"
+	cont "אותם, וימכור אותם"
+	cont "עבור כסף!"
 	done
 
 _MtMoon3EndBattleText2::
-	text "Urgh!"
-	line "Now I'm mad!"
+	text "אוך!"
+	line "עכשיו אני עצבני!"
 	prompt
 
 _MtMoon3AfterBattleText2::
-	text "You made me mad!"
-	line "TEAM ROCKET will"
-	cont "blacklist you!"
+	text "אתה עיצבנת אותי!"
+	line "צוות רוקט יכניס"
+	cont "אותך לרשימה"
+	cont "השחורה!"
 	done
 
 _MtMoon3BattleText3::
-	text "We, TEAM ROCKET,"
-	line "are #MON"
-	cont "gangsters!"
+	text "אנחנו, צוות רוקט,"
+	line "עברייני #ימון!"
 	done
 
 _MtMoon3EndBattleText3::
-	text "I blew"
-	line "it!"
+	text "הרסתי את"
+	line "זה!"
 	prompt
 
 _MtMoon3AfterBattleText3::
-	text "Darn it all! My"
-	line "associates won't"
-	cont "stand for this!"
+	text "לכל הרוחות! "
+	line "העמיתים שלי לא"
+	cont "יתמכו בזה!"
 	done
 
 _MtMoon3BattleText4::
-	text "We're pulling a"
-	line "big job here!"
-	cont "Get lost, kid!"
+	text "אנחנו מרימים פה"
+	line "פשע גדול!"
+	cont "לך לעזאזל, ילדוו!"
 	done
 
 _MtMoon3EndBattleText4::
-	text "So, you"
-	line "are good."
+	text "אז, אתה טוב."
 	prompt
 
 _MtMoon3AfterBattleText4::
-	text "If you find a"
-	line "fossil, give it"
-	cont "to me and scram!"
+	text "אם אתה מוצא מאובן"
+	line "תן לי אותו"
+	cont "ותתחפף!"
 	done
 
 _MtMoon3BattleText5::
-	text "Little kids"
-	line "should leave"
-	cont "grown-ups alone!"
+	text "ילדים קטנים צריכים"
+	line "להניח למבוגרים"
+	cont "לנפשם!"
 	done
 
 _MtMoon3EndBattleText5::
-	text "I'm"
-	line "steamed!"
+	text "אני"
+	line "רותח!"
 	prompt
 
 _MtMoon3AfterBattleText5::
-	text "#MON lived"
-	line "here long before"
-	cont "people came."
+	text "#ימונים חיו כאן"
+	line "הרבה לפני שבני"
+	cont "האדם הגיעו."
 	done
