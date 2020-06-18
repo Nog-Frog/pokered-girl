@@ -1380,7 +1380,7 @@ CountSetBits::
 	ret
 
 ; subtracts the amount the player paid from their money
-; sets carry flag if there is enough money and unsets carry flag if not
+; OUTPUT: carry = 0(success) or 1(fail because there is not enough money)
 SubtractAmountPaidFromMoney::
 	jpba SubtractAmountPaidFromMoney_
 
