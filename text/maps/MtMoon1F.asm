@@ -31,7 +31,7 @@ _MtMoon1AfterBattleText3::
 _MtMoon1BattleText4::
 	text "וואו! זה הרבה"
 	line "יותר גדול"
-	cont "משתיארתי!"
+	cont "ממה שחשבתי!"
 	done
 
 _MtMoon1EndBattleText4::
