@@ -1,6 +1,6 @@
 _FuchsiaCityText1::
-	text "ביקרת"
-	line "באיזור הספארי?"
+	text "ניסית את"
+	line "משחק הספארי?"
 	cont "רק שם תוכל"
 	cont "לתפוס #ימונים."
 	done
