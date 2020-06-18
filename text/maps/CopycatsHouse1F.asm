@@ -6,16 +6,15 @@ _CopycatsHouse1FText1::
 	done
 
 _CopycatsHouse1FText2::
-	text "My daughter likes"
-	line "to mimic people."
+	text "הבת שלי אוהבת"
+	line "לחקות אנשים."
 
-	para "Her mimicry has"
-	line "earned her the"
-	cont "nickname COPYCAT"
-	cont "around here!"
+	para "כישורי החקיינות"
+	line "שלה זיכו אותה"
+	cont "בכינוי ″חקיינית″!"
 	done
 
 _CopycatsHouse1FText3::
-	text "CHANSEY: Chaan!"
-	line "Sii!@@"
+	text "בת-מזל: בת!"
+	line "מזלל!@@"
 
