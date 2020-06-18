@@ -1,6 +1,6 @@
 _SaffronGateText_1dfe7::
 	text "אני בשמירה."
-	line "אלוהים, אני צמא!"
+	line "יואו, אני צמא!"
 
 	para "היי חכה שם,"
 	line "הכניסה סגורה."
