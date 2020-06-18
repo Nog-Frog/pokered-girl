@@ -13,6 +13,6 @@ _FuchsiaPokecenterText3::
 
 	para "הוא מוביל למפקדת"
 	line "ליגת ה#ימון."
-	cont "המפקדה מושלת בכל"
-	cont "המאמנים."
+	cont "המפקדה מפקחת על"
+	cont "כל המאמנים."
 	done
