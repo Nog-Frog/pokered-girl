@@ -1,19 +1,20 @@
 _MeetLaprasGuyText::
-	text "הו! היי! אתה"
+	text "אה! היי! אתה לא"
 	line "לא מצוות רוקט! אתה"
 	cont "הגעת להציל אותנו?"
 	cont "ואו, תודה לך!"
 
 	para "אני רוצה שתיקח את"
 	line "ה#ימון הזה,"
-	cont "כאות תודה על הצלתנו."
+	cont "כאות הוקרה על"
+	cont "שהצלת אותנו."
 	prompt
 
 _HeresYourLaprasText::
 	text "זה LAPRAS. הוא" ; TODO
 	line "מאוד נבון."
 
-	para "שמרנו אותו במעבדה שלנו"
+	para "שמרנו אותו במעבדה,"
 	line "אבל יהיה לו הרבה"
 	cont "יותר טוב לצידך!"
 
