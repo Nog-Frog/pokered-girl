@@ -1,7 +1,7 @@
 _MtMoon1BattleText2::
 	text "וואו! הבהלת"
-	line "אותי! אה, אתה בסך!"
-	cont "הכל ילד!"
+	line "אותי! אה, אתה!"
+	cont "בסך הכל ילד!"
 	done
 
 _MtMoon1EndBattleText2::
@@ -77,7 +77,7 @@ _MtMoon1AfterBattleText6::
 _MtMoon1BattleText7::
 	text "יש גברים חשודים"
 	line "בתוך המערה."
-	cont "ואתה?"
+	cont "מה אתה?"
 	done
 
 _MtMoon1EndBattleText7::
@@ -91,7 +91,7 @@ _MtMoon1AfterBattleText7::
 	done
 
 _MtMoon1BattleText8::
-	text "תעבור דרך המערה"
+	text "עבור דרך המערה"
 	line "כדי להגיע"
 	cont "לעיר הטורקיז!"
 	done
