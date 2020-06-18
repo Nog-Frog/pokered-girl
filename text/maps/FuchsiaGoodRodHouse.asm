@@ -1,43 +1,42 @@
 _FuchsiaHouse3Text_561bd::
-	text "I'm the FISHING"
-	line "GURU's older"
-	cont "brother!"
+	text "אני אחיו הגדול של"
+	line "כהן הדיג!"
 
-	para "I simply Looove"
-	line "fishing!"
+	para "אני אוההההב"
+	line "לדוג!"
 
-	para "Do you like to"
-	line "fish?"
+	para "גם אתה אוהב לדוג?"
 	done
 
 _FuchsiaHouse3Text_561c2::
-	text "Grand! I like"
-	line "your style!"
+	text "אדיר! אני"
+	line "אוהב את"
+	cont "הסגנון שלך!"
 
-	para "Take this and"
-	line "fish, young one!"
+	para "קח את זה"
+	line "וצא לדוג, חבוב!"
 
-	para "<PLAYER> received"
+	para "קיבל <PLAYER>"
 	line "a @"
 	TX_RAM wcf4b
 	text "!@@"
 
 _FuchsiaHouse3Text_56212::
-	text "Oh... That's so"
-	line "disappointing..."
+	text "הו... זה"
+	line "כל כך מאכזב..."
 	done
 
 _FuchsiaHouse3Text_56217::
-	text "Hello there,"
+	text "שלום לך!"
 	line "<PLAYER>!"
 
-	para "How are the fish"
-	line "biting?"
+	para "איך הולך"
+	line "עם הדיג?"
 	done
 
 _FuchsiaHouse3Text_5621c::
-	text "Oh no!"
+	text "הו לא!"
 
-	para "You have no room"
-	line "for my gift!"
+	para "אין לך"
+	line "מקום למתנה שלי!"
 	done
