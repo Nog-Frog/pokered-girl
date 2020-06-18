@@ -1,37 +1,38 @@
 _CeruleanTrashedText_1d6ab::
-	text "Those miserable"
-	line "ROCKETs!"
+	text "כנופיית רוקט"
+	line "העלובים האלה!"
 
-	para "Look what they"
-	line "did here!"
+	para "הסתכל מה הם עשו"
+	line "כאן!"
 
-	para "They stole a TM"
-	line "for teaching"
-	cont "#MON how to"
-	cont "DIG holes!"
+	para "הם גנבו MT שמלמד"
+	line "#ימונים איך לחפור"
+	cont "בורות!"
 
-	para "That cost me a"
-	line "bundle, it did!"
+	para "הMT הזה עלה לי"
+	line "הון! אני אומר לך,"
+	cont "הון תועפות!"
 	done
 
 _CeruleanTrashedText_1d6b0::
-	text "I figure what's"
-	line "lost is lost!"
+	text "חשבתי שמה שהלך"
+	line "כבר לא ישוב!"
 
-	para "I decided to teach"
-	line "DIGLETT how to"
-	cont "DIG without a TM!"
+	para "החלטתי ללמד את"
+	line "חפיד איך לחפור"
+	cont "בלי MT!"
 	done
 
 _CeruleanHouseTrashedText2::
-	text "TEAM ROCKET must"
-	line "be trying to DIG"
-	cont "their way into no"
-	cont "good!"
+	text "כנופיית רוקט בטח"
+	line "מנסים לחפור לעצמם"
+	cont "בורות מלאים"
+	cont "בצרות!"
 	done
 
 _CeruleanHouseTrashedText3::
-	text "TEAM ROCKET left"
-	line "a way out!"
+	text "כנופיית רוקט"
+	line "השאירו כאן דרך"
+	cont "מילוט!"
 	done
 
