@@ -102,9 +102,9 @@ _MtMoon1EndBattleText8::
 
 _MtMoon1AfterBattleText8::
 	text "אצלף הוא #ימון"
-	line "עקשן! אך"
-	cont "אם תתפוס אחד"
-	cont "הוא יפיק לך תועלת."
+	line "קשוח! אבל הוא"
+	cont "יכול להיות שימושי"
+	cont "אם תתפוס אחד."
 	done
 
 _MtMoon1Text14::
