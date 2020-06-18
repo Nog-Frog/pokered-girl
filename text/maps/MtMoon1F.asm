@@ -25,7 +25,7 @@ _MtMoon1EndBattleText3::
 
 _MtMoon1AfterBattleText3::
 	text "באתי לכאן בשביל"
-	line "הבנות."
+	line "להשוויץ לבנות."
 	done
 
 _MtMoon1BattleText4::
