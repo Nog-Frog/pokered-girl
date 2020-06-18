@@ -1,209 +1,208 @@
 _MeetLaprasGuyText::
-	text "Oh! Hi! You're"
-	line "not a ROCKET! You"
-	cont "came to save us?"
-	cont "Why, thank you!"
+	text "אה! היי! אתה לא"
+	line "לא מצוות רוקט! אתה"
+	cont "הגעת להציל אותנו?"
+	cont "ואו, תודה לך!"
 
-	para "I want you to"
-	line "have this #MON"
-	cont "for saving us."
+	para "אני רוצה שתיקח את"
+	line "ה#ימון הזה,"
+	cont "כאות הוקרה על"
+	cont "שהצלת אותנו."
 	prompt
 
 _HeresYourLaprasText::
-	text "It's LAPRAS. It's"
-	line "very intelligent."
+	text "זה LAPRAS. הוא" ; TODO
+	line "מאוד נבון."
 
-	para "We kept it in our"
-	line "lab, but it will"
-	cont "be much better"
-	cont "off with you!"
+	para "שמרנו אותו במעבדה,"
+	line "אבל יהיה לו הרבה"
+	cont "יותר טוב לצידך!"
 
-	para "I think you will"
-	line "be a good trainer"
-	cont "for LAPRAS!"
+	para "אני חושב שאתה"
+	line "תהיה מאמן מצוין"
+	cont "עבור LAPRAS!" ; TODO
 
-	para "It's a good"
-	line "swimmer. It'll"
-	cont "give you a lift!"
+	para "הוא שחיין מצוין"
+	line "הוא יתן לך"
+	cont "טרמפ על גבו!"
 	done
 
 _LaprasGuyText::
-	text "TEAM ROCKET's"
-	line "BOSS went to the"
-	cont "boardroom! Is our"
-	cont "PRESIDENT OK?"
+	text "הבוס של צוות"
+	line "רוקט נכנס אל"
+	cont "חדר הישיבות, האם"
+	cont "הנשיא שלנו בסדר?"
 	done
 
 _LaprasGuySavedText::
-	text "Saved at last!"
-	line "Thank you!"
+	text "סוף סוף!"
+	line "תודה לך!"
 	done
 
 _SilphCo7Text_51e00::
-	text "TEAM ROCKET was"
-	line "after the MASTER"
-	cont "BALL which will"
-	cont "catch any #MON!"
+	text "צוות רוקט חיפש"
+	line "את ה MASTER" ; TODO
+	cont "BALL שיכול"; TODO
+	cont "לתפוס כל #ימון!"
 	done
 
 _CanceledMasterBallText::
-	text "We canceled the"
-	line "MASTER BALL"
-	cont "project because"
-	cont "of TEAM ROCKET."
+	text "אנחנו ביטלנו את"
+	line "פרויקט הMASTER BALL"
+	cont "בגלל צוות רוקט"
 	done
 
 _SilphCo7Text_51e23::
-	text "It would be bad"
-	line "if TEAM ROCKET"
-	cont "took over SILPH"
-	cont "or our #MON!"
+	text "זה היה רע מאוד"
+	line "אם צוות רוקט"
+	cont "היה מתשלט על חברת SILPH" ; TODO
+	cont "או על ה #ימונים שלנו!"
 	done
 
 _SilphCo7Text_51e28::
-	text "Wow! You chased"
-	line "off TEAM ROCKET"
-	cont "all by yourself?"
+	text "ואו! אתה רדפת"
+	line "אחרי צוות רוקט"
+	cont "בכוחות עצמך?"
 	done
 
 _SilphCo7Text_51e46::
-	text "You! It's really"
-	line "dangerous here!"
-	cont "You came to save"
-	cont "me? You can't!"
+	text "אתה! זה מאוד"
+	line "מסוכן להסתובב כאן!"
+	cont "הגעת כדי להציל "
+	cont "אותי? אתה לא יכול!"
 	done
 
 _SilphCo7Text_51e4b::
-	text "Safe at last!"
-	line "Oh thank you!"
+	text "סוף סוף אני מוגן!"
+	line "הו, תודה לך!"
 	done
 
 _SilphCo7BattleText1::
-	text "Oh ho! I smell a"
-	line "little rat!"
+	text "הו לא! אני מריח"
+	line "כאן מסתנן קטן!"
 	done
 
 _SilphCo7EndBattleText1::
-	text "Lights"
-	line "out!"
+	text "כיבוי"
+	line "אורות!" 
 	prompt
 
 _SilphCo7AfterBattleText1::
-	text "You won't find my"
-	line "BOSS by just"
-	cont "scurrying around!"
+	text "אתה לא תמצא את"
+	line "הבוס אם רק"
+	cont "תתרוצץ כאן מסביב!"
 	done
 
 _SilphCo7BattleText2::
-	text "Heheh!"
+	text "חה חה חה!"
 
-	para "You mistook me for"
-	line "a SILPH worker?"
+	para "חשבת שאני רק עובד"
+	line "חברת SILPH פשוט?" ; TODO
 	done
 
 _SilphCo7EndBattleText2::
-	text "I'm"
-	line "done!"
+	text "אני"
+	line "גמור!"
 	prompt
 
 _SilphCo7AfterBattleText2::
-	text "Despite your age,"
-	line "you are a skilled"
-	cont "trainer!"
+	text "למרות גילך הצעיר,"
+	line "אתה מאמן מיומן"
+	cont "מאוד!"
 	done
 
 _SilphCo7BattleText3::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "אני אחד מארבעת"
+	line "ROCKET BROTHERS!" ; TODO
 	done
 
 _SilphCo7EndBattleText3::
-	text "Aack!"
-	line "Brothers, I lost!"
+	text "אעק!"
+	line "אחים, הובסתי!"
 	prompt
 
 _SilphCo7AfterBattleText3::
-	text "Doesn't matter."
-	line "My brothers will"
-	cont "repay the favor!"
+	text "לא משנה."
+	line "אחיי ינקמו"
+	cont "בשמי!"
 	done
 
 _SilphCo7BattleText4::
-	text "A child intruder?"
-	line "That must be you!"
+	text "מסיג גבול קטן?"
+	line "זה בטח אתה!"
 	done
 
 _SilphCo7EndBattleText4::
-	text "Fine!"
-	line "I lost!"
+	text "טוב!"
+	line "הפסדתי!"
 	prompt
 
 _SilphCo7AfterBattleText4::
-	text "Go on home"
-	line "before my BOSS"
-	cont "gets ticked off!"
+	text "לך הביתה ילד"
+	line "לפני שהבוס"
+	cont "יתעצבן מאוד!"
 	done
 
 _SilphCo7Text_51ebe::
-	text "<RIVAL>: What"
-	line "kept you <PLAYER>?"
+	text "<RIVAL>: מה"
+	line "עיכב אותך <PLAYER>?"
 	done
 
 _SilphCo7Text_51ec3::
-	text "<RIVAL>: Hahaha!"
-	line "I thought you'd"
-	cont "turn up if I"
-	cont "waited here!"
+	text "<RIVAL>: חה חה חה!"
+	line "הנחתי שתגיע"
+	cont "אם אני רק"
+	cont "אחכה כאן!"
 
-	para "I guess TEAM"
-	line "ROCKET slowed you"
-	cont "down! Not that I"
-	cont "care!"
+	para "אני מניח שצוות"
+	line "רוקט קצת עיכבו"
+	cont "אותך! לא שזה משנה"
+	cont "לי!"
 
-	para "I saw you in"
-	line "SAFFRON, so I"
-	cont "decided to see if"
-	cont "you got better!"
+	para "ראיתי אותך בעיר"
+	line "SAFFRON, אז" ; TODO
+	cont "החלטתי לבדוק"
+	cont "אם השתפרת!"
 	done
 
 _SilphCo7Text_51ec8::
-	text "Oh ho!"
-	line "So, you are ready"
-	cont "for BOSS ROCKET!"
+	text "הו לא!"
+	line "אז נראה שאתה מוכן"
+	cont "ל BOSS ROCKET!" ; TODO
 	prompt
 
 _SilphCo7Text_51ecd::
-	text "<RIVAL>: How can"
-	line "I put this?"
+	text "<RIVAL>: איך לספר"
+	line "לך את זה..."
 
-	para "You're not good"
-	line "enough to play"
-	cont "with us big boys!"
+	para "אתה לא מספיק"
+	line "חזק כדי לשחק"
+	cont "עם הגדולים!"
 	prompt
 
 _SilphCo7Text_51ed2::
-	text "Well, <PLAYER>!"
+	text "טוב, <PLAYER>!"
 
-	para "I'm moving on up"
-	line "and ahead!"
+	para "אני ממשיך קדימה"
+	line "מכאן!"
 
-	para "By checking my"
-	line "#DEX, I'm"
-	cont "starting to see"
-	cont "what's strong and"
-	cont "how they evolve!"
+	para "בעזרת צפייה מתמדת"
+	line "בפוכדור שלי אני"
+	cont "יכול לראות"
+	cont "את חוזקם"
+	cont "ואיך הם מתפתחים!"
 
-	para "I'm going to the"
-	line "#MON LEAGUE"
-	cont "to boot out the"
-	cont "ELITE FOUR!"
+	para "אני הולך אל"
+	line "#ימונים ליגת ה"
+	cont "כדי לנצח את"
+	cont "הELITE FOUR!" ; TODO
 
-	para "I'll become the"
-	line "world's most"
-	cont "powerful trainer!"
+	para "אני אהפוך אל"
+	line "מאמן הפוקימונים"
+	cont "החזק בעולם!"
 
-	para "<PLAYER>, well"
-	line "good luck to you!"
-	cont "Don't sweat it!"
-	cont "Smell ya!"
+	para "<PLAYER>, טוב"
+	line "בהצלחה לך!"
+	cont "תיזהר לא להזיע מהלחץ!"
+	cont "ולהחליק בדרך לשם!"
 	done
