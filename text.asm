@@ -311,11 +311,11 @@ _PlaySlotMachineText::
 
 _OutOfCoinsSlotMachineText::
 	text "אוח!"
-	line "נגמרו המטבעות!"
+	line "נגמרו האסימונים!"
 	done
 
 _BetHowManySlotMachineText::
-	text "על כמה מטבעות"
+	text "על כמה אסימונים"
 	line "תרצה להמר?"
 	done
 
@@ -325,7 +325,7 @@ _StartSlotMachineText::
 
 _NotEnoughCoinsSlotMachineText::
 	text "אין לך מספיק"
-	line "מטבעות!"
+	line "אסימונים!"
 	prompt
 
 _OneMoreGoSlotMachineText::
@@ -336,7 +336,7 @@ _LinedUpText::
 	text "שורה של"
 	line "זכית ב@"
 	TX_RAM wcf4b
-	text " מטבעות!"
+	text " אסימונים!"
 	done
 
 _NotThisTimeText::
@@ -672,11 +672,12 @@ _OakLabEmailText::
 	done
 
 _GameCornerCoinCaseText::
-	text "צריך ארנק למטבעות!"
+	text "צריך ארנק"
+	line "לאסימונים!"
 	done
 
 _GameCornerNoCoinsText::
-	text "אין לך מטבעות!"
+	text "אין לך אסימונים!"
 	done
 
 _GameCornerOutOfOrderText::
@@ -1835,11 +1836,11 @@ _CF4BExclamationText::
 
 _RequireCoinCaseText::
 	text "צריך ארנק"
-	line "למטבעות!@@"
+	line "לאסימונים!@@"
 
 _ExchangeCoinsForPrizesText::
 	text "אנחנו מחליפים את"
-	line "המטבעות שלך בעבור"
+	line "האסימונים שלך בעד"
 	cont "פרסים."
 	prompt
 
@@ -1860,7 +1861,7 @@ _SoYouWantPrizeText::
 _SorryNeedMoreCoinsText::
 	text "אני מצטער, אבל"
 	line "אתה צריך עוד"
-	cont "מטבעות.@@"
+	cont "אסימונים.@@"
 
 _OopsYouDontHaveEnoughRoomText::
 	text "אופס! אין מספיק"
@@ -2881,7 +2882,7 @@ _PlayedFluteHadEffectText::
 	line "בחלילית הקסם.@@"
 
 _CoinCaseNumCoinsText::
-	text "מטבעות"
+	text "אסימונים:"
 	line "@"
 	TX_BCD wPlayerCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
 	text " "
