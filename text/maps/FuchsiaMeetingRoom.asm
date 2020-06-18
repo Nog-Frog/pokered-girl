@@ -11,7 +11,7 @@ _FuchsiaMeetingRoomText2::
 	line "בנושאי #ימון!"
 
 	para "אפילו יש לו"
-	line "מאובנים של"
+	line "כמה מאובנים של"
 	cont "#ימונים נדירים"
 	cont "שנכחדו!"
 	done
