@@ -1,6 +1,6 @@
 _MtMoon1BattleText2::
 	text "וואו! הבהלת"
-	line "אותי! אתה בסך!"
+	line "אותי! אה, אתה בסך!"
 	cont "הכל ילד!"
 	done
 
