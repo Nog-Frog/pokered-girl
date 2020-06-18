@@ -56,7 +56,7 @@ _FuchsiaCityText17::
 _FuchsiaCityText18::
 	text "עיר השושנה"
 	line "מכון #ימון"
-	cont "מאמן: צפע"
+	cont "מנהיג: צפע"
 
 	para "מאסטר הנינג'ה"
 	line "הרעיל."
