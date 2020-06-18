@@ -52,7 +52,7 @@ _CeladonGymText_48a68::
 _CeladonGymText9::
 	text "בעזרת תג הקשת"
 	line "בענן, #ימונים"
-	cont "עד רמה 50 יצייתו"
+	cont "עד רמה 05 יצייתו"
 	cont "לך."
 
 	para "התג גם מאפשר"

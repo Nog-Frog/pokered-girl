@@ -44,7 +44,7 @@ _Route3AfterBattleText2::
 	line "את ה#ימונים שלך"
 	cont "במחשב? כל קופסה"
 	cont "יכולה להכיל עד"
-	cont "20 #ימונים!"
+	cont "02 #ימונים!"
 	done
 
 _Route3BattleText3::

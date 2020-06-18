@@ -39,7 +39,7 @@ FanClubMeetChairText::
 	line "מעריצי #ימון!"
 
 	para "האוסף שלי מונה מעל"
-	line "100 #ימונים!"
+	line "001 #ימונים!"
 
 	para "אני בררן מאוד"
 	line "כשזה מגיע"

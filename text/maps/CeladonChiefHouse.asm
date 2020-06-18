@@ -8,7 +8,7 @@ _CeladonHouseText2::
 	text "המפקד!"
 
 	para "בדיוק העברנו"
-	line "2000 #ימונים"
+	line "0002 #ימונים"
 	cont "כפרסים במשחקי"
 	cont "המזל!"
 	done
