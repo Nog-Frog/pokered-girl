@@ -1,4 +1,4 @@
-2_FuchsiaHouse1Text1::
+_FuchsiaHouse1Text1::
 	text "הפקח של אזור"
 	line "הספארי כבר מבוגר,"
 	cont "אבל הוא עדיין"
