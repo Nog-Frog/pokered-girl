@@ -49,7 +49,7 @@ _LavenderTownText5::
 	para "הפוך את הבלתי"
 	line "נראה לנראה!"
 
-	para "סילף בע"מ"
+	para "סילף בע″מ"
 	done
 
 _LavenderTownText8::

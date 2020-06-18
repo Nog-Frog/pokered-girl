@@ -963,7 +963,7 @@ _DugtrioDexEntry::
 	
 	page "אדמה כבירות על"
 	next "ידי חפירת 69"
-	next "ק"מ לעומק האדמה"
+	next "ק″מ לעומק האדמה"
 	dex
 	
 _VenomothDexEntry::	
