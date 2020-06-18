@@ -1,233 +1,227 @@
 _CeruleanCityText_19668::
-	text "<RIVAL>: Yo!"
+	text "<RIVAL>: יו!"
 	line "<PLAYER>!"
 
-	para "You're still"
-	line "struggling along"
-	cont "back here?"
+	para "אתה עדיין צולע"
+	line "לך שם?"
 
-	para "I'm doing great!"
-	line "I caught a bunch"
-	cont "of strong and"
-	cont "smart #MON!"
+	para "אני מתקדם נהדר!"
+	line "תפסתי כל מיני"
+	cont "#ימונים חזקים"
+	cont "וחכמים!"
 
-	para "Here, let me see"
-	line "what you caught,"
+	para "קדימה, בוא נראה"
+	line "מה אתה תפסת,"
 	cont "<PLAYER>!"
 	done
 
 _CeruleanCityText_1966d::
-	text "Hey!"
-	line "Take it easy!"
-	cont "You won already!"
+	text "היי!"
+	line "תרגיע!"
+	cont "כבר ניצחת אותי!"
 	prompt
 
 _CeruleanCityText_19672::
-	text "Heh!"
-	line "You're no match"
-	cont "for my genius!"
+	text "פחה!"
+	line "אתה לא משתווה"
+	cont "לגאונות שלי!"
 	prompt
 
 _CeruleanCityText_19677::
-	text "<RIVAL>: Hey,"
-	line "guess what?"
+	text "<RIVAL>: היי,"
+	line "נחש מה עשיתי?"
 
-	para "I went to BILL's"
-	line "and got him to"
-	cont "show me his rare"
-	cont "#MON!"
+	para "הלכתי לבית של הדר"
+	line "ושכנעתי אותו"
+	cont "להראות לי את"
+	cont "ה#ימונים"
+	cont "הנדירים שלו!"
 
-	para "That added a lot"
-	line "of pages to my"
-	cont "#DEX!"
+	para "זה מילא לי הרבה"
+	line "דפים ב#ידע!"
 
-	para "After all, BILL's"
-	line "world famous as a"
-	cont "#MANIAC!"
+	para "אחרי הכל, הדר ידוע"
+	line "בתור #יטורף!"
 
-	para "He invented the"
-	line "#MON Storage"
-	cont "System on PC!"
+	para "הוא המציא את מערכת"
+	line "איחסון ה#ימונים"
+	cont "שבמחשב!"
 
-	para "Since you're using"
-	line "his system, go"
-	cont "thank him!"
+	para "כדאי שתלך להודות"
+	line "לו, כי אתה משתמש"
+	cont "בהמצאה שלו!"
 
-	para "Well, I better"
-	line "get rolling!"
-	cont "Smell ya later!"
+	para "טוב! נראה לי שכדאי"
+	line "שאני אתגלגל מכאן!"
+	cont "נתרחרח אחר-כך!"
 	done
 
 _CeruleanCityText_196d9::
-	text "Hey! Stay out!"
-	line "It's not your"
-	cont "yard! Huh? Me?"
+	text "היי! צא מכאן!"
+	line "זאת לא החצר שלך!"
+	cont "מה? אני?"
 
-	para "I'm an innocent"
-	line "bystander! Don't"
-	cont "you believe me?"
+	para "אני רק עובר אורח"
+	line "תמים! אתה לא"
+	cont "מאמין לי?"
 	done
 
 _ReceivedTM28Text::
-	text "<PLAYER> recovered"
-	line "TM28!@@"
+	text "<PLAYER> מצא"
+	line "82MT!@@"
 
 _ReceivedTM28Text2::
 	text ""
 
-	para "I better get"
-	line "moving! Bye!@@"
+	para "כדאי שאני אסתלק"
+	line "לי עכשיו! ביי!@@"
 
 _TM28NoRoomText::
-	text "Make room for"
-	line "this!"
+	text "תפנה קצת מקום"
+	line "כדי לקחת את זה!"
 
-	para "I can't run until"
-	line "I give it to you!"
+	para "אסור לי לברוח עד"
+	line "שאני אתן לך את"
+	cont "זה!"
 	done
 
 _CeruleanCityText_196ee::
-	text "Stop!"
-	line "I give up! I'll"
-	cont "leave quietly!"
+	text "תפסיק!"
+	line "אני נכנע! אני"
+	cont "אעזוב בשקט!"
 	prompt
 
 _CeruleanCityText_196f3::
-	text "OK! I'll return"
-	line "the TM I stole!"
+	text "בסדר! אני אחזיר"
+	line "את הMT שגנבתי!"
 	prompt
 
 _CeruleanCityText3::
-	text "You're a trainer"
-	line "too? Collecting,"
-	cont "fighting, it's a"
-	cont "tough life."
+	text "גם אתה מאמן?"
+	line "אספנות, קרבות..."
+	cont "זה סגנון חיים"
+	cont "קשוח."
 	done
 
 _CeruleanCityText4::
-	text "That bush in"
-	line "front of the shop"
-	cont "is in the way."
+	text "השיח הזה שם שמול"
+	line "החנות מפריע בדרך."
 
-	para "There might be a"
-	line "way around."
+	para "אולי יש דרך"
+	line "לעקוף אותו."
 	done
 
 _CeruleanCityText5::
-	text "You're making an"
-	line "encyclopedia on"
-	cont "#MON? That"
-	cont "sounds amusing."
+	text "אתה מחבר"
+	line "אנציקלופדיה על"
+	cont "#ימון? זה"
+	cont "משעשע."
 	done
 
 _CeruleanCityText6::
-	text "The people here"
-	line "were robbed."
+	text "דיירי הבית הזה"
+	line "נשדדו."
 
-	para "It's obvious that"
-	line "TEAM ROCKET is"
-	cont "behind this most"
-	cont "heinous crime!"
+	para "זה ברור כשמש"
+	line "שכנופיית רוקט"
+	cont "עומדת מאחורי הפשע"
+	cont "הנתעב!"
 
-	para "Even our POLICE"
-	line "force has trouble"
-	cont "with the ROCKETs!"
+	para "כנופיית רוקט עושים"
+	line "בעיות אפילו עבור"
+	cont "כוח המשטרה שלנו!"
 	done
 
 _CeruleanCityText_19730::
-	text "OK! SLOWBRO!"
-	line "Use SONICBOOM!"
-	cont "Come on, SLOWBRO"
-	cont "pay attention!"
+	text "אוקיי! אחלאט!"
+	line "השתמש בבום על-"
+	cont "קולי!"
+	cont "קדימה, אחלאט,"
+	cont "תתרכז!"
 	done
 
 _CeruleanCityText_19735::
-	text "SLOWBRO punch!"
-	line "No! You blew it"
-	cont "again!"
+	text "אחלאט, תן מכה!"
+	line "לא! שוב פספסת!"
 	done
 
 _CeruleanCityText_1973a::
-	text "SLOWBRO, WITHDRAW!"
-	line "No! That's wrong!"
+	text "אחלאט, נסיגה!"
+	line "לא! זה לא מה"
+	cont "שהתכוונתי!"
 
-	para "It's so hard to"
-	line "control #MON!"
+	para "כל כך קשה לשלוט"
+	line "ב#ימונים!"
 
-	para "Your #MON's"
-	line "obedience depends"
-	cont "on your abilities"
-	cont "as a trainer!"
+	para "הצייתנות של"
+	line "ה#ימונים שלך"
+	cont "תלויה ביכולות שלך"
+	cont "בתור מאמן!"
 	done
 
 _CeruleanCityText_1976f::
-	text "SLOWBRO took a"
-	line "snooze..."
+	text "אחלאט מנמנם..."
 	done
 
 _CeruleanCityText_19774::
-	text "SLOWBRO is"
-	line "loafing around..."
+	text "אחלאט מתעצל..."
 	done
 
 _CeruleanCityText_19779::
-	text "SLOWBRO turned"
-	line "away..."
+	text "אחלאט הפנה את"
+	line "הגב..."
 	done
 
 _CeruleanCityText_1977e::
-	text "SLOWBRO"
-	line "ignored orders..."
+	text "אחלאט התעלם"
+	line "מהפקודה..."
 	done
 
 _CeruleanCityText9::
-	text "I want a bright"
-	line "red BICYCLE!"
+	text "אני רוצה אופניים"
+	line "בצבע אדום אש!"
 
-	para "I'll keep it at"
-	line "home, so it won't"
-	cont "get dirty!"
+	para "אני לא אוציא אותם"
+	line "מהבית, כדי שלא"
+	cont "יתלכלכו!"
 	done
 
 _CeruleanCityText10::
-	text "This is CERULEAN"
-	line "CAVE! Horribly"
-	cont "strong #MON"
-	cont "live in there!"
+	text "זו היא מערת"
+	line "הטורקיז! בפנים"
+	cont "חיים #ימונים"
+	cont "חזקים להחריד!"
 
-	para "The #MON LEAGUE"
-	line "champion is the"
-	cont "only person who"
-	cont "is allowed in!"
+	para "האלוף של ליגת"
+	line "ה#ימון הוא"
+	cont "היחיד שמורשה"
+	cont "להיכנס!"
 	done
 
 _CeruleanCityText12::
-	text "CERULEAN CITY"
-	line "A Mysterious,"
-	cont "Blue Aura"
-	cont "Surrounds It"
+	text "עיר הטורקיז"
+	line "אפופה בהילה"
+	cont "כחולה ומסתורית"
 	done
 
 _CeruleanCityText13::
 	text "טיפים למאמנים"
 
-	para "Pressing B Button"
-	line "during evolution"
-	cont "cancels the whole"
-	cont "process."
+	para "לחיצה על כפתור B"
+	line "בזמן התפתחות תבטל"
+	cont "את ההתפתחות."
 	done
 
 _CeruleanCityText16::
-	text "Grass and caves"
-	line "handled easily!"
-	cont "BIKE SHOP"
+	text "עוברים מערות"
+	line "ומדשאות בקלות!"
+	cont "חנות אופניים"
 	done
 
 _CeruleanCityText17::
-	text "CERULEAN CITY"
-	line "#MON GYM"
-	cont "LEADER: MISTY"
+	text "עיר הטורקיז"
+	line "מכון ה#ימון"
+	cont "מנהיגה: טל"
 
-	para "The Tomboyish"
-	line "Mermaid!"
+	para "בת הים הנערית!"
 	done
