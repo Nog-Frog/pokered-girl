@@ -1,153 +1,158 @@
 _CeladonCityText1::
-	text "I got my KOFFING"
-	line "in CINNABAR!"
+	text "תפסתי את המשתעשן"
+	line "שלי באי הצנובר!"
 
-	para "It's nice, but it"
-	line "breathes poison"
-	cont "when it's angry!"
+	para "הוא נחמד, אבל הוא"
+	line "נושף אדי רעל"
+	cont "כשהוא כועס!"
 	done
 
 _CeladonCityText2::
-	text "Heheh! This GYM"
-	line "is great! It's"
-	cont "full of women!"
+	text "חיחיחי! המכון הזה"
+	line "נהדר! הוא מלא"
+	cont "בנשים!"
 	done
 
 _CeladonCityText3::
-	text "The GAME CORNER"
-	line "is bad for our"
-	cont "city's image!"
+	text "הGAME CORNER" ; TODO
+	line "מזיקה לתדמית של"
+	cont "העיר!"
 	done
 
 _CeladonCityText4::
-	text "Moan! I blew it"
-	line "all at the slots!"
+	text "אוח! בזבזתי הכל"
+	line "במכונות המזל!"
 
-	para "I knew I should"
-	line "have cashed in my"
-	cont "coins for prizes!"
+	para "ידעתי שהיה כדאי לי"
+	line "להחליף את"
+	cont "האסימונים שלי"
+	cont "בפרסים!"
 	done
 
 _TM41PreText::
-	text "Hello, there!"
+	text "שלום לך!"
 
-	para "I've seen you,"
-	line "but I never had a"
-	cont "chance to talk!"
+	para "ראיתי אותך חולף,"
+	line "אבל מעולם לא היתה"
+	cont "לנו הזדמנות"
+	cont "לפטפט!"
 
-	para "Here's a gift for"
-	line "dropping by!"
+	para "הנה שי קטן על"
+	line "שעצרת כדי לדבר"
+	cont "איתי!"
 	prompt
 
 _ReceivedTM41Text::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM41ExplanationText::
-	text "TM41 teaches"
-	line "SOFTBOILED!"
+	text "14MT ילמד את"
+	line "המהלך הטלת ביצה!"
 
-	para "Only one #MON"
-	line "can use it!"
+	para "רק #ימונית אחת"
+	line "יכולה להשתמש בו!"
 
-	para "That #MON is"
-	line "CHANSEY!"
+	para "ה#ימונית הזו היא"
+	line "בת-מזל!"
 	done
 
 _TM41NoRoomText::
-	text "Oh, your pack is"
-	line "full of items!"
+	text "אה, התיק שלך כבר"
+	line "מלא בפריטים!"
 	done
 
 _CeladonCityText6::
-	text "This is my trusted"
-	line "pal, POLIWRATH!"
+	text "זה ידידי הטוב,"
+	line "ראשזעם!"
 
-	para "It evolved from"
-	line "POLIWHIRL when I"
-	cont "used WATER STONE!"
+	para "הוא היה פעם"
+	line "ראשבוב! הוא התפתח"
+	cont "לראשזעם כשהשתמשתי"
+	cont "באבן מים עליו!"
 	done
 
 _CeladonCityText7::
-	text "POLIWRATH: Ribi"
-	line "ribit!@@"
+	text "ראשזעם: קוה"
+	line "קוה קוה!@@"
 
 _CeladonCityText8::
-	text "What are you"
-	line "staring at?"
+	text "למה אתה מסתכל"
+	line "עלי ככה?"
 	done
 
 _CeladonCityText9::
-	text "Keep out of TEAM"
-	line "ROCKET's way!"
+	text "אל תעמוד בדרכם"
+	line "של כנופיית רוקט!"
 	done
 
 _CeladonCityText10::
 	text "טיפים למאמנים"
 
-	para "X ACCURACY boosts"
-	line "the accuracy of"
-	cont "techniques!"
+	para "X דייקנות הוא"
+	line "פריט שמגביר את"
+	cont "הדייקנות של"
+	cont "מהלכים!"
 
-	para "DIRE HIT jacks up"
-	line "the likelihood of"
-	cont "critical hits!"
+	para "הפריט X הרסנות"
+	line "מגביר את הסבירות"
+	cont "של מכה הרסנית!"
 
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "קנה לך כאלה"
+	line "בCELADON DEPT." ; TODO
+	cont "STORE!" ; TODO
 	done
 
 _CeladonCityText11::
-	text "CELADON CITY"
-	line "The City of"
-	cont "Rainbow Dreams"
+	text "עיר האביב"
+	line "העיר שבה חולמים"
+	cont "בצבעי הקשת"
 	done
 
 _CeladonCityText13::
-	text "CELADON CITY"
-	line "#MON GYM"
-	cont "LEADER: ERIKA"
+	text "עיר האביב"
+	line "מכון ה#ימון"
+	cont "מנהיגה: איריס"
 
-	para "The Nature Loving"
-	line "Princess!"
+	para "הנסיכה אוהבת"
+	line "הטבע!"
 	done
 
 _CeladonCityText14::
-	text "CELADON MANSION"
+	text "אחוזת האביב"
 	done
 
 _CeladonCityText15::
-	text "Find what you"
-	line "need at CELADON"
-	cont "DEPT. STORE!"
+	text "תמצאו כל מה שאתם"
+	line "צריכים בCELADON" ; TODO
+	cont "DEPT. STORE!" ; TODO
 	done
 
 _CeladonCityText16::
 	text "טיפים למאמנים"
 
-	para "GUARD SPEC."
-	line "protects #MON"
-	cont "against SPECIAL"
-	cont "attacks such as"
-	cont "fire and water!"
+	para "הפריט הגנה מיוחדת"
+	line "מגן על ה#ימון"
+	cont "שלך מפני מתקפות"
+	cont "מיוחדות, כמו"
+	cont "אש ומים!"
 
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "קנה לך כאלה"
+	line "בCELADON DEPT." ; TODO
+	cont "STORE!" ; TODO
 	done
 
 _CeladonCityText17::
-	text "Coins exchanged"
-	line "for prizes!"
-	cont "PRIZE EXCHANGE"
+	text "החלפת אסימונים"
+	line "בפרסים!"
+	cont "PRIZE EXCHANGE" ; TODO
 	done
 
 _CeladonCityText18::
-	text "ROCKET GAME CORNER"
-	line "The playground"
-	cont "for grown-ups!"
+	text "ROCKET GAME CORNER" ; TODO
+	line "The playground" ; TODO
+	cont "for grown-ups!" ; TODO
 	done
 
