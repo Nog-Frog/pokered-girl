@@ -102,9 +102,8 @@ _FuchsiaCityLaprasText::
 _FuchsiaCityOmanyteText::
 	text "שם: סילוני"
 
-	para "ימון שהפך#"
-	line "למאובן"
-	cont "והוחזר לחיים."
+	para "ימון ששוחזר#"
+	line "ממאובן"
 	prompt
 
 _FuchsiaCityKabutoText::
