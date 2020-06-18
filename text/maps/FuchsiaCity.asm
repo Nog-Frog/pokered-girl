@@ -45,7 +45,7 @@ _FuchsiaCityText13::
 
 _FuchsiaCityText16::
 	text "איזור ספארי"
-	line "WARDEN's HOME";TODO
+	line "בית השומר"
 	done
 
 _FuchsiaCityText17::
