@@ -1,28 +1,31 @@
 _CeladonMart5Text1::
-	text "#MON ability"
-	line "enhancers can be"
-	cont "bought only here."
+	text "זו החנות היחידה"
+	line "שמוכרת ויטמינים"
+	cont "משפרי ביצועים..."
+	cont "ל#ימונים,"
+	cont "כמובן."
 
-	para "Use CALCIUM to"
-	line "increase SPECIAL"
-	cont "abilities."
+	para "שימוש בסידן יגביר"
+	line "את היכולת המיוחדת"
+	cont "של ה#ימון."
 
-	para "Use CARBOS to"
-	line "increase SPEED."
+	para "שימוש בפחמן יגביר"
+	line "את המהירות."
 	done
 
 _CeladonMart5Text2::
-	text "I'm here for"
-	line "#MON ability"
-	cont "enhancers."
+	text "אני כאן כדי לקנות"
+	line "משפרי ביצועים"
+	cont "ל#ימונים."
 
-	para "PROTEIN increases"
-	line "ATTACK power."
+	para "חלבון יגביר את"
+	line "כוח המתקפה של"
+	cont "ה#ימון."
 
-	para "IRON increases"
-	line "DEFENSE!"
+	para "ברזל יגביר את"
+	line "ההגנה!"
 	done
 
 _CeladonMart5Text5::
-	text "5F: DRUG STORE"
+	text "ק5: בית מרקחת"
 	done

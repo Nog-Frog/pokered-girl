@@ -1,22 +1,22 @@
 _CeladonMart2Text3::
-	text "SUPER REPEL keeps"
-	line "weak #MON at"
-	cont "bay..."
+	text "דוחה על ירחיק"
+	line "ממך #ימונים"
+	cont "חלשים..."
 
-	para "Hmm, it's a more"
-	line "powerful REPEL!"
+	para "הממ, זה כמו דוחה"
+	line "חזק במיוחד!"
 	done
 
 _CeladonMart2Text4::
-	text "For long outings,"
-	line "you should buy"
-	cont "REVIVE."
+	text "כדאי להצטייד"
+	line "בהחייאה אם אתה"
+	cont "יוצא למסע ארוך."
 	done
 
 _CeladonMart2Text5::
-	text "Top Grade Items"
-	line "for Trainers!"
+	text "פריטים איכותיים"
+	line "שמאמנים אוהבים!"
 
-	para "2F: TRAINER'S"
-	line "    MARKET"
+	para "ק2: הכל"
+	line "  למאמן"
 	done

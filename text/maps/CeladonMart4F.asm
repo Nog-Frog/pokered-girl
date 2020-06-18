@@ -1,26 +1,29 @@
 _CeladonMart4Text2::
-	text "I'm getting a"
-	line "# DOLL for my"
-	cont "girl friend!"
+	text "אני קונה בובת"
+	line "#ימון לחברה"
+	cont "שלי!"
 	done
 
 _CeladonMart4Text3::
-	text "I heard something"
-	line "useful."
+	text "שמעתי עובדה"
+	line "שימושית."
 
-	para "You can run from"
-	line "wild #MON by"
-	cont "distracting them"
-	cont "with a # DOLL!"
+	para "אפשר לברוח מקרבות"
+	line "מול #ימונים"
+	cont "פראים אם מסיחים"
+	cont "את דעתם בעזרת"
+	cont "בובת #ימון!"
 	done
 
 _CeladonMart4Text4::
-	text "Express yourself"
-	line "with gifts!"
+	text "הביעו את אהבתכם"
+	line "דרך מתנות!"
 
-	para "4F: WISEMAN GIFTS"
+	para "ק4: חנות"
+	line "  מזכרות"
 
-	para "Evolution Special!"
-	line "Element STONEs on"
-	cont "sale now!"
+	para "מבצע התפתחות"
+	line "מיוחד!"
+	cont "קנו אבני יסוד!"
+	cont "עכשיו במלאי!"
 	done
