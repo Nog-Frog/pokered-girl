@@ -1,78 +1,75 @@
 _Lab4Text_75dc6::
-	text "Hiya!"
+	text "אה-יה!"
 
-	para "I am important"
-	line "doctor!"
+	para "אני דוקטור חשוב!"
 
-	para "I study here rare"
-	line "#MON fossils!"
+	para "אני חוקר כאן"
+	line "מאובני #ימון"
+	cont "נדירים!"
 
-	para "You! Have you a"
-	line "fossil for me?"
+	para "אתה! יש לך מאובן"
+	line "בשבילי?"
 	prompt
 
 _Lab4Text_75dcb::
-	text "No! Is too bad!"
+	text "לא! חבל!"
 	done
 
 _Lab4Text_75dd0::
-	text "I take a little"
-	line "time!"
+	text "אני לקחת קצת זמן!"
 
-	para "You go for walk a"
-	line "little while!"
+	para "אתה לך להליכה"
+	line "לזמן מה!"
 	done
 
 _Lab4Text_75dd5::
-	text "Where were you?"
+	text "איפה היית?"
 
-	para "Your fossil is"
-	line "back to life!"
+	para "המאובן שלך בחזרה"
+	line "לחיים!"
 
-	para "It was @"
+	para "זה היה @"
 	TX_RAM wcf4b
 	text ""
-	line "like I think!"
+	line "כמו שאני חושב!"
 	prompt
 
 _Lab4Text_610ae::
-	text "Oh! That is"
+	text "הו! זה"
 	line "@"
 	TX_RAM wcd6d
 	text "!"
 
-	para "It is fossil of"
+	para "זה מאובן של"
 	line "@"
 	TX_RAM wcf4b
-	text ", a"
-	cont "#MON that is"
-	cont "already extinct!"
+	text ","
+	cont "#ימון שכבר"
+	cont "נכחד!"
 
-	para "My Resurrection"
-	line "Machine will make"
-	cont "that #MON live"
-	cont "again!"
+	para "מכונת ההחייאה שלי"
+	line "תהפוך את ה#ימון"
+	cont "הזה לחי שוב!"
 	done
 
 _Lab4Text_610b3::
-	text "So! You hurry and"
-	line "give me that!"
+	text "אז! אתה למהר ולתת"
+	line "לי את זה!"
 
-	para "<PLAYER> handed"
-	line "over @"
+	para "<PLAYER> מסר"
+	line "@"
 	TX_RAM wcd6d
 	text "!"
 	prompt
 
 _Lab4Text_610b8::
-	text "I take a little"
-	line "time!"
+	text "אני לקחת קצת זמן!"
 
-	para "You go for walk a"
-	line "little while!"
+	para "אתה לך להליכה"
+	line "לזמן מה!"
 	done
 
 _Lab4Text_610bd::
-	text "Aiyah! You come"
-	line "again!"
+	text "איי-יה! אתה בוא"
+	line "שוב!"
 	done
