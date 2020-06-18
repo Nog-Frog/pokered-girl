@@ -1,187 +1,192 @@
 _CeladonGameCornerText1::
-	text "Welcome!"
+	text "ברוך הבא!"
 
-	para "You can exchange"
-	line "your coins for"
-	cont "fabulous prizes"
-	cont "next door."
+	para "אם תרצה להחליף את"
+	line "האסימונים שלך"
+	cont "בפרסים נפלאים,"
+	cont "תוכל לעשות זאת"
+	cont "בבניין הצמוד."
 	done
 
 _CeladonGameCornerText_48d22::
-	text "Welcome to ROCKET"
-	line "GAME CORNER!"
+	text "ברוך הבא לROCKET" ; TODO
+	line "GAME CORNER!" ; TODO
 
-	para "Do you need some"
-	line "game coins?"
+	para "אתה רוצה לקנות"
+	line "אסימונים?"
 
-	para "It's ¥1000 for 50"
-	line "coins. Would you"
-	cont "like some?"
+	para "05 אסימונים עולים"
+	line "¥0001. אתה"
+	cont "מעוניין?"
 	done
 
 _CeladonGameCornerText_48d27::
-	text "Thanks! Here are"
-	line "your 50 coins!"
+	text "תודה! הנה 05"
+	line "האסימונים שלך!"
 	done
 
 _CeladonGameCornerText_48d2c::
-	text "No? Please come"
-	line "play sometime!"
+	text "לא? בסדר."
+	line "נשמח לראותך"
+	cont "שוב!"
 	done
 
 _CeladonGameCornerText_48d31::
-	text "You can't afford"
-	line "the coins!"
+	text "אין לך מספיק"
+	line "כסף!"
 	done
 
 _CeladonGameCornerText_48d36::
-	text "Oops! Your COIN"
-	line "CASE is full."
+	text "אופס! ארנק"
+	line "האסימונים שלך"
+	cont "מלא."
 	done
 
 _CeladonGameCornerText_48d3b::
-	text "You don't have a"
-	line "COIN CASE!"
+	text "אין לך ארנק"
+	line "לאסימונים!"
 	done
 
 _CeladonGameCornerText3::
-	text "Keep this quiet."
+	text "אל תספר לאף אחד."
 
-	para "It's rumored that"
-	line "this place is run"
-	cont "by TEAM ROCKET."
+	para "השמועה אומרת"
+	line "שכנופיית רוקט"
+	cont "מנהלת את המקום."
 	done
 
 _CeladonGameCornerText4::
-	text "I think these"
-	line "machines have"
-	cont "different odds."
+	text "אני חושבת שבמכונות"
+	line "המזל השונות יש"
+	cont "סיכויים שונים."
 	done
 
 _CeladonGameCornerText_48d9c::
-	text "Kid, do you want"
-	line "to play?"
+	text "ילד, רוצה לשחק?"
 	prompt
 
 _Received10CoinsText::
-	text "<PLAYER> received"
-	line "10 coins!@@"
+	text "<PLAYER> קיבל"
+	line "01 אסימונים!@@"
 
 _CeladonGameCornerText_48da7::
-	text "You don't need my"
-	line "coins!"
+	text "אתה לא צריך את"
+	line "המטבעות שלי!"
 	done
 
 _CeladonGameCornerText_48dac::
-	text "Wins seem to come"
-	line "and go."
+	text "לפעמים זוכים,"
+	line "לפעמים מפסידים."
 	done
 
 _CeladonGameCornerText6::
-	text "I'm having a"
-	line "wonderful time!"
+	text "אני נהנית מאוד!"
 	done
 
 _CeladonGameCornerText_48dca::
-	text "Hey!"
+	text "יו!"
 
-	para "You have better"
-	line "things to do,"
-	cont "champ in making!"
+	para "יש לך דברים יותר"
+	line "טובים לעשות,"
+	cont "אלופצ'יק!"
 
-	para "CELADON GYM's"
-	line "LEADER is ERIKA!"
-	cont "She uses grass-"
-	cont "type #MON!"
+	para "בראש מכון האביב"
+	line "עומדת המנהיגה"
+	cont "איריס!"
+	cont "היא משתמשת"
+	cont "ב#ימונים מסוג"
+	cont "דשא!"
 
-	para "She might appear"
-	line "docile, but don't"
-	cont "be fooled!"
+	para "היא אמנם נראית"
+	line "כנועה, אבל מראה"
+	cont "יכול להטעות!"
 	done
 
 _CeladonGameCornerText_48dcf::
-	text "They offer rare"
-	line "#MON that can"
-	cont "be exchanged for"
-	cont "your coins."
+	text "אפשר להחליף את"
+	line "האסימונים שלך"
+	cont "ב#ימונים"
+	cont "נדירים."
 
-	para "But, I just can't"
-	line "seem to win!"
+	para "אבל, אני לא מצליח"
+	line "לזכות במספיק"
+	cont "אסימונים!"
 	done
 
 _CeladonGameCornerText8::
-	text "Games are scary!"
-	line "It's so easy to"
-	cont "get hooked!"
+	text "משחקי מזל מפחידים"
+	line "אותי! אפשר להתמכר"
+	cont "כל-כך בקלות!"
 	done
 
 _CeladonGameCornerText_48e26::
-	text "What's up? Want"
-	line "some coins?"
+	text "מה הולך? רוצה קצת"
+	line "אסימונים?"
 	prompt
 
 _Received20CoinsText::
-	text "<PLAYER> received"
-	line "20 coins!@@"
+	text "<PLAYER> קיבל"
+	line "02 אסימונים!@@"
 
 _CeladonGameCornerText_48e31::
-	text "You have lots of"
-	line "coins!"
+	text "יש לך כבר המון"
+	line "אסימונים!"
 	done
 
 _CeladonGameCornerText_48e36::
-	text "Darn! I need more"
-	line "coins for the"
-	cont "#MON I want!"
+	text "אוף! אני צריך עוד"
+	line "אסימונים בשביל"
+	cont "ה#ימון שאני"
+	cont "רוצה!"
 	done
 
 _CeladonGameCornerText_48e88::
-	text "Hey, what? You're"
-	line "throwing me off!"
-	cont "Here are some"
-	cont "coins, shoo!"
+	text "רגע, מה? אתה מסיח"
+	line "את דעתי! קח כמה"
+	cont "אסימונים ו′סתלק!"
+	cont "קישטה!"
 	prompt
 
 _CeladonGameCornerText_48e8d::
-	text "<PLAYER> received"
-	line "20 coins!@@"
+	text "<PLAYER> קיבל"
+	line "02 אסימונים!@@"
 
 _CeladonGameCornerText_48e93::
-	text "You've got your"
-	line "own coins!"
+	text "יש לך אסימונים"
+	line "משלך!"
 	done
 
 _CeladonGameCornerText_48e98::
-	text "The trick is to"
-	line "watch the reels"
-	cont "closely!"
+	text "הסוד הוא שצריך"
+	line "להסתכל על הגלגלים"
+	cont "מקרוב!"
 	done
 
 _CeladonGameCornerText_48ece::
-	text "I'm guarding this"
-	line "poster!"
-	cont "Go away, or else!"
+	text "אני שומר על הפוסטר"
+	line "הזה!"
+	cont "תסתלק מכאן, או ש!"
 	done
 
 _CeladonGameCornerText_48ed3::
-	text "Dang!"
+	text "אוף!"
 	prompt
 
 _CeladonGameCornerText_48ed8::
-	text "Our hideout might"
-	line "be discovered! I"
-	cont "better tell BOSS!"
+	text "המחבוא שלנו עלול"
+	line "להיחשף! כדאי שאלך"
+	cont "להזהיר את הבוס!"
 	done
 
 _CeladonGameCornerText_48f09::
-	text "Hey!"
+	text "היי!"
 
-	para "A switch behind"
-	line "the poster!?"
-	cont "Let's push it!@@"
+	para "יש מתג מאחורי"
+	line "הפוסטר!?"
+	cont "קדימה, בוא נלחץ!@@"
 
 _CeladonGameCornerText_48f19::
-	text "Oops! Forgot the"
-	line "COIN CASE!"
+	text "אופס! שכחת את"
+	line "הארנק לאסימונים!"
 	done
 
