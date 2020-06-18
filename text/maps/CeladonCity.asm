@@ -101,8 +101,7 @@ _CeladonCityText10::
 	cont "של מכה הרסנית!"
 
 	para "קנה לך כאלה"
-	line "בCELADON DEPT." ; TODO
-	cont "STORE!" ; TODO
+	line "בכל-בו אביב!"
 	done
 
 _CeladonCityText11::
@@ -126,8 +125,8 @@ _CeladonCityText14::
 
 _CeladonCityText15::
 	text "תמצאו כל מה שאתם"
-	line "צריכים בCELADON" ; TODO
-	cont "DEPT. STORE!" ; TODO
+	line "צריכים בכל-בו"
+	cont "אביב!"
 	done
 
 _CeladonCityText16::
@@ -140,8 +139,7 @@ _CeladonCityText16::
 	cont "אש ומים!"
 
 	para "קנה לך כאלה"
-	line "בCELADON DEPT." ; TODO
-	cont "STORE!" ; TODO
+	line "בכל-בו אביב!"
 	done
 
 _CeladonCityText17::
