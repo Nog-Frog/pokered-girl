@@ -81,14 +81,14 @@ _MtMoon3EndBattleText3::
 	prompt
 
 _MtMoon3AfterBattleText3::
-	text "לכל הרוחות! "
+	text "לכל הרוחות!"
 	line "העמיתים שלי לא"
 	cont "יתמכו בזה!"
 	done
 
 _MtMoon3BattleText4::
 	text "אנחנו מרימים פה"
-	line "פשע גדול!"
+	line "עסק גדול!"
 	cont "לך לעזאזל, ילדוו!"
 	done
 
