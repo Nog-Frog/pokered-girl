@@ -1,26 +1,26 @@
 _FuchsiaMeetingRoomText1::
-	text "We nicknamed the"
-	line "WARDEN SLOWPOKE."
+	text "נתנו לפקח את"
+	line "הכינוי כיסלאט."
 
-	para "He and SLOWPOKE"
-	line "both look vacant!"
+	para "גם לו וגם לכיסלאט"
+	line "יש הבעה ריקנית!"
 	done
 
 _FuchsiaMeetingRoomText2::
-	text "SLOWPOKE is very"
-	line "knowledgeable"
-	cont "about #MON!"
+	text "כיסלאט מאד משכיל"
+	line "בנושאי #ימון!"
 
-	para "He even has some"
-	line "fossils of rare,"
-	cont "extinct #MON!"
+	para "אפילו יש לו"
+	line "כמה מאובנים של"
+	cont "#ימונים נדירים"
+	cont "שנכחדו!"
 	done
 
 _FuchsiaMeetingRoomText3::
-	text "SLOWPOKE came in,"
-	line "but I couldn't"
-	cont "understand him."
+	text "כיסלאט נכנס, אבל"
+	line "לא הצלחתי להבין"
+	cont "אותו."
 
-	para "I think he's got"
-	line "a speech problem!"
+	para "אני חושב שיש לו"
+	line "ליקוי בדיבור!"
 	done
