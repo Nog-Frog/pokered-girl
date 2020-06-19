@@ -1,7 +1,8 @@
 _SSAnne3Text1::
-	text "Our CAPTAIN is a"
-	line "sword master!"
+	text "הקפטן שלנו"
+	line "מומחה בחרבות!"
 
-	para "He even teaches"
-	line "CUT to #MON!"
+	para "הוא אפילו מלמד"
+	line "#ימונים את!"
+	cont "מהלך החיתוך!"
 	done
