@@ -1,20 +1,18 @@
 _FuchsiaPokecenterText1::
-	text "You can't win"
-	line "with just one"
-	cont "strong #MON."
+	text "אי אפשר לנצח רק עם"
+	line "#ימון אחד חזק."
 
-	para "It's tough, but"
-	line "you have to raise"
-	cont "them evenly."
+	para "זה קשה, אבל אתה"
+	line "חייב לגדל אותם"
+	cont "באופן שווה."
 	done
 
 _FuchsiaPokecenterText3::
-	text "There's a narrow"
-	line "trail west of"
-	cont "VIRIDIAN CITY."
+	text "יש שביל צר מערבה"
+	line "מעיר הברקת."
 
-	para "It goes to #MON"
-	line "LEAGUE HQ."
-	cont "The HQ governs"
-	cont "all trainers."
+	para "הוא מוביל למפקדת"
+	line "ליגת ה#ימון."
+	cont "המפקדה מפקחת על"
+	cont "כל המאמנים."
 	done
