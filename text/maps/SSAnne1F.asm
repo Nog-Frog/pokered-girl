@@ -1,21 +1,20 @@
 _SSAnne1Text1::
-	text "Bonjour!"
-	line "I am le waiter on"
-	cont "this ship!"
+	text "בונז'ור!"
+	line "אני לה גרסון"
+	cont "של הספינה!"
 
-	para "I will be happy"
-	line "to serve you any-"
-	cont "thing you please!"
+	para "אשמח להגיש לך"
+	line "כל דבר שרק תרצה!"
 
-	para "Ah! Le strong"
-	line "silent type!"
+	para "הא! אתה טיפוס"
+	line "שקט!"
 	done
 
 _SSAnne1Text2::
-	text "The passengers"
-	line "are restless!"
+	text "האורחים בספינה"
+	line "חסרי מנוחה!"
 
-	para "You might be"
-	line "challenged by the"
-	cont "more bored ones!"
+	para "תצפה לאתגרים"
+	line "מהאורחים" 
+	cont "המשועממים!"
 	done
