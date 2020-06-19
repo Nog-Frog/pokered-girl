@@ -1,15 +1,14 @@
 _Route18GateUpstairsText_49993::
-	text "Looked into the"
-	line "binoculars."
+	text "מביט דרך המשקפת."
 
-	para "PALLET TOWN is in"
-	line "the west!"
+	para "אפשר לראות את"
+	line "העיירה פאלט"
+	cont "ממערב!"
 	done
 
 _Route18GateUpstairsText_4999f::
-	text "Looked into the"
-	line "binoculars."
+	text "מביט דרך המשקפת."
 
-	para "There are people"
-	line "swimming!"
+	para "יש שם אנשים"
+	line "שוחים!"
 	done

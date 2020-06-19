@@ -1,12 +1,12 @@
 _SaffronPokecenterText2::
-	text "#MON growth"
-	line "rates differ from"
-	cont "specie to specie."
+	text "קצב גדילת"
+	line "#ימונים שונה"
+	cont "בין זן לזן."
 	done
 
 _SaffronPokecenterText3::
-	text "SILPH CO. is very"
-	line "famous. That's"
-	cont "why it attracted"
-	cont "TEAM ROCKET!"
+	text "סילף בע″מ היא"
+	line "חברה ידועה. זאת"
+	cont "הסיבה שכנופיית"
+	cont "רוקט נטפלו אליה!"
 	done

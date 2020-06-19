@@ -1,14 +1,13 @@
 _Route11GateText1::
-	text "When you catch"
-	line "lots of #MON,"
-	cont "isn't it hard to"
-	cont "think up names?"
+	text "קשה להמציא כינויים"
+	line "לכל ה#ימונים"
+	cont "שלך אם אתה תופס"
+	cont "הרבה."
 
-	para "In LAVENDER TOWN,"
-	line "there's a man who"
-	cont "rates #MON"
-	cont "nicknames."
+	para "יש איש בעיר הלבנדר"
+	line "שמבקר כינויים של"
+	cont "#ימונים."
 
-	para "He'll help you"
-	line "rename them too!"
+	para "הוא יכול גם לשנות"
+	line "את השם שלהם!"
 	done

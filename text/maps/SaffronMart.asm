@@ -1,13 +1,14 @@
 _SaffronMartText2::
-	text "MAX REPEL lasts"
-	line "longer than SUPER"
-	cont "REPEL for keeping"
-	cont "weaker #MON"
-	cont "away!"
+	text "כשמדובר על דחיית"
+	line "#ימונים פראים,"
+	cont "דוחה יתר משפיע זמן"
+	cont "רב יותר מדוחה על!"
 	done
 
 _SaffronMartText3::
-	text "REVIVE is costly,"
-	line "but it revives"
-	cont "fainted #MON!"
+	text "החייאה היא אמנם"
+	line "פריט יקר, אבל היא"
+	cont "מסוגלת להעיר"
+	cont "#ימונים"
+	cont "שהתמוטטו!"
 	done

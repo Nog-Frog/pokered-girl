@@ -1,13 +1,12 @@
 _RockTunnelPokecenterText2::
-	text "The element types"
-	line "of #MON make"
-	cont "them stronger"
-	cont "than some types"
-	cont "and weaker than"
-	cont "others!"
+	text "הסוג של #ימון"
+	line "הופך אותו לחלש"
+	cont "מול סוגים מסוימים"
+	cont "וחזק מול סוגים"
+	cont "אחרים!"
 	done
 
 _RockTunnelPokecenterText3::
-	text "I sold a useless"
-	line "NUGGET for ¥5000!"
+	text "מכרתי גוש זהב חסר"
+	line "תועלת ב¥0005!"
 	done

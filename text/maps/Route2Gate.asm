@@ -1,12 +1,13 @@
 _Route2GateText_5d616::
-	text "The HM FLASH"
-	line "lights even the"
-	cont "darkest dungeons."
+	text "מהלך ה-HM הבזק"
+	line "מסוגל להאיר גם"
+	cont "את המערות האפלות"
+	cont "ביותר."
 	done
 
 _Route2GateText2::
-	text "Once a #MON"
-	line "learns FLASH, you"
-	cont "can get through"
-	cont "ROCK TUNNEL."
+	text "ברגע שתלמד #ימון"
+	line "את המהלך הבזק,"
+	cont "תוכל לעבור דרך"
+	cont "מנהרת הסלע."
 	done
