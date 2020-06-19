@@ -1,5 +1,5 @@
 _UndergroundPathEntRoute8Text1::
-	text "The dept. store"
-	line "in CELADON has a"
-	cont "great selection!"
+	text "הכל-בו בעיר האביב"
+	line "מציע מבחר רחב של"
+	cont "פריטים!"
 	done
