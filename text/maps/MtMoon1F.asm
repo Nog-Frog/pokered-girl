@@ -1,119 +1,113 @@
 _MtMoon1BattleText2::
-	text "WHOA! You shocked"
-	line "me! Oh, you're"
-	cont "just a kid!"
+	text "וואו! הבהלת"
+	line "אותי! אה, אתה!"
+	cont "בסך הכל ילד!"
 	done
 
 _MtMoon1EndBattleText2::
-	text "Wow!"
-	line "Shocked again!"
+	text "וואו!"
+	line "נבהלתי שוב!"
 	prompt
 
 _MtMoon1AfterBattleText2::
-	text "Kids like you"
-	line "shouldn't be"
-	cont "here!"
+	text "ילדים כמוך לא"
+	line "אמורים להיות פה!"
 	done
 
 _MtMoon1BattleText3::
-	text "Did you come to"
-	line "explore too?"
+	text "גם אתה פה 
+	line "כדי לחקור?"
 	done
 
 _MtMoon1EndBattleText3::
-	text "Losing"
-	line "stinks!"
+	text "אני שונא להפסיד!"
 	prompt
 
 _MtMoon1AfterBattleText3::
-	text "I came down here"
-	line "to show off to"
-	cont "girls."
+	text "באתי לכאן בשביל"
+	line "להשוויץ לבנות."
 	done
 
 _MtMoon1BattleText4::
-	text "Wow! It's way"
-	line "bigger in here"
-	cont "than I thought!"
+	text "וואו! זה הרבה"
+	line "יותר גדול"
+	cont "ממה שחשבתי!"
 	done
 
 _MtMoon1EndBattleText4::
-	text "Oh!"
-	line "I lost it!"
+	text "הו!"
+	line "איבדתי את זה!"
 	prompt
 
 _MtMoon1AfterBattleText4::
-	text "How do you get"
-	line "out of here?"
+	text "איך אפשר לצאת"
+	line "מכאן?"
 	done
 
 _MtMoon1BattleText5::
-	text "What! Don't sneak"
-	line "up on me!"
+	text "מה! אל תתגנב!"
+	line "מאחורי!"
 	done
 
 _MtMoon1EndBattleText5::
-	text "My"
-	line "#MON won't do!"
+	text "ה#ימון שלי לא"
+	line "ישרוד!"
 	prompt
 
 _MtMoon1AfterBattleText5::
-	text "I have to find"
-	line "stronger #MON."
+	text "אני חייב למצוא"
+	line "ימון חזק יותר#."
 	done
 
 _MtMoon1BattleText6::
-	text "What? I'm waiting"
-	line "for my friends to"
-	cont "find me here."
+	text "מה? אני מחכה"
+	line "שחבריי יימצאו"
+	cont "אותי כאן."
 	done
 
 _MtMoon1EndBattleText6::
-	text "I lost?"
+	text "הפסדתי?"
 	prompt
 
 _MtMoon1AfterBattleText6::
-	text "I heard there are"
-	line "some very rare"
-	cont "fossils here."
+	text "שמעתי שיש כאן"
+	line מאובנים נדירים מאוד."
 	done
 
 _MtMoon1BattleText7::
-	text "Suspicious men"
-	line "are in the cave."
-	cont "What about you?"
+	text "יש גברים חשודים"
+	line "בתוך המערה."
+	cont "מה אתה?"
 	done
 
 _MtMoon1EndBattleText7::
-	text "You"
-	line "got me!"
+	text "עלית עליי!"
 	prompt
 
 _MtMoon1AfterBattleText7::
-	text "I saw them! I'm"
-	line "sure they're from"
-	cont "TEAM ROCKET!"
+	text "ראיתי אותם! אני"
+	line "בטוח שהם חלק"
+	cont "מכנופיית רוקט!"
 	done
 
 _MtMoon1BattleText8::
-	text "Go through this"
-	line "cave to get to"
-	cont "CERULEAN CITY!"
+	text "עבור דרך המערה"
+	line "כדי להגיע"
+	cont "לעיר הטורקיז!"
 	done
 
 _MtMoon1EndBattleText8::
-	text "I"
-	line "lost."
+	text "הפסדתי."
 	prompt
 
 _MtMoon1AfterBattleText8::
-	text "ZUBAT is tough!"
-	line "But, it can be"
-	cont "useful if you"
-	cont "catch one."
+	text "אצלף הוא #ימון"
+	line "קשוח! אבל הוא"
+	cont "יכול להיות שימושי"
+	cont "אם תתפוס אחד."
 	done
 
 _MtMoon1Text14::
-	text "Beware! ZUBAT is"
-	line "a blood sucker!"
+	text "היזהר! האצלף"
+	line "מוצץ דם!"
 	done
