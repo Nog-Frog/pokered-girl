@@ -28,7 +28,7 @@ _SSAnneRivalBeforeBattleText::
 	para "יש סוגים שונים"
 	line "בכל מקום!"
 
-	para "מסתובבים באיזורים"
+	para "שורצים באיזורים"
 	line "עשביים!"
 	done
 
