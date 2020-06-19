@@ -4,8 +4,9 @@ _SSAnne2Text1::
 	cont "למאמנים!"
 
 	para "בכל נמל, אנחנו"
-	line "עורכים מסיבות"
-	cont "למאמנים!"
+	line "עורכים מסיבה"
+	cont "אליה מוזמנים!"
+	cont "רק מאמנים ידועים!"
 	done
 
 _SSAnneRivalBeforeBattleText::
