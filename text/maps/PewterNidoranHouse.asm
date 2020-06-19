@@ -1,24 +1,22 @@
 _PewterHouse1Text1::
-	text "NIDORAN: Bowbow!@@"
+	text "עקצחלב: באוואו!@@"
 
 _PewterHouse1Text2::
-	text "NIDORAN sit!"
+	text "עקצחלב, שב!"
 	done
 
 _PewterHouse1Text3::
-	text "Our #MON's an"
-	line "outsider, so it's"
-	cont "hard to handle."
+	text "ה#ימון שלנו הגיע"
+	line "ממאמן אחר, אז קשה"
+	cont "לאמן אותו."
 
-	para "An outsider is a"
-	line "#MON that you"
-	cont "get in a trade."
+	para "#ימון שקיבלת"
+	line "דרך החלפות ממאמן"
+	cont "אחר יגדל מהר,"
+	cont "אבל הוא עשוי לסרב"
+	cont "לפקודות של מאמן"
+	cont "לא מיומן!"
 
-	para "It grows fast, but"
-	line "it may ignore an"
-	cont "unskilled trainer"
-	cont "in battle!"
-
-	para "If only we had"
-	line "some BADGEs..."
+	para "לו רק היו לנו"
+	line "כמה תגים..."
 	done

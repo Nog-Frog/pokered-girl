@@ -1,26 +1,22 @@
 _Route16GateUpstairsText_49820::
-	text "I'm going for a"
-	line "ride with my girl"
-	cont "friend!"
+	text "אני יוצא לרכיבה"
+	line "עם החברה שלי!"
 	done
 
 _Route16GateUpstairsText_4982f::
-	text "We're going"
-	line "riding together!"
+	text "אנחנו יוצאים"
+	line "לרכיבה ביחד!"
 	done
 
 _Route16GateUpstairsText_4983b::
-	text "Looked into the"
-	line "binoculars."
+	text "מביט דרך המשקפת."
 
-	para "It's CELADON DEPT."
-	line "STORE!"
+	para "זה כל-בו אביב!"
 	done
 
 _Route16GateUpstairsText_49847::
-	text "Looked into the"
-	line "binoculars."
+	text "מביט דרך המשקפת."
 
-	para "There's a long"
-	line "path over water!"
+	para "זה שביל ארוך שעובר"
+	line "מעל מים!"
 	done

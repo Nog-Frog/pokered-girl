@@ -1,26 +1,26 @@
 _SaffronHouse1Text1::
-	text "Thank you for"
-	line "writing. I hope"
-	cont "to see you soon!"
+	text "תודה לך על מכתבך."
+	line "אני מקווה שנתראה"
+	cont "שוב בקרוב!"
 
-	para "Hey! Don't look"
-	line "at my letter!"
+	para "היי! אל תציץ במכתב"
+	line "שלי!"
 	done
 
 _SaffronHouse1Text2::
-	text "PIDGEY: Kurukkoo!@@"
+	text "יונדי: קורוקוקו!@@"
 
 _SaffronHouse1Text3::
-	text "The COPYCAT is"
-	line "cute! I'm getting"
-	cont "her a # DOLL!"
+	text "החקיינית חמודה!"
+	line "אני קונה לה בובת"
+	cont "#ימון!"
 	done
 
 _SaffronHouse1Text4::
-	text "I was given a PP"
-	line "UP as a gift."
+	text "קיבלתי עוד PP"
+	line "כמתנה."
 
-	para "It's used for"
-	line "increasing the PP"
-	cont "of techniques!"
+	para "זה פריט שמגביר את"
+	line "כמות הPP של"
+	cont "מהלכים!"
 	done

@@ -1,19 +1,18 @@
 _PewterHouse2Text1::
-	text "#MON learn new"
-	line "techniques as"
-	cont "they grow!"
+	text "#ימונים לומדים"
+	line "מהלכים בעצמם ככל"
+	cont "שהם גדלים!"
 
-	para "But, some moves"
-	line "must be taught by"
-	cont "the trainer!"
+	para "אבל, יש מהלכים"
+	line "שרק מאמן יכול"
+	cont "ללמד!"
 	done
 
 _PewterHouse2Text2::
-	text "#MON become"
-	line "easier to catch"
-	cont "when they are"
-	cont "hurt or asleep!"
+	text "יותר קל לתפוס"
+	line "#ימון שישן או"
+	cont "מותש מהקרב!"
 
-	para "But, it's not a"
-	line "sure thing!"
+	para "אבל, לעולם לא"
+	line "מובטח שתצליח!"
 	done

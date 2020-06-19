@@ -1,20 +1,21 @@
 _RockTunnel2AfterBattleText8::
-	text "I'll raise my"
-	line "#MON to beat"
-	cont "yours, kid!"
+	text "אני אאמן את"
+	line "ה#ימונים שלי"
+	cont "כדי שינצחו את"
+	cont "שלך, ילד!"
 	done
 
 _RockTunnel2BattleText9::
-	text "I draw #MON"
-	line "when I'm home."
+	text "כשאני בבית, אני"
+	line "מצייר #ימונים."
 	done
 
 _RockTunnel2EndBattleText9::
-	text "Whew!"
-	line "I'm exhausted!"
+	text "פיו!"
+	line "אני מותש!"
 	prompt
 
 _RockTunnel2AfterBattleText9::
-	text "I'm an artist,"
-	line "not a fighter."
+	text "יש לי נפש אמן,"
+	line "לא נפש לוחם."
 	done

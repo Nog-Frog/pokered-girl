@@ -1,29 +1,27 @@
 _Mansion1BattleText2::
-	text "Who are you? There"
-	line "shouldn't be"
-	cont "anyone here."
+	text "מי אתה? לא אמור"
+	line "להיות פה אף אחד."
 	done
 
 _Mansion1EndBattleText2::
-	text "Ouch!"
+	text "אווץ'!"
 	prompt
 
 _Mansion1AfterBattleText2::
-	text "A key? I don't"
-	line "know what you're"
-	cont "talking about."
+	text "מפתח? אין לי מושג"
+	line "על מה אתה מדבר."
 	done
 
 _MansionSwitchText::
-	text "A secret switch!"
+	text "מתג חבוי!"
 
-	para "Press it?"
+	para "ללחוץ עליו?"
 	done
 
 _MansionSwitchPressedText::
-	text "Who wouldn't?"
+	text "מי לא היה לוחץ?"
 	prompt
 
 _MansionSwitchNotPressedText::
-	text "Not quite yet!"
+	text "עדיין לא!"
 	done
