@@ -1,11 +1,11 @@
 _SafariZoneCenterText2::
-	text "REST HOUSE"
+	text "ביתן למנוחה"
 	done
 
 _SafariZoneCenterText3::
 	text "טיפים למאמנים"
 
-	para "Press the START"
-	line "Button to check"
-	cont "remaining time!"
+	para "לחץ על כפתור ה-"
+	line "START כדי לבדוק"
+	cont "כמה זמן נשאר!"
 	done

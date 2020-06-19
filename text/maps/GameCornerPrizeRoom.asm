@@ -1,12 +1,12 @@
 _CeladonPrizeRoomText1::
-	text "I sure do fancy"
-	line "that PORYGON!"
+	text "אני כל-כך רוצה"
+	line "מצולען!"
 
-	para "But, it's hard to"
-	line "win at slots!"
+	para "אבל, כל-כך קשה"
+	line "לזכות במשחקי מזל!"
 	done
 
 _CeladonPrizeRoomText2::
-	text "I had a major"
-	line "haul today!"
+	text "זכיתי בשלל רב"
+	line "היום!"
 	done

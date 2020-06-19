@@ -1,13 +1,13 @@
 _ArticunoBattleText::
-	text "Gyaoo!@@"
+	text "גיאהוו!@@"
 
 _SeafoamIslands5Text4::
-	text "Boulders might"
-	line "change the flow"
-	cont "of water!"
+	text "סלעים עלולים"
+	line "לשנות את כיוון"
+	cont "הזרמים!"
 	done
 
 _SeafoamIslands5Text5::
-	text "DANGER"
-	line "Fast current!"
+	text "סכנה"
+	line "זרמי סחף חזקים!"
 	done

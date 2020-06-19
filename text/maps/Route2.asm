@@ -1,9 +1,9 @@
 _Route2Text3::
-	text "ROUTE 2"
-	line "VIRIDIAN CITY -"
-	cont "PEWTER CITY"
+	text "דרך 2"
+	line "עיר האביב -"
+	cont "עיר הכספית"
 	done
 
 _Route2Text4::
-	text "DIGLETT's CAVE"
+	text "המערה של חפיד"
 	done

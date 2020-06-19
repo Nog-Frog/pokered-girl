@@ -1,7 +1,7 @@
 _SilphCo1Text1::
-	text "Welcome!"
+	text "ברוך הבא!"
 
-	para "The PRESIDENT is"
-	line "in the boardroom"
-	cont "on 11F!"
+	para "הנשיא נמצא בחדר"
+	line "הפגישות בקומה"
+	cont "11!"
 	done

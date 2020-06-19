@@ -1,3 +1,4 @@
 _RocketElevatorText_4578b::
-	text "It appears to"
-	line "need a key.@@"
+	text "נראה שדרוש מפתח"
+	line "כדי להפעיל את"
+	cont "המעלית.@@"

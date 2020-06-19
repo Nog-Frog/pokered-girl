@@ -1,4 +1,4 @@
 _Route12GateText1::
-	text "There's a lookout"
-	line "spot upstairs."
+	text "יש נקודת תצפית"
+	line "במעלה המדרגות."
 	done
