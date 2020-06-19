@@ -47,7 +47,7 @@ _SSAnne10EndBattleText3::
 _SSAnne10AfterBattleText3::
 	text "תפסנו את כל"
 	line "ה#ימונים שלנו"
-	cont "בים!"
+	cont "בזמן שהיינו בים!"
 	done
 
 _SSAnne10BattleText4::
