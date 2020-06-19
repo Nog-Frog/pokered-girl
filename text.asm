@@ -494,15 +494,16 @@ _CinnabarPokecenterGuyText::
 _SaffronCityPokecenterGuyText1::
 	text "הלוואי שהרביעיה"
 	line "העילית יבואו"
-	cont "לכסח לצוות רוקט"
-	cont "את הצורה!"
+	cont "לכסח לכנופיית"
+	cont "רוקט את הצורה!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "צוות רוקט הסתלקו!"
-	line "אנחנו יכולים שוב"
-	cont "להסתובב ברחוב"
-	cont "בלי לפחד! תודה!"
+	text "כנופיית רוקט "
+	line "הסתלקו! אנחנו"
+	cont "שוב יכולים ללכת"
+	cont "ברחובות בלי פחד!"
+	cont "תודה!"
 	done
 
 _CeladonCityHotelText::

@@ -10,7 +10,7 @@ _VictoryRoad3EndBattleText2::
 
 _VictoryRoad3AfterBattleText2::
 	text "הבסת את אלפרון"
-	line "מצוות רוקט?"
+	line "מכנופיית רוקט?"
 	done
 
 _VictoryRoad3BattleText3::
