@@ -1,30 +1,31 @@
 _FuchsiaCityText1::
-	text "Did you try the"
-	line "SAFARI GAME? Some"
-	cont "#MON can only"
-	cont "be caught there."
+	text "ניסית את"
+	line "משחק הספארי?"
+	cont "יש #ימונים שתוכל"
+	cont "לתפוס רק שם."
 	done
 
 _FuchsiaCityText2::
-	text "SAFARI ZONE has a"
-	line "zoo in front of"
-	cont "the entrance."
+	text "יש גן חיות"
+	line "מול הכניסה"
+	cont "באיזור הספארי."
 
-	para "Out back is the"
-	line "SAFARI GAME for"
-	cont "catching #MON."
+	para "מאחורה"
+	line "נמצא משחק הספארי"
+	cont "שם ניתן לתפוס"
+	cont "ימונים#."
 	done
 
 _FuchsiaCityText3::
-	text "ERIK: Where's"
-	line "SARA? I said I'd"
-	cont "meet her here."
+	text "איפה :ERIK";TODO
+	line "היא ?SARA";TODO
+	cont "אמרה שנפגש כאן."
 	done
 
 _FuchsiaCityText4::
-	text "That item ball in"
-	line "there is really a"
-	cont "#MON."
+	text "הזה item ballה";TODO
+	line "שם הוא בעצם"
+	cont "ימון#."
 	done
 
 _FuchsiaCityText5::
@@ -32,86 +33,84 @@ _FuchsiaCityText5::
 	done
 
 _FuchsiaCityText11::
-	text "FUCHSIA CITY"
-	line "Behold! It's"
-	cont "Passion Pink!"
+	text "עיר השושנה"
+	line "היזהרו! זה"
+	cont "Passion Pink!";TODO
 	done
 
 _FuchsiaCityText13::
-	text "SAFARI GAME"
-	line "#MON-U-CATCH!"
+	text "משחק ספארי"
+	line "#MON-U-CATCH!";TODO
 	done
 
 _FuchsiaCityText16::
-	text "SAFARI ZONE"
-	line "WARDEN's HOME"
+	text "איזור ספארי"
+	line "בית הפקח"
 	done
 
 _FuchsiaCityText17::
-	text "#MON PARADISE"
-	line "SAFARI ZONE"
+	text "#MON PARADISE";TODO
+	line "איזור הספארי"
 	done
 
 _FuchsiaCityText18::
-	text "FUCHSIA CITY"
-	line "#MON GYM"
-	cont "LEADER: KOGA"
+	text "עיר השושנה"
+	line "מכון #ימון"
+	cont "מנהיג: צפע"
 
-	para "The Poisonous"
-	line "Ninja Master"
+	para "מאסטר הנינג'ה"
+	line "הרעיל."
 	done
 
 _FuchsiaCityChanseyText::
-	text "Name: CHANSEY"
+	text "שם: בת מזל"
 
-	para "Catching one is"
-	line "all up to chance."
+	para "לתפוס אחת"
+	line "כזו זה עניין"
+	cont "של מזל."
 	prompt
 
 _FuchsiaCityVoltorbText::
-	text "Name: VOLTORB"
+	text "שם: חשמלמל"
 
-	para "The very image of"
-	line "a # BALL."
+	para "נראה ממש"
+	line "כמו פוכדור."
 	prompt
 
 _FuchsiaCityKangaskhanText::
-	text "Name: KANGASKHAN"
-
-	para "A maternal #MON"
-	line "that raises its"
-	cont "young in a pouch"
-	cont "on its belly."
+	text "שם: כיסבל"
+        para "ימון אמהי#"
+	line "שמגדלת את"
+	cont "צאצאיה בתוך"
+	cont "כיס בבטן שלה."
 	prompt
 
 _FuchsiaCitySlowpokeText::
-	text "Name: SLOWPOKE"
+	text "שם: כיסלאט"
 
-	para "Friendly and very"
-	line "slow moving."
+	para "חביב ומאוד"
+	line "איטי."
 	prompt
 
 _FuchsiaCityLaprasText::
-	text "Name: LAPRAS"
+	text "שם: תכוגית"
 
-	para "A.K.A. the king"
-	line "of the seas."
+	para "ידוע גם"
+	line "כמלך הימים."
 	prompt
 
 _FuchsiaCityOmanyteText::
-	text "Name: OMANYTE"
+	text "שם: סילוני"
 
-	para "A #MON that"
-	line "was resurrected"
-	cont "from a fossil."
+	para "ימון ששוחזר#"
+	line "ממאובן"
 	prompt
 
 _FuchsiaCityKabutoText::
-	text "Name: KABUTO"
+	text "שם: פרסדה"
 
-	para "A #MON that"
-	line "was resurrected"
-	cont "from a fossil."
+	para "ימון ששוחזר#"
+	line "ממאובן"
 	prompt
 
 _FuchsiaCityText_19b2a::
