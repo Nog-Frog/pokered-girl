@@ -13,7 +13,7 @@ _ViridianHouseText2::
 	done
 
 _ViridianHouseText_1d5b1::
-	text "כידי: !טטוויט"
+	text "כידי: טטוויט!"
 	done
 
 _ViridianHouseText4::
