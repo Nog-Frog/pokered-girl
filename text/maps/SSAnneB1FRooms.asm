@@ -60,10 +60,10 @@ _SSAnne10EndBattleText4::
 	prompt
 
 _SSAnne10AfterBattleText4::
-	text "#ימונים מסוג"
-	line "מים נמצאים"
-	cont "במים עמוקים!"
-	cont "אתה תצטרך חכה."
+	text "#ימוני ים"
+	line "חיים במים"
+	cont "עמוקים! אתה"
+	cont "תצטרך חכה."
 	done
 
 _SSAnne10BattleText5::
@@ -87,13 +87,13 @@ _SSAnne10BattleText6::
 	line "עצור לפטפט!"
 
 	para "כל ה#ימונים שלי"
-	line "הם מסוג מים!"
+	line "הם מהים!"
 	done
 
 _SSAnne10EndBattleText6::
 	text "אוף!"
 	line "איך נתתי לו"
-	cont "לברוח?"
+	cont "להתחמק!"
 	prompt
 
 _SSAnne10AfterBattleText6::
@@ -104,7 +104,7 @@ _SSAnne10AfterBattleText6::
 
 _SSAnne10Text7::
 	text "ידידי, גברנק,"
-	line "ממש עוצמתי!"
+	line "ממש חזק!"
 
 	para "יש לו כל כך"
 	line "הרבה עוצמה"
