@@ -15,7 +15,7 @@ _MtMoon1AfterBattleText2::
 	done
 
 _MtMoon1BattleText3::
-	text "גם אתה פה 
+	text "גם אתה פה"
 	line "כדי לחקור?"
 	done
 
@@ -71,7 +71,7 @@ _MtMoon1EndBattleText6::
 
 _MtMoon1AfterBattleText6::
 	text "שמעתי שיש כאן"
-	line מאובנים נדירים מאוד."
+	line "מאובנים נדירים מאוד."
 	done
 
 _MtMoon1BattleText7::
