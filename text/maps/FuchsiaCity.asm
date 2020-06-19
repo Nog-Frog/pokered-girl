@@ -45,7 +45,7 @@ _FuchsiaCityText13::
 
 _FuchsiaCityText16::
 	text "איזור ספארי"
-	line "בית השומר"
+	line "בית הפקח"
 	done
 
 _FuchsiaCityText17::
@@ -65,8 +65,8 @@ _FuchsiaCityText18::
 _FuchsiaCityChanseyText::
 	text "שם: בת מזל"
 
-	para "לתפוס אחד"
-	line "כזה זה עניין"
+	para "לתפוס אחת"
+	line "כזו זה עניין"
 	cont "של מזל."
 	prompt
 
@@ -109,9 +109,8 @@ _FuchsiaCityOmanyteText::
 _FuchsiaCityKabutoText::
 	text "שם: פרסדה"
 
-	para "ימון שהפך#"
-	line "למאובן"
-	cont "והוחזר לחיים."
+	para "ימון ששוחזר#"
+	line "ממאובן"
 	prompt
 
 _FuchsiaCityText_19b2a::
