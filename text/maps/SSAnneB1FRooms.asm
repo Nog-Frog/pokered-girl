@@ -41,7 +41,7 @@ _SSAnne10BattleText3::
 
 _SSAnne10EndBattleText3::
 	text "בסדר, "
-	line "אתה לא כזה גרוע."
+	line "אתה לא רע."
 	prompt
 
 _SSAnne10AfterBattleText3::
