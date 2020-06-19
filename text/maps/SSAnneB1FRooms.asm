@@ -56,7 +56,7 @@ _SSAnne10BattleText4::
 
 _SSAnne10EndBattleText4::
 	text "ארג!"
-	line "הפסדתי את זה!"
+	line "הפסדתי!"
 	prompt
 
 _SSAnne10AfterBattleText4::
@@ -67,8 +67,8 @@ _SSAnne10AfterBattleText4::
 	done
 
 _SSAnne10BattleText5::
-	text "חברצ'יק, אתה תאלץ"
-	line "לשאת בתוצאות"
+	text "חברצ'יק, אתה"
+	line "תשחה עם כרישים"
 	cont "אם תפסיד!"
 	done
 
