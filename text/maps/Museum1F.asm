@@ -3,7 +3,7 @@ _Museum1FText_5c21a::
 	done
 
 _Museum1FText_5c21f::
-	text "עולה ¥50 עבור"
+	text "עולה ¥05 עבור"
 	line "כרטיס לילד."
 
 	para "תרצה להיכנס פנימה?"
