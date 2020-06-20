@@ -10,7 +10,7 @@ _Museum1FText_5c21f::
 	done
 
 _Museum1FText_5c224::
-	text "בדיוק, ¥50!"
+	text "בדיוק, ¥05!"
 	line "תודה!"
 	done
 
