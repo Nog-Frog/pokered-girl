@@ -1,39 +1,39 @@
 _Mansion4BattleText1::
-	text "Uh-oh. Where am"
-	line "I now?"
+	text "או-הא. איפה אני"
+	line "עכשיו?"
 	done
 
 _Mansion4EndBattleText1::
-	text "Awooh!"
+	text "אוי ויי!"
 	prompt
 
 _Mansion4AfterBattleText1::
-	text "You can find stuff"
-	line "lying around."
+	text "אפשר למצוא דברים"
+	line "זרוקים מסביב."
 	done
 
 _Mansion4BattleText2::
-	text "This place is"
-	line "ideal for a lab."
+	text "המקום הזה מושלם"
+	line "למעבדה."
 	done
 
 _Mansion4EndBattleText2::
-	text "What"
-	line "was that for?"
+	text "למה"
+	line "זה היה טוב?"
 	prompt
 
 _Mansion4AfterBattleText2::
-	text "I like it here!"
-	line "It's conducive to"
-	cont "my studies!"
+	text "אני אוהב את המקום!"
+	line "הוא תורם"
+	cont "ללימודים שלי!"
 	done
 
 _Mansion4Text7::
-	text "Diary; Sept. 1"
-	line "MEWTWO is far too"
-	cont "powerful."
+	text "יומן; 1 לספטמבר"
+	line "תשני הרבה יותר"
+	cont "מדי חזק."
 
-	para "We have failed to"
-	line "curb its vicious"
-	cont "tendencies..."
+	para "נכשלנו בריסון"
+	line "הנטיות האכזריות"
+	cont "שלו..."
 	done
