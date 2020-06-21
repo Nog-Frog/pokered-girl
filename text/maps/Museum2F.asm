@@ -24,7 +24,7 @@ _Museum2FText4::
 	text "אני רוצה PIKACHU!" ; TODO
 	line "הוא כל כך מתוק!"
 
-	para "ביקשתי מאבא′לה שלי"
+	para "ביקשתי מאבא שלי"
 	line "לתפוס לי אחד!"
 	done
 
