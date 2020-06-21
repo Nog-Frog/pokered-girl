@@ -103,6 +103,6 @@ _SSAnne9EndBattleText4::
 	prompt
 
 _SSAnne9AfterBattleText4::
-	text "הו, אני מחבב"
+	text "הו, אני מעריץ"
 	line "את ה#ימון החזק שלך!"
 	done
