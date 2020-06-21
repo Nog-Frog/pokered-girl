@@ -19,8 +19,9 @@ _SSAnne9Text_61c10::
 	done
 
 _SSAnne9Text_61c1f::
-	text "היית באיזור הספארי"
-	line "בעיר השושנה?"
+	text "היית באיזור"
+	line "הספארי בעיר?"
+	cont "השושנה?"
 
 	para "יש שם הרבה"
 	line "סוגי #ימונים"
@@ -44,9 +45,9 @@ _SSAnne9Text_61c4c::
 	done
 
 _SSAnne9BattleText1::
-	text "להתחרות בילדים"
-	line "גורם לי להרגיש"
-	cont "צעיר."
+	text "התחרות נגד ילדים"
+	line "גורמת לי"
+	cont "להרגיש צעיר."
 	done
 
 _SSAnne9EndBattleText1::
@@ -104,5 +105,6 @@ _SSAnne9EndBattleText4::
 
 _SSAnne9AfterBattleText4::
 	text "הו, אני מעריץ"
-	line "את ה#ימון החזק שלך!"
+	line "את ה#ימון"
+	cont "החזק שלך!"
 	done
