@@ -94,8 +94,8 @@ _Museum1FText_5c2ad::
 	text "אנחנו גאים ב-2"
 	line "מאובנים של"
 	cont "#ימונים פרה-"
-	cont "היסטוריים מאוד"
-	cont "נדירים!"
+	cont "היסטוריים נדירים"
+	cont "מאוד!"
 	done
 
 _Museum1FText_5c2bc::
