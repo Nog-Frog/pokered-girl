@@ -1,37 +1,37 @@
 _Mansion3BattleText1::
-	text "This place is"
-	line "like, huge!"
+	text "המקום הזה, כאילו,"
+	line "ענקי!"
 	done
 
 _Mansion3EndBattleText1::
-	text "Ayah!"
+	text "איה!"
 	prompt
 
 _Mansion3AfterBattleText1::
-	text "I wonder where"
-	line "my partner went."
+	text "אני תוהה לאן השותף"
+	line "שלי נעלם."
 	done
 
 _Mansion3BattleText2::
-	text "My mentor once"
-	line "lived here."
+	text "החונך שלי חי כאן"
+	line "פעם."
 	done
 
 _Mansion3EndBattleText2::
-	text "Whew!"
-	line "Overwhelming!"
+	text "פיו!"
+	line "מרשים!"
 	prompt
 
 _Mansion3AfterBattleText2::
-	text "So, you're stuck?"
-	line "Try jumping off"
-	cont "over there!"
+	text "אז, אתה תקוע?"
+	line "נסה לקפוץ למטה"
+	cont "משם!"
 	done
 
 _Mansion3Text5::
-	text "Diary: Feb. 6"
-	line "MEW gave birth."
+	text "יומן: 6 לפברואר"
+	line "תש ילד."
 
-	para "We named the"
-	line "newborn MEWTWO."
+	para "כינינו את היילוד"
+	line "תשני."
 	done
