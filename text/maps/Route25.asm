@@ -37,7 +37,6 @@ _Route25AfterBattleText2::
 _Route25BattleText3::
 	text "אני בחור מדליק."
 	line "יש לי בת זוג!"
-	cont 
 	done
 
 _Route25EndBattleText3::
