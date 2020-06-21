@@ -16,7 +16,7 @@ _Museum2FText2::
 	done
 
 _Museum2FText3::
-	text "יש לנו מוצג חלל"
+	text "יש לנו תערוכת חלל"
 	line "עכשיו."
 	done
 
