@@ -3,8 +3,9 @@ _Museum1FText_5c21a::
 	done
 
 _Museum1FText_5c21f::
-	text "עולה ¥05 עבור"
-	line "כרטיס לילד."
+	text "כרטיס לילד"
+	line ".עולה ¥05"
+
 
 	para "תרצה להיכנס פנימה?"
 	done
