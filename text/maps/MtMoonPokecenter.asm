@@ -2,7 +2,7 @@ _MtMoonPokecenterText1::
 	text "יש לי 6 פוכדורים"
 	line "בחגורה שלי."
 
-	para "אני יכול להחזיק"
+	para "אפשר להחזיק"
 	line "שם עד 6 #ימונים."
 	done
 
@@ -38,9 +38,8 @@ _MagikarpSalesmanNoMoneyText::
 	done
 
 _MagikarpSalesmanText2::
-	text "איש: שתדע שאני"
-	line "לא נותן"
-	cont "החזר כספי!"
+	text "איש: שתדע שאצלי"
+	line "אין החזרים!"
 	done
 
 _MtMoonPokecenterText5::
