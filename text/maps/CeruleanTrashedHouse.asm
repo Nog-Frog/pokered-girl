@@ -6,8 +6,8 @@ _CeruleanTrashedText_1d6ab::
 	line "כאן!"
 
 	para "הם גנבו MT שמלמד"
-	line "#ימונים איך לחפור"
-	cont "בורות!"
+	line "#ימונים איך"
+	cont "לחפור בורות!"
 
 	para "הMT הזה עלה לי"
 	line "הון! אני אומר לך,"
