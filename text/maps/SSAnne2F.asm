@@ -1,63 +1,65 @@
 _SSAnne2Text1::
-	text "This ship, she is"
-	line "a luxury liner"
-	cont "for trainers!"
+	text "הספינה הזאת היא"
+	line "ספינת יוקרה"
+	cont "למאמנים!"
 
-	para "At every port, we"
-	line "hold parties with"
-	cont "invited trainers!"
+	para "בכל נמל, אנחנו"
+	line "עורכים מסיבה"
+	cont "אליה מוזמנים"
+	cont "רק מאמנים ידועים!"
 	done
 
 _SSAnneRivalBeforeBattleText::
-	text "<RIVAL>: Bonjour!"
+	text "בונז'ור:<RIVAL>!"
 	line "<PLAYER>!"
 
-	para "Imagine seeing"
-	line "you here!"
+	para "לא ציפיתי לראות"
+	line "אותך כאן!"
 
-	para "<PLAYER>, were you"
-	line "really invited?"
+	para "באמת ,<PLAYER>"
+	line "הוזמנת לכאן?"
 
-	para "So how's your"
-	line "#DEX coming?"
+	para "אז איך הולך"
+	line "עם ה#ידע?"
 
-	para "I already caught"
-	line "40 kinds, pal!"
+	para "כבר תפסתי 40"
+	line "סוגים, חבר!"
 
-	para "Different kinds"
-	line "are everywhere!"
+	para "יש סוגים שונים"
+	line "בכל מקום!"
 
-	para "Crawl around in"
-	line "grassy areas!"
+	para "שורצים באיזורים"
+	line "עשביים!"
 	done
 
 _SSAnneRivalDefeatedText::
-	text "Humph!"
+	text "אוף!"
 
-	para "At least you're"
-	line "raising your"
-	cont "#MON!"
+	para "לפחות אתה"
+	line "מאמן את ה#ימונים"
+	cont "שלך!"
 	prompt
 
 _SSAnneRivalWonText::
-	text "<PLAYER>! What are"
-	line "you, seasick?"
+	text "מה קרה !<PLAYER>?"
+	line "חטפת מחלת ים?"
 
-	para "You should shape"
-	line "up, pal!"
+	para "כדאי שתתעורר,"
+	line "חבר!"
 	prompt
 
 _SSAnneRivalCaptainText::
-	text "<RIVAL>: I heard"
-	line "there was a CUT"
-	cont "master on board."
+	text "שמעתי :<RIVAL>"
+	line "שגורו החיתוך"
+	cont "נמצא על הספינה."
 
-	para "But, he was just a"
-	line "seasick, old man!"
+	para "אבל, הוא סתם"
+	line "זקן וחולה!"
 
-	para "But, CUT itself is"
-	line "really useful!"
+	para "אבל, מהלך החיתוך"
+	line "ממש שימושי!"
 
-	para "You should go see"
-	line "him! Smell ya!"
+	para "כדאי שתלך לראות"
+	line "אותו! נתרחרח"
+	cont "אחר כך!"
 	done
