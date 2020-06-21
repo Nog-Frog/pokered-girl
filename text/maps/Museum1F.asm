@@ -91,7 +91,7 @@ _Museum1FText_5c29e::
 	done
 
 _Museum1FText_5c2ad::
-	text "אנחנו מאד גאים ב-2"
+	text "אנחנו גאים ב-2"
 	line "מאובנים של"
 	cont "#ימונים פרה-"
 	cont "היסטוריים מאוד"
