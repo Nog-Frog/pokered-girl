@@ -226,12 +226,12 @@ HoFDisplayPlayerStats:
 	coord hl, 1, 7
 	ld de, wPlayTimeHours
 	lb bc, LEFT_ALIGN | 1, 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	ld [hl], $6d
 	inc hl
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 10, 9
 	ld de, HoFMoneyText
 	call PlaceString
@@ -239,7 +239,7 @@ HoFDisplayPlayerStats:
 	ld de, wPlayerMoney
 	ld c, $a3
 	; set 6, c
-	call PrintBCDNumberInternal
+	call PrintBCDNumber
 	ld hl, DexSeenOwnedText
 	call HoFPrintTextAndDelay
 	ld hl, DexRatingText

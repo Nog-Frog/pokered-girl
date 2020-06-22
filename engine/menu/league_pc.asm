@@ -109,7 +109,7 @@ LeaguePCShowMon:
 	coord hl, 1, 15
 	ld de, wHoFTeamNo
 	lb bc, 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	jpba HoFDisplayMonInfo
 
 HallOfFameNoText:

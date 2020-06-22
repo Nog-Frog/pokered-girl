@@ -599,17 +599,17 @@ DrawTrainerInfo:
 	coord hl, 3, 4
 	ld de, wPlayerMoney
 	ld c, $a3 ; right-aligned, currency symbol, no leading zeroes
-	call PrintBCDNumberInternal
+	call PrintBCDNumber
 	coord hl, 4, 6
 	ld de, wPlayTimeHours ; hours
 	lb bc, 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 7, 6
 	ld [hl], $a8 ; colon tile ID
 	coord hl, 8, 6
 	ld de, wPlayTimeMinutes ; minutes
 	lb bc, LEADING_ZEROES | 1, 2
-	jp PrintNumberLTR
+	jp PrintNumber
 
 TrainerInfo_FarCopyData:
 	ld a, BANK(TrainerInfoTextBoxTileGraphics)

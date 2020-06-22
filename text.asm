@@ -2030,7 +2030,8 @@ _GameSavedText::
 _OlderFileWillBeErasedText::
 	text "קובץ השמירה הישן"
 	line "יימחק כדי לפנות"
-	cont "לחדש. בסדר?"
+	cont "מקום לחדש."
+	cont "בסדר?"
 	done
 
 _WhenYouChangeBoxText::

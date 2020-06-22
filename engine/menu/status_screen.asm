@@ -51,12 +51,12 @@ DrawHP_:
 	add hl, bc
 	ld de, wLoadedMonHP
 	lb bc, 2, 3
-	call PrintNumberLTR
+	call PrintNumber
 	ld a, "/"
 	ld [hli], a
 	ld de, wLoadedMonMaxHP
 	lb bc, 2, 3
-	call PrintNumberLTR
+	call PrintNumber
 	pop hl
 	pop de
 	ret
@@ -145,7 +145,7 @@ StatusScreen:
 	coord hl, 1, 7
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumberLTR ; Pokémon dex no.
+	call PrintNumber ; Pokémon dex no.
 	coord hl, 17, 10
 	predef PrintMonType
 	ld hl, NamePointers2
@@ -163,7 +163,7 @@ StatusScreen:
 	coord hl, 13, 14
 	ld de, wLoadedMonOTID
 	lb bc, LEADING_ZEROES | 2, 5
-	call PrintNumberLTR ; ID Number
+	call PrintNumber ; ID Number
 	ld d, $0
 	call PrintStatsBox
 	call Delay3
@@ -279,10 +279,10 @@ PrintStatsBox:
 	ld de, wLoadedMonSpeed
 	call PrintStat
 	ld de, wLoadedMonSpecial
-	jp PrintNumberLTR
+	jp PrintNumber
 PrintStat:
 	push hl
-	call PrintNumberLTR
+	call PrintNumber
 	pop hl
 	ld de, SCREEN_WIDTH * 2
 	add hl, de
@@ -370,12 +370,12 @@ StatusScreen2:
 	push hl
 	ld de, wStatusScreenCurrentPP
 	lb bc, 1, 2
-	call PrintNumberLTR
+	call PrintNumber
 	ld a, "/"
 	ld [hli], a
 	ld de, wMaxPP
 	lb bc, 1, 2
-	call PrintNumberLTR
+	call PrintNumber
 	pop hl
 	ld de, SCREEN_WIDTH * 2
 	add hl, de
@@ -408,12 +408,12 @@ StatusScreen2:
 	ld de, wLoadedMonExp
 	coord hl, 9, 4
 	lb bc, 3 | LEFT_ALIGN, 7
-	call PrintNumberLTR ; exp
+	call PrintNumber ; exp
 	call CalcExpToLevelUp
 	ld de, wLoadedMonExp
 	coord hl, 12, 6
 	lb bc, 3, 7
-	call PrintNumberLTR ; exp needed to level up
+	call PrintNumber ; exp needed to level up
 	coord hl, 9, 0
 	call StatusScreen_ClearName
 	coord hl, 9, 1

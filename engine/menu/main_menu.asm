@@ -398,7 +398,7 @@ PrintNumBadges:
 	pop hl
 	ld de, wNumSetBits
 	lb bc, 1, 2
-	jp PrintNumberLTR
+	jp PrintNumber
 
 PrintNumOwnedMons:
 	push hl
@@ -408,17 +408,17 @@ PrintNumOwnedMons:
 	pop hl
 	ld de, wNumSetBits
 	lb bc, 1, 3
-	jp PrintNumberLTR
+	jp PrintNumber
 
 PrintPlayTime:
 	ld de, wPlayTimeHours
 	lb bc, 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	ld [hl], $6d
 	inc hl
 	ld de, wPlayTimeMinutes
 	lb bc, LEADING_ZEROES | 1, 2
-	jp PrintNumberLTR
+	jp PrintNumber
 
 SaveScreenInfoText:
 	db   "שם"

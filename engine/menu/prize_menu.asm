@@ -162,7 +162,7 @@ PrintPrizePrice:
 	coord hl, 13, 1
 	ld de, wPlayerCoins
 	ld c, %11000010
-	call PrintBCDNumberInternal
+	call PrintBCDNumber
 	ret
 
 .CoinString:

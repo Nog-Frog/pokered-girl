@@ -246,7 +246,7 @@ PrintSafariZoneSteps:
 	coord hl, 1, 1
 	ld de, wSafariSteps
 	lb bc, 2, 3
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 7, 1
 	ld de, SafariSteps
 	call PlaceString
@@ -263,7 +263,7 @@ PrintSafariZoneSteps:
 	coord hl, 2, 3
 	ld de, wNumSafariBalls
 	lb bc, 1, 2
-	jp PrintNumberLTR
+	jp PrintNumber
 
 SafariSteps:
 	db "005/@"

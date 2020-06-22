@@ -2160,7 +2160,7 @@ DisplayBattleMenu:
 	coord hl, 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1 | LEFT_ALIGN, 2
-	call PrintNumberLTR
+	call PrintNumber
 	ld b, 18 ; top menu item X  
 .rightColumn_WaitForInput
 	ld hl, wTopMenuItemY
@@ -2193,7 +2193,7 @@ DisplayBattleMenu:
 	coord hl, 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1 | LEFT_ALIGN, 2
-	call PrintNumberLTR
+	call PrintNumber
 	ld b, 8 ; top menu item X  
 .leftColumn_WaitForInput
 	ld hl, wTopMenuItemY
@@ -2972,11 +2972,11 @@ PrintMenuItem:
 	coord hl, 1, 11
 	ld de, wcd6d
 	lb bc, 1, 2
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 4, 11
 	ld de, wMaxPP
 	lb bc, 1, 2
-	call PrintNumberLTR
+	call PrintNumber
 	call GetCurrentMove
 	coord hl, 8, 10
 	predef PrintMoveType

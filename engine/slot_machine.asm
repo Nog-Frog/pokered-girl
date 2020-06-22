@@ -643,13 +643,13 @@ SlotMachine_PrintCreditCoins:
 	coord hl, 5, 1
 	ld de, wPlayerCoins
 	ld c, $2
-	jp PrintBCDNumberInternal
+	jp PrintBCDNumber
 
 SlotMachine_PrintPayoutCoins:
 	coord hl, 11, 1
 	ld de, wPayoutCoins
 	lb bc, LEADING_ZEROES | 2, 4 ; 2 bytes, 4 digits
-	jp PrintNumberLTR
+	jp PrintNumber
 
 SlotMachine_PayCoinsToPlayer:
 	ld a, $1

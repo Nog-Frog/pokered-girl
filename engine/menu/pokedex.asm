@@ -177,14 +177,14 @@ HandlePokedexListMenu:
 	ld de, wNumSetBits
 	coord hl, 2, 3
 	lb bc, 1, 3
-	call PrintNumberLTR ; print number of seen pokemon
+	call PrintNumber ; print number of seen pokemon
 	ld hl, wPokedexOwned
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld de, wNumSetBits
 	coord hl, 2, 6
 	lb bc, 1, 3
-	call PrintNumberLTR ; print number of owned pokemon
+	call PrintNumber ; print number of owned pokemon
 	coord hl, 4, 2
 	ld de, PokedexSeenText
 	call PlaceString
@@ -243,7 +243,7 @@ HandlePokedexListMenu:
 	add hl, de
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumberLTR ; print the pokedex number
+	call PrintNumber ; print the pokedex number
 	ld de, SCREEN_WIDTH
 	add hl, de
 	dec hl
@@ -484,7 +484,7 @@ ShowPokedexDataInternal:
 	ld [hli], a
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumberLTR ; print pokedex number
+	call PrintNumber ; print pokedex number
 
 	ld hl, wPokedexOwned
 	call IsPokemonBitSet
@@ -519,12 +519,12 @@ ShowPokedexDataInternal:
 	ld a, [de] ; reads feet, but a is overwritten without being used
 	coord hl, 9, 6
 	lb bc, 1, 2
-	call PrintNumberLTR ; print feet (height)
+	call PrintNumber ; print feet (height)
 	inc de
 	inc de ; de = address of inches (height)
 	coord hl, 12, 6
 	lb bc, LEADING_ZEROES | 1, 2
-	call PrintNumberLTR ; print inches (height)
+	call PrintNumber ; print inches (height)
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
 	inc de
@@ -544,7 +544,7 @@ ShowPokedexDataInternal:
 	ld de, hDexWeight
 	coord hl, 8, 8
 	lb bc, 2, 5 ; 2 bytes, 5 digits
-	call PrintNumberLTR ; print weight
+	call PrintNumber ; print weight
 	coord hl, 11, 8
 	ld a, [hDexWeight + 1]
 	sub 10

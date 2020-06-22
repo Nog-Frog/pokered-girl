@@ -81,67 +81,6 @@ HideSprites::
 
 INCLUDE "home/copy.asm"
 
-; Input: de points to a string (Max 16 characters)
-; Output: de pointers to the reversed string. de stays
-;         unchanged if left aligned
-ReverseText::
-	push hl
-	ld hl, wReversedTextEnd 
-	ld a, "@"
-	ld [hld], a
-.reverseLoop
-	ld [hld], a
-	ld a, [de]
-	inc de
-	cp a, "@"
-	jr nz, .reverseLoop
-	inc hl
-	ld d, h
-	ld e, l
-	pop hl
-	ret
-	
-; function to print a BCD (Binary-coded decimal) number
-; de = address of BCD number
-; hl = destination address
-; c = flags and length
-; bit 7: if set, do not print leading zeroes
-;        if unset, print leading zeroes
-; bit 6: if set, left-align the string (do not pad empty digits with spaces)
-;        if unset, right-align the string
-; bit 5: if set, print currency symbol at the beginning of the string
-;        if unset, do not print the currency symbol
-; bits 0-4: length of BCD number in bytes
-; Note that bits 5 and 7 are modified during execution. The above reflects
-; their meaning at the beginning of the functions's execution.
-PrintBCDNumber::
-	; This wrapper prints the string
-	; to a temporary buffer, reverses it, and prints the
-	; reversed string.
-	; Save hl
-	push hl
-	; Set dest to the temp buffer
-	ld hl, wBCDReverseTemp
-	; Turn delay off
-	ld a,[wd730]
-	push af
-	set 6, a
-	ld [wd730], a
-	; Print to temp buffer
-	call PrintBCDNumberInternal
-AfterPrintBCDNumberInternal::
-	; Restore flags
-	pop af
-	ld [wd730], a
-	; Put a null terminator after the string
-	ld a, "@"
-	ld [hl], a
-	; Restore original dest
-	pop hl
-	; Reverse and print the text
-	ld de, wBCDReverseTemp
-	jp PrintReversed
-
 SECTION "Entry", ROM0
 
 	nop
@@ -599,7 +538,7 @@ PrintLevelCommon::
 ; .levelOverTen
 	ld de, wd11e
 	ld b, 1 ; 1 byte
-	jp PrintNumberLTR
+	jp PrintNumber
 
 GetwMoves::
 ; Unused. Returns the move at index a from wMoves in a
@@ -708,7 +647,7 @@ GetPartyMonName::
 ; bits 0-4: length of BCD number in bytes
 ; Note that bits 5 and 7 are modified during execution. The above reflects
 ; their meaning at the beginning of the functions's execution.
-PrintBCDNumberInternal::
+PrintBCDNumber::
 	ld b, c ; save flags in b
 	res 7, c
 	res 6, c
@@ -771,15 +710,6 @@ PrintBCDDigit::
 	bit 6, b ; left or right alignment?
 	ret nz
 	inc hl ; if right-aligned, "print" a space by advancing the pointer
-	ret
-
-; Input: String at de, dest on hl
-; Output: Prints de on hl, hl advances to new end
-PrintReversed::
-	call ReverseText
-	call PlaceString
-	ld h,b
-	ld l,c
 	ret
 
 ; uncompresses the front or back sprite of the specified mon
@@ -1728,12 +1658,12 @@ DisplayChooseQuantityMenu::
 	ld de, hMoney ; total price
 	ld c, $e3
 	coord hl, 8, 10
-	call PrintBCDNumberInternal ; TODO
+	call PrintBCDNumber ; TODO
 	coord hl, 17, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
 	lb bc, LEADING_ZEROES | 1, 2 ; 1 byte, 2 digits
-	call PrintNumberLTR
+	call PrintNumber
 	jp .waitForKeyPressLoop
 .buttonAPressed ; the player chose to make the transaction
 	xor a
@@ -1853,7 +1783,7 @@ PrintListMenuEntries::
 	ld bc, SCREEN_WIDTH - 11 ; 1 row down and 5 columns right
 	add hl, bc
 	ld c, $e3 ; no leading zeroes, left-aligned, print currency symbol, 3 bytes
-	call PrintBCDNumberInternal
+	call PrintBCDNumber
 .skipPrintingItemPrice
 	ld a, [wListMenuID]
 	and a
@@ -1921,7 +1851,7 @@ PrintListMenuEntries::
 	ld [de], a
 	lb bc, 1, 2
 	set 6, b
-	call PrintNumberLTR
+	call PrintNumber
 	pop de
 	pop af
 	ld [wd11e], a
@@ -4258,29 +4188,7 @@ PrintText_NoCreatingTextBox::
 	call TextCommandProcessor
 	ret
 
-
 PrintNumber::
-; Print the c-digit, b-byte value at de.
-; Allows 2 to 7 digits. For 1-digit numbers, add
-; the value to char "0" instead of calling PrintNumber.
-; Flags LEADING_ZEROES and LEFT_ALIGN can be given
-; in bits 7 and 6 of b respectively.
-	; This wrapper prints the string
-	; to a temporary buffer, reverses it, and prints the
-	; reversed string.
-	; Save hl
-	push hl
-	; Set dest to the temp buffer
-	ld hl, wBCDReverseTemp
-	; Turn delay off
-	ld a,[wd730]
-	push af
-	set 6, a
-	ld [wd730], a
-	; Print to temp buffer
-	call PrintNumberLTR
-	jp AfterPrintBCDNumberInternal
-PrintNumberLTR::
 	push bc
 	xor a
 	ld [H_PASTLEADINGZEROES], a

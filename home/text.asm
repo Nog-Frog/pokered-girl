@@ -554,7 +554,7 @@ TextCommand09::
 	ld a, b
 	and $f0
 	swap a
-	set BIT_LEFT_ALIGN,a
+	res BIT_LEFT_ALIGN, a ; TODO figure out how to left-align this ??
 	ld b, a
 	call PrintNumber
 	ld b, h

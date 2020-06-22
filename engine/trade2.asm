@@ -8,7 +8,7 @@ Trade_PrintPlayerMonInfoText:
 	coord hl, 8, 0
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 14, 2
 	ld de, wcf4b
 	call PlaceString
@@ -18,7 +18,7 @@ Trade_PrintPlayerMonInfoText:
 	coord hl, 6, 6
 	ld de, wTradedPlayerMonOTID
 	lb bc, LEADING_ZEROES | 2, 5
-	jp PrintNumberLTR
+	jp PrintNumber
 
 Trade_PrintEnemyMonInfoText:
 	coord hl, 14, 10
@@ -30,7 +30,7 @@ Trade_PrintEnemyMonInfoText:
 	coord hl, 8, 10
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
-	call PrintNumberLTR
+	call PrintNumber
 	coord hl, 14, 12
 	ld de, wcd6d
 	call PlaceString
@@ -40,7 +40,7 @@ Trade_PrintEnemyMonInfoText:
 	coord hl, 6, 16
 	ld de, wTradedEnemyMonOTID
 	lb bc, LEADING_ZEROES | 2, 5
-	jp PrintNumberLTR
+	jp PrintNumber
 
 Trade_MonInfoText:
 	db "──№⠄",$4E
