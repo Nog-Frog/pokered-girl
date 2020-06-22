@@ -1,17 +1,16 @@
 _PewterMartText2::
-	text "A shady, old man"
-	line "got me to buy"
-	cont "this really weird"
-	cont "fish #MON!"
+	text "איש זקן ומפוקפק"
+	line "גרם לי לקנות את"
+	cont "את #ימון הדג"
+	cont "המוזר מאוד הזה!"
 
-	para "It's totally weak"
-	line "and it cost ¥500!"
+	para "הוא ממש חלש"
+	line "והוא עלה ¥005!"
 	done
 
 _PewterMartText3::
-	text "Good things can"
-	line "happen if you"
-	cont "raise #MON"
-	cont "diligently, even"
-	cont "the weak ones!"
+	text "דברים טובים יכולים"
+	line "לקרות אם מתמידים"
+	cont "בגידול #ימון,"
+	cont "אפילו עם החלשים!"
 	done
