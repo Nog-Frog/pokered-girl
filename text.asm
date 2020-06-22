@@ -2230,8 +2230,8 @@ _IsUnaffectedText::
 
 _ParalyzedMayNotAttackText::
 	text "<TARGET>"
-	line "משותק! הוא לא"
-	cont "יכול לתקוף!"
+	line "משותק! יתכן שהוא"
+	cont "לא מסוגל לתקוף!"
 	prompt
 
 _SubstituteText::
