@@ -1,113 +1,110 @@
 _SSAnne9Text_61bf2::
-	text "In all my travels"
-	line "I've never seen"
-	cont "any #MON sleep"
-	cont "like this one!"
+	text "בכל המסעות שלי"
+	line "מעולם לא ראיתי"
+	cont "#ימון ישן ככה!"
 
-	para "It was something"
-	line "like this!"
+	para "זה היה משהו כזה!"
 	prompt
 
 _SSAnne9Text_61c01::
-	text "Ah yes, I have"
-	line "seen some #MON"
-	cont "ferry people"
-	cont "across the water!"
+	text "אה כן, ראיתי"
+	line "#ימונים משיטים"
+	cont "אנשים בים!"
 	done
 
 _SSAnne9Text_61c10::
-	text "#MON can CUT"
-	line "down small bushes."
+	text "#ימונים  יכולים"
+	line "לחתוך שיחים"
+	cont "קטנים."
 	done
 
 _SSAnne9Text_61c1f::
-	text "Have you gone to"
-	line "the SAFARI ZONE"
-	cont "in FUCHSIA CITY?"
+	text "היית באיזור"
+	line "הספארי בעיר?"
+	cont "השושנה?"
 
-	para "It had many rare"
-	line "kinds of #MON!!"
+	para "יש שם הרבה"
+	line "סוגי #ימונים"
+	cont "נדירים!!"
 	done
 
 _SSAnne9Text_61c2e::
-	text "Me and my Daddy"
-	line "think the SAFARI"
-	cont "ZONE is awesome!"
+	text "אני ואבא שלי"
+	line "חושבים שאיזור"
+	cont "הספארי מדהים!"
 	done
 
 _SSAnne9Text_61c3d::
-	text "The CAPTAIN looked"
-	line "really sick and"
-	cont "pale!"
+	text "הקפטן נראה"
+	line "חולה וחיוור!"
 	done
 
 _SSAnne9Text_61c4c::
-	text "I hear many people"
-	line "get seasick!"
+	text "שמעתי שהרבה אנשים"
+	line "חוטפים מחלת ים!"
 	done
 
 _SSAnne9BattleText1::
-	text "Competing against"
-	line "the young keeps"
-	cont "me youthful."
+	text "התחרות נגד ילדים"
+	line "גורמת לי"
+	cont "להרגיש צעיר."
 	done
 
 _SSAnne9EndBattleText1::
-	text "Good"
-	line "fight! Ah, I feel"
-	cont "young again!"
+	text "יופי"
+	line "הלחם! הא!"
+	cont "אני מרגיש"
+	cont "צעיר שוב!"
 	prompt
 
 _SSAnne9AfterBattleText1::
-	text "15 years ago, I"
-	line "would have won!"
+	text "לפני 15 שנים"
+	line "בטוח הייתי מנצח!"
 	done
 
 _SSAnne9BattleText2::
-	text "Check out what I"
-	line "fished up!"
+	text "תראה מה דגתי!"
 	done
 
 _SSAnne9EndBattleText2::
 	text "I'm"
-	line "all out!"
+	line "all out!";TODO
 	prompt
 
 _SSAnne9AfterBattleText2::
-	text "Party?"
+	text "מסיבה?"
 
-	para "The cruise ship's"
-	line "party should be"
-	cont "over by now."
+	para "המסיבה של הספינה"
+	line "בטח נגמרה."
 	done
 
 _SSAnne9BattleText3::
-	text "Which do you like,"
-	line "a strong or a"
-	cont "rare #MON?"
+	text "מה אתה מעדיף,"
+	line "#ימון חזק"
+	cont "או נדיר?"
 	done
 
 _SSAnne9EndBattleText3::
-	text "I must"
-	line "salute you!"
+	text "אני חייב"
+	line "להצדיע לך!"
 	prompt
 
 _SSAnne9AfterBattleText3::
-	text "I prefer strong"
-	line "and rare #MON."
+	text "אני מעדיף"
+	line "#ימון חזק ונדיר."
 	done
 
 _SSAnne9BattleText4::
-	text "I never saw you"
-	line "at the party."
+	text "לא ראיתי"
+	line "אותך במסיבה."
 	done
 
 _SSAnne9EndBattleText4::
-	text "Take"
-	line "it easy!"
+	text "תרגע!"
 	prompt
 
 _SSAnne9AfterBattleText4::
-	text "Oh, I adore your"
-	line "strong #MON!"
+	text "הו, אני מעריץ"
+	line "את ה#ימון"
+	cont "החזק שלך!"
 	done
