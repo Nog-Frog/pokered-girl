@@ -24,5 +24,5 @@ _HallofFameRoomText1::
 	para "ברכותיי,"
 	line "אתה <PLAYER>"
 	cont "וה#ימון שלך"
-	cont "HALL OF FAMERs!";TODO
+	cont "נכנסתם להיכל התהילה!"
 	done
