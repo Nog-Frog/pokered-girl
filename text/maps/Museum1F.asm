@@ -25,18 +25,18 @@ _Museum1FText_5c22e::
 
 	para "טוב, שיהיה!"
 	line "אתה יודע מה זה"
-	cont "שרף?"
+	cont "ענבר?"
 	done
 
 _Museum1FText_5c233::
 	text "יש מעבדה איפשהו"
 	line "שמנסה להחזיר"
 	cont "לחיים #ימונים"
-	cont "עתיקים מתוך שרף."
+	cont "עתיקים מתוך ענבר."
 	done
 
 _Museum1FText_5c238::
-	text "שרף זה לשד עץ"
+	text "ענבר זה שרף עץ"
 	line "מאובן."
 	done
 
@@ -50,14 +50,15 @@ _Museum1FText_5c242::
 	done
 
 _Museum1FText_5c251::
-	text "זה מאובן מפואר!"
+	text "זה חתיכה מאובן"
+	cont "מרשים!"
 	done
 
 _Museum1FText_5c28e::
 	text "ששש! אני חושב"
 	line "שהחתיכה הזאת של"
-	cont "שרף מכילה דנ″א של"
-	cont "#ימון!"
+	cont "ענבר מכילה דנ″א"
+	cont "של #ימון!"
 
 	para "זה יהיה נהדר אם"
 	line "אם יהיה אפשרי"
@@ -78,10 +79,10 @@ _Museum1FText_5c28e::
 
 _ReceivedOldAmberText::
 	text "<PLAYER> קיבל"
-	line "שרף עתיק!@@"
+	line "ענבר עתיק!@@"
 
 _Museum1FText_5c299::
-	text "ששש! קח את השרף"
+	text "ששש! קח את הענבר"
 	line "העתיק לבדיקה!"
 	done
 
@@ -99,5 +100,5 @@ _Museum1FText_5c2ad::
 	done
 
 _Museum1FText_5c2bc::
-	text "השרף זך וזהוב!"
+	text "הענבר צלול וזהוב!"
 	done
