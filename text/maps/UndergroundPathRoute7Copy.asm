@@ -14,7 +14,7 @@ _UGPathRoute7EntranceUnusedText_5d778::
 	done
 
 _UGPathRoute7EntranceUnusedText_5d77d::
-	text "אתה פה לקנות"
+	text "אתה פה כדי לקנות"
 	line "בעיר האביב?"
 
 	para "פשוט תצא החוצה"
