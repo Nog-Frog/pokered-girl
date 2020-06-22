@@ -16,7 +16,7 @@ _FuchsiaHouse3Text_561c2::
 	para "קח את זה"
 	line "וצא לדוג, חבוב!"
 
-	para "קיבל <PLAYER>"
+	para "<PLAYER> קיבל"
 	line "a @"
 	TX_RAM wcf4b
 	text "!@@"
