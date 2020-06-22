@@ -29,7 +29,7 @@ ItemNames:
 	db "תג האדמה@"        ; EARTHBADGE
 	db "חבל הימלטות@"     ; ESCAPE ROPE
 	db "דוחה@"            ; REPEL
-	db "שרף עתיק@"        ; OLD AMBER
+	db "ענבר עתיק@"       ; OLD AMBER
 	db "אבן אש@"          ; FIRE STONE
 	db "אבן ברק@"         ; THUNDERSTONE
 	db "אבן מים@"         ; WATER STONE
