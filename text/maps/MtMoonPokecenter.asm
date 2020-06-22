@@ -1,46 +1,45 @@
 _MtMoonPokecenterText1::
-	text "I've 6 # BALLs"
-	line "set in my belt."
+	text "יש לי 6 פוכדורים"
+	line "בחגורה שלי."
 
-	para "At most, you can"
-	line "carry 6 #MON."
+	para "אפשר להחזיק"
+	line "שם עד 6 #ימונים."
 	done
 
 _MtMoonPokecenterText3::
-	text "TEAM ROCKET"
-	line "attacks CERULEAN"
-	cont "citizens..."
+	text "כנופיית רוקט"
+	line "תוקפת את"
+	cont "אזרחי עיר"
+	cont "הטורקיז..."
 
-	para "TEAM ROCKET is"
-	line "always in the"
-	cont "news!"
+	para "כנופיית רוקט"
+	line "תמיד בכותרות!" 
 	done
 
 _MagikarpSalesmanText1::
-	text "MAN: Hello, there!"
-	line "Have I got a deal"
-	cont "just for you!"
+	text "איש: שלום לך!"
+	line "יש לי הצעה"
+	cont "נהדרת בשבילך!"
 
-	para "I'll let you have"
-	line "a swell MAGIKARP"
-	cont "for just ¥500!"
-	cont "What do you say?"
+	para "אני אתן לך"
+	line "קסמנון נהדר"
+	cont "רק ב ¥500!"
+	cont "מה אתה אומר?"
 	done
 
 _MagikarpSalesmanNoText::
-	text "No? I'm only"
-	line "doing this as a"
-	cont "favor to you!"
+	text "לא? אני עושה"
+	line "לך טובה!"
 	done
 
 _MagikarpSalesmanNoMoneyText::
-	text "You'll need more"
-	line "money than that!"
+	text "אין לך מספיק"
+	line "כסף בשביל זה!"
 	done
 
 _MagikarpSalesmanText2::
-	text "MAN: Well, I don't"
-	line "give refunds!"
+	text "איש: שתדע שאצלי"
+	line "אין החזרים!"
 	done
 
 _MtMoonPokecenterText5::
