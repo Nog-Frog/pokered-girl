@@ -11,9 +11,10 @@ link TBA).
 # Credit
 
 
-Almost all of the code for Hebrew compatibility is from
+Code for Hebrew compatibility used to be from is from
 [**LIJI32**](https://github.com/LIJI32)'s old modification on top
-of pokered, called [pokeadom](https://github.com/LIJI32/pokeadom).
+of pokered, called [pokeadom](https://github.com/LIJI32/pokeadom).\
+Almost none of LIJI32's code is used currently, but this project still utilizes many of the changes he made (that aren't code per-se).
 
 Thanks so much to Eyal Seelig (link TBA) for porting LIJI32's
 6-year-old for the still-currently-updating pokered.
