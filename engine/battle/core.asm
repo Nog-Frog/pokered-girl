@@ -6908,11 +6908,11 @@ InitWildBattle:
 	ld [hl], b
 	ld hl, wEnemyMonNick  ; set name to "GHOST"
 	ld a, "ר"
-	ld [hld], a
+	ld [hli], a
 	ld a, "ו"
-	ld [hld], a
+	ld [hli], a
 	ld a, "ח"
-	ld [hld], a
+	ld [hli], a
 	ld [hl], "@"
 	ld a, [wcf91]
 	push af
