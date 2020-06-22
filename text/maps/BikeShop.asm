@@ -3,7 +3,7 @@ _BikeShopText_1d810::
 	line "לחנות האופניים."
 
 	para "יש לנו זוג"
-	line "אופניים בדיוק!"
+	line "אופניים בדיוק"
 	cont "בשבילך!"
 	prompt
 
@@ -15,7 +15,7 @@ _BikeShopText_1d815::
 
 _BikeShopCantAffordText::
 	text "אני מצטער, אבל"
-	line "אין לך מספיק!"
+	line "אין לך מספיק"
 	cont "כסף!"
 	prompt
 
