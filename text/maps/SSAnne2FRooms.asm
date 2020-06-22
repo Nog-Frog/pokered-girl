@@ -51,8 +51,8 @@ _SSAnne9BattleText1::
 	done
 
 _SSAnne9EndBattleText1::
-	text "יופי"
-	line "הלחם! הא!"
+	text "קרב"
+	line "טוב! הא!"
 	cont "אני מרגיש"
 	cont "צעיר שוב!"
 	prompt
