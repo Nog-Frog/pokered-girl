@@ -30,7 +30,7 @@ _Museum2FText4::
 
 _Museum2FText5::
 	text "כן, PIKACHU" ; TODO
-	line "בקרוב, אני מבטיחה!"
+	line "בקרוב, אני מבטיח!"
 	done
 
 _Museum2FText6::
@@ -41,5 +41,5 @@ _Museum2FText6::
 _Museum2FText7::
 	text "מטאוריט שנפל על"
 	line "הר הירח."
-	cont "(אבן ירח?)"
+	cont ")אבן ירח?("
 	done
