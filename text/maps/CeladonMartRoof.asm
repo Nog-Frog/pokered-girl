@@ -125,9 +125,10 @@ _VendingMachineText4::
 	done
 
 _VendingMachineText5::
+	text "המכונה הוציאה"
+	line "@"
 	TX_RAM wcf4b
-	text ""
-	line "יצא מהמכונה!"
+	text "!@@"
 	done
 
 _VendingMachineText6::
