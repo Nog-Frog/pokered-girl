@@ -28,6 +28,5 @@ _UGPathRoute7EntranceUnusedText_5d782::
 
 	para "אם אתה רוצה להגיע"
 	line "לעיר הטורקיז,"
-	cont "לך לבניין"
-	cont "ממול."
+	cont "לך לבניין ממול."
 	done
