@@ -1,37 +1,36 @@
 _PokemonTower2Text_6062d::
-	text ",היי :<RIVAL>"
-	line "מה <PLAYER>!"
-	cont "מביא אותך לכאן?"
+	text "<RIVAL>: היי,"
+	line "<PLAYER>! מה מביא"
+	cont "אותך לכאן?"
 	cont "ה#ימונים שלך לא"
 	cont "נראים מתים!"
 
-	para "אני אגרום"
+	para "אני יכול לגרום"
 	line "להם לפחות"
-	cont "להתמוטט! קדימה"
+	cont "להתמוטט! קדימה,"
 	cont "חבר!"
 	done
 
 _PokemonTower2Text_60632::
 	text "מה?"
-	line "אתה עלוב!"
+	line "יא שטינקר!"
 
-	para "עשיתי לך חיים"
-	line "קלים!"
+	para "ריחמתי עליך!"
 	prompt
 
 _PokemonTower2Text_60637::
-	text ",ובכן :<RIVAL>"
-	line "תראה איזה פחדן"
-	cont "ה#ימון שלך!"
+	text "<RIVAL>: פחח!"
+	line "כל ה#ימונים שלך"
+	cont "נמושות!"
 
-	para "תאמן אותם"
-	line "טוב יותר!"
+	para "הם צריכים ללמוד"
+	line "להיות קשוחים!"
 	prompt
 
 _PokemonTower2Text_6063c::
 	text "איך ה#ידע"
 	line "שלך מתקדם, חבר?"
-	cont "הרגע תפסתי רשרש!"
+	cont "בדיוק תפסתי רשרש!"
 
 	para "עוד לא מצאתי"
 	line "קרקש בוגר!"
@@ -43,7 +42,7 @@ _PokemonTower2Text_6063c::
 	cont "עוד הרבה דברים"
 	cont "להשיג, חבר!"
 
-	para "נתרחרח אחר כך!"
+	para "נתרחרח אחר-כך!"
 	done
 
 _PokemonTower2Text2::
@@ -51,7 +50,7 @@ _PokemonTower2Text2::
 	line "לא הצלחנו לזהות"
 	cont "את הרוחות החמקמקות!"
 
-	para "אולי נוכל"
-	line "לחשוף אותן"
-	cont "בעזרת משקף סילף."
+	para "אולי נצליח לגלות"
+	line "את זהותן בעזרת"
+	cont "משקף סילף."
 	done

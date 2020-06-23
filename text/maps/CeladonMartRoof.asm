@@ -75,7 +75,7 @@ _CeladonMartRoofText_48520::
 	text ""
 
 	para "94MT מכיל"
-	line "מתקפה משולשת!"
+	line "מתקפה משולשת!@@"
 
 _CeladonMartRoofText_48526::
 	text "אין לך מקום"
