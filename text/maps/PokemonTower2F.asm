@@ -51,6 +51,6 @@ _PokemonTower2Text2::
 	cont את הרוחות החמקמקות!"
 
 	para "אולי נוכל"
-	line "לראות אותן"
+	line "לחשוף אותן"
 	cont "בעזרת משקף סילף."
 	done
