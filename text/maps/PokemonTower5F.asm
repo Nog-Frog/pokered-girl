@@ -63,6 +63,6 @@ _PokemonTower5Text7::
 	text "אתה באיזור"
 	line "מוגן ומטוהר!"
 
-	para "<PLAYER> ה#ימונים של"
-	line "בריאים לחלוטין!"
+	para "ה#ימונים של"
+	line "<PLAYER> רופאו!"
 	done
