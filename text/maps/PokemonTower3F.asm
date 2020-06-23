@@ -1,45 +1,44 @@
 _PokemonTower3BattleText1::
-	text "Urrg...Awaa..."
-	line "Huhu...graa.."
+	text "אוררג...אווהה..."
+	line "הוהו...גרעע.."
 	done
 
 _PokemonTower3EndBattleText1::
-	text "Hwa!"
-	line "I'm saved!"
+	text "וואה!"
+	line "ניצלתי!"
 	prompt
 
 _PokemonTower3AfterBattleText1::
-	text "The GHOSTs can be"
-	line "identified by the"
-	cont "SILPH SCOPE."
+	text "משקף הסילף מאפשר"
+	line "לזהות את הרוחות. "
 	done
 
 _PokemonTower3BattleText2::
-	text "Kekeke...."
-	line "Kwaaah!"
+	text "קיקיקי...."
+	line "קווהההה!"
 	done
 
 _PokemonTower3EndBattleText2::
-	text "Hmm?"
-	line "What am I doing?"
+	text "הממ?"
+	line "מה אני עושה?"
 	prompt
 
 _PokemonTower3AfterBattleText2::
-	text "Sorry! I was"
-	line "possessed!"
+	text "מצטערת! הייתי"
+	line "אחוזת דיבוק!"
 	done
 
 _PokemonTower3BattleText3::
-	text "Be gone!"
-	line "Evil spirit!"
+	text "הסתלקי!"
+	line "רוח רפאים מרושעת!"
 	done
 
 _PokemonTower3EndBattleText3::
-	text "Whew!"
-	line "The spirit left!"
+	text "פיו! רוח"
+	line "הרפאים הסתלקה!"
 	prompt
 
 _PokemonTower3AfterBattleText3::
-	text "My friends were"
-	line "possessed too!"
+	text "גם כל החברות שלי"
+	line "היו אחוזות דיבוק!"
 	done
