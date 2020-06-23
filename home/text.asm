@@ -468,9 +468,11 @@ TextCommand02::
 	ld h, b
 	ld l, c
 	ld c, a
-	call PrintBCDNumberWrapper
-	ld b, h
-	ld c, l
+    ; Set flag to indicate whether is is TextCommand02 or TextCommand09.
+    ; Using wReverseNumberFlags here to store the flag.
+    ld a, 1
+    ld [wReverseNumberFlags], a
+    call PrintNumberToTempBuffer
 	pop hl
 	jr NextTextCommand
 
@@ -554,11 +556,14 @@ TextCommand09::
 	ld a, b
 	and $f0
 	swap a
-	res BIT_LEFT_ALIGN, a ; TODO figure out how to left-align this ??
+	; Make left-aligned
+	set 6, a
 	ld b, a
-	call PrintNumberWrapper
-	ld b, h
-	ld c, l
+    ; Set flag to indicate whether is is TextCommand02 or TextCommand09.
+    ; Using wReverseNumberFlags here to store the flag.
+    xor a
+    ld [wReverseNumberFlags], a
+    call PrintNumberToTempBuffer
 	pop hl
 	jp NextTextCommand
 
@@ -693,6 +698,64 @@ TextCommand17::
 	ld [H_LOADEDROMBANK], a
 	ld [MBC1RomBank], a
 	jp NextTextCommand
+
+; Prints number from de to a temporary buffer at wReversedNumberTempBuffer.
+; Then, reverses the string from the buffer, and prints it on hl with PlaceString.
+; The number always prints right-aligned.
+; input: de = number, hl = dest
+; wReverseNumberFlags = whether the number is binary-coded or not. 1 means binary-coded, 0 means not.
+; output: hl advances to new end. bc also advances to new end.
+PrintNumberToTempBuffer::
+	; Save hl
+	push hl
+	; Set dest to the temp buffer
+	ld hl, wReversedNumberTempBuffer
+	; Turn delay off
+	ld a, [wd730]
+	push af
+	set 6, a
+	ld [wd730], a
+    ; See which number printing function should be called
+    ld a, [wReverseNumberFlags]
+    cp a, 1
+    jr nc, .BCD
+    ; Print to the temp buffer
+    call PrintNumber
+    jr ReverseTempBufferAndPrint
+.BCD
+    ; Print to the temp buffer
+    call PrintBCDNumber
+    ; fall through
+
+ReverseTempBufferAndPrint::
+	; Restore printing delay flags
+	pop af
+	ld [wd730], a
+	; Put a null terminator after the string
+	ld a, "@"
+	ld [hl], a
+	; Reverse and print the text
+	ld de, wReversedNumberTempBuffer
+    ; Reverse text
+	ld hl, wReversedNumberEnd
+	ld a, "@"
+	ld [hld], a
+.reverseLoop
+	ld [hld], a
+	ld a, [de]
+	inc de
+	cp a, "@"
+	jr nz, .reverseLoop
+	inc hl
+	ld d, h
+	ld e, l
+    ; Restore dest
+	pop hl
+	; Print the reversed string on original dest
+	call PlaceString
+	ld h,b
+	ld l,c
+	ret
 
 TextCommandJumpTable::
 	dw TextCommand00

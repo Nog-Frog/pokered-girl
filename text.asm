@@ -315,7 +315,7 @@ _OutOfCoinsSlotMachineText::
 	done
 
 _BetHowManySlotMachineText::
-	text "על כמה אסימונים"
+	text "כמה אסימונים"
 	line "תרצה להמר?"
 	done
 

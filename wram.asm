@@ -1130,6 +1130,7 @@ wPayoutCoins:: ; cd4a
 wTradedPlayerMonOTID:: ; cd4c
 
 wSlotMachineFlags:: ; cd4c
+wReverseNumberFlags::
 ; These flags are set randomly and control when the wheels stop.
 ; bit 6: allow the player to win in general
 ; bit 7: allow the player to win with 7 or bar (plus the effect of bit 6)
@@ -3191,9 +3192,9 @@ wBoxMonOT::    ds NAME_LENGTH * MONS_PER_BOX ; dd2a
 wBoxMonNicks:: ds NAME_LENGTH * MONS_PER_BOX ; de06
 wBoxMonNicksEnd:: ; dee2
 
-wReversedText:: ds 16
-wReversedTextEnd:: ds 1
-wBCDReverseTemp:: ds 16
+wReversedNumber:: ds 16
+wReversedNumberEnd:: ds 1
+wReversedNumberTempBuffer:: ds 16
 
 wBoxDataEnd::
 
