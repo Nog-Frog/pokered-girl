@@ -9,23 +9,22 @@ _SilphCo8Text_565c3::
 	done
 
 _SilphCo8BattleText1::
-	text "זה הכי רחוק"
-	line "שתוכל להגיע!"
+	text "אתה לא תמשיך"
+	line "מכאן!"
 	done
 
 _SilphCo8EndBattleText1::
-	text "אין לך"
-	line "מספיק אומץ!"
+	text "אני לא מספיק"
+	line "קשוח!"
 	prompt
 
 _SilphCo8AfterBattleText1::
-	text "אם לא תיסוג"
-	line "אני אקרא"
-	cont "לעזרה!"
+	text "אם לא תסתלק"
+	line "אני אקרא לגיבוי!"
 	done
 
 _SilphCo8BattleText2::
-	text "אתה גורם לנו"
+	text "אתה הכנסת אותנו"
 	line "לצרות!"
 	done
 
@@ -48,7 +47,7 @@ _SilphCo8BattleText3::
 
 _SilphCo8EndBattleText3::
 	text "ווה!"
-	line "הו לא!"
+	line "הו אחים!"
 	prompt
 
 _SilphCo8AfterBattleText3::
