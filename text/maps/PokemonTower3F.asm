@@ -40,5 +40,5 @@ _PokemonTower3EndBattleText3::
 
 _PokemonTower3AfterBattleText3::
 	text "גם כל החברות שלי"
-	line "היו רדופות!"
+	line "היו אחוזות דיבוק!"
 	done
