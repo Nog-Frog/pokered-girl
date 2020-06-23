@@ -22,7 +22,7 @@ _HallofFameRoomText1::
 	cont "ה#ימון!"
 
 	para "ברכותיי,"
-	line "אתה <PLAYER>"
+	line "<PLAYER>, אתה"
 	cont "וה#ימון שלך"
 	cont "נכנסתם להיכל התהילה!"
 	done
