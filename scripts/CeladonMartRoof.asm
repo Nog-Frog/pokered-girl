@@ -54,7 +54,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 12
 	ld [wTopMenuItemX], a
 	ld a, [wFilteredBagItemsCount]
 	dec a
@@ -194,7 +194,7 @@ CeladonMartRoofScript_PrintDrinksInBag:
 	push hl
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 2, 2
+	coord hl, 11, 2
 	ld a, [hItemCounter]
 	ld bc, SCREEN_WIDTH * 2
 	call AddNTimes
