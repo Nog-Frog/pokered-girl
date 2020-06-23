@@ -2680,7 +2680,7 @@ SelectMenuItem:
 	ld a, [wMenuItemToSwap]
 	and a
 	jr z, .select
-	coord hl, 5, 13
+	coord hl, 14, 13
 	dec a
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
@@ -2930,7 +2930,7 @@ PrintMenuItem:
 	ld a, [wCurrentMenuItem]
 	cp b
 	jr nz, .notDisabled
-	coord hl, 1, 10
+	coord hl, 9, 10
 	ld de, DisabledText
 	call PlaceString
 	jr .moveDisabled

@@ -1250,8 +1250,9 @@ _MustRechargeText::
 	prompt
 
 _DisabledNoMoreText::
-	text "<USER> כבר"
-	line "לא מושבת!"
+	text "המהלך של"
+	line "<USER> כבר"
+	cont "לא מושבת!"
 	prompt
 
 _IsConfusedText::
@@ -1300,7 +1301,7 @@ _MoveIsDisabledText::
 	line "@"
 	TX_RAM wcd6d
 	text "של <USER>"
-	cont "הושבת!"
+	line "הושבת!"
 	prompt
 
 _MonName1Text::
@@ -2201,9 +2202,8 @@ _MoveWasDisabledText::
 	text "המהלך @"
 	TX_RAM wcd6d
 	text ""
-	line "@"
-	text "של <TARGET>"
-	line "הושבת!"
+	line "של <TARGET>"
+	cont "הושבת!"
 	prompt
 
 _NothingHappenedText::
