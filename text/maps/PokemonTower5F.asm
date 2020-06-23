@@ -1,71 +1,68 @@
 _PokemonTower5Text1::
-	text "Come, child! I"
-	line "sealed this space"
-	cont "with white magic!"
+	text "התקרב, ילד!"
+	line "יצרתי אזור שמוגן"
+	cont "בעזרת קסם לבן!"
 
-	para "You can rest here!"
+	para "תוכל לנוח כאן!"
 	done
 
 _PokemonTower5BattleText1::
-	text "Give...me..."
-	line "your...soul..."
+	text "תן...לי..."
+	line "את...נשמתך..."
 	done
 
 _PokemonTower5EndBattleText1::
-	text "Gasp!"
+	text "אהה!"
 	prompt
 
 _PokemonTower5AfterBattleText1::
-	text "I was under"
-	line "possession!"
+	text "רוח השתלטה עליי!"
 	done
 
 _PokemonTower5BattleText2::
-	text "You...shall..."
-	line "join...us..."
+	text "הצטרף...אלינו..."
 	done
 
 _PokemonTower5EndBattleText2::
-	text "What"
-	line "a nightmare!"
+	text "איזה סיוט!"
 	prompt
 
 _PokemonTower5AfterBattleText2::
-	text "I was possessed!"
+	text "הייתי אחוזת דיבוק!"
 	done
 
 _PokemonTower5BattleText3::
-	text "Zombies!"
+	text "זומבים!"
 	done
 
 _PokemonTower5EndBattleText3::
-	text "Ha?"
+	text "הא?"
 	prompt
 
 _PokemonTower5AfterBattleText3::
-	text "I regained my"
-	line "senses!"
+	text "התעשטתי על"
+	line "עצמי!"
 	done
 
 _PokemonTower5BattleText4::
-	text "Urgah..."
-	line "Urff...."
+	text "אורגהה..."
+	line "אורףף...."
 	done
 
 _PokemonTower5EndBattleText4::
-	text "Whoo!"
+	text "ווהה!"
 	prompt
 
 _PokemonTower5AfterBattleText4::
-	text "I fell to evil"
-	line "spirits despite"
-	cont "my training!"
+	text "כוחות אפלים"
+	line "הצליחו להשתלט עליי"
+	cont "למרות האימונים!"
 	done
 
 _PokemonTower5Text7::
-	text "Entered purified,"
-	line "protected zone!"
+	text "אתה באיזור"
+	line "מוגן ומטוהר!"
 
-	para "<PLAYER>'s #MON"
-	line "are fully healed!"
+	para "ה#ימונים של"
+	line "<PLAYER> רופאו!"
 	done
