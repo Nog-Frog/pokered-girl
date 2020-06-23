@@ -23,7 +23,6 @@ _PokemonTower1Text4::
 	done
 
 _PokemonTower1Text5::
-	text "אני מדיום! ישנן"
-	line "רוחות המתכננות"
-	cont "קונדסים!"
+	text "אני מדיום! אני חשה"
+	line "ברוחות שובבות!"
 	done
