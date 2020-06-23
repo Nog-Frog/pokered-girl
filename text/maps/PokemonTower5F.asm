@@ -28,7 +28,7 @@ _PokemonTower5EndBattleText2::
 	prompt
 
 _PokemonTower5AfterBattleText2::
-	text "הייתי אחוז דיבוק!"
+	text "הייתי אחוזת דיבוק!"
 	done
 
 _PokemonTower5BattleText3::
