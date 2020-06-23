@@ -15,7 +15,8 @@ _PokemonTower2Text_60632::
 	text "מה?"
 	line "אתה עלוב!"
 
-	para "הייתי קל איתך!"
+	para "עשיתי לך חיים"
+	line "קלים!"
 	prompt
 
 _PokemonTower2Text_60637::
@@ -48,7 +49,7 @@ _PokemonTower2Text_6063c::
 _PokemonTower2Text2::
 	text "אפילו אנחנו"
 	line "לא הצלחנו לזהות"
-	cont את הרוחות החמקמקות!"
+	cont "את הרוחות החמקמקות!"
 
 	para "אולי נוכל"
 	line "לחשוף אותן"
