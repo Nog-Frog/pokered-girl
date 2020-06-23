@@ -69,7 +69,7 @@ FanClubChairStoryText::
 	cont "אין כמוהו!"
 
 	para "חיבוק...כש..."
-	cont "נרדם...חמים"
+	line "נרדם...חמים"
 	cont "ונעים להחזיק..."
 	cont "מרהיב..."
 	cont "משובב נפש..."

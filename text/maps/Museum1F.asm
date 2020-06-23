@@ -50,8 +50,8 @@ _Museum1FText_5c242::
 	done
 
 _Museum1FText_5c251::
-	text "זה חתיכה מאובן"
-	cont "מרשים!"
+	text "זה חתיכת מאובן"
+	line "מרשים!"
 	done
 
 _Museum1FText_5c28e::

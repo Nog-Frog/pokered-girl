@@ -14,7 +14,7 @@ _VermilionCityTextDidYouSee::
 
 _VermilionCityTextSSAnneDeparted::
 	text "אז, הספינה אנה"
-	cont "!הפליגה"
+	line "הפליגה!"
 
 	para "היא תחזור בעוד"
 	line "כשנה."
@@ -37,7 +37,7 @@ _SSAnneFlashedTicketText::
 	text "<PLAYER> הציג את"
 	line "הכרטיס לשיט!"
 	
-	text "נהדר! ברוך הבא"
+	para "נהדר! ברוך הבא"
 	line "לספינה אנה!"
 	done
 
