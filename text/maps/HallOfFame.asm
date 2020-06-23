@@ -8,7 +8,7 @@ _HallofFameRoomText1::
 	cont "של ה#ימונים!"
 
 	para "אלופי ליגת"
-	line " ה#ימון"
+	line "ה#ימון זוכים"
 	cont "זוכים לכבוד"
 	cont "על ההישגים שלהם!"
 
