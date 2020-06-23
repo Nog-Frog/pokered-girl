@@ -60,7 +60,7 @@ ItemNames:
 	db "מטבע@"            ; COIN
 	db "מים מינרלים@"     ; FRESH WATER
 	db "משקה קל@"         ; SODA POP
-	db "לימונדה	@"        ; LEMONADE
+	db "לימונדה@"        ; LEMONADE
 	db "כרטיס לשיט@"      ; S.S.TICKET
 	db "שיני זהב@"        ; GOLD TEETH
 	db "X מתקפה@"         ; X ATTACK
