@@ -4,14 +4,13 @@ _PokemonTower3BattleText1::
 	done
 
 _PokemonTower3EndBattleText1::
-	text "וואי!"
+	text "וואה!"
 	line "ניצלתי!"
 	prompt
 
 _PokemonTower3AfterBattleText1::
-	text "ניתן לזהות את"
-	line "הרוחות על ידי "
-	cont "משקף הסילף."
+	text "משקף הסילף מאפשר"
+	line "לזהות את הרוחות. "
 	done
 
 _PokemonTower3BattleText2::
@@ -26,7 +25,7 @@ _PokemonTower3EndBattleText2::
 
 _PokemonTower3AfterBattleText2::
 	text "מצטערת! הייתי"
-	line "רדופה!"
+	line "אחוזת דיבוק!"
 	done
 
 _PokemonTower3BattleText3::
@@ -40,6 +39,6 @@ _PokemonTower3EndBattleText3::
 	prompt
 
 _PokemonTower3AfterBattleText3::
-	text "גם כל החברים שלי"
-	line "היו רדופים!"
+	text "גם כל החברות שלי"
+	line "היו רדופות!"
 	done
