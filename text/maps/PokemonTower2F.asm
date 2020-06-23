@@ -40,7 +40,7 @@ _PokemonTower2Text_6063c::
 	cont "טוב, אני חייב!"
 	cont "לעוף, יש לי"
 	cont "עוד הרבה דברים"
-	cont "לעשות, חבר!"
+	cont "להשיג, חבר!"
 
 	para "נתרחרח אחר כך!"
 	done
