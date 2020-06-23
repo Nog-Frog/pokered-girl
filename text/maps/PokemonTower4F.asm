@@ -24,7 +24,7 @@ _PokemonTower4EndBattleText2::
 
 _PokemonTower4AfterBattleText2::
 	text "אנחנו לא"
-	line "מצליחים לזהות"
+	line "מצליחות לזהות"
 	cont "את הרוח."
 	done
 
