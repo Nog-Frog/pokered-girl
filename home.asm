@@ -81,6 +81,56 @@ HideSprites::
 
 INCLUDE "home/copy.asm"
 
+PrintNumberWrapperCommon::
+	; Save hl
+	push hl
+	; Set dest to the temp buffer
+	ld hl, wBCDReverseTemp
+	; Turn delay off
+	ld a,[wd730]
+	push af
+	set 6, a
+	ld [wd730], a
+    ; See which number printing function should be called
+    ld a, [wSlotMachineFlags]
+    cp a, 1
+    jp nc, .BCD
+    ; Print to the temp buffer
+    call PrintNumber
+    jp AfterPrintBCDNumberWrapper
+.BCD
+    ; Print to the temp buffer
+    call PrintBCDNumber
+    ; fall through
+
+AfterPrintBCDNumberWrapper::
+	; Restore flags
+	pop af
+	ld [wd730], a
+	; Put a null terminator after the string
+	ld a, "@"
+	ld [hl], a
+	; Reverse and print the text
+	ld de, wBCDReverseTemp
+; Reverse text
+	ld hl, wReversedTextEnd
+	ld a, "@"
+	ld [hld], a
+.reverseLoop
+	ld [hld], a
+	ld a, [de]
+	inc de
+	cp a, "@"
+	jr nz, .reverseLoop
+	inc hl
+	ld d, h
+	ld e, l
+	pop hl
+	call PlaceString
+	ld h,b
+	ld l,c
+	ret
+
 SECTION "Entry", ROM0
 
 	nop
@@ -103,7 +153,7 @@ Start::
 	xor a
 	jr .ok
 .gbc
-	ld a, 0
+	xor a
 .ok
 	ld [wGBC], a
 	jp Init
@@ -633,6 +683,13 @@ GetPartyMonName::
 	pop bc
 	pop hl
 	ret
+
+PrintBCDNumberWrapper::
+    ; Set flag to indicate this is the function being called, and not the none-BCD one.
+    ; Using wSlotMachineFlags here to store the flag.
+    ld a, 1
+    ld [wSlotMachineFlags], a
+    jp PrintNumberWrapperCommon
 
 ; function to print a BCD (Binary-coded decimal) number
 ; de = address of BCD number
@@ -1298,7 +1355,7 @@ CountSetBits::
 	ld d, 8
 .innerLoop ; count how many bits are set in the current byte
 	srl e
-	ld a, 0
+	xor a
 	adc c
 	ld c, a
 	dec d
@@ -1658,7 +1715,7 @@ DisplayChooseQuantityMenu::
 	ld de, hMoney ; total price
 	ld c, $e3
 	coord hl, 8, 10
-	call PrintBCDNumber ; TODO
+	call PrintBCDNumber
 	coord hl, 17, 10
 .printQuantity
 	ld de, wItemQuantity ; current quantity
@@ -4187,6 +4244,13 @@ PrintText_NoCreatingTextBox::
 	coord bc, 18, 14
 	call TextCommandProcessor
 	ret
+
+PrintNumberWrapper::
+    ; Set flag to indicate this is the function being called, and not the nBCD one.
+    ; Using wSlotMachineFlags here to store the flag.
+    xor a
+    ld [wSlotMachineFlags], a
+    jp PrintNumberWrapperCommon
 
 PrintNumber::
 	push bc

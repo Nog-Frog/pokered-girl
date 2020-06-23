@@ -3191,6 +3191,10 @@ wBoxMonOT::    ds NAME_LENGTH * MONS_PER_BOX ; dd2a
 wBoxMonNicks:: ds NAME_LENGTH * MONS_PER_BOX ; de06
 wBoxMonNicksEnd:: ; dee2
 
+wReversedText:: ds 16
+wReversedTextEnd:: ds 1
+wBCDReverseTemp:: ds 16
+
 wBoxDataEnd::
 
 ; dee2

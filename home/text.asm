@@ -468,7 +468,7 @@ TextCommand02::
 	ld h, b
 	ld l, c
 	ld c, a
-	call PrintBCDNumber
+	call PrintBCDNumberWrapper
 	ld b, h
 	ld c, l
 	pop hl
@@ -556,7 +556,7 @@ TextCommand09::
 	swap a
 	res BIT_LEFT_ALIGN, a ; TODO figure out how to left-align this ??
 	ld b, a
-	call PrintNumber
+	call PrintNumberWrapper
 	ld b, h
 	ld c, l
 	pop hl
