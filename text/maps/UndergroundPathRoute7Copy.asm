@@ -1,35 +1,32 @@
 _UGPathRoute7EntranceUnusedText_5d773::
-	text "I want to shop at"
-	line "the dept. store"
-	cont "in CELADON but..."
+	text "אני רוצה לקנות"
+	line "בכל-בו אביב אבל..."
 
-	para "There are so many"
-	line "rough looking"
-	cont "people there."
+	para "יש שם הרבה"
+	line "אנשים מפחידים."
 	done
 
 _UGPathRoute7EntranceUnusedText_5d778::
-	text "TEAM ROCKET had a"
-	line "secret hideout in"
-	cont "CELADON CITY?"
+	text "לכנופיית רוקט"
+	line "יש מקום מסתור"
+	cont "בעיר האביב?"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d77d::
-	text "You're here to"
-	line "shop in CELADON?"
+	text "אתה פה כדי לקנות"
+	line "בעיר האביב?"
 
-	para "Just step outside"
-	line "and head west!"
+	para "פשוט צא החוצה"
+	line "והתקדם מערבה!"
 	done
 
 _UGPathRoute7EntranceUnusedText_5d782::
-	text "The UNDERGROUND"
-	line "PATH goes beneath"
-	cont "SAFFRON and leads"
-	cont "to LAVENDER."
+	text "המעבר התת קרקעי"
+	line "עובר מתחת לעיר"
+	cont "הזעפרן ומוביל"
+	cont "לעיר הלבנדר."
 
-	para "If you're heading"
-	line "to CERULEAN, go"
-	cont "to the building"
-	cont "across the road."
+	para "אם אתה רוצה להגיע"
+	line "לעיר הטורקיז,"
+	cont "לך לבניין ממול."
 	done
