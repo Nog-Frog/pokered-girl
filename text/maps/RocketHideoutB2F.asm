@@ -1,7 +1,8 @@
 _RocketHideout2BattleText2::
 	text "הבוס אמר"
-	line "שניתן לראות רוחות"
-	cont "בעזרת משקף סילף!"
+	line "שאתה יכול לראות"
+	cont "רוחות בעזרת"
+	cont "משקף סילף!"
 	done
 
 _RocketHideout2EndBattleText2::
@@ -9,8 +10,8 @@ _RocketHideout2EndBattleText2::
 	prompt
 
 _RocketHideout2AfterBattleTxt2::
-	text "למפקדת רוקט"
-	line "יש מרתף בעל 4"
-	cont "קומות. תצליח"
+	text "במפקדה של כנופיית"
+	line "רוקט יש 4 קומות"
+	cont "מרתף. האם תצליח"
 	cont "להגיע לבוס?"
 	done
