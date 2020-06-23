@@ -1,31 +1,28 @@
 _PokemonTower1Text1::
-	text "#MON TOWER was"
-	line "erected in the"
-	cont "memory of #MON"
-	cont "that had died."
+	text "מגדל ה#ימון הוקם"
+	line "לזכרם של"
+	cont "#ימונים שמתו."
 	done
 
 _PokemonTower1Text2::
-	text "Did you come to"
-	line "pay respects?"
-	cont "Bless you!"
+	text "באת לחלוק כבוד?"
+	cont "תבורך!"
 	done
 
 _PokemonTower1Text3::
-	text "I came to pray"
-	line "for my CLEFAIRY."
+	text "באתי להתפלל לעילוי"
+	line "נשמת החמשדון שלי."
 
-	para "Sniff! I can't"
-	line "stop crying..."
+	para "סניפף! אני לא יכול"
+	line "להפסיק לבכות..."
 	done
 
 _PokemonTower1Text4::
-	text "My GROWLITHE..."
-	line "Why did you die?"
+	text "נהמיש שלי..."
+	line "למה מתת?"
 	done
 
 _PokemonTower1Text5::
-	text "I am a CHANNELER!"
-	line "There are spirits"
-	cont "up to mischief!"
+	text "אני מדיום! אני חשה"
+	line "ברוחות שובבות!"
 	done
