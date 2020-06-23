@@ -1,73 +1,71 @@
 _RocketHideout1EndBattleText6::
-	text "Why...?@@"
+	text "למה...?@@"
 
 _RocketHideout1BattleText2::
-	text "Who are you? How"
-	line "did you get here?"
+	text "מי אתה?"
+	line "איך הגעת לפה?"
 	done
 
 _RocketHideout1EndBattleText2::
-	text "Oww!"
-	line "Beaten!"
+	text "אאוווו!"
+	line "הובסתי!"
 	prompt
 
 _RocketHideout1AfterBattleTxt2::
-	text "Are you dissing"
-	line "TEAM ROCKET?"
+	text "אתה מלכלך"
+	line "על כנופיית רוקט?"
 	done
 
 _RocketHideout1BattleText3::
-	text "You broke into"
-	line "our operation?"
+	text "אתה חיבלת"
+	line "במבצע שלנו?"
 	done
 
 _RocketHideout1EndBattleText3::
-	text "Burnt!"
+	text "נכוויתי!"
 	prompt
 
 _RocketHideout1AfterBattleTxt3::
-	text "You're not going"
-	line "to get away with"
-	cont "this, brat!"
+	text "אתה לא תצא"
+	line "מזה, פרחח!"
 	done
 
 _RocketHideout1BattleText4::
-	text "Intruder alert!"
+	text "אזעקת פולש!"
 	done
 
 _RocketHideout1EndBattleText4::
-	text "I"
-	line "can't do it!"
+	text "אני לא מסוגל"
+	line "לעשות את זה!"
 	prompt
 
 _RocketHideout1AfterBattleTxt4::
-	text "SILPH SCOPE?"
-	line "I don't know"
-	cont "where it is!"
+	text "משקף סילף?"
+	line "אני לא יודע"
+	cont "איפה זה!"
 	done
 
 _RocketHideout1BattleText5::
-	text "Why did you come"
-	line "here?"
+	text "למה הגעת לכאן?"
 	done
 
 _RocketHideout1EndBattleText5::
-	text "This"
-	line "won't do!"
+	text "זה לא"
+	line "ילך!"
 	prompt
 
 _RocketHideout1AfterBattleTxt5::
-	text "OK, I'll talk!"
-	line "Take the elevator"
-	cont "to see my BOSS!"
+	text "בסדר, אני אדבר!"
+	line "קח את המעלית"
+	cont "כדי לראות את הבוס!"
 	done
 
 _RocketHideout1BattleText6::
-	text "Are you lost, you"
-	line "little rat?"
+	text "הלכת לאיבוד,"
+	line "עכברוש?"
 	done
 
 _RocketHideout1AfterBattleTxt6::
-	text "Uh-oh, that fight"
-	line "opened the door!"
+	text "או-או, הקרב"
+	line "הזה פתח את הדלת!"
 	done
