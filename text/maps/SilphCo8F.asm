@@ -1,56 +1,56 @@
 _SilphCo8Text_565be::
-	text "I wonder if SILPH"
-	line "is finished..."
+	text "מעניין אם סילף"
+	line "גמורה..."
 	done
 
 _SilphCo8Text_565c3::
-	text "Thanks for saving"
-	line "us!"
+	text "תודה שהצלת"
+	line "אותנו!"
 	done
 
 _SilphCo8BattleText1::
-	text "That's as far as"
-	line "you'll go!"
+	text "אתה לא תמשיך"
+	line "מכאן!"
 	done
 
 _SilphCo8EndBattleText1::
-	text "Not"
-	line "enough grit!"
+	text "אני לא מספיק"
+	line "קשוח!"
 	prompt
 
 _SilphCo8AfterBattleText1::
-	text "If you don't turn"
-	line "back, I'll call"
-	cont "for backup!"
+	text "אם לא תסתלק"
+	line "אני אקרא לגיבוי!"
 	done
 
 _SilphCo8BattleText2::
-	text "You're causing us"
-	line "problems!"
+	text "אתה הכנסת אותנו"
+	line "לצרות!"
 	done
 
 _SilphCo8EndBattleText2::
-	text "Huh?"
-	line "I lost?"
+	text "הא?"
+	line "הפסדתי?"
 	prompt
 
 _SilphCo8AfterBattleText2::
-	text "So, what do you"
-	line "think of SILPH"
-	cont "BUILDING's maze?"
+	text "אז, מה אתה חושב"
+	line "על המבוך של"
+	cont "בניין סילף?"
 	done
 
 _SilphCo8BattleText3::
-	text "I am one of the 4"
-	line "ROCKET BROTHERS!"
+	text "אני אחד"
+	line "מרביעיית האחים"
+	cont "רוקט!"
 	done
 
 _SilphCo8EndBattleText3::
-	text "Whoo!"
-	line "Oh brothers!"
+	text "ווה!"
+	line "הו אחים!"
 	prompt
 
 _SilphCo8AfterBattleText3::
-	text "I'll leave you up"
-	line "to my brothers!"
+	text "אחים שלי"
+	line "ייטפלו בך!"
 	done
