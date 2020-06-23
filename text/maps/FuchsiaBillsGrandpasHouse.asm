@@ -26,6 +26,6 @@ _FuchsiaHouse1Text3::
 	cont "שלו במחשב!"
 
 	para "אם תבקש ממנו, אולי"
-	cont "הוא יראה לך איך!"
+	line "הוא יראה לך איך!"
 	done
 

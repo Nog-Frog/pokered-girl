@@ -88,7 +88,7 @@ _CeladonMartRoofText_4852c::
 
 _CeladonMartRoofText1::
 	text "אחותי מאמנת, תאמין"
-	cont "לי או לא."
+	line "או לא."
 
 	para "אבל, היא כל כך"
 	line "לא בוגרת,"
