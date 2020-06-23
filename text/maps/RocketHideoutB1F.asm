@@ -26,12 +26,12 @@ _RocketHideout1EndBattleText3::
 	prompt
 
 _RocketHideout1AfterBattleTxt3::
-	text "אתה לא תצא"
-	line "מזה, פרחח!"
+	text "אתה לא הולך"
+	line "להתחמק מזה, פרחח!"
 	done
 
 _RocketHideout1BattleText4::
-	text "אזעקת פולש!"
+	text "אזעקת מסיגי גבול!"
 	done
 
 _RocketHideout1EndBattleText4::
@@ -55,14 +55,15 @@ _RocketHideout1EndBattleText5::
 	prompt
 
 _RocketHideout1AfterBattleTxt5::
-	text "בסדר, אני אדבר!"
-	line "קח את המעלית"
-	cont "כדי לראות את הבוס!"
+	text "בסדר, אני אגיד"
+	line "לך! קח את המעלית"
+	cont "כדי לראות את"
+	cont "הבוס שלי!"
 	done
 
 _RocketHideout1BattleText6::
 	text "הלכת לאיבוד,"
-	line "עכברוש?"
+	line "חתיכת בוגד?"
 	done
 
 _RocketHideout1AfterBattleTxt6::
