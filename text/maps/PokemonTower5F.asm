@@ -61,7 +61,7 @@ _PokemonTower5AfterBattleText4::
 
 _PokemonTower5Text7::
 	text "אתה באיזור"
-	line "מוגן ונקי מרוחות!"
+	line "מוגן ומטוהר!"
 
 	para "<PLAYER> ה#ימונים של"
 	line "בריאים לחלוטין!"
