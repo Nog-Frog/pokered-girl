@@ -52,8 +52,8 @@ _NameRaterText_1dad1::
 	text ", אה?"
 	line "זה באמת שם מושלם!"
 
-	para "שמור על"
-	line "@"
+	para "טפל יפה"
+	line "ב@"
 	TX_RAM wcd6d
 	text "!"
 	done
