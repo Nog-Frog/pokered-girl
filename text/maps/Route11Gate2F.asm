@@ -2,7 +2,7 @@ _Route11GateUpstairsText_494a3::
 	text "יש חפצים על האדמה"
 	line "שאי אפשר לראות."
 
-	para "ITEMFINDER יזהה" ; TODO
+	para "מאתר חפצים יזהה"
 	line "חפץ שקרוב אליך."
 
 	para "הוא לא יכול לאתר"
@@ -12,24 +12,23 @@ _Route11GateUpstairsText_494a3::
 	done
 
 _BinocularsSnorlaxText::
-	text "הסתכלתי במשקפת."
+	text "הסתכלת במשקפת."
 
 	para "#ימון גדול ישן"
 	line "על הדרך!"
 	done
 
 _BinocularsNoSnorlaxText::
-	text "הסתכלתי במשקפת."
+	text "הסתכלת במשקפת."
 
 	para "איזה מחזה מרהיב!"
 	done
 
 _Route11GateUpstairsText_494d5::
-	text "הסתכלתי במשקפת."
+	text "הסתכלת במשקפת."
 
 	para "הדרך היחידה להגיע"
-	line "מעיר CERULEAN" ; TODO
-	cont "לעיר LAVENDER" ; TODO
-	cont "היא דרך"
-	cont "ROCK TUNNEL." ; TODO
+	line "מעיר הטורקיז לעיר"
+	cont "הלבנדר היא דרך"
+	cont "מנהרת הסלע."
 	done
