@@ -1,17 +1,17 @@
 _RocketHideout2BattleText2::
-	text "BOSS said you can"
-	line "see GHOSTs with"
-	cont "the SILPH SCOPE!"
+	text "הבוס אמר"
+	line "שאתה יכול לראות"
+	cont "רוחות בעזרת"
+	cont "משקף סילף!"
 	done
 
 _RocketHideout2EndBattleText2::
-	text "I"
-	line "surrender!"
+	text "אני נכנע!"
 	prompt
 
 _RocketHideout2AfterBattleTxt2::
-	text "The TEAM ROCKET"
-	line "HQ has 4 basement"
-	cont "floors. Can you"
-	cont "reach the BOSS?"
+	text "במפקדה של כנופיית"
+	line "רוקט יש 4 קומות"
+	cont "מרתף. האם תצליח"
+	cont "להגיע לבוס?"
 	done
