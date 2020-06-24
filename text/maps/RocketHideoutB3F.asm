@@ -1,35 +1,35 @@
 _RocketHideout3BattleText2::
-	text "Stop meddling in"
-	line "TEAM ROCKET's"
-	cont "affairs!"
+	text "תפסיק להתערב"
+	line "בעניינים של"
+	cont "כנופיית רוקט!"
 	done
 
 _RocketHideout3EndBattleText2::
-	text "Oof!"
-	line "Taken down!"
+	text "אוף!"
+	line "הושפלתי!"
 	prompt
 
 _RocketHideout3AfterBattleTxt2::
-	text "SILPH SCOPE?"
-	line "The machine the"
-	cont "BOSS stole. It's"
-	cont "here somewhere."
+	text "משקף סילף?"
+	line "המכונה שהבוס"
+	cont "גנב. היא צריכה"
+	cont "להיות פה."
 	done
 
 _RocketHideout3BattleTxt::
-	text "We got word from"
-	line "upstairs that you"
-	cont "were coming!"
+	text "ציפור קטנה"
+	line "לחשה לנו שאתה"
+	cont "מגיע!"
 	done
 
 _RocketHideout3EndBattleText3::
-	text "What?"
-	line "I lost? No!"
+	text "מה?"
+	line "הובסתי? לא!"
 	prompt
 
 _RocketHide3AfterBattleText3::
-	text "Go ahead and go!"
-	line "But, you need the"
-	cont "LIFT KEY to run"
-	cont "the elevator!"
+	text "קדימה תסתלק מכאן!"
+	line "אבל, אתה צריך"
+	cont "את המפתח למעלית"
+	cont "כדי להפעיל אותה!"
 	done
