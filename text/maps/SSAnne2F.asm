@@ -61,5 +61,5 @@ _SSAnneRivalCaptainText::
 
 	para "כדאי שתלך לראות"
 	line "אותו! נתרחרח"
-	cont "אחר כך!"
+	cont "אחר-כך!"
 	done

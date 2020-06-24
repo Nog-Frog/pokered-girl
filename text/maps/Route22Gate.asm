@@ -1,20 +1,20 @@
 _Route22GateText_1e704::
-	text "Only truly skilled"
-	line "trainers are"
-	cont "allowed through."
+	text "הכניסה מותרת"
+	line "למאמנים מקצוענים"
+	cont "בלבד."
 
-	para "You don't have the"
-	line "BOULDERBADGE yet!@@"
+	para "עדיין אין לך את"
+	line "תג הסלע!@@"
 
 _Route22GateText_1e715::
 	text ""
 
-	para "The rules are"
-	line "rules. I can't"
-	cont "let you pass."
+	para "זהו החוק. אני לא"
+	line "יכול לתת לך"
+	cont "להכנס."
 	done
 
 _Route22GateText_1e71a::
-	text "Oh! That is the"
-	line "BOULDERBADGE!"
-	cont "Go right ahead!@@"
+	text "אה! יש לך את"
+	line "תג הסלע!"
+	cont "בבקשה, תכנס!@@"
