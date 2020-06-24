@@ -1,40 +1,35 @@
 _Route11GateUpstairsText_494a3::
-	text "There are items on"
-	line "the ground that"
-	cont "can't be seen."
+	text "יש חפצים על האדמה"
+	line "שאי אפשר לראות."
 
-	para "ITEMFINDER will"
-	line "detect an item"
-	cont "close to you."
+	para "ITEMFINDER יזהה" ; TODO
+	line "חפץ שקרוב אליך."
 
-	para "It can't pinpoint"
-	line "it, so you have"
-	cont "to look yourself!"
+	para "הוא לא יכול לאתר"
+	line "אותו במדויק, אז"
+	cont "תצטרך לחפש אותו"
+	cont "בעצמך!"
 	done
 
 _BinocularsSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "הסתכלתי במשקפת."
 
-	para "A big #MON is"
-	line "asleep on a road!"
+	para "#ימון גדול ישן"
+	line "על הדרך!"
 	done
 
 _BinocularsNoSnorlaxText::
-	text "Looked into the"
-	line "binoculars."
+	text "הסתכלתי במשקפת."
 
-	para "It's a beautiful"
-	line "view!"
+	para "איזה מחזה מרהיב!"
 	done
 
 _Route11GateUpstairsText_494d5::
-	text "Looked into the"
-	line "binoculars."
+	text "הסתכלתי במשקפת."
 
-	para "The only way to"
-	line "get from CERULEAN"
-	cont "CITY to LAVENDER"
-	cont "is by way of the"
-	cont "ROCK TUNNEL."
+	para "הדרך היחידה להגיע"
+	line "מעיר CERULEAN" ; TODO
+	cont "לעיר LAVENDER" ; TODO
+	cont "היא דרך"
+	cont "ROCK TUNNEL." ; TODO
 	done
