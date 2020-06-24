@@ -1,60 +1,59 @@
 _NameRaterText_1dab3::
-	text "Hello, hello!"
-	line "I am the official"
-	cont "NAME RATER!"
+	text "שלום, שלום!"
+	line "אני מדרג השמות"
+	cont "הרשמי!"
 
-	para "Want me to rate"
-	line "the nicknames of"
-	cont "your #MON?"
+	para "תרצה שאדרג"
+	line "את הכינויים של"
+	cont "ה#ימונים שלך?"
 	done
 
 _NameRaterText_1dab8::
-	text "Which #MON"
-	line "should I look at?"
+	text "איזה #ימון"
+	line "תרצה שאבדוק?"
 	prompt
 
 _NameRaterText_1dabd::
 	TX_RAM wcd6d
-	text ", is it?"
-	line "That is a decent"
-	cont "nickname!"
+	text ", אה?"
+	line "זה כינוי מצוין"
+	cont "ל#ימון!"
 
-	para "But, would you"
-	line "like me to give"
-	cont "it a nicer name?"
+	para "אבל, האם תרצה"
+	line "שאעניק לו שם"
+	cont "יפה יותר?"
 
-	para "How about it?"
+	para "מה דעתך?"
 	done
 
 _NameRaterText_1dac2::
-	text "Fine! What should"
-	line "we name it?"
+	text "בסדר! איך תרצה"
+	line "שנקרא לו?"
 	prompt
 
 _NameRaterText_1dac7::
-	text "OK! This #MON"
-	line "has been renamed"
+	text "אוקיי! שמו החדש של"
+	line "ה#ימון הזה הוא"
 	cont "@"
 	TX_RAM wBuffer
 	text "!"
 
-	para "That's a better"
-	line "name than before!"
+	para "זה שם טוב יותר"
+	line "מהקודם!"
 	done
 
 _NameRaterText_1dacc::
-	text "Fine! Come any"
-	line "time you like!"
+	text "בסדר! מוזמן לבוא"
+	line "מתי שתרצה!"
 	done
 
 _NameRaterText_1dad1::
 	TX_RAM wcd6d
-	text ", is it?"
-	line "That is a truly"
-	cont "impeccable name!"
+	text ", אה?"
+	line "זה באמת שם מושלם!"
 
-	para "Take good care of"
-	line "@"
+	para "טפל יפה"
+	line "ב@"
 	TX_RAM wcd6d
 	text "!"
 	done
