@@ -1,74 +1,74 @@
 _RocketHideout4Text_4557a::
-	text "So! I must say, I"
-	line "am impressed you"
-	cont "got here!"
+	text "אז! אני חייב"
+	line "לומר שאני מופתע"
+	cont "שהגעת עד לכאן!"
 	done
 
 _RocketHideout4Text_4557f::
-	text "WHAT!"
-	line "This cannot be!"
+	text "מה!"
+	line "זה לא ייתכן!"
 	prompt
 
 _RocketHideout4Text_45584::
-	text "I see that you"
-	line "raise #MON"
-	cont "with utmost care."
+	text "אני רואה"
+	line "שאתה משקיע בגידול"
+	cont "ה#ימונים שלך."
 
-	para "A child like you"
-	line "would never"
-	cont "understand what I"
-	cont "hope to achieve."
+	para "ילדון כמוך לעולם"
+	line "לא יבין מה"
+	cont "אני מתכנן להשיג."
 
-	para "I shall step"
-	line "aside this time!"
+	para "כדאי שאפנה"
+	line "את הדרך הפעם!"
 
-	para "I hope we meet"
-	line "again..."
+	para "אני מקווה שנתראה"
+	line "שוב..."
 	done
 
 _RocketHideout4BattleText2::
-	text "I know you! You"
-	line "ruined our plans"
-	cont "at MT.MOON!"
+	text "אני מכיר אותך!"
+	line "שיבשת לנו את"
+	cont "התוכניות"
+	cont "בהר הירח!"
 	done
 
 _RocketHideout4EndBattleText2::
-	text "Burned"
-	line "again!"
+	text "נכוויתי שוב!"
 	prompt
 
 _RocketHide4AfterBattleText2::
-	text "Do you have"
-	line "something against"
-	cont "TEAM ROCKET?"
+	text "יש לך משהו"
+	line "נגד כנופיית רוקט?"
 	done
 
 _RocketHideout4BattleText3::
-	text "How can you not"
-	line "see the beauty of"
-	cont "our evil?"
+	text "אתה לא רואה"
+	line "שאנחנו רעים"
+	cont "בצורה יוצאת"
+	cont "מן הכלל?"
 	done
 
 _RocketHideout4EndBattleText3::
-	text "Ayaya!"
+	text "איהיה!"
 	prompt
 
 _RocketHide4AfterBattleText3::
-	text "BOSS! I'm sorry I"
-	line "failed you!"
+	text "בוס! אני מצטער"
+	line "שאכזתי אותך!"
 	done
 
 _RocketHideout4BattleText4::
-	text "The elevator"
-	line "doesn't work? Who"
-	cont "has the LIFT KEY?"
+	text "המעלית לא עובדת?"
+	line "אצל מי המפתח"
+	cont "למעלית?"
 	done
 
 _RocketHideout4EndBattleText4::
-	text "No!"
+	text "לא!"
 	prompt
 
 _RocketHideout4Text_455ec::
-	text "Oh no! I dropped"
-	line "the LIFT KEY!"
+	text "הו לא! הפלתי"
+	line "את המפתחות"
+	cont "למעלית!"
 	done
