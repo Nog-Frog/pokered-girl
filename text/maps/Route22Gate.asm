@@ -9,7 +9,7 @@ _Route22GateText_1e704::
 _Route22GateText_1e715::
 	text ""
 
-	para "זהו החוק. אני לא"
+	para "זה החוק. אני לא"
 	line "יכול לתת לך"
 	cont "להכנס."
 	done
@@ -17,4 +17,4 @@ _Route22GateText_1e715::
 _Route22GateText_1e71a::
 	text "אה! יש לך את"
 	line "תג הסלע!"
-	cont "בבקשה, תכנס!@@"
+	cont "בבקשה, היכנס!@@"

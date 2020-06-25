@@ -2,19 +2,19 @@ _Route22RivalBeforeBattleText1::
 	text "<RIVAL>: היי!"
 	line "<PLAYER>!"
 
-	para "אתה הולך לליגת"
+	para "אתה בדרך לליגת"
 	line "ה#ימון?"
 
-	para "אין סיכוי!"
-	line "אין מצב שיש לך"
-	cont "מספיק תגים!"
+	para "שכח מזה! אין מצב"
+	line "שיש לך מספיק"
+	cont "תגים!"
 
 	para "השומר לא יתן"
 	line "לך להכנס!"
 
 	para "דרך אגב,"
 	line "ה#ימונים שלך"
-	cont "כבר חזקים יותר?"
+	cont "הספיקו להתחזק?"
 	done
 
 _Route22RivalAfterBattleText1::
@@ -22,17 +22,18 @@ _Route22RivalAfterBattleText1::
 	line "ה#ימון יש הרבה"
 	cont "מאמנים קשוחים!"
 
-	para "אני חייב למצוא דרך"
-	line "להתגבר עליהם!"
+	para "אני חייב להבין איך"
+	line "לעבור אותם!"
 
-	para "קדימה, תפסיק"
-	line "להתבטל ותתחפף"
-	cont "מפה!"
+	para "כדאי שגם אתה"
+	line "תפסיק להתמהמה"
+	cont "ותתחיל להתאמן!"
 	done
 
 _Route22RivalDefeatedText1::
 	text "אוף!"
-	line "היה לך מזל!"
+	line "סתם מזל של"
+	cont "מתחילים!"
 	prompt
 
 _Route22Text_511bc::
@@ -40,26 +41,26 @@ _Route22Text_511bc::
 	line "איך זה שיש לי 2"
 	cont "#ימונים?"
 
-	para "כדאי לך גם לתפוס"
+	para "כדאי גם לך לתפוס"
 	cont "עוד #ימונים!"
 	prompt
 
 _Route22RivalBeforeBattleText2::
 	text "<RIVAL>: מה?"
-	line "<PLAYER>! אני"
-	cont "מופתע לראות אותך"
-	cont "פה!"
+	line "<PLAYER>! אתה"
+	cont "כאן, איזו הפתעה!"
 
 	para "אתה בדרך לליגת"
 	line "ה#ימונים?"
 
-	para "גם אתה אספת את כל"
-	line "התגים? מגניב!"
+	para "ואפילו אספת את"
+	line "כל התגים? מדליק!"
 
-	para "אני הולך לכסח אותך"
-	line "עכשיו כחימום לפני"
-	cont "ליגת ה#ימון,"
-	cont "<PLAYER>."
+	para "אני אכפכף אותך"
+	line "בקרב, <PLAYER>!"
+	cont "זה יהיה חימום טוב"
+	cont "לפני ליגת"
+	cont "ה#ימון!"
 
 	para "קדימה!"
 	done
@@ -70,7 +71,8 @@ _Route22RivalAfterBattleText2::
 	cont "לליגת ה#ימון!"
 
 	para "<PLAYER>, אתה"
-	line "צריך להתאמן יותר!"
+	line "צריך להתאמן עוד"
+	cont "קצת!"
 
 	para "אבל אתה בטח כבר"
 	line "יודע את זה."
@@ -81,21 +83,21 @@ _Route22RivalAfterBattleText2::
 _Route22RivalDefeatedText2::
 	text "מה!?"
 
-	para "הייתי פזיז!"
+	para "לא התרכזתי!"
 	prompt
 
 _Route22Text_511d0::
-	text "<RIVAL>: חחח!"
+	text "<RIVAL>: פחחה!"
 	line "<PLAYER>! זה"
 	cont "הכי טוב שיש לך?"
-	cont "אתה אפילו לא קרוב"
-	cont "לרמה שלי!"
+	cont "אתה אפילו לא מתקרב"
+	cont "לרמה שלי, חבר!"
 
 	para "לך להתאמן עוד!"
-	line "מפסידן!"
+	line "יא כלומניק!"
 	prompt
 
 _Route22FrontGateText::
-	text "הכניסה הראשית"
-	line "לליגת ה#ימון"
+	text "ליגת ה#ימון"
+	line "שער ראשי"
 	done
