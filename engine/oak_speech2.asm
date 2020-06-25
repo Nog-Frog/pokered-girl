@@ -188,37 +188,7 @@ DisplayIntroNameTextBox:
 .namestring
 	db "שם@"
 
-IF DEF(_RED)
-DefaultNamesPlayer:
-	db   "שם חדש"
-	next "אדום"
-	next "אש"
-	next "דוד"
-	db   "@"
-
-DefaultNamesRival:
-	db   "שם חדש"
-	next "כחול"
-	next "יוסי"
-	next "יובל"
-	db   "@"
-ENDC
-
-IF DEF(_BLUE)
-DefaultNamesPlayer:
-	db   "שם חדש"
-	next "כחול"
-	next "יוסי"
-	next "יובל"
-	db   "@"
-
-DefaultNamesRival:
-	db   "שם חדש"
-	next "אדום"
-	next "אש"
-	next "רון"
-	db   "@"
-ENDC
+INCLUDE "text/player_names.asm"
 
 GetDefaultName:
 ; a = name index
@@ -244,30 +214,7 @@ GetDefaultName:
 	ld bc, $14
 	jp CopyData
 
-IF DEF(_RED)
-DefaultNamesPlayerList:
-	db "שם חדש@"
-	db "אדום@"
-	db "אש@"
-	db "דוד@"
-DefaultNamesRivalList:
-	db "שם חדש@"
-	db "כחול@"
-	db "יוסי@"
-	db "יובל@"
-ENDC
-IF DEF(_BLUE)
-DefaultNamesPlayerList:
-	db "שם חדש@"
-	db "כחול@"
-	db "יוסי@"
-	db "יובל@"
-DefaultNamesRivalList:
-	db "שם חדש@"
-	db "אדום@"
-	db "אש@"
-	db "דוד@"
-ENDC
+INCLUDE "text/player_names_list.asm"
 
 TextTerminator_6b20:
 	db "@"

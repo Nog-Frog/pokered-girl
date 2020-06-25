@@ -371,11 +371,7 @@ PrintAlphabet:
 	ld [H_AUTOBGTRANSFERENABLED], a
 	jp Delay3
 
-HebrewKeyboard: ; 679e (1:679e)
-	db "קראטוןםפףשדגכעיחלךזסבהנמצתץז'ג'צ'ת'():;־ ?!♂♀/",$f2,",¥אנגלית@"
-
-EnglishKeyboard: ; 67d6 (1:67d6)
-	db "WERTYUIOPASDFGHJKLZXCVBNMQ ×():;[]",$e1,$e2,"-?!♂♀/",$f2,",¥עברית @"
+INCLUDE "text/alphabets.asm"
 
 PrintNicknameAndUnderscores:
 	call CalcStringLength
@@ -466,22 +462,7 @@ DakutensAndHandakutens:
 	ld [wNamingScreenLetter], a
 	ret
 
-Dakutens: ; 6885 (1:6885)
-; Commented out to save on space (Unused in English version)
-;	db "かが", "きぎ", "くぐ", "けげ", "こご"
-;	db "さざ", "しじ", "すず", "せぜ", "そぞ"
-;	db "ただ", "ちぢ", "つづ", "てで", "とど"
-;	db "はば", "ひび", "ふぶ", "へべ", "ほぼ"
-;	db "カガ", "キギ", "クグ", "ケゲ", "コゴ"
-;	db "サザ", "シジ", "スズ", "セゼ", "ソゾ"
-;	db "タダ", "チヂ", "ツヅ", "テデ", "トド"
-;	db "ハバ", "ヒビ", "フブ", "へべ", "ホボ"
-;	db $ff
-
-Handakutens: ; 68d6 (1:68d6)
-;	db "はぱ", "ひぴ", "ふぷ", "へぺ", "ほぽ"
-;	db "ハパ", "ヒピ", "フプ", "へぺ", "ホポ"
-	db $ff
+INCLUDE "text/dakutens.asm"
 
 ; calculates the length of the string at wcf4b and stores it in c
 CalcStringLength:
