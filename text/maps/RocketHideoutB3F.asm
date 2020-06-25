@@ -17,9 +17,9 @@ _RocketHideout3AfterBattleTxt2::
 	done
 
 _RocketHideout3BattleTxt::
-	text "ציפור קטנה"
-	line "לחשה לנו שאתה"
-	cont "מגיע!"
+	text "קיבלנו מידע"
+	line "מהפיקוד שאמר שאתה"
+	cont "כאן!"
 	done
 
 _RocketHideout3EndBattleText3::
