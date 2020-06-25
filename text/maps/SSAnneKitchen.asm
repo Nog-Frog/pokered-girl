@@ -1,69 +1,69 @@
 _SSAnne6Text1::
-	text "You, mon petit!"
-	line "We're busy here!"
-	cont "Out of the way!"
+	text "אתה, מון פטיט!"
+	line "אנחנו עסוקים!"
+	cont "זוז! אתה מפריע!"
 	done
 
 _SSAnne6Text2::
-	text "I saw an odd ball"
-	line "in the trash."
+	text "ראיתי כדור משונה"
+	line "בפח האשפה."
 	done
 
 _SSAnne6Text3::
-	text "I'm so busy I'm"
-	line "getting dizzy!"
+	text "אנחנו עמוסים"
+	line "בעבודה! זה"
+	cont "מעייף..."
 	done
 
 _SSAnne6Text4::
-	text "Hum-de-hum-de-"
-	line "ho..."
+	text "לה-די-דה-די-"
+	line "לה..."
 
-	para "I peel spuds"
-	line "every day!"
-	cont "Hum-hum..."
+	para "אני מקלף תפודים כל"
+	line "היום!"
+	cont "לה-די-דה..."
 	done
 
 _SSAnne6Text5::
-	text "Did you hear about"
-	line "SNORLAX?"
+	text "שמעת על נוחרפל?"
 
-	para "All it does is"
-	line "eat and sleep!"
+	para "כל מה שהוא עושה זה"
+	line "לאכול ולישון!"
 	done
 
 _SSAnne6Text6::
-	text "Snivel...Sniff..."
+	text "בכי... דמעה..."
 
-	para "I only get to"
-	line "peel onions..."
-	cont "Snivel..."
+	para "התפקיד שלי הוא"
+	line "קילוף הבצלים..."
+	cont "בכי..."
 	done
 
 _SSAnne6Text_61807::
-	text "Er-hem! Indeed I"
-	line "am le CHEF!"
+	text "אה-אהמ! אכן, אני"
+	line "לה שף!"
 
-	para "Le main course is"
+	para "לה מנה העיקרית היא"
 	prompt
 
 _SSAnne6Text_6180c::
-	text "Salmon du Salad!"
+	text "סלט דו סלמון!"
 
-	para "Les guests may"
-	line "gripe it's fish"
-	cont "again, however!"
+	para "אני מקווה שלה"
+	line "אורחים לא יקטרו"
+	cont "ששוב אוכלים דגים!"
 	done
 
 _SSAnne6Text_61811::
-	text "Eels au Barbecue!"
+	text "צלופח אה-לה גריל!"
 
-	para "Les guests will"
-	line "mutiny, I fear."
+	para "אני חושש שהנוסעים"
+	line "יתקוממו."
 	done
 
 _SSAnne6Text_61816::
-	text "Prime Beef Steak!"
+	text "אומצת בקר מובחרת!"
 
-	para "But, have I enough"
-	line "fillets du beef?"
+	para "אני מקווה שיש לנו"
+	line "מספיק לה נתחים..."
 	done

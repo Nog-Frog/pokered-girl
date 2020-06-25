@@ -1,62 +1,64 @@
 _SSAnne7RubText::
-	text "CAPTAIN: Ooargh..."
-	line "I feel hideous..."
-	cont "Urrp! Seasick..."
+	text "רב חובל: אוארגג..."
+	line "אני מרגיש נורא..."
+	cont "אורפ! בחילה..."
 
-	para "<PLAYER> rubbed"
-	line "the CAPTAIN's"
-	cont "back!"
+	para "<PLAYER> טפח על"
+	line "גבו של רב החובל!"
 
-	para "Rub-rub..."
-	line "Rub-rub...@@"
+	para "טפיחה-טפיחה..."
+	line "טפיחה-טפיחה...@@"
 
 _ReceivingHM01Text::
-	text "CAPTAIN: Whew!"
-	line "Thank you! I"
-	cont "feel much better!"
+	text "רב חובל: פיו! תודה"
+	line "לך! אני מרגיש"
+	cont "הרבה יותר טוב!"
 
-	para "You want to see"
-	line "my CUT technique?"
+	para "אתה רוצה ללמוד"
+	line "ממני את שיטת"
+	cont "החיתוך שלי?"
 
-	para "I could show you"
-	line "if I wasn't ill..."
+	para "אם לא הייתי חולה,"
+	line "הייתי מדגים לך..."
 
-	para "I know! You can"
-	line "have this!"
+	para "יש לי רעיון! קח"
+	line "את זה!"
 
-	para "Teach it to your"
-	line "#MON and you"
-	cont "can see it CUT"
-	cont "any time!"
+	para "השתמש בזה כדי ללמד"
+	line "את ה#ימונים שלך"
+	cont "את המהלך חיתוך!"
+	cont "אפשר להשתמש בו"
+	cont "בכל זמן!"
 	prompt
 
 _ReceivedHM01Text::
-	text "<PLAYER> got"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _SSAnne7Text_61932::
-	text "CAPTAIN: Whew!"
+	text "רב חובל: פיו!"
 
-	para "Now that I'm not"
-	line "sick any more, I"
-	cont "guess it's time."
+	para "עכשיו שאני כבר"
+	line "לא חולה, אני מניח"
+	cont "שהגיע הזמן."
 	done
 
 _HM01NoRoomText::
-	text "Oh no! You have"
-	line "no room for this!"
+	text "או! אין לך מספיק"
+	line "מקום כדי לקחת את"
+	cont "זה!"
 	done
 
 _SSAnne7Text2::
-	text "Yuck! Shouldn't"
-	line "have looked!"
+	text "פיכסה! אתה מתחרט"
+	line "שהסתכלת!"
 	done
 
 _SSAnne7Text3::
-	text "How to Conquer"
-	line "Seasickness..."
-	cont "The CAPTAIN's"
-	cont "reading this!"
+	text "המדריך להתגברות על"
+	line "מחלת ים..."
+	cont "רב החובל קורא את"
+	cont "זה!"
 	done

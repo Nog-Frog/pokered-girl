@@ -1,52 +1,53 @@
 _SSAnne5Text1::
-	text "The party's over."
-	line "The ship will be"
-	cont "departing soon."
+	text "המסיבה נגמרה."
+	line "הספינה עומדת"
+	cont "להפליג."
 	done
 
 _SSAnne5Text2::
-	text "Scrubbing decks"
-	line "is hard work!"
+	text "קרצוף הסיפון זו"
+	line "עבודה קשה!"
 	done
 
 _SSAnne5Text3::
-	text "Urf. I feel ill."
+	text "אורף. אני לא מרגיש"
+	line "טוב."
 
-	para "I stepped out to"
-	line "get some air."
+	para "יצאתי החוצה כדי"
+	line "לנשום קצת אוויר"
+	cont "צח."
 	done
 
 _SSAnne5BattleText1::
-	text "Hey matey!"
+	text "אהוי, ידידי!"
 
-	para "Let's do a little"
-	line "jig!"
+	para "בוא נכרכר קצת!"
 	done
 
 _SSAnne5EndBattleText1::
-	text "You're"
-	line "impressive!"
+	text "אתה"
+	line "מרשים!"
 	prompt
 
 _SSAnne5AfterBattleText1::
-	text "How many kinds of"
-	line "#MON do you"
-	cont "think there are?"
+	text "כמה סוגים שונים"
+	line "של #ימונים אתה"
+	cont "חושב שיש?"
 	done
 
 _SSAnne5BattleText2::
-	text "Ahoy there!"
-	line "Are you seasick?"
+	text "אהוי! אתה!"
+	line "יש לך מחלת ים?"
 	done
 
 _SSAnne5EndBattleText2::
-	text "I was"
-	line "just careless!"
+	text "לא"
+	line "הייתי מרוכז!"
 	prompt
 
 _SSAnne5AfterBattleText2::
-	text "My Pa said there"
-	line "are 100 kinds of"
-	cont "#MON. I think"
-	cont "there are more."
+	text "אבא שלי אמר שיש"
+	line "001 סוגים של"
+	cont "#ימונים. אני"
+	cont "חושב שיש יותר."
 	done

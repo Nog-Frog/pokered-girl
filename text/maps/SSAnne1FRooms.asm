@@ -75,30 +75,32 @@ _SSAnne8AfterBattleText4::
 	done
 
 _SSAnne8Text5::
-	text "Waiter, I would"
-	line "like a cherry pie"
-	cont "please!"
+	text "מלצר, אני רוצה"
+	line "בבקשה להזמין תמליא"
+	cont "דובדבנים!"
 	done
 
 _SSAnne8Text6::
-	text "A cruise is so"
-	line "elegant yet cozy!"
+	text "שיט תענוגות הוא"
+	line "גם אלגנטית וגם"
+	cont "ביתית!"
 	done
 
 _SSAnne8Text7::
-	text "I always travel"
-	line "with WIGGLYTUFF!"
+	text "אני וניענפוח תמיד"
+	line "מטיילים כצמד!"
 	done
 
 _SSAnne8Text9::
-	text "We are cruising"
-	line "around the world."
+	text "אנחנו מפליגים"
+	line "מסביב לעולם."
 	done
 
 _SSAnne8Text11::
-	text "Ssh! I'm a GLOBAL"
-	line "POLICE agent!"
+	text "ששש! אני שוטר"
+	line "חשאי מהמשטרה"
+	cont "העולמית!"
 
-	para "I'm on the trail"
-	line "of TEAM ROCKET!"
+	para "אני מנסה לתפוס את"
+	line "כנופיית רוקט!"
 	done
