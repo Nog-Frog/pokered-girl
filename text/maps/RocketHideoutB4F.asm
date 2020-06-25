@@ -1,39 +1,40 @@
 _RocketHideout4Text_4557a::
-	text "אז! אני חייב"
-	line "לומר שאני מופתע"
-	cont "שהגעת עד לכאן!"
+	text "אני מוכרח לומר,"
+	line "זה מרשים שהגעת עד"
+	cont "לכאן."
 	done
 
 _RocketHideout4Text_4557f::
-	text "מה!"
+	text "מה?!"
 	line "זה לא ייתכן!"
 	prompt
 
 _RocketHideout4Text_45584::
-	text "אני רואה"
-	line "שאתה משקיע בגידול"
-	cont "ה#ימונים שלך."
+	text "אני מבין. אתה מטפל"
+	line "ב#ימונים שלך בחום"
+	cont "ואהבה."
 
-	para "ילדון כמוך לעולם"
-	line "לא יבין מה"
-	cont "אני מתכנן להשיג."
+	para "ילד קטן כמוך לעולם"
+	line "לא יבין מדוע עלי"
+	cont "להגשים את מטרתי."
 
-	para "כדאי שאפנה"
-	line "את הדרך הפעם!"
+	para "הפעם, אפנה לך את"
+	line "הדרך!"
 
-	para "אני מקווה שנתראה"
+	para "כולי תקווה שניפגש"
 	line "שוב..."
 	done
 
 _RocketHideout4BattleText2::
 	text "אני מכיר אותך!"
-	line "שיבשת לנו את"
-	cont "התוכניות"
-	cont "בהר הירח!"
+	line "אתה סיכלת את"
+	cont "התוכנית שלנו בהר"
+	cont "הירח!"
 	done
 
 _RocketHideout4EndBattleText2::
-	text "נכוויתי שוב!"
+	text "נכוויתי"
+	line "שוב!"
 	prompt
 
 _RocketHide4AfterBattleText2::
@@ -42,10 +43,9 @@ _RocketHide4AfterBattleText2::
 	done
 
 _RocketHideout4BattleText3::
-	text "אתה לא רואה"
-	line "שאנחנו רעים"
-	cont "בצורה יוצאת"
-	cont "מן הכלל?"
+	text "איך אפשר שלא לראות"
+	line "את היופי שברשע"
+	cont "שלנו?"
 	done
 
 _RocketHideout4EndBattleText3::
@@ -68,7 +68,6 @@ _RocketHideout4EndBattleText4::
 	prompt
 
 _RocketHideout4Text_455ec::
-	text "הו לא! הפלתי"
-	line "את המפתחות"
-	cont "למעלית!"
+	text "אוי לא! הפלתי את"
+	line "המפתח למעלית!"
 	done
