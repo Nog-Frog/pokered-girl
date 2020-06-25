@@ -28,8 +28,8 @@ _RocketHideout3EndBattleText3::
 	prompt
 
 _RocketHide3AfterBattleText3::
-	text "קדימה תסתלק מכאן!"
-	line "אבל, אתה צריך"
-	cont "את המפתח למעלית"
-	cont "כדי להפעיל אותה!"
+	text "קדימה, לך מכאן!"
+	line "אבל תצטרך את"
+	cont "המפתח למעלית כדי"
+	cont "להפעיל אותה!"
 	done
