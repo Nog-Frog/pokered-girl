@@ -11,9 +11,9 @@ _RocketHideout3EndBattleText2::
 
 _RocketHideout3AfterBattleTxt2::
 	text "משקף סילף?"
-	line "המכונה שהבוס"
-	cont "גנב. היא צריכה"
-	cont "להיות פה."
+	line "זאת המכונה שהבוס"
+	cont "גנב. היא נמצאת"
+	cont "כאן איפשהו."
 	done
 
 _RocketHideout3BattleTxt::
