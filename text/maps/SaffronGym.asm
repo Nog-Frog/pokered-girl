@@ -1,237 +1,238 @@
 _SaffronGymText_5d162::
-	text "I had a vision of"
-	line "your arrival!"
+	text "ראיתי חזיון שניבא"
+	line "את בואך!"
 
-	para "I have had psychic"
-	line "powers since I"
-	cont "was a child."
+	para "מאז שהייתי ילדה,"
+	line "הייתי בעלת כוחות"
+	cont "על-חושיים."
 
-	para "I first learned"
-	line "to bend spoons"
-	cont "with my mind."
+	para "הכישור הראשון"
+	line "שלמדתי היה כיפוף"
+	cont "כפיות בעזרת כוח"
+	cont "המחשבה."
 
-	para "I dislike fight-"
-	line "ing, but if you"
-	cont "wish, I will show"
-	cont "you my powers!"
+	para "אני לא אוהבת"
+	line "קרבות, אך אם אתה"
+	cont "מתעקש להילחם, אני"
+	cont "אראה לך את העוצמה"
+	cont "שלי!"
 	done
 
 _SaffronGymText_5d167::
-	text "I'm"
-	line "shocked!"
-	cont "But, a loss is a"
-	cont "loss."
+	text "אני"
+	line "המומה! אבל..."
+	cont "הפסד הוא הפסד."
 
-	para "I admit I didn't"
-	line "work hard enough"
-	cont "to win!"
+	para "אני מודה, לא"
+	line "התאמצתי מספיק כדי"
+	cont "לנצח!"
 
-	para "You earned the"
-	line "MARSHBADGE!@@"
+	para "קיבלת את תג"
+	line "הזהב!@@"
 
 _SaffronGymText_5d16e::
-	text "Everyone has"
-	line "psychic power!"
-	cont "People just don't"
-	cont "realize it!"
+	text "לכולם יש כוחות על-"
+	line "חושיים! רוב"
+	cont "האנשים לא מודעים"
+	cont "לכוחות שלהם!"
 	done
 
 _SaffronGymText_5d173::
-	text "The MARSHBADGE"
-	line "makes #MON up"
-	cont "to L70 obey you!"
+	text "בזכות תג הזהב,"
+	line "#ימונים עד רמה"
+	cont "07 יצייתו לך!"
 
-	para "Stronger #MON"
-	line "will become wild,"
-	cont "ignoring your"
-	cont "orders in battle!"
+	para "#ימונים חזקים"
+	line "מזה ישארו פראיים,"
+	cont "ויתעלמו מהפקודות"
+	cont "שלך בקרב!"
 
-	para "Just don't raise"
-	line "your #MON too"
-	cont "much!"
+	para "אז אל תיתן"
+	line "ל#ימונים שלך"
+	cont "לעלות יותר מדי"
+	cont "רמות!"
 
-	para "Wait, please take"
-	line "this TM with you!"
+	para "רגע, בבקשה, קח את"
+	line "הMT הזה איתך!"
 	done
 
 ReceivedTM46Text::
-	text "<PLAYER> received"
-	line "TM46!@@"
+	text "<PLAYER> קיבל"
+	line "64MT!@@"
 
 _TM46ExplanationText::
 	text ""
 
-	para "TM46 is PSYWAVE!"
-	line "It uses powerful"
-	cont "psychic waves to"
-	cont "inflict damage!"
+	para "64MT מכיל את"
+	line "המהלך על-חוש! זו"
+	cont "פעימה על-חושית"
+	cont "שמסוגלת לפגוע!"
 	done
 
 _TM46NoRoomText::
-	text "Your pack is full"
-	line "of other items!"
+	text "התיק שלך כבר מלא"
+	line "בפריטים אחרים!"
 	done
 
 _SaffronGymText_5d1e6::
-	text "Yo! Champ in"
-	line "making!"
+	text "יו!"
+	line "אלופצ'יק!"
 
-	para "SABRINA's #MON"
-	line "use psychic power"
-	cont "instead of force!"
+	para "ה#ימונים של קסם"
+	line "משתמשים בכוחות"
+	cont "על-חושיים במקום"
+	cont "במכות!"
 
-	para "Fighting #MON"
-	line "are weak against"
-	cont "psychic #MON!"
+	para "ל#ימוני לחימה"
+	line "יש חולשה מול"
+	cont "#ימונים על-"
+	cont "חושיים!"
 
-	para "They get creamed"
-	line "before they can"
-	cont "even aim a punch!"
+	para "מורחים אותם לגמרי"
+	line "לפני שהם אפילו"
+	cont "מספיקים להנחית"
+	cont "אגרוף אחד!"
 	done
 
 _SaffronGymText_5d1eb::
-	text "Psychic power,"
-	line "huh?"
+	text "כוח על-חושי,"
+	line "אה?"
 
-	para "If I had that,"
-	line "I'd make a bundle"
-	cont "at the slots!"
+	para "אם היה לי כוח כזה,"
+	line "הייתי מרוויח"
+	cont "בוכטות במשחקי"
+	cont "המזל!"
 	done
 
 _SaffronGymBattleText1::
-	text "SABRINA is younger"
-	line "than I, but I"
-	cont "respect her!"
+	text "קסם צעירה ממני,"
+	line "אבל אני מכבדת"
+	cont "אותה!"
 	done
 
 _SaffronGymEndBattleText1::
-	text "Not"
-	line "good enough!"
+	text "לא"
+	line "טובה מספיק!"
 	prompt
 
 _SaffronGymAfterBattleText1::
-	text "In a battle of"
-	line "equals, the one"
-	cont "with the stronger"
-	cont "will wins!"
+	text "בקרב בין שווים,"
+	line "החזק ינצח!"
 
-	para "If you wish"
-	line "to beat SABRINA,"
-	cont "focus on winning!"
+	para "אם המטרה שלך"
+	line "היא להביס את קסם,"
+	cont "התמקד בניצחון!"
 	done
 
 _SaffronGymBattleText2::
-	text "Does our unseen"
-	line "power scare you?"
+	text "אתה מפחד מהכוח"
+	line "הלא-נראה שלנו?"
 	done
 
 _SaffronGymEndBattleText2::
-	text "I never"
-	line "foresaw this!"
+	text "לא ראיתי"
+	line "את זה מגיע!"
 	prompt
 
 _SaffronGymAfterBattleText2::
-	text "Psychic #MON"
-	line "fear only ghosts"
-	cont "and bugs!"
+	text "#ימונים ע-"
+	line "חושיים חוששים רק"
+	cont "מסוגי רוח וחרקים!"
 	done
 
 _SaffronGymBattleText3::
-	text "#MON take on"
-	line "the appearance of"
-	cont "their trainers."
+	text "#ימונים הופכים"
+	line "לדומים למאמנים"
+	cont "שלהם."
 
-	para "Your #MON must"
-	line "be tough, then!"
+	para "כנראה שה#ימונים"
+	line "שלך קשוחים!"
 	done
 
 _SaffronGymEndBattleText3::
-	text "I knew"
-	line "it!"
+	text "ידעתי!"
 	prompt
 
 _SaffronGymAfterBattleText3::
-	text "I must teach"
-	line "better techniques"
-	cont "to my #MON!"
+	text "אני חייבת ללמד את"
+	line "ה#ימונים שלי"
+	cont "מהלכים חזקים יותר!"
 	done
 
 _SaffronGymBattleText4::
-	text "You know that"
-	line "power alone isn't"
-	cont "enough!"
+	text "אתה יודע, כוח"
+	line "לבדו אינו מספיק"
+	cont "כדי לנצח!"
 	done
 
 _SaffronGymEndBattleText4::
-	text "I don't"
-	line "believe this!"
+	text "אני לא"
+	line "מאמינה!"
 	prompt
 
 _SaffronGymAfterBattleText4::
-	text "SABRINA just wiped"
-	line "out the KARATE"
-	cont "MASTER next door!"
+	text "קסם בדיוק חיסלה"
+	line "את מאסטר הקארטה"
+	cont "מהמכון שליד!"
 	done
 
 _SaffronGymBattleText5::
-	text "You and I, our"
-	line "#MON shall"
-	cont "fight!"
+	text "אתה ואני,"
+	line  "ה#ימונים שלנו"
+	cont "ילחמו!"
 	done
 
 _SaffronGymEndBattleText5::
-	text "I lost"
-	line "after all!"
+	text "הובסתי"
+	line "למרות הכל!"
 	prompt
 
 _SaffronGymAfterBattleText5::
-	text "I knew that this"
-	line "was going to take"
-	cont "place."
+	text "ידעתי מה עומד"
+	line "להתרחש."
 	done
 
 _SaffronGymBattleText6::
-	text "SABRINA is young,"
-	line "but she's also"
-	cont "our LEADER!"
+	text "קסם אמנם צעירה,"
+	line "אבל היא מנהיגת"
+	cont "המכון!"
 
-	para "You won't reach"
-	line "her easily!"
+	para "לא תצליח להגיע"
+	line "אליה בכזו קלות!"
 	done
 
 _SaffronGymEndBattleText6::
-	text "I lost"
-	line "my concentration!"
+	text "איבדתי"
+	line "ריכוז!"
 	prompt
 
 _SaffronGymAfterBattleText6::
-	text "There used to be"
-	line "2 #MON GYMs in"
-	cont "SAFFRON."
+	text "בעבר, בעיר הזעפרן"
+	line "היו שני מכוני"
+	cont "#ימון."
 
-	para "The FIGHTING DOJO"
-	line "next door lost"
-	cont "its GYM status"
-	cont "when we went and"
-	cont "creamed them!"
+	para "בבנין ליד נמצא"
+	line "הדוג'ו. הוא איבד"
+	cont "את מעמדו בתור"
+	cont "מכון אחרי שכיסחנו"
+	cont "אותם!"
 	done
 
 _SaffronGymBattleText7::
-	text "SAFFRON #MON"
-	line "GYM is famous for"
-	cont "its psychics!"
+	text "מכון הזעפרן ידוע"
+	line "בבעלות האוב שבו!"
 
-	para "You want to see"
-	line "SABRINA!"
-	cont "I can tell!"
+	para "אתה משתוקק לפגוש"
+	line "את קסם! אני חשה"
+	cont "את זה!"
 	done
 
 _SaffronGymEndBattleText7::
-	text "Arrrgh!"
+	text "אערג!"
 	prompt
 
 _SaffronGymAfterBattleText7::
-	text "That's right! I"
-	line "used telepathy to"
-	cont "read your mind!"
+	text "נכון מאוד! קראתי"
+	line "את המחשבות שלך"
+	cont "בעזרת טלפתיה!"
 	done
