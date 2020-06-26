@@ -1,61 +1,59 @@
 _PokemonTower2Text_60c1f::
-	text "The GHOST was the"
-	line "restless soul of"
-	cont "CUBONE's mother!"
+	text "הרוח היתה נשמתה"
+	line "חסרת המנוחה של"
+	cont "אמו של רשרש!"
 	done
 
 _PokemonTower2Text_60c24::
-	text "The mother's soul"
-	line "was calmed."
+	text "נשמת האם נרגעה."
 
-	para "It departed to"
-	line "the afterlife!"
+	para "היא עברה אל העולם"
+	line "הבא!"
 	done
 
 _PokemonTower6BattleText1::
-	text "Give...me..."
-	line "blood..."
+	text "תן...לי..."
+	line "דם..."
 	done
 
 _PokemonTower6EndBattleText1::
-	text "Groan!"
+	text "אנקה!"
 	prompt
 
 _PokemonTower6AfterBattleText1::
-	text "I feel anemic and"
-	line "weak..."
+	text "אני מרגישה..."
+	line "חלשה ומסוחררת..."
 	done
 
 _PokemonTower6BattleText2::
-	text "Urff... Kwaah!"
+	text "אורף... קוואה!"
 	done
 
 _PokemonTower6EndBattleText2::
-	text "Some-"
-	line "thing fell out!"
+	text "משהו"
+	line "התנדף!"
 	prompt
 
 _PokemonTower6AfterBattleText2::
-	text "Hair didn't fall"
-	line "out! It was an"
-	cont "evil spirit!"
+	text "זה לא ריח רע"
+	line "שהתנדף! זו היתה"
+	cont "הרוח הרעה!"
 	done
 
 _PokemonTower6BattleText3::
-	text "Ke..ke...ke..."
-	line "ke..ke...ke!!"
+	text "קי...קי...קי..."
+	line "קי...קי...קי!!"
 	done
 
 _PokemonTower6EndBattleText3::
-	text "Keee!"
+	text "קייי!"
 	prompt
 
 _PokemonTower6AfterBattleText3::
-	text "What's going on"
-	line "here?"
+	text "מה קורה כאן?"
 	done
 
 _PokemonTower6Text6::
-	text "Be gone..."
-	line "Intruders..."
+	text "הסתלקו..."
+	line "פולשים..."
 	done
