@@ -1,144 +1,137 @@
 _PewterGymText_5c4a3::
-	text "There are all"
-	line "kinds of trainers"
-	cont "in the world!"
+	text "בעולם ישנם סוגים"
+	line "רבים של מאמנים!"
 
-	para "You appear to be"
-	line "very gifted as a"
-	cont "#MON trainer!"
+	para "נראה שאתה מהסוג"
+	line "המוכשר!"
 
-	para "Go to the GYM in"
-	line "CERULEAN and test"
-	cont "your abilities!"
+	para "לך למכון בעיר"
+	line "הטורקיז כדי לבחון"
+	cont "את היכולות שלך!"
 	done
 
 _TM34PreReceiveText::
-	text "Wait! Take this"
-	line "with you!"
+	text "חכה! קח את זה!"
 	done
 
 _ReceivedTM34Text::
-	text "<PLAYER> received"
-	line "TM34!@@"
+	text "<PLAYER> קיבל"
+	line "43MT!@@"
 
 _TM34ExplanationText::
 	text ""
 
-	para "A TM contains a"
-	line "technique that"
-	cont "can be taught to"
-	cont "#MON!"
+	para "MT מכיל מהלך."
+	line "ניתן להשתמש בו"
+	cont "כדי ללמד #ימון"
+	cont "את המהלך!"
 
-	para "A TM is good only"
-	line "once! So when you"
-	cont "use one to teach"
-	cont "a new technique,"
-	cont "pick the #MON"
-	cont "carefully!"
+	para "MT הוא חד-פעמי!"
+	line "כשאתה בוחר איזה"
+	cont "#ימון ילמד את"
+	cont "המהלך, בחר"
+	cont "בזהירות!"
 
-	para "TM34 contains"
-	line "BIDE!"
+	para "43MT מכיל את המהלך"
+	line "סבלנות!"
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	para "ה#ימונים שלך יספגו"
+	line "מכות מהיריב, ואז"
+	cont "ישיבו לו כפליים!"
 	done
 
 _TM34NoRoomText::
-	text "You don't have"
-	line "room for this!"
+	text "אין לך מספיק מקום"
+	line "בתיק!"
 	done
 
 _PewterGymText_5c4bc::
-	text "I took"
-	line "you for granted."
+	text "חשבתי אותך למובן"
+	line "מאליו."
 
-	para "As proof of your"
-	line "victory, here's"
-	cont "the BOULDERBADGE!"
+	para "אני מעניק לך את"
+	line "תג הסלע כאות"
+	cont "לנצחונך!"
 
-	para "<PLAYER> received"
-	line "the BOULDERBADGE!@@"
+	para "<PLAYER> קיבל את"
+	line "תג הסלע!@@"
 
 _PewterGymText_5c4c1::
 	text ""
 
-	para "That's an official"
-	line "#MON LEAGUE"
-	cont "BADGE!"
+	para "זה תג רשמי של ליגת"
+	line "ה#ימון!"
 
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	para "ה#ימונים של מי"
+	line "שנושא אותו יהפכו"
+	cont "לחזקים יותר!"
 
-	para "The technique"
-	line "FLASH can now be"
-	cont "used any time!"
+	para "מעתה, אתה יכול"
+	line "להשתמש במהלך הבזק"
+	cont "בכל עת!"
 	prompt
 
 _PewterGymBattleText1::
-	text "Stop right there,"
-	line "kid!"
+	text "עצור שם, ילד!"
 
-	para "You're still light"
-	line "years from facing"
-	cont "BROCK!"
+	para "אתה עוד במרחק שנות"
+	line "אור מהקרב מול"
+	cont "צור!"
 	done
 
 _PewterGymEndBattleText1::
-	text "Darn!"
+	text "אוף!"
 
-	para "Light years isn't"
-	line "time! It measures"
-	cont "distance!"
+	para "שנת אור היא לא"
+	line "כמות זמן! זו"
+	cont "יחידת מרחק!"
 	prompt
 
 _PewterGymAfterBattleText1::
-	text "You're pretty hot,"
-	line "but not as hot"
-	cont "as BROCK!"
+	text "אתה די לוהט. אבל"
+	line "לא לוהט כמו צור!"
 	done
 
 _PewterGymText_5c515::
-	text "Hiya! I can tell"
-	line "you have what it"
-	cont "takes to become a"
-	cont "#MON champ!"
+	text "היי! אני רואה שיש"
+	line "לך בדיוק מה שצריך"
+	cont "כדי להפוך לאלוף"
+	cont "#ימון!"
 
-	para "I'm no trainer,"
-	line "but I can tell"
-	cont "you how to win!"
+	para "אני לא מאמן, אבל"
+	line "אני יכול לגלות"
+	cont "לך איך לנצח!"
 
-	para "Let me take you"
-	line "to the top!"
+	para "תן לי לאמן אותך"
+	line "להיות אלוף"
+	cont "האלופים!"
 	done
 
 _PewterGymText_5c51a::
-	text "All right! Let's"
-	line "get happening!"
+	text "אוקיי! בוא נתחיל"
+	line "לזוז!"
 	prompt
 
 _PewterGymText_5c51f::
-	text "The 1st #MON"
-	line "out in a match is"
-	cont "at the top of the"
-	cont "#MON LIST!"
+	text "ה#ימון שבראש"
+	line "רשימת ה#ימונים"
+	cont "שלך הוא הראשון"
+	cont "שיצא בקרב!"
 
-	para "By changing the"
-	line "order of #MON,"
-	cont "matches could be"
-	cont "made easier!"
+	para "אם תשנה את סדר"
+	line "ה#ימונים ברשימה,"
+	cont "קרבות יעשו קלים"
+	cont "יותר!"
 	done
 
 _PewterGymText_5c524::
-	text "It's a free"
-	line "service! Let's"
-	cont "get happening!"
+	text "השירות ניתן חינם!"
+	line "בוא נתחיל לזוז!"
 	prompt
 
 _PewterGymText_5c529::
-	text "Just as I thought!"
-	line "You're #MON"
-	cont "champ material!"
+	text "בדיוק כמו שחשבתי!"
+	line "אתה עשוי מאותו"
+	cont "חומר שממנו עושים"
+	cont "אלופי #ימון!"
 	done
