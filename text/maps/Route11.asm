@@ -1,133 +1,136 @@
 _Route11BattleText1::
-	text "Win, lose or draw!"
+	text "ניצחון, הפסד, או"
+	line "תיקו!"
 	done
 
 _Route11EndBattleText1::
-	text "Atcha!"
-	line "Didn't go my way!"
+	text "אה-צ'ה!"
+	line "לא הלך כמו"
+	cont "שקיוויתי!"
 	prompt
 
 _Route11AfterBattleText1::
-	text "#MON is life!"
-	line "And to live is to"
-	cont "gamble!"
+	text "#ימון זה החיים!"
+	line "ולהמר משמעותו"
+	cont "לחיות!"
 	done
 
 _Route11BattleText2::
-	text "Competition! I"
-	line "can't get enough!"
+	text "אף פעם לא נמאס לי"
+	line "מתחרות!"
 	done
 
 _Route11EndBattleText2::
-	text "I had"
-	line "a chance!"
+	text "היה לי"
+	line "סיכוי!"
 	prompt
 
 _Route11AfterBattleText2::
-	text "You can't be a"
-	line "coward in the"
-	cont "world of #MON!"
+	text "בעולם ה#ימון אי"
+	line "אפשר להיות פחדן!"
 	done
 
 _Route11BattleText3::
-	text "Let's go, but"
-	line "don't cheat!"
+	text "קדימה! אבל אל"
+	line "תרמה!"
 	done
 
 _Route11EndBattleText3::
-	text "Huh?"
-	line "That's not right!"
+	text "מה?"
+	line "זה לא בסדר!"
 	prompt
 
 _Route11AfterBattleText3::
-	text "I did my best! I"
-	line "have no regrets!"
+	text "נתתי כל מה שהיה"
+	line "לי! אין לי חרטות!"
 	done
 
 _Route11BattleText4::
-	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+	text "Cזהירות!"
+	line "אני מניח כאן"
+	cont "תשתיות חשמל!"
 	done
 
 _Route11EndBattleText4::
-	text "That"
-	line "was electric!"
+	text "זה"
+	line "היה מחשמל!"
 	prompt
 
 _Route11AfterBattleText4::
-	text "Spread the word"
-	line "to save energy!"
+	text "צריך לחסוך"
+	line "באנרגיה! ספר"
+	cont "לכולם!"
 	done
 
 _Route11BattleText5::
-	text "I just became a"
-	line "trainer! But, I"
-	cont "think I can win!"
+	text "בדיוק התחלתי להיות"
+	line "מאמן! אבל אני"
+	cont "חושב שאני יכול"
+	cont "לנצח!"
 	done
 
 _Route11EndBattleText5::
-	text "My"
-	line "#MON couldn't!"
+	text "ה#י-"
+	line "מונים שלי לא"
+	cont "הצליחו!"
 	prompt
 
 _Route11AfterBattleText5::
-	text "What do you want?"
-	line "Leave me alone!"
+	text "מה אתה רוצה?"
+	line "עזוב אותי!"
 	done
 
 _Route11BattleText6::
-	text "Fwahaha! I have"
-	line "never lost!"
+	text "מוחעחעחע!"
+	line "מעולם לא הובסתי!"
 	done
 
 _Route11EndBattleText6::
-	text "My"
-	line "first loss!"
+	text "ההפסד"
+	line "הראשון שלי!"
 	prompt
 
 _Route11AfterBattleText6::
-	text "Luck of the draw!"
-	line "Just luck!"
+	text "מזל של מתחילים!"
+	line "סתם מזל!"
 	done
 
 _Route11BattleText7::
-	text "I have never won"
-	line "before..."
+	text "מעולם לא ניצחתי"
+	line "בעבר..."
 	done
 
 _Route11EndBattleText7::
-	text "I saw"
-	line "this coming..."
+	text "ראיתי"
+	line "את זה מגיע..."
 	prompt
 
 _Route11AfterBattleText7::
-	text "It's just luck."
-	line "Luck of the draw."
+	text "סתם מזל."
+	line "מזל של מתחילים."
 	done
 
 _Route11BattleText8::
-	text "I'm the best in"
-	line "my class!"
+	text "אני מצטיין הכיתה!"
 	done
 
 _Route11EndBattleText8::
-	text "Darn!"
-	line "I need to make my"
-	cont "#MON stronger!"
+	text "אוף!"
+	line "אני צריך לאמן את"
+	cont "ה#ימונים שלי"
+	cont "יותר!"
 	prompt
 
 _Route11AfterBattleText8::
-	text "There's a fat"
-	line "#MON that"
-	cont "comes down from"
-	cont "the mountains."
+	text "יש #ימון שמן"
+	line "שיורד מההרים מדי"
+	cont "פעם."
 
-	para "It's strong if"
-	line "you can get it."
+	para "הןא ממש חזק, אם"
+	line "תצליח לתפוס אותו."
 	done
 
 _Route11BattleText9::
-	text "Watch out for"
-	line "live wires!"
+	text "תיזהר מחוטי חשמל"
+	line "חשופים!"
 	done
