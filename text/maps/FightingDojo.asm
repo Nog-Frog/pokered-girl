@@ -1,7 +1,7 @@
 _FightingDojoText_5ce8e::
 	text "אוח!"
 
-	para "אני מאסטר הקאראטה!"
+	para "אני מאסטר הקראטה!"
 	line "אני המנהיג כאן!"
 
 	para "אתה קורא"
