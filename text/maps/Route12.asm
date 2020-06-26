@@ -1,139 +1,134 @@
 _Route12Text1::
-	text "A sleeping #MON"
-	line "blocks the way!"
+	text "#ימון ישנוני"
+	line "חוסם את הכניסה!"
 	done
 
 _Route12Text13::
-	text "SNORLAX woke up!"
+	text "נוחרפל התעורר!"
 
-	para "It attacked in a"
-	line "grumpy rage!"
+	para "הוא תקף בזעם"
+	line "ועצבים!"
 	done
 
 _Route12Text14::
-	text "SNORLAX calmed"
-	line "down! With a big"
-	cont "yawn, it returned"
-	cont "to the mountains!"
+	text "נוחרפל נרגע!"
+	line "בעודו מפהק"
+	cont "פיהוק ענק הוא"
+	cont "חזר להרים!"
 	done
 
 _Route12BattleText1::
-	text "Yeah! I got a"
-	line "bite, here!"
+	text "כן! תפסתי"
+	line "דג, תראה!"
 	done
 
 _Route12EndBattleText1::
-	text "Tch!"
-	line "Just a small fry!"
+	text "פפפ!"
+	line "סתם דג עלוב!"
 	prompt
 
 _Route12AfterBattleText1::
-	text "Hang on! My line's"
-	line "snagged!"
+	text "רגע! החכה שלי"
+	line "זזה!"
 	done
 
 _Route12BattleText2::
-	text "Be patient!"
-	line "Fishing is a"
-	cont "waiting game!"
+	text "חכה!"
+	line "העניין בדיג"
+	cont "זה להמתין בסבלנות!"
 	done
 
 _Route12EndBattleText2::
-	text "That"
-	line "one got away!"
+	text "הוא התחמק!"
 	prompt
 
 _Route12AfterBattleText2::
-	text "With a better ROD,"
-	line "I could catch"
-	cont "better #MON!"
+	text "עם חכה טובה יותר,"
+	line "תוכל לתפוס"
+	cont "#ימונים טובים יותר!"
 	done
 
 _Route12BattleText3::
-	text "Have you found a"
-	line "MOON STONE?"
+	text "מצאת אבן ירח?"
 	done
 
 _Route12EndBattleText3::
-	text "Oww!"
+	text "אווו!"
 	prompt
 
 _Route12AfterBattleText3::
-	text "I could have made"
-	line "my #MON evolve"
-	cont "with MOON STONE!"
+	text "יכולתי לפתח"
+	line "את ה#ימון שלי"
+	cont "בעזרת אבן ירח!"
 	done
 
 _Route12BattleText4::
-	text "Electricity is my"
-	line "specialty!"
+	text "חשמל זו המומחיות"
+	line "שלי!"
 	done
 
 _Route12EndBattleText4::
-	text "Unplugged!"
+	text "אזל לי החשמל!"
 	prompt
 
 _Route12AfterBattleText4::
-	text "Water conducts"
-	line "electricity, so"
-	cont "you should zap"
-	cont "sea #MON!"
+	text "מים מוליכים"
+	line "חשמל, לכן כדאי"
+	cont "לך לחשמל #ימונים"
+	cont "מסוג מים!"
 	done
 
 _Route12BattleText5::
-	text "The FISHING FOOL"
-	line "vs. #MON KID!"
+	text "The FISHING FOOL";TODO
+	line "נגד ילד ה#ימון!"
 	done
 
 _Route12EndBattleText5::
-	text "Too"
-	line "much!"
+	text "יותר מדי!"
 	prompt
 
 _Route12AfterBattleText5::
-	text "You beat me at"
-	line "#MON, but I'm"
-	cont "good at fishing!"
+	text "אתה הבסת אותי"
+	line "בקרב #ימונים"
+	cont "אבל אני הרבה"
+	cont "יותר מוצלח בדיג!"
 	done
 
 _Route12BattleText6::
-	text "I'd rather be"
-	line "working!"
+	text "אני מעדיף לעבוד"
+	line "עכשיו!"
 	done
 
 _Route12EndBattleText6::
-	text "It's"
-	line "not easy..."
+	text "זה לא קל..."
 	prompt
 
 _Route12AfterBattleText6::
-	text "It's all right."
-	line "Losing doesn't"
-	cont "bug me any more."
+	text "זה בסדר."
+	line "כבר לא אכפת"
+	cont "לי להפסיד."
 	done
 
 _Route12BattleText7::
-	text "You never know"
-	line "what you could"
-	cont "catch!"
+	text "לעולם לא תדע"
+	line "מה תוכל לתפוס!"
 	done
 
 _Route12EndBattleText7::
-	text "Lost"
-	line "it!"
+	text "הפסדתי!"
 	prompt
 
 _Route12AfterBattleText7::
-	text "I catch MAGIKARP"
-	line "all the time, but"
-	cont "they're so weak!"
+	text "אני תופס קסמנון"
+	line "כל הזמן, אבל"
+	cont "הם ממש חלשים!"
 	done
 
 _Route12Text11::
-	text "ROUTE 12 "
-	line "North to LAVENDER"
+	text "דרך 12"
+	line "צפונה מעיר הלבנדר"
 	done
 
 _Route12Text12::
-	text "SPORT FISHING AREA"
+	text "SPORT FISHING AREA";TODO
 	done
