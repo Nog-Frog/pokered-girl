@@ -6,9 +6,8 @@ _CeruleanGymText_5c7be::
 	cont "צריכים שתהיה להם"
 	cont "גישה ל#ימונים!"
 
-	para "What is your"
-	line "approach when you"
-	cont "catch #MON?"
+	para "מה הגישה שלך כלפי"
+	line "תפיסת #ימונים?"
 
 	para "הגישה שלי היא"
 	line "מתקפה בלתי פוסקת"
