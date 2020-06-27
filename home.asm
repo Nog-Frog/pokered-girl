@@ -1298,7 +1298,7 @@ CountSetBits::
 	ld d, 8
 .innerLoop ; count how many bits are set in the current byte
 	srl e
-	xor a
+	ld a, 0
 	adc c
 	ld c, a
 	dec d
