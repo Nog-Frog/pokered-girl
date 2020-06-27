@@ -56,7 +56,8 @@ _CeladonMansion3Text6::
 _CeladonMansion3Text7::
 	text "זה התסריט!"
 	line "אל תקרא! זה"
-	cont "ספוילרים!"
+	cont "יקלקל לך את"
+	cont "הסוף!"
 	done
 
 _CeladonMansion3Text8::
