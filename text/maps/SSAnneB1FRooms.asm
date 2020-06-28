@@ -10,12 +10,14 @@ _SSAnne10BattleText1::
 
 _SSAnne10EndBattleText1::
 	text "נכון!"
-	line "אחלה קרב, חברצ'יק!"
+	line "אחלה קרב,"
+	cont "חברצ'יק!"
 	prompt
 
 _SSAnne10AfterBattleText1::
-	text "האהא! רוצה"
-	line "להיות מלח, חברצ'יק?"
+	text "האהא!"
+	line "רוצה להיות מלח,"
+	cont "חברצ'יק?"
 	done
 
 _SSAnne10BattleText2::
@@ -79,7 +81,8 @@ _SSAnne10EndBattleText5::
 
 _SSAnne10AfterBattleText5::
 	text "לפעמים מדוזות"
-	line "נסחפות לתוך הספינה."
+	line "נסחפות לתוך"
+	cont "הספינה."
 	done
 
 _SSAnne10BattleText6::

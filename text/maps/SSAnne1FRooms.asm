@@ -76,8 +76,8 @@ _SSAnne8AfterBattleText4::
 
 _SSAnne8Text5::
 	text "מלצר, אני רוצה"
-	line "בבקשה להזמין תמליא"
-	cont "דובדבנים!"
+	line "בבקשה להזמין"
+	cont "תמליא דובדבנים!"
 	done
 
 _SSAnne8Text6::

@@ -51,8 +51,9 @@ _Route10AfterBattleText3::
 
 _Route10BattleText4::
 	text "כבר אתגרתי מכוני"
-	line "#ימון כמה פעמים."
-	cont "אבל הפעם, הפסדתי."
+	line "#ימון כמה"
+	cont "פעמים. אבל הפעם,"
+	cont "הפסדתי."
 	done
 
 _Route10EndBattleText4::
@@ -93,10 +94,10 @@ _Route10EndBattleText6::
 	prompt
 
 _Route10AfterBattleText6::
-	text "ה#ימונים כאן כאלה"
-	line "מסורבלים! הלוואי"
-	cont "שהיה אחד ורוד עם"
-	cont "הדפס פרחוני!"
+	text "ה#ימונים כאן"
+	line "כאלה מסורבלים!"
+	cont "הלוואי שהיה אחד"
+	cont "ורוד שמלא בפרחים!"
 	done
 
 _Route10Text9::

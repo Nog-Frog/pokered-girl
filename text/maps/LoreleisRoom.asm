@@ -23,7 +23,8 @@ _LoreleiBeforeBattleText::
 	done
 
 _LoreleiEndBattleText::
-	text "חוצפה שכזו!"
+	text "חוצפה"
+	cont "שכזו!"
 	prompt
 
 _LoreleiAfterBattleText::

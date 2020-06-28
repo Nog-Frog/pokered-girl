@@ -54,8 +54,8 @@ _PokemonTower5EndBattleText4::
 	prompt
 
 _PokemonTower5AfterBattleText4::
-	text "כוחות אפלים"
-	line "הצליחו להשתלט עליי"
+	text "כוחות אפלים הצליחו"
+	line "להשתלט עליי"
 	cont "למרות האימונים!"
 	done
 

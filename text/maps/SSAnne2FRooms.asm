@@ -91,7 +91,8 @@ _SSAnne9EndBattleText3::
 
 _SSAnne9AfterBattleText3::
 	text "אני מעדיף"
-	line "#ימון חזק ונדיר."
+	line "#ימון חזק"
+	cont "ונדיר."
 	done
 
 _SSAnne9BattleText4::

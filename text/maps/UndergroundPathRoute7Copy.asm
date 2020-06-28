@@ -1,6 +1,7 @@
 _UGPathRoute7EntranceUnusedText_5d773::
 	text "אני רוצה לקנות"
-	line "בכל-בו אביב אבל..."
+	line "בכל-בו אביב,"
+	cont "אבל..."
 
 	para "יש שם הרבה"
 	line "אנשים מפחידים."

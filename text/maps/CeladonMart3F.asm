@@ -16,8 +16,9 @@ _ReceivedTM18Text::
 _TM18ExplanationText::
 	text "MT18 מכיל את המהלך"
 	line "נגידה! הוא מאפשר"
-	cont "ל#ימון שלך להחזיר"
-	cont "את הנזק שספג!"
+	cont "ל#ימון שלך"
+	cont "להשיב את המכות"
+	cont "שספג!"
 	done
 
 _TM18NoRoomText::

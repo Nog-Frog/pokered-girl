@@ -119,9 +119,9 @@ _PewterGymText_5c51f::
 	cont "שיצא בקרב!"
 
 	para "אם תשנה את סדר"
-	line "ה#ימונים ברשימה,"
-	cont "קרבות יעשו קלים"
-	cont "יותר!"
+	line "ה#ימונים"
+	cont "ברשימה, קרבות"
+	cont "יעשו קלים יותר!"
 	done
 
 _PewterGymText_5c524::

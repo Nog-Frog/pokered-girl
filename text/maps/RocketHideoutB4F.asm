@@ -11,8 +11,8 @@ _RocketHideout4Text_4557f::
 
 _RocketHideout4Text_45584::
 	text "אני מבין. אתה מטפל"
-	line "ב#ימונים שלך בחום"
-	cont "ואהבה."
+	line "ב#ימונים שלך"
+	cont "בחום ואהבה."
 
 	para "ילד קטן כמוך לעולם"
 	line "לא יבין מדוע עלי"

@@ -71,7 +71,7 @@ _MtMoon1EndBattleText6::
 
 _MtMoon1AfterBattleText6::
 	text "שמעתי שיש כאן"
-	line "מאובנים נדירים מאוד."
+	line "מאובנים נדירים."
 	done
 
 _MtMoon1BattleText7::

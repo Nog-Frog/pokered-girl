@@ -3,7 +3,8 @@ _MtMoonPokecenterText1::
 	line "בחגורה שלי."
 
 	para "אפשר להחזיק"
-	line "שם עד 6 #ימונים."
+	line "שם עד 6"
+	cont "#ימונים."
 	done
 
 _MtMoonPokecenterText3::

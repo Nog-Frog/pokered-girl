@@ -1,8 +1,9 @@
 _SaffronMartText2::
 	text "כשמדובר על דחיית"
 	line "#ימונים פראים,"
-	cont "דוחה יתר משפיע זמן"
-	cont "רב יותר מדוחה על!"
+	cont "דוחה יתר משפיע"
+	cont "זמן רב יותר מדוחה"
+	cont "על!"
 	done
 
 _SaffronMartText3::

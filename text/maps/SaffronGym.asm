@@ -156,7 +156,8 @@ _SaffronGymEndBattleText3::
 _SaffronGymAfterBattleText3::
 	text "אני חייבת ללמד את"
 	line "ה#ימונים שלי"
-	cont "מהלכים חזקים יותר!"
+	cont "מהלכים חזקים"
+	cont "יותר!"
 	done
 
 _SaffronGymBattleText4::

@@ -11,7 +11,7 @@ _SaffronGateText_8aaa9::
 	line "אני מיובש!"
 	cont "..."
 	cont "הא? אני יכול"
-	cont "לקבל את המשקה הזה?"
+	cont "לקבל את המשקה?"
 	cont "וואי, תודה!@@"
 
 _SaffronGateText_1dff1::

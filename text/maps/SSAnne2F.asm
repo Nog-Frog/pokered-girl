@@ -35,8 +35,8 @@ _SSAnneRivalBeforeBattleText::
 _SSAnneRivalDefeatedText::
 	text "אוף!"
 
-	para "לפחות אתה"
-	line "מאמן את ה#ימונים"
+	para "לפחות אתה מאמן"
+	line "את ה#ימונים"
 	cont "שלך!"
 	prompt
 

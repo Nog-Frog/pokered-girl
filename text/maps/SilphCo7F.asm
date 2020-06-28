@@ -48,15 +48,16 @@ _SilphCo7Text_51e00::
 
 _CanceledMasterBallText::
 	text "אנחנו ביטלנו את"
-	line "פרויקט הMASTER BALL"
+	line "פרויקט הMASTER BALL" ; TODO
 	cont "בגלל כנופיית רוקט"
 	done
 
 _SilphCo7Text_51e23::
 	text "זה היה רע מאוד"
 	line "אם כנופיית רוקט"
-	cont "היה מתשלט על חברת SILPH" ; TODO
-	cont "או על ה #ימונים שלנו!"
+	cont "היתה מתשלטת על"
+	cont "סילף או על"
+	cont "ה#ימונים שלנו!"
 	done
 
 _SilphCo7Text_51e28::
@@ -66,10 +67,11 @@ _SilphCo7Text_51e28::
 	done
 
 _SilphCo7Text_51e46::
-	text "אתה! זה מאוד"
-	line "מסוכן להסתובב כאן!"
+	text "אתה! מסוכן מאוד"
+	line "להסתובב כאן!"
 	cont "הגעת כדי להציל "
-	cont "אותי? אתה לא יכול!"
+	cont "אותי? אתה לא"
+	cont "יכול!"
 	done
 
 _SilphCo7Text_51e4b::
@@ -202,7 +204,7 @@ _SilphCo7Text_51ed2::
 	cont "החזק בעולם!"
 
 	para "<PLAYER>, טוב"
-	line "בהצלחה לך!"
-	cont "תיזהר לא להזיע מהלחץ!"
+	line "בהצלחה לך! תיזהר"
+	cont "לא להזיע מהלחץ"
 	cont "ולהחליק בדרך לשם!"
 	done

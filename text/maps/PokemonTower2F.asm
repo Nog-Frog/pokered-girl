@@ -48,7 +48,8 @@ _PokemonTower2Text_6063c::
 _PokemonTower2Text2::
 	text "אפילו אנחנו"
 	line "לא הצלחנו לזהות"
-	cont "את הרוחות החמקמקות!"
+	cont "את הרוחות"
+	cont "החמקמקות!"
 
 	para "אולי נצליח לגלות"
 	line "את זהותן בעזרת"
