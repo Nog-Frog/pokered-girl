@@ -1,3 +1,6 @@
+INCLUDE "constants.asm"
+
+
 ; The rst vectors are unused.
 SECTION "rst 00", ROM0
 	rst $38
@@ -490,7 +493,7 @@ PrintStatusCondition::
 	and a
 	ret
 
-PrintStatusConditionNotFainted:
+PrintStatusConditionNotFainted::
 	ld a, [H_LOADEDROMBANK]
 	push af
 	ld a, BANK(PrintStatusAilment)
@@ -910,7 +913,7 @@ InterlaceMergeSpriteBuffers::
 	jp CopyVideoData
 
 
-INCLUDE "data/collision.asm"
+INCLUDE "data/collision_tile_ids.asm"
 INCLUDE "home/copy2.asm"
 INCLUDE "home/text.asm"
 INCLUDE "home/vcopy.asm"

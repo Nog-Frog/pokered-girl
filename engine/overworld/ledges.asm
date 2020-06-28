@@ -1,4 +1,4 @@
-HandleLedges:
+HandleLedges::
 	ld a, [wd736]
 	bit 6, a ; already jumping down ledge
 	ret nz
@@ -68,7 +68,7 @@ LoadHoppingShadowOAM:
 	ret
 
 LedgeHoppingShadow:
-	INCBIN "gfx/ledge_hopping_shadow.1bpp"
+	INCBIN "gfx/overworld/shadow.1bpp"
 LedgeHoppingShadowEnd:
 
 LedgeHoppingShadowOAM:

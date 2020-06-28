@@ -1451,7 +1451,7 @@ TrainerSentOutText:
 
 ; tests if the player has any pokemon that are not fainted
 ; sets d = 0 if all fainted, d != 0 if some mons are still alive
-AnyPartyAlive:
+AnyPartyAlive::
 	ld a, [wPartyCount]
 	ld e, a
 	xor a
@@ -1996,7 +1996,7 @@ CenterMonName:
 	pop de
 	ret
 
-DisplayBattleMenu:
+DisplayBattleMenu::
 	call LoadScreenTilesFromBuffer1 ; restore saved screen
 	ld a, [wBattleType]
 	and a
@@ -5055,11 +5055,11 @@ BuildingRageText:
 ; copy last move for Mirror Move
 ; sets zero flag on failure and unsets zero flag on success
 MirrorMoveCopyMove:
-; Mirror Move makes use of ccf1 (wPlayerUsedMove) and ccf2 (wEnemyUsedMove) addresses,
+; Mirror Move makes use of wPlayerUsedMove and wEnemyUsedMove,
 ; which are mainly used to print the "[Pokemon] used [Move]" text.
 ; Both are set to 0 whenever a new Pokemon is sent out
-; ccf1 is also set to 0 whenever the player is fast asleep or frozen solid.
-; ccf2 is also set to 0 whenever the enemy is fast asleep or frozen solid.
+; wPlayerUsedMove is also set to 0 whenever the player is fast asleep or frozen solid.
+; wEnemyUsedMove is also set to 0 whenever the enemy is fast asleep or frozen solid.
 
 	ld a, [H_WHOSETURN]
 	and a
@@ -6719,7 +6719,7 @@ PlayMoveAnimation:
 	call Delay3
 	predef_jump MoveAnimation
 
-InitBattle:
+InitBattle::
 	ld a, [wCurOpponent]
 	and a
 	jr z, DetermineWildOpponent
@@ -6931,7 +6931,7 @@ CopyUncompressedPicToTilemap:
 	ld a, [wPredefRegisters + 1]
 	ld l, a
 	ld a, [hStartTileID]
-CopyUncompressedPicToHL:
+CopyUncompressedPicToHL::
 	lb bc, 7, 7
 	ld de, SCREEN_WIDTH
 	push af

@@ -53,7 +53,7 @@ DoYouWantToNicknameText:
 	TX_FAR _DoYouWantToNicknameText
 	db "@"
 
-DisplayNameRaterScreen:
+DisplayNameRaterScreen::
 	ld hl, wBuffer
 	xor a
 	ld [wUpdateSpritesEnabled], a
@@ -337,7 +337,7 @@ LoadEDTile:
 	jp CopyVideoDataDouble
 
 ED_Tile:
-	INCBIN "gfx/ED_tile.1bpp"
+	INCBIN "gfx/font/ED.1bpp"
 ED_TileEnd:
 
 PrintAlphabet:

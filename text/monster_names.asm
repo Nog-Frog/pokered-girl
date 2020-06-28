@@ -1,4 +1,4 @@
-MonsterNames:
+MonsterNames::
 	db "קרנשיא@@@@" ; RHYDON
 	db "כיסבל@@@@@" ; KANGASKHAN
 	db "עקצחלב♂@@@" ; NIDORAN♂

@@ -1,4 +1,4 @@
-ItemNames:
+ItemNames::
 	db "כדור על@"         ; MASTER BALL
 	db "כדור יתר@"        ; ULTRA BALL
 	db "כדור רב@"         ; GREAT BALL
