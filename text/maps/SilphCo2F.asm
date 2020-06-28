@@ -1,96 +1,89 @@
 _SilphCo2Text_59ded::
-	text "Eeek!"
-	line "No! Stop! Help!"
+	text "יייק!"
+	line "לא! די! הצילו!"
 
-	para "Oh, you're not"
-	line "with TEAM ROCKET."
-	cont "I thought..."
-	cont "I'm sorry. Here,"
-	cont "please take this!"
+	para "אה, אתה לא מכנופית"
+	line "רוקט. חשבתי..."
+	cont "אני מצטערת. הנה,"
+	cont "בבקשה קח את זה!"
 	prompt
 
 _ReceivedTM36Text::
-	text "<PLAYER> got"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _TM36ExplanationText::
-	text "TM36 is"
-	line "SELFDESTRUCT!"
+	text "63MT מכיל את המהלך"
+	line "השמדה עצמית!"
 
-	para "It's powerful, but"
-	line "the #MON that"
-	cont "uses it faints!"
-	cont "Be careful."
+	para "זו מתקפה עוצמתית,"
+	line "אבל ה#ימון שמשתמש"
+	cont "בה יתעלף! היה"
+	cont "זהיר."
 	done
 
 _TM36NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "אין לך מספיק מקום"
+	line "לזה."
 	done
 
 _SilphCo2BattleText1::
-	text "Help! I'm a SILPH"
-	line "employee."
+	text "הצילו! אני עובד של"
+	line "סילף."
 	done
 
 _SilphCo2EndBattleText1::
-	text "How"
-	line "did you know I"
-	cont "was a ROCKET?"
+	text "איך"
+	line "ידעת שאני חבר"
+	cont "בכנופיית רוקט?"
 	prompt
 
 _SilphCo2AfterBattleText1::
-	text "I work for both"
-	line "SILPH and TEAM"
-	cont "ROCKET!"
+	text "אני עובד בסילף"
+	line "וגם חבר בכנופיית"
+	cont "רוקט!"
 	done
 
 _SilphCo2BattleText2::
-	text "It's off limits"
-	line "here! Go home!"
+	text "זה אזור מחוץ"
+	line "לתחום! לך הביתה!"
 	done
 
 _SilphCo2EndBattleText2::
-	text "You're"
-	line "good."
+	text "אתה"
+	line "טוב."
 	prompt
 
 _SilphCo2AfterBattleText2::
-	text "Can you solve the"
-	line "maze in here?"
+	text "אתה תצליח לפתור"
+	line "את המבוך שפה?"
 	done
 
 _SilphCo2BattleText3::
-	text "No kids are"
-	line "allowed in here!"
+	text "אין כניסה לילדים!"
 	done
 
 _SilphCo2EndBattleText3::
-	text "Tough!"
+	text "קשוח!"
 	prompt
 
 _SilphCo2AfterBattleText3::
-	text "Diamond shaped"
-	line "tiles are"
-	cont "teleport blocks!"
-
-	para "They're hi-tech"
-	line "transporters!"
+	text "מרצפות בצורת יהלום"
+	line "ישגרו אותך!"
 	done
 
 _SilphCo2BattleText4::
-	text "Hey kid! What are"
-	line "you doing here?"
+	text "היי ילד! מה אתה"
+	line "עושה פה?"
 	done
 
 _SilphCo2EndBattleText4::
-	text "I goofed!"
+	text "פישלתי!"
 	prompt
 
 _SilphCo2AfterBattleText4::
-	text "SILPH CO. will"
-	line "be merged with"
-	cont "TEAM ROCKET!"
+	text "סילף תתמזג עם"
+	line "כנופיית רוקט!"
 	done

@@ -1,56 +1,57 @@
 _SilphCo4Text_19de0::
-	text "Sssh! Can't you"
-	line "see I'm hiding?"
+	text "ששש! אתה לא רואה"
+	line "שאני מסתתר?"
 	done
 
 _SilphCo4Text_19de5::
-	text "Huh? TEAM ROCKET"
-	line "is gone?"
+	text "הא? כנופיית רוקט"
+	line "ברחו?"
 	done
 
 _SilphCo4BattleText2::
-	text "TEAM ROCKET has"
-	line "taken command of"
-	cont "SILPH CO.!"
+	text "כנופיית רוקט"
+	line "השתלטו על סילף!"
 	done
 
 _SilphCo4EndBattleText2::
-	text "Arrgh!"
+	text "אארג!"
 	prompt
 
 _SilphCo4AfterBattleText2::
-	text "Fwahahaha!"
-	line "My BOSS has been"
-	cont "after this place!"
+	text "מוחעחעחע!"
+	line "הבוס שלי תכנן"
+	cont "להשתלט על המקום"
+	cont "הזה כבר הרבה זמן!"
 	done
 
 _SilphCo4BattleText3::
-	text "My #MON are my"
-	line "loyal soldiers!"
+	text "ה#ימונים שלי הם"
+	line "חיילי הנאמנים!"
 	done
 
 _SilphCo4EndBattleText3::
-	text "Darn!"
-	line "You weak #MON!"
+	text "אוח!"
+	line "#ימונים חלשים!"
 	prompt
 
 _SilphCo4AfterBattleText3::
-	text "The doors are"
-	line "electronically"
-	cont "locked! A CARD"
-	cont "KEY opens them!"
+	text "על הדלתות מותקן"
+	line "מנעול ממוחשב!"
+	cont "כרטיס מפתח יפתח"
+	cont "אותו!"
 	done
 
 _SilphCo4BattleText4::
-	text "Intruder spotted!"
+	text "פולש אותר!"
 	done
 
 _SilphCo4EndBattleText4::
-	text "Who"
-	line "are you?"
+	text "מי"
+	line "אתה?"
 	prompt
 
 _SilphCo4AfterBattleText4::
-	text "I better tell the"
-	line "BOSS on 11F!"
+	text "כדאי שאני אספר"
+	line "לבוס שנמצא בקומה"
+	cont "11!"
 	done

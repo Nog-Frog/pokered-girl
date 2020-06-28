@@ -1,51 +1,51 @@
 _SilphCo5Text_1a010::
-	text "TEAM ROCKET is"
-	line "in an uproar over"
-	cont "some intruder."
-	cont "That's you right?"
+	text "כנופיית רוקט"
+	line "נסערים בגלל איזה"
+	cont "פולש. זה אתה,"
+	cont "נכון?"
 	done
 
 _SilphCo5Text_1a015::
-	text "TEAM ROCKET took"
-	line "off! You're our"
-	cont "hero! Thank you!"
+	text "כנופיית רוקט"
+	line "הסתלקו! אתה"
+	cont "הגיבור שלנו!"
+	cont "תודה!"
 	done
 
 _SilphCo5BattleText2::
-	text "I heard a kid was"
-	line "wandering around."
+	text "שמעתי שיש ילד"
+	line "שמשוטט כאן."
 	done
 
 _SilphCo5EndBattleText2::
-	text "Boom!"
+	text "בום!"
 	prompt
 
 _SilphCo5AfterBattleText2::
-	text "It's not smart"
-	line "to pick a fight"
-	cont "with TEAM ROCKET!"
+	text "לריב עם כנופיית"
+	line "רוקט זה לא צעד"
+	cont "חכם!"
 	done
 
 _SilphCo5BattleText3::
-	text "We study #"
-	line "BALL technology"
-	cont "on this floor!"
+	text "בקומה הזו אנחנו"
+	line "חוקרים טכנולוגית"
+	cont "פוכדורים!"
 	done
 
 _SilphCo5EndBattleText3::
-	text "Dang!"
-	line "Blast it!"
+	text "אוף!"
+	line "יא אללה!"
 	prompt
 
 _SilphCo5AfterBattleText3::
-	text "We worked on the"
-	line "ultimate #"
-	cont "BALL which would"
-	cont "catch anything!"
+	text "אנחנו מפתחים את"
+	line "ה#כדור העליון"
+	cont "שיהיה מסוגל ללכוד"
+	cont "כל דבר!"
 	done
 
 _SilphCo5BattleText4::
-	text "Whaaat? There"
-	line "shouldn't be any"
-	cont "children here?"
+	text "מהההה? לא אמורים"
+	line "להיות כאן ילדים?"
 	done

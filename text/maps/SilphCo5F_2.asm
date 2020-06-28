@@ -1,55 +1,55 @@
 _SilphCo5EndBattleText4::
-	text "Oh"
-	line "goodness!"
+	text "או!"
+	line "אדוניי!"
 	prompt
 
 _SilphCo5AfterBattleText4::
-	text "You're only on 5F."
-	line "It's a long way"
-	cont "to my BOSS!"
+	text "אתה רק בקומה"
+	line "החמישית. הבוס שלי"
+	cont "עוד רחוק!"
 	done
 
 _SilphCo5BattleText5::
-	text "Show TEAM ROCKET"
-	line "a little respect!"
+	text "תפגין קצת כבוד"
+	line "כלפי כנופיית"
+	cont "רוקט!"
 	done
 
 _SilphCo5EndBattleText5::
-	text "Cough..."
-	line "Cough..."
+	text "שיעול..."
+	line "שיעול..."
 	prompt
 
 _SilphCo5AfterBattleText5::
-	text "Which reminds me."
+	text "זה מזכיר לי."
 
-	para "KOFFING evolves"
-	line "into WEEZING!"
+	para "משתעשן מתפתח"
+	line "למשתעשניים!"
 	done
 
 _SilphCo5Text9::
-	text "It's a #MON"
-	line "REPORT!"
+	text "זה דוח #ימון!"
 
-	para "#MON LAB"
-	line "created PORYGON,"
-	cont "the first virtual"
-	cont "reality #MON."
+	para "מעבדת ה#ימון"
+	line "יצרנו את מצולען,"
+	cont "#ימון המציאות"
+	cont "המדומה הראשון."
 	done
 
 _SilphCo5Text10::
-	text "It's a #MON"
-	line "REPORT!"
+	text "זה דוח #ימון!"
 
-	para "Over 160 #MON"
-	line "techniques have"
-	cont "been confirmed."
+	para "אישרנו את קיומם"
+	line "של מעל 061 מהלכים"
+	cont "בהם #ימונים"
+	cont "משתמשים."
 	done
 
 _SilphCo5Text11::
-	text "It's a #MON"
-	line "REPORT!"
+	text "זה דוח #ימון!"
 
-	para "4 #MON evolve"
-	line "only when traded"
-	cont "by link-cable."
+	para "ישנם 4 #ימונים"
+	line "שמתפתחים רק כאשר"
+	cont "מחליפים אותם דרך"
+	cont "חיבור כבל."
 	done
