@@ -1,45 +1,47 @@
 _RockTunnel1BattleText1::
-	text "This tunnel goes"
-	line "a long way, kid!"
+	text "המנהרה הזאת"
+	line "ארוכה, ילד!"
 	done
 
 _RockTunnel1EndBattleText1::
-	text "Doh!"
-	line "You win!"
+	text "וואו!"
+	line "ניצחת!"
 	prompt
 
 _RockTunnel1AfterBattleText1::
-	text "Watch for ONIX!"
-	line "It can put the"
-	cont "squeeze on you!"
+	text "תיזהר מנחשוהם!"
+	line "הוא יכול למחוץ"
+	cont "אותך!"
 	done
 
 _RockTunnel1BattleText2::
-	text "Hmm. Maybe I'm"
-	line "lost in here..."
+	text "הממ."
+	line "יש סיכוי שהלכתי"
+	cont "לאיבוד פה..."
 	done
 
 _RockTunnel1EndBattleText2::
-	text "Ease up!"
-	line "What am I doing?"
-	cont "Which way is out?"
+	text "תירגע!"
+	line "מה אני אמור לעשות?
+	cont "לעשות? איך"
+	cont "יוצאים מפה?"
 	prompt
 
 _RockTunnel1AfterBattleText2::
-	text "That sleeping"
-	line "#MON on ROUTE"
-	cont "12 forced me to"
-	cont "take this detour."
+	text "ה#ימון הישנוני"
+	line "בדרך 12 אילץ"
+	cont "אותי לקחת את"
+	cont "קיצור הדרך הזה."
 	done
 
 _RockTunnel1BattleText3::
-	text "Outsiders like"
-	line "you need to show"
-	cont "me some respect!"
+	text "זרים כמוך"
+	line "צריכים להראות"
+	cont "לי כבוד!"
 	done
 
 _RockTunnel1EndBattleText3::
-	text "I give!"
+	text "נכנעתי!"
 	prompt
 
 _RockTunnel1AfterBattleText3::
@@ -48,68 +50,70 @@ _RockTunnel1AfterBattleText3::
 	done
 
 _RockTunnel1BattleText4::
-	text "#MON fight!"
-	line "Ready, go!"
+	text "קרב #ימון!"
+	line "היכון,צא!"
 	done
 
 _RockTunnel1EndBattleText4::
-	text "Game"
-	line "over!"
+	text "המשחק"
+	line "נגמר!"
 	prompt
 
 _RockTunnel1AfterBattleText4::
-	text "Oh well, I'll get"
-	line "a ZUBAT as I go!"
+	text "טוב נו, אני"
+	line "אתפוס אצלף בדרך!"
 	done
 
 _RockTunnel1BattleText5::
-	text "Eek! Don't try"
-	line "anything funny in"
-	cont "the dark!"
+	text "איק! אל תנסה"
+	line "דברים מוזרים"
+	cont "בחושך!"
 	done
 
 _RockTunnel1EndBattleText5::
-	text "It"
-	line "was too dark!"
+	text "היה"
+	line "חשוך מדי!"
 	prompt
 
 _RockTunnel1AfterBattleText5::
-	text "I saw a MACHOP"
-	line "in this tunnel!"
+	text "ראיתי גברכה"
+	line "במערה הזו!"
 	done
 
 _RockTunnel1BattleText6::
-	text "I came this far"
-	line "for #MON!"
+	text "הגעתי עד "
+	line "לכאן בשביל"
+	cont "#ימונים!"
 	done
 
 _RockTunnel1EndBattleText6::
-	text "I'm"
-	line "out of #MON!"
+	text "נגמרו"
+	line "לי ה#ימונים!"
 	prompt
 
 _RockTunnel1AfterBattleText6::
-	text "You looked cute"
-	line "and harmless!"
+	text "עשית רושם"
+	line "של טיפוס חמוד"
+	cont "ולא מזיק!"
 	done
 
 _RockTunnel1BattleText7::
-	text "You have #MON!"
-	line "Let's start!"
+	text "יש לך #ימונים!"
+	line "בוא נתחיל!"
 	done
 
 _RockTunnel1EndBattleText7::
-	text "You"
-	line "play hard!"
+	text "אתה"
+	line "קשוח!"
 	prompt
 
 _RockTunnel1AfterBattleText7::
-	text "Whew! I'm all"
-	line "sweaty now!"
+	text "פיו! התחלתי"
+	line "להזיע!"
 	done
 
 _RockTunnel1Text8::
-	text "ROCK TUNNEL"
-	line "CERULEAN CITY -"
-	cont "LAVENDER TOWN"
+	text "מנהרת הסלע"
+	line "עיר הטורקיז -"
+	cont "עיר הלבנדר"
 	done
