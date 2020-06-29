@@ -4,7 +4,7 @@ _BrunoBeforeBattleText::
 
 	para "בעזרת אימונים"
 	line "מפרכים, אנשים"
-	cont "ו#ימונים מסוגלים"
+	cont "ו#ימונים יכולים"
 	cont "להתחזק!"
 
 	para "ה#ימונים שלי"
