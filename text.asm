@@ -1329,7 +1329,8 @@ _ExclamationPoint5Text::
 
 _AttackMissedText::
 	text "המהלך של"
-	line "<USER> החטיא!"
+	line "<USER>"
+	cont "החטיא!"
 	prompt
 
 _KeptGoingAndCrashedText::
