@@ -6,8 +6,8 @@ _Route12Text1::
 _Route12Text13::
 	text "נוחרפל התעורר!"
 
-	para "הוא תקף בזעם"
-	line "ועצבים!"
+	para "הוא תקף בזעף"
+	line "ממורמר!"
 	done
 
 _Route12Text14::
