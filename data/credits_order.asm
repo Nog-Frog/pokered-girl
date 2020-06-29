@@ -2,6 +2,13 @@ CreditsOrder:
 ; subsequent credits elements will be displayed on separate lines.
 ; $FF, $FE, $FD, $FC, $FB, and $FA are commands that are used
 ; to go to the next set of credits texts.
+; FF = Fade in text and show mon
+; FD = Fade in text
+; FE = Show text and show mon
+; FC = Show text
+; FB = Show copyright text
+; FA = Show the end
+
 	db CRED_MON, CRED_VERSION, $FF
 	db CRED_DIRECTOR, CRED_TAJIRI, $FF
 	db CRED_PROGRAMMERS, CRED_TA_OOTA, CRED_MORIMOTO, $FD
@@ -25,6 +32,15 @@ CreditsOrder:
 	db CRED_PRODUCERS, CRED_MIYAMOTO, $FD
 	db CRED_PRODUCERS, CRED_KAWAGUCHI, $FC
 	db CRED_PRODUCERS, CRED_ISHIHARA, $FE
+
+	db CRED_IL_STAFF, $FD
+	db CRED_IL_PRODUCTION, CRED_NOGA, $FF
+	db CRED_PROGRAMMERS, CRED_NOGA, CRED_EYAL, $FD
+	db CRED_IL_TRANS, CRED_NOGA, CRED_MAAYAN, $FD
+	db CRED_IL_TRANS, CRED_SHARON, CRED_NOAM, $FC
+	db CRED_SPECIAL, CRED_LIJI, CRED_NITZAN, CRED_PRET, $FD
+	db CRED_FIND_US_AT, CRED_FIND_US_AT_2, CRED_GITHUB_LINK, CRED_GITHUB_LINK_2, $FF
+
 	db CRED_US_STAFF, $FD
 	db CRED_US_COORD, CRED_TILDEN, $FD
 	db CRED_US_COORD, CRED_KAWAKAMI, CRED_HI_NAKAMURA, $FC

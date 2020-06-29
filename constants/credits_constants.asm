@@ -64,4 +64,18 @@ const_value = 0
 	const CRED_FUKUI          ; $3D
 	const CRED_CLUB           ; $3E
 	const CRED_PAAD           ; $3F
-
+	const CRED_IL_STAFF       ; $40
+	const CRED_IL_PRODUCTION  ; $41
+	const CRED_IL_TRANS       ; $43
+	const CRED_NOGA           ; $44
+	const CRED_EYAL           ; $45
+	const CRED_MAAYAN         ; $46
+	const CRED_SHARON         ; $47
+	const CRED_NOAM           ; $48
+	const CRED_LIJI           ; $49
+	const CRED_NITZAN         ; $4A
+	const CRED_PRET           ; $4B
+	const CRED_FIND_US_AT     ; $4C
+	const CRED_FIND_US_AT_2   ; $4D
+	const CRED_GITHUB_LINK    ; $4E
+	const CRED_GITHUB_LINK_2  ; $4F

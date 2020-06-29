@@ -13,4 +13,7 @@ CreditsMons:
 	db OMASTAR
 	db VILEPLUME
 	db NIDOKING
+	db EEVEE
+	db VAPOREON
+	db SLOWPOKE
 	db PARASECT

@@ -63,6 +63,21 @@ CreditsTextPointers:
 	dw CredFukui
 	dw CredClub
 	dw CredPAAD
+	dw CredILStaff
+	dw CredILProduction
+	dw CredILTrans
+	dw CredNoga
+	dw CregEyal
+	dw CredMaayan
+	dw CredSharon
+	dw CredNoam
+	dw CredLiji
+	dw CredNitzan
+	dw CredPret
+	dw CredFindUsAt
+	dw CredFindUsAt2
+	dw CredGitHubLink
+	dw CredGitHubLink2
 
 CredVersion: ; this 1 byte difference makes all bank addresses offset by 1 in the blue version
 IF DEF(_RED)
@@ -98,7 +113,7 @@ CredYamauchi:
 CredZinnai:
 	db -13, "IANNIZ IKUYORIH@"
 CredHishida:
-	db -12, "ADIHSIH AYUSTAT@"
+	db -13, "ADIHSIH AYUSTAT@"
 CredSakai:
 	db -13, "IAKAS ORIHUSAY@"
 CredYamaguchi:
@@ -130,7 +145,7 @@ CredMon:
 CredDirector:
 	db -18, "במאי@"
 CredProgrammers:
-	db -17, "מתכנתים@"
+	db -16, "מתכנתים@"
 CredCharDesign:
 	db -14, "עיצוב דמויות@"
 CredMusic:
@@ -150,7 +165,7 @@ CredMap:
 CredTest:
 	db -15, "בדיקת מוצר@"
 CredSpecial:
-	db -14, "תודות מיוחדות@"
+	db -13, "תודות מיוחדות@"
 CredProducers:
 	db -17, "מפיקים@"
 CredProducer:
@@ -166,9 +181,9 @@ CredYoshikawa:
 CredToOota:
 	db -13, "ATOO IHCIMOMOT@"
 CredUSStaff:
-	db -11, "צוות הגרסה העברית@"
+	db -11, "צוות הגרסה האנגלית@"
 CredUSCoord:
-	db -15, "מתכנתים@"
+	db -10, "תיאום הגרסה האנגלית@"
 CredTilden:
 	db -15, "NEDLIT LIAG@"
 CredKawakami:
@@ -180,7 +195,7 @@ CredGiese:
 CredOsborne:
 	db -15, "ENROBSO ARAS@"
 CredTrans:
-	db -14, "תרגום לעברית@"
+	db -14, "תרגום לאנגלית@"
 CredOgasawara:
 	db -13, "ARAWASAGO BON@"
 CredIwata:
@@ -197,3 +212,34 @@ CredClub:
 	db -10, "BULC OIRAM REPUS LCN@"
 CredPAAD:
 	db -14, "GNITSET DAAP@"
+
+CredILStaff:
+	db -11, "צוות הגרסה העברית@"
+CredILProduction:
+	db -11, "הפקת הגרסה העברית@"
+CredILTrans:
+	db -14, "תרגום לעברית@"
+CredNoga:
+	db -16, "נגה שקד@"
+CregEyal:
+	db -15, "אייל סיליג@" ; TODO Verify spelling
+CredMaayan:
+	db -15, "מעיין בלסי@" ; TODO Verify spelling
+CredSharon:
+	db -15, "שרון כורך@" ; TODO Verify spelling
+CredNoam:
+	db -15, "נועם גלר@" ; TODO Verify spelling
+CredLiji:
+	db -14, "ליאור חלפון@"
+CredNitzan:
+	db -15, "ניצן שקד@"
+CredPret:
+	db -17, "TERP@"
+CredFindUsAt:
+	db -12, "ניתן למצוא אותנו@"
+CredFindUsAt2:
+	db -16, "בכתובת:@"
+CredGitHubLink:
+	db -13, "-goN/moc.buhtig@"
+CredGitHubLink2:
+	db -14, "derekop/gorF@"
