@@ -2141,7 +2141,7 @@ _ChargeMoveEffectText::
 
 _MadeWhirlwindText::
 	text ""
-	line "יצר מערבולת רוח!"
+	line "יצר רוח סופה!"
 	prompt
 
 _TookInSunlightText::

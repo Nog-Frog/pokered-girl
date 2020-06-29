@@ -22,7 +22,7 @@ _BlaineEndBattleText::
 	line "תג המגמה!@@"
 
 _BlaineFireBlastText::
-	text "להבה מתפרצת זו"
+	text "אש מתפרצת היא"
 	line "מתקפת האש"
 	cont "האולטימטיבית!"
 
@@ -52,7 +52,7 @@ _TM38ExplanationText::
 	text ""
 
 	para "83MT מכיל"
-	line "את המתקפה להבה"
+	line "את המתקפה אש"
 	cont "מתפרצת!"
 
 	para "למד #ימון אש"

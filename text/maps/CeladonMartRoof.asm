@@ -52,7 +52,7 @@ _CeladonMartRoofText_4850f::
 	TX_RAM wcf4b
 	text " מכיל את"
 	line "המתקפה מפולת"
-	cont "סלעים!"
+	cont "סלע!"
 
 	para "זה יכול להרתיע את"
 	line "האויב לפעמים!@@"
@@ -75,7 +75,7 @@ _CeladonMartRoofText_48520::
 	text ""
 
 	para "94MT מכיל"
-	line "מתקפה משולשת!@@"
+	line "כוח משולש!@@"
 
 _CeladonMartRoofText_48526::
 	text "אין לך מקום"
