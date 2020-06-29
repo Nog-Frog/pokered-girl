@@ -102,7 +102,8 @@ _Route12BattleText6::
 	done
 
 _Route12EndBattleText6::
-	text "זה לא קל..."
+	text "זה"
+	line "לא קל..."
 	prompt
 
 _Route12AfterBattleText6::
