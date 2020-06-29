@@ -1482,7 +1482,7 @@ _DoItText::
 	text "צא! @@"
 
 _GetmText::
-	text "חסכ'תו! @@"
+	text "כסח'תו! @@"
 
 _EnemysWeakText::
 	text "היריב כבר חלש!"
