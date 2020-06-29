@@ -1059,8 +1059,8 @@ DoUseNextMonDialogue:
 	ld hl, UseNextMonText
 	call PrintText
 .displayYesNoBox
-	coord hl, 13, 9
-	lb bc, 10, 14
+	coord hl, 0, 7
+	lb bc, 8, 4
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
