@@ -85,7 +85,8 @@ _Route12BattleText5::
 	done
 
 _Route12EndBattleText5::
-	text "יותר מדי!"
+	text "יותר"
+	line "מדי!"
 	prompt
 
 _Route12AfterBattleText5::
