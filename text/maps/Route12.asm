@@ -1,6 +1,6 @@
 _Route12Text1::
 	text "#ימון ישנוני"
-	line "חוסם את הכניסה!"
+	line "חוסם את השביל!"
 	done
 
 _Route12Text13::
