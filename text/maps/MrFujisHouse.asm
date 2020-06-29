@@ -1,86 +1,86 @@
 _LavenderHouse1Text_1d8d1::
-	text "That's odd, MR.FUJI"
-	line "isn't here."
-	cont "Where'd he go?"
+	text "משונה... מר דרדר"
+	line "לא כאן. לאן הוא"
+	cont "הלך?"
 	done
 
 _LavenderHouse1Text_1d8d6::
-	text "MR.FUJI had been"
-	line "praying alone for"
-	cont "CUBONE's mother."
+	text "מר דרדר התפלל בסתר"
+	line "בלילות לעילוי"
+	cont "נשמתה של אמא של"
+	cont "רשרש."
 	done
 
 _LavenderHouse1Text_1d8f4::
-	text "This is really"
-	line "MR.FUJI's house."
+	text "זה באמת הבית של"
+	line "מר דרדר."
 
-	para "He's really kind!"
+	para "הוא אדיב מאוד!"
 
-	para "He looks after"
-	line "abandoned and"
-	cont "orphaned #MON!"
+	para "הוא מטפל ב#י-"
+	line "מונים שננטשו או"
+	cont "התייתמו!"
 	done
 
 _LavenderHouse1Text_1d8f9::
-	text "It's so warm!"
-	line "#MON are so"
-	cont "nice to hug!"
+	text "הוא חמים ונעים!"
+	line "כיף לחבק #ימונים!"
 	done
 
 _LavenderHouse1Text3::
-	text "PSYDUCK: Gwappa!@@"
+	text "תקשורווז: גוואפה!@@"
 
 _LavenderHouse1Text4::
-	text "NIDORINO: Gaoo!@@"
+	text "עקצחלן: גאעהו!@@"
 
 _LavenderHouse1Text_1d94c::
-	text "MR.FUJI: ", "<PLAYER>."
+	text "מר דרדר: <PLAYER>."
 
-	para "Your #DEX quest"
-	line "may fail without"
-	cont "love for your"
-	cont "#MON."
+	para "משימתך לחיבור"
+	line "ה#ידע עלולה"
+	cont "להיכשל אם אין"
+	cont "בליבך אהבה"
+	cont "ל#ימונים שלך."
 
-	para "I think this may"
-	line "help your quest."
+	para "אני מאמין שזה"
+	line "יעזור לך במשימה."
 	prompt
 
 _ReceivedFluteText::
-	text "<PLAYER> received"
-	line "a @"
+	text "<PLAYER> קיבל"
+	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _FluteExplanationText::
-	db $0
-	para "Upon hearing #"
-	line "FLUTE, sleeping"
-	cont "#MON will"
-	cont "spring awake."
+	text ""
 
-	para "It works on all"
-	line "sleeping #MON."
+	para "בהישמע מנגינת חליל"
+	line "הקסם, #ימונים"
+	cont "ישנים יתעוררו"
+	cont "מיד."
+
+	para "זה עובד על כל"
+	line "#ימון ישן."
 	done
 
 _FluteNoRoomText::
-	text "You must make"
-	line "room for this!"
+	text "פנה מקום לחליל!"
 	done
 
 _MrFujiAfterFluteText::
-	text "MR.FUJI: Has my"
-	line "FLUTE helped you?"
+	text "מר דרדר: מצאת"
+	line "שימוש לחליל הקסם"
+	cont "שנתתי לך?"
 	done
 
 _LavenderHouse1Text6::
-	text "#MON Monthly"
-	line "Grand Prize"
-	cont "Drawing!"
+	text "הגרלת ה#ימון"
+	line "החודשית הגדולה!"
 
-	para "The application"
-	line "form is..."
+	para "טופס ההרשמה..."
 
-	para "Gone! It's been"
-	line "clipped out!"
+	para "לא כאן! מישהו גזר"
+	line "אותו!"
 	done
 
