@@ -43,8 +43,8 @@ _OaksLabBulbasaurText::
 	done
 
 _OaksLabMonEnergeticText::
-	text "ה#ימון הזה"
-	line "ממש אנרגטי!"
+	text "זה #ימון"
+	line "מלא מרץ!"
 	prompt
 
 _OaksLabReceivedMonText::
