@@ -68,7 +68,8 @@ _Route12BattleText4::
 	done
 
 _Route12EndBattleText4::
-	text "אזל לי החשמל!"
+	text "אזל לי"
+	cont "החשמל!"
 	prompt
 
 _Route12AfterBattleText4::
