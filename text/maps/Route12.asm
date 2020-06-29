@@ -33,9 +33,9 @@ _Route12AfterBattleText1::
 	done
 
 _Route12BattleText2::
-	text "חכה!"
-	line "העניין בדיג"
-	cont "זה להמתין בסבלנות!"
+	text "התאזר בסבלנות!"
+	line "דיג הוא תחום לאלו"
+	cont "שיודעים להמתין!"
 	done
 
 _Route12EndBattleText2::
