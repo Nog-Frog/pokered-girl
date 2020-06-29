@@ -39,7 +39,8 @@ _Route12BattleText2::
 	done
 
 _Route12EndBattleText2::
-	text "הוא התחמק!"
+	text "הוא"
+	line "התחמק!"
 	prompt
 
 _Route12AfterBattleText2::
