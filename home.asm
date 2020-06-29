@@ -373,7 +373,6 @@ PartyMenuInit::
 	ld [wMonDataLocation], a
 	ld [wMenuWatchMovingOutOfBounds], a
 	ld hl, wTopMenuItemY
-	inc a
 	ld [hli], a ; top menu item Y
 	ld a, 19
 	ld [hli], a ; top menu item X
@@ -4014,10 +4013,10 @@ HandleMenuInput_::
 	jr .checkIfAButtonOrBButtonPressed
 
 PlaceMenuCursor::
+	coord hl, 0, 0
 	ld a, [wTopMenuItemY]
 	and a ; is the y coordinate 0?
 	jr z, .adjustForXCoord
-	coord hl, 0, 0
 	ld bc, SCREEN_WIDTH
 .topMenuItemLoop
 	add hl, bc
