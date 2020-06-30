@@ -196,118 +196,118 @@ MonsterNamesNikud::
 
 BulbasaurNikud:
 	db "מוּזרע@"
-  	db "  ∵⁃ @"
+  	db "  ∵⁃@"
 IvysaurNikud:
 	db "דשׁוּנה@"
-	db "∵  ∵ @"
+	db "∵  ∵@"
 VenusaurNikud:
 	db "פּרחריג@"
-	db "∵⁃+․  @"
+	db "∵⁃+․@"
 CharmanderNikud:
 	db "גחוֹמט@"
-	db "⁃  ∵ @"
+	db "⁃  ∵@"
 CharmeleonNikud:
 	db "חזיזיקית@"
-	db "⁃․ ․ ․ @"
+	db "⁃․ ․ ․@"
 CharizardNikud:
 	db "לטאשׁ@"
-	db "╎+‥ @"
+	db "╎+‥@"
 SquirtleNikud:
 	db "שׁפּריצב@"
-	db "╎╎․ + @"
+	db "╎╎․ +@"
 WartortleNikud:
 	db "קרבצב@"
-	db "╎⁃╎+ @"
+	db "╎⁃╎+@"
 BlastoiseNikud:
 	db "מפציצב@"
-	db "+╎․ + @"
+	db "+╎․ +@"
 CaterpieNikud:
 	db "זחי@"
-	db "+․ @"
+	db "+․@"
 MetapodNikud:
-	db "שׁינוּרמיל@"
-	db "․   ╎․  @"
+	db "מפקעת@"
+	db "․╎⁃⁃@"
 ButterfreeNikud:
 	db "פּרפּרץ@"
-	db "⁃╎+⁃ @"
+	db "⁃╎+⁃@"
 WeedleNikud:
 	db "תוֹלחט@"
-  	db "⁃⁃ @"
+  	db "  ⁃⁃@"
 KakunaNikud:
 	db "גלגוֹלם@"
-	db "․╎  ∵ @"
+	db "․╎  ∵@"
 BeedrillNikud:
 	db "מקדבּוּר@"
-	db "⁃╎‥   @"
+	db "⁃╎‥@"
 PidgeyNikud:
 	db "יוֹנדי@"
-  	db "╎․ @"
+  	db "  ╎․@"
 PidgeottoNikud:
 	db "יוֹנה-עשׂרה@"
-  	db "∵ ∵╎‥ @"
+  	db "  ∵  ∵╎‥@"
 PidgeotNikud:
 	db "סילוֹנה@"
-	db "․   + @"
+	db "․   +@"
 RattataNikud:
 	db "עכבּרסס@"
-	db "⁃╎╎∵∵ @"
+	db "⁃╎+∵∵@"
 RaticateNikud:
 	db "הדבּרוֹשׁ@"
-	db "⁃╎╎   @"
+	db "⁃╎+@"
 SpearowNikud:
 	db "כּידרוֹר@"
-	db "․ ╎   @"
+	db "․ ╎@"
 FearowNikud:
 	db "פּחדרוֹר@"
-	db "⁃+╎   @"
+	db "⁃+╎@"
 EkansNikud:
 	db "שׁחן@"
-	db "⁃+ @"
+	db "⁃+@"
 ArbokNikud:
 	db "נתף@"
 	db "∵∵╎@"
 PikachuNikud:
-	db "צויצוֹץ@"
-	db "╎․    @"
+	db "צויצוּץ@"
+	db "╎․@"
 RaichuNikud:
 	db "עכבּרעם@"
-	db "⁃╎+⁃⁃ @"
+	db "⁃╎+⁃⁃@"
 SandshrewNikud:
-	db "חוֹלדף@"
-  	db "╎⁃ @"
+	db "חוּלדף@"
+  	db "╎  ⁃@"
 SandslashNikud:
 	db "חוֹתחוֹל@"
-  	db "‥   @"
+  	db "  ‥@"
 NidoranFNikud:
 	db "עקצחלב♀@"
-	db "+╎⁃╎+ @"
+	db "+╎⁃╎+@"
 NidorinaNikud:
 	db "עקצחלית@"
-	db "+╎⁃╎․  @"
+	db "+╎⁃╎․@"
 NidoqueenNikud:
 	db "מלכּצת@"
-	db "+╎∵∵ @"
+	db "+╎∵∵@"
 NidoranMNikud:
 	db "עקצחלב♂@"
-	db "+╎⁃╎+ @"
+	db "+╎⁃╎+@"
 NidorinoNikud:
 	db "עקצחלן@"
-	db "+╎⁃╎+ @"
+	db "+╎⁃╎+@"
 NidokingNikud:
 	db "מלקץ@"
-	db "∵∵∵ @"
+	db "∵∵∵@"
 ClefairyNikud:
 	db "חמשׁדוֹן@"
-	db "⁃╎‥   @"
+	db "+‥∵@"
 ClefableNikud:
 	db "חמשׁל@"
-	db "⁃++ @"
+	db "⁃++@"
 VulpixNikud:
 	db "שׁשׁוּעל@"
-	db "‥  + @"
+	db "‥  +@"
 NinetalesNikud:
 	db "תשׁעלים@"
-	db "․╎+․  @"
+	db "․╎+․@"
 JigglypuffNikud:
 	db "נענפוּח@"
 	db "․╎+  ⁃@"
@@ -316,334 +316,334 @@ WigglytuffNikud:
 	db "․╎+  ⁃@"
 ZubatNikud:
 	db "אצלף@"
-	db "++‥ @"
+	db "++‥@"
 GolbatNikud:
 	db "בּלעלף@"
-	db "╎⁃⁃‥ @"
+	db "╎⁃⁃‥@"
 OddishNikud:
-	db "צנוֹזר@"
-	db "╎  + @"
+	db "צנוּזר@"
+	db "╎  +@"
 GloomNikud:
-	db "פּריכאוֹן@"
-	db "╎․ +   @"
+	db "פּריכּאוֹן@"
+	db "╎․ +@"
 VileplumeNikud:
 	db "עשׁנבל@"
-	db "+╎++ @"
+	db "+╎++@"
 ParasNikud:
 	db "טפּל@"
-	db "+⁃ @"
+	db "+⁃@"
 ParasectNikud:
 	db "טפּרק@"
-	db "+⁃∵ @"
+	db "+⁃∵@"
 VenonatNikud:
 	db "רעתוּשׁ@"
-	db "⁃⁃   @"
+	db "⁃⁃@"
 VenomothNikud:
 	db "רעלשׁ@"
-	db "⁃++ @"
+	db "⁃++@"
 DiglettNikud:
 	db "חפיד@"
-	db "+․  @"
+	db "+․@"
 DugtrioNikud:
 	db "חפליה@"
-	db "+╎․+ @"
+	db "+╎․+@"
 MeowthNikud:
 	db "חתוּלוֹע@"
 	db "+    ⁃@"
 PersianNikud:
 	db "גרתוּל@"
-	db "․╎   @"
+	db "․╎@"
 PsyduckNikud:
 	db "תקשׁוּרוז@"
-	db "․╎  ╎+ @"
+	db "․╎  ╎+@"
 GolduckNikud:
 	db "בּרוזהב@"
-	db "⁃╎+++ @"
+	db "⁃╎+++@"
 MankeyNikud:
 	db "קוֹפבּני@"
-  	db "╎+․ @"
+  	db "╎+․@"
 PrimeapeNikud:
 	db "מוּבחרוֹף@"
-  	db "╎+   @"
+  	db "╎+@"
 GrowlitheNikud:
 	db "נהמישׁ@"
-	db "⁃⁃․  @"
+	db "⁃⁃․@"
 ArcanineNikud:
 	db "רזלב@"
-	db "+ ⁃ @"
+	db "+ ⁃@"
 PoliwagNikud:
 	db "רּאשנע@"
-  	db "++ @"
+  	db "++@"
 PoliwhirlNikud:
 	db "רּאשבוּב@"
-  	db "+   @"
+  	db "+@"
 PoliwrathNikud:
 	db "רּאשעם@"
-  	db "+⁃ @"
+  	db "+⁃@"
 AbraNikud:
 	db "זריפוֹן@"
-	db "⁃․    @"
+	db "⁃․@"
 KadabraNikud:
 	db "אוּגלר@"
-  	db "∵∵ @"
+  	db "∵∵@"
 AlakazamNikud:
 	db "ליאוֹרד@"
-	db "․   ╎ @"
+	db "․   ╎@"
 MachopNikud:
 	db "גברכּה@"
-	db "∵∵╎+ @"
+	db "∵∵╎+@"
 MachokeNikud:
 	db "גברנק@"
-	db "∵∵╎‥ @"
+	db "∵∵╎‥@"
 MachampNikud:
 	db "גברלוּף@"
-	db "∵∵╎   @"
+	db "∵∵╎@"
 BellsproutNikud:
 	db "פּעמוֹנבט@"
-	db "⁃⁃  ‥∵ @"
+	db "⁃⁃  ‥∵@"
 WeepinbellNikud:
 	db "דמעמוֹן@"
-	db "╎+⁃   @"
+	db "╎+⁃@"
 VictreebelNikud:
 	db "ניצחעמוֹן@"
-	db "․ ╎⁃⁃   @"
+	db "․ ╎⁃⁃@"
 TentacoolNikud:
 	db "קרשׁוֹשׁ@"
-	db "+╎   @"
+	db "+╎@"
 TentacruelNikud:
 	db "מרוּשׁוֹשׁ@"
-	db "╎     @"
+	db "╎@"
 GeodudeNikud:
 	db "בּחוּרקע@"
-	db "+  ╎⁃ @"
+	db "+  ╎⁃@"
 GravelerNikud:
 	db "מחצץ@"
-	db "╎⁃‥ @"
+	db "╎⁃‥@"
 GolemNikud:
 	db "גוֹילם@"
-  	db "╎∵ @"
+  	db "╎∵@"
 PonytaNikud:
 	db "סיחוֹם@"
-	db "╎+   @"
+	db "╎+@"
 RapidashNikud:
 	db "סוּשׂוֹרף@"
-    	db "‥ @"
+    	db "‥@"
 SlowpokeNikud:
 	db "כּיסלאט@"
-	db "․ ╎╎⁃ @"
+	db "․ ╎╎⁃@"
 SlowbroNikud:
 	db "אחלאט@"
-	db "+╎╎⁃ @"
+	db "+╎╎⁃@"
 MagnemiteNikud:
 	db "שׁוֹאבן@"
-  	db "∵∵ @"
+  	db "∵∵@"
 MagnetonNikud:
 	db "קוֹטבת@"
-  	db "∵∵ @"
+  	db "∵∵@"
 FarfetchdNikud:
 	db "לוֹסביר@"
-  	db "+․  @"
+  	db "+․@"
 DoduoNikud:
 	db "שׁנישׂלו@"
-	db "╎‥ ╎+ @"
+	db "╎‥ ╎+@"
 DodrioNikud:
 	db "שׁלוֹשׂלו@"
-	db "+  ╎+ @"
+	db "+  ╎+@"
 SeelNikud:
 	db "נבים@"
-	db "⁃╎+ @"
+	db "⁃╎+@"
 DewgongNikud:
 	db "טלחשׁ@"
-	db "⁃ ⁃ @"
+	db "⁃ ⁃@"
 GrimerNikud:
 	db "טנפאי@"
-	db "⁃╎⁃  @"
+	db "⁃╎⁃@"
 MukNikud:
 	db "זהק@"
-	db "⁃⁃ @"
+	db "⁃⁃@"
 ShellderNikud:
 	db "קוֹנכך@"
   	db "╎‥╎@"
 CloysterNikud:
 	db "מבוּצדף@"
-	db "╎  ∵∵ @"
+	db "╎  ∵∵@"
 GastlyNikud:
 	db "שאד@"
   	db "╎‥@"
 HaunterNikud:
 	db "רוֹצד@"
-  	db "+ @"
+  	db "+@"
 GengarNikud:
 	db "אשלדאי@"
-	db "⁃╎╎⁃  @"
+	db "⁃╎╎⁃@"
 OnixNikud:
 	db "נחשׁוֹהם@"
-	db "++  ⁃ @"
+	db "++  ⁃@"
 DrowzeeNikud:
 	db "ישׁנוּם@"
-	db "⁃╎   @"
+	db "⁃╎@"
 HypnoNikud:
 	db "מוֹשׁין@"
-	db "‥․  @"
+	db "‥․@"
 KrabbyNikud:
 	db "שׂרטני@"
-	db "⁃╎+․ @"
+	db "⁃╎+․@"
 KinglerNikud:
 	db "כּנרטן@"
-	db "⁃+╎+ @"
+	db "⁃+╎+@"
 VoltorbNikud:
 	db "חשׁמדוּר@"
-	db "⁃╎⁃   @"
+	db "⁃╎⁃@"
 ElectrodeNikud:
 	db "מוֹקשׁמל@"
-  	db "‥╎⁃ @"
+  	db "‥╎⁃@"
 ExeggcuteNikud:
 	db "בּיצמוּדוֹת@"
-	db "‥ ╎     @"
+	db "‥ ╎@"
 ExeggutorNikud:
 	db "תמרצח@"
 	db "++∵⁃@"
 CuboneNikud:
 	db "עצמוּד@"
-	db "⁃╎   @"
+	db "⁃╎@"
 MarowakNikud:
 	db "מהלוּמח@"
 	db "⁃⁃  ‥⁃@"
 HitmonleeNikud:
 	db "הכמפמדג'ה@"
-	db "⁃╎․╎⁃╎+ @"
+	db "⁃╎․╎⁃╎+@"
 HitmonchanNikud:
 	db "הכמפארד@"
-	db "⁃╎․╎++ @"
+	db "⁃╎․╎++@"
 LickitungNikud:
 	db "עגוֹלשׁוֹן@"
-	db "+  +   @"
+	db "+  +@"
 KoffingNikud:
 	db "משׁתעשׁן@"
-	db "․╎+╎‥ @"
+	db "․╎+╎‥@"
 WeezingNikud:
 	db "משׁתעשׁניים@"
-	db "․╎+╎╎⁃‥  @"
+	db "․╎+╎╎⁃‥@"
 RhyhornNikud:
 	db "קרנוֹזף@"
-	db "⁃╎  ‥ @"
+	db "⁃╎  ‥@"
 RhydonNikud:
 	db "קרנשׂיא@"
-	db "⁃╎+․  @"
+	db "⁃╎+․@"
 ChanseyNikud:
 	db "בּת-מזל@"
-	db "⁃ ++ @"
+	db "⁃ ++@"
 TangelaNikud:
 	db "סבכיה@"
-	db "╎⁃╎+ @"
+	db "╎⁃╎+@"
 KangaskhanNikud:
 	db "כּיסבל@"
-	db "․ ∵∵ @"
+	db "․ ∵∵@"
 HorseaNikud:
 	db "ימסוּס@"
-	db "+╎   @"
+	db "+╎@"
 SeadraNikud:
 	db "אץ-ים@"
-	db "⁃ + @"
+	db "⁃ +@"
 GoldeenNikud:
 	db "זהלכּה@"
-	db "++╎+ @"
+	db "++╎+@"
 SeakingNikud:
 	db "ימלך@"
 	db "+∵∵╎@"
 StaryuNikud:
 	db "כּוֹכישׁ@"
-  	db "․  @"
+  	db "․@"
 StarmieNikud:
 	db "כּוֹכשׁיט@"
-  	db "╎․  @"
+  	db "╎․@"
 MrMimeNikud:
 	db "מרחקין@"
-	db "⁃╎⁃╎+ @"
+	db "⁃╎⁃╎+@"
 ScytherNikud:
 	db "מגל-שׁלּמּה@"
-	db "⁃+ ╎   @"
+	db "⁃+ ╎@"
 JynxNikud:
 	db "בּישׁה@"
-	db "․ + @"
+	db "․ +@"
 ElectabuzzNikud:
 	db "חשׁמזוּם@"
-	db "⁃╎⁃   @"
+	db "⁃╎⁃@"
 MagmarNikud:
 	db "לבּרוז@"
-	db "⁃⁃╎+ @"
+	db "⁃⁃╎+@"
 PinsirNikud:
 	db "צבתך@"
 	db "╎+‥╎@"
 TaurosNikud:
 	db "פּרסוּס@"
-	db "⁃╎   @"
+	db "⁃╎@"
 MagikarpNikud:
 	db "קסמנוּן@"
-	db "╎+╎   @"
+	db "╎+╎@"
 GyaradosNikud:
 	db "לויטוֹרף@"
-	db "․╎+  ‥ @"
+	db "․╎+  ‥@"
 LaprasNikud:
 	db "תכוּגית@"
-	db "╎  ․  @"
+	db "╎  ․@"
 DittoNikud:
 	db "שׁינוּץ@"
-	db "․    @"
+	db "․@"
 EeveeNikud:
 	db "פּאתו@"
-	db "‥ + @"
+	db "‥ +@"
 VaporeonNikud:
 	db "אדידן@"
-	db "‥․ + @"
+	db "‥․ +@"
 JolteonNikud:
 	db "זעידן@"
-	db "+․ + @"
+	db "+․ +@"
 FlareonNikud:
 	db "נוּרידן@"
-  	db "․ + @"
+  	db "․ +@"
 PorygonNikud:
 	db "מצוּלען@"
-	db "╎  ╎+ @"
+	db "╎  ╎+@"
 OmanyteNikud:
 	db "סילוֹני@"
-	db "․   ․ @"
+	db "․   ․@"
 OmastarNikud:
 	db "סילוֹכב@"
-	db "․   + @"
+	db "․   +@"
 KabutoNikud:
 	db "פּרסדה@"
-	db "⁃╎++ @"
+	db "⁃╎++@"
 KabutopsNikud:
 	db "פּרצוּדה@"
-	db "⁃╎  + @"
+	db "⁃╎  +@"
 AerodactylNikud:
 	db "אוירוֹנף@"
-	db "⁃․   + @"
+	db "⁃․   +@"
 SnorlaxNikud:
 	db "נוֹחרפּל@"
-  	db "‥╎+ @"
+  	db "‥╎+@"
 ArticunoNikud:
 	db "קיפּאוֹואחד@"
-	db "․ +  ⁃ ⁃ @"
+	db "․ +  ⁃ ⁃@"
 ZapdosNikud:
 	db "חשׁמת'נין@"
-	db "⁃╎⁃╎‥  @"
+	db "⁃╎⁃╎‥@"
 MoltresNikud:
 	db "מוּתלאתה@"
-  	db "⁃⁃ ‥ @"
+  	db "⁃⁃ ‥@"
 DratiniNikud:
 	db "לטנה@"
-	db "╎⁃+ @"
+	db "╎⁃+@"
 DragonairNikud:
 	db "לטאויר@"
-	db "╎+⁃․  @"
+	db "╎+⁃․@"
 DragoniteNikud:
 	db "לטאבּיר@"
-	db "╎+⁃․  @"
+	db "╎+⁃․@"
 MewtwoNikud:
 	db "תשׁני@"
-	db "⁃‥․ @"
+	db "⁃‥․@"
 MewNikud:
 	db "תשׁ@"
 	db "⁃╎@"

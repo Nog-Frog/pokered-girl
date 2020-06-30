@@ -395,7 +395,7 @@ DewgongName:
 CaterpieName:
 	db "זחי@"
 MetapodName:
-	db "שינורמיל@"
+	db "מפקעת@"
 ButterfreeName:
 	db "פרפרץ@"
 MachampName:
