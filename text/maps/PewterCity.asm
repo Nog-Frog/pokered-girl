@@ -1,117 +1,113 @@
 _PewterCityText1::
-	text "It's rumored that"
-	line "CLEFAIRYs came"
-	cont "from the moon!"
+	text "האגדה מספרית"
+	line "שחמשדון הן זן"
+	cont "שמקורו מהירח!"
 
-	para "They appeared "
-	line "after MOON STONE"
-	cont "fell on MT.MOON."
+	para "הן הופיעו אחרי"
+	line "שאבני ירח נפלו"
+	cont "בהר הירח."
 	done
 
 _PewterCityText2::
-	text "There aren't many"
-	line "serious #MON"
-	cont "trainers here!"
+	text "אין כאן הרבה מאמני"
+	line "#ימון רציניים!"
 
-	para "They're all like"
-	line "BUG CATCHERs,"
-	cont "but PEWTER GYM's"
-	cont "BROCK is totally"
-	cont "into it!"
+	para "כולם כאן, כאילו,"
+	line "אספני חרקים וזה."
+	cont "אבל צור ממכון"
+	cont "הכספית ממש חזק"
+	cont "בקטע של אימון!"
 	done
 
 _PewterCityText_193f1::
-	text "Did you check out"
-	line "the MUSEUM?"
+	text "כבר היית במוזיאון?"
 	done
 
 _PewterCityText_193f6::
-	text "Weren't those"
-	line "fossils from MT."
-	cont "MOON amazing?"
+	text "נכון שהמאובנים"
+	line "האלה מהר הירח"
+	cont "פשוט מרהיבים?"
 	done
 
 _PewterCityText_193fb::
-	text "Really?"
-	line "You absolutely"
-	cont "have to go!"
+	text "באמת?"
+	line "אתה פשוט חייב"
+	cont "לבקר!"
 	done
 
 _PewterCityText13::
-	text "It's right here!"
-	line "You have to pay"
-	cont "to get in, but"
-	cont "it's worth it!"
-	cont "See you around!"
+	text "הגענו! כרטיס כניסה"
+	line "עולה קצת כסף, אבל"
+	cont "זה שווה את זה!"
 	done
 
 _PewterCityText_19427::
-	text "Psssst!"
-	line "Do you know what"
-	cont "I'm doing?"
+	text "פסססט!"
+	line "אתה יודע מה אני"
+	cont "עושה?"
 	done
 
 _PewterCityText_1942c::
-	text "That's right!"
-	line "It's hard work!"
+	text "נכון מאוד! זו"
+	line "עבודה קשה!"
 	done
 
 _PewterCityText_19431::
-	text "I'm spraying REPEL"
-	line "to keep #MON"
-	cont "out of my garden!"
+	text "אני מרסס דוחה כדי"
+	line "להרחיק #ימוני פרא"
+	cont "מהגינה שלי!"
 	done
 
 _PewterCityText_1945d::
-	text "You're a trainer"
-	line "right? BROCK's"
-	cont "looking for new"
-	cont "challengers!"
-	cont "Follow me!"
+	text "אתה מאמן, נכון?"
+	line "צור ישמח לפגוש"
+	cont "אותך! הוא מחפש"
+	cont "אתגר חדש! בוא"
+	cont "אחרי!"
 	done
 
 _PewterCityText14::
-	text "If you have the"
-	line "right stuff, go"
-	cont "take on BROCK!"
+	text "אם קורצת מהחומר"
+	line "הנכון, לך ונסה"
+	cont "להילחם בצור!"
 	done
 
 _PewterCityText6::
 	text "טיפים למאמנים"
 
-	para "Any #MON that"
-	line "takes part in"
-	cont "battle, however"
-	cont "short, earns EXP!"
+	para "כל #ימון שמשתתף"
+	line "בקרב, אפילו אם רק"
+	cont "לרגע, ירוויח"
+	cont "נקודות PXE!"
 	done
 
 _PewterCityText7::
-	text "NOTICE!"
+	text "שימו לב!"
 
-	para "Thieves have been"
-	line "stealing #MON"
-	cont "fossils at MT."
-	cont "MOON! Please call"
-	cont "PEWTER POLICE"
-	cont "with any info!"
+	para "כנופיית גנבים"
+	line "נצפתה גונבת"
+	cont "מאובנים מהר הירח!"
+	cont "אם יש בידיכם מידע"
+	cont "שיסיע לתפוס את"
+	cont "הגנבים, צרו קשר"
+	cont "עם משטרת הכספית!"
 	done
 
 _PewterCityText10::
-	text "PEWTER MUSEUM"
-	line "OF SCIENCE"
+	text "מוזיאון למדע"
+	line "עיר הכספית"
 	done
 
 _PewterCityText11::
-	text "PEWTER CITY"
-	line "#MON GYM"
-	cont "LEADER: BROCK"
+	text "עיר הכספית"
+	line "מכון #ימון"
+	cont "מנהיג: צור"
 
-	para "The Rock Solid"
-	line "#MON Trainer!"
+	para "מאמן #ימון קשיח"
+	line "כאבן!"
 	done
 
 _PewterCityText12::
-	text "PEWTER CITY"
-	line "A Stone Gray"
-	cont "City"
+	text "עיר הכספית"
+	line "עיר אפורה כסלע"
 	done
