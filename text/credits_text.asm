@@ -222,7 +222,7 @@ CredILTrans:
 CredNoga:
 	db -16, "נגה שקד@"
 CregEyal:
-	db -15, "אייל סיליג@" ; TODO Verify spelling
+	db -12, "אייל ירדני זליג@"
 CredMaayan:
 	db -15, "מעיין בלסי@" ; TODO Verify spelling
 CredSharon:
