@@ -218,7 +218,7 @@ HandlePokedexListMenu:
 	xor a
 	ld [H_AUTOBGTRANSFERENABLED], a
 	coord hl, 6, 2
-	lb bc, 14, 10
+	lb bc, 15, 10
 	call ClearScreenArea
 	coord hl, 16, 3
 	ld a, [wListScrollOffset]
@@ -265,13 +265,22 @@ HandlePokedexListMenu:
 	ld de, .dashedLine ; print a dashed line in place of the name if the player hasn't seen the pokemon
 	jr .skipGettingName
 .dashedLine ; for unseen pokemon in the list
-	db "----------@"
+	db "----------@@"
 .getPokemonName
 	call PokedexToIndex
+	ld a, %00100000
+	ld [wNikudFlag], a
 	call GetMonName
 .skipGettingName
 	pop hl
 	dec hl
+	push hl
+	call PlaceString
+	call NextNikudLine
+	pop hl
+	ld b, 0
+	ld c, 20
+	add hl, bc
 	call PlaceString
 	pop hl
 	ld bc, 2 * SCREEN_WIDTH
