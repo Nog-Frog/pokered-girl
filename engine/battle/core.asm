@@ -1821,7 +1821,6 @@ DrawPlayerHUDAndHPBar:
 	ld [hl], $73
 	ld de, wBattleMonNick
 	coord hl, 18, 7
-	call CenterMonName
 	call PlaceString
 	ld hl, wBattleMonSpecies
 	ld de, wLoadedMon
@@ -1880,7 +1879,6 @@ DrawEnemyHUDAndHPBar:
 	callab PlaceEnemyHUDTiles
 	ld de, wEnemyMonNick
 	coord hl, 9, 0
-	call CenterMonName
 	call PlaceString
 	coord hl, 6, 1
 	push hl
@@ -1969,32 +1967,6 @@ GetBattleHealthBarColor:
 	ret z
 	ld b, SET_PAL_BATTLE
 	jp RunPaletteCommand
-
-; center's mon's name on the battle screen
-; if the name is 1 or 2 letters long, it is printed 2 spaces more to the left than usual
-; (i.e. for names longer than 4 letters)
-; if the name is 3 or 4 letters long, it is printed 1 space more to the left than usual
-; (i.e. for names longer than 4 letters)
-CenterMonName:
-	push de
-	dec hl
-	dec hl
-	ld b, $2
-.loop
-	inc de
-	ld a, [de]
-	cp "@"
-	jr z, .done
-	inc de
-	ld a, [de]
-	cp "@"
-	jr z, .done
-	inc hl
-	dec b
-	jr nz, .loop
-.done
-	pop de
-	ret
 
 DisplayBattleMenu::
 	call LoadScreenTilesFromBuffer1 ; restore saved screen
@@ -6214,7 +6186,7 @@ LoadEnemyMonData:
 	ld [de], a
 	ld a, [wEnemyMonSpecies2]
 	ld [wd11e], a
-	call GetMonName
+	call GetMonName ; Never read? XXX de gets overwritten 2 lines down
 	ld hl, wcd6d
 	ld de, wEnemyMonNick
 	ld bc, NAME_LENGTH
