@@ -473,6 +473,8 @@ TextCommand02::
     ld a, 1
     ld [wReverseNumberFlags], a
     call PrintNumberToTempBuffer
+	xor a
+	ld [wReverseNumberFlags], a
 	pop hl
 	jr NextTextCommand
 

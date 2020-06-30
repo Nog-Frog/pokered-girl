@@ -452,8 +452,15 @@ ShowPokedexDataInternal:
 	ld de, HeightWeightText
 	call PlaceString
 
+	ld a, %00100000 ; Nikud stuff
+	ld [wNikudFlag], a
 	call GetMonName
+	push de
 	coord hl, 18, 2
+	call PlaceString
+	pop de
+	call NextNikudLine
+	coord hl, 18, 3
 	call PlaceString
 
 	ld hl, PokedexEntryPointers
@@ -659,6 +666,23 @@ IndexToPokedex:
 	ld [wd11e], a
 	pop hl
 	pop bc
+	ret
+
+NextNikudLine:
+	; Brings de to next line in nikud names.
+	; Input: de - first line of nikud name
+	; Output: de - second line of nikud name
+	; Note: hl also updates to equal de.
+	ld h, d
+	ld l, e
+	.loop
+	ld a, [hli]
+	cp "@"
+	jr z, .done
+	jr .loop
+	.done
+	ld d, h
+	ld e, l
 	ret
 
 INCLUDE "data/pokedex_order.asm"

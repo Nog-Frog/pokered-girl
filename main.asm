@@ -149,7 +149,8 @@ INCLUDE "engine/overworld/ledges.asm"
 
 SECTION "bank7_1", ROMX
 
-INCLUDE "text/monster_names.asm"
+INCLUDE "text/monster_names_nikud.asm"
+INCLUDE "text/monster_names_pointers.asm"
 INCLUDE "engine/clear_save.asm"
 INCLUDE "engine/predefs7.asm"
 

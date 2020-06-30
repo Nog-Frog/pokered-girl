@@ -1134,6 +1134,9 @@ wReverseNumberFlags::
 ; These flags are set randomly and control when the wheels stop.
 ; bit 6: allow the player to win in general
 ; bit 7: allow the player to win with 7 or bar (plus the effect of bit 6)
+wNikudFlag::
+; This flag controls the type of mon name GetMonName returns.
+; bit 5: if set, return mon name with nikud.
 	ds 1
 
 wSlotMachineWheel1SlipCounter::

@@ -1896,21 +1896,38 @@ GetMonName::
 	push hl
 	ld a, [H_LOADEDROMBANK]
 	push af
-	ld a, BANK(MonsterNames)
+	ld a, BANK(MonsterNamesPointers)
 	ld [H_LOADEDROMBANK], a
 	ld [MBC1RomBank], a
-	ld a, [wd11e]
-	dec a
-	ld hl, MonsterNames
-	ld c, 10
-	ld b, 0
-	call AddNTimes
+
+  	ld a, [wd11e]
+  	ld l, a
+  	ld h, 0
+  	ld bc, MonsterNamesPointers - 2 ; Account for 1-based indexing
+	ld a, [wNikudFlag]
+	bit 5, a
+	jr z, .notNikud
+	ld bc, MonsterNamesNikud - 2 ; Account for 1-based indexing
+	.notNikud
+  	add hl, hl
+  	add hl, bc
+  	ld a, [hli]
+  	ld h, [hl]
+  	ld l, a
+
 	ld de, wcd6d
 	push de
 	ld bc, 10
+	ld a, [wNikudFlag]
+	bit 5, a
+	jr z, .notNikud2
+	res 5, a
+	ld [wNikudFlag], a ; Resetting the nikud flag. This prevents functions accidentally getting nikud names.
+	ld bc, 20
+	.notNikud2
 	call CopyData
-	ld hl, wcd6d + 10
-	ld [hl], "@"
+	;ld hl, wcd6d + 10
+	;ld [hl], "@"
 	pop de
 	pop af
 	ld [H_LOADEDROMBANK], a
@@ -3228,13 +3245,14 @@ WaitForSoundToFinish::
 	ret
 
 NamePointers::
-	dw MonsterNames
+	dw MonsterNamesPointers
 	dw MoveNames
 	dw UnusedNames
 	dw ItemNames
 	dw wPartyMonOT ; player's OT names list
 	dw wEnemyMonOT ; enemy's OT names list
 	dw TrainerNames
+	dw MonsterNamesNikud
 
 GetName::
 ; arguments:

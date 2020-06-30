@@ -142,11 +142,11 @@ charmap "ז'", $DC
 charmap "צ'", $DD
 charmap "ת'", $DE
 charmap "פ'", $E9
-charmap "־", $DF
+charmap "־", $DF ; UNUSED
 charmap "'", $E0
 charmap "ゅ", $E1
 charmap "ょ", $E2
-charmap "-", $E3
+charmap "-", $E3 ; UNUSED
 
 charmap "<pkmn>", $4A ; PkMn
 charmap "@", $50
@@ -199,13 +199,9 @@ charmap "(", $9A
 charmap ")", $9B
 charmap ":", $9C
 charmap ";", $9D
-charmap "[", $9E
-charmap "]", $9F
-charmap "a", $A0
-charmap "b", $A1
-charmap "c", $A2
-charmap "d", $A3
-charmap "e", $A4
+charmap "[", $9E ; UNUSED
+charmap "]", $9F ; UNUSED
+
 charmap "f", $A5
 charmap "g", $A6
 charmap "h", $A7
@@ -227,12 +223,22 @@ charmap "w", $B6
 charmap "x", $B7
 charmap "y", $B8
 charmap "z", $B9
-charmap "é", $BA
-charmap "'d", $BB
-charmap "'l", $BC
-charmap "'s", $BD
-charmap "'t", $BE
-charmap "'v", $BF
+charmap "+", $BA ; Patach פתח
+charmap "⁃", $BB ; Kamats קמץ
+charmap "∵", $BC ; Segol סגול
+charmap "‥", $BD ; Tsere צרה
+charmap "╎", $BE ; Shva שווא
+charmap "․", $BF ; Hirik חיריק
+charmap "שׁ", $A0
+charmap "שׂ", $A1
+charmap "בּ", $A2
+charmap "כּ", $A3
+charmap "פּ", $A4
+charmap "רּ", $A5
+charmap "לּ", $A6
+charmap "מּ", $A7
+charmap "וֹ", $EA
+charmap "וּ", $EB
 
 charmap "'", $E0
 
@@ -264,3 +270,37 @@ charmap "6", $FC
 charmap "7", $FD
 charmap "8", $FE
 charmap "9", $FF
+
+; This is a temporary copy of lowercase letters to allow compilation in the presence of untranslated text.
+charmap "a", $A0
+charmap "b", $A1
+charmap "c", $A2
+charmap "d", $A3
+charmap "e", $A4
+charmap "f", $A5
+charmap "g", $A6
+charmap "h", $A7
+charmap "i", $A8
+charmap "j", $A9
+charmap "k", $AA
+charmap "l", $AB
+charmap "m", $AC
+charmap "n", $AD
+charmap "o", $AE
+charmap "p", $AF
+charmap "q", $B0
+charmap "r", $B1
+charmap "s", $B2
+charmap "t", $B3
+charmap "u", $B4
+charmap "v", $B5
+charmap "w", $B6
+charmap "x", $B7
+charmap "y", $B8
+charmap "z", $B9
+charmap "é", $BA
+charmap "'d", $BB ; UNUSED
+charmap "'l", $BC ; UNUSED
+charmap "'s", $BD ; UNUSED
+charmap "'t", $BE ; UNUSED
+charmap "'v", $BF ; UNUSED

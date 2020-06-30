@@ -70,9 +70,8 @@ InitList:
 .notPlayer
 	cp INIT_MON_LIST
 	jr nz, .notMonster
-	ld hl, wItemList
-	ld de, MonsterNames
-	ld a, MONSTER_NAME
+	; This never ever gets called.
+	; It's been removed to allow for the transition to a pointer table for monster names.
 	jr .done
 .notMonster
 	cp INIT_BAG_ITEM_LIST
