@@ -45,8 +45,9 @@ _RockTunnel1EndBattleText3::
 	prompt
 
 _RockTunnel1AfterBattleText3::
-	text "You're talented"
-	line "enough to hike!"
+	text "עם כישרון"
+	line "כזה, אתה בטח מיטיב"
+	cont "לכת!"
 	done
 
 _RockTunnel1BattleText4::
