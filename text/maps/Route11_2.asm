@@ -1,28 +1,31 @@
 _Route11EndBattleText9::
-	text "Whoa!"
-	line "You spark plug!"
+	text "וואה!"
+	line "יא מצת!"
 	prompt
 
 _Route11AfterBattleText9::
-	text "Well, better get"
-	line "back to work."
+	text "כדאי שאני אחזור"
+	line "לעבוד."
 	done
 
 _Route11BattleText10::
-	text "My #MON should"
-	line "be ready by now!"
+	text "ה#ימונים שלי"
+	line "גדולים מספיק"
+	cont "להילחם!"
 	done
 
 _Route11EndBattleText10::
-	text "Too"
-	line "much, too young!"
+	text "הם"
+	line "קטנים מדי בשביל"
+	cont "זה!"
 	prompt
 
 _Route11AfterBattleText10::
-	text "I better go find"
-	line "stronger ones!"
+	text "אני אלך למצוא לי"
+	line "#ימונים חזקים"
+	cont "יותר!"
 	done
 
 _Route11Text11::
-	text "DIGLETT's CAVE"
+	text "המערה של חפיד"
 	done
