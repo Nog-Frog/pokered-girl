@@ -667,7 +667,7 @@ SetCursorPositionsFromOptions:
 	ld e, a
 	ld d, 0
 	add hl, de
-	ld [hl], $ec ; unfilled right arrow menu cursor
+	ld [hl], $E8 ; unfilled right arrow menu cursor
 	ret
 
 ; table that indicates how the 3 text speed options affect frame delays

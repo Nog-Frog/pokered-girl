@@ -420,8 +420,13 @@ StatusScreen2:
 	call StatusScreen_ClearName
 	ld a, [wMonHIndex]
 	ld [wd11e], a
+	ld a, %00100000
+	ld [wNikudFlag], a
 	call GetMonName
 	coord hl, 18, 1
+	call PlaceString
+	farcall NextNikudLine
+	coord hl, 18, 2
 	call PlaceString
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a

@@ -1435,7 +1435,7 @@ DisplayListMenuIDLoop::
 	and a ; is it the Old Man battle?
 	jr z, .notOldManBattle
 .oldManBattle
-	ld a, "▶"
+	ld a, "◀"
 	Coorda 18, 4 ; place menu cursor in front of first menu entry
 	ld c, 80
 	call DelayFrames
@@ -1871,7 +1871,7 @@ PrintListMenuEntries::
 	cp c ; is it this item?
 	jr nz, .nextListEntry
 	dec hl
-	ld a, $ec ; unfilled right arrow menu cursor to indicate an item being swapped
+	ld a, $E8 ; unfilled right arrow menu cursor to indicate an item being swapped
 	ld [hli], a
 .nextListEntry
 	ld bc, 2 * SCREEN_WIDTH ; 2 rows
@@ -4065,7 +4065,7 @@ PlaceMenuCursor::
 	jr nz, .oldMenuItemLoop
 .checkForArrow1
 	ld a, [hl]
-	cp "▶" ; was an arrow next to the previously selected menu item?
+	cp "◀" ; was an arrow next to the previously selected menu item?
 	jr nz, .skipClearingArrow
 .clearArrow
 	ld a, [wTileBehindCursor]
@@ -4091,11 +4091,11 @@ PlaceMenuCursor::
 	jr nz, .currentMenuItemLoop
 .checkForArrow2
 	ld a, [hl]
-	cp "▶" ; has the right arrow already been placed?
+	cp "◀" ; has the right arrow already been placed?
 	jr z, .skipSavingTile ; if so, don't lose the saved tile
 	ld [wTileBehindCursor], a ; save tile before overwriting with right arrow
 .skipSavingTile
-	ld a, "▶" ; place right arrow
+	ld a, "◀" ; place right arrow
 	ld [hl], a
 	ld a, l
 	ld [wMenuCursorLocation], a
@@ -4115,7 +4115,7 @@ PlaceUnfilledArrowMenuCursor::
 	ld l, a
 	ld a, [wMenuCursorLocation + 1]
 	ld h, a
-	ld [hl], $ec ; outline of right arrow
+	ld [hl], $E8 ; outline of right arrow
 	ld a, b
 	ret
 
