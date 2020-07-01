@@ -224,11 +224,11 @@ CredNoga:
 CregEyal:
 	db -12, "אייל ירדני זליג@"
 CredMaayan:
-	db -15, "מעיין בלסי@" ; TODO Verify spelling
+	db -15, "מעיין בלסי@"
 CredSharon:
-	db -15, "שרון כורך@" ; TODO Verify spelling
+	db -15, "שרון קורך@"
 CredNoam:
-	db -15, "נועם גלר@" ; TODO Verify spelling
+	db -15, "נעם גלר@"
 CredLiji:
 	db -14, "ליאור חלפון@"
 CredNitzan:
