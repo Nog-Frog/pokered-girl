@@ -1,5 +1,5 @@
 _SafariZoneEastText5::
-	text "REST HOUSE"
+	text "ביתן למנוחה"
 	done
 
 _SafariZoneEastText6::
