@@ -22,7 +22,7 @@ _RockTunnel1BattleText2::
 
 _RockTunnel1EndBattleText2::
 	text "תירגע!"
-	line "מה אני אמור לעשות?
+	line "מה אני אמור"
 	cont "לעשות? איך"
 	cont "יוצאים מפה?"
 	prompt
@@ -46,8 +46,8 @@ _RockTunnel1EndBattleText3::
 
 _RockTunnel1AfterBattleText3::
 	text "עם כישרון"
-	line "כזה, אתה בטח מיטיב"
-	cont "לכת!"
+	line "כזה, אתה בטח"
+	cont "מיטיב לכת!"
 	done
 
 _RockTunnel1BattleText4::
@@ -82,7 +82,7 @@ _RockTunnel1AfterBattleText5::
 	done
 
 _RockTunnel1BattleText6::
-	text "הגעתי עד "
+	text "הגעתי עד"
 	line "לכאן בשביל"
 	cont "#ימונים!"
 	done
