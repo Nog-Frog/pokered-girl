@@ -1,137 +1,135 @@
 _Route21BattleText1::
-	text "You want to know"
-	line "if the fish are"
-	cont "biting?"
+	text "רוצה לדעת אם"
+	line "הדגים נושכים?"
 	done
 
 _Route21EndBattleText1::
-	text "Dang!"
+	text "אוף!"
 	prompt
 
 _Route21AfterBattleText1::
-	text "I can't catch"
-	line "anything good!"
+	text "אני לא מצליח"
+	line "לתפוס משהו טוב!"
 	done
 
 _Route21BattleText2::
-	text "I got a big haul!"
-	line "Wanna go for it?"
+	text "יש לי מלא סחורה!"
+	line "רוצה משהו מזה?"
 	done
 
 _Route21EndBattleText2::
-	text "Darn"
-	line "MAGIKARP!"
+	text "אוף"
+	line "קסמנון!"
 	prompt
 
 _Route21AfterBattleText2::
-	text "I seem to only"
-	line "catch MAGIKARP!"
+	text "נראה שאני תופס"
+	line "רק קסמנונים!"
 	done
 
 _Route21BattleText3::
-	text "The sea cleanses"
-	line "my body and soul!"
+	text "הים מטהר את"
+	line "גופי ונשמתי!"
 	done
 
 _Route21EndBattleText3::
-	text "Ayah!"
+	text "איה!"
 	prompt
 
 _Route21AfterBattleText3::
-	text "I like the"
-	line "mountains too!"
+	text "אני אוהב גם"
+	line "הרים!"
 	done
 
 _Route21BattleText4::
-	text "What's wrong with"
-	line "me swimming?"
+	text "מה רע בזה"
+	line "שאני שוחה?"
 	done
 
 _Route21EndBattleText4::
-	text "Cheap"
-	line "shot!"
+	text "מכה מתחת"
+	line "לחגורה!"
 	prompt
 
 _Route21AfterBattleText4::
-	text "I look like what?"
-	line "A studded inner"
-	cont "tube? Get lost!"
+	text "אני נראה כמו מה?"
+	line "גלגל ים משובץ?"
+	cont "תתחפף!"
 	done
 
 _Route21BattleText5::
-	text "I caught all my"
-	line "#MON at sea!"
+	text "תפסתי את כל"
+	line "ה#ימונים שלי בים!"
 	done
 
 _Route21EndBattleText5::
-	text "Diver!!"
-	line "Down!!"
+	text "צוללן!!"
+	line "נפגע!!"
 	prompt
 
 _Route21AfterBattleText5::
-	text "Where'd you catch"
-	line "your #MON?"
+	text "איפה אתה תופס"
+	line "את ה#ימונים שלך?"
 	done
 
 _Route21BattleText6::
-	text "Right now, I'm in"
-	line "a triathlon meet!"
+	text "עכשיו, אני במפגש"
+	line "טריאתלון!"
 	done
 
 _Route21EndBattleText6::
-	text "Pant..."
-	line "pant...pant..."
+	text "פאנט..."
+	line "פאנט...פאנט..."
 	prompt
 
 _Route21AfterBattleText6::
-	text "I'm beat!"
-	line "But, I still have"
-	cont "the bike race and"
-	cont "marathon left!"
+	text "הובסתי!"
+	line "אבל, עדיין נותרו"
+	cont "לי מירוץ האופניים"
+	cont "והמרתון!"
 	done
 
 _Route21BattleText7::
-	text "Ahh! Feel the sun"
-	line "and the wind!"
+	text "אהה! תרגיש את"
+	line "השמש ואת הרוח!"
 	done
 
 _Route21EndBattleText7::
-	text "Yow!"
-	line "I lost!"
+	text "יאו!"
+	line "הפסדתי!"
 	prompt
 
 _Route21AfterBattleText7::
-	text "I'm sunburnt to a"
-	line "crisp!"
+	text "השחמתי בשמש!"
 	done
 
 _Route21BattleText8::
-	text "Hey, don't scare"
-	line "away the fish!"
+	text "היי, אל תפחיד"
+	line "את הדגים!"
 	done
 
 _Route21EndBattleText8::
-	text "Sorry!"
-	line "I didn't mean it!"
+	text "סליחה!"
+	line "לא התכוונתי לזה!"
 	prompt
 
 _Route21AfterBattleText8::
-	text "I was just angry"
-	line "that I couldn't"
-	cont "catch anything."
+	text "פשוט הייתי עצבני"
+	line "שלא יכולתי"
+	cont "לתפוס שום דבר."
 	done
 
 _Route21BattleText9::
-	text "Keep me company"
-	line "'til I get a hit!"
+	text "ארח לי חברה"
+	line "עד שאצליח!"
 	done
 
 _Route21EndBattleText9::
-	text "That"
-	line "burned some time."
+	text "זה שרף"
+	line "קצת זמן."
 	prompt
 
 _Route21AfterBattleText9::
-	text "Oh wait! I got a"
-	line "bite! Yeah!"
+	text "היי! הצלחתי"
+	line "לדוג משהו! ייאי!"
 	done
