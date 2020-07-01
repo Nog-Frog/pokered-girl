@@ -493,11 +493,12 @@ ShowPokedexDataInternal:
 	push af
 	call IndexToPokedex
 
-	coord hl, 2, 8
+	coord hl, 6, 8
 	ld a, "№"
-	ld [hli], a
+	ld [hld], a
 	ld a, "⠄"
-	ld [hli], a
+	ld [hl], a
+	coord hl, 2, 8
 	ld de, wd11e
 	lb bc, LEADING_ZEROES | 1, 3
 	call PrintNumber ; print pokedex number
@@ -539,7 +540,7 @@ ShowPokedexDataInternal:
 	inc de
 	inc de ; de = address of inches (height)
 	coord hl, 12, 6
-	lb bc, LEADING_ZEROES | 1, 2
+	lb bc, LEADING_ZEROES | LEFT_ALIGN | 1, 2
 	call PrintNumber ; print inches (height)
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
@@ -558,10 +559,9 @@ ShowPokedexDataInternal:
 	ld a, [de] ; a = lower byte of weight
 	ld [hl], a ; store lower byte of weight in [hDexWeight + 1]
 	ld de, hDexWeight
-	coord hl, 8, 8
-	lb bc, 2, 5 ; 2 bytes, 5 digits
+	coord hl, 10, 8
+	lb bc, LEFT_ALIGN | 2, 5 ; 2 bytes, 5 digits
 	call PrintNumber ; print weight
-	coord hl, 11, 8
 	ld a, [hDexWeight + 1]
 	sub 10
 	ld a, [hDexWeight]
@@ -569,10 +569,10 @@ ShowPokedexDataInternal:
 	jr nc, .next
 	ld [hl], "0" ; if the weight is less than 10, put a 0 before the decimal point
 .next
-	inc hl
+	dec hl
 	ld a, [hli]
 	ld [hld], a ; make space for the decimal point by moving the last digit forward one tile
-	ld [hl], "⠄" ; decimal point tile
+	ld [hl], "." ; decimal point tile
 	pop af
 	ld [hDexWeight + 1], a ; restore original value of [hDexWeight + 1]
 	pop af
@@ -604,8 +604,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "גובה ??.?",$60
-	next "משקל ??? ",$62,$61,"@"
+	db   "onm  ??.?",$60
+	next "lkj   ???",$62,$61,"@"
 
 ; XXX does anything point to this?
 ; TODO unused
