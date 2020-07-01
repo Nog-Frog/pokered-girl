@@ -1,16 +1,16 @@
 _SafariZoneEastText5::
-	text "REST HOUSE"
+	text "ביתן למנוחה"
 	done
 
 _SafariZoneEastText6::
 	text "טיפים למאמנים"
 
-	para "The remaining time"
-	line "declines only"
-	cont "while you walk!"
+	para "הזמן הנותר"
+	line "אוזל רק בזמן"
+	cont "הליכה!"
 	done
 
 _SafariZoneEastText7::
-	text "CENTER AREA"
-	line "NORTH: AREA 2"
+	text "אזור מרכז"
+	line "צפון: אזור 2"
 	done
