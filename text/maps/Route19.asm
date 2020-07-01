@@ -1,157 +1,157 @@
 _Route19BattleText1::
-	text "Have to warm up"
-	line "before my swim!"
+	text "חייב להתחמם"
+	line "לפני השחייה!"
 	done
 
 _Route19EndBattleText1::
-	text "All"
-	line "warmed up!"
+	text "התחממתי!"
 	prompt
 
 _Route19AfterBattleText1::
-	text "Thanks, kid! I'm"
-	line "ready for a swim!"
+	text "תודה ילד! אני"
+	line "מוכן לשחות!"
 	done
 
 _Route19BattleText2::
-	text "Wait! You'll have"
-	line "a heart attack!"
+	text "חכה! יהיה לך"
+	line "התקף לב!"
 	done
 
 _Route19EndBattleText2::
-	text "Ooh!"
-	line "That's chilly!"
+	text "אוו!"
+	line "זה קריר!"
 	prompt
 
 _Route19AfterBattleText2::
-	text "Watch out for"
-	line "TENTACOOL!"
+	text "היזהר מקרשוש!"
 	done
 
 _Route19BattleText3::
-	text "I love swimming!"
-	line "What about you?"
+	text "אני אוהב שחייה!"
+	line "מה איתך?"
 	done
 
 _Route19EndBattleText3::
-	text "Belly"
-	line "flop!"
+	text "קפיצת בטן!"
 	prompt
 
 _Route19AfterBattleText3::
-	text "I can beat #MON"
-	line "at swimming!"
+	text "אני יכול להביס"
+	line "#ימונים בשחייה!"
 	done
 
 _Route19BattleText4::
-	text "What's beyond the"
-	line "horizon?"
+	text "מה יש מעבר"
+	line "לאופק?"
 	done
 
 _Route19EndBattleText4::
-	text "Glub!"
+	text "גלוב!"
 	prompt
 
 _Route19AfterBattleText4::
-	text "I see a couple of"
-	line "islands!"
+	text "אני רואה שני"
+	line "איים!"
 	done
 
 _Route19BattleText5::
-	text "I tried diving"
-	line "for #MON, but"
-	cont "it was a no go!"
+	text "ניסיתי לצלול"
+	line "בשביל #ימון,"
+	cont "אבל זה לא צלח!"
 	done
 
 _Route19EndBattleText5::
-	text "Help!"
+	text "הצילו!"
 	prompt
 
 _Route19AfterBattleText5::
-	text "You have to fish"
-	line "for sea #MON!"
+	text "אתה צריך לדוג"
+	line "כדי להשיג"
+	cont "#ימוני ים"
 	done
 
 _Route19BattleText6::
-	text "I look at the"
-	line "sea to forget!"
+	text "אני בוהה בים"
+	line "כדי לשכוח"
 	done
 
 _Route19EndBattleText6::
-	text "Ooh!"
-	line "Traumatic!"
+	text "אוו!"
+	line "טראומטי!"
 	prompt
 
 _Route19AfterBattleText6::
-	text "I'm looking at the"
-	line "sea to forget!"
+	text "אני בוהה בים"
+	line "כדי לשכוח"
 	done
 
 _Route19BattleText7::
-	text "Oh, I just love"
-	line "your ride! Can I"
-	cont "have it if I win?"
+	text "או, אני מת על"
+	line "ההסעה שלך! אני"
+	cont "יכול לקבל אותה"
+	cont "אם אנצח?"
 	done
 
 _Route19EndBattleText7::
-	text "Oh!"
-	line "I lost!"
+	text "או!"
+	line "הפסדתי!"
 	prompt
 
 _Route19AfterBattleText7::
-	text "It's still a long"
-	line "way to go to"
-	cont "SEAFOAM ISLANDS."
+	text "יש עוד דרך"
+	line "ארוכה"
+	cont "לאיי אדווה."
 	done
 
 _Route19BattleText8::
-	text "Swimming's great!"
-	line "Sunburns aren't!"
+	text "שחייה זה נהדר!"
+	line "כוויות שמש פחות!"
 	done
 
 _Route19EndBattleText8::
-	text "Shocker!"
+	text "מפתיע!"
 	prompt
 
 _Route19AfterBattleText8::
-	text "My boy friend"
-	line "wanted to swim to"
-	cont "SEAFOAM ISLANDS."
+	text "חבר שלי"
+	line "רצה לשחות"
+	cont "לאיי אדווה."
 	done
 
 _Route19BattleText9::
-	text "These waters are"
-	line "treacherous!"
+	text "המים האלה"
+	line "בוגדניים!"
 	done
 
 _Route19EndBattleText9::
-	text "Ooh!"
-	line "Dangerous!"
+	text "אוו!"
+	line "מסוכן!"
 	prompt
 
 _Route19AfterBattleText9::
-	text "I got a cramp!"
-	line "Glub, glub..."
+	text "התכווץ לי השריר!"
+	line "גלוב, גלוב..."
 	done
 
 _Route19BattleText10::
-	text "I swam here, but"
-	line "I'm tired."
+	text "שחיתי לפה, אבל"
+	line "אני עייף."
 	done
 
 _Route19EndBattleText10::
-	text "I'm"
-	line "exhausted..."
+	text "אני"
+	line "מותש..."
 	prompt
 
 _Route19AfterBattleText10::
-	text "LAPRAS is so big,"
-	line "it must keep you"
-	cont "dry on water."
+	text "תכוגית כל כך"
+	line "גדול, הוא בוודאי"
+	cont "שומר עליך יבש"
+	cont "במים."
 	done
 
 _Route19Text11::
-	text "SEA ROUTE 19"
-	line "FUCHSIA CITY -"
-	cont "SEAFOAM ISLANDS"
+	text "דרך החוף 91"
+	line "עיר השושנה -"
+	cont "איי האדווה"
 	done
