@@ -202,10 +202,6 @@ charmap ";", $9D
 charmap "[", $9E ; UNUSED
 charmap "]", $9F ; UNUSED
 
-charmap "f", $A5
-charmap "g", $A6
-charmap "h", $A7
-charmap "i", $A8
 charmap "j", $A9
 charmap "k", $AA
 charmap "l", $AB
@@ -237,6 +233,7 @@ charmap "פּ", $A4
 charmap "רּ", $A5
 charmap "לּ", $A6
 charmap "מּ", $A7
+charmap "ץ'", $A8
 charmap "וֹ", $EA
 charmap "וּ", $EB
 
