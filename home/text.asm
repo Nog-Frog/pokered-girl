@@ -228,7 +228,7 @@ Char56Text::
 Char5AText::
 	db "היריב @"
 Char4AText::
-	db $E1,$E2,"@" ; PKMN
+	db $F3,$F2,"@" ; PKMN
 
 Char55::
 	push de

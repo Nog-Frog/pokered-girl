@@ -500,7 +500,7 @@ DrawTrainerInfo:
 	call TrainerInfo_FarCopyData
 	pop bc
 	ld hl, BadgeNumbersTileGraphics  ; badge number tile patterns
-	ld de, vChars1 + $200
+	ld de, vChars1 + $510
 	call TrainerInfo_FarCopyData
 	ld hl, GymLeaderFaceAndBadgeTileGraphics  ; gym leader face and badge tile patterns
 	ld de, vChars2 + $200
@@ -510,14 +510,14 @@ DrawTrainerInfo:
 	ld hl, TextBoxGraphics
 	ld de, $00d0
 	add hl, de ; hl = colon tile pattern
-	ld de, vChars1 + $280
+	ld de, vChars1 + $590
 	ld bc, $0010
 	ld a, $04
 	push bc
 	call FarCopyData2
 	pop bc
 	ld hl, TrainerInfoTextBoxTileGraphics + $80  ; background tile pattern
-	ld de, vChars1 + $290
+	ld de, vChars1 + $500
 	call TrainerInfo_FarCopyData
 	call EnableLCD
 	ld hl, wTrainerInfoTextBoxWidthPlus1
@@ -537,7 +537,7 @@ DrawTrainerInfo:
 	coord hl, 1, 10
 	call TrainerInfo_DrawTextBox
 	coord hl, 0, 10
-	ld a, $a9
+	ld a, $D0 ; Background pattern tile
 	call TrainerInfo_DrawVerticalLine
 	coord hl, 19, 10
 	call TrainerInfo_DrawVerticalLine
@@ -559,7 +559,7 @@ DrawTrainerInfo:
 	lb bc, 1, 3
 	call PrintNumber
 	coord hl, 7, 6
-	ld [hl], $a8 ; colon tile ID
+	ld [hl], $D9 ; colon tile ID
 	coord hl, 8, 6
 	ld de, wPlayTimeMinutes ; minutes
 	lb bc, LEADING_ZEROES | 1, 2
@@ -567,7 +567,7 @@ DrawTrainerInfo:
 
 TrainerInfo_FarCopyData:
 	ld a, BANK(TrainerInfoTextBoxTileGraphics)
-	jp FarCopyData2 ; TODO
+	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
 	db   "שם/"

@@ -2003,15 +2003,15 @@ DisplayBattleMenu::
 	call CopyData
 ; the following simulates the keystrokes by drawing menus on screen
 	coord hl, 10, 14
-	ld [hl], "▶"
+	ld [hl], "◀"
 	ld c, 80
 	call DelayFrames
 	ld [hl], " "
 	coord hl, 10, 16
-	ld [hl], "▶"
+	ld [hl], "◀"
 	ld c, 50
 	call DelayFrames
-	ld [hl], "▷"
+	ld [hl], "◁"
 	ld a, $2 ; select the "ITEM" menu
 	jp .upperRightMenuItemWasNotSelected
 .oldManName
@@ -2566,7 +2566,7 @@ SelectMenuItem:
 	dec a
 	ld bc, SCREEN_WIDTH
 	call AddNTimes
-	ld [hl], "▷"
+	ld [hl], "◁"
 .select
 	ld hl, hFlags_0xFFF6
 	set 1, [hl]

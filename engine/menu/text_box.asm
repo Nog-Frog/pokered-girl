@@ -245,7 +245,7 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "תקוף  ",$E2,$E1
+	db   "תקוף  <pkmn>"
 	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:

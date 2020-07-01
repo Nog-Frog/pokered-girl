@@ -1,3 +1,183 @@
+charmap " ", $7F
+charmap "A", $80
+charmap "B", $81
+charmap "C", $82
+charmap "D", $83
+charmap "E", $84
+charmap "F", $85
+charmap "G", $86
+charmap "H", $87
+charmap "I", $88
+charmap "J", $89
+charmap "K", $8A
+charmap "L", $8B
+charmap "M", $8C
+charmap "N", $8D
+charmap "O", $8E
+charmap "P", $8F
+charmap "Q", $90
+charmap "R", $91
+charmap "S", $92
+charmap "T", $93
+charmap "U", $94
+charmap "V", $95
+charmap "W", $96
+charmap "X", $97
+charmap "Y", $98
+charmap "Z", $99
+
+charmap "(", $9A
+charmap ")", $9B
+charmap ":", $9C
+charmap ";", $9D
+charmap "[", $9E
+charmap "]", $9F
+
+charmap "א", $A0
+charmap "ב", $A1
+charmap "ג", $A2
+charmap "ד", $A3
+charmap "ה", $A4
+charmap "ו", $A5
+charmap "ז", $A6
+charmap "ח", $A7
+charmap "ט", $A8
+charmap "י", $A9
+charmap "ך", $AA
+charmap "כ", $AB
+charmap "ל", $AC
+charmap "ם", $AD
+charmap "מ", $AE
+charmap "ן", $AF
+charmap "נ", $B0
+charmap "ס", $B1
+charmap "ע", $B2
+charmap "ף", $B3
+charmap "פ", $B4
+charmap "ץ", $B5
+charmap "צ", $B6
+charmap "ק", $B7
+charmap "ר", $B8
+charmap "ש", $B9
+charmap "ת", $BA
+
+charmap "ג'", $BB
+charmap "ז'", $BC
+charmap "פ'", $BD
+charmap "ץ'", $BE
+charmap "צ'", $BF
+charmap "ת'", $C0
+
+charmap "בּ", $C1
+charmap "וֹ", $C2
+charmap "וּ", $C3
+charmap "כּ", $C4
+charmap "לּ", $C5
+charmap "מּ", $C6
+charmap "פּ", $C7
+charmap "רּ", $C8
+charmap "שׁ", $C9
+charmap "שׂ", $CA
+
+charmap "+", $CB ; Patach פתח
+charmap "⁃", $CC ; Kamats קמץ
+charmap "∵", $CD ; Segol סגול
+charmap "‥", $CE ; Tsere צרה
+charmap "╎", $CF ; Shva שווא
+charmap "․", $D0 ; Hirik חיריק
+
+charmap "'", $E2
+charmap "-", $E3
+charmap "־", $E4
+charmap "?", $E5
+charmap "!", $E6
+charmap ".", $E7
+
+charmap "◁", $E8
+charmap "◀", $E9
+charmap "▲", $E9 ; Unused, is on the same tile as ◀ for some reason?
+charmap "▼", $EA
+charmap "♂", $EB
+charmap "¥", $EC
+charmap "×", $ED
+charmap "⠄", $EE ; Different from ".", this one comes after "№"
+charmap "/", $EF
+charmap ",", $F0
+charmap "♀", $F1
+charmap "ゅ", $F2 ; "pk" tile
+charmap "ょ", $F3 ; "mn" tile
+
+charmap "'r", $F4
+charmap "'m", $F5
+
+charmap "0", $F6
+charmap "1", $F7
+charmap "2", $F8
+charmap "3", $F9
+charmap "4", $FA
+charmap "5", $FB
+charmap "6", $FC
+charmap "7", $FD
+charmap "8", $FE
+charmap "9", $FF
+
+
+charmap "<pkmn>", $4A ; PkMn
+charmap "@", $50
+charmap "<PLAYER>", $52
+charmap "<RIVAL>", $53
+charmap "#", $54
+;charmap "POKé", $54
+charmap "<TARGET>", $59
+charmap "<USER>", $5A
+charmap "′", $71
+charmap "″", $73
+charmap "№", $74
+charmap "…", $75
+
+charmap "┌", $79
+charmap "─", $7A
+charmap "┐", $7B
+charmap "│", $7C
+charmap "└", $7D
+charmap "┘", $7E
+
+; Below are only unused characters. These are here to prevent crashing / errors when viewing normally unaccessible
+; text, such as any of the unused names, MISSINGNO.'s dex entry, or any unused English text.
+
+charmap "a", $C8
+charmap "b", $C9
+charmap "c", $CA
+charmap "d", $CB
+charmap "e", $CC
+charmap "f", $CD
+charmap "g", $CE
+charmap "h", $CF
+charmap "i", $D0
+charmap "j", $D1
+charmap "k", $D2
+charmap "l", $D3
+charmap "m", $D4
+charmap "n", $D5
+charmap "o", $D6
+charmap "p", $D7
+charmap "q", $D8
+charmap "r", $D9
+charmap "s", $DA
+charmap "t", $DB
+charmap "u", $DC
+charmap "v", $DD
+charmap "w", $DE
+charmap "x", $DF
+charmap "y", $E0
+charmap "z", $E1
+charmap "é", $E2
+charmap "'d", $E3
+charmap "'l", $E4
+charmap "'s", $E5
+charmap "'t", $E6
+charmap "'v", $E7
+
 charmap "ガ", $05
 charmap "ギ", $06
 charmap "グ", $07
@@ -110,194 +290,3 @@ charmap "し", $BC
 charmap "す", $BD
 charmap "せ", $BE
 charmap "そ", $BF
-charmap "א", $C0
-charmap "ב", $C1
-charmap "ג", $C2
-charmap "ד", $C3
-charmap "ה", $C4
-charmap "ו", $C5
-charmap "ז", $C6
-charmap "ח", $C7
-charmap "ט", $C8
-charmap "י", $C9
-charmap "ך", $CA
-charmap "כ", $CB
-charmap "ל", $CC
-charmap "ם", $CD
-charmap "מ", $CE
-charmap "ן", $CF
-charmap "נ", $D0
-charmap "ס", $D1
-charmap "ע", $D2
-charmap "ף", $D3
-charmap "פ", $D4
-charmap "ץ", $D5
-charmap "צ", $D6
-charmap "ק", $D7
-charmap "ר", $D8
-charmap "ש", $D9
-charmap "ת", $DA
-charmap "ג'", $DB
-charmap "ז'", $DC
-charmap "צ'", $DD
-charmap "ת'", $DE
-charmap "פ'", $E9
-charmap "־", $DF ; UNUSED
-charmap "'", $E0
-charmap "ゅ", $E1
-charmap "ょ", $E2
-charmap "-", $E3 ; UNUSED
-
-charmap "<pkmn>", $4A ; PkMn
-charmap "@", $50
-charmap "<PLAYER>", $52
-charmap "<RIVAL>", $53
-charmap "#", $54
-;charmap "POKé", $54
-charmap "<TARGET>", $59
-charmap "<USER>", $5A
-charmap "′", $71
-charmap "″", $73
-charmap "№", $74
-charmap "…", $75
-
-charmap "┌", $79
-charmap "─", $7A
-charmap "┐", $7B
-charmap "│", $7C
-charmap "└", $7D
-charmap "┘", $7E
-
-charmap " ", $7F
-charmap "A", $80
-charmap "B", $81
-charmap "C", $82
-charmap "D", $83
-charmap "E", $84
-charmap "F", $85
-charmap "G", $86
-charmap "H", $87
-charmap "I", $88
-charmap "J", $89
-charmap "K", $8A
-charmap "L", $8B
-charmap "M", $8C
-charmap "N", $8D
-charmap "O", $8E
-charmap "P", $8F
-charmap "Q", $90
-charmap "R", $91
-charmap "S", $92
-charmap "T", $93
-charmap "U", $94
-charmap "V", $95
-charmap "W", $96
-charmap "X", $97
-charmap "Y", $98
-charmap "Z", $99
-charmap "(", $9A
-charmap ")", $9B
-charmap ":", $9C
-charmap ";", $9D
-charmap "[", $9E ; UNUSED
-charmap "]", $9F ; UNUSED
-
-charmap "j", $A9
-charmap "k", $AA
-charmap "l", $AB
-charmap "m", $AC
-charmap "n", $AD
-charmap "o", $AE
-charmap "p", $AF
-charmap "q", $B0
-charmap "r", $B1
-charmap "s", $B2
-charmap "t", $B3
-charmap "u", $B4
-charmap "v", $B5
-charmap "w", $B6
-charmap "x", $B7
-charmap "y", $B8
-charmap "z", $B9
-charmap "+", $BA ; Patach פתח
-charmap "⁃", $BB ; Kamats קמץ
-charmap "∵", $BC ; Segol סגול
-charmap "‥", $BD ; Tsere צרה
-charmap "╎", $BE ; Shva שווא
-charmap "․", $BF ; Hirik חיריק
-charmap "שׁ", $A0
-charmap "שׂ", $A1
-charmap "בּ", $A2
-charmap "כּ", $A3
-charmap "פּ", $A4
-charmap "רּ", $A5
-charmap "לּ", $A6
-charmap "מּ", $A7
-charmap "ץ'", $A8
-charmap "וֹ", $EA
-charmap "וּ", $EB
-
-charmap "'", $E0
-
-charmap "-", $E3
-charmap "'r", $E4
-charmap "'m", $E5
-charmap "?", $E6
-charmap "!", $E7
-charmap ".", $E8
-
-charmap "▷", $EC
-charmap "▶", $ED
-charmap "▲", $ED
-charmap "▼", $EE
-charmap "♂", $EF
-charmap "¥", $F0
-charmap "×", $F1
-charmap "⠄", $F2
-charmap "/", $F3
-charmap ",", $F4
-charmap "♀", $F5
-charmap "0", $F6
-charmap "1", $F7
-charmap "2", $F8
-charmap "3", $F9
-charmap "4", $FA
-charmap "5", $FB
-charmap "6", $FC
-charmap "7", $FD
-charmap "8", $FE
-charmap "9", $FF
-
-; This is a temporary copy of lowercase letters to allow compilation in the presence of untranslated text.
-charmap "a", $A0
-charmap "b", $A1
-charmap "c", $A2
-charmap "d", $A3
-charmap "e", $A4
-charmap "f", $A5
-charmap "g", $A6
-charmap "h", $A7
-charmap "i", $A8
-charmap "j", $A9
-charmap "k", $AA
-charmap "l", $AB
-charmap "m", $AC
-charmap "n", $AD
-charmap "o", $AE
-charmap "p", $AF
-charmap "q", $B0
-charmap "r", $B1
-charmap "s", $B2
-charmap "t", $B3
-charmap "u", $B4
-charmap "v", $B5
-charmap "w", $B6
-charmap "x", $B7
-charmap "y", $B8
-charmap "z", $B9
-charmap "é", $BA
-charmap "'d", $BB ; UNUSED
-charmap "'l", $BC ; UNUSED
-charmap "'s", $BD ; UNUSED
-charmap "'t", $BE ; UNUSED
-charmap "'v", $BF ; UNUSED
