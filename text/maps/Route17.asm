@@ -1,195 +1,193 @@
 _Route17BattleText1::
-	text "There's no money"
-	line "in fighting kids!"
+	text "אין כסף בהיאבקות"
+	line "ילדים!"
 	done
 
 _Route17EndBattleText1::
-	text "Burned"
-	line "out!"
+	text "נגמרו לי"
+	line "הכוחות!"
 	prompt
 
 _Route17AfterBattleText1::
-	text "Good stuff is"
-	line "lying around on"
-	cont "CYCLING ROAD!"
+	text "יש דברים טובים"
+	line "מונחים על הרצפה"
+	cont "בשביל האופניים!"
 	done
 
 _Route17BattleText2::
-	text "What do you want,"
-	line "kiddo?"
+	text "מה אתה רוצה,"
+	line "ילדון?"
 	done
 
 _Route17EndBattleText2::
-	text "Whoo!"
+	text "ווהו!"
 	prompt
 
 _Route17AfterBattleText2::
-	text "I could belly-"
-	line "bump you outta"
-	cont "here!"
+	text "אני יכול להעיף"
+	line "אותך מפה עם הבטן"
+	cont "שלי!"
 	done
 
 _Route17BattleText3::
-	text "You heading to"
-	line "FUCHSIA?"
+	text "אתה הולך"
+	line "לשושנה?"
 	done
 
 _Route17EndBattleText3::
-	text "Crash and"
-	line "burn!"
+	text "נשרפתי!"
 	prompt
 
 _Route17AfterBattleText3::
-	text "I love racing"
-	line "downhill!"
+	text "אני אוהב להתחרות"
+	line "במורד הגבעה!"
 	done
 
 _Route17BattleText4::
-	text "We're BIKERs!"
-	line "Highway stars!"
+	text "אנחנו אופנוענים!"
+	line "כוכבי הכביש"
+	line "המהיר!"
 	done
 
 _Route17EndBattleText4::
-	text "Smoked!"
+	text "אפוי!"
 	prompt
 
 _Route17AfterBattleText4::
-	text "Are you looking"
-	line "for adventure?"
+	text "אתה מחפש"
+	line "הרפתקאה?"
 	done
 
 _Route17BattleText5::
-	text "Let VOLTORB"
-	line "electrify you!"
+	text "תן לחשמלמל"
+	line "לחשמל אותך!"
 	done
 
 _Route17EndBattleText5::
-	text "Grounded"
-	line "out!"
+	text "רותקתי!"
 	prompt
 
 _Route17AfterBattleText5::
-	text "I got my VOLTORB"
-	line "at the abandoned"
-	cont "POWER PLANT."
+	text "השגתי את החשמלמל"
+	line "שלי בתחנת הכוח"
+	cont "הנטושה."
 	done
 
 _Route17BattleText6::
-	text "My #MON won't"
-	line "evolve! Why?"
+	text "ה#ימון שלי לא"
+	line "מתפתח! למה?"
 	done
 
 _Route17EndBattleText6::
-	text "Why,"
-	line "you!"
+	text "אחח,"
+	line "אתה!"
 	prompt
 
 _Route17AfterBattleText6::
-	text "Maybe some #MON"
-	line "need element"
-	cont "STONEs to evolve."
+	text "אולי חלק מה#ימונים"
+	line "צריכים אבני יסוד"
+	cont "כדי להתפתח."
 	done
 
 _Route17BattleText7::
-	text "I need a little"
-	line "exercise!"
+	text "אני צריך קצת"
+	line "להתאמן!"
 	done
 
 _Route17EndBattleText7::
-	text "Whew!"
-	line "Good workout!"
+	text "פיו!"
+	line "אימון טוב!"
 	prompt
 
 _Route17AfterBattleText7::
-	text "I'm sure I lost"
-	line "weight there!"
+	text "אני בטוח שירדתי"
+	line "במשקל שם!"
 	done
 
 _Route17BattleText8::
-	text "Be a rebel!"
+	text "תהיה מרדן!"
 	done
 
 _Route17EndBattleText8::
-	text "Aaaargh!"
+	text "אאארג!"
 	prompt
 
 _Route17AfterBattleText8::
-	text "Be ready to fight"
-	line "for your beliefs!"
+	text "תהיה מוכן להלחם"
+	line "על האמונות שלך!"
 	done
 
 _Route17BattleText9::
-	text "Nice BIKE!"
-	line "How's it handle?"
+	text "אחלה אופניים!"
+	line "איך הם נוסעים?"
 	done
 
 _Route17EndBattleText9::
-	text "Shoot!"
+	text "אוף!"
 	prompt
 
 _Route17AfterBattleText9::
-	text "The slope makes"
-	line "it hard to steer!"
+	text "המדרון מקשה"
+	line "על ההיגוי!"
 	done
 
 _Route17BattleText10::
-	text "Get lost kid!"
-	line "I'm bushed!"
+	text "תתחפף ילד!"
+	line "אני סחוט!"
 	done
 
 _Route17EndBattleText10::
-	text "Are you"
-	line "satisfied?"
+	text "מרוצה?"
 	prompt
 
 _Route17AfterBattleText10::
-	text "I need to catch"
-	line "a few Zs!"
+	text "אני צריך לתפוס"
+	line "איזה תנומה!"
 	done
 
 _Route17Text11::
-	text "It's a notice!"
+	text "זאת הודעה!"
 
-	para "Watch out for"
-	line "discarded items!"
+	para "היזהר מפריטים"
+	line "שהושלכו"
 	done
 
 _Route17Text12::
 	text "טיפים למאמנים"
 
-	para "All #MON are"
-	line "unique."
+	para "כל ה#ימונים"
+	line "ייחודיים."
 
-	para "Even #MON of"
-	line "the same type and"
-	cont "level grow at"
-	cont "different rates."
+	para "אפילו #ימונים"
+	line "מאותו סוג ובאותה"
+	cont "רמה גדלים"
+	cont "בקצב שונה."
 	done
 
 _Route17Text13::
 	text "טיפים למאמנים"
 
-	para "Press the A or B"
-	line "Button to stay in"
-	cont "place while on a"
-	cont "slope."
+	para "לחץ על הכפתורים"
+	line "A או B כדי"
+	cont "להישאר במקום"
+	cont "במדרון."
 	done
 
 _Route17Text14::
-	text "ROUTE 17"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	text "דרך 17"
+	line "עיר האביב -"
+	cont "עיר השושנה"
 	done
 
 _Route17Text15::
-	text "It's a notice!"
+	text "זאת הודעה!"
 
-	para "Don't throw the"
-	line "game, throw #"
-	cont "BALLs instead!"
+	para "אל תזרוק את"
+	line "המשחק, זרוק"
+	cont "פוכדורים במקום!"
 	done
 
 _Route17Text16::
-	text "CYCLING ROAD"
-	line "Slope ends here!"
+	text "שביל האופניים"
+	line "המדרון עד כאן!"
 	done
