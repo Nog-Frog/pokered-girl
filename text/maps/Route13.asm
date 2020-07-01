@@ -1,49 +1,51 @@
 _Route13BattleText2::
-	text "My bird #MON"
-	line "want to scrap!"
+	text "#ימוני הציפור"
+	line "שלי רוצים"
+	cont "להתקוטט קצת!"
 	done
 
 _Route13EndBattleText2::
-	text "My"
-	line "bird combo lost?"
+	text "המהלך"
+	line "הציפורי המיוחד"
+	cont "שלי נכשל?"
 	prompt
 
 _Route13AfterBattleText2::
-	text "My #MON look"
-	line "happy even though"
-	cont "they lost."
+	text "ה#ימונים שלי"
+	line "שמחים על אף"
+	cont "ההפסד."
 	done
 
 _Route13BattleText3::
-	text "I'm told I'm good"
-	line "for a kid!"
+	text "אני נלחם טוב ביחס"
+	line "לילד בגילי!"
 	done
 
 _Route13EndBattleText3::
-	text "Ohh!"
-	line "I lost!"
+	text "אוהו!"
+	line "הפסדתי!"
 	prompt
 
 _Route13AfterBattleText3::
-	text "I want to become"
-	line "a good trainer."
-	cont "I'll train hard."
+	text "אני רוצה להיות"
+	line "מאמן טוב. אני"
+	cont "אתאמן הרבה."
 	done
 
 _Route13BattleText4::
-	text "Wow! Your BADGEs"
-	line "are too cool!"
+	text "וואו! התגים שלך כל"
+	line "כך שווים!"
 	done
 
 _Route13EndBattleText4::
-	text "Not"
-	line "enough!"
+	text "לא"
+	line "מספיק!"
 	prompt
 
 _Route13AfterBattleText4::
-	text "You got those"
-	line "BADGEs from GYM"
-	cont "LEADERs. I know!"
+	text "קיבלת את התגים שלך"
+	line "ממנהיגי מכונים."
+	cont "ידעתי!"
 	done
 
 _Route13BattleText5::
@@ -53,127 +55,128 @@ _Route13BattleText5::
 	done
 
 _Route13EndBattleText5::
-	text "Wow!"
-	line "You totally won!"
+	text "וואו!"
+	line "לגמרי ניצחת!"
 	prompt
 
 _Route13AfterBattleText5::
-	text "You have to make"
-	line "#MON fight to"
-	cont "toughen them up!"
+	text "צריך לשלוח"
+	line "#ימונים בקרבות"
+	cont "כדי שילמדו להיות"
+	cont "קשוחים!"
 	done
 
 _Route13BattleText6::
-	text "I found CARBOS in"
-	line "a cave once."
+	text "פעם, מצאתי פחמן"
+	line "על הרצפה במערה."
 	done
 
 _Route13EndBattleText6::
-	text "Just"
-	line "messed up!"
+	text "פשוט"
+	line "פקששתי!"
 	prompt
 
 _Route13AfterBattleText6::
-	text "CARBOS boosted"
-	line "the SPEED of my"
-	cont "#MON."
+	text "הפחמן הגביר את"
+	line "המהירות של"
+	cont "ה#ימון שלי."
 	done
 
 _Route13BattleText7::
-	text "The wind's blowing"
-	line "my way!"
+	text "הרוח נושבת"
+	line "לכיווני!"
 	done
 
 _Route13EndBattleText7::
-	text "The"
-	line "wind turned!"
+	text "הרוח"
+	line "שינתה כיוון!"
 	prompt
 
 _Route13AfterBattleText7::
-	text "I'm beat. I guess"
-	line "I'll FLY home."
+	text "כוסחתי. נראה לי"
+	line "שאני אשתמש בתעופה"
+	cont "ואחזור הביתה."
 	done
 
 _Route13BattleText8::
-	text "Sure, I'll play"
-	line "with you!"
+	text "בטח, אני אשמח"
+	line "לשחק איתך!"
 	done
 
 _Route13EndBattleText8::
-	text "Oh!"
-	line "You little brute!"
+	text "אה!"
+	line "בהמה שכמוך!"
 	prompt
 
 _Route13AfterBattleText8::
-	text "I wonder which is"
-	line "stronger, male or"
-	cont "female #MON?"
+	text "אני תוהה, מי חזק"
+	line "יותר, #ימונים"
+	cont "זכרים או נקבות?"
 	done
 
 _Route13BattleText9::
-	text "Do you want to"
-	line "#MON with me?"
+	text "בוא #ימון!"
 	done
 
 _Route13EndBattleText9::
-	text "It's over"
-	line "already?"
+	text "זה כבר"
+	line "נגמר?"
 	prompt
 
 _Route13AfterBattleText9::
-	text "I don't know"
-	line "anything about"
-	cont "#MON. I just"
-	cont "like cool ones!"
+	text "אני לא מבין הרבה"
+	line "ב#ימונים. אני"
+	cont "סתם אוהב את אלה"
+	cont "שנראים מגניב!"
 	done
 
 _Route13BattleText10::
-	text "What're you"
-	line "lookin' at?"
+	text "על מה 'תה מסתכל?"
 	done
 
 _Route13EndBattleText10::
-	text "Dang!"
-	line "Stripped gears!"
+	text "אוח!"
+	line "ההילוכים שחוקים!"
 	prompt
 
 _Route13AfterBattleText10::
-	text "Get lost!"
+	text "'סתלק מפה!"
 	done
 
 _Route13BattleText11::
-	text "I always go with"
-	line "bird #MON!"
+	text "אני תמיד משתמש"
+	line "ב#ימוני ציפור!"
 	done
 
 _Route13EndBattleText11::
-	text "Out"
-	line "of power!"
+	text "אין"
+	line "לי כוח!"
 	prompt
 
 _Route13AfterBattleText11::
-	text "I wish I could"
-	line "fly like PIDGEY"
-	cont "and PIDGEOTTO..."
+	text "הלוואי שיכולתי"
+	line "לעוף כמו יונדי"
+	cont "ויונה-עשרה..."
 	done
 
 _Route13Text11::
 	text "טיפים למאמנים"
 
-	para "Look to the left"
-	line "of that post!"
+	para "תראה! משמאל לגדר"
+	line "ההיא!"
 	done
 
 _Route13Text12::
 	text "טיפים למאמנים"
 
-	para "Use SELECT to"
-	line "switch items in"
-	cont "the ITEM window!"
+	para "השתמש בכפתור"
+	line "TCELES כדי להחליף"
+	cont "בין פריטים בחלון"
+	cont "″פריטים″!"
 	done
 
 _Route13Text13::
-	text "ROUTE 13"
-	line "North to SILENCE"
-	cont "BRIDGE"
+	text "דרך 31"
+	line "מצפון: גשר"
+	cont "הדממה"
 	done
