@@ -1,31 +1,31 @@
 _SafariZoneWestText5::
-	text "REST HOUSE"
+	text "ביתן למנוחה"
 	done
 
 _SafariZoneWestText6::
-	text "REQUEST NOTICE"
+	text "אבידה!"
 
-	para "Please find the"
-	line "SAFARI WARDEN's"
-	cont "lost GOLD TEETH."
-	cont "They're around"
-	cont "here somewhere."
+	para "אנא מצאו את"
+	line "שיני הזהב האבודות"
+	cont "של פקח הספארי."
+	cont "הם נמצאים פה"
+	cont "בסביבה איפשהו."
 
-	para "Reward offered!"
-	line "Contact: WARDEN"
+	para "פרס למוצא הישר!"
+	line "ליצירת קשר: פקח"
 	done
 
 _SafariZoneWestText7::
 	text "טיפים למאמנים"
 
-	para "Zone Exploration"
-	line "Campaign!"
+	para "קמפיין חקירת"
+	line "האזור!"
 
-	para "The Search for"
-	line "the SECRET HOUSE!"
+	para "החיפוש אחר"
+	line "הביתן הסודי!"
 	done
 
 _SafariZoneWestText8::
-	text "AREA 3"
-	line "EAST: CENTER AREA"
+	text "אזור 3"
+	line "מזרח: אזור מרכז"
 	done

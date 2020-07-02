@@ -1,44 +1,41 @@
 _SecretHouseText_4a350::
-	text "Ah! Finally!"
+	text "אה! סוף סוף!"
 
-	para "You're the first"
-	line "person to reach"
-	cont "the SECRET HOUSE!"
+	para "אתה האדם הראשון"
+	line "שהגיע לביתן הסודי!"
 
-	para "I was getting"
-	line "worried that no"
-	cont "one would win our"
-	cont "campaign prize."
+	para "התחלתי לדאוג"
+	line "שאף אחד לא יזכה"
+	cont "בפרס שלנו!"
 
-	para "Congratulations!"
-	line "You have won!"
+	para "ברכותיי!"
+	line "זכית!"
 	prompt
 
 _ReceivedHM03Text::
-	text "<PLAYER> received"
+	text "<PLAYER> קיבל"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _HM03ExplanationText::
-	text "HM03 is SURF!"
+	text "HM03 זה גלישה!" ;TODO
 
-	para "#MON will be"
-	line "able to ferry you"
-	cont "across water!"
+	para "#ימון יוכל"
+	line "לשאת אותך כמעבורת"
+	cont "מעל המים!"
 
-	para "And, this HM isn't"
-	line "disposable! You"
-	cont "can use it over"
-	cont "and over!"
+	para "וגם, הHM הזה"
+	line "הוא רב פעמי! אתה"
+	cont "יכול להשתמש בו"
+	cont "עוד פעם ועוד פעם!"
 
-	para "You're super lucky"
-	line "for winning this"
-	cont "fabulous prize!"
+	para "אתה בר מזל שזכית"
+	line "בפרס הנהדר הזה!"
 	done
 
 _HM03NoRoomText::
-	text "You don't have"
-	line "room for this"
-	cont "fabulous prize!"
+	text "אין לך מספיק"
+	line "מקום לפרס"
+	cont "הנהדר הזה!"
 	done
