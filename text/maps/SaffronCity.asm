@@ -1,151 +1,148 @@
 _SaffronCityText1::
-	text "What do you want?"
-	line "Get lost!"
+	text "מה אתה רוצה?"
+	line "'תחפף!"
 	done
 
 _SaffronCityText2::
-	text "BOSS said he'll"
-	line "take this town!"
+	text "הבוס אמר שהוא"
+	line "ישתלט על העיר!"
 	done
 
 _SaffronCityText3::
-	text "Get out of the"
-	line "way!"
+	text "זוז לי מהדרך!"
 	done
 
 _SaffronCityText4::
-	text "SAFFRON belongs"
-	line "to TEAM ROCKET!"
+	text "עיר הזעפרן שייכת"
+	line "לכנופיית רוקט!"
 	done
 
 _SaffronCityText5::
-	text "Being evil makes"
-	line "me feel so alive!"
+	text "רשע גורם לי להרגיש"
+	line "כל כך... חי!"
 	done
 
 _SaffronCityText6::
-	text "Ow! Watch where"
-	line "you're walking!"
+	text "אווץ'! שים לב איפה"
+	line "אתה דורך!"
 	done
 
 _SaffronCityText7::
-	text "With SILPH under"
-	line "control, we can"
-	cont "exploit #MON"
-	cont "around the world!"
+	text "עכשיו שסילף תחת"
+	line "שליטתנו, נוכל"
+	cont "לנצל #ימונים"
+	cont "ברחבי העולם כולו!"
 	done
 
 _SaffronCityText8::
-	text "You beat TEAM"
-	line "ROCKET all alone?"
-	cont "That's amazing!"
+	text "הבסת את כנופיית"
+	line "רוקט לגמרי לבד?"
+	cont "זה מדהים!"
 	done
 
 _SaffronCityText9::
-	text "Yeah! TEAM ROCKET"
-	line "is gone!"
-	cont "It's safe to go"
-	cont "out again!"
+	text "כן! כנופיית"
+	line "רוקט נעלמה!"
+	cont "זה בטוח לצאת"
+	cont "החוצה שוב!"
 	done
 
 _SaffronCityText10::
-	text "People should be"
-	line "flocking back to"
-	cont "SAFFRON now."
+	text "אנשים בטוח ינהרו"
+	line "חזרה לזעפרן עכשיו."
 	done
 
 _SaffronCityText11::
-	text "I flew here on my"
-	line "PIDGEOT when I"
-	cont "read about SILPH."
+	text "עפתי לפה על"
+	line "הסילונה שלי"
+	cont "כשקראתי על SILPH." ;TODO
 
-	para "It's already over?"
-	line "I missed the"
-	cont "media action."
+	para "זה כבר נגמר?"
+	line "פספסתי את"
+	cont "media action." ;TODO
 	done
 
 _SaffronCityText12::
-	text "PIDGEOT: Bi bibii!@@"
+	text "סילונה: בי ביביי!@@"
 
 _SaffronCityText13::
-	text "I saw ROCKET"
-	line "BOSS escaping"
-	cont "SILPH's building."
+	text "ראיתי את מפקד"
+	line "כנופיית רוקט"
+	cont "בורח מבניין SILPH." ;TODO
 	done
 
 _SaffronCityText14::
-	text "I'm a security"
-	line "guard."
+	text "אני מאבטח."
 
-	para "Suspicious kids I"
-	line "don't allow in!"
+	para "אני לא מרשה"
+	line "לילדים חשודים"
+	cont "להכנס!"
 	done
 
 _SaffronCityText15::
 	text "..."
-	line "Snore..."
+	line "נחרה..."
 
-	para "Hah! He's taking"
-	line "a snooze!"
+	para "הא! הוא תופס"
+	line "תנומה!"
 	done
 
 _SaffronCityText16::
-	text "SAFFRON CITY"
-	line "Shining, Golden"
-	cont "Land of Commerce"
+	text "עיר הזעפרן"
+	line "ארץ המסחר"
+	cont "הזהובה והנוצצת"
 	done
 
 _SaffronCityText17::
-	text "FIGHTING DOJO"
+	text "מאסטר הלחימה"
 	done
 
 _SaffronCityText18::
-	text "SAFFRON CITY"
-	line "#MON GYM"
-	cont "LEADER: SABRINA"
+	text "עיר הזעפרן"
+	line "מכון #ימונים"
+	cont "מנהלת: קסם"
 
-	para "The Master of"
-	line "Psychic #MON!"
+	para "המאסטר של"
+	line "#ימוני על-חושי!"
 	done
 
 _SaffronCityText20::
 	text "טיפים למאמנים"
 
-	para "FULL HEAL cures"
-	line "all ailments like"
-	cont "sleep and burns."
+	para "ריפוי מלא מרפא"
+	line "את כל סוגי החוליים"
+	cont "כמו שינה וכוויה."
 
-	para "It costs a bit"
-	line "more, but it's"
-	cont "more convenient."
+	para "זה עולה קצת"
+	line "יותר, אבל זה"
+	cont "יותר נוח."
 	done
 
 _SaffronCityText21::
 	text "טיפים למאמנים"
 
-	para "New GREAT BALL"
-	line "offers improved"
-	cont "capture rates."
+	para "לכדורי רב החדשים"
+	line "יש שיעור תפיסה"
+	cont "משופר."
 
-	para "Try it on those"
-	line "hard-to-catch"
-	cont "#MON."
+	para "נסה את זה על"
+	line "#ימונים קשים"
+	cont "לתפיסה."
 	done
 
 _SaffronCityText22::
-	text "SILPH CO."
-	line "OFFICE BUILDING"
+	text "סילף בע"מ"
+	line "בניין משרדים"
 	done
 
 _SaffronCityText24::
-	text "MR.PSYCHIC's"
-	line "HOUSE"
+	text "ביתו של מר"
+	line "על חושי"
 	done
 
 _SaffronCityText25::
-	text "SILPH's latest"
-	line "product!"
+	text "המוצר החדש"
+	line "של סילף!"
 
-	para "Release to be"
-	line "determined..."
+	para "בקרוב..."
 	done
