@@ -247,7 +247,7 @@ StaryuName:
 BlastoiseName:
 	db "מפציצב@"
 PinsirName:
-	db "צבתך@"
+	db "צבתן@"
 TangelaName:
 	db "סבכיה@"
 GrowlitheName:
@@ -303,7 +303,7 @@ TaurosName:
 FarfetchdName:
 	db "לוסביר@"
 VenonatName:
-	db "רעתוש@"
+	db "רעלתוש@"
 DragoniteName:
 	db "לטאביר@"
 DoduoName:
@@ -317,7 +317,7 @@ MoltresName:
 ArticunoName:
 	db "קיפאוואחד@"
 ZapdosName:
-	db "חשמתנן@"
+	db "חשמת'נן@"
 DittoName:
 	db "שינוץ@"
 MeowthName:
@@ -389,7 +389,7 @@ PrimeapeName:
 DugtrioName:
 	db "חפליה@"
 VenomothName:
-	db "רעלש@"
+	db "רעלעש@"
 DewgongName:
 	db "טלחש@"
 CaterpieName:

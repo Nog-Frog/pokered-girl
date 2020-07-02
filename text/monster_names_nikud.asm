@@ -265,7 +265,7 @@ EkansNikud:
 	db "⁃+@"
 ArbokNikud:
 	db "נתף@"
-	db "∵∵╎@"
+	db "∵∵@"
 PikachuNikud:
 	db "צויצוּץ@"
 	db "╎․@"
@@ -334,13 +334,13 @@ ParasNikud:
 	db "+⁃@"
 ParasectNikud:
 	db "טפּרק@"
-	db "+⁃∵@"
+	db "+⁃⁃@"
 VenonatNikud:
-	db "רעתוּשׁ@"
-	db "⁃⁃@"
+	db "רעלתוּשׁ@"
+	db "⁃⁃╎@"
 VenomothNikud:
-	db "רעלשׁ@"
-	db "⁃++@"
+	db "רעלעשׁ@"
+	db "⁃⁃╎⁃@"
 DiglettNikud:
 	db "חפיד@"
 	db "+․@"
@@ -348,44 +348,44 @@ DugtrioNikud:
 	db "חפליה@"
 	db "+╎․+@"
 MeowthNikud:
-	db "חתוּלוֹע@"
-	db "+    ⁃@"
+	db "מיצי@"
+	db "․ ․@"
 PersianNikud:
-	db "גרתוּל@"
-	db "․╎@"
+	db "קיצי@"
+	db "․ ․@"
 PsyduckNikud:
-	db "תקשׁוּרוז@"
+	db "תקשׁוֹרוז@"
 	db "․╎  ╎+@"
 GolduckNikud:
 	db "בּרוזהב@"
 	db "⁃╎+++@"
 MankeyNikud:
 	db "קוֹפבּני@"
-  	db "╎+․@"
+  	db "  ╎+․@"
 PrimeapeNikud:
-	db "מוּבחרוֹף@"
-  	db "╎+@"
+	db "קוֹפזוֹעם@"
+  	db "  ╎  ‥@"
 GrowlitheNikud:
 	db "נהמישׁ@"
 	db "⁃⁃․@"
 ArcanineNikud:
-	db "רזלב@"
-	db "+ ⁃@"
+	db "כּלבּזק@"
+	db "∵∵++@"
 PoliwagNikud:
 	db "רּאשנע@"
-  	db "++@"
+  	db "  ++@"
 PoliwhirlNikud:
-	db "רּאשבוּב@"
-  	db "+@"
+	db "רּאשבּוּב@"
+  	db "  +@"
 PoliwrathNikud:
 	db "רּאשעם@"
-  	db "+⁃@"
+  	db "  +⁃@"
 AbraNikud:
 	db "זריפוֹן@"
 	db "⁃․@"
 KadabraNikud:
 	db "אוּגלר@"
-  	db "∵∵@"
+  	db "  ╎∵@"
 AlakazamNikud:
 	db "ליאוֹרד@"
 	db "․   ╎@"
@@ -403,10 +403,10 @@ BellsproutNikud:
 	db "⁃⁃  ‥∵@"
 WeepinbellNikud:
 	db "דמעמוֹן@"
-	db "╎+⁃@"
+	db "․+⁃@"
 VictreebelNikud:
-	db "ניצחעמוֹן@"
-	db "․ ╎⁃⁃@"
+	db "תהילעמוֹן@"
+	db "∵․╎+@"
 TentacoolNikud:
 	db "קרשׁוֹשׁ@"
 	db "+╎@"
@@ -421,28 +421,28 @@ GravelerNikud:
 	db "╎⁃‥@"
 GolemNikud:
 	db "גוֹילם@"
-  	db "╎∵@"
+  	db "  ╎∵@"
 PonytaNikud:
 	db "סיחוֹם@"
 	db "╎+@"
 RapidashNikud:
 	db "סוּשׂוֹרף@"
-    	db "‥@"
+    db "    ‥@"
 SlowpokeNikud:
 	db "כּיסלאט@"
-	db "․ ╎╎⁃@"
+	db "․ ╎‥⁃@"
 SlowbroNikud:
 	db "אחלאט@"
-	db "+╎╎⁃@"
+	db "+╎‥⁃@"
 MagnemiteNikud:
 	db "שׁוֹאבן@"
-  	db "∵∵@"
+  	db "  ∵∵@"
 MagnetonNikud:
 	db "קוֹטבת@"
-  	db "∵∵@"
+  	db "  ∵∵@"
 FarfetchdNikud:
 	db "לוֹסביר@"
-  	db "+․@"
+  	db "  +․@"
 DoduoNikud:
 	db "שׁנישׂלו@"
 	db "╎‥ ╎+@"
@@ -459,11 +459,11 @@ GrimerNikud:
 	db "טנפאי@"
 	db "⁃╎⁃@"
 MukNikud:
-	db "זהק@"
-	db "⁃⁃@"
+	db "מרפשׁ@"
+	db "⁃╎‥@"
 ShellderNikud:
 	db "קוֹנכך@"
-  	db "╎‥╎@"
+  	db "  ╎‥╎@"
 CloysterNikud:
 	db "מבוּצדף@"
 	db "╎  ∵∵@"
@@ -472,7 +472,7 @@ GastlyNikud:
   	db "╎‥@"
 HaunterNikud:
 	db "רוֹצד@"
-  	db "+@"
+  	db "  ‥@"
 GengarNikud:
 	db "אשלדאי@"
 	db "⁃╎╎⁃@"
@@ -484,7 +484,7 @@ DrowzeeNikud:
 	db "⁃╎@"
 HypnoNikud:
 	db "מוֹשׁין@"
-	db "‥․@"
+	db "  ․@"
 KrabbyNikud:
 	db "שׂרטני@"
 	db "⁃╎+․@"
@@ -492,11 +492,11 @@ KinglerNikud:
 	db "כּנרטן@"
 	db "⁃+╎+@"
 VoltorbNikud:
-	db "חשׁמדוּר@"
-	db "⁃╎⁃@"
+	db "חשׁמלמל@"
+  	db "⁃╎⁃╎‥@"
 ElectrodeNikud:
 	db "מוֹקשׁמל@"
-  	db "‥╎⁃@"
+  	db "  ‥╎⁃@"
 ExeggcuteNikud:
 	db "בּיצמוּדוֹת@"
 	db "‥ ╎@"
@@ -504,26 +504,26 @@ ExeggutorNikud:
 	db "תמרצח@"
 	db "++∵⁃@"
 CuboneNikud:
-	db "עצמוּד@"
-	db "⁃╎@"
+	db "רשרש@"
+	db "⁃╎⁃╎@"
 MarowakNikud:
-	db "מהלוּמח@"
-	db "⁃⁃  ‥⁃@"
+	db "קרקש@"
+	db "⁃╎⁃╎@"
 HitmonleeNikud:
 	db "הכמפמדג'ה@"
 	db "⁃╎․╎⁃╎+@"
 HitmonchanNikud:
 	db "הכמפארד@"
-	db "⁃╎․╎++@"
+	db "⁃╎․⁃++@"
 LickitungNikud:
 	db "עגוֹלשׁוֹן@"
 	db "+  +@"
 KoffingNikud:
 	db "משׁתעשׁן@"
-	db "․╎+╎‥@"
+	db "․╎+⁃‥@"
 WeezingNikud:
 	db "משׁתעשׁניים@"
-	db "․╎+╎╎⁃‥@"
+	db "․╎+⁃‥⁃‥@"
 RhyhornNikud:
 	db "קרנוֹזף@"
 	db "⁃╎  ‥@"
@@ -532,7 +532,7 @@ RhydonNikud:
 	db "⁃╎+․@"
 ChanseyNikud:
 	db "בּת-מזל@"
-	db "⁃ ++@"
+	db "⁃  ++@"
 TangelaNikud:
 	db "סבכיה@"
 	db "╎⁃╎+@"
@@ -544,7 +544,7 @@ HorseaNikud:
 	db "+╎@"
 SeadraNikud:
 	db "אץ-ים@"
-	db "⁃ +@"
+	db "⁃  +@"
 GoldeenNikud:
 	db "זהלכּה@"
 	db "++╎+@"
@@ -553,16 +553,16 @@ SeakingNikud:
 	db "+∵∵╎@"
 StaryuNikud:
 	db "כּוֹכישׁ@"
-  	db "․@"
+  	db "  ․@"
 StarmieNikud:
 	db "כּוֹכשׁיט@"
-  	db "╎․@"
+  	db "  ╎․@"
 MrMimeNikud:
 	db "מרחקין@"
 	db "⁃╎⁃╎+@"
 ScytherNikud:
 	db "מגל-שׁלּמּה@"
-	db "⁃+ ╎@"
+	db "⁃+  ╎@"
 JynxNikud:
 	db "בּישׁה@"
 	db "․ +@"
@@ -573,8 +573,8 @@ MagmarNikud:
 	db "לבּרוז@"
 	db "⁃⁃╎+@"
 PinsirNikud:
-	db "צבתך@"
-	db "╎+‥╎@"
+	db "צבתן@"
+	db "⁃╎+@"
 TaurosNikud:
 	db "פּרסוּס@"
 	db "⁃╎@"
@@ -601,7 +601,7 @@ JolteonNikud:
 	db "+․ +@"
 FlareonNikud:
 	db "נוּרידן@"
-  	db "․ +@"
+  	db "  ․ +@"
 PorygonNikud:
 	db "מצוּלען@"
 	db "╎  ╎+@"
@@ -622,7 +622,7 @@ AerodactylNikud:
 	db "⁃․   +@"
 SnorlaxNikud:
 	db "נוֹחרפּל@"
-  	db "‥╎+@"
+  	db "  ‥╎+@"
 ArticunoNikud:
 	db "קיפּאוֹואחד@"
 	db "․ +  ⁃ ⁃@"
