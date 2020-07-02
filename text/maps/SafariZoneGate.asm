@@ -4,7 +4,7 @@ _SafariZoneEntranceText1::
 	done
 
 SafariZoneEntranceText_9e6e4::
-	text "עבור רק 005 ש"ח" ;TODO
+	text "עבור רק 005¥"
 	line "אתה יכול לתפוס"
 	cont "כמה #ימונים שרק"
 	cont "תרצה בפארק!"
@@ -13,7 +13,7 @@ SafariZoneEntranceText_9e6e4::
 	line "למצוד?@@"
 
 SafariZoneEntranceText_9e747::
-	text "זה 005 ש"ח" ;TODO
+	text "זה 005¥"
 	line "בבקשה!"
 
 	para "אנחנו משתמשים"

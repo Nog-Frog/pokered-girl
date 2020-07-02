@@ -1,237 +1,227 @@
 _ViridianGymText_74ace::
-	text "Fwahahaha! This is"
-	line "my hideout!"
+	text "פואהאהא! זה"
+	line "המחבוא שלי!"
 
-	para "I planned to"
-	line "resurrect TEAM"
-	cont "ROCKET here!"
+	para "תכננתי להחיות"
+	line "את כנופיית"
+	cont "רוקט כאן!"
 
-	para "But, you have"
-	line "caught me again!"
-	cont "So be it! This"
-	cont "time, I'm not"
-	cont "holding back!"
+	para "אבל, אתה תפסת"
+	line "אותי שוב!"
+	cont "כך יהיה! הפעם"
+	cont "אני מסיר את כל"
+	cont "המעצורים!"
 
-	para "Once more, you"
-	line "shall face"
-	cont "GIOVANNI, the"
-	cont "greatest trainer!"
+	para "פעם נוספת, אתה"
+	line "תתמודד מול"
+	cont "GIOVANNI, " ;TODO
+	cont "המאמן הטוב מכולם!"
 	done
 
 _ViridianGymText_74ad3::
-	text "Ha!"
-	line "That was a truly"
-	cont "intense fight!"
-	cont "You have won!"
-	cont "As proof, here is"
-	cont "the EARTHBADGE!@@"
+	text "הא!"
+	line "זה באמת היה"
+	cont "קרב רציני!"
+	cont "ניצחת!"
+	cont "כהוכחה, קבל את"
+	cont "תג האדמה!@@"
 
 _ViridianGymText_74ad9::
-	text "Having lost, I"
-	line "cannot face my"
-	cont "underlings!"
-	cont "TEAM ROCKET is"
-	cont "finished forever!"
+	text "לאחר שהובסתי,"
+	line "אני לא יכול"
+	cont "להסתכל לפקודיי!"
+	cont "בעיניים! כנופיית"
+	cont "רוקט חוסלה לנצח!"
 
-	para "I will dedicate my"
-	line "life to the study"
-	cont "of #MON!"
+	para "אקדיש את חיי"
+	line "ללימודי #ימונים!"
 
-	para "Let us meet again"
-	line "some day!"
-	cont "Farewell!@@"
+	para "הבה נתראה שוב"
+	line "ביום מן הימים!"
+	cont "להתראות!@@"
 
 _ViridianGymText12::
-	text "The EARTHBADGE"
-	line "makes #MON of"
-	cont "any level obey!"
+	text "תג האדמה"
+	line "גורם ל#ימונים"
+	cont "מכל הרמות לציית!"
 
-	para "It is evidence of"
-	line "your mastery as a"
-	cont "#MON trainer!"
+	para "זו הוכחה"
+	line "להיותך מאמן"
+	cont "#ימונים מומחה!"
 
-	para "With it, you can"
-	line "enter the #MON"
-	cont "LEAGUE!"
+	para "עם זה, אתה"
+	line "יכול להכנס"
+	cont "לליגת ה#ימונים!"
 
-	para "It is my gift for"
-	line "your #MON"
-	cont "LEAGUE challenge!"
+	para "זו מתנתי לרגל"
+	line "האתגר הבא שלך,"
+	cont "ליגת ה#ימונים!"
 	done
 
 _ReceivedTM27Text::
-	text "<PLAYER> received"
-	line "TM27!@@"
+	text "<PLAYER> קיבל"
+	line "TM27!@@" ;TODO
 
 _TM27ExplanationText::
 	text ""
 
-	para "TM27 is FISSURE!"
-	line "It will take out"
-	cont "#MON with just"
-	cont "one hit!"
+	para "TM27 הוא בולען!" ;TODO
+	line "הוא יעלף"
+	cont "#ימון במכה אחת!"
 
-	para "I made it when I"
-	line "ran the GYM here,"
-	cont "too long ago..."
+	para "הכנתי את זה"
+	line "בזמן שהייתי מנהל"
+	cont "המכון כאן, לפני"
+	cont "יותר מדי זמן..."
 	done
 
 _TM27NoRoomText::
-	text "You do not have"
-	line "space for this!"
+	text "אין לך מספיק"
+	line "מקום לזה!"
 	done
 
 _ViridianGymBattleText1::
-	text "Heh! You must be"
-	line "running out of"
-	cont "steam by now!"
+	text "הא! בטח נגמר"
+	line "לך הקיטור"
+	cont "עד עכשיו!"
 	done
 
 _ViridianGymEndBattleText1::
-	text "I"
-	line "ran out of gas!"
+	text "נגמר לי הדלק!"
 	prompt
 
 _ViridianGymAfterBattleText1::
-	text "You need power to"
-	line "keep up with our"
-	cont "GYM LEADER!"
+	text "אתה צריך אנרגיה"
+	line "כדי לעמוד מול"
+	cont "מנהל המכון!"
 	done
 
 _ViridianGymBattleText2::
-	text "Rrrroar! I'm"
-	line "working myself"
-	cont "into a rage!"
+	text "רררואר! אני"
+	line "בונה בתוכי זעם!"
 	done
 
 _ViridianGymEndBattleText2::
-	text "Wargh!"
+	text "ווארג!"
 	prompt
 
 _ViridianGymAfterBattleText2::
-	text "I'm still not"
-	line "worthy!"
+	text "אני עדיין לא"
+	line "ראוי!"
 	done
 
 _ViridianGymBattleText3::
-	text "#MON and I, we"
-	line "make wonderful"
-	cont "music together!"
+	text "#ימונים ואני,"
+	line "מייצרים מוזיקה"
+	cont "נהדרת ביחד!"
 	done
 
 _ViridianGymEndBattleText3::
-	text "You are in"
-	line "perfect harmony!"
+	text "אתם בהרמוניה"
+	line "מושלמת!"
 	prompt
 
 _ViridianGymAfterBattleText3::
-	text "Do you know the"
-	line "identity of our"
-	cont "GYM LEADER?"
+	text "אתה יודע"
+	line "מיהו מנהל המכון?"
 	done
 
 _ViridianGymBattleText4::
-	text "Karate is the"
-	line "ultimate form of"
-	cont "martial arts!"
+	text "קרטה היא אמנות"
+	line "הלחימה הטובה"
+	cont "ביותר!"
 	done
 
 _ViridianGymEndBattleText4::
-	text "Atcho!"
+	text "אפצ'י!"
 	prompt
 
 _ViridianGymAfterBattleText4::
-	text "If my #MON"
-	line "were as good at"
-	cont "Karate as I..."
+	text "אילו רק ה#ימונים"
+	line "שלי היו טובים"
+	cont "בקרטה כמוני..."
 	done
 
 _ViridianGymBattleText5::
-	text "The truly talented"
-	line "win with style!"
+	text "למאמן המוכשר באמת,"
+	line "יש סגנון בקרב!"
 	done
 
 _ViridianGymEndBattleText5::
-	text "I"
-	line "lost my grip!"
+	text "איבדתי אחיזה!"
 	prompt
 
 _ViridianGymAfterBattleText5::
-	text "The LEADER will"
-	line "scold me!"
+	text "המנהל יגער בי!"
 	done
 
 _ViridianGymBattleText6::
-	text "I'm the KARATE"
-	line "KING! Your fate"
-	cont "rests with me!"
+	text "אני מלך הקרטה!"
+	line "גורלך טמון בי!"
 	done
 
 _ViridianGymEndBattleText6::
-	text "Ayah!"
+	text "איה!"
 	prompt
 
 _ViridianGymAfterBattleText6::
-	text "#MON LEAGUE?"
-	line "You? Don't get"
-	cont "cocky!"
+	text "ליגת ה#ימונים?"
+	line "אתה? אל תתלהב!"
 	done
 
 _ViridianGymBattleText7::
-	text "Your #MON will"
-	line "cower at the"
-	cont "crack of my whip!"
+	text "ה#ימון שלך ישתפן"
+	line "ברגע שאצליף בו"
+	cont "בו השוט שלי!"
 	done
 
 _ViridianGymEndBattleText7::
-	text "Yowch!"
-	line "Whiplash!"
+	text "יאוץ'!"
+	line "הצלפת!"
 	prompt
 
 _ViridianGymAfterBattleText7::
-	text "Wait! I was just"
-	line "careless!"
+	text "חכה! סתם הייתי"
+	line "פזיז!"
 	done
 
 _ViridianGymBattleText8::
-	text "VIRIDIAN GYM was"
-	line "closed for a long"
-	cont "time, but now our"
-	cont "LEADER is back!"
+	text "מכוןהברקת היה"
+	line "סגור הרבה זמן,"
+	cont "אבל עכשיו המנהל"
+	cont "שלנו חזר!"
 	done
 
 _ViridianGymEndBattleText8::
-	text "I"
-	line "was beaten?"
+	text "הובסתי?"
 	prompt
 
 _ViridianGymAfterBattleText8::
-	text "You can go onto"
-	line "#MON LEAGUE"
-	cont "only by defeating"
-	cont "our GYM LEADER!"
+	text "אתה יכול להמשיך"
+	line "לליגת ה#ימונים"
+	cont "על ידי הבסת"
+	cont "מנהל המכון שלנו!"
 	done
 
 _ViridianGymText_74bd4::
-	text "Yo! Champ in"
-	line "making!"
+	text "יו! אלוף חדש"
+	line "בדרך!"
 
-	para "Even I don't know"
-	line "VIRIDIAN LEADER's"
-	cont "identity!"
+	para "אפילו אני לא"
+	line "יודע מיהו מנהל"
+	cont "מכון הברקת!"
 
-	para "This will be the"
-	line "toughest of all"
-	cont "the GYM LEADERs!"
+	para "זה יהיה הקרב"
+	line "הקשוח ביותר מבין"
+	cont "כל מנהלי המכונים!"
 
-	para "I heard that the"
-	line "trainers here"
-	cont "like ground-type"
-	cont "#MON!"
+	para "שמעתי שהמאמנים"
+	line "כאן אוהבים"
+	cont "#ימוני אדמה!"
 	done
 
 _ViridianGymText_74bd9::
-	text "Blow me away!"
-	line "GIOVANNI was the"
-	cont "GYM LEADER here?"
+	text "לא נכון!"
+	line "GIOVANNI" ;TODO
+	cont "היה מנהל המכון כאן?"
 	done
