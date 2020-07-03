@@ -1,108 +1,108 @@
 _RockTunnel2BattleText2::
-	text "Hikers leave twigs"
-	line "as trail markers."
+	text "מטיילים משאירים"
+	line "זרדים כמסמני"
+	cont "שבילים."
 	done
 
 _RockTunnel2EndBattleText2::
-	text "Ohhh!"
-	line "I did my best!"
+	text "אווו!"
+	line "עשיתי את המיטב!"
 	prompt
 
 _RockTunnel2AfterBattleText2::
-	text "I want to go "
-	line "home!"
+	text "אני רוצה ללכת"
+	line "הביתה!"
 	done
 
 _RockTunnel2BattleText3::
-	text "Hahaha! Can you"
-	line "beat my power?"
+	text "האהאהא! האם אתה"
+	line "יכול להביס אותי?"
 	done
 
 _RockTunnel2EndBattleText3::
-	text "Oops!"
-	line "Out-muscled!"
+	text "אופס!"
+	line "גברת עליי!"
 	prompt
 
 _RockTunnel2AfterBattleText3::
-	text "I go for power"
-	line "because I hate"
-	cont "thinking!"
+	text "אני הולך על כוח"
+	line "כי אני שונא"
+	cont "לחשוב!"
 	done
 
 _RockTunnel2BattleText4::
-	text "You have a"
-	line "#DEX?"
-	cont "I want one too!"
+	text "יש לך #ידע?"
+	line "גם אני רוצה אחד!" ;TODO: פוקידע זה זכר או נקבה?
 	done
 
 _RockTunnel2EndBattleText4::
-	text "Shoot!"
-	line "I'm so jealous!"
+	text "אוף!"
+	line "אני ממש מקנא!"
 	prompt
 
 _RockTunnel2AfterBattleText4::
-	text "When you finish"
-	line "your #DEX, can"
-	cont "I have it?"
+	text "כשתסיים עם ה#ידע"
+	line "שלך, אני אוכל"
+	cont "לקבל אותו?" ;TODO: פוקידע זה זכר או נקבה?
 	done
 
 _RockTunnel2BattleText5::
-	text "Do you know about"
-	line "costume players?"
+	text "אתה יודע על"
+	line "שחקני תחפושות?"
 	done
 
 _RockTunnel2EndBattleText5::
-	text "Well,"
-	line "that's that."
+	text "טוב,"
+	line "זה נגמר."
 	prompt
 
 _RockTunnel2AfterBattleText5::
-	text "Costume players"
-	line "dress up as"
-	cont "#MON for fun."
+	text "שחקני תחפושות"
+	line "מלבישים את"
+	cont "ה#ימונים שלהם"
+	cont "לכיף."
 	done
 
 _RockTunnel2BattleText6::
-	text "My #MON"
-	line "techniques will"
-	cont "leave you crying!"
+	text "הטכניקות של"
+	line "ה#ימון שלי"
+	cont "יגרמו לך לייבב!"
 	done
 
 _RockTunnel2EndBattleText6::
-	text "I give!"
-	line "You're a better"
-	cont "technician!"
+	text "ויתרתי!"
+	line "הטכניקות שלך"
+	cont "יותר טובות!"
 	prompt
 
 _RockTunnel2AfterBattleText6::
-	text "In mountains,"
-	line "you'll often find"
-	cont "rock-type #MON."
+	text "בהרים, לעיתים"
+	line "תמצא #ימוני"
+	cont "סלע."
 	done
 
 _RockTunnel2BattleText7::
-	text "I don't often"
-	line "come here, but I"
-	cont "will fight you."
+	text "אני לא בא לפה"
+	line "לרוב, אבל אני"
+	cont "אלחם בך."
 	done
 
 _RockTunnel2EndBattleText7::
-	text "Oh!"
-	line "I lost!"
+	text "או!"
+	line "הפסדתי!"
 	prompt
 
 _RockTunnel2AfterBattleText7::
-	text "I like tiny"
-	line "#MON, big ones"
-	cont "are too scary!"
+	text "אני אוהב #ימונים"
+	line "קטנטנים, הגדולים"
+	cont "מפחידים מדי!"
 	done
 
 _RockTunnel2BattleText8::
-	text "Hit me with your"
-	line "best shot!"
+	text "תן לי את הכי"
+	line "טוב שלך!"
 	done
 
 _RockTunnel2EndBattleText8::
-	text "Fired"
-	line "away!"
+	text "זה היה טוב!"
 	prompt

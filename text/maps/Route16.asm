@@ -1,120 +1,116 @@
 _Route16BattleText1::
-	text "What do you want?"
+	text "מה אתה רוצה?"
 	done
 
 _Route16EndBattleText1::
-	text "Don't you"
-	line "dare laugh!"
+	text "שלא תעז לצחוק!"
 	prompt
 
 _Route16AfterBattleText1::
-	text "We like just"
-	line "hanging here,"
-	cont "what's it to you?"
+	text "אנחנו סתם אוהבים"
+	line "להסתובב פה,"
+	cont "מה אכפת לך?"
 	done
 
 _Route16BattleText2::
-	text "Nice BIKE!"
-	line "Hand it over!"
+	text "אופניים מגניבות!"
+	line "תביא לי אותן!"
 	done
 
 _Route16EndBattleText2::
-	text "Knock"
-	line "out!"
+	text "מכת מחץ!"
 	prompt
 
 _Route16AfterBattleText2::
-	text "Forget it, who"
-	line "needs your BIKE!"
+	text "תשכח מזה, מי"
+	line "צריך את האופניים"
+	cont "שלך!"
 	done
 
 _Route16BattleText3::
-	text "Come out and play,"
-	line "little mouse!"
+	text "בוא לשחק, "
+	line "עכבר קטן!"
 	done
 
 _Route16EndBattleText3::
-	text "You"
-	line "little rat!"
+	text "חתיכת עכברוש!"
 	prompt
 
 _Route16AfterBattleText3::
-	text "I hate losing!"
-	line "Get away from me!"
+	text "אני שונא להפסיד!"
+	line "תתרחק ממני!"
 	done
 
 _Route16BattleText4::
-	text "Hey, you just"
-	line "bumped me!"
+	text "היי, אתה התנגשת"
+	line "בי עכשיו!"
 	done
 
 _Route16EndBattleText4::
-	text "Kaboom!"
+	text "קאבום!"
 	prompt
 
 _Route16AfterBattleText4::
-	text "You can also get"
-	line "to FUCHSIA from"
-	cont "VERMILION using a"
-	cont "coastal road."
+	text "אתה גם יכול להגיע"
+	line "לעיר השושנה"
+	cont "מעיר הארגמן דרך"
+	cont "שביל החוף."
 	done
 
 _Route16BattleText5::
-	text "I'm feeling"
-	line "hungry and mean!"
+	text "אני רעב ומרושע!"
 	done
 
 _Route16EndBattleText5::
-	text "Bad,"
-	line "bad, bad!"
+	text "רע, רע, רע!"
 	prompt
 
 _Route16AfterBattleText5::
-	text "I like my #MON"
-	line "ferocious! They"
-	cont "tear up enemies!"
+	text "אני אוהב את"
+	line "ה#ימונים שלי"
+	cont "אכזריים! הם"
+	cont "קורעים את אויביהם!"
 	done
 
 _Route16BattleText6::
-	text "Sure, I'll go!"
+	text "בטח, אני אלך!"
 	done
 
 _Route16EndBattleText6::
-	text "Don't make"
-	line "me mad!"
+	text "אל תרגיז אותי!"
 	prompt
 
 _Route16AfterBattleText6::
-	text "I like harassing"
-	line "people with my"
-	cont "vicious #MON!"
+	text "אני אוהב להטריד"
+	line "אנשים עם ה#ימונים"
+	cont "האכזריים שלי!"
 	done
 
 _Route16Text7::
-	text "A sleeping #MON"
-	line "blocks the way!"
+	text "#ימון ישן חוסם"
+	line "את הדרך!"
 	done
 
 _Route16Text10::
-	text "SNORLAX woke up!"
+	text "נוחרפל התעורר!"
 
-	para "It attacked in a"
-	line "grumpy rage!"
+	para "הוא תקף בהתקף"
+	line "זעם עצבני!"
 	done
 
 _Route16Text11::
-	text "With a big yawn,"
-	line "SNORLAX returned"
-	cont "to the mountains!"
+	text "בפיהוק גדול,"
+	line "נוחרפל שב אל"
+	cont "ההרים!"
 	done
 
 _Route16Text8::
-	text "Enjoy the slope!"
-	line "CYCLING ROAD"
+	text "תהנה מהמדרון!"
+	line "שביל האופניים"
 	done
 
 _Route16Text9::
-	text "ROUTE 16"
-	line "CELADON CITY -"
-	cont "FUCHSIA CITY"
+	text "דרך 61"
+	line "עיר האביב -"
+	cont "עיר השושנה"
 	done

@@ -1,22 +1,22 @@
 _Route16GateText_49777::
-	text "No pedestrians"
-	line "are allowed on"
-	cont "CYCLING ROAD!"
+	text "אין כניסה"
+	line "להולכי רגל"
+	cont "בשביל האופניים!"
 	done
 
 _Route16GateText_4977c::
-	text "CYCLING ROAD is a"
-	line "downhill course"
-	cont "by the sea. It's"
-	cont "a great ride."
+	text "שביל האופניים"
+	line "הוא מסלול ירידה"
+	cont "על יד הים."
+	cont "זו רכיבה נהדרת."
 	done
 
 _Route16GateText_49781::
-	text "Excuse me! Wait"
-	line "up please!"
+	text "סלח לי!"
+	line "חכה רגע בבקשה!"
 	done
 
 _Route16GateText2::
-	text "How'd you get in?"
-	line "Good effort!"
+	text "איך נכנסת?"
+	line "הרבה מאמץ!"
 	done
