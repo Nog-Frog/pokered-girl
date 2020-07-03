@@ -1,6 +1,6 @@
 _Route14BattleText1::
 	text "אתה צריך להשתמש"
-	line "בTM כדי ללמד" ;TODO
+	line "בMT כדי ללמד"
 	cont "את ה#ימונים שלך"
 	cont "מהלכים."
 	done
@@ -35,7 +35,7 @@ _Route14AfterBattleText2::
 	done
 
 _Route14BattleText3::
-	text "יש מבצעים על TMS" ;TODO
+	text "יש מבצעים על MT-ים"
 	line "בעיר האביב!"
 	cont "אבל, רק למעט"
 	cont "אנשים יש HMs!" ;TODO

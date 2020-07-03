@@ -1,6 +1,6 @@
 _TM35PreReceiveText::
 	text "טיק-טיק-טיק!"
-	line "יצרתי TM מגניב!"
+	line "יצרתי MT מגניב!"
 
 	para "הוא יכול לגרום"
 	line "לכל מיני סוגים"

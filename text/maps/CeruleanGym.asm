@@ -15,7 +15,7 @@ _CeruleanGymText_5c7be::
 	done
 
 _CeruleanGymText_5c7c3::
-	text "TM11 מלמד את"
+	text "11MT מלמד את"
 	line "המהלך קרן בועות!"
 
 	para "תשתמש בו על"

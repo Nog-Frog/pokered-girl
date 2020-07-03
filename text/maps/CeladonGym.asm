@@ -72,7 +72,7 @@ _ReceivedTM21Text::
 
 _TM21ExplanationText::
 	db $0
-	para "TM21 מכיל את המהלך"
+	para "12MT מכיל את המהלך"
 	line "יניקת על."
 
 	para "ה#ימון יונק HP"

@@ -36,7 +36,7 @@ _ReceivedTM31Text::
 
 _TM31ExplanationText1::
 	db $0
-	para "TM31 מכיל את"
+	para "13MT מכיל את"
 	line "המהלך האהוב עלי,"
 	cont "חקיינות!"
 
@@ -45,7 +45,7 @@ _TM31ExplanationText1::
 
 _TM31ExplanationText2::
 	text "<PLAYER>: היי!"
-	line "תודה על הTM31!"
+	line "תודה על ה13MT!"
 
 	para "<PLAYER>: סליחה?"
 

@@ -12,7 +12,7 @@ _ReceivedTM29Text::
 	text "!@@"
 
 _TM29ExplanationText::
-	text "זה המהלך TM29" ;TODO
+	text "זה המהלך 92MT"
 	line "אשליה!"
 
 	para "זה מאפשר לך"

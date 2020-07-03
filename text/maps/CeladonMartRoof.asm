@@ -69,7 +69,7 @@ _CeladonMartRoofText_48515::
 
 _ReceivedTM49Text::
 	text "<PLAYER> קיבל"
-	line "TM49!@@"
+	line "94MT!@@"
 
 _CeladonMartRoofText_48520::
 	text ""

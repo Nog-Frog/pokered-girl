@@ -60,12 +60,12 @@ _ViridianGymText12::
 
 _ReceivedTM27Text::
 	text "<PLAYER> קיבל"
-	line "TM27!@@" ;TODO
+	line "72MT!@@"
 
 _TM27ExplanationText::
 	text ""
 
-	para "TM27 הוא בולען!" ;TODO
+	para "72MT הוא בולען!"
 	line "הוא יעלף"
 	cont "#ימון במכה אחת!"
 
