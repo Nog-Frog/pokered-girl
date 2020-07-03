@@ -1,31 +1,30 @@
 _Route16HouseText3::
-	text "Oh, you found my"
-	line "secret retreat!"
+	text "הו, מצאת את אתר"
+	line "הנופש הסודי שלי!"
 
-	para "Please don't tell"
-	line "anyone I'm here."
-	cont "I'll make it up"
-	cont "to you with this!"
+	para "בבקשה אל תספר"
+	line "לאף אחד שאני פה."
+	cont "אני אפצה אותך"
+	cont "עם זה!"
 	prompt
 
 _ReceivedHM02Text::
-	text "<PLAYER> received"
-	line "HM02!@@"
+	text "<PLAYER> קיבל"
+	line "HM02!@@" ;TODO
 
 _HM02ExplanationText::
-	text "HM02 is FLY."
-	line "It will take you"
-	cont "back to any town."
+	text "HM02 זה תעופה." ;TODO
+	line "זה ייקח אותך"
+	cont "חזרה לכל עיירה."
 
-	para "Put it to good"
-	line "use!"
+	para "השתמש בזה לטובה!"
 	done
 
 _HM02NoRoomText::
-	text "You don't have any"
-	line "room for this."
+	text "אין לך מקום"
+	line "בשביל זה."
 	done
 
 _Route16HouseText_1e652::
-	text "FEAROW: Kyueen!"
+	text "פחדרור: קיויין!"
 	done

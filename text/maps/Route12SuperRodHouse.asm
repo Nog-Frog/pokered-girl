@@ -1,22 +1,21 @@
 _Route12HouseText_564c0::
-	text "I'm the FISHING"
-	line "GURU's brother!"
+	text "אני אחיו של כהן"
+	line "הדיג!"
 
-	para "I simply Looove"
-	line "fishing!"
+	para "אני פשוט מתתתת"
+	line "על דיג!"
 
-	para "Do you like to"
-	line "fish?"
+	para "אתה אוהב לדוג?"
 	done
 
 _Route12HouseText_564c5::
-	text "Grand! I like"
-	line "your style!"
+	text "כביר! אני אוהב"
+	line "את הסגנון שלך!"
 
-	para "Take this and"
-	line "fish, young one!"
+	para "קח את זה וצא"
+	line "לדוג, איש צעיר!"
 
-	para "<PLAYER> received"
+	para "<PLAYER> קיבל"
 	line "a @"
 	TX_RAM wcf4b
 	text "!@@"
@@ -24,38 +23,37 @@ _Route12HouseText_564c5::
 _Route12HouseText_564ca::
 	text ""
 
-	para "Fishing is a way"
-	line "of life!"
+	para "דיג זה דרך"
+	line "חיים!"
 
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one!"
+	para "מהימים והנהרות,"
+	line "צא וכבוש את"
+	cont "הגדול מכולם!"
 	done
 
 _Route12HouseText_564cf::
-	text "Oh... That's so"
-	line "disappointing..."
+	text "או... זה כל כך"
+	line "מאכזב..."
 	done
 
 _Route12HouseText_564d4::
-	text "Hello there,"
+	text "שלום לך,"
 	line "<PLAYER>!"
 
-	para "Use the SUPER ROD"
-	line "in any water!"
-	cont "You can catch"
-	cont "different kinds"
-	cont "of #MON."
+	para "השתמש בחכת העל"
+	line "בכל מקור מים!"
+	cont "אתה יכול לתפוס"
+	cont "סוגים שונים של"
+	cont "#ימונים."
 
-	para "Try fishing"
-	line "wherever you can!"
+	para "נסה לדוג בכל"
+	line "מקום שתוכל!"
 	done
 
 _Route12HouseText_564d9::
-	text "Oh no!"
+	text "הו לא!"
 
-	para "I had a gift for"
-	line "you, but you have"
-	cont "no room for it!"
+	para "הייתה לי מתנה"
+	line "עבורך, אבל אין"
+	cont "לך מקום עבורה!"
 	done
