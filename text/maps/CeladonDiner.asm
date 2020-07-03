@@ -16,7 +16,7 @@ _CeladonDinerText2::
 _CeladonDinerText3::
 	text "פססט! יש מרתף"
 	line "נסתר מתחת למשחקיית"
-	cont "רוקט...
+	cont "רוקט..."
 	done
 
 _CeladonDinerText4::
