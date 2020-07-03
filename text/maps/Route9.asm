@@ -1,157 +1,151 @@
 _Route9BattleText1::
-	text "You have #MON"
-	line "with you!"
-	cont "You're mine!"
+	text "יש לך #ימון"
+	line "איתך! אתה שלי!"
 	done
 
 _Route9EndBattleText1::
-	text "You"
-	line "deceived me!"
+	text "אתה הולכת אותי"
+	line "שולל!"
 	prompt
 
 _Route9AfterBattleText1::
-	text "You need light to"
-	line "get through that"
-	cont "dark tunnel ahead."
+	text "אתה צריך תאורה"
+	line "כדי לעבור במנהרה"
+	cont "החשוכה מקדימה."
 	done
 
 _Route9BattleText2::
-	text "Who's that walking"
-	line "with those good"
-	cont "looking #MON?"
+	text "מי זה הולך עם"
+	line "ה#ימונים היפים"
+	cont "האלה?"
 	done
 
 _Route9EndBattleText2::
-	text "Out"
-	line "like a light!"
+	text "כיבית אותי!"
 	prompt
 
 _Route9AfterBattleText2::
-	text "Keep walking!"
+	text "תמשיך ללכת!"
 	done
 
 _Route9BattleText3::
-	text "I'm taking ROCK"
-	line "TUNNEL to go to"
-	cont "LAVENDER..."
+	text "אני לוקח את"
+	line "מנהרת הסלע כדי"
+	cont "להגיע לעיר הלבנדר..."
 	done
 
 _Route9EndBattleText3::
-	text "Can't"
-	line "measure up!"
+	text "לא השתוויתי אליך!"
 	prompt
 
 _Route9AfterBattleText3::
-	text "Are you off to"
-	line "ROCK TUNNEL too?"
+	text "אתה גם בדרך"
+	line "למנהרת הסלע?"
 	done
 
 _Route9BattleText4::
-	text "Don't you dare"
-	line "condescend me!"
+	text "שלא תעז להתנשא"
+	line "עליי!"
 	done
 
 _Route9EndBattleText4::
-	text "No!"
-	line "You're too much!"
+	text "לא!"
+	line "אתה יותר מדי!"
 	prompt
 
 _Route9AfterBattleText4::
-	text "You're obviously"
-	line "talented! Good"
-	cont "luck to you!"
+	text "ברור שאתה מוכשר!"
+	line "שיהיה לך בהצלחה!"
 	done
 
 _Route9BattleText5::
-	text "Bwahaha!"
-	line "Great! I was"
-	cont "bored, eh!"
+	text "באוהוה!"
+	line "מעולה! השתעממתי!"
 	done
 
 _Route9EndBattleText5::
-	text "Keep it"
-	line "coming, eh!"
+	text "תמשיך ככה, הא!"
 
-	para "Oh wait. I'm out"
-	line "of #MON!"
+	para "אוי רגע. נגמרו"
+	line "לי ה#ימונים!"
 	prompt
 
 _Route9AfterBattleText5::
-	text "You sure had guts"
-	line "standing up to me"
-	cont "there, eh?"
+	text "היה לך אומץ"
+	line "להתמודד מולי שם,"
+	cont "אה?"
 	done
 
 _Route9BattleText6::
-	text "Hahaha!"
-	line "Aren't you a"
-	cont "little toughie!"
+	text "האהאהא!"
+	line "תראה אותך,"
+	cont "חושב שאתה קשוח!"
 	done
 
 _Route9EndBattleText6::
-	text "What's"
-	line "that?"
+	text "מה זה?"
 	prompt
 
 _Route9AfterBattleText6::
-	text "Hahaha! Kids"
-	line "should be tough!"
+	text "האהאהא! ילדים"
+	line "צריכים להיות"
+	cont "קשוחים!"
 	done
 
 _Route9BattleText7::
-	text "I got up early"
-	line "every day to"
-	cont "raise my #MON"
-	cont "from cocoons!"
+	text "הייתי קם כל יום"
+	line "מוקדם כדי לגדל"
+	cont "את ה#ימונים שלי"
+	cont "מגלמים!"
 	done
 
 _Route9EndBattleText7::
-	text "WHAT?"
+	text "מה?"
 
-	para "What a total"
-	line "waste of time!"
+	para "איזה בזבוז"
+	line "זמן מוחלט!"
 	prompt
 
 _Route9AfterBattleText7::
-	text "I have to collect"
-	line "more than bugs to"
-	cont "get stronger..."
+	text "אני צריך לאסוף"
+	line "יותר מרק חרקים"
+	cont "כדי להתחזק..."
 	done
 
 _Route9BattleText8::
-	text "Hahahaha!"
-	line "Come on, dude!"
+	text "האהאהא!"
+	line "קדימה, אחי!"
 	done
 
 _Route9EndBattleText8::
-	text "Hahahaha!"
-	line "You beat me fair!"
+	text "האהאהא!"
+	line "ניצחת אותי כהוגן!"
 	prompt
 
 _Route9AfterBattleText8::
-	text "Hahahaha!"
-	line "Us hearty guys"
-	cont "always laugh!"
+	text "האהאהא!"
+	line "בחורים לבביים"
+	cont "כמונו תמיד"
+	cont "צוחקים!"
 	done
 
 _Route9BattleText9::
-	text "Go, my super bug"
-	line "#MON!"
+	text "צא, #ימון חרק"
+	line "על שלי!"
 	done
 
 _Route9EndBattleText9::
-	text "My"
-	line "bugs..."
+	text "החרקים שלי..."
 	prompt
 
 _Route9AfterBattleText9::
-	text "If you don't like"
-	line "bug #MON, you"
-	cont "bug me!"
+	text "אם אתה לא אוהב"
+	line "#ימוני חרק, אתה"
+	cont "קרציה!"
 	done
 
 _Route9Text11::
-	text "ROUTE 9"
-	line "CERULEAN CITY-"
-	cont "ROCK TUNNEL"
+	text "דרך 9"
+	line "עיר האביב -"
+	cont "מנהרת הסלע"
 	done

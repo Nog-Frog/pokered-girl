@@ -1,171 +1,174 @@
 _Route15BattleText1::
-	text "Let me try out the"
-	line "#MON I just"
-	cont "got in a trade!"
+	text "תן לי לנסות"
+	line "את ה#ימון שהרגע"
+	cont "קיבלתי בהחלפה!"
 	done
 
 _Route15EndBattleText1::
-	text "Not"
-	line "good enough!"
+	text "לא מספיק"
+	line "טוב!"
 	prompt
 
 _Route15AfterBattleText1::
-	text "You can't change"
-	line "the nickname of"
-	cont "any #MON you"
-	cont "get in a trade."
+	text "אתה לא יכול"
+	line "לשנות את הכינוי"
+	cont "של אף #ימון"
+	cont "שאתה מקבל בהחלפה."
 
-	para "Only the Original"
-	line "Trainer can."
+	para "רק המאמן המקורי"
+	line "יכול."
 	done
 
 _Route15BattleText2::
-	text "You look gentle,"
-	line "so I think I can"
-	cont "beat you!"
+	text "אתה נראה עדין,"
+	line "אז אני חושב שאני"
+	cont "יכול לנצח אותך!"
 	done
 
 _Route15EndBattleText2::
-	text "No,"
-	line "wrong!"
+	text "לא,"
+	line "טעיתי!"
 	prompt
 
 _Route15AfterBattleText2::
-	text "I'm afraid of"
-	line "BIKERs, they look"
-	cont "so ugly and mean!"
+	text "אני מפחד"
+	line "מאופנוענים, הם"
+	cont "נראים מכוערים"
+	cont "ורעים!"
 	done
 
 _Route15BattleText3::
-	text "When I whistle, I"
-	line "can summon bird"
-	cont "#MON!"
+	text "כשאני שורק, אני"
+	line "יכול לזמן"
+	cont "#ימון ציפור!"
 	done
 
 _Route15EndBattleText3::
-	text "Ow!"
-	line "That's tragic!"
+	text "אוו!"
+	line "זה היה טרגי!"
 	prompt
 
 _Route15AfterBattleText3::
-	text "Maybe I'm not cut"
-	line "out for battles."
+	text "אולי אני לא"
+	line "בנוי לקרבות."
 	done
 
 _Route15BattleText4::
-	text "Hmm? My birds are"
-	line "shivering! You're"
-	cont "good, aren't you?"
+	text "הממ? הציפורים שלי"
+	line "רועדות! אתה טוב,"
+	cont "נכון?"
 	done
 
 _Route15EndBattleText4::
-	text "Just"
-	line "as I thought!"
+	text "בדיוק כמו"
+	line "שחשבתי!"
 	prompt
 
 _Route15AfterBattleText4::
-	text "Did you know moves"
-	line "like EARTHQUAKE"
-	cont "don't have any"
-	cont "effect on birds?"
+	text "ידעת שלמהלכים"
+	line "כמו רעידת אדמה"
+	cont "אין בכלל השפעה"
+	cont "על ציפורים?"
 	done
 
 _Route15BattleText5::
-	text "Oh, you're a"
-	line "little cutie!"
+	text "הו, אתה חמודי"
+	line "קטן!"
 	done
 
 _Route15EndBattleText5::
-	text "You looked"
-	line "so cute too!"
+	text "נראית כל כך"
+	line "חמוד!"
 	prompt
 
 _Route15AfterBattleText5::
-	text "I forgive you!"
-	line "I can take it!"
+	text "אני סולח לך!"
+	line "אני יכול לעמוד"
+	cont "בזה!"
 	done
 
 _Route15BattleText6::
-	text "I raise #MON"
-	line "because I live"
-	cont "alone!"
+	text "אני מגדל #ימונים"
+	line "כי אני גר לבד!"
 	done
 
 _Route15EndBattleText6::
-	text "I didn't"
-	line "ask for this!"
+	text "לא ביקשתי"
+	line "את זה!"
 	prompt
 
 _Route15AfterBattleText6::
-	text "I just like going"
-	line "home to be with"
-	cont "my #MON!"
+	text "אני פשוט אוהב"
+	line "להיות בבית עם"
+	cont "ה#ימונים שלי!"
 	done
 
 _Route15BattleText7::
-	text "Hey kid! C'mon!"
-	line "I just got these!"
+	text "היי ילד! קדימה!"
+	line "בדיוק קיבלתי אותם!"
 	done
 
 _Route15EndBattleText7::
-	text "Why"
-	line "not?"
+	text "למה"
+	line "לא?"
 	prompt
 
 _Route15AfterBattleText7::
-	text "You only live"
-	line "once, so I live"
-	cont "as an outlaw!"
-	cont "TEAM ROCKET RULES!"
+	text "חיים רק פעם אחת,"
+	line "אז אני חי כמו"
+	cont "עבריין! כנופיית"
+	cont "רוקט שולטת!"
 	done
 
 _Route15BattleText8::
-	text "Fork over all your"
-	line "cash when you"
-	cont "lose to me, kid!"
+	text "תעביר לי את כל"
+	line "הכסף שלך כשאתה"
+	cont "מפסיד לי, ילד!"
 	done
 
 _Route15EndBattleText8::
-	text "That"
-	line "can't be true!"
+	text "לא יכול"
+	line "להיות!"
 	prompt
 
 _Route15AfterBattleText8::
-	text "I was just joking"
-	line "about the money!"
+	text "סתם צחקתי"
+	line "לגבי הכסף!"
 	done
 
 _Route15BattleText9::
-	text "What's cool?"
-	line "Trading #MON!"
+	text "מה מגניב?"
+	line "החלפת #ימונים!"
 	done
 
 _Route15EndBattleText9::
-	text "I"
-	line "said trade!"
+	text "אמרתי"
+	line "החלפות!"
 	prompt
 
 _Route15AfterBattleText9::
-	text "I trade #MON"
-	line "with my friends!"
+	text "אני מחליף"
+	line "#ימונים עם"
+	cont "חברים שלי!"
 	done
 
 _Route15BattleText10::
-	text "Want to play with"
-	line "my #MON?"
+	text "רוצה לשחק עם"
+	line "ה#ימונים שלי?"
 	done
 
 _Route15EndBattleText10::
-	text "I was"
-	line "too impatient!"
+	text "הייתי חסר"
+	line "סבלנות!"
 	prompt
 
 _Route15AfterBattleText10::
-	text "I'll go train with"
-	line "weaker people.@@"
+	text "אני אלך להתאמן"
+	line "עם אנשים חלשים"
+	cont "יותר.@@"
 
 _Route15Text12::
-	text "ROUTE 15"
-	line "West to FUCHSIA"
-	cont "CITY"
+	text "דרך 51"
+	line "מערבית לעיר"
+	cont "השושנה"
 	done
