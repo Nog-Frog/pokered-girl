@@ -71,6 +71,7 @@ CreditsTextPointers:
 	dw CredMaayan
 	dw CredSharon
 	dw CredNoam
+	dw CredElboim
 	dw CredLiji
 	dw CredNitzan
 	dw CredPret
@@ -169,7 +170,7 @@ CredSpecial:
 CredProducers:
 	db -17, "מפיקים@"
 CredProducer:
-	db -15, "מפיק@"
+	db -13, "מפיק@"
 CredExecutive:
 	db -15, "מפיק בפועל@"
 CredTamada:
@@ -228,7 +229,9 @@ CredMaayan:
 CredSharon:
 	db -15, "שרון קורך@"
 CredNoam:
-	db -15, "נעם גלר@"
+	db -16, "נעם גלר@"
+CredElboim:
+	db -14, "מ. ש. אלבוים@"
 CredLiji:
 	db -14, "ליאור חלפון@"
 CredNitzan:
@@ -240,6 +243,6 @@ CredFindUsAt:
 CredFindUsAt2:
 	db -16, "בכתובת:@"
 CredGitHubLink:
-	db -13, "-goN/moc.buhtig@"
+	db -13, "-GON/MOC.BUHTIG@"
 CredGitHubLink2:
-	db -14, "derekop/gorF@"
+	db -14, "DEREKOP/GORF@"

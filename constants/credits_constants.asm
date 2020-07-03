@@ -72,10 +72,11 @@ const_value = 0
 	const CRED_MAAYAN         ; $46
 	const CRED_SHARON         ; $47
 	const CRED_NOAM           ; $48
-	const CRED_LIJI           ; $49
-	const CRED_NITZAN         ; $4A
-	const CRED_PRET           ; $4B
-	const CRED_FIND_US_AT     ; $4C
-	const CRED_FIND_US_AT_2   ; $4D
-	const CRED_GITHUB_LINK    ; $4E
-	const CRED_GITHUB_LINK_2  ; $4F
+	const CRED_ELBOIM         ; $49
+	const CRED_LIJI           ; $4A
+	const CRED_NITZAN         ; $4B
+	const CRED_PRET           ; $4C
+	const CRED_FIND_US_AT     ; $4D
+	const CRED_FIND_US_AT_2   ; $4E
+	const CRED_GITHUB_LINK    ; $4F
+	const CRED_GITHUB_LINK_2  ; $50
