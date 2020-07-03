@@ -55,11 +55,11 @@ _SaffronCityText10::
 _SaffronCityText11::
 	text "עפתי לפה על"
 	line "הסילונה שלי"
-	cont "כשקראתי על SILPH." ;TODO
+	cont "כשקראתי על סילף."
 
 	para "זה כבר נגמר?"
-	line "פספסתי את"
-	cont "media action." ;TODO
+	line "פספסתי את סערת"
+	cont "התקשורת?"
 	done
 
 _SaffronCityText12::
@@ -68,7 +68,7 @@ _SaffronCityText12::
 _SaffronCityText13::
 	text "ראיתי את מפקד"
 	line "כנופיית רוקט"
-	cont "בורח מבניין SILPH." ;TODO
+	cont "בורח מבניין סילף."
 	done
 
 _SaffronCityText14::

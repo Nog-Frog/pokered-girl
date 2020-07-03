@@ -19,7 +19,8 @@ _ReceivedHM03Text::
 	text "!@@"
 
 _HM03ExplanationText::
-	text "HM03 זה גלישה!" ;TODO
+	text "30MH הוא המהלך"
+	line "גלישה!"
 
 	para "#ימון יוכל"
 	line "לשאת אותך כמעבורת"

@@ -9,8 +9,8 @@ _CeladonGameCornerText1::
 	done
 
 _CeladonGameCornerText_48d22::
-	text "ברוך הבא לROCKET" ; TODO
-	line "GAME CORNER!" ; TODO
+	text "ברוך הבא למשחקיית"
+	line "רוקט!"
 
 	para "אתה רוצה לקנות"
 	line "אסימונים?"

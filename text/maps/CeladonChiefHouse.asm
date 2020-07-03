@@ -16,7 +16,7 @@ _CeladonHouseText2::
 _CeladonHouseText3::
 	text "אל תיגע"
 	line "בפוסטר שנמצא"
-	cont "GAME CORNERב!" ;TODO
+	cont "במשחקיית רוקט!"
 
 	para "זה לא שמתחבא"
 	line "מאחוריו איזה מתג"

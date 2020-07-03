@@ -10,12 +10,13 @@ _Route16HouseText3::
 
 _ReceivedHM02Text::
 	text "<PLAYER> קיבל"
-	line "HM02!@@" ;TODO
+	line "20MH!@@"
 
 _HM02ExplanationText::
-	text "HM02 זה תעופה." ;TODO
-	line "זה ייקח אותך"
-	cont "חזרה לכל עיירה."
+	text "20MH הוא המהלך"
+	line "תעופה. הוא יקח"
+	cont "אותך חזרה לכל"
+	cont "עיר."
 
 	para "השתמש בזה לטובה!"
 	done

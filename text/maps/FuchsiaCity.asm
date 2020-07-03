@@ -18,14 +18,14 @@ _FuchsiaCityText2::
 	done
 
 _FuchsiaCityText3::
-	text "איפה :ERIK";TODO
-	line "היא ?SARA";TODO
-	cont "אמרה שנפגש כאן."
+	text "אריק: איפה שרה?"
+	line "היא אמרה שכאן"
+	cont "ניפגש."
 	done
 
 _FuchsiaCityText4::
-	text "הזה item ballה";TODO
-	line "שם הוא בעצם"
+	text "הפוכדור שם הוא"
+	line "בכלל לא פריט, אלא"
 	cont "ימון#."
 	done
 
@@ -35,13 +35,13 @@ _FuchsiaCityText5::
 
 _FuchsiaCityText11::
 	text "עיר השושנה"
-	line "היזהרו! זה"
-	cont "Passion Pink!";TODO
+	line "שטפו את עיניכם"
+	cont "בורוד המרהיב!"
 	done
 
 _FuchsiaCityText13::
 	text "משחק ספארי"
-	line "#MON-U-CATCH!";TODO
+	line "תפסו #ימונים!"
 	done
 
 _FuchsiaCityText16::
@@ -50,7 +50,7 @@ _FuchsiaCityText16::
 	done
 
 _FuchsiaCityText17::
-	text "#MON PARADISE";TODO
+	text "גן העדן ל#ימונים"
 	line "איזור הספארי"
 	done
 

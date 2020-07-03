@@ -14,8 +14,8 @@ _ViridianGymText_74ace::
 
 	para "פעם נוספת, אתה"
 	line "תתמודד מול"
-	cont "GIOVANNI, " ;TODO
-	cont "המאמן הטוב מכולם!"
+	cont "אלפרון, המאמן"
+	cont "החזק מכולם!"
 	done
 
 _ViridianGymText_74ad3::
@@ -222,6 +222,6 @@ _ViridianGymText_74bd4::
 
 _ViridianGymText_74bd9::
 	text "לא נכון!"
-	line "GIOVANNI" ;TODO
-	cont "היה מנהל המכון כאן?"
+	line "אלפרון היה מנהיג"
+	cont "המכון של העיר?"
 	done

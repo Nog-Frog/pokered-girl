@@ -32,7 +32,7 @@ _RockTunnel2AfterBattleText3::
 
 _RockTunnel2BattleText4::
 	text "יש לך #ידע?"
-	line "גם אני רוצה אחד!" ;TODO: פוקידע זה זכר או נקבה?
+	line "גם אני רוצה אחד!"
 	done
 
 _RockTunnel2EndBattleText4::
@@ -43,7 +43,7 @@ _RockTunnel2EndBattleText4::
 _RockTunnel2AfterBattleText4::
 	text "כשתסיים עם ה#ידע"
 	line "שלך, אני אוכל"
-	cont "לקבל אותו?" ;TODO: פוקידע זה זכר או נקבה?
+	cont "לקבל אותו?"
 	done
 
 _RockTunnel2BattleText5::

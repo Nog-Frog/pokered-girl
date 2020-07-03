@@ -1,5 +1,5 @@
 _CeladonPokecenterText2::
-	text "# FLUTE מעורר"; TODO
+	text "חליל הקסם מעורר"
 	line "#ימונים בעזרת"
 	cont "מנגינה שרק הם"
 	cont "מסוגלים לשמוע!"

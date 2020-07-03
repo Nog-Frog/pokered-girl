@@ -15,7 +15,8 @@ _CeladonDinerText2::
 
 _CeladonDinerText3::
 	text "פססט! יש מרתף"
-	line "נסתר מתחת לGAME CORNER..." ; TODO
+	line "נסתר מתחת למשחקיית"
+	cont "רוקט...
 	done
 
 _CeladonDinerText4::

@@ -1,6 +1,6 @@
 _SafariZoneRestHouse1Text1::
-	text "SARA: לאן החבר" ; TODO
-	line "שלי, ERIK," ; TODO
+	text "שרה: לאן החבר"
+	line "שלי, אריק,"
 	cont "נעלם?"
 	done
 

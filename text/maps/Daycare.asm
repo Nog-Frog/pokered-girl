@@ -1,5 +1,5 @@
 _DayCareIntroText::
-	text "אני מנהל DAYCARE." ; TODO
+	text "אני מנהל מעון יום."
 	line "תרצה שאגדל את אחד"
 	cont "ה#ימונים שלך?"
 	done

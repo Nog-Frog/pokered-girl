@@ -21,7 +21,7 @@ _Museum2FText3::
 	done
 
 _Museum2FText4::
-	text "אני רוצה PIKACHU!" ; TODO
+	text "אני רוצה צויצוץ!"
 	line "הוא כל כך מתוק!"
 
 	para "ביקשתי מאבא שלי"
@@ -29,7 +29,7 @@ _Museum2FText4::
 	done
 
 _Museum2FText5::
-	text "כן, PIKACHU" ; TODO
+	text "כן, צויצוץ"
 	line "בקרוב, אני מבטיח!"
 	done
 

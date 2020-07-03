@@ -14,7 +14,7 @@ _CeladonCityText2::
 	done
 
 _CeladonCityText3::
-	text "הGAME CORNER" ; TODO
+	text "משחקיית רוקט"
 	line "מזיקה לתדמית של"
 	cont "העיר!"
 	done
@@ -145,12 +145,12 @@ _CeladonCityText16::
 _CeladonCityText17::
 	text "החלפת אסימונים"
 	line "בפרסים!"
-	cont "PRIZE EXCHANGE" ; TODO
+	cont "דלפק הפרסים"
 	done
 
 _CeladonCityText18::
-	text "ROCKET GAME CORNER" ; TODO
-	line "The playground" ; TODO
-	cont "for grown-ups!" ; TODO
+	text "משחקיית רוקט"
+	line "המשחקיה למבוגרים"
+	cont "בלבד!"
 	done
 

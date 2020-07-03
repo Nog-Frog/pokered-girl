@@ -81,8 +81,8 @@ _SafariZoneEntranceText_753eb::
 	cont "שלך נגמר!"
 
 	para "לפני שאתה הולך,"
-	line "פנה מקום"
-	cont "#MON BOX ב" ;TODO
+	line "פנה מקום בתא"
+	cont "ה#ימונים במחשב"
 	cont "ל#ימונים  חדשים!"
 	done
 

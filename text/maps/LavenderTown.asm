@@ -44,7 +44,7 @@ _LavenderTownText4::
 	done
 
 _LavenderTownText5::
-	text "חדש SILPH SCOPE!";TODO
+	text "חדש! משקף סילף!"
 
 	para "הפוך את הבלתי"
 	line "נראה לנראה!"
@@ -53,8 +53,8 @@ _LavenderTownText5::
 	done
 
 _LavenderTownText8::
-	text "LAVENDER VOLUNTEER";TODO
-	line "בית ה#ימון."
+	text "בית המתנדבים"
+	line "בטיפול ב#ימונים"
 	done
 
 _LavenderTownText9::

@@ -11,7 +11,7 @@ _MeetLaprasGuyText::
 	prompt
 
 _HeresYourLaprasText::
-	text "זה LAPRAS. הוא" ; TODO
+	text "זה תכוגית. הוא"
 	line "מאוד נבון."
 
 	para "שמרנו אותו במעבדה,"
@@ -20,7 +20,7 @@ _HeresYourLaprasText::
 
 	para "אני חושב שאתה"
 	line "תהיה מאמן מצוין"
-	cont "עבור LAPRAS!" ; TODO
+	cont "לתכוגית!"
 
 	para "הוא שחיין מצוין"
 	line "הוא יתן לך"
@@ -41,15 +41,15 @@ _LaprasGuySavedText::
 
 _SilphCo7Text_51e00::
 	text "כנופיית רוקט חיפשו"
-	line "את ה MASTER" ; TODO
-	cont "BALL שיכול"; TODO
-	cont "לתפוס כל #ימון!"
+	line "את כדור העל,"
+	cont "שמסוגל לתפוס כל"
+	cont "#ימון!"
 	done
 
 _CanceledMasterBallText::
-	text "אנחנו ביטלנו את"
-	line "פרויקט הMASTER BALL" ; TODO
-	cont "בגלל כנופיית רוקט"
+	text "ביטלנו את פרויקט"
+	line "כדור העל בגלל"
+	cont "כנופיית רוקט!"
 	done
 
 _SilphCo7Text_51e23::
@@ -98,8 +98,8 @@ _SilphCo7AfterBattleText1::
 _SilphCo7BattleText2::
 	text "חה חה חה!"
 
-	para "חשבת שאני רק עובד"
-	line "חברת SILPH פשוט?" ; TODO
+	para "חשבת שאני סתם עובד"
+	line "פשוט בסילף?"
 	done
 
 _SilphCo7EndBattleText2::
@@ -115,7 +115,7 @@ _SilphCo7AfterBattleText2::
 
 _SilphCo7BattleText3::
 	text "אני אחד מארבעת"
-	line "ROCKET BROTHERS!" ; TODO
+	line "אחי כנופיית רוקט!"
 	done
 
 _SilphCo7EndBattleText3::
@@ -162,15 +162,14 @@ _SilphCo7Text_51ec3::
 	cont "לי!"
 
 	para "ראיתי אותך בעיר"
-	line "SAFFRON, אז" ; TODO
-	cont "החלטתי לבדוק"
-	cont "אם השתפרת!"
+	line "הזעפרן, אז החלטתי"
+	cont "לבדוק אם השתפרת!"
 	done
 
 _SilphCo7Text_51ec8::
 	text "הו לא!"
 	line "אז נראה שאתה מוכן"
-	cont "ל BOSS ROCKET!" ; TODO
+	cont "לקרב מול הבוס!"
 	prompt
 
 _SilphCo7Text_51ecd::
@@ -194,10 +193,10 @@ _SilphCo7Text_51ed2::
 	cont "את חוזקם"
 	cont "ואיך הם מתפתחים!"
 
-	para "אני הולך אל"
-	line "#ימונים ליגת ה"
-	cont "כדי לנצח את"
-	cont "הELITE FOUR!" ; TODO
+	para "אני הולך לליגת"
+	line "ה#ימון כדי"
+	cont "לנצח את הרביעיה"
+	cont "העילית."
 
 	para "אני אהפוך אל"
 	line "מאמן הפוקימונים"

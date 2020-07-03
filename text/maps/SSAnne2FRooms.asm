@@ -67,8 +67,8 @@ _SSAnne9BattleText2::
 	done
 
 _SSAnne9EndBattleText2::
-	text "I'm"
-	line "all out!";TODO
+	text "אני"
+	line "גמור לחלוטין!"
 	prompt
 
 _SSAnne9AfterBattleText2::

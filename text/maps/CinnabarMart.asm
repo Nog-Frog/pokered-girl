@@ -1,6 +1,6 @@
 _CinnabarMartText2::
 	text "אין להם X"
-	line "ATTACK? זה מעולה" ; TODO
+	line "התקפה? זה מעולה"
 	cont "לקרבות!"
 	done
 

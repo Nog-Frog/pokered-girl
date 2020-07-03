@@ -11,7 +11,7 @@ _Route14EndBattleText1::
 	prompt
 
 _Route14AfterBattleText1::
-	text "יש לך כמה HM" ;TODO
+	text "יש לך כמה MH"
 	line "נכון? #ימון"
 	cont "לעולם לא יוכל"
 	cont "לשכוח מהלכים"
@@ -38,7 +38,7 @@ _Route14BattleText3::
 	text "יש מבצעים על MT-ים"
 	line "בעיר האביב!"
 	cont "אבל, רק למעט"
-	cont "אנשים יש HMs!" ;TODO
+	cont "אנשים יש MH-ים!"
 	done
 
 _Route14EndBattleText3::
@@ -146,8 +146,9 @@ _Route14AfterBattleText9::
 	line "את ה#ימונים שלך"
 	cont "לכל כך חזקים!"
 
-	para "Might is right!" ;TODO
-	line "ואתה יודע את זה!"
+	para "כוח חזק ממוח,"
+	line "ורואים שאתה יודע"
+	cont "את זה!"
 	done
 
 _Route14BattleText10::

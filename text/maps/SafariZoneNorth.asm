@@ -27,7 +27,7 @@ _SafariZoneNorthText6::
 _SafariZoneNorthText7::
 	text "טיפים למאמנים"
 
-	para "זכה ב HM חינמי" ;TODO
-	line "עבור מציאת"
-	cont "הבית הסודי!"
+	para "הפרס עבור מציאת"
+	line "הביתן הסודי הוא"
+	cont "MH!"
 	done

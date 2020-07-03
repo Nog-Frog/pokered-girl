@@ -81,8 +81,8 @@ _Route12AfterBattleText4::
 	done
 
 _Route12BattleText5::
-	text "The FISHING FOOL";TODO
-	line "נגד ילד ה#ימון!"
+	text "הדייג השוטה נגד"
+	line "ילד ה#ימון!"
 	done
 
 _Route12EndBattleText5::
@@ -134,5 +134,6 @@ _Route12Text11::
 	done
 
 _Route12Text12::
-	text "SPORT FISHING AREA";TODO
+	text "אזור מותר לדיג"
+	line "ספורטיבי"
 	done
