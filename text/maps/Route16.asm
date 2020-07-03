@@ -92,7 +92,7 @@ _Route16Text7::
 	done
 
 _Route16Text10::
-	text "נוחרפל התעורר!"
+	text "שמנמנם התעורר!"
 
 	para "הוא תקף בהתקף"
 	line "זעם עצבני!"
@@ -100,7 +100,7 @@ _Route16Text10::
 
 _Route16Text11::
 	text "בפיהוק גדול,"
-	line "נוחרפל שב אל"
+	line "שמנמנם שב אל"
 	cont "ההרים!"
 	done
 

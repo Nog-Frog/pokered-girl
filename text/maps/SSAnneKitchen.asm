@@ -25,7 +25,7 @@ _SSAnne6Text4::
 	done
 
 _SSAnne6Text5::
-	text "שמעת על נוחרפל?"
+	text "שמעת על שמנמנם?"
 
 	para "כל מה שהוא עושה זה"
 	line "לאכול ולישון!"

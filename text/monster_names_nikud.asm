@@ -621,8 +621,8 @@ AerodactylNikud:
 	db "אוירוֹנף@"
 	db "⁃․   +@"
 SnorlaxNikud:
-	db "נוֹחרפּל@"
-  	db "  ‥╎+@"
+	db "שׁמנמנם@"
+  	db "+‥⁃╎‥@"
 ArticunoNikud:
 	db "קיפּאוֹואחד@"
 	db "․ +  ⁃ ⁃@"

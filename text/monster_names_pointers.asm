@@ -409,7 +409,7 @@ GolbatName:
 MewtwoName:
 	db "תשני@"
 SnorlaxName:
-	db "נוחרפל@"
+	db "שמנמנם@"
 MagikarpName:
 	db "קסמנון@"
 MukName:

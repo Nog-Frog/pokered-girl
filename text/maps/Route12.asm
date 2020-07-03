@@ -4,14 +4,14 @@ _Route12Text1::
 	done
 
 _Route12Text13::
-	text "נוחרפל התעורר!"
+	text "שמנמנם התעורר!"
 
 	para "הוא תקף בזעף"
 	line "ממורמר!"
 	done
 
 _Route12Text14::
-	text "נוחרפל נרגע!"
+	text "שמנמנם נרגע!"
 	line "בעודו מפהק"
 	cont "פיהוק ענק הוא"
 	cont "חזר להרים!"
