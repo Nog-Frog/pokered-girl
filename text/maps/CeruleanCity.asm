@@ -77,7 +77,7 @@ _ReceivedTM28Text2::
 	line "לי עכשיו! ביי!@@"
 
 _TM28NoRoomText::
-	text "תפנה קצת מקום"
+	text "פנה קצת מקום"
 	line "כדי לקחת את זה!"
 
 	para "אסור לי לברוח עד"

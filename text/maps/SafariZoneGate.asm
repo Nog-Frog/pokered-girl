@@ -33,7 +33,7 @@ _SafariZoneEntranceText_75360::
 	done
 
 _SafariZoneEntranceText_75365::
-	text "אוקיי! תבוא שוב!"
+	text "אוקיי! בוא שוב!"
 	done
 
 _SafariZoneEntranceText_7536a::
@@ -57,7 +57,7 @@ _SafariZoneEntranceText_753c0::
 _SafariZoneEntranceText_753c5::
 	text "יצאת עם שלל"
 	line "טוב?"
-	cont "תבוא שוב!"
+	cont "בוא שוב!"
 	done
 
 _SafariZoneEntranceText_753e6::

@@ -123,7 +123,7 @@ _VermilionGymFanPreBattleText::
 
 	para "#ימוני מים"
 	line "ותעופה נמצאים"
-	cont "בסכנה כאן! תיזהר"
+	cont "בסכנה כאן! היזהר"
 	cont "ממהלכי השיתוק"
 	cont "שלו!"
 

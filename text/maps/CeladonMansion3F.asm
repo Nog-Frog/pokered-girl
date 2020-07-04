@@ -31,7 +31,7 @@ _GameDesignerText::
 	cont "אבל אל תתיאש!"
 
 	para "כשתסיים,"
-	line "תחזור לספר לי!"
+	line "חזור לספר לי!"
 	done
 
 _CompletedDexText::

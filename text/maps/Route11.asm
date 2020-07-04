@@ -131,6 +131,6 @@ _Route11AfterBattleText8::
 	done
 
 _Route11BattleText9::
-	text "תיזהר מחוטי חשמל"
+	text "היזהר מחוטי חשמל"
 	line "חשופים!"
 	done

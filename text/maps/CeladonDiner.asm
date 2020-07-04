@@ -29,7 +29,7 @@ _CeladonDinerText4::
 	done
 
 _CeladonDinerText_491a7::
-	text "קדימה! תצחק עלי!"
+	text "קדימה! צחק עלי!"
 
 	para "הפסדתי כל מה"
 	line "שהיה לי!"
@@ -50,7 +50,7 @@ _ReceivedCoinCaseText::
 	text "!@@"
 
 _CoinCaseNoRoomText::
-	text "תפנה קצת מקום"
+	text "פנה קצת מקום"
 	line "בתיק שלך!"
 	done
 

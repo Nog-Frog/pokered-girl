@@ -14,7 +14,7 @@ _Route16AfterBattleText1::
 
 _Route16BattleText2::
 	text "אופניים מגניבות!"
-	line "תביא לי אותן!"
+	line "תן לי אותן!"
 	done
 
 _Route16EndBattleText2::
@@ -22,7 +22,7 @@ _Route16EndBattleText2::
 	prompt
 
 _Route16AfterBattleText2::
-	text "תשכח מזה, מי"
+	text "שכח מזה, מי"
 	line "צריך את האופניים"
 	cont "שלך!"
 	done

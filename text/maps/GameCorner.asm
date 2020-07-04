@@ -165,7 +165,7 @@ _CeladonGameCornerText_48e98::
 _CeladonGameCornerText_48ece::
 	text "אני שומר על הפוסטר"
 	line "הזה!"
-	cont "תסתלק מכאן, או ש!"
+	cont "'סתלק מכאן, או ש!"
 	done
 
 _CeladonGameCornerText_48ed3::

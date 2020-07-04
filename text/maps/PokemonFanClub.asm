@@ -108,7 +108,7 @@ ExplainBikeVoucherText::
 	done
 
 FanClubNoStoryText::
-	text "הו, תחזור"
+	text "הו, חזור"
 	line "כשתרצה"
 	cont "לשמוע את הסיפור"
 	cont "שלי!"

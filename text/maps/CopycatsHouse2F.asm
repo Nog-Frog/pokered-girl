@@ -40,7 +40,7 @@ _TM31ExplanationText1::
 	line "המהלך האהוב עלי,"
 	cont "חקיינות!"
 
-	para "תשתמש בו על"
+	para "השתמש בו על"
 	line "#ימון חזק!@@"
 
 _TM31ExplanationText2::

@@ -9,7 +9,7 @@ _RockTunnel1EndBattleText1::
 	prompt
 
 _RockTunnel1AfterBattleText1::
-	text "תיזהר מנחשוהם!"
+	text "היזהר מנחשוהם!"
 	line "הוא יכול למחוץ"
 	cont "אותך!"
 	done

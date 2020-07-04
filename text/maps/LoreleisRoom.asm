@@ -29,7 +29,7 @@ _LoreleiEndBattleText::
 
 _LoreleiAfterBattleText::
 	text "אתה טוב משחשבתי!"
-	line "תתקדם לחדר הבא!"
+	line "המשך לחדר הבא!"
 
 	para "עוד לא ראית את כל"
 	line "מה שיש לליגת"

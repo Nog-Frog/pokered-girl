@@ -10,7 +10,7 @@ _SilphCo5AfterBattleText4::
 	done
 
 _SilphCo5BattleText5::
-	text "תפגין קצת כבוד"
+	text "הפגן קצת כבוד"
 	line "כלפי כנופיית"
 	cont "רוקט!"
 	done

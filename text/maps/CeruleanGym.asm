@@ -18,7 +18,7 @@ _CeruleanGymText_5c7c3::
 	text "11MT מלמד את"
 	line "המהלך קרן בועות!"
 
-	para "תשתמש בו על"
+	para "השתמש בו על"
 	line "#ימונים ימיים!"
 	done
 
@@ -52,7 +52,7 @@ _ReceivedTM11Text::
 	line "11MT!@@"
 
 _CeruleanGymText_5c7d3::
-	text "תפנה מקום בתיק"
+	text "פנה מקום בתיק"
 	line "שלך!"
 	done
 

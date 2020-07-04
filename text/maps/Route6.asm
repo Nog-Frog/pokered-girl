@@ -15,7 +15,7 @@ _Route6AfterBattleText1::
 	done
 
 _Route6BattleText2::
-	text "תסלח לי!"
+	text "סלח לי!"
 	line "זו שיחה פרטית!"
 	done
 

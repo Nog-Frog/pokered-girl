@@ -35,7 +35,7 @@ _FightingDojoText_5ce98::
 _FightingDojoText_5ce9d::
 	text "הו!"
 
-	para "תישאר כאן"
+	para "הישאר כאן"
 	line "להתאמן בקארטה!"
 	done
 

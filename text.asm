@@ -3085,7 +3085,7 @@ _WrongMon1Text::
 	text "!"
 
 	para "אם אתה משיג אחד,"
-	line "תחזור לכאן!"
+	line "חזור לכאן!"
 	done
 
 _Thanks1Text::
@@ -3124,7 +3124,7 @@ _WrongMon2Text::
 	text "."
 
 	para "כשתתפוס אחד,"
-	line "תזכור לחזור"
+	line "זכור לחזור"
 	cont "ולהחליף אותו."
 	done
 

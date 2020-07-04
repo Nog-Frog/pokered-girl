@@ -41,7 +41,7 @@ _VictoryRoad3EndBattleText4::
 _VictoryRoad3AfterBattleText4::
 	text "כל המאמנים פה"
 	line "מיועדים לליגת"
-	cont "ה#ימון! תיזהר!"
+	cont "ה#ימון! היזהר!"
 	done
 
 _VictoryRoad3BattleText5::

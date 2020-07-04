@@ -121,9 +121,8 @@ _Route15AfterBattleText7::
 	done
 
 _Route15BattleText8::
-	text "תעביר לי את כל"
-	line "הכסף שלך כשאתה"
-	cont "מפסיד לי, ילד!"
+	text "כשתפסיד, תן לי את"
+	line "כל הכסף שלך, ילד!"
 	done
 
 _Route15EndBattleText8::

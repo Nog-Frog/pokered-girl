@@ -200,7 +200,7 @@ _CinnabarGymText_75ac2::
 	line "מומחה ב#ימוני"
 	cont "אש!"
 
-	para "תחסל אותו"
+	para "חסל אותו"
 	line "עם סוגי מים!"
 
 	para "וכדאי שתיקח איתך"

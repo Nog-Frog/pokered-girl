@@ -3,7 +3,7 @@ _BillsHouseText_1e865::
 	line "#ימון!"
 	cont "...עובדים עליך!"
 
-	para "תקרא לי הדר!"
+	para "קרא לי הדר!"
 	line "אני #יטורף בדם"
 	cont "ובנשמה!"
 	cont "מה יש לך? אתה לא"
@@ -15,7 +15,7 @@ _BillsHouseText_1e865::
 	cont "שהשתלבתי עם"
 	cont "#ימון!"
 
-	para "תעזור רגע לסחבק!"
+	para "עזור רגע לסחבק!"
 	done
 
 _BillsHouseText_1e86a::
@@ -28,7 +28,7 @@ _BillsHouseText_1e86a::
 
 _BillsHouseText_1e86f::
 	text "מה זאת אומרת לא?"
-	line "נו, תעזור לי רגע"
+	line "נו, עזור לי רגע"
 	cont "אחי, הסתבכתי!"
 
 	para "סבבה אחי? בבקשה?"

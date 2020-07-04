@@ -132,7 +132,7 @@ _Route17AfterBattleText9::
 	done
 
 _Route17BattleText10::
-	text "תתחפף ילד!"
+	text "'תחפף, ילד!"
 	line "אני סחוט!"
 	done
 

@@ -41,7 +41,7 @@ _Route8EndBattleText3::
 	prompt
 
 _Route8AfterBattleText3::
-	text "תשלח את טנפאי"
+	text "שלח את טנפאי"
 	line "ראשון.. ואז.."
 	cont "ו.. ואז.."
 	done

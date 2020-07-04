@@ -87,7 +87,8 @@ _Route3BattleText5::
 	done
 
 _Route3EndBattleText5::
-	text "תהיה נחמד!"
+	text "תתנהג"
+	line "יפה!"
 	prompt
 
 _Route3AfterBattleText5::
