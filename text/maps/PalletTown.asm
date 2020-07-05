@@ -10,9 +10,9 @@ _OakWalksUpText::
 	para "כדאי שיהיו לך"
 	line "#ימונים משלך"
 	cont "שיגנו עליך."
-	cont "יש לי רעיון!"
-
-	para "בוא איתי!"
+	
+	para "יש לי רעיון!"
+	line "בוא איתי!"
 	done
 
 _PalletTownText2::
@@ -41,7 +41,7 @@ _PalletTownText4::
 
 _PalletTownText5::
 	text "העיירה פאלט"
-	line "המסע המגוון"
+	line "המסע הססגוני"
 	cont "שלך עומד להתחיל!"
 	done
 
