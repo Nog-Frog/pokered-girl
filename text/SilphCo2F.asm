@@ -2,7 +2,7 @@ _SilphCo2Text_59ded::
 	text "יייק!"
 	line "לא! די! הצילו!"
 
-	para "אה, אתה לא מכנופית"
+	para "אה, אתה לא מצוות"
 	line "רוקט. חשבתי..."
 	cont "אני מצטערת. הנה,"
 	cont "בבקשה קח את זה!"
@@ -38,12 +38,12 @@ _SilphCo2BattleText1::
 _SilphCo2EndBattleText1::
 	text "איך"
 	line "ידעת שאני חבר"
-	cont "בכנופיית רוקט?"
+	cont "בצוות רוקט?"
 	prompt
 
 _SilphCo2AfterBattleText1::
 	text "אני עובד בסילף"
-	line "וגם חבר בכנופיית"
+	line "וגם חבר בצוות"
 	cont "רוקט!"
 	done
 
@@ -86,5 +86,5 @@ _SilphCo2EndBattleText4::
 
 _SilphCo2AfterBattleText4::
 	text "סילף תתמזג עם"
-	line "כנופיית רוקט!"
+	line "צוות רוקט!"
 	done
