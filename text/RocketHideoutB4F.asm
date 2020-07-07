@@ -39,7 +39,7 @@ _RocketHideout4EndBattleText2::
 
 _RocketHide4AfterBattleText2::
 	text "יש לך משהו"
-	line "נגד כנופיית רוקט?"
+	line "נגד צוות רוקט?"
 	done
 
 _RocketHideout4BattleText3::
