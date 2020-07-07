@@ -7,6 +7,6 @@ _SaffronPokecenterText2::
 _SaffronPokecenterText3::
 	text "סילף בע″מ היא"
 	line "חברה ידועה. זאת"
-	cont "הסיבה שכנופיית"
+	cont "הסיבה שצוות"
 	cont "רוקט נטפלו אליה!"
 	done
