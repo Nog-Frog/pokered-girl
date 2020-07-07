@@ -48,7 +48,7 @@ _SilphCo9AfterBattleText2::
 
 _SilphCo9BattleText3::
 	text "אני אחד מארבעת"
-	line "אחי כנופיית רוקט!"
+	line "אחי צוות רוקט!"
 	done
 
 _SilphCo9EndBattleText3::
