@@ -87,7 +87,7 @@ _MtMoon1EndBattleText7::
 _MtMoon1AfterBattleText7::
 	text "ראיתי אותם! אני"
 	line "בטוח שהם חלק"
-	cont "מכנופיית רוקט!"
+	cont "מצוות רוקט!"
 	done
 
 _MtMoon1BattleText8::
