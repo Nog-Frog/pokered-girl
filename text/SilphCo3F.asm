@@ -26,7 +26,7 @@ _SilphCo3AfterBattleText1::
 	done
 
 _SilphCo3BattleText2::
-	text "אני תומך בכנופיית"
+	text "אני תומך בצוות"
 	line "רוקט יותר מאשר"
 	cont "שאני תומך בסילף!"
 	done
@@ -39,7 +39,7 @@ _SilphCo3EndBattleText2::
 _SilphCo3AfterBattleText2::
 	text "האמפף..."
 
-	para "כנופיית רוקט אמרו"
+	para "צוות רוקט אמרו"
 	line "שאם אני אשתף"
 	cont "פעולה, הם יתנו לי"
 	cont "לחקור #ימונים!"
