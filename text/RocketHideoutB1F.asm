@@ -14,7 +14,7 @@ _RocketHideout1EndBattleText2::
 
 _RocketHideout1AfterBattleTxt2::
 	text "אתה מלכלך"
-	line "על כנופיית רוקט?"
+	line "על צוות רוקט?"
 	done
 
 _RocketHideout1BattleText3::
