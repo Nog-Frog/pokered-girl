@@ -55,14 +55,14 @@ SilphCo7Text_51bc8:
 	ld a, [hl]
 	ld c, a
 	xor a
-	ld [$ffe0], a
+	ld [hUnlockedSilphCoDoors], a
 	pop hl
 .asm_51bd4
 	ld a, [hli]
 	cp $ff
 	jr z, .asm_51bf0
 	push hl
-	ld hl, $ffe0
+	ld hl, hUnlockedSilphCoDoors
 	inc [hl]
 	pop hl
 	cp b
@@ -80,12 +80,12 @@ SilphCo7Text_51bc8:
 	ret
 .asm_51bf0
 	xor a
-	ld [$ffe0], a
+	ld [hUnlockedSilphCoDoors], a
 	ret
 
 SilphCo7Text_51bf4:
 	EventFlagAddress hl, EVENT_SILPH_CO_7_UNLOCKED_DOOR1
-	ld a, [$ffe0]
+	ld a, [hUnlockedSilphCoDoors]
 	and a
 	ret z
 	cp $1
@@ -130,7 +130,7 @@ SilphCo7Script0:
 	ld [wJoyIgnore], a
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 	ld c, BANK(Music_MeetRival)
@@ -140,7 +140,7 @@ SilphCo7Script0:
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $9
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld de, MovementData_51c7d
 	ld a, [wCoordIndex]
@@ -150,7 +150,7 @@ SilphCo7Script0:
 	inc de
 .asm_51c6c
 	ld a, $9
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call MoveSprite
 	ld a, $3
 	jp SilphCo7Text_51c10
@@ -212,14 +212,14 @@ SilphCo7Script4:
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, $9
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	ld a, SPRITE_FACING_UP
 	ld [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	ld a, $f
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 	callba Music_RivalAlternateStart
@@ -230,7 +230,7 @@ SilphCo7Script4:
 	ld de, MovementData_51d1a
 .asm_51d0e
 	ld a, $9
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call MoveSprite
 	ld a, $5
 	jp SilphCo7Text_51c10
@@ -319,7 +319,7 @@ SilphCo7TrainerHeader3:
 
 SilphCo7Text1:
 ; lapras guy
-	TX_ASM
+	text_asm
 	ld a, [wd72e]
 	bit 0, a ; got lapras?
 	jr z, .givelapras
@@ -350,23 +350,23 @@ SilphCo7Text1:
 	jp TextScriptEnd
 
 .MeetLaprasGuyText
-	TX_FAR _MeetLaprasGuyText
-	db "@"
+	text_far _MeetLaprasGuyText
+	text_end
 
 .HeresYourLaprasText
-	TX_FAR _HeresYourLaprasText
-	db "@"
+	text_far _HeresYourLaprasText
+	text_end
 
 .LaprasGuyText
-	TX_FAR _LaprasGuyText
-	db "@"
+	text_far _LaprasGuyText
+	text_end
 
 .LaprasGuySavedText
-	TX_FAR _LaprasGuySavedText
-	db "@"
+	text_far _LaprasGuySavedText
+	text_end
 
 SilphCo7Text2:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	jr nz, .savedsilph
 	ld hl, .rockettext
@@ -379,15 +379,15 @@ SilphCo7Text2:
 	jp TextScriptEnd
 
 .rockettext
-	TX_FAR _SilphCo7Text_51e00
-	db "@"
+	text_far _SilphCo7Text_51e00
+	text_end
 
 .savedtext
-	TX_FAR _CanceledMasterBallText
-	db "@"
+	text_far _CanceledMasterBallText
+	text_end
 
 SilphCo7Text3:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	jr nz, .savedsilph
 	ld hl, .rockettext
@@ -400,15 +400,15 @@ SilphCo7Text3:
 	jp TextScriptEnd
 
 .rockettext
-	TX_FAR _SilphCo7Text_51e23
-	db "@"
+	text_far _SilphCo7Text_51e23
+	text_end
 
 .savedtext
-	TX_FAR _SilphCo7Text_51e28
-	db "@"
+	text_far _SilphCo7Text_51e28
+	text_end
 
 SilphCo7Text4:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_SILPH_CO_GIOVANNI
 	jr nz, .savedsilph
 	ld hl, .rockettext
@@ -421,107 +421,107 @@ SilphCo7Text4:
 	jp TextScriptEnd
 
 .rockettext
-	TX_FAR _SilphCo7Text_51e46
-	db "@"
+	text_far _SilphCo7Text_51e46
+	text_end
 
 .savedtext
-	TX_FAR _SilphCo7Text_51e4b
-	db "@"
+	text_far _SilphCo7Text_51e4b
+	text_end
 
 SilphCo7Text5:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo7TrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo7BattleText1:
-	TX_FAR _SilphCo7BattleText1
-	db "@"
+	text_far _SilphCo7BattleText1
+	text_end
 
 SilphCo7EndBattleText1:
-	TX_FAR _SilphCo7EndBattleText1
-	db "@"
+	text_far _SilphCo7EndBattleText1
+	text_end
 
 SilphCo7AfterBattleText1:
-	TX_FAR _SilphCo7AfterBattleText1
-	db "@"
+	text_far _SilphCo7AfterBattleText1
+	text_end
 
 SilphCo7Text6:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo7TrainerHeader1
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo7BattleText2:
-	TX_FAR _SilphCo7BattleText2
-	db "@"
+	text_far _SilphCo7BattleText2
+	text_end
 
 SilphCo7EndBattleText2:
-	TX_FAR _SilphCo7EndBattleText2
-	db "@"
+	text_far _SilphCo7EndBattleText2
+	text_end
 
 SilphCo7AfterBattleText2:
-	TX_FAR _SilphCo7AfterBattleText2
-	db "@"
+	text_far _SilphCo7AfterBattleText2
+	text_end
 
 SilphCo7Text7:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo7TrainerHeader2
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo7BattleText3:
-	TX_FAR _SilphCo7BattleText3
-	db "@"
+	text_far _SilphCo7BattleText3
+	text_end
 
 SilphCo7EndBattleText3:
-	TX_FAR _SilphCo7EndBattleText3
-	db "@"
+	text_far _SilphCo7EndBattleText3
+	text_end
 
 SilphCo7AfterBattleText3:
-	TX_FAR _SilphCo7AfterBattleText3
-	db "@"
+	text_far _SilphCo7AfterBattleText3
+	text_end
 
 SilphCo7Text8:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo7TrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo7BattleText4:
-	TX_FAR _SilphCo7BattleText4
-	db "@"
+	text_far _SilphCo7BattleText4
+	text_end
 
 SilphCo7EndBattleText4:
-	TX_FAR _SilphCo7EndBattleText4
-	db "@"
+	text_far _SilphCo7EndBattleText4
+	text_end
 
 SilphCo7AfterBattleText4:
-	TX_FAR _SilphCo7AfterBattleText4
-	db "@"
+	text_far _SilphCo7AfterBattleText4
+	text_end
 
 SilphCo7Text9:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo7Text_51ebe
 	call PrintText
 	jp TextScriptEnd
 
 SilphCo7Text_51ebe:
-	TX_FAR _SilphCo7Text_51ebe
-	db "@"
+	text_far _SilphCo7Text_51ebe
+	text_end
 
 SilphCo7Text13:
-	TX_FAR _SilphCo7Text_51ec3
-	db "@"
+	text_far _SilphCo7Text_51ec3
+	text_end
 
 SilphCo7Text14:
-	TX_FAR _SilphCo7Text_51ec8
-	db "@"
+	text_far _SilphCo7Text_51ec8
+	text_end
 
 SilphCo7Text_51ecd:
-	TX_FAR _SilphCo7Text_51ecd
-	db "@"
+	text_far _SilphCo7Text_51ecd
+	text_end
 
 SilphCo7Text15:
-	TX_FAR _SilphCo7Text_51ed2
-	db "@"
+	text_far _SilphCo7Text_51ed2
+	text_end

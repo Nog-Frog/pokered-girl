@@ -75,8 +75,8 @@ OverworldLoopLessDelay::
 	bit 3, a ; start button
 	jr z, .startButtonNotPressed
 ; if START is pressed
-	xor a
-	ld [hSpriteIndexOrTextID], a ; start menu text ID
+	xor a ; TEXT_START_MENU
+	ld [hSpriteIndexOrTextID], a
 	jp .displayDialogue
 .startButtonNotPressed
 	bit 0, a ; A button
@@ -88,7 +88,7 @@ OverworldLoopLessDelay::
 	call IsPlayerCharacterBeingControlledByGame
 	jr nz, .checkForOpponent
 	call CheckForHiddenObjectOrBookshelfOrCardKeyDoor
-	ld a, [$ffeb]
+	ld a, [hItemAlreadyFound]
 	and a
 	jp z, OverworldLoop ; jump if a hidden object or bookshelf was found, but not if a card key door was found
 	call IsSpriteOrSignInFrontOfPlayer
@@ -149,7 +149,7 @@ OverworldLoopLessDelay::
 	bit 7, a ; down button
 	jr z, .checkIfUpButtonIsPressed
 	ld a, 1
-	ld [wSpriteStateData1 + 3], a ; delta Y
+	ld [wSpritePlayerStateData1YStepVector], a
 	ld a, PLAYER_DIR_DOWN
 	jr .handleDirectionButtonPress
 
@@ -157,7 +157,7 @@ OverworldLoopLessDelay::
 	bit 6, a ; up button
 	jr z, .checkIfLeftButtonIsPressed
 	ld a, -1
-	ld [wSpriteStateData1 + 3], a ; delta Y
+	ld [wSpritePlayerStateData1YStepVector], a
 	ld a, PLAYER_DIR_UP
 	jr .handleDirectionButtonPress
 
@@ -165,7 +165,7 @@ OverworldLoopLessDelay::
 	bit 5, a ; left button
 	jr z, .checkIfRightButtonIsPressed
 	ld a, -1
-	ld [wSpriteStateData1 + 5], a ; delta X
+	ld [wSpritePlayerStateData1XStepVector], a
 	ld a, PLAYER_DIR_LEFT
 	jr .handleDirectionButtonPress
 
@@ -173,7 +173,7 @@ OverworldLoopLessDelay::
 	bit 4, a ; right button
 	jr z, .noDirectionButtonsPressed
 	ld a, 1
-	ld [wSpriteStateData1 + 5], a ; delta X
+	ld [wSpritePlayerStateData1XStepVector], a
 
 
 .handleDirectionButtonPress
@@ -762,8 +762,8 @@ HandleBlackOut::
 	call StopMusic
 	ld hl, wd72e
 	res 5, [hl]
-	ld a, Bank(ResetStatusAndHalveMoneyOnBlackout) ; also Bank(SpecialWarpIn) and Bank(SpecialEnterMap)
-	ld [H_LOADEDROMBANK], a
+	ld a, BANK(ResetStatusAndHalveMoneyOnBlackout) ; also BANK(SpecialWarpIn) and BANK(SpecialEnterMap)
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	call ResetStatusAndHalveMoneyOnBlackout
 	call SpecialWarpIn
@@ -772,7 +772,7 @@ HandleBlackOut::
 
 StopMusic::
 	ld [wAudioFadeOutControl], a
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 .wait
@@ -793,8 +793,8 @@ HandleFlyWarpOrDungeonWarp::
 	set 2, [hl] ; fly warp or dungeon warp
 	res 5, [hl] ; forced to ride bike
 	call LeaveMapAnim
-	ld a, Bank(SpecialWarpIn)
-	ld [H_LOADEDROMBANK], a
+	ld a, BANK(SpecialWarpIn)
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	call SpecialWarpIn
 	jp SpecialEnterMap
@@ -867,7 +867,7 @@ IsBikeRidingAllowed::
 	scf
 	ret
 
-INCLUDE "data/bike_riding_tilesets.asm"
+INCLUDE "data/tilesets/bike_riding_tilesets.asm"
 
 ; load the tile pattern data of the current tileset into VRAM
 LoadTilesetTilePatternData::
@@ -1133,7 +1133,7 @@ IsSpriteInFrontOfPlayer::
 	ld d, $10 ; talking range in pixels (normal range)
 IsSpriteInFrontOfPlayer2::
 	lb bc, $3c, $40 ; Y and X position of player sprite
-	ld a, [wSpriteStateData1 + 9] ; direction the player is facing
+	ld a, [wSpritePlayerStateData1FacingDirection]
 .checkIfPlayerFacingUp
 	cp SPRITE_FACING_UP
 	jr nz, .checkIfPlayerFacingDown
@@ -1176,7 +1176,7 @@ IsSpriteInFrontOfPlayer2::
 	and a
 	ret z
 ; if there are sprites
-	ld hl, wSpriteStateData1 + $10
+	ld hl, wSprite01StateData1
 	ld d, a
 	ld e, $01
 .spriteLoop
@@ -1228,7 +1228,7 @@ CollisionCheckOnLand::
 	jr nz, .noCollision ; no collisions when the player's movements are being controlled by the game
 	ld a, [wPlayerDirection] ; the direction that the player is trying to go in
 	ld d, a
-	ld a, [wSpriteStateData1 + 12] ; the player sprite's collision data (bit field) (set in the sprite movement code)
+	ld a, [wSpritePlayerStateData1CollisionData]
 	and d ; check if a sprite is in the direction the player is trying to go
 	jr nz, .collision
 	xor a
@@ -1372,10 +1372,10 @@ TilePairCollisionsWater::
 
 ; this builds a tile map from the tile block map based on the current X/Y coordinates of the player's character
 LoadCurrentMapView::
-	ld a, [H_LOADEDROMBANK]
+	ld a, [hLoadedROMBank]
 	push af
 	ld a, [wTilesetBank] ; tile data ROM bank
-	ld [H_LOADEDROMBANK], a
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a ; switch to ROM bank that contains tile data
 	ld a, [wCurrentTileBlockMapViewPointer] ; address of upper left corner of current map view
 	ld e, a
@@ -1424,18 +1424,18 @@ LoadCurrentMapView::
 	dec b
 	jr nz, .rowLoop
 	ld hl, wTileMapBackup
-	ld bc, $0000
+	ld bc, $0
 .adjustForYCoordWithinTileBlock
 	ld a, [wYBlockCoord]
 	and a
 	jr z, .adjustForXCoordWithinTileBlock
-	ld bc, $0030
+	ld bc, $30
 	add hl, bc
 .adjustForXCoordWithinTileBlock
 	ld a, [wXBlockCoord]
 	and a
 	jr z, .copyToVisibleAreaBuffer
-	ld bc, $0002
+	ld bc, $2
 	add hl, bc
 .copyToVisibleAreaBuffer
 	coord de, 0, 0 ; base address for the tiles that are directly transferred to VRAM during V-blank
@@ -1457,14 +1457,14 @@ LoadCurrentMapView::
 	dec b
 	jr nz, .rowLoop2
 	pop af
-	ld [H_LOADEDROMBANK], a
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a ; restore previous ROM bank
 	ret
 
 AdvancePlayerSprite::
-	ld a, [wSpriteStateData1 + 3] ; delta Y
+	ld a, [wSpritePlayerStateData1YStepVector]
 	ld b, a
-	ld a, [wSpriteStateData1 + 5] ; delta X
+	ld a, [wSpritePlayerStateData1XStepVector]
 	ld c, a
 	ld hl, wWalkCounter ; walking animation counter
 	dec [hl]
@@ -1596,7 +1596,7 @@ AdvancePlayerSprite::
 	call MoveTileBlockMapPointerNorth
 .updateMapView
 	call LoadCurrentMapView
-	ld a, [wSpriteStateData1 + 3] ; delta Y
+	ld a, [wSpritePlayerStateData1YStepVector]
 	cp $01
 	jr nz, .checkIfMovingNorth2
 ; if moving south
@@ -1609,7 +1609,7 @@ AdvancePlayerSprite::
 	call ScheduleNorthRowRedraw
 	jr .scrollBackgroundAndSprites
 .checkIfMovingEast2
-	ld a, [wSpriteStateData1 + 5] ; delta X
+	ld a, [wSpritePlayerStateData1XStepVector]
 	cp $01
 	jr nz, .checkIfMovingWest2
 ; if moving east
@@ -1621,9 +1621,9 @@ AdvancePlayerSprite::
 ; if moving west
 	call ScheduleWestColumnRedraw
 .scrollBackgroundAndSprites
-	ld a, [wSpriteStateData1 + 3] ; delta Y
+	ld a, [wSpritePlayerStateData1YStepVector]
 	ld b, a
-	ld a, [wSpriteStateData1 + 5] ; delta X
+	ld a, [wSpritePlayerStateData1XStepVector]
 	ld c, a
 	sla b
 	sla c
@@ -1635,7 +1635,7 @@ AdvancePlayerSprite::
 	ld [hSCX], a ; update background scroll X
 ; shift all the sprites in the direction opposite of the player's motion
 ; so that the player appears to move relative to them
-	ld hl, wSpriteStateData1 + $14
+	ld hl, wSprite01StateData1YPixels
 	ld a, [wNumSprites] ; number of sprites
 	and a ; are there any sprites?
 	jr z, .done
@@ -1739,7 +1739,7 @@ ScheduleSouthRowRedraw::
 	ld l, a
 	ld a, [wMapViewVRAMPointer + 1]
 	ld h, a
-	ld bc, $0200
+	ld bc, $200
 	add hl, bc
 	ld a, h
 	and $03
@@ -1835,7 +1835,7 @@ DrawTileBlock::
 	ld a, [de]
 	ld [hl], a
 	inc de
-	ld bc, $0015
+	ld bc, $15
 	add hl, bc
 	pop bc
 	dec c
@@ -1845,8 +1845,8 @@ DrawTileBlock::
 ; function to update joypad state and simulate button presses
 JoypadOverworld::
 	xor a
-	ld [wSpriteStateData1 + 3], a
-	ld [wSpriteStateData1 + 5], a
+	ld [wSpritePlayerStateData1YStepVector], a
+	ld [wSpritePlayerStateData1XStepVector], a
 	call RunMapScript
 	call Joypad
 	ld a, [wFlags_D733]
@@ -1920,7 +1920,7 @@ CollisionCheckOnWater::
 	jp nz, .noCollision ; return and clear carry if button presses are being simulated
 	ld a, [wPlayerDirection] ; the direction that the player is trying to go in
 	ld d, a
-	ld a, [wSpriteStateData1 + 12] ; the player sprite's collision data (bit field) (set in the sprite movement code)
+	ld a, [wSpritePlayerStateData1CollisionData]
 	and d ; check if a sprite is in the direction the player is trying to go
 	jr nz, .checkIfNextTileIsPassable ; bug?
 	ld hl, TilePairCollisionsWater
@@ -2168,8 +2168,8 @@ LoadMapHeader::
 	ld [wNumSprites], a ; save the number of sprites
 	push hl
 ; zero C110-C1FF and C210-C2FF
-	ld hl, wSpriteStateData1 + $10
-	ld de, wSpriteStateData2 + $10
+	ld hl, wSprite01StateData1
+	ld de, wSprite01StateData2
 	xor a
 	ld b, $f0
 .zeroSpriteDataLoop
@@ -2179,8 +2179,8 @@ LoadMapHeader::
 	dec b
 	jr nz, .zeroSpriteDataLoop
 ; initialize all C100-C1FF sprite entries to disabled (other than player's)
-	ld hl, wSpriteStateData1 + $12
-	ld de, $0010
+	ld hl, wSprite01StateData1ImageIndex
+	ld de, $10
 	ld c, $0f
 .disableSpriteEntriesLoop
 	ld [hl], $ff
@@ -2188,7 +2188,7 @@ LoadMapHeader::
 	dec c
 	jr nz, .disableSpriteEntriesLoop
 	pop hl
-	ld de, wSpriteStateData1 + $10
+	ld de, wSprite01StateData1
 	ld a, [wNumSprites] ; number of sprites
 	and a ; are there any sprites?
 	jp z, .finishUp ; if there are no sprites, skip the rest
@@ -2291,10 +2291,10 @@ LoadMapHeader::
 	ld a, [wCurMap]
 	ld c, a
 	ld b, $00
-	ld a, [H_LOADEDROMBANK]
+	ld a, [hLoadedROMBank]
 	push af
 	ld a, BANK(MapSongBanks)
-	ld [H_LOADEDROMBANK], a
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	ld hl, MapSongBanks
 	add hl, bc
@@ -2304,7 +2304,7 @@ LoadMapHeader::
 	ld a, [hl]
 	ld [wMapMusicROMBank], a ; music 2
 	pop af
-	ld [H_LOADEDROMBANK], a
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	ret
 
@@ -2322,7 +2322,7 @@ CopyMapConnectionHeader::
 
 ; function to load map data
 LoadMapData::
-	ld a, [H_LOADEDROMBANK]
+	ld a, [hLoadedROMBank]
 	push af
 	call DisableLCD
 	ld a, $98
@@ -2377,7 +2377,7 @@ LoadMapData::
 	call PlayDefaultMusicFadeOutCurrent
 .restoreRomBank
 	pop af
-	ld [H_LOADEDROMBANK], a
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	ret
 
@@ -2388,15 +2388,15 @@ SwitchToMapRomBank::
 	push bc
 	ld c, a
 	ld b, $00
-	ld a, Bank(MapHeaderBanks)
+	ld a, BANK(MapHeaderBanks)
 	call BankswitchHome ; switch to ROM bank 3
 	ld hl, MapHeaderBanks
 	add hl, bc
 	ld a, [hl]
-	ld [$ffe8], a ; save map ROM bank
+	ld [hMapROMBank], a ; save map ROM bank
 	call BankswitchBack
-	ld a, [$ffe8]
-	ld [H_LOADEDROMBANK], a
+	ld a, [hMapROMBank]
+	ld [hLoadedROMBank], a
 	ld [MBC1RomBank], a ; switch to map ROM bank
 	pop bc
 	pop hl

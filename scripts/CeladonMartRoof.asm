@@ -54,7 +54,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 12
+	ld a, 1
 	ld [wTopMenuItemX], a
 	ld a, [wFilteredBagItemsCount]
 	dec a
@@ -90,7 +90,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld hl, CeladonMartRoofText_48515
 	call PrintText
 	call RemoveItemByIDBank12
-	lb bc, TM_49, 1
+	lb bc, TM_TRI_ATTACK, 1
 	call GiveItem
 	jr nc, .bagFull
 	ld hl, ReceivedTM49Text
@@ -103,7 +103,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld hl, CeladonMartRoofText_48504
 	call PrintText
 	call RemoveItemByIDBank12
-	lb bc, TM_48, 1
+	lb bc, TM_ROCK_SLIDE, 1
 	call GiveItem
 	jr nc, .bagFull
 	ld hl, CeladonMartRoofText_4850a
@@ -116,7 +116,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld hl, CeladonMartRoofText_484f3
 	call PrintText
 	call RemoveItemByIDBank12
-	lb bc, TM_13, 1
+	lb bc, TM_ICE_BEAM, 1
 	call GiveItem
 	jr nc, .bagFull
 	ld hl, CeladonMartRoofText_484f9
@@ -134,54 +134,54 @@ RemoveItemByIDBank12:
 	jpba RemoveItemByID
 
 CeladonMartRoofText_484ee:
-	TX_FAR _CeladonMartRoofText_484ee
-	db "@"
+	text_far _CeladonMartRoofText_484ee
+	text_end
 
 CeladonMartRoofText_484f3:
-	TX_FAR _CeladonMartRoofText_484f3
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_484f3
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_484f9:
-	TX_FAR _CeladonMartRoofText_484f9
-	TX_SFX_ITEM_1
-	TX_FAR _CeladonMartRoofText_484fe
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_484f9
+	sound_get_item_1
+	text_far _CeladonMartRoofText_484fe
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_48504:
-	TX_FAR _CeladonMartRoofText_48504
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_48504
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_4850a:
-	TX_FAR _CeladonMartRoofText_4850a
-	TX_SFX_ITEM_1
-	TX_FAR _CeladonMartRoofText_4850f
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_4850a
+	sound_get_item_1
+	text_far _CeladonMartRoofText_4850f
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_48515:
-	TX_FAR _CeladonMartRoofText_48515
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_48515
+	text_waitbutton
+	text_end
 
 ReceivedTM49Text:
-	TX_FAR _ReceivedTM49Text
-	TX_SFX_ITEM_1
-	TX_FAR _CeladonMartRoofText_48520
-	TX_WAIT
-	db "@"
+	text_far _ReceivedTM49Text
+	sound_get_item_1
+	text_far _CeladonMartRoofText_48520
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_48526:
-	TX_FAR _CeladonMartRoofText_48526
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_48526
+	text_waitbutton
+	text_end
 
 CeladonMartRoofText_4852c:
-	TX_FAR _CeladonMartRoofText_4852c
-	TX_WAIT
-	db "@"
+	text_far _CeladonMartRoofText_4852c
+	text_waitbutton
+	text_end
 
 CeladonMartRoofScript_PrintDrinksInBag:
 	ld hl, wFilteredBagItems
@@ -194,7 +194,7 @@ CeladonMartRoofScript_PrintDrinksInBag:
 	push hl
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 11, 2
+	coord hl, 2, 2
 	ld a, [hItemCounter]
 	ld bc, SCREEN_WIDTH * 2
 	call AddNTimes
@@ -214,11 +214,11 @@ CeladonMartRoof_TextPointers:
 	dw CeladonMartRoofText6
 
 CeladonMartRoofText1:
-	TX_FAR _CeladonMartRoofText1
-	db "@"
+	text_far _CeladonMartRoofText1
+	text_end
 
 CeladonMartRoofText2:
-	TX_ASM
+	text_asm
 	call CeladonMartRoofScript_GetDrinksInBag
 	ld a, [wFilteredBagItemsCount]
 	and a
@@ -240,16 +240,16 @@ CeladonMartRoofText2:
 	jp TextScriptEnd
 
 CeladonMartRoofText3:
-	TX_FAR _CeladonMartRoofText_48598
-	db "@"
+	text_far _CeladonMartRoofText_48598
+	text_end
 
 CeladonMartRoofText4:
-	TX_FAR _CeladonMartRoofText4
-	db "@"
+	text_far _CeladonMartRoofText4
+	text_end
 
 CeladonMartRoofText5:
-	TX_VENDING_MACHINE
+	script_vending_machine
 
 CeladonMartRoofText6:
-	TX_FAR _CeladonMartRoofText6
-	db "@"
+	text_far _CeladonMartRoofText6
+	text_end

@@ -1,5 +1,4 @@
-const_value = 0
-
+	const_def
 	const CRED_VERSION        ; $00
 	const CRED_TAJIRI         ; $01
 	const CRED_TA_OOTA        ; $02
@@ -80,3 +79,11 @@ const_value = 0
 	const CRED_FIND_US_AT_2   ; $4E
 	const CRED_GITHUB_LINK    ; $4F
 	const CRED_GITHUB_LINK_2  ; $50
+
+const_value = $FA
+	const CRED_THE_END       ; $FA
+	const CRED_COPYRIGHT     ; $FB
+	const CRED_TEXT          ; $FC
+	const CRED_TEXT_FADE     ; $FD
+	const CRED_TEXT_MON      ; $FE
+	const CRED_TEXT_FADE_MON ; $FF

@@ -24,26 +24,26 @@ SSAnne2Script0:
 	ld hl, CoordsData_61411
 	call ArePlayerCoordsInArray
 	ret nc
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 	ld c, BANK(Music_MeetRival)
 	ld a, MUSIC_MEET_RIVAL
 	call PlayMusic
 	ld a, [wCoordIndex]
-	ld [$ffdb], a
+	ld [hSavedCoordIndex], a
 	ld a, HS_SS_ANNE_2F_RIVAL
 	ld [wMissableObjectIndex], a
 	predef ShowObject
 	call Delay3
 	ld a, $2
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	xor a
 	ld [hJoyHeld], a
 	ld a, $f0
 	ld [wJoyIgnore], a
-	ld a, [$ffdb]
+	ld a, [hSavedCoordIndex]
 	cp $2
 	jr nz, .asm_61400
 	ld de, MovementData_6140c
@@ -83,7 +83,7 @@ SSAnne2Script_61416:
 .asm_61427
 	ld [hSpriteFacingDirection], a
 	ld a, $2
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	jp SetSpriteFacingDirectionAndDelay
 
 SSAnne2Script1:
@@ -132,7 +132,7 @@ SSAnne2Script2:
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $2
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld a, [wXCoord]
 	cp $25
@@ -143,9 +143,9 @@ SSAnne2Script2:
 	ld de, MovementData_614b7
 .asm_6149a
 	ld a, $2
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call MoveSprite
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 	callba Music_RivalAlternateStart
@@ -184,11 +184,11 @@ SSAnne2F_TextPointers:
 	dw SSAnne2Text3
 
 SSAnne2Text1:
-	TX_FAR _SSAnne2Text1
-	db "@"
+	text_far _SSAnne2Text1
+	text_end
 
 SSAnne2Text2:
-	TX_ASM
+	text_asm
 	ld hl, SSAnneRivalBeforeBattleText
 	call PrintText
 	ld hl, wd72d
@@ -200,17 +200,17 @@ SSAnne2Text2:
 	jp TextScriptEnd
 
 SSAnneRivalBeforeBattleText:
-	TX_FAR _SSAnneRivalBeforeBattleText
-	db "@"
+	text_far _SSAnneRivalBeforeBattleText
+	text_end
 
 SSAnneRivalDefeatedText:
-	TX_FAR _SSAnneRivalDefeatedText
-	db "@"
+	text_far _SSAnneRivalDefeatedText
+	text_end
 
 SSAnneRivalWonText:
-	TX_FAR _SSAnneRivalWonText
-	db "@"
+	text_far _SSAnneRivalWonText
+	text_end
 
 SSAnne2Text3:
-	TX_FAR _SSAnneRivalCaptainText
-	db "@"
+	text_far _SSAnneRivalCaptainText
+	text_end

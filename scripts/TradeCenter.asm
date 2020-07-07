@@ -8,31 +8,31 @@ TradeCenter_Script:
 .next
 	ld [hSpriteFacingDirection], a
 	ld a, $1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call SetSpriteFacingDirection
 	ld hl, wd72d
 	bit 0, [hl]
 	set 0, [hl]
 	ret nz
-	ld hl, wSpriteStateData2 + $14
+	ld hl, wSprite01StateData2MapY
 	ld a, $8
 	ld [hli], a
 	ld a, $a
 	ld [hl], a
 	ld a, SPRITE_FACING_LEFT
-	ld [wSpriteStateData1 + $19], a
+	ld [wSprite01StateData1FacingDirection], a
 	ld a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	ret z
 	ld a, $7
-	ld [wSpriteStateData2 + $15], a
+	ld [wSprite01StateData2MapX], a
 	ld a, SPRITE_FACING_RIGHT
-	ld [wSpriteStateData1 + $19], a
+	ld [wSprite01StateData1FacingDirection], a
 	ret
 
 TradeCenter_TextPointers:
 	dw TradeCenterText1
 
 TradeCenterText1:
-	TX_FAR _TradeCenterText1
-	db "@"
+	text_far _TradeCenterText1
+	text_end

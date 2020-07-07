@@ -50,7 +50,7 @@ CeruleanCityScript0:
 .asm_194e6
 	ld [wPlayerMovingDirection], a
 	ld a, b
-	ld [wSpriteStateData1 + 2 * $10 + $9], a
+	ld [wSprite02StateData1FacingDirection], a
 	call Delay3
 	ld a, $2
 	ld [hSpriteIndexOrTextID], a
@@ -64,7 +64,7 @@ CeruleanCityScript0:
 	ld a, [wWalkBikeSurfState]
 	and a
 	jr z, .asm_19512
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 .asm_19512
@@ -79,9 +79,9 @@ CeruleanCityScript0:
 	cp $14
 	jr z, .asm_19535
 	ld a, $1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	ld a, $5
-	ld [H_SPRITEDATAOFFSET], a
+	ld [hSpriteDataOffset], a
 	call GetPointerWithinSpriteStateData2
 	ld [hl], $19
 .asm_19535
@@ -90,7 +90,7 @@ CeruleanCityScript0:
 	predef ShowObject
 	ld de, CeruleanCityMovement1
 	ld a, $1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call MoveSprite
 	ld a, $1
 	ld [wCeruleanCityCurScript], a
@@ -114,7 +114,7 @@ CeruleanCityMovement1:
 
 CeruleanCityScript_1955d:
 	ld a, 1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	xor a ; SPRITE_FACING_DOWN
 	ld [hSpriteFacingDirection], a
 	jp SetSpriteFacingDirectionAndDelay ; face object
@@ -171,12 +171,12 @@ CeruleanCityScript2:
 	ld a, $1
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
-	ld a, $ff
+	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
 	callba Music_RivalAlternateStart
 	ld a, $1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld a, [wXCoord]
 	cp $14
@@ -187,7 +187,7 @@ CeruleanCityScript2:
 	ld de, CeruleanCityMovement3
 .asm_195f3
 	ld a, $1
-	ld [H_SPRITEINDEX], a
+	ld [hSpriteIndex], a
 	call MoveSprite
 	ld a, $3
 	ld [wCeruleanCityCurScript], a
@@ -247,7 +247,7 @@ CeruleanCity_TextPointers:
 	dw CeruleanCityText17
 
 CeruleanCityText1:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_CERULEAN_RIVAL
 	; do pre-battle text
 	jr z, .PreBattleText
@@ -262,23 +262,23 @@ CeruleanCityText1:
 	jp TextScriptEnd
 
 CeruleanCityText_19668:
-	TX_FAR _CeruleanCityText_19668
-	db "@"
+	text_far _CeruleanCityText_19668
+	text_end
 
 CeruleanCityText_1966d:
-	TX_FAR _CeruleanCityText_1966d
-	db "@"
+	text_far _CeruleanCityText_1966d
+	text_end
 
 CeruleanCityText_19672:
-	TX_FAR _CeruleanCityText_19672
-	db "@"
+	text_far _CeruleanCityText_19672
+	text_end
 
 CeruleanCityText_19677:
-	TX_FAR _CeruleanCityText_19677
-	db "@"
+	text_far _CeruleanCityText_19677
+	text_end
 
 CeruleanCityText2:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_CERULEAN_ROCKET_THIEF
 	jr nz, .asm_4ca20
 	ld hl, CeruleanCityText_196d9
@@ -299,7 +299,7 @@ CeruleanCityText2:
 .asm_4ca20
 	ld hl, CeruleanCityText_196f3
 	call PrintText
-	lb bc, TM_28, 1
+	lb bc, TM_DIG, 1
 	call GiveItem
 	jr c, .Success
 	ld hl, TM28NoRoomText
@@ -315,47 +315,47 @@ CeruleanCityText2:
 	jp TextScriptEnd
 
 CeruleanCityText_196d9:
-	TX_FAR _CeruleanCityText_196d9
-	db "@"
+	text_far _CeruleanCityText_196d9
+	text_end
 
 ReceivedTM28Text:
-	TX_FAR _ReceivedTM28Text
-	TX_SFX_ITEM_1
-	TX_FAR _ReceivedTM28Text2
-	TX_WAIT
-	db "@"
+	text_far _ReceivedTM28Text
+	sound_get_item_1
+	text_far _ReceivedTM28Text2
+	text_waitbutton
+	text_end
 
 TM28NoRoomText:
-	TX_FAR _TM28NoRoomText
-	db "@"
+	text_far _TM28NoRoomText
+	text_end
 
 CeruleanCityText_196ee:
-	TX_FAR _CeruleanCityText_196ee
-	db "@"
+	text_far _CeruleanCityText_196ee
+	text_end
 
 CeruleanCityText_196f3:
-	TX_FAR _CeruleanCityText_196f3
-	db "@"
+	text_far _CeruleanCityText_196f3
+	text_end
 
 CeruleanCityText3:
-	TX_FAR _CeruleanCityText3
-	db "@"
+	text_far _CeruleanCityText3
+	text_end
 
 CeruleanCityText4:
-	TX_FAR _CeruleanCityText4
-	db "@"
+	text_far _CeruleanCityText4
+	text_end
 
 CeruleanCityText5:
-	TX_FAR _CeruleanCityText5
-	db "@"
+	text_far _CeruleanCityText5
+	text_end
 
 CeruleanCityText11:
 CeruleanCityText6:
-	TX_FAR _CeruleanCityText6
-	db "@"
+	text_far _CeruleanCityText6
+	text_end
 
 CeruleanCityText7:
-	TX_ASM
+	text_asm
 	ld a, [hRandomAdd]
 	cp 180
 	jr c, .asm_e9fc9
@@ -375,19 +375,19 @@ CeruleanCityText7:
 	jp TextScriptEnd
 
 CeruleanCityText_19730:
-	TX_FAR _CeruleanCityText_19730
-	db "@"
+	text_far _CeruleanCityText_19730
+	text_end
 
 CeruleanCityText_19735:
-	TX_FAR _CeruleanCityText_19735
-	db "@"
+	text_far _CeruleanCityText_19735
+	text_end
 
 CeruleanCityText_1973a:
-	TX_FAR _CeruleanCityText_1973a
-	db "@"
+	text_far _CeruleanCityText_1973a
+	text_end
 
 CeruleanCityText8:
-	TX_ASM
+	text_asm
 	ld a, [hRandomAdd]
 	cp 180
 	jr c, .asm_e28da
@@ -413,41 +413,41 @@ CeruleanCityText8:
 	jp TextScriptEnd
 
 CeruleanCityText_1976f:
-	TX_FAR _CeruleanCityText_1976f
-	db "@"
+	text_far _CeruleanCityText_1976f
+	text_end
 
 CeruleanCityText_19774:
-	TX_FAR _CeruleanCityText_19774
-	db "@"
+	text_far _CeruleanCityText_19774
+	text_end
 
 CeruleanCityText_19779:
-	TX_FAR _CeruleanCityText_19779
-	db "@"
+	text_far _CeruleanCityText_19779
+	text_end
 
 CeruleanCityText_1977e:
-	TX_FAR _CeruleanCityText_1977e
-	db "@"
+	text_far _CeruleanCityText_1977e
+	text_end
 
 CeruleanCityText9:
-	TX_FAR _CeruleanCityText9
-	db "@"
+	text_far _CeruleanCityText9
+	text_end
 
 CeruleanCityText10:
-	TX_FAR _CeruleanCityText10
-	db "@"
+	text_far _CeruleanCityText10
+	text_end
 
 CeruleanCityText12:
-	TX_FAR _CeruleanCityText12
-	db "@"
+	text_far _CeruleanCityText12
+	text_end
 
 CeruleanCityText13:
-	TX_FAR _CeruleanCityText13
-	db "@"
+	text_far _CeruleanCityText13
+	text_end
 
 CeruleanCityText16:
-	TX_FAR _CeruleanCityText16
-	db "@"
+	text_far _CeruleanCityText16
+	text_end
 
 CeruleanCityText17:
-	TX_FAR _CeruleanCityText17
-	db "@"
+	text_far _CeruleanCityText17
+	text_end

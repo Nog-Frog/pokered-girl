@@ -45,14 +45,14 @@ SilphCo2Script_59d43:
 	ld a, [hl]
 	ld c, a
 	xor a
-	ld [$ffe0], a
+	ld [hUnlockedSilphCoDoors], a
 	pop hl
 .asm_59d4f
 	ld a, [hli]
 	cp $ff
 	jr z, .asm_59d6b
 	push hl
-	ld hl, $ffe0
+	ld hl, hUnlockedSilphCoDoors
 	inc [hl]
 	pop hl
 	cp b
@@ -70,12 +70,12 @@ SilphCo2Script_59d43:
 	ret
 .asm_59d6b
 	xor a
-	ld [$ffe0], a
+	ld [hUnlockedSilphCoDoors], a
 	ret
 
 SilphCo2Script_59d6f:
 	EventFlagAddress hl, EVENT_SILPH_CO_2_UNLOCKED_DOOR1
-	ld a, [$ffe0]
+	ld a, [hUnlockedSilphCoDoors]
 	and a
 	ret z
 	cp $1
@@ -137,12 +137,12 @@ SilphCo2TrainerHeader3:
 	db $ff
 
 SilphCo2Text1:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_GOT_TM36
 	jr nz, .asm_59de4
 	ld hl, SilphCo2Text_59ded
 	call PrintText
-	lb bc, TM_36, 1
+	lb bc, TM_SELFDESTRUCT, 1
 	call GiveItem
 	ld hl, TM36NoRoomText
 	jr nc, .asm_59de7
@@ -156,90 +156,90 @@ SilphCo2Text1:
 	jp TextScriptEnd
 
 SilphCo2Text_59ded:
-	TX_FAR _SilphCo2Text_59ded
-	db "@"
+	text_far _SilphCo2Text_59ded
+	text_end
 
 ReceivedTM36Text:
-	TX_FAR _ReceivedTM36Text
-	TX_SFX_ITEM_1
-	db "@"
+	text_far _ReceivedTM36Text
+	sound_get_item_1
+	text_end
 
 TM36ExplanationText:
-	TX_FAR _TM36ExplanationText
-	db "@"
+	text_far _TM36ExplanationText
+	text_end
 
 TM36NoRoomText:
-	TX_FAR _TM36NoRoomText
-	db "@"
+	text_far _TM36NoRoomText
+	text_end
 
 SilphCo2Text2:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo2TrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo2Text3:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo2TrainerHeader1
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo2Text4:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo2TrainerHeader2
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo2Text5:
-	TX_ASM
+	text_asm
 	ld hl, SilphCo2TrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 
 SilphCo2BattleText1:
-	TX_FAR _SilphCo2BattleText1
-	db "@"
+	text_far _SilphCo2BattleText1
+	text_end
 
 SilphCo2EndBattleText1:
-	TX_FAR _SilphCo2EndBattleText1
-	db "@"
+	text_far _SilphCo2EndBattleText1
+	text_end
 
 SilphCo2AfterBattleText1:
-	TX_FAR _SilphCo2AfterBattleText1
-	db "@"
+	text_far _SilphCo2AfterBattleText1
+	text_end
 
 SilphCo2BattleText2:
-	TX_FAR _SilphCo2BattleText2
-	db "@"
+	text_far _SilphCo2BattleText2
+	text_end
 
 SilphCo2EndBattleText2:
-	TX_FAR _SilphCo2EndBattleText2
-	db "@"
+	text_far _SilphCo2EndBattleText2
+	text_end
 
 SilphCo2AfterBattleText2:
-	TX_FAR _SilphCo2AfterBattleText2
-	db "@"
+	text_far _SilphCo2AfterBattleText2
+	text_end
 
 SilphCo2BattleText3:
-	TX_FAR _SilphCo2BattleText3
-	db "@"
+	text_far _SilphCo2BattleText3
+	text_end
 
 SilphCo2EndBattleText3:
-	TX_FAR _SilphCo2EndBattleText3
-	db "@"
+	text_far _SilphCo2EndBattleText3
+	text_end
 
 SilphCo2AfterBattleText3:
-	TX_FAR _SilphCo2AfterBattleText3
-	db "@"
+	text_far _SilphCo2AfterBattleText3
+	text_end
 
 SilphCo2BattleText4:
-	TX_FAR _SilphCo2BattleText4
-	db "@"
+	text_far _SilphCo2BattleText4
+	text_end
 
 SilphCo2EndBattleText4:
-	TX_FAR _SilphCo2EndBattleText4
-	db "@"
+	text_far _SilphCo2EndBattleText4
+	text_end
 
 SilphCo2AfterBattleText4:
-	TX_FAR _SilphCo2AfterBattleText4
-	db "@"
+	text_far _SilphCo2AfterBattleText4
+	text_end

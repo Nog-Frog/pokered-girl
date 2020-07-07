@@ -6,12 +6,12 @@ Route2Gate_TextPointers:
 	dw Route2GateText2
 
 Route2GateText1:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_GOT_HM05
 	jr nz, .asm_5d60d
 	ld a, 10 ; pokemon needed
 	ld [hOaksAideRequirement], a
-	ld a, HM_05 ; oak's aide reward
+	ld a, HM_FLASH ; oak's aide reward
 	ld [hOaksAideRewardItem], a
 	ld [wd11e], a
 	call GetItemName
@@ -31,9 +31,9 @@ Route2GateText1:
 	jp TextScriptEnd
 
 Route2GateText_5d616:
-	TX_FAR _Route2GateText_5d616
-	db "@"
+	text_far _Route2GateText_5d616
+	text_end
 
 Route2GateText2:
-	TX_FAR _Route2GateText2
-	db "@"
+	text_far _Route2GateText2
+	text_end

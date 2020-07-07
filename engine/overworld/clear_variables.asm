@@ -1,9 +1,9 @@
 ClearVariablesOnEnterMap::
-	ld a, SCREEN_HEIGHT_PIXELS
+	ld a, SCREEN_HEIGHT_PX
 	ld [hWY], a
 	ld [rWY], a
 	xor a
-	ld [H_AUTOBGTRANSFERENABLED], a
+	ld [hAutoBGTransferEnabled], a
 	ld [wStepCounter], a
 	ld [wLoneAttackNo], a
 	ld [hJoyPressed], a

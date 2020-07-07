@@ -6,7 +6,7 @@ HandleLedges::
 	and a ; OVERWORLD
 	ret nz
 	predef GetTileAndCoordsInFrontOfPlayer
-	ld a, [wSpriteStateData1 + 9]
+	ld a, [wSpritePlayerStateData1FacingDirection]
 	ld b, a
 	aCoord 8, 9
 	ld c, a
@@ -54,7 +54,7 @@ HandleLedges::
 	call PlaySound
 	ret
 
-INCLUDE "data/ledge_tiles.asm"
+INCLUDE "data/tilesets/ledge_tiles.asm"
 
 LoadHoppingShadowOAM:
 	ld hl, vChars1 + $7f0

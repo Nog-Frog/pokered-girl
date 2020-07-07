@@ -17,10 +17,10 @@ CeruleanGymScript_5c6d0:
 	jp LoadGymLeaderAndCityName
 
 Gym2CityName:
-	db "עיר הטורקיז@"
+	db "CERULEAN CITY@"
 
 Gym2LeaderName:
-	db "טל@"
+	db "MISTY@"
 
 CeruleanGymScript_5c6ed:
 	xor a
@@ -47,7 +47,7 @@ CeruleanGymScript_5c70d:
 	ld [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_MISTY
-	lb bc, TM_11, 1
+	lb bc, TM_BUBBLEBEAM, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, $6
@@ -100,7 +100,7 @@ CeruleanGymTrainerHeader1:
 	db $ff
 
 CeruleanGymText1:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_MISTY
 	jr z, .beginBattle
 	CheckEventReuseA EVENT_GOT_TM11
@@ -121,7 +121,7 @@ CeruleanGymText1:
 	ld hl, CeruleanGymText_5c7d8
 	ld de, CeruleanGymText_5c7d8
 	call SaveEndBattleTextPointers
-	ld a, [H_SPRITEINDEX]
+	ld a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
@@ -135,70 +135,70 @@ CeruleanGymText1:
 	jp TextScriptEnd
 
 CeruleanGymText_5c7be:
-	TX_FAR _CeruleanGymText_5c7be
-	db "@"
+	text_far _CeruleanGymText_5c7be
+	text_end
 
 CeruleanGymText_5c7c3:
-	TX_FAR _CeruleanGymText_5c7c3
-	db "@"
+	text_far _CeruleanGymText_5c7c3
+	text_end
 
 CeruleanGymText5:
-	TX_FAR _CeruleanGymText_5c7c8
-	db "@"
+	text_far _CeruleanGymText_5c7c8
+	text_end
 
 CeruleanGymText6:
-	TX_FAR _ReceivedTM11Text
-	TX_SFX_ITEM_1
-	db "@"
+	text_far _ReceivedTM11Text
+	sound_get_item_1
+	text_end
 
 CeruleanGymText7:
-	TX_FAR _CeruleanGymText_5c7d3
-	db "@"
+	text_far _CeruleanGymText_5c7d3
+	text_end
 
 CeruleanGymText_5c7d8:
-	TX_FAR _CeruleanGymText_5c7d8
-	TX_SFX_KEY_ITEM ; actually plays the second channel of SFX_BALL_POOF due to the wrong music bank being loaded
-	TX_BLINK
-	db "@"
+	text_far _CeruleanGymText_5c7d8
+	sound_get_key_item ; actually plays the second channel of SFX_BALL_POOF due to the wrong music bank being loaded
+	text_promptbutton
+	text_end
 
 CeruleanGymText2:
-	TX_ASM
+	text_asm
 	ld hl, CeruleanGymTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
 CeruleanGymBattleText1:
-	TX_FAR _CeruleanGymBattleText1
-	db "@"
+	text_far _CeruleanGymBattleText1
+	text_end
 
 CeruleanGymEndBattleText1:
-	TX_FAR _CeruleanGymEndBattleText1
-	db "@"
+	text_far _CeruleanGymEndBattleText1
+	text_end
 
 CeruleanGymAfterBattleText1:
-	TX_FAR _CeruleanGymAfterBattleText1
-	db "@"
+	text_far _CeruleanGymAfterBattleText1
+	text_end
 
 CeruleanGymText3:
-	TX_ASM
+	text_asm
 	ld hl, CeruleanGymTrainerHeader1
 	call TalkToTrainer
 	jp TextScriptEnd
 
 CeruleanGymBattleText2:
-	TX_FAR _CeruleanGymBattleText2
-	db "@"
+	text_far _CeruleanGymBattleText2
+	text_end
 
 CeruleanGymEndBattleText2:
-	TX_FAR _CeruleanGymEndBattleText2
-	db "@"
+	text_far _CeruleanGymEndBattleText2
+	text_end
 
 CeruleanGymAfterBattleText2:
-	TX_FAR _CeruleanGymAfterBattleText2
-	db "@"
+	text_far _CeruleanGymAfterBattleText2
+	text_end
 
 CeruleanGymText4:
-	TX_ASM
+	text_asm
 	CheckEvent EVENT_BEAT_MISTY
 	jr nz, .asm_5c821
 	ld hl, CeruleanGymText_5c82a
@@ -211,9 +211,9 @@ CeruleanGymText4:
 	jp TextScriptEnd
 
 CeruleanGymText_5c82a:
-	TX_FAR _CeruleanGymText_5c82a
-	db "@"
+	text_far _CeruleanGymText_5c82a
+	text_end
 
 CeruleanGymText_5c82f:
-	TX_FAR _CeruleanGymText_5c82f
-	db "@"
+	text_far _CeruleanGymText_5c82f
+	text_end
