@@ -14,7 +14,7 @@ _SaffronCityText3::
 
 _SaffronCityText4::
 	text "עיר הזעפרן שייכת"
-	line "לכנופיית רוקט!"
+	line "לצוות רוקט!"
 	done
 
 _SaffronCityText5::
@@ -35,14 +35,14 @@ _SaffronCityText7::
 	done
 
 _SaffronCityText8::
-	text "הבסת את כנופיית"
+	text "הבסת את צוות"
 	line "רוקט לגמרי לבד?"
 	cont "זה מדהים!"
 	done
 
 _SaffronCityText9::
-	text "כן! כנופיית"
-	line "רוקט נעלמה!"
+	text "כן! צוות"
+	line "רוקט נעלם!"
 	cont "זה בטוח לצאת"
 	cont "החוצה שוב!"
 	done
@@ -68,7 +68,7 @@ _SaffronCityText12::
 
 _SaffronCityText13::
 	text "ראיתי את מפקד"
-	line "כנופיית רוקט"
+	line "צוות רוקט"
 	cont "בורח מבניין סילף."
 	done
 
