@@ -1,7 +1,7 @@
 _RocketHideout3BattleText2::
 	text "תפסיק להתערב"
 	line "בעניינים של"
-	cont "כנופיית רוקט!"
+	cont "צוות רוקט!"
 	done
 
 _RocketHideout3EndBattleText2::
