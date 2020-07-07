@@ -1,5 +1,5 @@
 _CeruleanTrashedText_1d6ab::
-	text "כנופיית רוקט"
+	text "צוות רוקט"
 	line "העלובים האלה!"
 
 	para "הסתכל מה הם עשו"
@@ -24,14 +24,14 @@ _CeruleanTrashedText_1d6b0::
 	done
 
 _CeruleanHouseTrashedText2::
-	text "כנופיית רוקט בטח"
+	text "צוות רוקט בטח"
 	line "מנסים לחפור לעצמם"
 	cont "בורות מלאים"
 	cont "בצרות!"
 	done
 
 _CeruleanHouseTrashedText3::
-	text "כנופיית רוקט"
+	text "צוות רוקט"
 	line "השאירו כאן דרך"
 	cont "מילוט!"
 	done
