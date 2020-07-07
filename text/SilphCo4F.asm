@@ -4,12 +4,12 @@ _SilphCo4Text_19de0::
 	done
 
 _SilphCo4Text_19de5::
-	text "הא? כנופיית רוקט"
+	text "הא? צוות רוקט"
 	line "ברחו?"
 	done
 
 _SilphCo4BattleText2::
-	text "כנופיית רוקט"
+	text "צוות רוקט"
 	line "השתלטו על סילף!"
 	done
 
