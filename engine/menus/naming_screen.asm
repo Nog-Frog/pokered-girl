@@ -349,18 +349,19 @@ PrintAlphabet:
 	jr nz, .lowercase
 	ld de, HebrewAlphabet
 .lowercase
-	coord hl, 1, 5
+	coord hl, 17, 5
 	lb bc, 5, 9 ; 5 rows, 9 columns
 .outerLoop
 	push bc
 .innerLoop
 	ld a, [de]
-	ld [hli], a
-	inc hl
+	ld [hld], a
+	dec hl
 	inc de
 	dec c
 	jr nz, .innerLoop
-	ld bc, SCREEN_WIDTH + 2
+	; ld bc, SCREEN_WIDTH - 2
+	ld bc, (SCREEN_WIDTH * 3) - 2
 	add hl, bc
 	pop bc
 	dec b
