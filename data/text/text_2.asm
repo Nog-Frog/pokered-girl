@@ -1,4 +1,4 @@
-_AIBattleWithdrawText::
+_MaleAIBattleWithdrawText::
 	text_ram wTrainerName
 	text " החזיר"
 	line "את @"
@@ -6,13 +6,33 @@ _AIBattleWithdrawText::
 	text "לכדור!"
 	prompt
 
-_AIBattleUseItemText::
+_FemaleAIBattleWithdrawText::
 	text_ram wTrainerName
-	text ""
+	text " החזירה"
+	line "את @"
+	text_ram wEnemyMonNick
+	text "לכדור!"
+	prompt
+
+_MaleAIBattleUseItemText::
+	text_ram wTrainerName
+	text "@"
 	line "השתמש"
 	cont "ב@"
 	text_ram wcd6d
-	text ""
+	text "@"
+	cont "על @"
+	text_ram wEnemyMonNick
+	text "!"
+	prompt
+
+_FemaleAIBattleUseItemText::
+	text_ram wTrainerName
+	text "@"
+	line "השתמשה"
+	cont "ב@"
+	text_ram wcd6d
+	text "@"
 	cont "על @"
 	text_ram wEnemyMonNick
 	text "!"
@@ -917,7 +937,7 @@ _LinkBattleLostText::
 	text "!"
 	prompt
 
-_TrainerAboutToUseText::
+_MaleTrainerAboutToUseText::
 	text_ram wTrainerName
 	text " עומד"
 	line "לשלוח"
@@ -929,10 +949,31 @@ _TrainerAboutToUseText::
 	line "יחליף #ימון?"
 	done
 
-_TrainerSentOutText::
+_FemaleTrainerAboutToUseText::
+	text_ram wTrainerName
+	text " עומדת"
+	line "לשלוח"
+	cont"@"
+	text_ram wEnemyMonNick
+	text "!"
+
+	para "האם <PLAYER>"
+	line "יחליף #ימון?"
+	done
+
+_MaleTrainerSentOutText::
 	text "@"
 	text_ram wTrainerName
 	text " שלח"
+	line "את @"
+	text_ram wEnemyMonNick
+	text "!"
+	done
+
+_FemaleTrainerSentOutText::
+	text "@"
+	text_ram wTrainerName
+	text " שלחה"
 	line "את @"
 	text_ram wEnemyMonNick
 	text "!"

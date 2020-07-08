@@ -1374,7 +1374,13 @@ EnemySendOutFirstMon:
 	ld a, [wOptions]
 	bit 6, a
 	jr nz, .next4
-	ld hl, TrainerAboutToUseText
+	; For gendered pronouns
+	ld a, [wPronounGender]
+	bit 4, a
+	ld hl, MaleTrainerAboutToUseText
+	jr nz, .male
+	ld hl, FemaleTrainerAboutToUseText
+.male
 	call PrintText
 	coord hl, 0, 7
 	lb bc, 8, 4
@@ -1417,7 +1423,13 @@ EnemySendOutFirstMon:
 	ld b, SET_PAL_BATTLE
 	call RunPaletteCommand
 	call GBPalNormal
-	ld hl, TrainerSentOutText
+	; For gendered pronouns
+	ld a, [wPronounGender]
+	bit 4, a
+	ld hl, MaleTrainerSentOutText
+	jr nz, .male2
+	ld hl, FemaleTrainerSentOutText
+.male2
 	call PrintText
 	ld a, [wEnemyMonSpecies2]
 	ld [wcf91], a
@@ -1441,12 +1453,20 @@ EnemySendOutFirstMon:
 	call SaveScreenTilesToBuffer1
 	jp SwitchPlayerMon
 
-TrainerAboutToUseText:
-	text_far _TrainerAboutToUseText
+MaleTrainerAboutToUseText:
+	text_far _MaleTrainerAboutToUseText
 	text_end
 
-TrainerSentOutText:
-	text_far _TrainerSentOutText
+FemaleTrainerAboutToUseText:
+	text_far _FemaleTrainerAboutToUseText
+	text_end
+
+MaleTrainerSentOutText:
+	text_far _MaleTrainerSentOutText
+	text_end
+
+FemaleTrainerSentOutText:
+	text_far _FemaleTrainerSentOutText
 	text_end
 
 ; tests if the player has any pokemon that are not fainted
