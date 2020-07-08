@@ -259,7 +259,7 @@ _CinnabarPokecenterGuyText::
 	cont "שבוטלה."
 
 	para "אפשר לעכב את"
-	line "ההתפתחות עד אחריs"
+	line "ההתפתחות עד אחרי"
 	cont "שה#ימון למד"
 	cont "עוד מהלכים."
 	done
@@ -267,12 +267,12 @@ _CinnabarPokecenterGuyText::
 _SaffronCityPokecenterGuyText1::
 	text "הלוואי שהרביעיה"
 	line "העילית יבואו"
-	cont "לכסח לכנופיית"
+	cont "לכסח לצוות"
 	cont "רוקט את הצורה!"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "כנופיית רוקט "
+	text "צוות רוקט"
 	line "הסתלקו! אנחנו"
 	cont "שוב יכולים ללכת"
 	cont "ברחובות בלי פחד!"
