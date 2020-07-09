@@ -8,7 +8,7 @@ _UGPathRoute7EntranceUnusedText_5d773::
 	done
 
 _UGPathRoute7EntranceUnusedText_5d778::
-	text "לכנופיית רוקט"
+	text "לצוות רוקט"
 	line "יש מקום מסתור"
 	cont "בעיר האביב?"
 	done
