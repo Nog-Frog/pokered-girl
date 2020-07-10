@@ -213,7 +213,7 @@ DisplayNamingScreen:
 	cp $5 ; "ED" row
 	jr nz, .didNotPressED
 	ld a, [wTopMenuItemX]
-	cp $12 ; "ED" column
+	cp $2 ; "ED" column
 	jr z, .pressedStart
 .didNotPressED
 	ld a, [wCurrentMenuItem]
