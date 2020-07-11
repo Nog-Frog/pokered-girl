@@ -54,8 +54,8 @@ _PewterCityText_1942c::
 
 _PewterCityText_19431::
 	text "אני מרסס דוחה כדי"
-	line "להרחיק #ימוני פרא"
-	cont "מהגינה שלי!"
+	line "להרחיק #ימוני"
+	cont "פרא מהגינה שלי!"
 	done
 
 _PewterCityText_1945d::
