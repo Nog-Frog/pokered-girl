@@ -88,13 +88,13 @@ _PewterCityText7::
 	line "נצפתה גונבת"
 	cont "מאובנים מהר הירח!"
 	cont "אם יש בידיכם מידע"
-	cont "שיסיע לתפוס את"
+	cont "שיסייע לתפוס את"
 	cont "הגנבים, צרו קשר"
 	cont "עם משטרת הכספית!"
 	done
 
 _PewterCityText10::
-	text "מוזיאון למדע"
+	text "מוזיאון המדע"
 	line "עיר הכספית"
 	done
 
