@@ -11,7 +11,7 @@ _CopycatsHouse1FText2::
 
 	para "כישורי החקיינות"
 	line "שלה זיכו אותה"
-	cont "בכינוי ″חקיינית″!"
+	cont "בכינוי ”חקיינית”!"
 	done
 
 _CopycatsHouse1FText3::

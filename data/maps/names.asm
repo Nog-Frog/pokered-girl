@@ -96,7 +96,7 @@ DiglettsCaveName:
 RocketHQName:
 	db "מפקדת רוקט@" ; ROCKET HQ
 SilphCoName:
-	db "סילף בע″מ@" ; SILPH CO.
+	db "סילף בע”מ@" ; SILPH CO.
 PokemonMansionName:
 	db "אחוזת ה<PKMN>@" ;  MANSION
 SafariZoneName:

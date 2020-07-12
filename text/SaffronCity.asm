@@ -132,7 +132,7 @@ _SaffronCityText21::
 	done
 
 _SaffronCityText22::
-	text "סילף בע″מ"
+	text "סילף בע”מ"
 	line "בניין משרדים"
 	done
 

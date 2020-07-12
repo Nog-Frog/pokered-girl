@@ -11,7 +11,7 @@ _Lab1Text1::
 
 _Lab1Text2::
 	text "תמונה של מייסד"
-	line "המעבדה, ד″ר דרדר!" 
+	line "המעבדה, ד”ר דרדר!" 
 	done
 
 _Lab1Text3::
@@ -21,7 +21,7 @@ _Lab1Text3::
 
 _Lab1Text4::
 	text "מעבדת ה#ימון"
-	line "חדר מו″פ"
+	line "חדר מו”פ"
 	done
 
 _Lab1Text5::

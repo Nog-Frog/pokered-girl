@@ -509,7 +509,7 @@ TMNotebookText::
 	line "שניתנים לשימוש"
 	cont "חוזר."
 
-	para "סילף בע″מ.@"
+	para "סילף בע”מ.@"
 	text_end
 
 _TurnPageText::

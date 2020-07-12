@@ -172,7 +172,7 @@ _Route13Text12::
 	para "השתמש בכפתור"
 	line "TCELES כדי להחליף"
 	cont "בין פריטים בחלון"
-	cont "″פריטים″!"
+	cont "”פריטים”!"
 	done
 
 _Route13Text13::
