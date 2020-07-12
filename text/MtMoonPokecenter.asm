@@ -8,12 +8,12 @@ _MtMoonPokecenterText1::
 	done
 
 _MtMoonPokecenterText3::
-	text "כנופיית רוקט"
-	line "תוקפת את"
+	text "צוות רוקט"
+	line "תוקף את"
 	cont "אזרחי עיר"
 	cont "הטורקיז..."
 
-	para "כנופיית רוקט"
+	para "צוות רוקט"
 	line "תמיד בכותרות!" 
 	done
 

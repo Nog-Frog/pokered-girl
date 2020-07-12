@@ -87,7 +87,7 @@ _CeladonCityText8::
 
 _CeladonCityText9::
 	text "אל תעמוד בדרכם"
-	line "של כנופיית רוקט!"
+	line "של צוות רוקט!"
 	done
 
 _CeladonCityText10::

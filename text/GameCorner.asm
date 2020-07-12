@@ -51,8 +51,8 @@ _CeladonGameCornerText3::
 	text "אל תספר לאף אחד."
 
 	para "השמועה אומרת"
-	line "שכנופיית רוקט"
-	cont "מנהלת את המקום."
+	line "שצוות רוקט"
+	cont "מנהל את המקום."
 	done
 
 _CeladonGameCornerText4::

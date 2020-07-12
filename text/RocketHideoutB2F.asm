@@ -10,7 +10,7 @@ _RocketHideout2EndBattleText2::
 	prompt
 
 _RocketHideout2AfterBattleTxt2::
-	text "במפקדה של כנופיית"
+	text "במפקדה של צוות"
 	line "רוקט יש 4 קומות"
 	cont "מרתף. האם תצליח"
 	cont "להגיע לבוס?"

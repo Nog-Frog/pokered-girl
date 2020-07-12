@@ -3,7 +3,7 @@ _ViridianGymText_74ace::
 	line "המחבוא שלי!"
 
 	para "תכננתי להחיות"
-	line "את כנופיית"
+	line "את צוות"
 	cont "רוקט כאן!"
 
 	para "אבל, אתה תפסת"
@@ -31,8 +31,8 @@ _ViridianGymText_74ad9::
 	text "לאחר שהובסתי,"
 	line "אני לא יכול"
 	cont "להסתכל לפקודיי!"
-	cont "בעיניים! כנופיית"
-	cont "רוקט חוסלה לנצח!"
+	cont "בעיניים! צוות"
+	cont "רוקט חוסל לנצח!"
 
 	para "אקדיש את חיי"
 	line "ללימודי #ימונים!"
@@ -189,7 +189,7 @@ _ViridianGymAfterBattleText7::
 	done
 
 _ViridianGymBattleText8::
-	text "מכוןהברקת היה"
+	text "מכון הברקת היה"
 	line "סגור הרבה זמן,"
 	cont "אבל עכשיו המנהל"
 	cont "שלנו חזר!"

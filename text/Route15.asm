@@ -116,8 +116,8 @@ _Route15EndBattleText7::
 _Route15AfterBattleText7::
 	text "חיים רק פעם אחת,"
 	line "אז אני חי כמו"
-	cont "עבריין! כנופיית"
-	cont "רוקט שולטת!"
+	cont "עבריין! צוות"
+	cont "רוקט שולט!"
 	done
 
 _Route15BattleText8::

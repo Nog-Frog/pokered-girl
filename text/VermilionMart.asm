@@ -4,7 +4,7 @@ _VermilionMartText2::
 	cont "ב#ימונים כדי"
 	cont "לבצע פשעים."
 
-	para "כנופיית רוקט"
+	para "צוות רוקט"
 	line "סוחרים ב#ימונים"
 	cont "נדירים."
 

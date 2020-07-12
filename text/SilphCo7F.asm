@@ -1,6 +1,6 @@
 _MeetLaprasGuyText::
 	text "אה! היי! אתה לא"
-	line "לא מכנופיית רוקט!"
+	line "לא מצוות רוקט!"
 	cont "הגעת להציל אותנו?"
 	cont "ואו, תודה לך!"
 
@@ -28,9 +28,9 @@ _HeresYourLaprasText::
 	done
 
 _LaprasGuyText::
-	text "הבוס של כנופיית"
-	line "רוקט נכנס אל"
-	cont "חדר הישיבות, האם"
+	text "הבוס של צוות רוקט"
+	line "נכנס אל חדר"
+	cont "הישיבות, האם"
 	cont "הנשיא שלנו בסדר?"
 	done
 
@@ -40,7 +40,7 @@ _LaprasGuySavedText::
 	done
 
 _SilphCo7Text_51e00::
-	text "כנופיית רוקט חיפשו"
+	text "צוות רוקט חיפשו"
 	line "את כדור העל,"
 	cont "שמסוגל לתפוס כל"
 	cont "#ימון!"
@@ -49,20 +49,20 @@ _SilphCo7Text_51e00::
 _CanceledMasterBallText::
 	text "ביטלנו את פרויקט"
 	line "כדור העל בגלל"
-	cont "כנופיית רוקט!"
+	cont "צוות רוקט!"
 	done
 
 _SilphCo7Text_51e23::
 	text "זה היה רע מאוד"
-	line "אם כנופיית רוקט"
-	cont "היתה מתשלטת על"
+	line "אם צוות רוקט"
+	cont "היה משתלט על"
 	cont "סילף או על"
 	cont "ה#ימונים שלנו!"
 	done
 
 _SilphCo7Text_51e28::
 	text "ואו! אתה רדפת"
-	line "אחרי כנופיית רוקט"
+	line "אחרי צוות רוקט"
 	cont "בכוחות עצמך?"
 	done
 
@@ -115,7 +115,7 @@ _SilphCo7AfterBattleText2::
 
 _SilphCo7BattleText3::
 	text "אני אחד מארבעת"
-	line "אחי כנופיית רוקט!"
+	line "אחי צוות רוקט!"
 	done
 
 _SilphCo7EndBattleText3::
@@ -156,7 +156,7 @@ _SilphCo7Text_51ec3::
 	cont "אם אני רק"
 	cont "אחכה כאן!"
 
-	para "אני מניח שכנופיית"
+	para "אני מניח שצוות"
 	line "רוקט קצת עיכבו"
 	cont "אותך! לא שזה משנה"
 	cont "לי!"

@@ -1,12 +1,12 @@
 _SilphCo5Text_1a010::
-	text "כנופיית רוקט"
+	text "צוות רוקט"
 	line "נסערים בגלל איזה"
 	cont "פולש. זה אתה,"
 	cont "נכון?"
 	done
 
 _SilphCo5Text_1a015::
-	text "כנופיית רוקט"
+	text "צוות רוקט"
 	line "הסתלקו! אתה"
 	cont "הגיבור שלנו!"
 	cont "תודה!"
@@ -22,7 +22,7 @@ _SilphCo5EndBattleText2::
 	prompt
 
 _SilphCo5AfterBattleText2::
-	text "לריב עם כנופיית"
+	text "לריב עם צוות"
 	line "רוקט זה לא צעד"
 	cont "חכם!"
 	done

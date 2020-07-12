@@ -1,8 +1,8 @@
 _PewterPokecenterText2::
 	text "מה!?"
 
-	para "כנופיית רוקט"
-	line "בהר הירח? מה?"
+	para "צוות רוקט בהר"
+	line "הירח? מה?"
 	cont "אני בשיחת טלפון!"
 
 	para "קישטה! לך!"

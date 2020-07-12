@@ -4,13 +4,13 @@ _LavenderHouse2Text1::
 
 _LavenderHouse2Text_1d9dc::
 	text "אני שונאת את"
-	line "כנופיית רוקט!"
+	line "צוות רוקט!"
 
 	para "רשרש המסכן..."
 
 	para "אמא שלו נהרגה "
 	line "כשהיא ניסתה"
-	cont "להימלט מכנופיית"
+	cont "להימלט מצוות"
 	cont "רוקט!"
 	done
 

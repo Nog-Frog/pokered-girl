@@ -31,13 +31,13 @@ _SilphCo6Text_1a27d::
 	done
 
 _SilphCo6Text_1a28f::
-	text "כנופיית רוקט מנסים"
+	text "צוות רוקט מנסים"
 	line "להשתלט על העולם"
 	cont "!בעזרת #ימונים"
 	done
 
 _SilphCo6Text_1a294::
-	text "כנופיית רוקט נסוגו"
+	text "צוות רוקט נסוגו"
 	line "בזכותך!"
 	done
 
@@ -54,7 +54,7 @@ _SilphCo6Text_1a2ab::
 
 _SilphCo6BattleText2::
 	text "אני אחד מארבעת"
-	line "אחי כנופיית רוקט!"
+	line "אחי צוות רוקט!"
 	done
 
 _SilphCo6EndBattleText2::
@@ -88,7 +88,7 @@ _SilphCo6AfterBattleText3::
 
 _SilphCo6BattleText4::
 	text "איך אתה מעז לבגוד"
-	line "בכנופיית רוקט?"
+	line "בצוות רוקט?"
 	done
 
 _SilphCo6EndBattleText4::
