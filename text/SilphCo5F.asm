@@ -40,7 +40,7 @@ _SilphCo5EndBattleText3::
 
 _SilphCo5AfterBattleText3::
 	text "אנחנו מפתחים את"
-	line "ה#כדור העליון"
+	line "הפוכדור העליון"
 	cont "שיהיה מסוגל ללכוד"
 	cont "כל דבר!"
 	done

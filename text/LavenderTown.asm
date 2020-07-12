@@ -33,7 +33,7 @@ _LavenderTownText3::
 
 	para "אני חושב"
 	line "שאלו רוחות של"
-	cont "ימונים# שכנופית"
+	cont "#ימונים שכנופית"
 	cont "רוקט השמידו."
 	done
 

@@ -16,7 +16,7 @@ _Route12HouseText_564c5::
 	line "לדוג, איש צעיר!"
 
 	para "<PLAYER> קיבל"
-	line "a @"
+	line "@"
 	text_ram wcf4b
 	text "!@"
 	text_end
