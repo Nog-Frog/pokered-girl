@@ -404,13 +404,10 @@ TextCommand_BCD::
 	ld h, b
 	ld l, c
 	ld c, a
-    ; Set flag to indicate whether is is TextCommand02 or TextCommand09.
-    ; Using wReverseNumberFlags here to store the flag.
-    ld a, 1
+    ld a, [wReverseNumberFlags]
+	set 3, a
     ld [wReverseNumberFlags], a
     call PrintNumberToTempBuffer
-	xor a
-	ld [wReverseNumberFlags], a
 	pop hl
 	jr NextTextCommand
 
@@ -483,9 +480,8 @@ TextCommand_NUM::
 	swap a
 	set BIT_LEFT_ALIGN, a
 	ld b, a
-    ; Set flag to indicate whether is is TextCommand02 or TextCommand09.
-    ; Using wReverseNumberFlags here to store the flag.
-    xor a
+	ld a, [wReverseNumberFlags]
+	res 3, a
     ld [wReverseNumberFlags], a
     call PrintNumberToTempBuffer
 	pop hl
@@ -625,7 +621,7 @@ TextCommand_FAR::
 ; wReverseNumberFlags = whether the number is binary-coded or not. 1 means binary-coded, 0 means not.
 ; output: hl advances to new end. bc also advances to new end.
 PrintNumberToTempBuffer::
-	; Save hl
+	; Save dest
 	push hl
 	; Set dest to the temp buffer
 	ld hl, wReversedNumberTempBuffer
@@ -636,8 +632,8 @@ PrintNumberToTempBuffer::
 	ld [wd730], a
     ; See which number printing function should be called
     ld a, [wReverseNumberFlags]
-    cp a, 1
-    jr nc, .BCD
+    bit 3, a
+    jr nz, .BCD
     ; Print to the temp buffer
     call PrintNumber
     jr ReverseTempBufferAndPrint
@@ -657,7 +653,6 @@ ReverseTempBufferAndPrint::
 	ld de, wReversedNumberTempBuffer
     ; Reverse text
 	ld hl, wReversedNumberEnd
-	ld a, "@"
 	ld [hld], a
 .reverseLoop
 	ld [hld], a
@@ -668,7 +663,7 @@ ReverseTempBufferAndPrint::
 	inc hl
 	ld d, h
 	ld e, l
-    ; Restore dest
+    ; Restore original dest
 	pop hl
 	; Print the reversed string on original dest
 	call PlaceString

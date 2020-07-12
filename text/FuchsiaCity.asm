@@ -14,7 +14,7 @@ _FuchsiaCityText2::
 	para "מאחורה"
 	line "נמצא משחק הספארי"
 	cont "שם ניתן לתפוס"
-	cont "ימונים#."
+	cont "#ימונים."
 	done
 
 _FuchsiaCityText3::
@@ -26,7 +26,7 @@ _FuchsiaCityText3::
 _FuchsiaCityText4::
 	text "הפוכדור שם הוא"
 	line "בכלל לא פריט, אלא"
-	cont "ימון#."
+	cont "#ימון."
 	done
 
 _FuchsiaCityText5::

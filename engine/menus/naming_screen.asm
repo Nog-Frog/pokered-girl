@@ -213,7 +213,7 @@ DisplayNamingScreen:
 	cp $5 ; "ED" row
 	jr nz, .didNotPressED
 	ld a, [wTopMenuItemX]
-	cp $12 ; "ED" column
+	cp $2 ; "ED" column
 	jr z, .pressedStart
 .didNotPressED
 	ld a, [wCurrentMenuItem]
@@ -233,13 +233,6 @@ DisplayNamingScreen:
 	ld a, [hl]
 	ld [wNamingScreenLetter], a
 	call CalcStringLength
-	ld a, [wNamingScreenLetter]
-	cp $e5
-	ld de, Dakutens
-	jr z, .dakutensAndHandakutens
-	cp $e4
-	ld de, Handakutens
-	jr z, .dakutensAndHandakutens
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr nc, .checkMonNameLength
@@ -253,12 +246,6 @@ DisplayNamingScreen:
 	jr c, .addLetter
 	ret
 
-.dakutensAndHandakutens
-	push hl
-	call DakutensAndHandakutens
-	pop hl
-	ret nc
-	dec hl
 .addLetter
 	ld a, [wNamingScreenLetter]
 	ld [hli], a
@@ -330,7 +317,7 @@ DisplayNamingScreen:
 
 LoadEDTile:
 	ld de, ED_Tile
-	ld hl, vFont + $700
+	ld hl, vFont + $510
 	ld bc, (ED_TileEnd - ED_Tile) / $8
 	; to fix the graphical bug on poor emulators
 	;lb bc, BANK(ED_Tile), (ED_TileEnd - ED_Tile) / $8
@@ -349,18 +336,19 @@ PrintAlphabet:
 	jr nz, .lowercase
 	ld de, HebrewAlphabet
 .lowercase
-	coord hl, 1, 5
+	coord hl, 17, 5
 	lb bc, 5, 9 ; 5 rows, 9 columns
 .outerLoop
 	push bc
 .innerLoop
 	ld a, [de]
-	ld [hli], a
-	inc hl
+	ld [hld], a
+	dec hl
 	inc de
 	dec c
 	jr nz, .innerLoop
-	ld bc, SCREEN_WIDTH + 2
+	; ld bc, SCREEN_WIDTH - 2
+	ld bc, (SCREEN_WIDTH * 3) - 2
 	add hl, bc
 	pop bc
 	dec b
@@ -416,7 +404,7 @@ PrintNicknameAndUnderscores:
 	jr nz, .emptySpacesRemaining
 	; when all spaces are filled, force the cursor onto the ED tile
 	call EraseMenuCursor
-	ld a, $12 ; "ED" x coord
+	ld a, $2 ; "ED" x coord
 	ld [wTopMenuItemX], a
 	ld a, $5 ; "ED" y coord
 	ld [wCurrentMenuItem], a
@@ -447,22 +435,6 @@ PrintNicknameAndUnderscores:
 	add hl, bc
 	ld [hl], $77 ; raised underscore tile id
 	ret
-
-DakutensAndHandakutens:
-	push de
-	call CalcStringLength
-	dec hl
-	ld a, [hl]
-	pop hl
-	ld de, $2
-	call IsInArray
-	ret nc
-	inc hl
-	ld a, [hl]
-	ld [wNamingScreenLetter], a
-	ret
-
-INCLUDE "data/text/dakutens.asm"
 
 ; calculates the length of the string at wcf4b and stores it in c
 CalcStringLength:

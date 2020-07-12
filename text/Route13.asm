@@ -49,9 +49,9 @@ _Route13AfterBattleText4::
 	done
 
 _Route13BattleText5::
-	text "My cute #MON"
-	line "wish to make your"
-	cont "acquaintance."
+	text "ה#ימונים החמודים"
+	line "שלי ישמחו להכיר"
+	cont "אותך."
 	done
 
 _Route13EndBattleText5::

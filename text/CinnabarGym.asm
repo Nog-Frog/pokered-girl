@@ -72,7 +72,7 @@ _TM38NoRoomText::
 
 _CinnabarGymText_7595f::
 	text "אתה יודע כמה"
-	line "#נשימת ימון אש"
+	line "נשימת #ימון אש"
 	cont "חמה?"
 	done
 

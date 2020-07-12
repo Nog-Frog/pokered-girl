@@ -196,8 +196,13 @@ _ItemUseNoEffectText::
 	text "זה לא ישפיע."
 	prompt
 
-_ThrowBallAtTrainerMonText1::
+_MaleThrowBallAtTrainerMonText1::
 	text "המאמן חסם את"
+	line "הכדור!"
+	prompt
+
+_FemaleThrowBallAtTrainerMonText1::
+	text "המאמנת חסמה את"
 	line "הכדור!"
 	prompt
 

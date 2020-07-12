@@ -51,6 +51,7 @@ EndOfBattle:
 	ld [wBattleType], a
 	ld [wMoveMissed], a
 	ld [wCurOpponent], a
+	ld [wPronounGender], a
 	ld [wForcePlayerToChooseMon], a
 	ld [wNumRunAttempts], a
 	ld [wEscapedFromBattle], a
