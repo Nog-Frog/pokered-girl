@@ -36,7 +36,7 @@ _ViridianForestEndBattleText2::
 	prompt
 
 _ViridianFrstAfterBattleText2::
-	text "לעזזאל! אני הולך"
+	text "לעזאזל! אני הולך"
 	line "לתפוס #ימונים"
 	cont "חזקים יותר!"
 	done
