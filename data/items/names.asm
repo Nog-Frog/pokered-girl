@@ -73,7 +73,7 @@ ItemNames::
 	db "משקף סילף@"       ; SILPH SCOPE
 	db "חלילית קסם@"      ; POKé FLUTE
 	db "מפתח למעלית@"     ; LIFT KEY
-	db "שיתוף EXP@"       ; EXP.ALL
+	db "שיתוף נ”נ@"       ; EXP.ALL
 	db "חכה בלויה@"       ; OLD ROD
 	db "חכה איכותית@"     ; GOOD ROD
 	db "חכת על@"          ; SUPER ROD

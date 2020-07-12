@@ -1264,7 +1264,7 @@ _GainedText::
 
 _WithExpAllText::
 	text "בזכות שיתוף"
-	cont "PXE,"
+	cont "נ”נ,"
 	cont "@"
 	text_end
 
@@ -1276,7 +1276,7 @@ _BoostedText::
 _ExpPointsText::
 	text_decimal wExpAmountGained, 2, 4
 	text " נקודות"
-	cont "PXE!"
+	cont "נסיון!"
 	prompt
 
 _GrewLevelText::

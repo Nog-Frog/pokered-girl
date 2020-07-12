@@ -78,7 +78,7 @@ _PewterCityText6::
 	para "כל #ימון שמשתתף"
 	line "בקרב, אפילו אם רק"
 	cont "לרגע, ירוויח"
-	cont "נקודות PXE!"
+	cont "נקודות נסיון!"
 	done
 
 _PewterCityText7::

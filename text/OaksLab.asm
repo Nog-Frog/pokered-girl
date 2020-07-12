@@ -422,7 +422,7 @@ _OaksLabText_44215::
 _OaksLabText_4421a::
 	text "השגת לפחות 05"
 	line "זנים! ברכותיי!"
-	cont "קבל שייתוף PXE"
+	cont "קבל שיתוף נ”נ"
 	cont "מהעוזר שלי!"
 	done
 
