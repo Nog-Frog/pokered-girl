@@ -402,7 +402,7 @@ StatusScreen2:
 	ld [wLoadedMonLevel], a ; Increase temporarily if not 100
 .Level100
 	coord hl, 13, 6
-	ld [hl], "."
+	;ld [hl], "."
 	dec hl
 	dec hl
 	call PrintLevel
