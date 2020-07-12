@@ -63,7 +63,7 @@ _ViridianFrstAfterBattleText3::
 _ViridianForestText8::
 	text "נגמרו לי"
 	line "הפוכדורים לתפוס"
-	cont "#איתם ימונים!"
+	cont "איתם #ימונים!"
 
 	para "כדאי שתמיד יהיו"
 	line "לך כמה ספיירים!"
