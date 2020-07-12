@@ -54,8 +54,8 @@ _PewterCityText_1942c::
 
 _PewterCityText_19431::
 	text "אני מרסס דוחה כדי"
-	line "להרחיק #ימוני פרא"
-	cont "מהגינה שלי!"
+	line "להרחיק #ימוני"
+	cont "פרא מהגינה שלי!"
 	done
 
 _PewterCityText_1945d::
@@ -88,13 +88,13 @@ _PewterCityText7::
 	line "נצפתה גונבת"
 	cont "מאובנים מהר הירח!"
 	cont "אם יש בידיכם מידע"
-	cont "שיסיע לתפוס את"
+	cont "שיסייע לתפוס את"
 	cont "הגנבים, צרו קשר"
 	cont "עם משטרת הכספית!"
 	done
 
 _PewterCityText10::
-	text "מוזיאון למדע"
+	text "מוזיאון המדע"
 	line "עיר הכספית"
 	done
 
