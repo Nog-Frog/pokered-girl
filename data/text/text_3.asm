@@ -316,7 +316,7 @@ _ShroudedInMistText::
 
 _SuckedHealthText::
 	text "<TARGET> איבד"
-	line "PH בגלל היניקה!"
+	line "נ”פ בגלל היניקה!"
 	prompt
 
 _DreamWasEatenText::

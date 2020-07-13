@@ -1437,9 +1437,9 @@ _PartyMenuSwapMonText::
 _PotionText::
 	text_ram wcd6d
 	text " נרפא"
-	line "ב@"
+	line "ושחזר @"
 	text_decimal wHPBarHPDifference, 2, 3
-	text "נק' PH!"
+	text "נקודות פגיעה!"
 	done
 
 _AntidoteText::

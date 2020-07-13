@@ -8,8 +8,6 @@ DrawHPBar::
 	push bc
 
 	; Left
-	ld a, $71 ; "HP:"
-	ld [hli], a
 	ld a, $62
 	ld [hli], a
 
@@ -23,11 +21,9 @@ DrawHPBar::
 	jr nz, .draw
 
 	; Right
-	ld a, [wHPBarType]
-	dec a
-	ld a, $6c ; status screen and battle
-	jr z, .ok
-.ok
+	ld a, $6c ; "HP:" left half
+	ld [hli], a
+	ld a, $71 ; "HP:" right half
 	ld [hl], a
 
 	pop hl

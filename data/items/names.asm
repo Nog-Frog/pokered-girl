@@ -33,7 +33,7 @@ ItemNames::
 	db "אבן אש@"          ; FIRE STONE
 	db "אבן ברק@"         ; THUNDERSTONE
 	db "אבן מים@"         ; WATER STONE
-	db "עוד HP@"          ; HP UP
+	db "עוד נ”פ@"          ; HP UP
 	db "חלבון@"           ; PROTEIN
 	db "ברזל@"            ; IRON
 	db "פחמן@"            ; CARBOS
