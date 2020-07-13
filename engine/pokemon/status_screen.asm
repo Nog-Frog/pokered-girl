@@ -328,16 +328,18 @@ StatusScreen2:
 	ld c, a
 	ld a, $4
 	sub c
-	ld b, a ; Number of moves ?
+	push af
 	coord hl, 8, 10
 	ld de, SCREEN_WIDTH * 2
-	ld a, "<BOLD_P>"
+	ld a, "<BOLD_KAF>"
+	ld b, "<BOLD_NUN>"
 	call StatusScreen_PrintPP ; Print "PP"
-	ld a, b
+	pop af
 	and a
 	jr z, .InitPP
 	ld c, a
 	ld a, "-"
+	ld b, "-"
 	call StatusScreen_PrintPP ; Fill the rest with --
 .InitPP
 	ld hl, wLoadedMonMoves
@@ -482,7 +484,8 @@ StatusScreen_ClearName:
 StatusScreen_PrintPP:
 ; print PP or -- c times, going down two rows each time
 	ld [hli], a
-	ld [hld], a
+	ld [hl], b
+	dec hl
 	add hl, de
 	dec c
 	jr nz, StatusScreen_PrintPP

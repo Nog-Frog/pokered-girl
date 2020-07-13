@@ -46,4 +46,4 @@ Trade_MonInfoText:
 	db   "──№<DOT>"
 	next ""
 	next "TO/"
-	next "<ID>№<DOT>@"
+	next " №<DOT>@"

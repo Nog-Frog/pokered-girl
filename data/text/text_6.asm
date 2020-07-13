@@ -124,17 +124,17 @@ _ItemfinderFoundNothingText::
 	prompt
 
 _RaisePPWhichTechniqueText::
-	text "להגדיל PP של איזה"
-	line "מהלך?"
+	text "להוסיף נקודות כוח"
+	line "לאיזה מהלך?"
 	done
 
 _RestorePPWhichTechniqueText::
-	text "לשחזר PP של איזה"
-	line "מהלך?"
+	text "לשחזר נקודות כוח"
+	line "לאיזה מהלך?"
 	done
 
 _PPMaxedOutText::
-	text "הPP של"
+	text "הנ”כ של"
 	line "@"
 	text_ram wcf4b
 	text " כבר"
@@ -142,14 +142,14 @@ _PPMaxedOutText::
 	prompt
 
 _PPIncreasedText::
-	text "הPP של המהלך"
+	text "נוספו נ”כ למהלך"
 	line "@"
 	text_ram wcf4b
-	text " גדל."
+	text "."
 	prompt
 
 _PPRestoredText::
-	text "PP שוחזר."
+	text "נקודות כוח שוחזרו."
 	prompt
 
 _BootedUpTMText::

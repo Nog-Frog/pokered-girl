@@ -37,18 +37,18 @@ ItemNames::
 	db "חלבון@"           ; PROTEIN
 	db "ברזל@"            ; IRON
 	db "פחמן@"            ; CARBOS
-	db "סידן@"           ; CALCIUM
+	db "סידן@"            ; CALCIUM
 	db "ממתק נדיר@"       ; RARE CANDY
 	db "מאובן כיפתי@"     ; DOME FOSSIL
 	db "מאובן סלילי@"     ; HELIX FOSSIL
 	db "מפתח סודי@"       ; SECRET KEY
 	db "?????@"           ; ?????
 	db "שובר לאופניים@"   ; BIKE VOUCHER
-	db "X דייקנות@"          ; X ACCURACY
+	db "X דייקנות@"       ; X ACCURACY
 	db "אבן עלה@"         ; LEAF STONE
 	db "כרטיס מפתח@"      ; CARD KEY
 	db "גוש זהב@"         ; NUGGET
-	db "עוד PP@"          ; PP UP
+	db "עוד נ”כ@"         ; PP UP
 	db "בובת #ימון@"      ; POKé DOLL
 	db "ריפוי מלא@"       ; FULL HEAL
 	db "החייאה@"          ; REVIVE
@@ -60,14 +60,14 @@ ItemNames::
 	db "מטבע@"            ; COIN
 	db "מים מינרלים@"     ; FRESH WATER
 	db "משקה קל@"         ; SODA POP
-	db "לימונדה@"        ; LEMONADE
+	db "לימונדה@"         ; LEMONADE
 	db "כרטיס לשיט@"      ; S.S.TICKET
 	db "שיני זהב@"        ; GOLD TEETH
 	db "X מתקפה@"         ; X ATTACK
 	db "X הגנה@"          ; X DEFEND
 	db "X מהירות@"        ; X SPEED
 	db "X מיוחדת@"        ; X SPECIAL
-	db "ארנק לאסימונים@"    ; COIN CASE
+	db "ארנק לאסימונים@"  ; COIN CASE
 	db "חבילה של אלון@"   ; OAK's PARCEL
 	db "מאתר חפצים@"      ; ITEMFINDER
 	db "משקף סילף@"       ; SILPH SCOPE
@@ -77,11 +77,11 @@ ItemNames::
 	db "חכה בלויה@"       ; OLD ROD
 	db "חכה איכותית@"     ; GOOD ROD
 	db "חכת על@"          ; SUPER ROD
-	db "עוד PP@"          ; PP UP
+	db "עוד נ”כ@"         ; PP UP
 	db "אתר@"             ; ETHER
 	db "אתר על@"          ; MAX ETHER
 	db "סם חיים@"         ; ELIXER
-	db "סם חיים על@"      ; MAX ELIXER
+	db "סם חיים על@"     ; MAX ELIXER
 	db "B2F@"             ; B2F
 	db "B1F@"             ; B1F
 	db "1F@"              ; 1F

@@ -69,7 +69,10 @@
 	charmap "<to>",      $70 ; narrow "to"
 
 	charmap "『",         $72 ; Japanese opening quote, unused
-	charmap "<ID>",      $73
+
+	; needed for StatusScreen (see engine/pokemon/status_screen.asm)
+	charmap "<BOLD_NUN>",      $73
+
 	charmap "№",         $74
 
 ; Actual characters (from other graphics files)
@@ -79,7 +82,7 @@
 	charmap "″",         $61 ; gfx/pokedex/pokedex.png
 
 	; needed for StatusScreen (see engine/pokemon/status_screen.asm)
-	charmap "<BOLD_P>",  $72 ; gfx/font/P.1bpp
+	charmap "<BOLD_KAF>",  $72 ; gfx/font/P.1bpp
 
 	; needed for LoadTownMap_Fly (see engine/items/town_map.asm)
 	charmap "▲",         $e9 ; gfx/town_map/up_arrow.1bpp

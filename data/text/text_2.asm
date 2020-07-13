@@ -1009,8 +1009,8 @@ _AlreadyOutText::
 	prompt
 
 _MoveNoPPText::
-	text "למהלך הזה נגמר"
-	line "הPP!"
+	text "לא נותרו נקודות"
+	line "כוח למהלך הזה!"
 	prompt
 
 _MoveDisabledText::

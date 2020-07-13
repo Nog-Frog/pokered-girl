@@ -18,10 +18,10 @@ _SaffronHouse1Text3::
 	done
 
 _SaffronHouse1Text4::
-	text "קיבלתי עוד PP"
+	text "קיבלתי עוד נ”כ"
 	line "כמתנה."
 
 	para "זה פריט שמגביר את"
-	line "כמות הPP של"
+	line "כמות הנ”כ של"
 	cont "מהלכים!"
 	done
