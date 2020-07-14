@@ -261,7 +261,7 @@ PidgeyName:
 SlowpokeName:
 	db "כיסלאט@"
 KadabraName:
-	db "אוגלר@"
+	db "כדברא@"
 GravelerName:
 	db "מחצץ@"
 ChanseyName:
@@ -431,9 +431,9 @@ MarowakName:
 HaunterName:
 	db "רוצד@"
 AbraName:
-	db "זריפון@"
+	db "אברא@"
 AlakazamName:
-	db "ליאורד@"
+	db "אוגלר@"
 PidgeottoName:
 	db "יונה-עשרה@"
 PidgeotName:

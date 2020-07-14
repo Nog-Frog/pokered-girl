@@ -381,14 +381,14 @@ PoliwrathNikud:
 	db "רּאשעם@"
   	db "  +⁃@"
 AbraNikud:
-	db "זריפוֹן@"
-	db "⁃․@"
+	db "אברא@"
+	db "⁃╎+@"
 KadabraNikud:
+	db "כּדברא@"
+  	db "⁃+╎+@"
+AlakazamNikud:
 	db "אוּגלר@"
   	db "  ╎∵@"
-AlakazamNikud:
-	db "ליאוֹרד@"
-	db "․   ╎@"
 MachopNikud:
 	db "גברכּה@"
 	db "∵∵╎+@"
