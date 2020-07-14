@@ -48,7 +48,7 @@ _Route8AfterBattleText3::
 
 _Route8BattleText4::
 	text "אני אוהבת את"
-	line "ה#ימון עקצחלב,"
+	line "ה#ימון מחטן,"
 	line "אז אני אוספת"
 	cont "כאלה!"
 	done

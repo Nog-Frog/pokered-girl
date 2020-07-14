@@ -279,20 +279,20 @@ SandslashNikud:
 	db "חוֹתחוֹל@"
   	db "  ‥@"
 NidoranFNikud:
-	db "עקצחלב♀@"
-	db "+╎⁃╎+@"
+	db "מחטנית♀@"
+	db "⁃╎+․@"
 NidorinaNikud:
-	db "עקצחלית@"
-	db "+╎⁃╎․@"
+	db "חוֹדנית@"
+	db "  +․@"
 NidoqueenNikud:
 	db "מלכּצת@"
 	db "+╎∵∵@"
 NidoranMNikud:
-	db "עקצחלב♂@"
-	db "+╎⁃╎+@"
+	db "מחטן♂@"
+	db "⁃╎+@"
 NidorinoNikud:
-	db "עקצחלן@"
-	db "+╎⁃╎+@"
+	db "חוֹדן@"
+	db "  +@"
 NidokingNikud:
 	db "מלקץ@"
 	db "∵∵∵@"

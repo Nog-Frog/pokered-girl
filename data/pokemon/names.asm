@@ -195,7 +195,7 @@ RhydonName:
 KangaskhanName:
 	db "כיסבל@"
 NidoranMName:
-	db "עקצחלב♂@"
+	db "מחטן♂@"
 ClefairyName:
 	db "חמשדון@"
 SpearowName:
@@ -219,7 +219,7 @@ GrimerName:
 GengarName:
 	db "אשלדאי@"
 NidoranFName:
-	db "עקצחלב♀@"
+	db "מחטנית♀@"
 NidoqueenName:
 	db "מלכצת@"
 CuboneName:
@@ -459,9 +459,9 @@ RattataName:
 RaticateName:
 	db "הדברוש@"
 NidorinoName:
-	db "עקצחלן@"
+	db "חודן@"
 NidorinaName:
-	db "עקצחלנית@"
+	db "חודנית@"
 GeodudeName:
 	db "בחורקע@"
 PorygonName:

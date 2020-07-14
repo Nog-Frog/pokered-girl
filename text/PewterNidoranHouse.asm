@@ -1,9 +1,9 @@
 _PewterHouse1Text1::
-	text "עקצחלב: באוואו!@"
+	text "מחטן: באוואו!@"
 	text_end
 
 _PewterHouse1Text2::
-	text "עקצחלב, שב!"
+	text "מחטן, שב!"
 	done
 
 _PewterHouse1Text3::

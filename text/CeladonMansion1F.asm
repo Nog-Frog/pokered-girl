@@ -17,7 +17,7 @@ _CeladonMansion1Text3::
 	text_end
 
 _CeladonMansion1Text4::
-	text "עקצחלב: קיה"
+	text "מחטן: קיה"
 	line "קיה-הו!@"
 	text_end
 
