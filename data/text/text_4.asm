@@ -151,7 +151,7 @@ _ForgotAndText::
 
 _HMCantDeleteText::
 	text "לא ניתן לשכוח"
-	line "מהלכי MH!"
+	line "מהלכי מ”נ!"
 	prompt
 
 _PokemonCenterWelcomeText::

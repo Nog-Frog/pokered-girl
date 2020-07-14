@@ -10,11 +10,11 @@ _Route16HouseText3::
 
 _ReceivedHM02Text::
 	text "<PLAYER> קיבל"
-	line "20MH!@"
+	line "מ”נ20!@"
 	text_end
 
 _HM02ExplanationText::
-	text "20MH הוא המהלך"
+	text "מ”נ20 הוא המהלך"
 	line "תעופה. הוא יקח"
 	cont "אותך חזרה לכל"
 	cont "עיר."

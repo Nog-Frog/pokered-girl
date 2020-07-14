@@ -13,7 +13,7 @@ _ReceivedTM29Text::
 	text_end
 
 _TM29ExplanationText::
-	text "זה המהלך 92MT"
+	text "זה המהלך מ”מ92"
 	line "אשליה!"
 
 	para "זה מאפשר לך"

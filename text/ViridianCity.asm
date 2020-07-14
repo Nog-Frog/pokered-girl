@@ -72,21 +72,21 @@ _ViridianCityText_191ca::
 	line "על ישנום שאוכל"
 	cont "את החלום שלי."
 	cont "מה זה?"
-	cont "מאיפה הגיע הMT"
+	cont "מאיפה הגיע המ”מ"
 	cont "הזה?"
 
 	para "זה מפחיד!"
 	line "הנה, אתה יכול"
-	cont "לקבל את הMT הזה."
+	cont "לקבל את המ”מ הזה."
 	prompt
 
 _ReceivedTM42Text::
 	text "<PLAYER> קיבל"
-	line "24MT!@"
+	line "מ”מ24!@"
 	text_end
 
 _TM42Explanation::
-	text "24MT מכיל את מתקפת"
+	text "מ”מ24 מכיל את מתקפת"
 	line "זלילתחלום..."
 	cont "...נחירה..."
 	done

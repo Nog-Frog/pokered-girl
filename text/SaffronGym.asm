@@ -54,18 +54,18 @@ _SaffronGymText_5d173::
 	cont "רמות!"
 
 	para "רגע, בבקשה, קח את"
-	line "הMT הזה איתך!"
+	line "המ”מ הזה איתך!"
 	done
 
 ReceivedTM46Text::
 	text "<PLAYER> קיבל"
-	line "64MT!@"
+	line "מ”מ64!@"
 	text_end
 
 _TM46ExplanationText::
 	text_start
 
-	para "64MT מכיל את"
+	para "מ”מ64 מכיל את"
 	line "המהלך על-חוש! זו"
 	cont "פעימה על-חושית"
 	cont "שמסוגלת לפגוע!"

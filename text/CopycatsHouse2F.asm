@@ -37,7 +37,7 @@ _ReceivedTM31Text::
 
 _TM31ExplanationText1::
 	text_start
-	para "13MT מכיל את"
+	para "מ”מ13 מכיל את"
 	line "המהלך האהוב עלי,"
 	cont "חקיינות!"
 
@@ -47,7 +47,7 @@ _TM31ExplanationText1::
 
 _TM31ExplanationText2::
 	text "<PLAYER>: היי!"
-	line "תודה על ה13MT!"
+	line "תודה על המ”מ13!"
 
 	para "<PLAYER>: סליחה?"
 

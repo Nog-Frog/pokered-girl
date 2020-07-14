@@ -33,7 +33,7 @@ _ReceivedTM24Text::
 _TM24ExplanationText::
 	text_start
 
-	para "42MT מכיל את"
+	para "מ”מ42 מכיל את"
 	line "המתקפה חזיז ורעם!"
 
 	para "למד #ימון חשמל"

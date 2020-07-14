@@ -392,7 +392,7 @@ _CinnabarQuizQuestionsText5::
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "82MT מכיל את המהלך"
+	text "מ”מ82 מכיל את המהלך"
 	line "קרן מוות?"
 	done
 
@@ -498,15 +498,18 @@ _JustAMomentText::
 
 TMNotebookText::
 	text "זה עלון מידע"
-	line "לגבי MTים."
+	line "מ”מ-ים."
 
 	para "..."
 
 	para "בסך-הכל, ישנם 50"
-	line "MTים."
+	line "מכשירי מהלכים, או"
+	cont "בקיצור - מ”מ."
 
-	para "קיימים גם 5 MHים"
-	line "שניתנים לשימוש"
+	para "קיימים גם 5"
+	line "מכשירים נסתרים,"
+	cont "או בקיצור מ”נ,"
+	cont "הניתנים לשימוש"
 	cont "חוזר."
 
 	para "סילף בע”מ.@"
@@ -1426,7 +1429,7 @@ _PartyMenuBattleText::
 
 _PartyMenuUseTMText::
 	text "על איזה #ימון"
-	line "להשתמש בMT?"
+	line "להשתמש במ”מ?"
 	done
 
 _PartyMenuSwapMonText::

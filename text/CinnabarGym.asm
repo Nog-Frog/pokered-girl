@@ -53,7 +53,7 @@ _ReceivedTM38Text::
 _TM38ExplanationText::
 	text_start
 
-	para "83MT מכיל"
+	para "מ”מ83 מכיל"
 	line "את המתקפה אש"
 	cont "מתפרצת!"
 

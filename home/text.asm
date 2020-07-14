@@ -172,7 +172,7 @@ PlaceCommandCharacter::
 	inc de
 	jp PlaceNextChar
 
-TMCharText::      db "MT@"
+TMCharText::      db "מ”מ@"
 TrainerCharText:: db "מאמן@"
 PCCharText::      db "CP@"
 RocketCharText::  db "רוקט@"

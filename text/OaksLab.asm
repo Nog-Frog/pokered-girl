@@ -395,7 +395,7 @@ _OaksLabText_44201::
 
 _OaksLabText_44206::
 	text "אתה בכיוון הנכון!"
-	line "קבל MH הבזק"
+	line "קבל מ”נ הבזק"
 	cont "מהעוזר שלי!"
 	done
 

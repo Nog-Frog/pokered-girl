@@ -5,11 +5,11 @@ _CeruleanTrashedText_1d6ab::
 	para "הסתכל מה הם עשו"
 	line "כאן!"
 
-	para "הם גנבו MT שמלמד"
+	para "הם גנבו מ”מ שמלמד"
 	line "#ימונים איך"
 	cont "לחפור בורות!"
 
-	para "הMT הזה עלה לי"
+	para "המ”מ הזה עלה לי"
 	line "הון! אני אומר לך,"
 	cont "הון תועפות!"
 	done
@@ -20,7 +20,7 @@ _CeruleanTrashedText_1d6b0::
 
 	para "החלטתי ללמד את"
 	line "חפיד איך לחפור"
-	cont "בלי MT!"
+	cont "בלי מ”מ!"
 	done
 
 _CeruleanHouseTrashedText2::

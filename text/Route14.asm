@@ -1,6 +1,6 @@
 _Route14BattleText1::
 	text "אתה צריך להשתמש"
-	line "בMT כדי ללמד"
+	line "במ”מ כדי ללמד"
 	cont "את ה#ימונים שלך"
 	cont "מהלכים."
 	done
@@ -11,7 +11,7 @@ _Route14EndBattleText1::
 	prompt
 
 _Route14AfterBattleText1::
-	text "יש לך כמה MH"
+	text "יש לך כמה מ”נ-ים,"
 	line "נכון? #ימון"
 	cont "לעולם לא יוכל"
 	cont "לשכוח מהלכים"
@@ -35,10 +35,10 @@ _Route14AfterBattleText2::
 	done
 
 _Route14BattleText3::
-	text "יש מבצעים על MT-ים"
+	text "יש מבצעים על מ”מ-ים"
 	line "בעיר האביב!"
 	cont "אבל, רק למעט"
-	cont "אנשים יש MH-ים!"
+	cont "אנשים יש מ”נ-ים!"
 	done
 
 _Route14EndBattleText3::

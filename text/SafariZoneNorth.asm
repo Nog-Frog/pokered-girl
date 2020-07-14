@@ -29,5 +29,5 @@ _SafariZoneNorthText7::
 
 	para "הפרס עבור מציאת"
 	line "הביתן הסודי הוא"
-	cont "MH!"
+	cont "מ”נ!"
 	done

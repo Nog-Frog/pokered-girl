@@ -49,7 +49,7 @@ _ReceivedHM04Text::
 	text_end
 
 _HM04ExplanationText::
-	text "פקח: 40MH מכיל"
+	text "פקח: מ”נ40 מכיל"
 	line "את המהלך עוצמה!"
 
 	para "זה מאפשר ל#ימון"
@@ -62,10 +62,10 @@ _HM04ExplanationText::
 	cont "הספארי?"
 
 	para "אם אתה מוצא, אתה"
-	line "זוכה בMH!"
+	line "זוכה במ”נ!"
 
 	para "השמועה אומרת שזה"
-	line "MH גלישה הנדיר."
+	line "מ”נ גלישה הנדיר."
 	done
 
 _HM04NoRoomText::

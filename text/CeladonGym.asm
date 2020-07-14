@@ -73,7 +73,7 @@ _ReceivedTM21Text::
 
 _TM21ExplanationText::
 	text_start
-	para "12MT מכיל את המהלך"
+	para "מ”מ12 מכיל את המהלך"
 	line "יניקת על."
 
 	para "ה#ימון יונק נ”פ"

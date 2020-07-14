@@ -20,14 +20,14 @@ _ReceivedHM03Text::
 	text_end
 
 _HM03ExplanationText::
-	text "30MH הוא המהלך"
+	text "מ”נ30 הוא המהלך"
 	line "גלישה!"
 
 	para "#ימון יוכל"
 	line "לשאת אותך כמעבורת"
 	cont "מעל המים!"
 
-	para "וגם, הHM הזה"
+	para "בנוסף, המ”נ הזה"
 	line "הוא רב פעמי! אתה"
 	cont "יכול להשתמש בו"
 	cont "עוד פעם ועוד פעם!"

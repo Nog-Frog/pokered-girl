@@ -9,11 +9,11 @@ _TM39PreReceiveText::
 
 _ReceivedTM39Text::
 	text "<PLAYER> קיבל"
-	line "93MT!@"
+	line "מ”מ93!@"
 	text_end
 
 _TM39ExplanationText::
-	text "93MT מכיל מהלך"
+	text "מ”מ93 מכיל מהלך"
 	line "בשם חיש קל."
 
 	para "הוא מדויק במיוחד,"

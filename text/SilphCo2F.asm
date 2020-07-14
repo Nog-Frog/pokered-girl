@@ -16,7 +16,7 @@ _ReceivedTM36Text::
 	text_end
 
 _TM36ExplanationText::
-	text "63MT מכיל את המהלך"
+	text "מ”מ63 מכיל את המהלך"
 	line "השמדה עצמית!"
 
 	para "זו מתקפה עוצמתית,"

@@ -32,7 +32,7 @@ _ReceivedTM06Text::
 
 _TM06ExplanationText::
 	text_start
-	para "60MT מכיל את"
+	para "מ”מ60 מכיל את"
 	line "המהלך הרעלה!"
 
 	para "זה מהלך סודי"

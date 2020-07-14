@@ -76,13 +76,13 @@ _CeladonMartRoofText_48515::
 
 _ReceivedTM49Text::
 	text "<PLAYER> קיבל"
-	line "94MT!@"
+	line "מ”מ94!@"
 	text_end
 
 _CeladonMartRoofText_48520::
 	text_start
 
-	para "94MT מכיל"
+	para "מ”מ94 מכיל"
 	line "כוח משולש!@"
 	text_end
 

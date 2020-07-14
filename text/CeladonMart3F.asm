@@ -15,7 +15,7 @@ _ReceivedTM18Text::
 	text_end
 
 _TM18ExplanationText::
-	text "MT18 מכיל את המהלך"
+	text "מ”מ18 מכיל את המהלך"
 	line "נגידה! הוא מאפשר"
 	cont "ל#ימון שלך"
 	cont "להשיב את המכות"

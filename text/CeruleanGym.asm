@@ -15,7 +15,7 @@ _CeruleanGymText_5c7be::
 	done
 
 _CeruleanGymText_5c7c3::
-	text "11MT מלמד את"
+	text "מ”מ11 מלמד את"
 	line "המהלך קרן בועות!"
 
 	para "השתמש בו על"
@@ -43,13 +43,13 @@ _CeruleanGymText_5c7c8::
 	cont "חדשים!"
 
 	para "אתה יכול גם לקחת"
-	line "את הMT האהוב"
+	line "את המ”מ האהוב"
 	cont "עליי!"
 	done
 
 _ReceivedTM11Text::
 	text "<PLAYER> קיבל"
-	line "11MT!@"
+	line "מ”מ11!@"
 	text_end
 
 _CeruleanGymText_5c7d3::

@@ -50,7 +50,7 @@ _ReceivedTM41Text::
 	text_end
 
 _TM41ExplanationText::
-	text "14MT ילמד את"
+	text "מ”מ14 ילמד את"
 	line "המהלך הטלת ביצה!"
 
 	para "רק #ימונית אחת"

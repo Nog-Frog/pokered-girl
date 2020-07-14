@@ -68,7 +68,7 @@ _CeruleanCityText_196d9::
 
 _ReceivedTM28Text::
 	text "<PLAYER> מצא"
-	line "82MT!@"
+	line "מ”מ82!@"
 	text_end
 
 _ReceivedTM28Text2::
@@ -95,7 +95,7 @@ _CeruleanCityText_196ee::
 
 _CeruleanCityText_196f3::
 	text "בסדר! אני אחזיר"
-	line "את הMT שגנבתי!"
+	line "את המ”מ שגנבתי!"
 	prompt
 
 _CeruleanCityText3::

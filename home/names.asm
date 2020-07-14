@@ -78,11 +78,11 @@ GetMachineName::
 	add NUM_HMS
 	ld [wd11e], a
 	ld hl, HiddenPrefix ; points to "HM"
-	ld bc, 2
+	ld bc, 3
 	jr .WriteMachinePrefix
 .WriteTM
 	ld hl, TechnicalPrefix ; points to "TM"
-	ld bc, 2
+	ld bc, 3
 .WriteMachinePrefix
 	ld de, wcd6d
 	call CopyData
@@ -117,9 +117,9 @@ GetMachineName::
 	ret
 
 TechnicalPrefix::
-	db "MT"
+	db "מ”מ"
 HiddenPrefix::
-	db "MH"
+	db "מ”נ"
 
 ; sets carry if item is HM, clears carry if item is not HM
 ; Input: a = item ID

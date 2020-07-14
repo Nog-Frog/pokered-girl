@@ -20,7 +20,7 @@ _DayCareOnlyHaveOneMonText::
 _DayCareCantAcceptMonWithHMText::
 	text "אני לא יכול לקבל"
 	line "#ימון שיודע"
-	cont "התקפת HM."
+	cont "התקפת מ”נ."
 	done
 
 _DayCareHeresYourMonText::

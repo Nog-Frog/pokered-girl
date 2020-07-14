@@ -16,24 +16,24 @@ _TM34PreReceiveText::
 
 _ReceivedTM34Text::
 	text "<PLAYER> קיבל"
-	line "43MT!@"
+	line "מ”מ43!@"
 	text_end
 
 _TM34ExplanationText::
 	text_start
 
-	para "MT מכיל מהלך."
+	para "מ”מ מכיל מהלך."
 	line "ניתן להשתמש בו"
 	cont "כדי ללמד #ימון"
 	cont "את המהלך!"
 
-	para "MT הוא חד-פעמי!"
+	para "מ”מ הוא חד-פעמי!"
 	line "כשאתה בוחר איזה"
 	cont "#ימון ילמד את"
 	cont "המהלך, בחר"
 	cont "בזהירות!"
 
-	para "43MT מכיל את המהלך"
+	para "מ”מ43 מכיל את המהלך"
 	line "סבלנות!"
 
 	para "ה#ימונים שלך יספגו"
