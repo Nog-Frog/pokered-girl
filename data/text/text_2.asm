@@ -1651,7 +1651,7 @@ _CantTakeMonText::
 	text "אתה לא יכול לקחת"
 	line "עוד #ימונים."
 
-	para "הכנס כמה"
+	para "אחסן כמה"
 	line "#ימונים כדי"
 	cont "לפנות מקום."
 	prompt

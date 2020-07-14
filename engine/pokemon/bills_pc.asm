@@ -340,7 +340,7 @@ DisplayMonListMenu:
 
 BillsPCMenuText:
 	db   "הוצא <PKMN>"
-	next "הכנס <PKMN>"
+	next "אחסן <PKMN>"
 	next "שחרר <PKMN>"
 	next "החלף תא"
 	next "יאללה ביי!"
