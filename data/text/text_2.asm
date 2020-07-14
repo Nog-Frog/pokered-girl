@@ -429,7 +429,7 @@ _BillsHouseInitiatedText::
 
 _BillsHousePokemonListText1::
 	text "רשימת ה#ימונים"
-	line "האהובה על הדר!"
+	line "האהובים על הדר!"
 	prompt
 
 _BillsHousePokemonListText2::
