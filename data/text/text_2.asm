@@ -642,7 +642,7 @@ _LinkCableHelpText1::
 	prompt
 
 _LinkCableHelpText2::
-	text "איזו כותרת תרצה"
+	text "איזה פרק תרצה"
 	line "לקרוא?"
 	done
 
@@ -674,7 +674,7 @@ _ViridianSchoolBlackboardText1::
 	prompt
 
 _ViridianSchoolBlackboardText2::
-	text "איזו כותרת תרצה"
+	text "איזה פרק תרצה"
 	line "לקרוא?"
 	done
 
@@ -1611,7 +1611,7 @@ _WhatText::
 
 _DepositWhichMonText::
 	text "איזה #ימון"
-	line "להכניס?"
+	line "לאחסן?"
 	done
 
 _MonWasStoredText::
@@ -1624,7 +1624,7 @@ _MonWasStoredText::
 
 _CantDepositLastMonText::
 	text "אתה לא יכול"
-	line "להכניס את!"
+	line "לאחסן את!"
 	cont "ה#ימון האחרון!"
 	prompt
 
