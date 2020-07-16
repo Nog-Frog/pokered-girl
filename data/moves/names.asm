@@ -4,7 +4,7 @@ MoveNames::
 	db "כפל סטירה@"   ; DOUBLESLAP
 	db "אגרוףשביט@"   ; COMET PUNCH
 	db "אגרוף על@"      ; MEGA PUNCH
-	db "PAY DAY@"       ; PAY DAY
+	db "לוטו@"          ; PAY DAY
 	db "אגרוף אש@"      ; FIRE PUNCH
 	db "אגרוף קרח@"     ; ICE PUNCH
 	db "אגרוף רעם@"     ; THUNDERPUNCH
