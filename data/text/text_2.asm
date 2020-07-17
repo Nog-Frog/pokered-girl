@@ -1606,7 +1606,7 @@ _SwitchOnText::
 	prompt
 
 _WhatText::
-	text "מה?"
+	text "מה לעשות?"
 	done
 
 _DepositWhichMonText::
