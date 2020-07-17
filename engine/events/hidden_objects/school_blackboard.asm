@@ -21,7 +21,7 @@ LinkCableHelp::
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 5
+	ld a, 1
 	ld [wTopMenuItemX], a
 .linkHelpLoop
 	ld hl, wd730
