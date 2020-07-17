@@ -755,13 +755,13 @@ GetMonFieldMoves:
 ; Leftmost tile = -1 + tile column in which the first letter of the move's name should be displayed
 ;                 "SOFTBOILED" is $08 because it has 4 more letters than "SURF", for example, whose value is $0C
 FieldMoveDisplayData:
-	db CUT, $01, $0A
-	db FLY, $02, $0A
+	db CUT, $01, $0C
+	db FLY, $02, $0C
 	db $B4, $03, $0C ; unused field move
-	db SURF, $04, $0B
+	db SURF, $04, $0C
 	db STRENGTH, $05, $0C
 	db FLASH, $06, $0C
-	db DIG, $07, $0C
+	db DIG, $07, $0B
 	db TELEPORT, $08, $0B
 	db SOFTBOILED, $09, $09
 	db $ff ; list terminator
