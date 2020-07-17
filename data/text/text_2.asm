@@ -185,7 +185,7 @@ _ViridianCityPokecenterGuyText::
 	done
 
 _PewterCityPokecenterGuyText::
-	text "פיהוק!"
+	text "פיהוווק!"
 
 	para "כשניענפוח שר,"
 	line "#ימונים מתחילים"
