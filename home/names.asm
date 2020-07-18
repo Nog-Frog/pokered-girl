@@ -98,13 +98,13 @@ GetMachineName::
 	jr .FirstDigit
 .SecondDigit
 	add 10
-	push af
-	ld a, b
-	ld [de], a
-	inc de
-	pop af
+	push bc
 	ld b, "0"
 	add b
+	ld [de], a
+	inc de
+	pop bc
+	ld a, b
 	ld [de], a
 	inc de
 	ld a, "@"
