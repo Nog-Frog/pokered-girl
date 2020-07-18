@@ -502,7 +502,7 @@ TMNotebookText::
 
 	para "..."
 
-	para "בסך-הכל, ישנם 50"
+	para "בסך-הכל, ישנם 05"
 	line "מכשירי מהלכים, או"
 	cont "בקיצור - מ”מ."
 
@@ -1012,8 +1012,8 @@ _AlreadyOutText::
 	prompt
 
 _MoveNoPPText::
-	text "לא נותרו נקודות"
-	line "כוח למהלך הזה!"
+	text "למהלך הזה לא נותרו"
+	line "נקודות כוח!"
 	prompt
 
 _MoveDisabledText::

@@ -586,7 +586,7 @@ TextSpeedOptionText:
 	next " איטי בינוני מהיר@"
 
 BattleAnimationOptionText:
-	db   "אנימציות קרב" ; TODO הנפשות אולי?
+	db   "הנפשות קרב"
 	next " כבוי        דולק@"
 BattleStyleOptionText:
 	db   "סגנון קרב"
