@@ -4,7 +4,7 @@ _Museum1FText_5c21a::
 
 _Museum1FText_5c21f::
 	text "כרטיס לילד"
-	line ".עולה ¥05"
+	line "עולה ¥05."
 
 
 	para "תרצה להיכנס פנימה?"
