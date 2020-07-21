@@ -36,9 +36,10 @@ _TM34ExplanationText::
 	para "מ”מ43 מכיל את המהלך"
 	line "סבלנות!"
 
-	para "ה#ימונים שלך יספגו"
-	line "מכות מהיריב, ואז"
-	cont "ישיבו לו כפליים!"
+	para "ה#ימונים שלך"
+	line "יספגו מכות"
+	cont "מהיריב, ואז ישיבו"
+	cont "לו כפליים!"
 	done
 
 _TM34NoRoomText::
@@ -47,8 +48,8 @@ _TM34NoRoomText::
 	done
 
 _PewterGymText_5c4bc::
-	text "חשבתי אותך למובן"
-	line "מאליו."
+	text "חשבתי אותך"
+	line "למובן מאליו."
 
 	para "אני מעניק לך את"
 	line "תג הסלע כאות"
