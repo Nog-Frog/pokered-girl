@@ -153,11 +153,11 @@ _PPRestoredText::
 	prompt
 
 _BootedUpTMText::
-	text "הדלקת מכשיר MT!"
+	text "הדלקת מכשיר מ”מ!"
 	prompt
 
 _BootedUpHMText::
-	text "הדלקת מכשיר MH!"
+	text "הדלקת מכשיר מ”נ!"
 	prompt
 
 _TeachMachineMoveText::
