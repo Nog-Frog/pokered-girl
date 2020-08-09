@@ -69,8 +69,8 @@ _Route3BattleText4::
 	done
 
 _Route3EndBattleText4::
-	text "לו היה לי"
-	line "#ימון חדש"
+	text "לו היה"
+	line "לי #ימון חדש"
 	cont "הייתי מנצחת!"
 	prompt
 
