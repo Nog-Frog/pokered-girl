@@ -11,7 +11,7 @@ _CeruleanGymText_5c7be::
 
 	para "הגישה שלי היא"
 	line "מתקפה בלתי פוסקת"
-	cont "עם #יומי מים!"
+	cont "עם #ימוני מים!"
 	done
 
 _CeruleanGymText_5c7c3::
@@ -76,7 +76,8 @@ _CeruleanGymBattleText1::
 	done
 
 _CeruleanGymEndBattleText1::
-	text "כיסחת אותי!"
+	text "כיסחת"
+	line "אותי!"
 	prompt
 
 _CeruleanGymAfterBattleText1::
