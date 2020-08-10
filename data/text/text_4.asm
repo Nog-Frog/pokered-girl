@@ -120,7 +120,7 @@ _TryingToLearnText::
 	text_ram wLearnMoveMonName
 	text ""
 	line "לא יכול ללמוד"
-	cont "יותר מ-3 מהלכים!"
+	cont "יותר מ-4 מהלכים!"
 
 	para "למחוק מהלך קיים"
 	line "כדי לפנות מקום"
