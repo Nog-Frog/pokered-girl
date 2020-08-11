@@ -37,7 +37,7 @@ _Route24EndBattleText3::
 
 _Route24AfterBattleText3::
 	text "עשיתי את המיטב,"
-	line "אני לא מתחרט!"
+	line "אני לא מתחרטת!"
 	done
 
 _Route24BattleText4::
@@ -52,11 +52,11 @@ _Route24EndBattleText4::
 
 _Route24AfterBattleText4::
 	text "עשיתי את המיטב,"
-	line "אני לא מתחרט!"
+	line "אני לא מתחרטת!"
 	done
 
 _Route24BattleText5::
-	text "אני שני!"
+	text "אני שניה!"
 	line "עכשיו זה רציני!"
 	done
 
