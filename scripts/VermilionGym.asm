@@ -22,10 +22,10 @@ VermilionGymLoadName:
 	jp LoadGymLeaderAndCityName
 
 Gym3CityName:
-	db "VERMILION CITY@"
+	db "עיר הארגמן@"
 
 Gym3LeaderName:
-	db "LT.SURGE@"
+	db "סרן ברק@"
 
 VermilionGymSetDoorTile:
 	CheckEvent EVENT_2ND_LOCK_OPENED
