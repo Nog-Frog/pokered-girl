@@ -1,12 +1,12 @@
 _Route6BattleText1::
 	text "מי שם?"
 	line "בבקשה תפסיק"
-	cont "לצוטט לנו!"
+	cont "לצותת לנו!"
 	done
 
 _Route6EndBattleText1::
-	text "אני פשוט לא"
-	line "מצליח לנצח!"
+	text "אני פשוט"
+	line "לא מצליח לנצח!"
 	prompt
 
 _Route6AfterBattleText1::
@@ -68,8 +68,8 @@ _Route6EndBattleText5::
 	prompt
 
 _Route6AfterBattleText5::
-	text "אני רוצה להיות"
-	line "חזקה יותר!"
+	text "אני רוצה"
+	line "להיות חזקה יותר!"
 	cont "מה הסוד שלך?"
 	done
 
