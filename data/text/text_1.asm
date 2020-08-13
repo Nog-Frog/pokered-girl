@@ -71,15 +71,15 @@ _NoMoreRoomForItemText::
 
 _OaksAideHiText::
 	text "היי! זוכר אותי?"
-	line "אני העוזר של פרופ'"
-	cont "אלון!"
+	line "אני העוזר של"
+	cont "פרופ' אלון!"
 
 	para "אם תפסת @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text ""
 	line "סוגים שונים של"
-	cont "#ימון, אלון ביקש"
-	cont "שאני אתן לך"
+	cont "#ימון, אלון"
+	cont "ביקש שאתן לך"
 	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "!"
@@ -87,13 +87,13 @@ _OaksAideHiText::
 	para "<PLAYER>! כבר"
 	line "תפסת לפחות @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text "סוגי #ימון שונים?"
+	text "סוגי #ימון שונים?" ; TODO add another line
 	done
 
 _OaksAideUhOhText::
 	text "בוא נראה..."
-	line "אוי לא! נראה שתפסת"
-	cont "רק @"
+	line "אוי לא! נראה"
+	cont "שתפסת רק @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text ""
 	cont "סוגי #ימון!"
@@ -114,7 +114,7 @@ _OaksAideComeBackText::
 	text_decimal hOaksAideRequirement, 1, 3
 	text ""
 	line "סוגים, בוא לדבר"
-	cont "איתי ואתן לך@"
+	cont "איתי ואתן לך @"
 	text_end
 	text_ram wOaksAideRewardItemName
 	text "."
