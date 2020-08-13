@@ -82,7 +82,7 @@ _RockTunnel2AfterBattleText6::
 	done
 
 _RockTunnel2BattleText7::
-	text "אני לא בא לפה"
+	text "אני לא באה לפה"
 	line "לרוב, אבל אני"
 	cont "אלחם בך."
 	done
@@ -93,8 +93,9 @@ _RockTunnel2EndBattleText7::
 	prompt
 
 _RockTunnel2AfterBattleText7::
-	text "אני אוהב #ימונים"
-	line "קטנטנים, הגדולים"
+	text "אני אוהבת"
+	line "#ימונים"
+	cont "קטנטנים, הגדולים"
 	cont "מפחידים מדי!"
 	done
 
