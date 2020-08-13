@@ -10,12 +10,12 @@ _VermilionMartText2::
 
 	para "הם גם נוטשים"
 	line "#ימונים שהם"
-	line "מחשיבים ללא"
+	cont "מחשיבים ללא"
 	cont "יפים או שימושיים."
 	done
 
 _VermilionMartText3::
-	text "אני חושב"
+	text "אני חושבת"
 	line "ש#ימונים יכולים"
 	cont "להיות טובים או"
 	cont "רעים, תלוי במאמן"
