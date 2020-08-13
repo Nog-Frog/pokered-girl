@@ -20,7 +20,7 @@ _SSAnne9Text_61c10::
 
 _SSAnne9Text_61c1f::
 	text "היית באיזור"
-	line "הספארי בעיר?"
+	line "הספארי בעיר"
 	cont "השושנה?"
 
 	para "יש שם הרבה"
@@ -58,7 +58,7 @@ _SSAnne9EndBattleText1::
 	prompt
 
 _SSAnne9AfterBattleText1::
-	text "לפני 15 שנים"
+	text "לפני 51 שנים"
 	line "בטוח הייתי מנצח!"
 	done
 
@@ -105,7 +105,7 @@ _SSAnne9EndBattleText4::
 	prompt
 
 _SSAnne9AfterBattleText4::
-	text "הו, אני מעריץ"
+	text "הו, אני מעריצה"
 	line "את ה#ימון"
 	cont "החזק שלך!"
 	done
