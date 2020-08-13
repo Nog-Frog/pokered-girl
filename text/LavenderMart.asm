@@ -2,11 +2,11 @@ _LavenderMartText2::
 	text "אני מחפש פריטים"
 	line "שמעצימים את"
 	cont "יכולות ה#ימון"
-    cont "בזמן קרב."
+	cont "בזמן קרב."
 
 	para "פריטים כמו"
 	line "X מתקפה, X הגנה,"
-	cont "Xמהירות, וX"
+	cont "Xמהירות, ו X"
 	cont "מיוחדת."
 
 	para "אתה יודע איפה"
