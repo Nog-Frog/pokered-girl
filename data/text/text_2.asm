@@ -16,11 +16,11 @@ _FemaleAIBattleWithdrawText::
 
 _MaleAIBattleUseItemText::
 	text_ram wTrainerName
-	text "@"
+	text_start
 	line "השתמש"
 	cont "ב@"
 	text_ram wcd6d
-	text "@"
+	text_start
 	cont "על @"
 	text_ram wEnemyMonNick
 	text "!"
@@ -28,11 +28,11 @@ _MaleAIBattleUseItemText::
 
 _FemaleAIBattleUseItemText::
 	text_ram wTrainerName
-	text "@"
+	text_start
 	line "השתמשה"
 	cont "ב@"
 	text_ram wcd6d
-	text "@"
+	text_start
 	cont "על @"
 	text_ram wEnemyMonNick
 	text "!"
@@ -1545,9 +1545,10 @@ _DepositHowManyText::
 	done
 
 _ItemWasStoredText::
+	text "איחסנת במחשב"
+	line "@"
 	text_ram wcd6d
-	text ""
-	line "מאוחסן במחשב."
+	text "."
 	prompt
 
 _NothingToDepositText::
@@ -1729,7 +1730,7 @@ _GetDexRatedText::
 
 _ClosedOaksPCText::
 	text "החיבור למחשב של"
-	line "פרופ' אלון נסדר.@"
+	line "פרופ' אלון נסגר.@"
 	text_end
 
 _AccessedOaksPCText::
