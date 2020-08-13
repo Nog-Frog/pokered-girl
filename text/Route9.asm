@@ -21,7 +21,7 @@ _Route9BattleText2::
 	done
 
 _Route9EndBattleText2::
-	text 'כיבית"
+	text "כיבית"
 	line "אותי!" 
 	prompt
 
