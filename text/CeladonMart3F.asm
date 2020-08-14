@@ -30,8 +30,8 @@ _TM18NoRoomText::
 _CeladonMart3Text2::
 	text "כש#ימון נתפס,"
 	line "הוא מקבל מספר"
-	cont "זהות - או ID -"
-	cont "וOT, שהוא השם של"
+	cont "זהות - או DI -"
+	cont "וTO, שהוא השם של"
 	cont "המאמן שתפס אותו!"
 	done
 
@@ -61,11 +61,11 @@ _CeladonMart3Text5::
 	line "#ימונים שקיבלת"
 	cont "דרך החלפה לפי"
 	cont "מספר הזהות שלהם,"
-	cont "ה-ID!"
+	cont "ה-DI!"
 	done
 
 _CeladonMart3Text6::
-	text "זאת קונסולת SNES!"
+	text "זאת קונסולת SENS!"
 	done
 
 _CeladonMart3Text7::
