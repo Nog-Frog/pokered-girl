@@ -52,7 +52,7 @@ _RockTunnel1AfterBattleText3::
 
 _RockTunnel1BattleText4::
 	text "קרב #ימון!"
-	line "היכון,צא!"
+	line "היכון, צא!"
 	done
 
 _RockTunnel1EndBattleText4::
