@@ -4,8 +4,8 @@ _Route9BattleText1::
 	done
 
 _Route9EndBattleText1::
-	text "אתה הולכת אותי"
-	line "שולל!"
+	text "אתה"
+	line "הולכת אותי שולל!"
 	prompt
 
 _Route9AfterBattleText1::
@@ -21,7 +21,8 @@ _Route9BattleText2::
 	done
 
 _Route9EndBattleText2::
-	text "כיבית אותי!"
+	text "כיבית"
+	line "אותי!" 
 	prompt
 
 _Route9AfterBattleText2::
@@ -35,7 +36,8 @@ _Route9BattleText3::
 	done
 
 _Route9EndBattleText3::
-	text "לא השתוויתי אליך!"
+	text "לא"
+	line "השתוויתי אליך!"
 	prompt
 
 _Route9AfterBattleText3::
@@ -64,7 +66,8 @@ _Route9BattleText5::
 	done
 
 _Route9EndBattleText5::
-	text "תמשיך ככה, הא!"
+	text "תמשיך ככה,"
+	line "הא!"
 
 	para "אוי רגע. נגמרו"
 	line "לי ה#ימונים!"
@@ -135,7 +138,8 @@ _Route9BattleText9::
 	done
 
 _Route9EndBattleText9::
-	text "החרקים שלי..."
+	text "החרקים"
+	line "שלי..."
 	prompt
 
 _Route9AfterBattleText9::
@@ -146,6 +150,6 @@ _Route9AfterBattleText9::
 
 _Route9Text11::
 	text "דרך 9"
-	line "עיר האביב -"
+	line "עיר הטורקיז -"
 	cont "מנהרת הסלע"
 	done
