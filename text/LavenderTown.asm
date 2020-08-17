@@ -10,7 +10,7 @@ _LavenderTownText_44141::
 
 _LavenderTownText_44146::
 	text "האהאה, אני"
-	line ".מניח שלא"
+	line "מניחה שלא."
 
 	para "היד החיוורת"
 	line "על הכתף שלך"
