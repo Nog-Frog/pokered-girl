@@ -1,6 +1,6 @@
 _Route2Text3::
 	text "דרך 2"
-	line "עיר האביב -"
+	line "עיר הברקת -"
 	cont "עיר הכספית"
 	done
 
