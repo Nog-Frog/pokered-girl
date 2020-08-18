@@ -12,7 +12,8 @@ _SSAnne8BattleText1::
 	done
 
 _SSAnne8EndBattleText1::
-	text "חבריי, חבריי..."
+	text "חבריי,"
+	line "חבריי..."
 	prompt
 
 _SSAnne8AfterBattleText1::

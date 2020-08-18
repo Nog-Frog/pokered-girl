@@ -10,19 +10,19 @@ _SSAnne2Text1::
 	done
 
 _SSAnneRivalBeforeBattleText::
-	text "בונז'ור:<RIVAL>!"
+	text "<RIVAL>: בונז'ור!"
 	line "<PLAYER>!"
 
 	para "לא ציפיתי לראות"
 	line "אותך כאן!"
 
-	para "באמת ,<PLAYER>"
+	para "<PLAYER>, באמת"
 	line "הוזמנת לכאן?"
 
 	para "אז איך הולך"
 	line "עם ה#ידע?"
 
-	para "כבר תפסתי 40"
+	para "כבר תפסתי 04"
 	line "סוגים, חבר!"
 
 	para "יש סוגים שונים"
@@ -41,7 +41,7 @@ _SSAnneRivalDefeatedText::
 	prompt
 
 _SSAnneRivalWonText::
-	text "מה קרה !<PLAYER>?"
+	text "<PLAYER>! מה קרה?"
 	line "חטפת מחלת ים?"
 
 	para "כדאי שתתעורר,"
@@ -49,7 +49,7 @@ _SSAnneRivalWonText::
 	prompt
 
 _SSAnneRivalCaptainText::
-	text "שמעתי :<RIVAL>"
+	text "<RIVAL>: שמעתי"
 	line "שגורו החיתוך"
 	cont "נמצא על הספינה."
 
