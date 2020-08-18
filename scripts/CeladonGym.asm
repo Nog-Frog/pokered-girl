@@ -17,10 +17,10 @@ CeladonGymScript_48927:
 	jp LoadGymLeaderAndCityName
 
 Gym4CityName:
-	db "CELADON CITY@"
+	db "עיר האביב@"
 
 Gym4LeaderName:
-	db "ERIKA@"
+	db "איריס@"
 
 CeladonGymText_48943:
 	xor a
