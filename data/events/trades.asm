@@ -1,21 +1,21 @@
 TradeMons:
 ; givemonster, getmonster, textstring, nickname (11 bytes), 14 bytes total
-	db NIDORINO,  NIDORINA, 0,"TERRY@@@@@"
+	db NIDORINO,  NIDORINA, 0,"בילבי@@@@@"
 	text_end
-	db ABRA,      MR_MIME,  0,"MARCEL@@@@"
+	db ABRA,      MR_MIME,  0,"אייפל@@@@@"
 	text_end
-	db BUTTERFREE,BEEDRILL, 2,"CHIKUCHIKU@"
-	db PONYTA,    SEEL,     0,"SAILOR@@@@"
+	db BUTTERFREE,BEEDRILL, 2,"מאיה@@@@@@@"
+	db PONYTA,    SEEL,     0,"רב-חובל@@@"
 	text_end
-	db SPEAROW,   FARFETCHD,2,"DUX@@@@@@@"
+	db SPEAROW,   FARFETCHD,2,"ברבז@@@@@@"
 	text_end
-	db SLOWBRO,   LICKITUNG,0,"MARC@@@@@@"
+	db SLOWBRO,   LICKITUNG,0,"ליאוריק@@@"
 	text_end
-	db POLIWHIRL, JYNX,     1,"LOLA@@@@@@"
+	db POLIWHIRL, JYNX,     1,"נגית@@@@@@"
 	text_end
-	db RAICHU,    ELECTRODE,1,"DORIS@@@@@"
+	db RAICHU,    ELECTRODE,1,"דר@@@@@@@@"
 	text_end
-	db VENONAT,   TANGELA,  2,"CRINKLES@@"
+	db VENONAT,   TANGELA,  2,"פלונטר@@@@"
 	text_end
-	db NIDORAN_M, NIDORAN_F,2,"SPOT@@@@@@"
+	db NIDORAN_M, NIDORAN_F,2,"שלג@@@@@@@"
 	text_end
