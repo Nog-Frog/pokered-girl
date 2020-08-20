@@ -501,9 +501,10 @@ PrintListMenuEntries::
 	sla a
 	cp c ; is it this item?
 	jr nz, .nextListEntry
-	dec hl
+	inc hl
 	ld a, $E8 ; unfilled right arrow menu cursor to indicate an item being swapped
-	ld [hli], a
+	ld [hl], a
+	dec hl
 .nextListEntry
 	ld bc, 2 * SCREEN_WIDTH ; 2 rows
 	add hl, bc
