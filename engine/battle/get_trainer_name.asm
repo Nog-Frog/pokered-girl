@@ -1,4 +1,9 @@
 GetTrainerName_::
+	; For gendered pronouns - initialize male gender for rival and linked battles
+	ld a, [wPronounGender]
+	set 4, a
+	ld [wPronounGender], a
+
 	ld hl, wGrassRate
 	ld a, [wLinkState]
 	and a
