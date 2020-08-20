@@ -47,7 +47,9 @@
 	charmap "‘",         $70 ; opening single quote
 	charmap "’",         $71 ; closing single quote
 	charmap "“",         $72 ; opening quote
-	charmap "”",         $73 ; closing quote
+	; This has been commented out to allow for use of the double quote in Hebrew acronyms, even when characters
+	; from gfx/font/font_extra.png aren't loaded. It's now mapped to $E1.
+	;charmap "”",         $73 ; closing quote
 	charmap "·",         $74 ; middle dot, unused
 	charmap "…",         $75 ; ellipsis
 	charmap "ぁ",         $76 ; hiragana small a, unused
@@ -179,6 +181,7 @@
 	charmap "╎",         $CF ; Shva שווא
 	charmap "․",         $D0 ; Hirik חיריק
 
+	charmap "”",		 $E1
 	charmap "'",         $E2
 	charmap "-",         $E3
 	charmap "־",         $E4
