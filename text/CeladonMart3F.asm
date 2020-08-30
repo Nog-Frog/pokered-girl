@@ -65,7 +65,7 @@ _CeladonMart3Text5::
 	done
 
 _CeladonMart3Text6::
-	text "זאת קונסולת SENS!"
+	text "זה מגאסון!"
 	done
 
 _CeladonMart3Text7::
