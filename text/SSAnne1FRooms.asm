@@ -37,8 +37,8 @@ _SSAnne8AfterBattleText2::
 	done
 
 _SSAnne8BattleText3::
-	text "אני אוהב #ימונים!"
-	line "ואתה?"
+	text "אני אוהב"
+	line "#ימונים! ואתה?"
 	done
 
 _SSAnne8EndBattleText3::

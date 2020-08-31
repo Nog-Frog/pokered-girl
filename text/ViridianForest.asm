@@ -47,8 +47,9 @@ _ViridianForestBattleText3::
 	done
 
 _ViridianForestEndBattleText3::
-	text "ויתרתי!"
-	line "אתה טוב!"
+	text "@" 
+	line "ויתרתי!"
+	cont "אתה טוב!"
 	prompt
 
 _ViridianFrstAfterBattleText3::

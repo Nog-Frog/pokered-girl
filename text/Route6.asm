@@ -6,7 +6,8 @@ _Route6BattleText1::
 
 _Route6EndBattleText1::
 	text "אני פשוט"
-	line "לא מצליח לנצח!"
+	line "פשוט לא מצליח"
+	cont "לנצח!"
 	prompt
 
 _Route6AfterBattleText1::

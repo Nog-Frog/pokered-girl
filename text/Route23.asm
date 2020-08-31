@@ -5,9 +5,10 @@ _VictoryRoadGuardText1::
 	text_ram wcd6d
 	text "!"
 
-	para " עדיין אין לך את"
+	para "עדיין אין לך את"
 	line "@"
 	text_ram wcd6d
+	text "."
 
 	para "אתה חייב אותו"
 	line "כדי להגיע"

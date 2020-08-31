@@ -16,8 +16,9 @@ _Route3BattleText1::
 	done
 
 _Route3EndBattleText1::
-	text "אני לא מאמין!"
-	line "ניצחת אותי שוב!"
+	text "אני"
+	line "לא מאמין!"
+	cont "ניצחת אותי שוב!"
 	prompt
 
 _Route3AfterBattleText1::

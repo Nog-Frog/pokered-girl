@@ -20,7 +20,8 @@ _MtMoon1BattleText3::
 	done
 
 _MtMoon1EndBattleText3::
-	text "אני שונא להפסיד!"
+	text "אני שונא"
+	line "להפסיד!"
 	prompt
 
 _MtMoon1AfterBattleText3::
@@ -97,7 +98,8 @@ _MtMoon1BattleText8::
 	done
 
 _MtMoon1EndBattleText8::
-	text "הפסדתי."
+	text ""
+	line "הפסדתי."
 	prompt
 
 _MtMoon1AfterBattleText8::

@@ -215,8 +215,9 @@ _LavenderPokecenterGuyText::
 
 _MtMoonPokecenterBenchGuyText::
 	text "אם יש לך יותר מדי"
-	line "#ימונים, אני מציע"
-	cont "שתאחסן אותם במחשב!"
+	line "#ימונים, אני "
+	cont "מציע שתאחסן אותם"
+	cont "במחשב!"
 	done
 
 _RockTunnelPokecenterGuyText::
@@ -1439,10 +1440,11 @@ _PartyMenuSwapMonText::
 
 _PotionText::
 	text_ram wcd6d
-	text " נרפא ושחזר"
-	line "@"
+	text " נרפא"
+	line "ושחזר @"
 	text_decimal wHPBarHPDifference, 2, 3
-	text " נקודות פגיעה!"
+	text " נ”פ!"
+	; TODO: For some reason, 'cont' does not work here!!
 	done
 
 _AntidoteText::

@@ -79,7 +79,7 @@ BillsHousePokemonList::
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 9
 	ld [wTopMenuItemX], a
 .billsPokemonLoop
 	ld hl, wd730
@@ -88,7 +88,7 @@ BillsHousePokemonList::
 	ld b, 10
 	ld c, 9
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 8, 2
 	ld de, BillsMonListText
 	call PlaceString
 	ld hl, BillsHousePokemonListText2

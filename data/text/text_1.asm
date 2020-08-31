@@ -87,7 +87,9 @@ _OaksAideHiText::
 	para "<PLAYER>! כבר"
 	line "תפסת לפחות @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text "סוגי #ימון שונים?" ; TODO add another line
+	text ""
+	cont "סוגי #ימון" ; TODO add another line
+	cont "שונים?"
 	done
 
 _OaksAideUhOhText::
@@ -100,8 +102,8 @@ _OaksAideUhOhText::
 
 	para "תצטרך לתפוס @"
 	text_decimal hOaksAideRequirement, 1, 3
-	text " סוגים"
-	line "כדי לקבל את"
+	text ""
+	line "סוגים כדי לקבל את"
 	cont "ה@"
 	text_ram wOaksAideRewardItemName
 	text "."
@@ -114,8 +116,8 @@ _OaksAideComeBackText::
 	text_decimal hOaksAideRequirement, 1, 3
 	text ""
 	line "סוגים, בוא לדבר"
-	cont "איתי ואתן לך @"
-	text_end
+	cont "איתי ואתן לך"
+	cont "@"
 	text_ram wOaksAideRewardItemName
 	text "."
 	done

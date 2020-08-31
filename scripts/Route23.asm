@@ -92,25 +92,25 @@ BadgeTextPointers:
 	dw EarthBadgeText
 
 EarthBadgeText:
-	db "EARTHBADGE@"
+	db "תג האדמה@"
 
 VolcanoBadgeText:
-	db "VOLCANOBADGE@"
+	db "תג המגמה@"
 
 MarshBadgeText:
-	db "MARSHBADGE@"
+	db "תג הזהב@"
 
 SoulBadgeText:
-	db "SOULBADGE@"
+	db "תג הלב@"
 
 RainbowBadgeText:
-	db "RAINBOWBADGE@"
+	db "תג הקשת בענן@"
 
 ThunderBadgeText:
-	db "THUNDERBADGE@"
+	db "תג הרעם@"
 
 CascadeBadgeText:
-	db "CASCADEBADGE@"
+	db "תג האדווה@"
 
 Route23Script_512d8:
 	ld a, $1

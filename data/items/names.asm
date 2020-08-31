@@ -43,7 +43,7 @@ ItemNames::
 	db "מאובן סלילי@"     ; HELIX FOSSIL
 	db "מפתח סודי@"       ; SECRET KEY
 	db "?????@"           ; ?????
-	db "שובר לאופניים@"   ; BIKE VOUCHER
+	db "שובר אופניים@"    ; BIKE VOUCHER
 	db "X דייקנות@"       ; X ACCURACY
 	db "אבן עלה@"         ; LEAF STONE
 	db "כרטיס מפתח@"      ; CARD KEY
