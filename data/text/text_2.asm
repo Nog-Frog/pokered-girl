@@ -16,11 +16,11 @@ _FemaleAIBattleWithdrawText::
 
 _MaleAIBattleUseItemText::
 	text_ram wTrainerName
-	text "@"
+	text_start
 	line "השתמש"
 	cont "ב@"
 	text_ram wcd6d
-	text "@"
+	text_start
 	cont "על @"
 	text_ram wEnemyMonNick
 	text "!"
@@ -28,11 +28,11 @@ _MaleAIBattleUseItemText::
 
 _FemaleAIBattleUseItemText::
 	text_ram wTrainerName
-	text "@"
+	text_start
 	line "השתמשה"
 	cont "ב@"
 	text_ram wcd6d
-	text "@"
+	text_start
 	cont "על @"
 	text_ram wEnemyMonNick
 	text "!"
@@ -776,8 +776,9 @@ _VermilionGymTrashFailText::
 	text "נה, כאן יש"
 	line "רק אשפה."
 	cont "היי! המנעולים"
-	cont "החשמליים נעלו"
-	cont "שוב!"
+	cont "החשמליים ננעלו"
+	cont "שוב!@"
+	text_end
 
 _FoundHiddenItemText::
 	text "<PLAYER> מצא"

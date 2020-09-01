@@ -80,7 +80,8 @@ _VermilionGymBattleText2::
 	done
 
 _VermilionGymEndBattleText2::
-	text "עשית ממני קציצות!"
+	text "עשית ממני"
+	line "קציצות!"
 	prompt
 
 _VermilionGymAfterBattleText2::
