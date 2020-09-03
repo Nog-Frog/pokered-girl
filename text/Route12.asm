@@ -46,7 +46,8 @@ _Route12EndBattleText2::
 _Route12AfterBattleText2::
 	text "עם חכה טובה יותר,"
 	line "תוכל לתפוס"
-	cont "#ימונים טובים יותר!"
+	cont "#ימונים טובים"
+	cont "יותר!"
 	done
 
 _Route12BattleText3::
@@ -130,7 +131,7 @@ _Route12AfterBattleText7::
 
 _Route12Text11::
 	text "דרך 12"
-	line "צפונה מעיר הלבנדר"
+	line "צפונה לעיר הלבנדר"
 	done
 
 _Route12Text12::

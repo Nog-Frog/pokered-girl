@@ -54,7 +54,7 @@ _RocketHideout4EndBattleText3::
 
 _RocketHide4AfterBattleText3::
 	text "בוס! אני מצטער"
-	line "שאכזתי אותך!"
+	line "שאכזבתי אותך!"
 	done
 
 _RocketHideout4BattleText4::

@@ -1,7 +1,7 @@
 _CeladonMansion5Text1::
 	text "אני יודע הכל"
 	line "על עולם ה#ימון"
-	cont "שבGAME BOY שלך!"
+	cont "שבגיים בוי שלך!"
 
 	para "היפגש עם חברייך"
 	line "והחלף איתם"

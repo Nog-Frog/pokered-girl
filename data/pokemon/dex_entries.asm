@@ -413,7 +413,7 @@ GrowlitheDexEntry:
 	text_end
 
 OnixDexEntry:
-	db "נחש סלעE@"
+	db "נחש סלע@"
 	db 8,78
 	dw 2100
 	text_far _OnixDexEntry

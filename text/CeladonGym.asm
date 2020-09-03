@@ -14,7 +14,7 @@ _CeladonGymText_48a5e::
 
 	para "אני מלמדת את"
 	line "האומנות של סידור"
-	cont "סידור זרי פרחים."
+	cont "זרי פרחים."
 	cont "ה#ימונים שלי הם"
 	cont "מסוג דשא."
 
@@ -73,8 +73,8 @@ _ReceivedTM21Text::
 
 _TM21ExplanationText::
 	text_start
-	para "מ”מ12 מכיל את המהלך"
-	line "יניקת על."
+	para "מ”מ12 מכיל את"
+	line "המהלך יניקת על."
 
 	para "ה#ימון יונק נ”פ"
 	line "מה#ימון היריב,"

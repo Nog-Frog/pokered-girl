@@ -1,6 +1,6 @@
 _Route8BattleText1::
-	text "נראה שאתה לא רע ב"
-	line "#ימון, אבל מה"
+	text "נראה שאתה לא רע"
+	line "ב#ימון, אבל מה"
 	cont "הציון שלך בכימיה?"
 	done
 
@@ -49,7 +49,7 @@ _Route8AfterBattleText3::
 _Route8BattleText4::
 	text "אני אוהבת את"
 	line "ה#ימון מחטן,"
-	line "אז אני אוספת"
+	cont "אז אני אוספת"
 	cont "כאלה!"
 	done
 
@@ -71,8 +71,9 @@ _Route8BattleText5::
 	done
 
 _Route8EndBattleText5::
-	text "אני חושב שאשאר"
-	line "עם בית הספר."
+	text "אני חושב"
+	line "שאשאר עם בית"
+	cont "הספר."
 	prompt
 
 _Route8AfterBattleText5::
@@ -129,7 +130,7 @@ _Route8EndBattleText8::
 _Route8AfterBattleText8::
 	text "משחקי הימורים"
 	line "ו#ימון הם כמו"
-	cont "הם כמו בוטנים!"
+	cont "בוטנים!"
 	cont "אני מכור לגמרי!"
 	done
 

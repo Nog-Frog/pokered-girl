@@ -8,15 +8,15 @@ _CeladonDinerText1::
 _CeladonDinerText2::
 	text "הפוקימונים שלי"
 	line "חלשים אז אני"
-	cont "נאלץ לבקר במרכז"
+	cont "נאלצת לבקר במרכז"
 	cont "ה#ימון לעיתים"
 	cont "קרובות."
 	done
 
 _CeladonDinerText3::
 	text "פססט! יש מרתף"
-	line "נסתר מתחת למשחקיית"
-	cont "רוקט..."
+	line "נסתר מתחת"
+	cont "למשחקיית רוקט..."
 	done
 
 _CeladonDinerText4::

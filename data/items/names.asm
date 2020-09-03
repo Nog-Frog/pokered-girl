@@ -67,7 +67,7 @@ ItemNames::
 	db "X הגנה@"          ; X DEFEND
 	db "X מהירות@"        ; X SPEED
 	db "X מיוחדת@"        ; X SPECIAL
-	db "ארנק לאסימונים@"  ; COIN CASE
+	db "ארנק אסימונים@"  ; COIN CASE
 	db "חבילה של אלון@"   ; OAK's PARCEL
 	db "מאתר חפצים@"      ; ITEMFINDER
 	db "משקף סילף@"       ; SILPH SCOPE

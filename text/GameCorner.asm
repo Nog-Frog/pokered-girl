@@ -145,7 +145,7 @@ _CeladonGameCornerText_48e36::
 _CeladonGameCornerText_48e88::
 	text "רגע, מה? אתה מסיח"
 	line "את דעתי! קח כמה"
-	cont "אסימונים ו′סתלק!"
+	cont "אסימונים ו'סתלק!"
 	cont "קישטה!"
 	prompt
 

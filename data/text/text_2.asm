@@ -498,8 +498,8 @@ _JustAMomentText::
 	done
 
 TMNotebookText::
-	text "זה עלון מידע"
-	line "מ”מ-ים."
+	text "זה עלון מידע על"
+	line "מ”מ."
 
 	para "..."
 
@@ -650,7 +650,7 @@ _LinkCableHelpText2::
 _LinkCableInfoText1::
 	text "ברגע שתחבר את"
 	line "הגיים בוי שלך עם"
-	cont ",גיים בוי נוסף"
+	cont "גיים בוי נוסף,"
 	cont "דבר עם הנציגה"
 	cont "שבצד ימין בכל"
 	cont "מרכז #ימון."
@@ -1246,8 +1246,8 @@ _SubstituteBrokeText::
 	prompt
 
 _BuildingRageText::
-	text "<USER> צובר"
-	line "זעם!"
+	text "<USER>"
+	line "צובר זעם!"
 	prompt
 
 _MirrorMoveFailedText::

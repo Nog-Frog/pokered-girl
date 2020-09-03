@@ -21,7 +21,7 @@ LinkCableHelp::
 	ld [wMaxMenuItem], a
 	ld a, 2
 	ld [wTopMenuItemY], a
-	ld a, 1
+	ld a, 13
 	ld [wTopMenuItemX], a
 .linkHelpLoop
 	ld hl, wd730
@@ -30,7 +30,7 @@ LinkCableHelp::
 	ld b, 8
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 2, 2
+	coord hl, 12, 2
 	ld de, HowToLinkText
 	call PlaceString
 	ld hl, LinkCableHelpText2
