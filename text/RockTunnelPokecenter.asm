@@ -8,5 +8,5 @@ _RockTunnelPokecenterText2::
 
 _RockTunnelPokecenterText3::
 	text "מכרתי גוש זהב חסר"
-	line "תועלת ב¥0005!"
+	line "תועלת ב0005¥!"
 	done

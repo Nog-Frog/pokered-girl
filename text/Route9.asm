@@ -32,7 +32,8 @@ _Route9AfterBattleText2::
 _Route9BattleText3::
 	text "אני לוקח את"
 	line "מנהרת הסלע כדי"
-	cont "להגיע לעיר הלבנדר..."
+	cont "להגיע לעיר"
+	cont "הלבנדר..."
 	done
 
 _Route9EndBattleText3::

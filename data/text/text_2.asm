@@ -1627,7 +1627,7 @@ _MonWasStoredText::
 
 _CantDepositLastMonText::
 	text "אתה לא יכול"
-	line "לאחסן את!"
+	line "לאחסן את"
 	cont "ה#ימון האחרון!"
 	prompt
 

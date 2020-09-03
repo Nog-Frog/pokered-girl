@@ -84,8 +84,9 @@ _Route10AfterBattleText5::
 	done
 
 _Route10BattleText6::
-	text "אני מרגיש קצת שחוק"
-	line "אחרי הטיול הארוך."
+	text "אני מרגישה קצת"
+	line "שחוקה אחרי הטיול"
+	cont "הארוך."
 	done
 
 _Route10EndBattleText6::

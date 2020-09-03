@@ -3,8 +3,8 @@ _TM39PreReceiveText::
 	line "שלי נמצא במגדל"
 	cont "ה#ימון."
 
-	para "קח, אני לא צריך את"
-	line "זה יותר..."
+	para "קח, אני לא צריכה"
+	line "את זה יותר..."
 	prompt
 
 _ReceivedTM39Text::
