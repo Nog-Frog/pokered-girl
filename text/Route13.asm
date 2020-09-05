@@ -17,8 +17,8 @@ _Route13AfterBattleText2::
 	done
 
 _Route13BattleText3::
-	text "אני נלחם טוב ביחס"
-	line "לילד בגילי!"
+	text "אני נלחמת טוב"
+	line "ביחס לילדה בגילי!"
 	done
 
 _Route13EndBattleText3::
@@ -28,7 +28,7 @@ _Route13EndBattleText3::
 
 _Route13AfterBattleText3::
 	text "אני רוצה להיות"
-	line "מאמן טוב. אני"
+	line "מאמנת טובה. אני"
 	cont "אתאמן הרבה."
 	done
 

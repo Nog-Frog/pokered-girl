@@ -169,6 +169,6 @@ _Route15AfterBattleText10::
 
 _Route15Text12::
 	text "דרך 51"
-	line "מערבית לעיר"
+	line "ממערב: עיר"
 	cont "השושנה"
 	done

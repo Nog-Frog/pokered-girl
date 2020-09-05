@@ -71,14 +71,14 @@ _Route12BattleText4::
 
 _Route12EndBattleText4::
 	text "אזל לי"
-	cont "החשמל!"
+	line "החשמל!"
 	prompt
 
 _Route12AfterBattleText4::
-	text "מים מוליכים"
-	line "חשמל, לכן כדאי"
-	cont "לך לחשמל #ימונים"
-	cont "מסוג מים!"
+	text "מים מוליכים חשמל,"
+	line "לכן כדאי לך לחשמל"
+	cont "#ימונים מסוג"
+	cont "מים!"
 	done
 
 _Route12BattleText5::
@@ -131,7 +131,7 @@ _Route12AfterBattleText7::
 
 _Route12Text11::
 	text "דרך 12"
-	line "צפונה לעיר הלבנדר"
+	line "מצפון: עיר הלבנדר"
 	done
 
 _Route12Text12::

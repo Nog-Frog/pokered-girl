@@ -55,8 +55,8 @@ _Route14AfterBattleText3::
 
 _Route14BattleText4::
 	text "האם לימדת את"
-	line "#ימון הציפור שלך"
-	cont "לעוף?"
+	line "#ימון הציפור"
+	cont "שלך לעוף?"
 	done
 
 _Route14EndBattleText4::
@@ -169,6 +169,6 @@ _Route14AfterBattleText10::
 
 _Route14Text11::
 	text "דרך 41"
-	line "מערבית לעיר"
+	line "ממערב: עיר"
 	cont "השושנה"
 	done
