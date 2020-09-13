@@ -1548,9 +1548,10 @@ _DepositHowManyText::
 	done
 
 _ItemWasStoredText::
+	text "איחסנת במחשב"
+	line "@"
 	text_ram wcd6d
-	text ""
-	line "מאוחסן במחשב."
+	text "."
 	prompt
 
 _NothingToDepositText::
@@ -1732,7 +1733,7 @@ _GetDexRatedText::
 
 _ClosedOaksPCText::
 	text "החיבור למחשב של"
-	line "פרופ' אלון נסדר.@"
+	line "פרופ' אלון נסגר.@"
 	text_end
 
 _AccessedOaksPCText::
