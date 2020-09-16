@@ -63,8 +63,8 @@ AgathaScript0:
 	call ArePlayerCoordsInArray
 	jp nc, CheckFightingMapTrainers
 	xor a
-	ld [hJoyPressed], a
-	ld [hJoyHeld], a
+	ldh [hJoyPressed], a
+	ldh [hJoyHeld], a
 	ld [wSimulatedJoypadStatesEnd], a
 	ld [wSimulatedJoypadStatesIndex], a
 	ld a, [wCoordIndex]
@@ -74,7 +74,7 @@ AgathaScript0:
 	jr z, AgathaScriptWalkIntoRoom
 .stopPlayerFromLeaving
 	ld a, $2
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID  ; "Don't run away!"
 	ld a, D_UP
 	ld [wSimulatedJoypadStatesEnd], a
@@ -87,11 +87,11 @@ AgathaScript0:
 	ret
 
 AgathaEntranceCoords:
-	db $0A,$04
-	db $0A,$05
-	db $0B,$04
-	db $0B,$05
-	db $FF
+	dbmapcoord  4, 10
+	dbmapcoord  5, 10
+	dbmapcoord  4, 11
+	dbmapcoord  5, 11
+	db -1 ; end
 
 AgathaScript3:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -110,7 +110,7 @@ AgathaScript2:
 	cp $ff
 	jp z, ResetAgathaScript
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $1
 	ld [wChampionsRoomCurScript], a
@@ -121,15 +121,8 @@ AgathasRoom_TextPointers:
 	dw AgathaDontRunAwayText
 
 AgathaTrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_AGATHAS_ROOM_TRAINER_0
-	db ($0 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_AGATHAS_ROOM_TRAINER_0
-	dw AgathaBeforeBattleText ; TextBeforeBattle
-	dw AgathaAfterBattleText ; TextAfterBattle
-	dw AgathaEndBattleText ; TextEndBattle
-	dw AgathaEndBattleText ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_AGATHAS_ROOM_TRAINER_0, 0, AgathaBeforeBattleText, AgathaEndBattleText, AgathaAfterBattleText
+	db -1 ; end
 
 AgathaText1:
 	text_asm

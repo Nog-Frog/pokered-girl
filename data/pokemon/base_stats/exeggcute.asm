@@ -3,7 +3,7 @@
 	db  60,  40,  80,  40,  60
 	;   hp  atk  def  spd  spc
 
-	db GRASS, PSYCHIC ; type
+	db GRASS, PSYCHIC_TYPE ; type
 	db 90 ; catch rate
 	db 98 ; base exp
 
@@ -11,7 +11,7 @@
 	dw ExeggcutePicFront, ExeggcutePicBack
 
 	db BARRAGE, HYPNOSIS, NO_MOVE, NO_MOVE ; level 1 learnset
-	db 5 ; growth rate
+	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm TOXIC,        TAKE_DOWN,    DOUBLE_EDGE,  RAGE,         PSYCHIC_M,    \

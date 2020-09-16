@@ -19,23 +19,23 @@ MtMoonB2F_Script:
 	ret
 
 CoordsData_49d37:
-	db $05,$0B
-	db $05,$0C
-	db $05,$0D
-	db $05,$0E
-	db $06,$0B
-	db $06,$0C
-	db $06,$0D
-	db $06,$0E
-	db $07,$0B
-	db $07,$0C
-	db $07,$0D
-	db $07,$0E
-	db $08,$0B
-	db $08,$0C
-	db $08,$0D
-	db $08,$0E
-	db $FF
+	dbmapcoord 11,  5
+	dbmapcoord 12,  5
+	dbmapcoord 13,  5
+	dbmapcoord 14,  5
+	dbmapcoord 11,  6
+	dbmapcoord 12,  6
+	dbmapcoord 13,  6
+	dbmapcoord 14,  6
+	dbmapcoord 11,  7
+	dbmapcoord 12,  7
+	dbmapcoord 13,  7
+	dbmapcoord 14,  7
+	dbmapcoord 11,  8
+	dbmapcoord 12,  8
+	dbmapcoord 13,  8
+	dbmapcoord 14,  8
+	db -1 ; end
 
 MtMoon3Script_49d58:
 	xor a
@@ -56,15 +56,15 @@ MtMoon3Script0:
 	CheckEvent EVENT_BEAT_MT_MOON_EXIT_SUPER_NERD
 	jp nz, MtMoon3Script_49d91
 	ld a, [wYCoord]
-	cp $8
+	cp 8
 	jp nz, MtMoon3Script_49d91
 	ld a, [wXCoord]
-	cp $d
+	cp 13
 	jp nz, MtMoon3Script_49d91
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp DisplayTextID
 
 MtMoon3Script_49d91:
@@ -88,7 +88,7 @@ MtMoon3Script3:
 
 MtMoon3Script4:
 	ld a, $1
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld hl, CoordsData_49dea
 	call ArePlayerCoordsInArray
@@ -102,7 +102,7 @@ MtMoon3Script4:
 	ld de, MovementData_49df8
 .asm_49dda
 	ld a, $1
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call MoveSprite
 	ld a, $5
 	ld [wMtMoonB2FCurScript], a
@@ -110,22 +110,22 @@ MtMoon3Script4:
 	ret
 
 CoordsData_49dea:
-	db $07,$0C
-	db $06,$0B
-	db $05,$0C
-	db $FF
+	dbmapcoord 12,  7
+	dbmapcoord 11,  6
+	dbmapcoord 12,  5
+	db -1 ; end
 
 CoordsData_49df1:
-	db $07,$0D
-	db $06,$0E
-	db $05,$0E
-	db $FF
+	dbmapcoord 13,  7
+	dbmapcoord 14,  6
+	dbmapcoord 14,  5
+	db -1 ; end
 
 MovementData_49df8:
 	db NPC_MOVEMENT_RIGHT
-
 MovementData_49df9:
-	db NPC_MOVEMENT_UP,$FF
+	db NPC_MOVEMENT_UP
+	db -1 ; end
 
 MtMoon3Script5:
 	ld a, [wd730]
@@ -136,7 +136,7 @@ MtMoon3Script5:
 	ld a, $1
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
 	ld a, $a
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	CheckEvent EVENT_GOT_DOME_FOSSIL
 	jr z, .asm_49e1d
@@ -167,42 +167,14 @@ MtMoonB2F_TextPointers:
 	dw MtMoon3Text_49f99
 
 MtMoon3TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_MT_MOON_3_TRAINER_0
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MT_MOON_3_TRAINER_0
-	dw MtMoon3BattleText2 ; TextBeforeBattle
-	dw MtMoon3AfterBattleText2 ; TextAfterBattle
-	dw MtMoon3EndBattleText2 ; TextEndBattle
-	dw MtMoon3EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_0, 4, MtMoon3BattleText2, MtMoon3EndBattleText2, MtMoon3AfterBattleText2
 MtMoon3TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_MT_MOON_3_TRAINER_1
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MT_MOON_3_TRAINER_1
-	dw MtMoon3BattleText3 ; TextBeforeBattle
-	dw MtMoon3AfterBattleText3 ; TextAfterBattle
-	dw MtMoon3EndBattleText3 ; TextEndBattle
-	dw MtMoon3EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_1, 4, MtMoon3BattleText3, MtMoon3EndBattleText3, MtMoon3AfterBattleText3
 MtMoon3TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_MT_MOON_3_TRAINER_2
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MT_MOON_3_TRAINER_2
-	dw MtMoon3BattleText4 ; TextBeforeBattle
-	dw MtMoon3AfterBattleText4 ; TextAfterBattle
-	dw MtMoon3EndBattleText4 ; TextEndBattle
-	dw MtMoon3EndBattleText4 ; TextEndBattle
-
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_2, 4, MtMoon3BattleText4, MtMoon3EndBattleText4, MtMoon3AfterBattleText4
 MtMoon3TrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_MT_MOON_3_TRAINER_3
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MT_MOON_3_TRAINER_3
-	dw MtMoon3BattleText5 ; TextBeforeBattle
-	dw MtMoon3AfterBattleText5 ; TextAfterBattle
-	dw MtMoon3EndBattleText5 ; TextEndBattle
-	dw MtMoon3EndBattleText5 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_MT_MOON_3_TRAINER_3, 4, MtMoon3BattleText5, MtMoon3EndBattleText5, MtMoon3AfterBattleText5
+	db -1 ; end
 
 MtMoon3Text1:
 	text_asm
@@ -222,7 +194,7 @@ MtMoon3Text1:
 	ld hl, MtMoon3Text_49f8a
 	ld de, MtMoon3Text_49f8a
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndex]
+	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters

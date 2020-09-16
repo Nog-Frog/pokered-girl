@@ -24,7 +24,7 @@ PokemonTower5Script0:
 	CheckAndSetEvent EVENT_IN_PURIFIED_ZONE
 	ret nz
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $f0
 	ld [wJoyIgnore], a
 	ld hl, wd72e
@@ -35,18 +35,18 @@ PokemonTower5Script0:
 	call Delay3
 	call GBFadeInFromWhite
 	ld a, $7
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	xor a
 	ld [wJoyIgnore], a
 	ret
 
 CoordsData_60992:
-	db $08,$0A
-	db $08,$0B
-	db $09,$0A
-	db $09,$0B
-	db $FF
+	dbmapcoord 10,  8
+	dbmapcoord 11,  8
+	dbmapcoord 10,  9
+	dbmapcoord 11,  9
+	db -1 ; end
 
 PokemonTower5F_TextPointers:
 	dw PokemonTower5Text1
@@ -58,42 +58,14 @@ PokemonTower5F_TextPointers:
 	dw PokemonTower5Text7
 
 PokemonTower5TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_POKEMONTOWER_5_TRAINER_0
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_POKEMONTOWER_5_TRAINER_0
-	dw PokemonTower5BattleText1 ; TextBeforeBattle
-	dw PokemonTower5AfterBattleText1 ; TextAfterBattle
-	dw PokemonTower5EndBattleText1 ; TextEndBattle
-	dw PokemonTower5EndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_0, 2, PokemonTower5BattleText1, PokemonTower5EndBattleText1, PokemonTower5AfterBattleText1
 PokemonTower5TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_POKEMONTOWER_5_TRAINER_1
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_POKEMONTOWER_5_TRAINER_1
-	dw PokemonTower5BattleText2 ; TextBeforeBattle
-	dw PokemonTower5AfterBattleText2 ; TextAfterBattle
-	dw PokemonTower5EndBattleText2 ; TextEndBattle
-	dw PokemonTower5EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_1, 3, PokemonTower5BattleText2, PokemonTower5EndBattleText2, PokemonTower5AfterBattleText2
 PokemonTower5TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_POKEMONTOWER_5_TRAINER_2
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_POKEMONTOWER_5_TRAINER_2
-	dw PokemonTower5BattleText3 ; TextBeforeBattle
-	dw PokemonTower5AfterBattleText3 ; TextAfterBattle
-	dw PokemonTower5EndBattleText3 ; TextEndBattle
-	dw PokemonTower5EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_2, 2, PokemonTower5BattleText3, PokemonTower5EndBattleText3, PokemonTower5AfterBattleText3
 PokemonTower5TrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_POKEMONTOWER_5_TRAINER_3
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_POKEMONTOWER_5_TRAINER_3
-	dw PokemonTower5BattleText4 ; TextBeforeBattle
-	dw PokemonTower5AfterBattleText4 ; TextAfterBattle
-	dw PokemonTower5EndBattleText4 ; TextEndBattle
-	dw PokemonTower5EndBattleText4 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_POKEMONTOWER_5_TRAINER_3, 2, PokemonTower5BattleText4, PokemonTower5EndBattleText4, PokemonTower5AfterBattleText4
+	db -1 ; end
 
 PokemonTower5Text1:
 	text_far _PokemonTower5Text1

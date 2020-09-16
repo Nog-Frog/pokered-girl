@@ -1,5 +1,5 @@
 Museum1F_Script:
-	ld a, $1
+	ld a, TRUE
 	ld [wAutoTextBoxDrawingControl], a
 	xor a
 	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
@@ -13,19 +13,19 @@ Museum1F_ScriptPointers:
 
 Museum1FScript0:
 	ld a, [wYCoord]
-	cp $4
+	cp 4
 	ret nz
 	ld a, [wXCoord]
-	cp $9
+	cp 9
 	jr z, .asm_5c120
 	ld a, [wXCoord]
-	cp $a
+	cp 10
 	ret nz
 .asm_5c120
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp DisplayTextID
 
 Museum1FScript1:
@@ -41,17 +41,17 @@ Museum1F_TextPointers:
 Museum1FText1:
 	text_asm
 	ld a, [wYCoord]
-	cp $4
+	cp 4
 	jr nz, .asm_8774b
 	ld a, [wXCoord]
-	cp $d
+	cp 13
 	jp z, Museum1FScript_5c1f9
 	jr .asm_b8709
 .asm_8774b
 	cp $3
 	jr nz, .asm_d49e7
 	ld a, [wXCoord]
-	cp $c
+	cp 12
 	jp z, Museum1FScript_5c1f9
 .asm_d49e7
 	CheckEvent EVENT_BOUGHT_MUSEUM_TICKET
@@ -71,7 +71,7 @@ Museum1FText1:
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld hl, Museum1FText_5c21f
 	call PrintText
 	call YesNoChoice
@@ -79,10 +79,10 @@ Museum1FText1:
 	and a
 	jr nz, .asm_de133
 	xor a
-	ld [hMoney], a
-	ld [hMoney + 1], a
+	ldh [hMoney], a
+	ldh [hMoney + 1], a
 	ld a, $50
-	ld [hMoney + 2], a
+	ldh [hMoney + 2], a
 	call HasEnoughMoney
 	jr nc, .asm_0f3e3
 	ld hl, Museum1FText_5c229
@@ -188,24 +188,24 @@ Museum1FText_5c251:
 Museum1FText3:
 	text_asm
 	CheckEvent EVENT_GOT_OLD_AMBER
-	jr nz, .asm_5c285
+	jr nz, .got_item
 	ld hl, Museum1FText_5c28e
 	call PrintText
 	lb bc, OLD_AMBER, 1
 	call GiveItem
-	jr nc, .BagFull
+	jr nc, .bag_full
 	SetEvent EVENT_GOT_OLD_AMBER
 	ld a, HS_OLD_AMBER
 	ld [wMissableObjectIndex], a
 	predef HideObject
 	ld hl, ReceivedOldAmberText
-	jr .asm_5c288
-.BagFull
+	jr .done
+.bag_full
 	ld hl, Museum1FText_5c29e
-	jr .asm_5c288
-.asm_5c285
+	jr .done
+.got_item
 	ld hl, Museum1FText_5c299
-.asm_5c288
+.done
 	call PrintText
 	jp TextScriptEnd
 

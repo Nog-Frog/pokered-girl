@@ -33,9 +33,9 @@ SilphCo2Script_59d07:
 	predef_jump ReplaceTileBlock
 
 SilphCo2GateCoords:
-	db $02,$02
-	db $05,$02
-	db $FF
+	dbmapcoord  2,  2
+	dbmapcoord  2,  5
+	db -1 ; end
 
 SilphCo2Script_59d43:
 	push hl
@@ -45,7 +45,7 @@ SilphCo2Script_59d43:
 	ld a, [hl]
 	ld c, a
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	pop hl
 .asm_59d4f
 	ld a, [hli]
@@ -70,12 +70,12 @@ SilphCo2Script_59d43:
 	ret
 .asm_59d6b
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	ret
 
 SilphCo2Script_59d6f:
 	EventFlagAddress hl, EVENT_SILPH_CO_2_UNLOCKED_DOOR1
-	ld a, [hUnlockedSilphCoDoors]
+	ldh a, [hUnlockedSilphCoDoors]
 	and a
 	ret z
 	cp $1
@@ -99,42 +99,14 @@ SilphCo2F_TextPointers:
 	dw SilphCo2Text5
 
 SilphCo2TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_2F_TRAINER_0
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_2F_TRAINER_0
-	dw SilphCo2BattleText1 ; TextBeforeBattle
-	dw SilphCo2AfterBattleText1 ; TextAfterBattle
-	dw SilphCo2EndBattleText1 ; TextEndBattle
-	dw SilphCo2EndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_2F_TRAINER_0, 3, SilphCo2BattleText1, SilphCo2EndBattleText1, SilphCo2AfterBattleText1
 SilphCo2TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_2F_TRAINER_1
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_2F_TRAINER_1
-	dw SilphCo2BattleText2 ; TextBeforeBattle
-	dw SilphCo2AfterBattleText2 ; TextAfterBattle
-	dw SilphCo2EndBattleText2 ; TextEndBattle
-	dw SilphCo2EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_2F_TRAINER_1, 4, SilphCo2BattleText2, SilphCo2EndBattleText2, SilphCo2AfterBattleText2
 SilphCo2TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_2F_TRAINER_2
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_2F_TRAINER_2
-	dw SilphCo2BattleText3 ; TextBeforeBattle
-	dw SilphCo2AfterBattleText3 ; TextAfterBattle
-	dw SilphCo2EndBattleText3 ; TextEndBattle
-	dw SilphCo2EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_2F_TRAINER_2, 3, SilphCo2BattleText3, SilphCo2EndBattleText3, SilphCo2AfterBattleText3
 SilphCo2TrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_2F_TRAINER_3
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_2F_TRAINER_3
-	dw SilphCo2BattleText4 ; TextBeforeBattle
-	dw SilphCo2AfterBattleText4 ; TextAfterBattle
-	dw SilphCo2EndBattleText4 ; TextEndBattle
-	dw SilphCo2EndBattleText4 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_SILPH_CO_2F_TRAINER_3, 3, SilphCo2BattleText4, SilphCo2EndBattleText4, SilphCo2AfterBattleText4
+	db -1 ; end
 
 SilphCo2Text1:
 	text_asm

@@ -28,9 +28,9 @@ Route24Script0:
 	call ArePlayerCoordsInArray
 	jp nc, CheckFightingMapTrainers
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	CheckAndResetEvent EVENT_NUGGET_REWARD_AVAILABLE
 	ret z
@@ -45,7 +45,8 @@ Route24Script0:
 	ret
 
 CoordsData_5140e:
-	db $0F,$0A,$FF
+	dbmapcoord 10, 15
+	db -1 ; end
 
 Route24Script4:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -66,7 +67,7 @@ Route24Script3:
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_ROUTE24_ROCKET
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	xor a
 	ld [wJoyIgnore], a
@@ -86,71 +87,29 @@ Route24_TextPointers:
 	dw PickUpItemText
 
 Route24TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_0
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_0
-	dw Route24BattleText1 ; TextBeforeBattle
-	dw Route24AfterBattleText1 ; TextAfterBattle
-	dw Route24EndBattleText1 ; TextEndBattle
-	dw Route24EndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_0, 4, Route24BattleText1, Route24EndBattleText1, Route24AfterBattleText1
 Route24TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_1
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_1
-	dw Route24BattleText2 ; TextBeforeBattle
-	dw Route24AfterBattleText2 ; TextAfterBattle
-	dw Route24EndBattleText2 ; TextEndBattle
-	dw Route24EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_1, 1, Route24BattleText2, Route24EndBattleText2, Route24AfterBattleText2
 Route24TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_2
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_2
-	dw Route24BattleText3 ; TextBeforeBattle
-	dw Route24AfterBattleText3 ; TextAfterBattle
-	dw Route24EndBattleText3 ; TextEndBattle
-	dw Route24EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_2, 1, Route24BattleText3, Route24EndBattleText3, Route24AfterBattleText3
 Route24TrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_3
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_3
-	dw Route24BattleText4 ; TextBeforeBattle
-	dw Route24AfterBattleText4 ; TextAfterBattle
-	dw Route24EndBattleText4 ; TextEndBattle
-	dw Route24EndBattleText4 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_3, 1, Route24BattleText4, Route24EndBattleText4, Route24AfterBattleText4
 Route24TrainerHeader4:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_4
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_4
-	dw Route24BattleText5 ; TextBeforeBattle
-	dw Route24AfterBattleText5 ; TextAfterBattle
-	dw Route24EndBattleText5 ; TextEndBattle
-	dw Route24EndBattleText5 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_4, 1, Route24BattleText5, Route24EndBattleText5, Route24AfterBattleText5
 Route24TrainerHeader5:
-	dbEventFlagBit EVENT_BEAT_ROUTE_24_TRAINER_5
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROUTE_24_TRAINER_5
-	dw Route24BattleText6 ; TextBeforeBattle
-	dw Route24AfterBattleText6 ; TextAfterBattle
-	dw Route24EndBattleText6 ; TextEndBattle
-	dw Route24EndBattleText6 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_ROUTE_24_TRAINER_5, 1, Route24BattleText6, Route24EndBattleText6, Route24AfterBattleText6
+	db -1 ; end
 
 Route24Text1:
 	text_asm
 	ResetEvent EVENT_NUGGET_REWARD_AVAILABLE
 	CheckEvent EVENT_GOT_NUGGET
-	jr nz, .asm_514f9
+	jr nz, .got_item
 	ld hl, Route24Text_51510
 	call PrintText
 	lb bc, NUGGET, 1
 	call GiveItem
-	jr nc, .BagFull
+	jr nc, .bag_full
 	SetEvent EVENT_GOT_NUGGET
 	ld hl, Route24Text_5151a
 	call PrintText
@@ -162,21 +121,21 @@ Route24Text1:
 	ld hl, Route24Text_5152b
 	ld de, Route24Text_5152b
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndexOrTextID]
+	ldh a, [hSpriteIndexOrTextID]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $3
 	ld [wRoute24CurScript], a
 	ld [wCurMapScript], a
 	jp TextScriptEnd
-.asm_514f9
+.got_item
 	ld hl, Route24Text_51530
 	call PrintText
 	jp TextScriptEnd
-.BagFull
+.bag_full
 	ld hl, Route24Text_51521
 	call PrintText
 	SetEvent EVENT_NUGGET_REWARD_AVAILABLE

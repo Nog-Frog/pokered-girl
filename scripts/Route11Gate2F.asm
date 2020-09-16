@@ -9,7 +9,7 @@ Route11Gate2F_TextPointers:
 
 Route11GateUpstairsText1:
 	text_asm
-	xor a
+	xor a ; TRADE_FOR_TERRY
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 Route11GateUpstairsScriptEnd:
@@ -18,11 +18,11 @@ Route11GateUpstairsScriptEnd:
 Route11GateUpstairsText2:
 	text_asm
 	CheckEvent EVENT_GOT_ITEMFINDER, 1
-	jr c, .asm_4949b
-	ld a, 30 ; pokemon needed
-	ld [hOaksAideRequirement], a
-	ld a, ITEMFINDER ; oak's aide reward
-	ld [hOaksAideRewardItem], a
+	jr c, .got_item
+	ld a, 30
+	ldh [hOaksAideRequirement], a
+	ld a, ITEMFINDER
+	ldh [hOaksAideRewardItem], a
 	ld [wd11e], a
 	call GetItemName
 	ld h, d
@@ -31,14 +31,14 @@ Route11GateUpstairsText2:
 	ld bc, ITEM_NAME_LENGTH
 	call CopyData
 	predef OaksAideScript
-	ld a, [hOaksAideResult]
-	dec a
-	jr nz, .asm_494a1
+	ldh a, [hOaksAideResult]
+	dec a ; OAKS_AIDE_GOT_ITEM?
+	jr nz, .no_item
 	SetEvent EVENT_GOT_ITEMFINDER
-.asm_4949b
+.got_item
 	ld hl, Route11GateUpstairsText_494a3
 	call PrintText
-.asm_494a1
+.no_item
 	jr Route11GateUpstairsScriptEnd
 
 Route11GateUpstairsText_494a3:

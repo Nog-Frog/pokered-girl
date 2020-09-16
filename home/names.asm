@@ -1,9 +1,9 @@
 GetMonName::
 	push hl
-	ld a, [hLoadedROMBank]
+	ldh a, [hLoadedROMBank]
 	push af
 	ld a, BANK(MonsterNamesPointers)
-	ld [hLoadedROMBank], a
+	ldh [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 
   	ld a, [wd11e]
@@ -34,7 +34,7 @@ GetMonName::
 	call CopyData
 	pop de
 	pop af
-	ld [hLoadedROMBank], a
+	ldh [hLoadedROMBank], a
 	ld [MBC1RomBank], a
 	pop hl
 	ret

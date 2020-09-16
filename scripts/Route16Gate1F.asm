@@ -19,10 +19,10 @@ Route16GateScript0:
 	call ArePlayerCoordsInArray
 	ret nc
 	ld a, $3
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, [wCoordIndex]
 	cp $1
 	jr z, .asm_4970e
@@ -44,11 +44,11 @@ Route16GateScript0:
 	ret
 
 CoordsData_49714:
-	db $07,$04
-	db $08,$04
-	db $09,$04
-	db $0A,$04
-	db $FF
+	dbmapcoord  4,  7
+	dbmapcoord  4,  8
+	dbmapcoord  4,  9
+	dbmapcoord  4, 10
+	db -1 ; end
 
 Route16GateScript1:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -59,7 +59,7 @@ Route16GateScript1:
 
 Route16GateScript2:
 	ld a, $1
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $1
 	ld [wSimulatedJoypadStatesIndex], a

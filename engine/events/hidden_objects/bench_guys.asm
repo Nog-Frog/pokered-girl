@@ -5,7 +5,7 @@ PrintBenchGuyText:
 	ld b, a
 .loop
 	ld a, [hli]
-	cp $ff
+	cp -1
 	ret z
 	cp b
 	jr z, .match
@@ -17,37 +17,11 @@ PrintBenchGuyText:
 	ld b, a
 	ld a, [wSpritePlayerStateData1FacingDirection]
 	cp b
-	jr nz, .loop ; player isn't facing left at the bench guy
+	jr nz, .loop ; player isn't facing the bench guy
 	ld a, [hl]
 	jp PrintPredefTextID
 
-; format: db map id, player sprite facing direction, text id of PredefTextIDPointerTable
-BenchGuyTextPointers:
-	db VIRIDIAN_POKECENTER,   SPRITE_FACING_LEFT
-	db_tx_pre ViridianCityPokecenterBenchGuyText
-	db PEWTER_POKECENTER,     SPRITE_FACING_LEFT
-	db_tx_pre PewterCityPokecenterBenchGuyText
-	db CERULEAN_POKECENTER,   SPRITE_FACING_LEFT
-	db_tx_pre CeruleanCityPokecenterBenchGuyText
-	db LAVENDER_POKECENTER,   SPRITE_FACING_LEFT
-	db_tx_pre LavenderCityPokecenterBenchGuyText
-	db VERMILION_POKECENTER,  SPRITE_FACING_LEFT
-	db_tx_pre VermilionCityPokecenterBenchGuyText
-	db CELADON_POKECENTER,    SPRITE_FACING_LEFT
-	db_tx_pre CeladonCityPokecenterBenchGuyText
-	db CELADON_HOTEL,         SPRITE_FACING_LEFT
-	db_tx_pre CeladonCityHotelText
-	db FUCHSIA_POKECENTER,    SPRITE_FACING_LEFT
-	db_tx_pre FuchsiaCityPokecenterBenchGuyText
-	db CINNABAR_POKECENTER,   SPRITE_FACING_LEFT
-	db_tx_pre CinnabarIslandPokecenterBenchGuyText
-	db SAFFRON_POKECENTER,    SPRITE_FACING_LEFT
-	db_tx_pre SaffronCityPokecenterBenchGuyText
-	db MT_MOON_POKECENTER,    SPRITE_FACING_LEFT
-	db_tx_pre MtMoonPokecenterBenchGuyText
-	db ROCK_TUNNEL_POKECENTER,SPRITE_FACING_LEFT
-	db_tx_pre RockTunnelPokecenterBenchGuyText
-	db $FF
+INCLUDE "data/events/bench_guys.asm"
 
 ViridianCityPokecenterBenchGuyText::
 	text_far _ViridianCityPokecenterGuyText

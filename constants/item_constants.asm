@@ -1,3 +1,10 @@
+; item ids
+; indexes for:
+; - ItemNames (see data/items/names.asm)
+; - ItemPrices (see data/items/prices.asm)
+; - TechnicalMachinePrices (see data/items/tm_prices.asm)
+; - KeyItemBitfield (see data/items/key_items.asm)
+; - ItemUsePtrTable (see engine/items/item_effects.asm)
 	const_def
 	const NO_ITEM       ; $00
 	const MASTER_BALL   ; $01
@@ -100,7 +107,7 @@ SAFARI_ROCK           EQU $16 ; overload
 	const FLOOR_11F     ; $60
 	const FLOOR_B4F     ; $61
 
-const_value = $C4
+	const_next $C4
 
 ; HMs are defined before TMs, so the actual number of TM definitions
 ; is not yet available. The TM quantity is hard-coded here and must
@@ -115,9 +122,9 @@ add_hm: MACRO
 ; The first usage also defines HM01 as the first HM item id.
 IF !DEF(HM01)
 HM01 EQU const_value
-	enum_start NUM_TMS + 1
+__tmhm_value__ = NUM_TMS + 1
 ENDC
-HM_VALUE EQU __enum__ - NUM_TMS
+HM_VALUE EQU __tmhm_value__ - NUM_TMS
 IF HM_VALUE < 10
 MOVE_FOR_HM EQUS "HM0{d:HM_VALUE}_MOVE"
 ELSE
@@ -127,7 +134,8 @@ MOVE_FOR_HM = \1
 PURGE MOVE_FOR_HM
 PURGE HM_VALUE
 	const HM_\1
-	enum \1_TMNUM
+\1_TMNUM EQU __tmhm_value__
+__tmhm_value__ = __tmhm_value__ + 1
 ENDM
 
 	add_hm CUT          ; $C4
@@ -145,17 +153,18 @@ add_tm: MACRO
 ; The first usage also defines TM01 as the first TM item id.
 IF !DEF(TM01)
 TM01 EQU const_value
-	enum_start 1
+__tmhm_value__ = 1
 ENDC
-IF __enum__ < 10
-MOVE_FOR_TM EQUS "TM0{d:__enum__}_MOVE"
+IF __tmhm_value__ < 10
+MOVE_FOR_TM EQUS "TM0{d:__tmhm_value__}_MOVE"
 ELSE
-MOVE_FOR_TM EQUS "TM{d:__enum__}_MOVE"
+MOVE_FOR_TM EQUS "TM{d:__tmhm_value__}_MOVE"
 ENDC
 MOVE_FOR_TM = \1
 PURGE MOVE_FOR_TM
 	const TM_\1
-	enum \1_TMNUM
+\1_TMNUM EQU __tmhm_value__
+__tmhm_value__ = __tmhm_value__ + 1
 ENDM
 
 	add_tm MEGA_PUNCH   ; $C9
@@ -212,5 +221,5 @@ assert NUM_TMS == const_value - TM01, "NUM_TMS ({d:NUM_TMS}) does not match the 
 
 ; 50 TMs + 5 HMs = 55 learnable TM/HM flags per Pokémon.
 ; These fit in 7 bytes, with one unused bit left over.
-	enum_start NUM_TMS + NUM_HMS + 1
-	enum UNUSED_TMNUM
+__tmhm_value__ = NUM_TMS + NUM_HMS + 1
+UNUSED_TMNUM EQU __tmhm_value__

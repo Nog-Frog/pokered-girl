@@ -52,7 +52,7 @@ RocketHideout4Script3:
 	ld [wJoyIgnore], a
 	SetEvent EVENT_BEAT_ROCKET_HIDEOUT_GIOVANNI
 	ld a, $a
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	call GBFadeOutToBlack
 	ld a, HS_ROCKET_HIDEOUT_B4F_GIOVANNI
@@ -85,33 +85,12 @@ RocketHideoutB4F_TextPointers:
 	dw RocketHideout4Text10
 
 RocketHideout4TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0
-	db ($0 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0
-	dw RocketHideout4BattleText2 ; TextBeforeBattle
-	dw RocketHideout4AfterBattleText2 ; TextAfterBattle
-	dw RocketHideout4EndBattleText2 ; TextEndBattle
-	dw RocketHideout4EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_0, 0, RocketHideout4BattleText2, RocketHideout4EndBattleText2, RocketHideout4AfterBattleText2
 RocketHideout4TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_1
-	db ($0 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_1
-	dw RocketHideout4BattleText3 ; TextBeforeBattle
-	dw RocketHideout4AfterBattleText3 ; TextAfterBattle
-	dw RocketHideout4EndBattleText3 ; TextEndBattle
-	dw RocketHideout4EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_1, 0, RocketHideout4BattleText3, RocketHideout4EndBattleText3, RocketHideout4AfterBattleText3
 RocketHideout4TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_2
-	db ($1 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_2
-	dw RocketHideout4BattleText4 ; TextBeforeBattle
-	dw RocketHideout4AfterBattleText4 ; TextAfterBattle
-	dw RocketHideout4EndBattleText4 ; TextEndBattle
-	dw RocketHideout4EndBattleText4 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_ROCKET_HIDEOUT_4_TRAINER_2, 1, RocketHideout4BattleText4, RocketHideout4EndBattleText4, RocketHideout4AfterBattleText4
+	db -1 ; end
 
 RocketHideout4Text1:
 	text_asm
@@ -125,12 +104,12 @@ RocketHideout4Text1:
 	ld hl, RocketHideout4Text_4557f
 	ld de, RocketHideout4Text_4557f
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndex]
+	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $3
 	ld [wRocketHideoutB4FCurScript], a
 	ld [wCurMapScript], a

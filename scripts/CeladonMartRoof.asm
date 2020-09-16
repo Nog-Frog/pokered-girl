@@ -38,7 +38,7 @@ CeladonMartRoofDrinkList:
 	db FRESH_WATER
 	db SODA_POP
 	db LEMONADE
-	db $00
+	db 0 ; end
 
 CeladonMartRoofScript_GiveDrinkToGirl:
 	ld hl, wd730
@@ -64,7 +64,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	dec l
 	ld b, l
 	ld c, 12
-	coord hl, 0, 0
+	hlcoord 0, 0
 	call TextBoxBorder
 	call UpdateSprites
 	call CeladonMartRoofScript_PrintDrinksInBag
@@ -79,7 +79,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	ld e, a
 	add hl, de
 	ld a, [hl]
-	ld [hItemToRemoveID], a
+	ldh [hItemToRemoveID], a
 	cp FRESH_WATER
 	jr z, .gaveFreshWater
 	cp SODA_POP
@@ -131,7 +131,7 @@ CeladonMartRoofScript_GiveDrinkToGirl:
 	jp PrintText
 
 RemoveItemByIDBank12:
-	jpba RemoveItemByID
+	farjp RemoveItemByID
 
 CeladonMartRoofText_484ee:
 	text_far _CeladonMartRoofText_484ee
@@ -186,7 +186,7 @@ CeladonMartRoofText_4852c:
 CeladonMartRoofScript_PrintDrinksInBag:
 	ld hl, wFilteredBagItems
 	xor a
-	ld [hItemCounter], a
+	ldh [hItemCounter], a
 .loop
 	ld a, [hli]
 	cp $ff
@@ -194,8 +194,8 @@ CeladonMartRoofScript_PrintDrinksInBag:
 	push hl
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 2, 2
-	ld a, [hItemCounter]
+	hlcoord 2, 2
+	ldh a, [hItemCounter]
 	ld bc, SCREEN_WIDTH * 2
 	call AddNTimes
 	ld de, wcd6d

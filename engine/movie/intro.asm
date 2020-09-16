@@ -1,26 +1,21 @@
-const_value = -1
+	const_def -1
 	const MOVE_NIDORINO_RIGHT
 	const MOVE_GENGAR_RIGHT
 	const MOVE_GENGAR_LEFT
 
 ANIMATION_END EQU 80
 
-const_value = 3
-	const GENGAR_INTRO_TILES1
-	const GENGAR_INTRO_TILES2
-	const GENGAR_INTRO_TILES3
-
 PlayIntro:
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	inc a
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	call PlayShootingStar
 	call PlayIntroScene
 	call GBFadeOutToWhite
 	xor a
-	ld [hSCX], a
-	ld [hAutoBGTransferEnabled], a
+	ldh [hSCX], a
+	ldh [hAutoBGTransferEnabled], a
 	call ClearSprites
 	call DelayFrame
 	ret
@@ -29,12 +24,12 @@ PlayIntroScene:
 	ld b, SET_PAL_NIDORINO_INTRO
 	call RunPaletteCommand
 	ldPal a, BLACK, DARK_GRAY, LIGHT_GRAY, WHITE
-	ld [rBGP], a
-	ld [rOBP0], a
-	ld [rOBP1], a
+	ldh [rBGP], a
+	ldh [rOBP0], a
+	ldh [rOBP1], a
 	xor a
-	ld [hSCX], a
-	ld b, GENGAR_INTRO_TILES1
+	ldh [hSCX], a
+	ld b, TILEMAP_GENGAR_INTRO_1
 	call IntroCopyTiles
 	ld a, 0
 	ld [wBaseCoordX], a
@@ -77,7 +72,7 @@ PlayIntroScene:
 	ret c
 
 ; raise
-	ld b, GENGAR_INTRO_TILES2
+	ld b, TILEMAP_GENGAR_INTRO_2
 	call IntroCopyTiles
 	ld a, SFX_INTRO_RAISE
 	call PlaySound
@@ -88,7 +83,7 @@ PlayIntroScene:
 	ret c
 
 ; slash
-	ld b, GENGAR_INTRO_TILES3
+	ld b, TILEMAP_GENGAR_INTRO_3
 	call IntroCopyTiles
 	ld a, SFX_INTRO_CRASH
 	call PlaySound
@@ -107,7 +102,7 @@ PlayIntroScene:
 
 	lb de, 8 / 2, MOVE_GENGAR_LEFT
 	call IntroMoveMon
-	ld b, GENGAR_INTRO_TILES1
+	ld b, TILEMAP_GENGAR_INTRO_1
 	call IntroCopyTiles
 	ld c, 60
 	call CheckForUserInterruption
@@ -217,7 +212,7 @@ IntroClearScreen:
 
 IntroClearMiddleOfScreen:
 ; clear the area of the tile map between the black bars on the top and bottom
-	coord hl, 0, 4
+	hlcoord 0, 4
 	ld bc, SCREEN_WIDTH * 10
 
 IntroClearCommon:
@@ -245,7 +240,7 @@ IntroMoveMon:
 	cp MOVE_GENGAR_LEFT
 	jr z, .moveGengarLeft
 ; move Gengar right
-	ld a, [hSCX]
+	ldh a, [hSCX]
 	dec a
 	dec a
 	jr .next
@@ -259,11 +254,11 @@ IntroMoveMon:
 	call UpdateIntroNidorinoOAM
 	pop de
 .moveGengarLeft
-	ld a, [hSCX]
+	ldh a, [hSCX]
 	inc a
 	inc a
 .next
-	ld [hSCX], a
+	ldh [hSCX], a
 	push de
 	ld c, 2
 	call CheckForUserInterruption
@@ -274,7 +269,7 @@ IntroMoveMon:
 	ret
 
 IntroCopyTiles:
-	coord hl, 13, 7
+	hlcoord 13, 7
 
 CopyTileIDsFromList_ZeroBaseTileID:
 	ld c, 0
@@ -311,9 +306,9 @@ LoadIntroGraphics:
 PlayShootingStar:
 	ld b, SET_PAL_GAME_FREAK_INTRO
 	call RunPaletteCommand
-	callba LoadCopyrightAndTextBoxTiles
+	farcall LoadCopyrightAndTextBoxTiles
 	ldPal a, BLACK, DARK_GRAY, LIGHT_GRAY, WHITE
-	ld [rBGP], a
+	ldh [rBGP], a
 	ld c, 180
 	call DelayFrames
 	call ClearScreen
@@ -328,7 +323,7 @@ PlayShootingStar:
 	set 3, [hl]
 	ld c, 64
 	call DelayFrames
-	callba AnimateShootingStar
+	farcall AnimateShootingStar
 	push af
 	pop af
 	jr c, .next ; skip the delay if the user interrupted the animation
@@ -348,20 +343,20 @@ PlayShootingStar:
 IntroDrawBlackBars:
 ; clear the screen and draw black bars on the top and bottom
 	call IntroClearScreen
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld c, SCREEN_WIDTH * 4
 	call IntroPlaceBlackTiles
-	coord hl, 0, 14
+	hlcoord 0, 14
 	ld c, SCREEN_WIDTH * 4
 	call IntroPlaceBlackTiles
 	ld hl, vBGMap1
 	ld c,  BG_MAP_WIDTH * 4
 	call IntroPlaceBlackTiles
-	ld hl, vBGMap1 + BG_MAP_WIDTH * 14
+	hlbgcoord 0, 14, vBGMap1
 	ld c,  BG_MAP_WIDTH * 4
 	jp IntroPlaceBlackTiles
 
-EmptyFunc4:
+EmptyFunc2:
 	ret
 
 IntroNidorinoAnimation0:
@@ -438,31 +433,32 @@ IntroNidorinoAnimation7:
 	db ANIMATION_END
 
 GameFreakIntro:
-	INCBIN "gfx/intro_credits/gamefreak_presents.2bpp"
-	INCBIN "gfx/intro_credits/gamefreak_logo.2bpp"
+	INCBIN "gfx/splash/gamefreak_presents.2bpp"
+	INCBIN "gfx/splash/gamefreak_logo.2bpp"
 	ds 16, $00 ; blank tile
 GameFreakIntroEnd:
 
 FightIntroBackMon:
-	INCBIN "gfx/intro_credits/gengar.2bpp"
+	INCBIN "gfx/intro/gengar.2bpp"
+	ds 16, $00 ; blank tile
 FightIntroBackMonEnd:
 
-FightIntroFrontMon:
-
 IF DEF(_RED)
-	INCBIN "gfx/intro_credits/red_nidorino_1.2bpp"
+FightIntroFrontMon:
+	INCBIN "gfx/intro/red_nidorino_1.2bpp"
 FightIntroFrontMon2:
-	INCBIN "gfx/intro_credits/red_nidorino_2.2bpp"
+	INCBIN "gfx/intro/red_nidorino_2.2bpp"
 FightIntroFrontMon3:
-	INCBIN "gfx/intro_credits/red_nidorino_3.2bpp"
+	INCBIN "gfx/intro/red_nidorino_3.2bpp"
 ENDC
 
 IF DEF(_BLUE)
-	INCBIN "gfx/intro_credits/blue_jigglypuff_1.2bpp"
+FightIntroFrontMon:
+	INCBIN "gfx/intro/blue_jigglypuff_1.2bpp"
 FightIntroFrontMon2:
-	INCBIN "gfx/intro_credits/blue_jigglypuff_2.2bpp"
+	INCBIN "gfx/intro/blue_jigglypuff_2.2bpp"
 FightIntroFrontMon3:
-	INCBIN "gfx/intro_credits/blue_jigglypuff_3.2bpp"
+	INCBIN "gfx/intro/blue_jigglypuff_3.2bpp"
 ENDC
 
 FightIntroFrontMonEnd:

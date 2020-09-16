@@ -29,14 +29,14 @@ _DaisyUseMapText::
 	cont "באיזור."
 	done
 
-_BluesHouseText2::
+_BluesHouseDaisyWalkingText::
 	text "#ימון הם יצורים"
 	line "חיים! אם הם"
 	cont "מתעייפים, תן להם"
 	cont "לנוח!"
 	done
 
-_BluesHouseText3::
+_BluesHouseTownMapText::
 	text "זו מפה גדולה!"
 	line "היא שימושית"
 	cont "מאוד!"

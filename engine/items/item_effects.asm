@@ -16,6 +16,7 @@ UseItem_::
 	jp hl
 
 ItemUsePtrTable:
+; entries correspond to item ids
 	dw ItemUseBall       ; MASTER_BALL
 	dw ItemUseBall       ; ULTRA_BALL
 	dw ItemUseBall       ; GREAT_BALL
@@ -147,7 +148,7 @@ ItemUseBall:
 
 ; If the player is fighting an unidentified ghost, set the value that indicates
 ; the Pokémon can't be caught and skip the capture calculations.
-	callab IsGhostBattle
+	callfar IsGhostBattle
 	ld b, $10 ; can't be caught value
 	jp z, .setAnimData
 
@@ -169,7 +170,7 @@ ItemUseBall:
 	cp POKEMON_TOWER_6F
 	jr nz, .loop
 	ld a, [wEnemyMonSpecies2]
-	cp MAROWAK
+	cp GHOST_MON
 	ld b, $10 ; can't be caught value
 	jp z, .setAnimData
 
@@ -239,14 +240,14 @@ ItemUseBall:
 
 ; Calculate MaxHP * 255.
 	xor a
-	ld [hMultiplicand], a
+	ldh [hMultiplicand], a
 	ld hl, wEnemyMonMaxHP
 	ld a, [hli]
-	ld [hMultiplicand + 1], a
+	ldh [hMultiplicand + 1], a
 	ld a, [hl]
-	ld [hMultiplicand + 2], a
+	ldh [hMultiplicand + 2], a
 	ld a, 255
-	ld [hMultiplier], a
+	ldh [hMultiplier], a
 	call Multiply
 
 ; Determine BallFactor. It's 8 for Great Balls and 12 for the others.
@@ -260,7 +261,7 @@ ItemUseBall:
 ; Note that the results of all division operations are floored.
 
 ; Calculate (MaxHP * 255) / BallFactor.
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 4 ; number of bytes in dividend
 	call Divide
 
@@ -281,17 +282,17 @@ ItemUseBall:
 
 .skip2
 ; Let W = ((MaxHP * 255) / BallFactor) / max(HP / 4, 1). Calculate W.
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 4
 	call Divide
 
 ; If W > 255, store 255 in [hQuotient + 3].
 ; Let X = min(W, 255) = [hQuotient + 3].
-	ld a, [hQuotient + 2]
+	ldh a, [hQuotient + 2]
 	and a
 	jr z, .skip3
 	ld a, 255
-	ld [hQuotient + 3], a
+	ldh [hQuotient + 3], a
 
 .skip3
 	pop bc ; b = Rand1 - Status
@@ -302,7 +303,7 @@ ItemUseBall:
 	jr c, .failedToCapture
 
 ; If W > 255, the ball captures the Pokémon.
-	ld a, [hQuotient + 2]
+	ldh a, [hQuotient + 2]
 	and a
 	jr nz, .captured
 
@@ -310,7 +311,7 @@ ItemUseBall:
 
 ; If Rand2 > X, the ball fails to capture the Pokémon.
 	ld b, a
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	cp b
 	jr c, .failedToCapture
 
@@ -318,17 +319,17 @@ ItemUseBall:
 	jr .skipShakeCalculations
 
 .failedToCapture
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	ld [wPokeBallCaptureCalcTemp], a ; Save X.
 
 ; Calculate CatchRate * 100.
 	xor a
-	ld [hMultiplicand], a
-	ld [hMultiplicand + 1], a
+	ldh [hMultiplicand], a
+	ldh [hMultiplicand + 1], a
 	ld a, [wEnemyMonActualCatchRate]
-	ld [hMultiplicand + 2], a
+	ldh [hMultiplicand + 2], a
 	ld a, 100
-	ld [hMultiplier], a
+	ldh [hMultiplier], a
 	call Multiply
 
 ; Determine BallFactor2.
@@ -349,26 +350,26 @@ ItemUseBall:
 .skip4
 ; Let Y = (CatchRate * 100) / BallFactor2. Calculate Y.
 	ld a, b
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 4
 	call Divide
 
 ; If Y > 255, there are 3 shakes.
 ; Note that this shouldn't be possible.
 ; The maximum value of Y is (255 * 100) / 150 = 170.
-	ld a, [hQuotient + 2]
+	ldh a, [hQuotient + 2]
 	and a
 	ld b, $63 ; 3 shakes
 	jr nz, .setAnimData
 
 ; Calculate X * Y.
 	ld a, [wPokeBallCaptureCalcTemp]
-	ld [hMultiplier], a
+	ldh [hMultiplier], a
 	call Multiply
 
 ; Calculate (X * Y) / 255.
 	ld a, 255
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 4
 	call Divide
 
@@ -386,9 +387,9 @@ ItemUseBall:
 
 .addAilmentValue
 ; If the Pokémon has a status ailment, add Status2.
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	add b
-	ld [hQuotient + 3], a
+	ldh [hQuotient + 3], a
 
 .skip5
 ; Finally determine the number of shakes.
@@ -398,7 +399,7 @@ ItemUseBall:
 ; 10 ≤ Z < 30: 1 shake
 ; 30 ≤ Z < 70: 2 shakes
 ; 70 ≤ Z:      3 shakes
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	cp 10
 	ld b, $20
 	jr c, .setAnimData
@@ -422,7 +423,7 @@ ItemUseBall:
 	ld a, TOSS_ANIM
 	ld [wAnimationID], a
 	xor a
-	ld [hWhoseTurn], a
+	ldh [hWhoseTurn], a
 	ld [wAnimationType], a
 	ld [wDamageMultipliers], a
 	ld a, [wWhichPokemon]
@@ -495,7 +496,7 @@ ItemUseBall:
 	ld [wcf91], a
 	ld a, [wEnemyMonLevel]
 	ld [wCurEnemyLVL], a
-	callab LoadEnemyMonData
+	callfar LoadEnemyMonData
 	pop af
 	ld [wcf91], a
 	pop hl
@@ -632,7 +633,7 @@ ItemUseTownMap:
 	ld a, [wIsInBattle]
 	and a
 	jp nz, ItemUseNotTime
-	jpba DisplayTownMap
+	farjp DisplayTownMap
 
 ItemUseBicycle:
 	ld a, [wIsInBattle]
@@ -656,7 +657,7 @@ ItemUseBicycle:
 	jp nc, NoCyclingAllowedHere
 	call ItemUseReloadOverworldData
 	xor a ; no keys pressed
-	ld [hJoyHeld], a ; current joypad state
+	ldh [hJoyHeld], a ; current joypad state
 	inc a
 	ld [wWalkBikeSurfState], a ; change player state to bicycling
 	ld hl, GotOnBicycleText
@@ -687,11 +688,11 @@ ItemUseSurfboard:
 	jp PrintText
 .tryToStopSurfing
 	xor a
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	ld d, 16 ; talking range in pixels (normal range)
 	call IsSpriteInFrontOfPlayer2
 	res 7, [hl]
-	ld a, [hSpriteIndexOrTextID]
+	ldh a, [hSpriteIndexOrTextID]
 	and a ; is there a sprite in the way?
 	jr nz, .cannotStopSurfing
 	ld hl, TilePairCollisionsWater
@@ -778,7 +779,7 @@ ItemUseEvoStone:
 	ld a, SFX_HEAL_AILMENT
 	call PlaySoundWaitForCurrent
 	call WaitForSoundToFinish
-	callab TryEvolvingMon ; try to evolve pokemon
+	callfar TryEvolvingMon ; try to evolve pokemon
 	ld a, [wEvolutionOccurred]
 	and a
 	jr z, .noEffect
@@ -1018,18 +1019,18 @@ ItemUseMedicine:
 	call AddNTimes
 	ld a, [hli]
 	ld [wHPBarMaxHP + 1], a
-	ld [hDividend], a
+	ldh [hDividend], a
 	ld a, [hl]
 	ld [wHPBarMaxHP], a
-	ld [hDividend + 1], a
+	ldh [hDividend + 1], a
 	ld a, 5
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 2 ; number of bytes
 	call Divide ; get 1/5 of max HP of pokemon that used Softboiled
 	ld bc, (wPartyMon1HP + 1) - (wPartyMon1MaxHP + 1)
 	add hl, bc ; hl now points to LSB of current HP of pokemon that used Softboiled
 ; subtract 1/5 of max HP from current HP of pokemon that used Softboiled
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	push af
 	ld b, a
 	ld a, [hl]
@@ -1037,28 +1038,28 @@ ItemUseMedicine:
 	sub b
 	ld [hld], a
 	ld [wHPBarNewHP], a
-	ld a, [hQuotient + 2]
+	ldh a, [hQuotient + 2]
 	ld b, a
 	ld a, [hl]
 	ld [wHPBarOldHP+1], a
 	sbc b
 	ld [hl], a
 	ld [wHPBarNewHP+1], a
-	coord hl, 4, 1
+	hlcoord 4, 1
 	ld a, [wWhichPokemon]
 	ld bc, 2 * SCREEN_WIDTH
 	call AddNTimes ; calculate coordinates of HP bar of pokemon that used Softboiled
 	ld a, SFX_HEAL_HP
 	call PlaySoundWaitForCurrent
-	ld a, [hFlagsFFF6]
+	ldh a, [hFlagsFFF6]
 	set 0, a
-	ld [hFlagsFFF6], a
+	ldh [hFlagsFFF6], a
 	ld a, $02
 	ld [wHPBarType], a
 	predef UpdateHPBar2 ; animate HP bar decrease of pokemon that used Softboiled
-	ld a, [hFlagsFFF6]
+	ldh a, [hFlagsFFF6]
 	res 0, a
-	ld [hFlagsFFF6], a
+	ldh [hFlagsFFF6], a
 	pop af
 	ld b, a ; store heal amount (1/5 of max HP)
 	ld hl, wHPBarOldHP + 1
@@ -1200,15 +1201,15 @@ ItemUseMedicine:
 	jr z, .playStatusAilmentCuringSound
 	ld a, SFX_HEAL_HP
 	call PlaySoundWaitForCurrent
-	ld a, [hFlagsFFF6]
+	ldh a, [hFlagsFFF6]
 	set 0, a
-	ld [hFlagsFFF6], a
+	ldh [hFlagsFFF6], a
 	ld a, $02
 	ld [wHPBarType], a
 	predef UpdateHPBar2 ; animate the HP bar lengthening
-	ld a, [hFlagsFFF6]
+	ldh a, [hFlagsFFF6]
 	res 0, a
-	ld [hFlagsFFF6], a
+	ldh [hFlagsFFF6], a
 	ld a, REVIVE_MSG
 	ld [wPartyMenuTypeOrMessageID], a
 	ld a, [wcf91]
@@ -1224,13 +1225,13 @@ ItemUseMedicine:
 	call PlaySoundWaitForCurrent
 .showHealingItemMessage
 	xor a
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	call ClearScreen
 	dec a
 	ld [wUpdateSpritesEnabled], a
 	call RedrawPartyMenu ; redraws the party menu and displays the message
 	ld a, 1
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	ld c, 50
 	call DelayFrames
 	call WaitForTextScrollButtonPress
@@ -1341,17 +1342,17 @@ ItemUseMedicine:
 	push hl
 	push de
 	ld d, a
-	callab CalcExperience ; calculate experience for next level and store it at hExperience
+	callfar CalcExperience ; calculate experience for next level and store it at hExperience
 	pop de
 	pop hl
 	ld bc, wPartyMon1Exp - wPartyMon1Level
 	add hl, bc ; hl now points to MSB of experience
 ; update experience to minimum for new level
-	ld a, [hExperience]
+	ldh a, [hExperience]
 	ld [hli], a
-	ld a, [hExperience + 1]
+	ldh a, [hExperience + 1]
 	ld [hli], a
-	ld a, [hExperience + 2]
+	ldh a, [hExperience + 2]
 	ld [hl], a
 	pop hl
 	ld a, [wWhichPokemon]
@@ -1400,14 +1401,14 @@ ItemUseMedicine:
 	ld [wMonDataLocation], a
 	call LoadMonData
 	ld d, $01
-	callab PrintStatsBox ; display new stats text box
+	callfar PrintStatsBox ; display new stats text box
 	call WaitForTextScrollButtonPress ; wait for button press
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
 	predef LearnMoveFromLevelUp ; learn level up move, if any
 	xor a
 	ld [wForceEvolution], a
-	callab TryEvolvingMon ; evolve pokemon, if appropriate
+	callfar TryEvolvingMon ; evolve pokemon, if appropriate
 	ld a, $01
 	ld [wUpdateSpritesEnabled], a
 	pop af
@@ -1459,7 +1460,7 @@ BaitRockCommon:
 	ld [wAnimationID], a
 	xor a
 	ld [wAnimationType], a
-	ld [hWhoseTurn], a
+	ldh [hWhoseTurn], a
 	ld [de], a ; zero escape factor (for bait), zero bait factor (for rock)
 .randomLoop ; loop until a random number less than 5 is generated
 	call Random
@@ -1525,9 +1526,7 @@ ItemUseEscapeRope:
 .notUsable
 	jp ItemUseNotTime
 
-EscapeRopeTilesets:
-	db FOREST, CEMETERY, CAVERN, FACILITY, INTERIOR
-	db $ff ; terminator
+INCLUDE "data/tilesets/escape_rope_tilesets.asm"
 
 ItemUseRepel:
 	ld b, 100
@@ -1574,7 +1573,7 @@ ItemUseCardKey:
 	ld b, a
 .loop
 	ld a, [hli]
-	cp $ff
+	cp -1
 	jp z, ItemUseNotTime
 	cp b
 	jr nz, .nextEntry1
@@ -1601,46 +1600,7 @@ ItemUseCardKey:
 	set 7, [hl]
 	ret
 
-; These tables are probably supposed to be door locations in Silph Co.,
-; but they are unused.
-; The reason there are 3 tables is unknown.
-
-; Format:
-; 00: Map ID
-; 01: Y
-; 02: X
-; 03: ID?
-
-CardKeyTable1:
-	db  SILPH_CO_2F,$04,$04,$00
-	db  SILPH_CO_2F,$04,$05,$01
-	db  SILPH_CO_4F,$0C,$04,$02
-	db  SILPH_CO_4F,$0C,$05,$03
-	db  SILPH_CO_7F,$06,$0A,$04
-	db  SILPH_CO_7F,$06,$0B,$05
-	db  SILPH_CO_9F,$04,$12,$06
-	db  SILPH_CO_9F,$04,$13,$07
-	db SILPH_CO_10F,$08,$0A,$08
-	db SILPH_CO_10F,$08,$0B,$09
-	db $ff
-
-CardKeyTable2:
-	db SILPH_CO_3F,$08,$09,$0A
-	db SILPH_CO_3F,$09,$09,$0B
-	db SILPH_CO_5F,$04,$07,$0C
-	db SILPH_CO_5F,$05,$07,$0D
-	db SILPH_CO_6F,$0C,$05,$0E
-	db SILPH_CO_6F,$0D,$05,$0F
-	db SILPH_CO_8F,$08,$07,$10
-	db SILPH_CO_8F,$09,$07,$11
-	db SILPH_CO_9F,$08,$03,$12
-	db SILPH_CO_9F,$09,$03,$13
-	db $ff
-
-CardKeyTable3:
-	db SILPH_CO_11F,$08,$09,$14
-	db SILPH_CO_11F,$09,$09,$15
-	db $ff
+INCLUDE "data/events/card_key_coords.asm"
 
 ItemUsePokedoll:
 	ld a, [wIsInBattle]
@@ -1698,8 +1658,8 @@ ItemUseXStat:
 	call LoadScreenTilesFromBuffer1 ; restore saved screen
 	call Delay3
 	xor a
-	ld [hWhoseTurn], a ; set turn to player's turn
-	callba StatModifierUpEffect ; do stat increase move
+	ldh [hWhoseTurn], a ; set turn to player's turn
+	farcall StatModifierUpEffect ; do stat increase move
 	pop hl
 	pop af
 	ld [hld], a ; restore [wPlayerMoveEffect]
@@ -1775,7 +1735,7 @@ ItemUsePokeflute:
 	and $80
 	jr nz, .skipMusic
 	call WaitForSoundToFinish ; wait for sound to end
-	callba Music_PokeFluteInBattle ; play in-battle pokeflute music
+	farcall Music_PokeFluteInBattle ; play in-battle pokeflute music
 .musicWaitLoop ; wait for music to finish playing
 	ld a, [wChannelSoundIDs + Ch7]
 	and a ; music off?
@@ -1810,23 +1770,17 @@ WakeUpEntireParty:
 	jr nz, .loop
 	ret
 
-; Format:
-; 00: Y
-; 01: X
 Route12SnorlaxFluteCoords:
-	db 62,9  ; one space West of Snorlax
-	db 61,10 ; one space North of Snorlax
-	db 63,10 ; one space South of Snorlax
-	db 62,11 ; one space East of Snorlax
-	db $ff ; terminator
+	dbmapcoord  9, 62 ; one space West of Snorlax
+	dbmapcoord 10, 61 ; one space North of Snorlax
+	dbmapcoord 10, 63 ; one space South of Snorlax
+	dbmapcoord 11, 62 ; one space East of Snorlax
+	db -1 ; end
 
-; Format:
-; 00: Y
-; 01: X
 Route16SnorlaxFluteCoords:
-	db 10,27 ; one space East of Snorlax
-	db 10,25 ; one space West of Snorlax
-	db $ff ; terminator
+	dbmapcoord 27, 10 ; one space East of Snorlax
+	dbmapcoord 25, 10 ; one space West of Snorlax
+	db -1 ; end
 
 PlayedFluteNoEffectText:
 	text_far _PlayedFluteNoEffectText
@@ -1927,7 +1881,7 @@ RodResponse:
 	push af
 	push hl
 	ld [hl], 0
-	callba FishingAnim
+	farcall FishingAnim
 	pop hl
 	pop af
 	ld [hl], a
@@ -1968,7 +1922,7 @@ ItemUseItemfinder:
 	and a
 	jp nz, ItemUseNotTime
 	call ItemUseReloadOverworldData
-	callba HiddenItemNear ; check for hidden items
+	farcall HiddenItemNear ; check for hidden items
 	ld hl, ItemfinderFoundNothingText
 	jr nc, .printText ; if no hidden items
 	ld c, 4
@@ -2024,7 +1978,7 @@ ItemUsePPRestore:
 	call PrintText
 	xor a
 	ld [wPlayerMoveListIndex], a
-	callab MoveSelectionMenu ; move selection menu
+	callfar MoveSelectionMenu ; move selection menu
 	ld a, 0
 	ld [wPlayerMoveListIndex], a
 	jr nz, .chooseMon
@@ -2221,7 +2175,7 @@ ItemUseTMHM:
 	call PrintText
 	ld hl, TeachMachineMoveText
 	call PrintText
-	coord hl, 14, 7
+	hlcoord 14, 7
 	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
@@ -2278,7 +2232,7 @@ ItemUseTMHM:
 	call PrintText
 	jr .chooseMon
 .checkIfAlreadyLearnedMove
-	callab CheckIfMoveIsKnown ; check if the pokemon already knows the move
+	callfar CheckIfMoveIsKnown ; check if the pokemon already knows the move
 	jr c, .chooseMon
 	predef LearnMove ; teach move
 	pop af
@@ -2473,13 +2427,13 @@ RestoreBonusPP:
 AddBonusPP:
 	push bc
 	ld a, [de] ; normal max PP of move
-	ld [hDividend + 3], a
+	ldh [hDividend + 3], a
 	xor a
-	ld [hDividend], a
-	ld [hDividend + 1], a
-	ld [hDividend + 2], a
+	ldh [hDividend], a
+	ldh [hDividend + 1], a
+	ldh [hDividend + 2], a
 	ld a, 5
-	ld [hDivisor], a
+	ldh [hDivisor], a
 	ld b, 4
 	call Divide
 	ld a, [hl] ; move PP
@@ -2490,7 +2444,7 @@ AddBonusPP:
 	srl a
 	ld c, a ; c = number of PP Ups used
 .loop
-	ld a, [hQuotient + 3]
+	ldh a, [hQuotient + 3]
 	cp 8 ; is the amount greater than or equal to 8?
 	jr c, .addAmount
 	ld a, 7 ; cap the amount at 7
@@ -2617,7 +2571,7 @@ TossItem_::
 	call CopyStringToCF4B ; copy name to wcf4b
 	ld hl, IsItOKToTossItemText
 	call PrintText
-	coord hl, 14, 7
+	hlcoord 14, 7
 	lb bc, 8, 18
 	ld a, TWO_OPTION_MENU
 	ld [wTextBoxID], a
@@ -2830,15 +2784,15 @@ SendNewMonToBox:
 	push de
 	ld a, [wCurEnemyLVL]
 	ld d, a
-	callab CalcExperience
+	callfar CalcExperience
 	pop de
-	ld a, [hExperience]
+	ldh a, [hExperience]
 	ld [de], a
 	inc de
-	ld a, [hExperience + 1]
+	ldh a, [hExperience + 1]
 	ld [de], a
 	inc de
-	ld a, [hExperience + 2]
+	ldh a, [hExperience + 2]
 	ld [de], a
 	inc de
 	xor a

@@ -1,140 +1,37 @@
+mon_icon_header: MACRO
+	dw \1 tile \2
+	db \3
+	db BANK(\1)
+	dw vSprites tile (\4)
+ENDM
+
 MonPartySpritePointers:
-	dw SlowbroSprite + $c0
-	db $40 / $10 ; 40 bytes
-	db BANK(SlowbroSprite)
-	dw vSprites
-
-	dw BallSprite
-	db $80 / $10 ; $80 bytes
-	db BANK(BallSprite)
-	dw vSprites + $40
-
-	dw ClefairySprite + $c0
-	db $40 / $10 ; $40 bytes
-	db BANK(ClefairySprite)
-	dw vSprites + $c0
-
-	dw BirdSprite + $c0
-	db $40 / $10 ; $40 bytes
-	db BANK(BirdSprite)
-	dw vSprites + $100
-
-	dw SeelSprite
-	db $40 / $10 ; $40 bytes
-	db BANK(SeelSprite)
-	dw vSprites + $140
-
-	dw BugIconFrame2
-	db $10 / $10 ; $10 bytes
-	db BANK(BugIconFrame2)
-	dw vSprites + $180
-
-	dw BugIconFrame2 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(BugIconFrame2)
-	dw vSprites + $1a0
-
-	dw PlantIconFrame2
-	db $10 / $10 ; $10 bytes
-	db BANK(PlantIconFrame2)
-	dw vSprites + $1c0
-
-	dw PlantIconFrame2 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(PlantIconFrame2)
-	dw vSprites + $1e0
-
-	dw SnakeIconFrame1
-	db $10 / $10 ; $10 bytes
-	db BANK(SnakeIconFrame1)
-	dw vSprites + $200
-
-	dw SnakeIconFrame1 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(SnakeIconFrame1)
-	dw vSprites + $220
-
-	dw QuadrupedIconFrame1
-	db $10 / $10 ; $10 bytes
-	db BANK(QuadrupedIconFrame1)
-	dw vSprites + $240
-
-	dw QuadrupedIconFrame1 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(QuadrupedIconFrame1)
-	dw vSprites + $260
-
-	dw TradeBubbleIconGFX
-	db $40 / $10 ; $40 bytes
-	db BANK(TradeBubbleIconGFX)
-	dw vSprites + $380
-
-	dw SlowbroSprite
-	db $40 / $10 ; $40 bytes
-	db BANK(SlowbroSprite)
-	dw vSprites + $400
-
-	dw BallSprite
-	db $80 / $10 ; $80 bytes
-	db BANK(BallSprite)
-	dw vSprites + $440
-
-	dw ClefairySprite
-	db $40 / $10 ; $40 bytes
-	db BANK(ClefairySprite)
-	dw vSprites + $4c0
-
-	dw BirdSprite
-	db $40 / $10 ; $40 bytes
-	db BANK(BirdSprite)
-	dw vSprites + $500
-
-	dw SeelSprite + $C0
-	db $40 / $10 ; $40 bytes
-	db BANK(SeelSprite)
-	dw vSprites + $540
-
-	dw BugIconFrame1
-	db $10 / $10 ; $10 bytes
-	db BANK(BugIconFrame1)
-	dw vSprites + $580
-
-	dw BugIconFrame1 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(BugIconFrame1)
-	dw vSprites + $5a0
-
-	dw PlantIconFrame1
-	db $10 / $10 ; $10 bytes
-	db BANK(PlantIconFrame1)
-	dw vSprites + $5c0
-
-	dw PlantIconFrame1 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(PlantIconFrame1)
-	dw vSprites + $5E0
-
-	dw SnakeIconFrame2
-	db $10 / $10 ; $10 bytes
-	db BANK(SnakeIconFrame2)
-	dw vSprites + $600
-
-	dw SnakeIconFrame2 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(SnakeIconFrame2)
-	dw vSprites + $620
-
-	dw QuadrupedIconFrame2
-	db $10 / $10 ; $10 bytes
-	db BANK(QuadrupedIconFrame2)
-	dw vSprites + $640
-
-	dw QuadrupedIconFrame2 + $10
-	db $10 / $10 ; $10 bytes
-	db BANK(QuadrupedIconFrame2)
-	dw vSprites + $660
-
-	dw TradeBubbleIconGFX + $40
-	db $40 / $10 ; $40 bytes
-	db BANK(TradeBubbleIconGFX)
-	dw vSprites + $780
+	; gfx pointer, gfx tile offset, # tiles, vSprites tile offset
+	mon_icon_header MonsterSprite,       12, 4, ICON_MON << 2
+	mon_icon_header PokeBallSprite,       0, 8, ICON_BALL << 2
+	mon_icon_header FairySprite,         12, 4, ICON_FAIRY << 2
+	mon_icon_header BirdSprite,          12, 4, ICON_BIRD << 2
+	mon_icon_header SeelSprite,           0, 4, ICON_WATER << 2
+	mon_icon_header BugIconFrame2,        0, 1, ICON_BUG << 2
+	mon_icon_header BugIconFrame2,        1, 1, ICON_BUG << 2 + 2
+	mon_icon_header PlantIconFrame2,      0, 1, ICON_GRASS << 2
+	mon_icon_header PlantIconFrame2,      1, 1, ICON_GRASS << 2 + 2
+	mon_icon_header SnakeIconFrame1,      0, 1, ICON_SNAKE << 2
+	mon_icon_header SnakeIconFrame1,      1, 1, ICON_SNAKE << 2 + 2
+	mon_icon_header QuadrupedIconFrame1,  0, 1, ICON_QUADRUPED << 2
+	mon_icon_header QuadrupedIconFrame1,  1, 1, ICON_QUADRUPED << 2 + 2
+	mon_icon_header TradeBubbleIconGFX,   0, 4, ICON_TRADEBUBBLE << 2
+	mon_icon_header MonsterSprite,        0, 4, ICONOFFSET + ICON_MON << 2
+	mon_icon_header PokeBallSprite,       0, 8, ICONOFFSET + ICON_BALL << 2
+	mon_icon_header FairySprite,          0, 4, ICONOFFSET + ICON_FAIRY << 2
+	mon_icon_header BirdSprite,           0, 4, ICONOFFSET + ICON_BIRD << 2
+	mon_icon_header SeelSprite,          12, 4, ICONOFFSET + ICON_WATER << 2
+	mon_icon_header BugIconFrame1,        0, 1, ICONOFFSET + ICON_BUG << 2
+	mon_icon_header BugIconFrame1,        1, 1, ICONOFFSET + ICON_BUG << 2 + 2
+	mon_icon_header PlantIconFrame1,      0, 1, ICONOFFSET + ICON_GRASS << 2
+	mon_icon_header PlantIconFrame1,      1, 1, ICONOFFSET + ICON_GRASS << 2 + 2
+	mon_icon_header SnakeIconFrame2,      0, 1, ICONOFFSET + ICON_SNAKE << 2
+	mon_icon_header SnakeIconFrame2,      1, 1, ICONOFFSET + ICON_SNAKE << 2 + 2
+	mon_icon_header QuadrupedIconFrame2,  0, 1, ICONOFFSET + ICON_QUADRUPED << 2
+	mon_icon_header QuadrupedIconFrame2,  1, 1, ICONOFFSET + ICON_QUADRUPED << 2 + 2
+	mon_icon_header TradeBubbleIconGFX,   4, 4, ICONOFFSET + ICON_TRADEBUBBLE << 2

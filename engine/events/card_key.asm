@@ -4,7 +4,7 @@ PrintCardKeyText:
 	ld b, a
 .silphCoMapListLoop
 	ld a, [hli]
-	cp $ff
+	cp -1
 	ret z
 	cp b
 	jr nz, .silphCoMapListLoop
@@ -28,7 +28,7 @@ PrintCardKeyText:
 	call GetCoordsInFrontOfPlayer
 	push de
 	tx_pre_id CardKeySuccessText
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call PrintPredefTextID
 	pop de
 	srl d
@@ -55,21 +55,10 @@ PrintCardKeyText:
 	jp PlaySound
 .noCardKey
 	tx_pre_id CardKeyFailText
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp PrintPredefTextID
 
-SilphCoMapList:
-	db SILPH_CO_2F
-	db SILPH_CO_3F
-	db SILPH_CO_4F
-	db SILPH_CO_5F
-	db SILPH_CO_6F
-	db SILPH_CO_7F
-	db SILPH_CO_8F
-	db SILPH_CO_9F
-	db SILPH_CO_10F
-	db SILPH_CO_11F
-	db $FF
+INCLUDE "data/events/card_key_maps.asm"
 
 CardKeySuccessText::
 	text_far _CardKeySuccessText1

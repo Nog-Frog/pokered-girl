@@ -3,7 +3,7 @@
 	db  60,  48,  45,  42,  90
 	;   hp  atk  def  spd  spc
 
-	db PSYCHIC, PSYCHIC ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 190 ; catch rate
 	db 102 ; base exp
 
@@ -11,7 +11,7 @@
 	dw DrowzeePicFront, DrowzeePicBack
 
 	db POUND, HYPNOSIS, NO_MOVE, NO_MOVE ; level 1 learnset
-	db 0 ; growth rate
+	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

@@ -33,20 +33,20 @@ MainMenu:
 	cp 1
 	jr z, .noSaveFile
 ; there's a save file
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 6
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 12, 2
+	hlcoord 12, 2
 	ld de, ContinueText
 	call PlaceString
 	jr .next2
 .noSaveFile
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 4
 	ld c, 13
 	call TextBoxBorder
-	coord hl, 12, 2
+	hlcoord 12, 2
 	ld de, NewGameText
 	call PlaceString
 .next2
@@ -94,11 +94,11 @@ MainMenu:
 	set 5, [hl]
 .inputLoop
 	xor a
-	ld [hJoyPressed], a
-	ld [hJoyReleased], a
-	ld [hJoyHeld], a
+	ldh [hJoyPressed], a
+	ldh [hJoyReleased], a
+	ldh [hJoyHeld], a
 	call Joypad
-	ld a, [hJoyHeld]
+	ldh a, [hJoyHeld]
 	bit 0, a
 	jr nz, .pressedA
 	bit 1, a
@@ -141,12 +141,12 @@ LinkMenu:
 	call SaveScreenTilesToBuffer1
 	ld hl, WhereWouldYouLikeText
 	call PrintText
-	coord hl, 5, 5
+	hlcoord 5, 5
 	ld b, $6
 	ld c, $d
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 17, 7
+	hlcoord 17, 7
 	ld de, CableClubOptionsText
 	call PlaceString
 	xor a
@@ -205,7 +205,7 @@ LinkMenu:
 	jr z, .useEnemyMenuSelection ; if the enemy pressed A or B but the player didn't, use the enemy's selection
 ; the enemy and the player both pressed A or B
 ; The gameboy that is clocking the connection wins.
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	jr z, .doneChoosingMenuSelection
 .useEnemyMenuSelection
@@ -214,17 +214,17 @@ LinkMenu:
 	and $3
 	ld [wCurrentMenuItem], a
 .doneChoosingMenuSelection
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	jr nz, .skipStartingTransfer
 	call DelayFrame
 	call DelayFrame
 	ld a, START_TRANSFER_INTERNAL_CLOCK
-	ld [rSC], a
+	ldh [rSC], a
 .skipStartingTransfer
-	ld b, $7f
-	ld c, $7f
-	ld d, $ec
+	ld b, " "
+	ld c, " "
+	ld d, "▷"
 	ld a, [wLinkMenuSelectionSendBuffer]
 	and (B_BUTTON << 2) ; was B button pressed?
 	jr nz, .updateCursorPosition
@@ -240,11 +240,11 @@ LinkMenu:
 	ld c, d
 .updateCursorPosition
 	ld a, b
-	Coorda 18, 7
+	ldcoord_a 18, 7
 	ld a, c
-	Coorda 18, 9
+	ldcoord_a 18, 9
 	ld a, d
-	Coorda 18, 11
+	ldcoord_a 18, 11
 	ld c, 40
 	call DelayFrames
 	call LoadScreenTilesFromBuffer1
@@ -307,6 +307,7 @@ LinkCanceledText:
 StartNewGame:
 	ld hl, wd732
 	res 1, [hl]
+StartNewGameDebug:
 	call OakSpeech
 	ld c, 20
 	call DelayFrames
@@ -314,9 +315,9 @@ StartNewGame:
 ; enter map after using a special warp or loading the game from the main menu
 SpecialEnterMap::
 	xor a
-	ld [hJoyPressed], a
-	ld [hJoyHeld], a
-	ld [hJoy5], a
+	ldh [hJoyPressed], a
+	ldh [hJoyHeld], a
+	ldh [hJoy5], a
 	ld [wd72d], a
 	ld hl, wd732
 	set 0, [hl] ; count play time
@@ -344,51 +345,51 @@ CableClubOptionsText:
 
 DisplayContinueGameInfo:
 	xor a
-	ld [hAutoBGTransferEnabled], a
-	coord hl, 3, 7
+	ldh [hAutoBGTransferEnabled], a
+	hlcoord 3, 7
 	ld b, 8
 	ld c, 15
 	call TextBoxBorder
-	coord hl, 18, 9
+	hlcoord 18, 9
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 11, 9
+	hlcoord 11, 9
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 10, 11
+	hlcoord 10, 11
 	call PrintNumBadges
-	coord hl, 9, 13
+	hlcoord 9, 13
 	call PrintNumOwnedMons
-	coord hl, 6, 15
+	hlcoord 6, 15
 	call PrintPlayTime
 	ld a, 1
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	ld c, 30
 	jp DelayFrames
 
 PrintSaveScreenText:
 	xor a
-	ld [hAutoBGTransferEnabled], a
-	coord hl, 4, 0
+	ldh [hAutoBGTransferEnabled], a
+	hlcoord 4, 0
 	ld b, $8
 	ld c, $e
 	call TextBoxBorder
 	call LoadTextBoxTilePatterns
 	call UpdateSprites
-	coord hl, 18, 2
+	hlcoord 18, 2
 	ld de, SaveScreenInfoText
 	call PlaceString
-	coord hl, 11, 2
+	hlcoord 11, 2
 	ld de, wPlayerName
 	call PlaceString
-	coord hl, 10, 4
+	hlcoord 10, 4
 	call PrintNumBadges
-	coord hl, 9, 6
+	hlcoord 9, 6
 	call PrintNumOwnedMons
-	coord hl, 6, 8
+	hlcoord 6, 8
 	call PrintPlayTime
 	ld a, $1
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	ld c, 30
 	jp DelayFrames
 
@@ -429,28 +430,28 @@ SaveScreenInfoText:
 	next "זמן@"
 
 DisplayOptionMenu:
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 3
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 0, 5
+	hlcoord 0, 5
 	ld b, 3
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 0, 10
+	hlcoord 0, 10
 	ld b, 3
 	ld c, 18
 	call TextBoxBorder
-	coord hl, 18, 1
+	hlcoord 18, 1
 	ld de, TextSpeedOptionText
 	call PlaceString
-	coord hl, 18, 6
+	hlcoord 18, 6
 	ld de, BattleAnimationOptionText
 	call PlaceString
-	coord hl, 18, 11
+	hlcoord 18, 11
 	ld de, BattleStyleOptionText
 	call PlaceString
-	coord hl, 17, 16
+	hlcoord 17, 16
 	ld de, OptionMenuCancelText
 	call PlaceString
 	xor a
@@ -466,14 +467,14 @@ DisplayOptionMenu:
 	ld a, [wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
 	ld [wTopMenuItemX], a
 	ld a, $01
-	ld [hAutoBGTransferEnabled], a ; enable auto background transfer
+	ldh [hAutoBGTransferEnabled], a ; enable auto background transfer
 	call Delay3
 .loop
 	call PlaceMenuCursor
 	call SetOptionsFromCursorPositions
 .getJoypadStateLoop
 	call JoypadLowSensitivity
-	ld a, [hJoy5]
+	ldh a, [hJoy5]
 	ld b, a
 	and A_BUTTON | B_BUTTON | START | D_RIGHT | D_LEFT | D_UP | D_DOWN ; any key besides select pressed?
 	jr z, .getJoypadStateLoop
@@ -644,32 +645,32 @@ SetCursorPositionsFromOptions:
 	dec hl
 	ld a, [hl]
 	ld [wOptionsTextSpeedCursorX], a ; text speed cursor X coordinate
-	coord hl, 0, 3 ; TODO
-	call .placeUnfilledRightArrow
+	hlcoord 0, 3
+	call .placeUnfilledLeftArrow
 	sla c
 	ld a, 6 ; On
 	jr nc, .storeBattleAnimationCursorX
 	ld a, 18 ; Off
 .storeBattleAnimationCursorX
 	ld [wOptionsBattleAnimCursorX], a ; battle animation cursor X coordinate
-	coord hl, 0, 8
-	call .placeUnfilledRightArrow
+	hlcoord 0, 8
+	call .placeUnfilledLeftArrow
 	sla c
 	ld a, 9
 	jr nc, .storeBattleStyleCursorX
 	ld a, 18
 .storeBattleStyleCursorX
 	ld [wOptionsBattleStyleCursorX], a ; battle style cursor X coordinate
-	coord hl, 0, 13
-	call .placeUnfilledRightArrow
+	hlcoord 0, 13
+	call .placeUnfilledLeftArrow
 ; cursor in front of Cancel
-	coord hl, 0, 16
+	hlcoord 0, 16
 	ld a, 18
-.placeUnfilledRightArrow
+.placeUnfilledLeftArrow
 	ld e, a
 	ld d, 0
 	add hl, de
-	ld [hl], $E8 ; unfilled right arrow menu cursor
+	ld [hl], "◁"
 	ret
 
 ; table that indicates how the 3 text speed options affect frame delays
@@ -677,11 +678,11 @@ SetCursorPositionsFromOptions:
 ; 00: X coordinate of menu cursor
 ; 01: delay after printing a letter (in frames)
 TextSpeedOptionData:
-	db 18,5 ; Slow
-	db 13,3 ; Medium
-	db 6,1 ; Fast
+	db 18, 5 ; Slow
+	db 13, 3 ; Medium
+	db 6,  1 ; Fast
 	db 13 ; default X coordinate (Medium)
-	db $ff ; terminator
+	db -1 ; end
 
 CheckForPlayerNameInSRAM:
 ; Check if the player name data in SRAM has a string terminator character

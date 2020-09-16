@@ -22,7 +22,7 @@ CeladonPrizeMenu::
 	ld a, 16
 	ld [wTopMenuItemX], a
 	call PrintPrizePrice
-	coord hl, 0, 2
+	hlcoord 0, 2
 	ld b, 8
 	ld c, 16
 	call TextBoxBorder
@@ -64,7 +64,7 @@ GetPrizeMenuId:
 ; display the three prizes' names
 ; (distinguishing between Pokemon names
 ; and Items (specifically TMs) names)
-	ld a, [hSpriteIndexOrTextID]
+	ldh a, [hSpriteIndexOrTextID]
 	sub 3       ; prize-texts' id are 3, 4 and 5
 	ld [wWhichPrizeWindow], a    ; prize-texts' id (relative, i.e. 0, 1 or 2)
 	add a
@@ -93,71 +93,71 @@ GetPrizeMenuId:
 	ld a, [wPrize1]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 15, 4
+	hlcoord 15, 4
 	call PlaceString
 	ld a, [wPrize2]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 15, 6
+	hlcoord 15, 6
 	call PlaceString
 	ld a, [wPrize3]
 	ld [wd11e], a
 	call GetItemName
-	coord hl, 15, 8
+	hlcoord 15, 8
 	call PlaceString
 	jr .putNoThanksText
 .putMonName
 	ld a, [wPrize1]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 15, 4
+	hlcoord 15, 4
 	call PlaceString
 	ld a, [wPrize2]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 15, 6
+	hlcoord 15, 6
 	call PlaceString
 	ld a, [wPrize3]
 	ld [wd11e], a
 	call GetMonName
-	coord hl, 15, 8
+	hlcoord 15, 8
 	call PlaceString
 .putNoThanksText
-	coord hl, 15, 10
+	hlcoord 15, 10
 	ld de, NoThanksText
 	call PlaceString
 ; put prices on the right side of the textbox
 	ld de, wPrize1Price
-	coord hl, 13, 5
+	hlcoord 13, 5
 ; reg. c:
 ; [low nybble] number of bytes
 ; [bits 765 = %100] space-padding (not zero-padding)
 	ld c, (1 << 7 | 2)
 	call PrintBCDNumber
 	ld de, wPrize2Price
-	coord hl, 13, 7
+	hlcoord 13, 7
 	ld c, (1 << 7 | 2)
 	call PrintBCDNumber
 	ld de, wPrize3Price
-	coord hl, 13, 9
+	hlcoord 13, 9
 	ld c, (1 << 7 | 2)
 	jp PrintBCDNumber
 
 INCLUDE "data/events/prizes.asm"
 
 PrintPrizePrice:
-	coord hl, 10, 0
+	hlcoord 10, 0
 	ld b, 1
 	ld c, 8
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 17, 0
+	hlcoord 17, 0
 	ld de, .CoinString
 	call PlaceString
-	coord hl, 17, 1
+	hlcoord 17, 1
 	ld de, .SixSpacesString
 	call PlaceString
-	coord hl, 13, 1
+	hlcoord 13, 1
 	ld de, wPlayerCoins
 	ld c, %11000010
 	call PrintBCDNumber
@@ -177,11 +177,11 @@ LoadCoinsToSubtract:
 	ld hl, wPrize1Price
 	add hl, de ; get selected prize's price
 	xor a
-	ld [hUnusedCoinsByte], a
+	ldh [hUnusedCoinsByte], a
 	ld a, [hli]
-	ld [hCoins], a
+	ldh [hCoins], a
 	ld a, [hl]
-	ld [hCoins + 1], a
+	ldh [hCoins + 1], a
 	ret
 
 HandlePrizeChoice:

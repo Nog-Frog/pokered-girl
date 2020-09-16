@@ -3,7 +3,7 @@
 	db  55,  50,  45, 120, 135
 	;   hp  atk  def  spd  spc
 
-	db PSYCHIC, PSYCHIC ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 50 ; catch rate
 	db 186 ; base exp
 
@@ -11,7 +11,7 @@
 	dw AlakazamPicFront, AlakazamPicBack
 
 	db TELEPORT, CONFUSION, DISABLE, NO_MOVE ; level 1 learnset
-	db 3 ; growth rate
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

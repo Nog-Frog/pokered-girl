@@ -31,19 +31,19 @@ SSAnne2Script0:
 	ld a, MUSIC_MEET_RIVAL
 	call PlayMusic
 	ld a, [wCoordIndex]
-	ld [hSavedCoordIndex], a
+	ldh [hSavedCoordIndex], a
 	ld a, HS_SS_ANNE_2F_RIVAL
 	ld [wMissableObjectIndex], a
 	predef ShowObject
 	call Delay3
 	ld a, $2
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $f0
 	ld [wJoyIgnore], a
-	ld a, [hSavedCoordIndex]
+	ldh a, [hSavedCoordIndex]
 	cp $2
 	jr nz, .asm_61400
 	ld de, MovementData_6140c
@@ -58,21 +58,20 @@ SSAnne2Script0:
 
 MovementData_6140c:
 	db NPC_MOVEMENT_DOWN
-
 MovementData_6140d:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
-	db $FF
+	db -1 ; end
 
 CoordsData_61411:
-	db $08,$24
-	db $08,$25
-	db $FF
+	dbmapcoord 36,  8
+	dbmapcoord 37,  8
+	db -1 ; end
 
 SSAnne2Script_61416:
 	ld a, [wXCoord]
-	cp $25
+	cp 37
 	jr nz, .asm_61426
 	ld a, PLAYER_DIR_LEFT
 	ld [wPlayerMovingDirection], a
@@ -81,9 +80,9 @@ SSAnne2Script_61416:
 .asm_61426
 	xor a ; SPRITE_FACING_DOWN
 .asm_61427
-	ld [hSpriteFacingDirection], a
+	ldh [hSpriteFacingDirection], a
 	ld a, $2
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	jp SetSpriteFacingDirectionAndDelay
 
 SSAnne2Script1:
@@ -94,10 +93,10 @@ SSAnne2Script1:
 	xor a
 	ld [wJoyIgnore], a
 	ld a, $2
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	call Delay3
-	ld a, OPP_SONY2
+	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
 
 	; select which team to use during the encounter
@@ -129,13 +128,13 @@ SSAnne2Script2:
 	ld a, $f0
 	ld [wJoyIgnore], a
 	ld a, $3
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $2
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld a, [wXCoord]
-	cp $25
+	cp 37
 	jr nz, .asm_61497
 	ld de, MovementData_614b9
 	jr .asm_6149a
@@ -143,12 +142,12 @@ SSAnne2Script2:
 	ld de, MovementData_614b7
 .asm_6149a
 	ld a, $2
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call MoveSprite
 	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
-	callba Music_RivalAlternateStart
+	farcall Music_RivalAlternateStart
 	ld a, $3
 	ld [wSSAnne2FCurScript], a
 	ret
@@ -156,13 +155,12 @@ SSAnne2Script2:
 MovementData_614b7:
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_DOWN
-
 MovementData_614b9:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
-	db $FF
+	db -1 ; end
 
 SSAnne2Script3:
 	ld a, [wd730]

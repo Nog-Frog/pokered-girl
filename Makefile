@@ -1,4 +1,4 @@
-roms := pokered.gbc pokeblue.gbc
+roms := pokered.gbc pokeblue.gbc pokeblue_debug.gbc
 
 rom_obj := \
 audio.o \
@@ -11,8 +11,9 @@ gfx/pics.o \
 gfx/sprites.o \
 gfx/tilesets.o
 
-pokered_obj := $(rom_obj:.o=_red.o)
-pokeblue_obj := $(rom_obj:.o=_blue.o)
+pokered_obj        := $(rom_obj:.o=_red.o)
+pokeblue_obj       := $(rom_obj:.o=_blue.o)
+pokeblue_debug_obj := $(rom_obj:.o=_blue_debug.o)
 
 
 ### Build tools
@@ -36,19 +37,18 @@ RGBLINK ?= $(RGBDS)rgblink
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
-.PHONY: all red blue clean tidy compare tools
+.PHONY: all red blue blue_debug clean tidy compare tools
 
 all: $(roms)
-red:  pokered.gbc
-blue: pokeblue.gbc
+red:        pokered.gbc
+blue:       pokeblue.gbc
+blue_debug: pokeblue_debug.gbc
 
-clean:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
+clean: tidy
 	find gfx \( -iname '*.1bpp' -o -iname '*.2bpp' -o -iname '*.pic' \) -delete
-	$(MAKE) clean -C tools/
 
 tidy:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
+	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(pokeblue_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
@@ -58,14 +58,15 @@ tools:
 	$(MAKE) -C tools/
 
 
-RGBASMFLAGS = -h -Weverything
+RGBASMFLAGS = -h -L -Weverything
 # Create a sym/map for debug purposes if `make` run with `DEBUG=1`
 ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(pokered_obj):  RGBASMFLAGS += -D _RED
-$(pokeblue_obj): RGBASMFLAGS += -D _BLUE
+$(pokered_obj):        RGBASMFLAGS += -D _RED
+$(pokeblue_obj):       RGBASMFLAGS += -D _BLUE
+$(pokeblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 
 rgbdscheck.o: rgbdscheck.asm
 	$(RGBASM) -o $@ $<
@@ -80,25 +81,32 @@ endef
 
 # Build tools when building the rom.
 # This has to happen before the rules are processed, since that's when scan_includes is run.
-ifeq (,$(filter clean tools,$(MAKECMDGOALS)))
+ifeq (,$(filter clean tidy tools,$(MAKECMDGOALS)))
 
 $(info $(shell $(MAKE) -C tools))
 
 # Dependencies for objects (drop _red and _blue from asm file basenames)
 $(foreach obj, $(pokered_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
 $(foreach obj, $(pokeblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
+$(foreach obj, $(pokeblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
 
 endif
 
 
 %.asm: ;
 
-pokered_opt  = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON RED"
-pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
+
+pokered_pad        = 0x00
+pokeblue_pad       = 0x00
+pokeblue_debug_pad = 0xff
+
+pokered_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
+pokeblue_opt       = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
+pokeblue_debug_opt = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
 
 %.gbc: $$(%_obj) layout.link
-	$(RGBLINK) -d -m $*.map -n $*.sym -l layout.link -o $@ $(filter %.o,$^)
-	$(RGBFIX) $($*_opt) $@
+	$(RGBLINK) -p $($*_pad) -d -m $*.map -n $*.sym -l layout.link -o $@ $(filter %.o,$^)
+	$(RGBFIX) -p $($*_pad) $($*_opt) $@
 
 
 ### Misc file-specific graphics rules
@@ -106,14 +114,16 @@ pokeblue_opt = -jsv -k 01 -l 0x33 -m 0x13 -p 0 -r 03 -t "POKEMON BLUE"
 gfx/battle/attack_anim_1.2bpp: tools/gfx += --trim-whitespace
 gfx/battle/attack_anim_2.2bpp: tools/gfx += --trim-whitespace
 
-gfx/intro_credits/blue_jigglypuff_1.2bpp: rgbgfx += -h
-gfx/intro_credits/blue_jigglypuff_2.2bpp: rgbgfx += -h
-gfx/intro_credits/blue_jigglypuff_3.2bpp: rgbgfx += -h
-gfx/intro_credits/red_nidorino_1.2bpp: rgbgfx += -h
-gfx/intro_credits/red_nidorino_2.2bpp: rgbgfx += -h
-gfx/intro_credits/red_nidorino_3.2bpp: rgbgfx += -h
+gfx/intro/blue_jigglypuff_1.2bpp: rgbgfx += -h
+gfx/intro/blue_jigglypuff_2.2bpp: rgbgfx += -h
+gfx/intro/blue_jigglypuff_3.2bpp: rgbgfx += -h
+gfx/intro/red_nidorino_1.2bpp: rgbgfx += -h
+gfx/intro/red_nidorino_2.2bpp: rgbgfx += -h
+gfx/intro/red_nidorino_3.2bpp: rgbgfx += -h
+gfx/intro/gengar.2bpp: rgbgfx += -h
+gfx/intro/gengar.2bpp: tools/gfx += --remove-duplicates --preserve=0x19,0x76
 
-gfx/intro_credits/the_end.2bpp: tools/gfx += --interleave --png=$<
+gfx/credits/the_end.2bpp: tools/gfx += --interleave --png=$<
 
 gfx/slots/red_slots_1.2bpp: tools/gfx += --trim-whitespace
 gfx/slots/blue_slots_1.2bpp: tools/gfx += --trim-whitespace

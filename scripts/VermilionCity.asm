@@ -15,7 +15,7 @@ VermilionCity_Script:
 
 .setFirstLockTrashCanIndex
 	call Random
-	ld a, [hRandomSub]
+	ldh a, [hRandomSub]
 	and $e
 	ld [wFirstLockTrashCanIndex], a
 	ret
@@ -45,10 +45,10 @@ VermilionCityScript0:
 	call ArePlayerCoordsInArray
 	ret nc
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld [wcf0d], a
 	ld a, $3
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	CheckEvent EVENT_SS_ANNE_LEFT
 	jr nz, .shipHasDeparted
@@ -68,8 +68,8 @@ VermilionCityScript0:
 	ret
 
 SSAnneTicketCheckCoords:
-	db $1e,$12 ; y, x
-	db $ff
+	dbmapcoord 18, 30
+	db -1 ; end
 
 VermilionCityScript4:
 	ld hl, SSAnneTicketCheckCoords
@@ -98,7 +98,7 @@ VermilionCityScript3:
 	ret nz
 	xor a
 	ld [wJoyIgnore], a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $0
 	ld [wVermilionCityCurScript], a
 	ret
@@ -191,9 +191,9 @@ VermilionCityText3:
 	jp TextScriptEnd
 
 .inFrontOfOrBehindGuardCoords
-	db $1d,$13 ; y, x of tile in front of guard
-	db $1f,$13 ; y, x of tile behind guard
-	db $ff
+	dbmapcoord 19, 29 ; in front of guard
+	dbmapcoord 19, 31 ; behind guard
+	db -1 ; end
 
 SSAnneWelcomeText4:
 	text_far _SSAnneWelcomeText4

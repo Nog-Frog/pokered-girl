@@ -3,7 +3,7 @@
 	db  25,  20,  15,  90, 105
 	;   hp  atk  def  spd  spc
 
-	db PSYCHIC, PSYCHIC ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 200 ; catch rate
 	db 73 ; base exp
 
@@ -11,7 +11,7 @@
 	dw AbraPicFront, AbraPicBack
 
 	db TELEPORT, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
-	db 3 ; growth rate
+	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

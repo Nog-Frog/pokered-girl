@@ -11,7 +11,7 @@ SpecialWarpIn::
 .next
 	bit 1, [hl]
 	jr z, .next3
-	call EmptyFunc
+	call DebugStart
 .next3
 	ld a, 0
 .next2
@@ -34,7 +34,7 @@ LoadSpecialWarpData:
 	cp TRADE_CENTER
 	jr nz, .notTradeCenter
 	ld hl, TradeCenterSpec1
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK ; which gameboy is clocking determines who is on the left and who is on the right
 	jr z, .copyWarpData
 	ld hl, TradeCenterSpec2
@@ -43,7 +43,7 @@ LoadSpecialWarpData:
 	cp COLOSSEUM
 	jr nz, .notColosseum
 	ld hl, ColosseumSpec1
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	jr z, .copyWarpData
 	ld hl, ColosseumSpec2

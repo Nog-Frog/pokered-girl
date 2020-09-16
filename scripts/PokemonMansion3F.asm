@@ -51,10 +51,10 @@ Mansion3Script0:
 	ret
 
 CoordsData_52254:
-	db $0E,$10
-	db $0E,$11
-	db $0E,$13
-	db $FF
+	dbmapcoord 16, 14
+	dbmapcoord 17, 14
+	dbmapcoord 19, 14
+	db -1 ; end
 
 Mansion3Script_5225b:
 	xor a
@@ -77,9 +77,9 @@ Mansion3Script_Switches::
 	cp SPRITE_FACING_UP
 	ret nz
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $6
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp DisplayTextID
 
 PokemonMansion3F_TextPointers:
@@ -91,24 +91,10 @@ PokemonMansion3F_TextPointers:
 	dw Mansion3Text6
 
 Mansion3TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_MANSION_3_TRAINER_0
-	db ($0 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MANSION_3_TRAINER_0
-	dw Mansion3BattleText1 ; TextBeforeBattle
-	dw Mansion3AfterBattleText1 ; TextAfterBattle
-	dw Mansion3EndBattleText1 ; TextEndBattle
-	dw Mansion3EndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_MANSION_3_TRAINER_0, 0, Mansion3BattleText1, Mansion3EndBattleText1, Mansion3AfterBattleText1
 Mansion3TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_MANSION_3_TRAINER_1
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MANSION_3_TRAINER_1
-	dw Mansion3BattleText2 ; TextBeforeBattle
-	dw Mansion3AfterBattleText2 ; TextAfterBattle
-	dw Mansion3EndBattleText2 ; TextEndBattle
-	dw Mansion3EndBattleText2 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_MANSION_3_TRAINER_1, 2, Mansion3BattleText2, Mansion3EndBattleText2, Mansion3AfterBattleText2
+	db -1 ; end
 
 Mansion3Text1:
 	text_asm

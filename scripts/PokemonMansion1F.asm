@@ -50,9 +50,9 @@ Mansion1Script_Switches::
 	cp SPRITE_FACING_UP
 	ret nz
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $4
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp DisplayTextID
 
 PokemonMansion1F_ScriptPointers:
@@ -67,15 +67,8 @@ PokemonMansion1F_TextPointers:
 	dw Mansion1Text4
 
 Mansion1TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_MANSION_1_TRAINER_0
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_MANSION_1_TRAINER_0
-	dw Mansion1BattleText2 ; TextBeforeBattle
-	dw Mansion1AfterBattleText2 ; TextAfterBattle
-	dw Mansion1EndBattleText2 ; TextEndBattle
-	dw Mansion1EndBattleText2 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_MANSION_1_TRAINER_0, 3, Mansion1BattleText2, Mansion1EndBattleText2, Mansion1AfterBattleText2
+	db -1 ; end
 
 Mansion1Text1:
 	text_asm

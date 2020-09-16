@@ -17,18 +17,18 @@ CinnabarIslandScript0:
 	call IsItemInBag
 	ret nz
 	ld a, [wYCoord]
-	cp $4
+	cp 4
 	ret nz
 	ld a, [wXCoord]
-	cp $12
+	cp 18
 	ret nz
 	ld a, PLAYER_DIR_UP
 	ld [wPlayerMovingDirection], a
 	ld a, $8
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $1
 	ld [wSimulatedJoypadStatesIndex], a
 	ld a, D_DOWN

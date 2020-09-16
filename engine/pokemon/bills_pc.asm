@@ -1,6 +1,6 @@
 DisplayPCMainMenu::
 	xor a
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	call SaveScreenTilesToBuffer2
 	ld a, [wNumHoFTeams]
 	and a
@@ -10,17 +10,17 @@ DisplayPCMainMenu::
 	ld a, [wNumHoFTeams]
 	and a
 	jr nz, .leaguePCAvailable
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 8
 	ld c, 14
 	jr .next
 .noOaksPC
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 6
 	ld c, 14
 	jr .next
 .leaguePCAvailable
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 10
 	ld c, 14
 .next
@@ -30,15 +30,15 @@ DisplayPCMainMenu::
 	ld [wMaxMenuItem], a
 	CheckEvent EVENT_MET_BILL
 	jr nz, .metBill
-	coord hl, 13, 2
+	hlcoord 13, 2
 	ld de, SomeonesPCText
 	jr .next2
 .metBill
-	coord hl, 13, 2
+	hlcoord 13, 2
 	ld de, BillsPCText
 .next2
 	call PlaceString
-	coord hl, 13, 4
+	hlcoord 13, 4
 	ld de, PlayersPCText
 	call PlaceString
 	ld l, c
@@ -47,7 +47,7 @@ DisplayPCMainMenu::
 	call PlaceString
 	CheckEvent EVENT_GOT_POKEDEX
 	jr z, .noOaksPC2
-	coord hl, 13, 6
+	hlcoord 13, 6
 	ld de, OaksPCText
 	call PlaceString
 	ld a, [wNumHoFTeams]
@@ -55,20 +55,20 @@ DisplayPCMainMenu::
 	jr z, .noLeaguePC
 	ld a, 4
 	ld [wMaxMenuItem], a
-	coord hl, 13, 8
+	hlcoord 13, 8
 	ld de, PKMNLeaguePCText
 	call PlaceString
-	coord hl, 13, 10
+	hlcoord 13, 10
 	ld de, LogOffPCText
 	jr .next3
 .noLeaguePC
-	coord hl, 13, 8
+	hlcoord 13, 8
 	ld de, LogOffPCText
 	jr .next3
 .noOaksPC2
 	ld a, $2
 	ld [wMaxMenuItem], a
-	coord hl, 13, 6
+	hlcoord 13, 6
 	ld de, LogOffPCText
 .next3
 	call PlaceString
@@ -82,7 +82,7 @@ DisplayPCMainMenu::
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ld a, 1
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	ret
 
 SomeonesPCText:   db "המחשב של ?@"
@@ -114,16 +114,16 @@ BillsPC_::
 BillsPCMenu:
 	ld a, [wParentMenuItem]
 	ld [wCurrentMenuItem], a
-	ld hl, vChars2 + $780
+	ld hl, vChars2 tile $78
 	ld de, PokeballTileGraphics
-	lb bc, BANK(PokeballTileGraphics), $01
+	lb bc, BANK(PokeballTileGraphics), 1
 	call CopyVideoData
 	call LoadScreenTilesFromBuffer2DisableBGTransfer
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld b, 10
 	ld c, 12
 	call TextBoxBorder
-	coord hl, 11, 2
+	hlcoord 11, 2
 	ld de, BillsPCMenuText
 	call PlaceString
 	ld hl, wTopMenuItemY
@@ -146,7 +146,7 @@ BillsPCMenu:
 	ld [wPlayerMonNumber], a
 	ld hl, WhatText
 	call PrintText
-	coord hl, 0, 14
+	hlcoord 0, 14
 	ld b, 2
 	ld c, 9
 	call TextBoxBorder
@@ -156,19 +156,19 @@ BillsPCMenu:
 	jr c, .singleDigitBoxNum
 ; two digit box num
 	sub 9
-	coord hl, 1, 16
+	hlcoord 1, 16
 	ld [hl], "1"
 	add "0"
 	jr .next
 .singleDigitBoxNum
 	add "1"
 .next
-	Coorda 2, 16
-	coord hl, 8, 16
+	ldcoord_a 2, 16
+	hlcoord 8, 16
 	ld de, BoxNoPCText
 	call PlaceString
 	ld a, 1
-	ld [hAutoBGTransferEnabled], a
+	ldh [hAutoBGTransferEnabled], a
 	call Delay3
 	call HandleMenuInput
 	bit 1, a
@@ -318,7 +318,7 @@ BillsPCRelease:
 	jp BillsPCMenu
 
 BillsPCChangeBox:
-	callba ChangeBox
+	farcall ChangeBox
 	jp BillsPCMenu
 
 DisplayMonListMenu:
@@ -380,7 +380,7 @@ HMMoveArray:
 INCLUDE "data/moves/hm_moves.asm"
 
 DisplayDepositWithdrawMenu:
-	coord hl, 9, 10
+	hlcoord 9, 10
 	ld b, 6
 	ld c, 9
 	call TextBoxBorder
@@ -390,9 +390,9 @@ DisplayDepositWithdrawMenu:
 	jr nz, .next
 	ld de, WithdrawPCText
 .next
-	coord hl, 17, 12
+	hlcoord 17, 12
 	call PlaceString
-	coord hl, 17, 14
+	hlcoord 17, 14
 	ld de, StatsCancelPCText
 	call PlaceString
 	ld hl, wTopMenuItemY
@@ -501,7 +501,7 @@ MonWasReleasedText:
 	text_end
 
 CableClubLeftGameboy::
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
 	ret z
 	ld a, [wSpritePlayerStateData1FacingDirection]
@@ -518,7 +518,7 @@ CableClubLeftGameboy::
 	tx_pre_jump JustAMomentText
 
 CableClubRightGameboy::
-	ld a, [hSerialConnectionStatus]
+	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	ret z
 	ld a, [wSpritePlayerStateData1FacingDirection]

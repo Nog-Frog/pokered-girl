@@ -1,6 +1,6 @@
 ViridianGym_Script:
-	ld hl, Gym8CityName
-	ld de, Gym8LeaderName
+	ld hl, .CityName
+	ld de, .LeaderName
 	call LoadGymLeaderAndCityName
 	call EnableAutoTextBoxDrawing
 	ld hl, ViridianGymTrainerHeader0
@@ -10,9 +10,10 @@ ViridianGym_Script:
 	ld [wViridianGymCurScript], a
 	ret
 
-Gym8CityName:
+.CityName:
 	db "עיר הברקת@"
-Gym8LeaderName:
+
+.LeaderName:
 	db "אלפרון@"
 
 ViridianGymScript_748d6:
@@ -49,72 +50,68 @@ ViridianGymScript0:
 	ld [wCurMapScript], a
 	ret
 
-;format:
-;db y,x
-;dw pointer to movement
 ViridianGymArrowTilePlayerMovement:
-	db $b,$13
-	dw ViridianGymArrowMovement1
-	db $1,$13
-	dw ViridianGymArrowMovement2
-	db $2,$12
-	dw ViridianGymArrowMovement3
-	db $2,$b
-	dw ViridianGymArrowMovement4
-	db $a,$10
-	dw ViridianGymArrowMovement5
-	db $6,$4
-	dw ViridianGymArrowMovement6
-	db $d,$5
-	dw ViridianGymArrowMovement7
-	db $e,$4
-	dw ViridianGymArrowMovement8
-	db $f,$0
-	dw ViridianGymArrowMovement9
-	db $f,$1
-	dw ViridianGymArrowMovement10
-	db $10,$d
-	dw ViridianGymArrowMovement11
-	db $11,$d
-	dw ViridianGymArrowMovement12
-	db $FF
+	map_coord_movement 19, 11, ViridianGymArrowMovement1
+	map_coord_movement 19,  1, ViridianGymArrowMovement2
+	map_coord_movement 18,  2, ViridianGymArrowMovement3
+	map_coord_movement 11,  2, ViridianGymArrowMovement4
+	map_coord_movement 16, 10, ViridianGymArrowMovement5
+	map_coord_movement  4,  6, ViridianGymArrowMovement6
+	map_coord_movement  5, 13, ViridianGymArrowMovement7
+	map_coord_movement  4, 14, ViridianGymArrowMovement8
+	map_coord_movement  0, 15, ViridianGymArrowMovement9
+	map_coord_movement  1, 15, ViridianGymArrowMovement10
+	map_coord_movement 13, 16, ViridianGymArrowMovement11
+	map_coord_movement 13, 17, ViridianGymArrowMovement12
+	db -1 ; end
 
-;format: direction, count
 ViridianGymArrowMovement1:
-	db D_UP,$09,$FF
+	db D_UP, 9
+	db -1 ; end
 
 ViridianGymArrowMovement2:
-	db D_LEFT,$08,$FF
+	db D_LEFT, 8
+	db -1 ; end
 
 ViridianGymArrowMovement3:
-	db D_DOWN,$09,$FF
+	db D_DOWN, 9
+	db -1 ; end
 
 ViridianGymArrowMovement4:
-	db D_RIGHT,$06,$FF
+	db D_RIGHT, 6
+	db -1 ; end
 
 ViridianGymArrowMovement5:
-	db D_DOWN,$02,$FF
+	db D_DOWN, 2
+	db -1 ; end
 
 ViridianGymArrowMovement6:
-	db D_DOWN,$07,$FF
+	db D_DOWN, 7
+	db -1 ; end
 
 ViridianGymArrowMovement7:
-	db D_RIGHT,$08,$FF
+	db D_RIGHT, 8
+	db -1 ; end
 
 ViridianGymArrowMovement8:
-	db D_RIGHT,$09,$FF
+	db D_RIGHT, 9
+	db -1 ; end
 
 ViridianGymArrowMovement9:
-	db D_UP,$08,$FF
+	db D_UP, 8
+	db -1 ; end
 
 ViridianGymArrowMovement10:
-	db D_UP,$06,$FF
+	db D_UP, 6
+	db -1 ; end
 
 ViridianGymArrowMovement11:
-	db D_LEFT,$06,$FF
+	db D_LEFT, 6
+	db -1 ; end
 
 ViridianGymArrowMovement12:
-	db D_LEFT,$0C,$FF
+	db D_LEFT, 12
+	db -1 ; end
 
 ViridianGymScript4:
 	ld a, [wSimulatedJoypadStatesIndex]
@@ -128,7 +125,7 @@ ViridianGymScript4:
 	ld [wCurMapScript], a
 	ret
 .asm_74980
-	jpba LoadSpinnerArrowTiles
+	farjp LoadSpinnerArrowTiles
 
 ViridianGymScript3:
 	ld a, [wIsInBattle]
@@ -138,26 +135,26 @@ ViridianGymScript3:
 	ld [wJoyIgnore], a
 ViridianGymScript3_74995:
 	ld a, $c
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_VIRIDIAN_GYM_GIOVANNI
 	lb bc, TM_FISSURE, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, $d
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_GOT_TM27
 	jr .gymVictory
 .BagFull
 	ld a, $e
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 .gymVictory
 	ld hl, wObtainedBadges
-	set 7, [hl]
+	set BIT_EARTHBADGE, [hl]
 	ld hl, wBeatGymFlags
-	set 7, [hl]
+	set BIT_EARTHBADGE, [hl]
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7
@@ -185,78 +182,22 @@ ViridianGym_TextPointers:
 	dw ViridianGymText14
 
 ViridianGymTrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0
-	dw ViridianGymBattleText1 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText1 ; TextAfterBattle
-	dw ViridianGymEndBattleText1 ; TextEndBattle
-	dw ViridianGymEndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, 4, ViridianGymBattleText1, ViridianGymEndBattleText1, ViridianGymAfterBattleText1
 ViridianGymTrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1
-	dw ViridianGymBattleText2 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText2 ; TextAfterBattle
-	dw ViridianGymEndBattleText2 ; TextEndBattle
-	dw ViridianGymEndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_1, 4, ViridianGymBattleText2, ViridianGymEndBattleText2, ViridianGymAfterBattleText2
 ViridianGymTrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2
-	dw ViridianGymBattleText3 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText3 ; TextAfterBattle
-	dw ViridianGymEndBattleText3 ; TextEndBattle
-	dw ViridianGymEndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_2, 4, ViridianGymBattleText3, ViridianGymEndBattleText3, ViridianGymAfterBattleText3
 ViridianGymTrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3
-	dw ViridianGymBattleText4 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText4 ; TextAfterBattle
-	dw ViridianGymEndBattleText4 ; TextEndBattle
-	dw ViridianGymEndBattleText4 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_3, 2, ViridianGymBattleText4, ViridianGymEndBattleText4, ViridianGymAfterBattleText4
 ViridianGymTrainerHeader4:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4
-	dw ViridianGymBattleText5 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText5 ; TextAfterBattle
-	dw ViridianGymEndBattleText5 ; TextEndBattle
-	dw ViridianGymEndBattleText5 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_4, 3, ViridianGymBattleText5, ViridianGymEndBattleText5, ViridianGymAfterBattleText5
 ViridianGymTrainerHeader5:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5
-	dw ViridianGymBattleText6 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText6 ; TextAfterBattle
-	dw ViridianGymEndBattleText6 ; TextEndBattle
-	dw ViridianGymEndBattleText6 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_5, 4, ViridianGymBattleText6, ViridianGymEndBattleText6, ViridianGymAfterBattleText6
 ViridianGymTrainerHeader6:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6, 1
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6, 1
-	dw ViridianGymBattleText7 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText7 ; TextAfterBattle
-	dw ViridianGymEndBattleText7 ; TextEndBattle
-	dw ViridianGymEndBattleText7 ; TextEndBattle
-
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_6, 1, 3, ViridianGymBattleText7, ViridianGymEndBattleText7, ViridianGymAfterBattleText7
 ViridianGymTrainerHeader7:
-	dbEventFlagBit EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 1
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 1
-	dw ViridianGymBattleText8 ; TextBeforeBattle
-	dw ViridianGymAfterBattleText8 ; TextAfterBattle
-	dw ViridianGymEndBattleText8 ; TextEndBattle
-	dw ViridianGymEndBattleText8 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7, 1, 4, ViridianGymBattleText8, ViridianGymEndBattleText8, ViridianGymAfterBattleText8
+	db -1 ; end
 
 ViridianGymText1:
 	text_asm
@@ -289,7 +230,7 @@ ViridianGymText1:
 	ld hl, ViridianGymText_74ad3
 	ld de, ViridianGymText_74ad3
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndex]
+	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters

@@ -2,7 +2,7 @@ PewterGym_Script:
 	ld hl, wCurrentMapScriptFlags
 	bit 6, [hl]
 	res 6, [hl]
-	call nz, PewterGymScript_5c3a4
+	call nz, .LoadNames
 	call EnableAutoTextBoxDrawing
 	ld hl, PewterGymTrainerHeader0
 	ld de, PewterGym_ScriptPointers
@@ -11,15 +11,15 @@ PewterGym_Script:
 	ld [wPewterGymCurScript], a
 	ret
 
-PewterGymScript_5c3a4:
-	ld hl, Gym1CityName
-	ld de, Gym1LeaderName
+.LoadNames:
+	ld hl, .CityName
+	ld de, .LeaderName
 	jp LoadGymLeaderAndCityName
 
-Gym1CityName:
+.CityName:
 	db "עיר הכספית@"
 
-Gym1LeaderName:
+.LeaderName:
 	db "צור@"
 
 PewterGymScript_5c3bf:
@@ -44,26 +44,26 @@ PewterGymScript3:
 
 PewterGymScript_5c3df:
 	ld a, $4
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_BROCK
 	lb bc, TM_BIDE, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, $5
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_GOT_TM34
 	jr .gymVictory
 .BagFull
 	ld a, $6
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 .gymVictory
 	ld hl, wObtainedBadges
-	set 0, [hl]
+	set BIT_BOULDERBADGE, [hl]
 	ld hl, wBeatGymFlags
-	set 0, [hl]
+	set BIT_BOULDERBADGE, [hl]
 
 	ld a, HS_GYM_GUY
 	ld [wMissableObjectIndex], a
@@ -88,15 +88,8 @@ PewterGym_TextPointers:
 	dw PewterGymText6
 
 PewterGymTrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_PEWTER_GYM_TRAINER_0
-	db ($5 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_PEWTER_GYM_TRAINER_0
-	dw PewterGymBattleText1 ; TextBeforeBattle
-	dw PewterGymAfterBattleText1 ; TextAfterBattle
-	dw PewterGymEndBattleText1 ; TextEndBattle
-	dw PewterGymEndBattleText1 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_PEWTER_GYM_TRAINER_0, 5, PewterGymBattleText1, PewterGymEndBattleText1, PewterGymAfterBattleText1
+	db -1 ; end
 
 PewterGymText1:
 	text_asm
@@ -120,14 +113,14 @@ PewterGymText1:
 	ld hl, PewterGymText_5c4bc
 	ld de, PewterGymText_5c4bc
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndex]
+	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
 	ld a, $1
 	ld [wGymLeaderNo], a
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $3
 	ld [wPewterGymCurScript], a
 	ld [wCurMapScript], a
@@ -183,7 +176,7 @@ PewterGymAfterBattleText1:
 PewterGymText3:
 	text_asm
 	ld a, [wBeatGymFlags]
-	bit 0, a
+	bit BIT_BOULDERBADGE, a
 	jr nz, .asm_5c50c
 	ld hl, PewterGymText_5c515
 	call PrintText

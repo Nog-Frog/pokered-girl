@@ -44,7 +44,7 @@ FossilsList:
 	db DOME_FOSSIL
 	db HELIX_FOSSIL
 	db OLD_AMBER
-	db $00
+	db 0 ; end
 
 Lab4Text1:
 	text_asm
@@ -56,7 +56,7 @@ Lab4Text1:
 	ld a, [wFilteredBagItemsCount]
 	and a
 	jr z, .asm_75d8d
-	callba GiveFossilToCinnabarLab
+	farcall GiveFossilToCinnabarLab
 	jr .asm_75d93
 .asm_75d8d
 	ld hl, Lab4Text_75dcb
@@ -100,10 +100,10 @@ Lab4Text_75dd5:
 
 Lab4Text2:
 	text_asm
-	ld a, $3
+	ld a, TRADE_FOR_SAILOR
 	ld [wWhichTrade], a
 	predef DoInGameTradeDialogue
 	jp TextScriptEnd
 
 LoadFossilItemAndMonNameBank1D:
-	jpba LoadFossilItemAndMonName
+	farjp LoadFossilItemAndMonName

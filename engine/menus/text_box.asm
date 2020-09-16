@@ -111,7 +111,7 @@ GetTextBoxIDText:
 ; hl = address of upper left corner of text box
 GetAddressOfScreenCoords:
 	push bc
-	coord hl, 0, 0
+	hlcoord 0, 0
 	ld bc, 20
 .loop ; loop to add d rows to the base address
 	ld a, d
@@ -125,148 +125,7 @@ GetAddressOfScreenCoords:
 	add hl, de
 	ret
 
-; Format:
-; 00: text box ID
-; 01-02: function address
-TextBoxFunctionTable:
-	dbw MONEY_BOX, DisplayMoneyBox
-	dbw BUY_SELL_QUIT_MENU, DoBuySellQuitMenu
-	dbw FIELD_MOVE_MON_MENU, DisplayFieldMoveMonMenu
-	db $ff ; terminator
-
-; Format:
-; 00: text box ID
-; 01: column of upper left corner
-; 02: row of upper left corner
-; 03: column of lower right corner
-; 04: row of lower right corner
-TextBoxCoordTable:
-	db MESSAGE_BOX,       0, 12, 19, 17
-	db $03,               0,  0, 19, 14
-	db $07,               0,  0, 11,  6
-	db LIST_MENU_BOX,     4,  2, 19, 12
-	db $10,               7,  0, 19, 17
-	db MON_SPRITE_POPUP,  6,  4, 14, 13
-	db $ff ; terminator
-
-; Format:
-; 00: text box ID
-; 01: column of upper left corner
-; 02: row of upper left corner
-; 03: column of lower right corner
-; 04: row of lower right corner
-; 05-06: address of text
-; 07: column of beginning of text
-; 08: row of beginning of text
-; table of window positions and corresponding text [key, start column, start row, end column, end row, text pointer [2 bytes], text column, text row]
-TextBoxTextAndCoordTable:
-	db JP_MOCHIMONO_MENU_TEMPLATE ; UNUSED
-	db 0,0,14,17   ; text box coordinates
-	dw JapaneseMochimonoText
-	db 3,0   ; text coordinates
-
-	db USE_TOSS_MENU_TEMPLATE
-	db 12,10,19,14 ; text box coordinates
-	dw UseTossText
-	db 17,11 ; text coordinates
-
-	db JP_SAVE_MESSAGE_MENU_TEMPLATE ; UNUSED
-	db 0,0,7,5     ; text box coordinates
-	dw JapaneseSaveMessageText
-	db 2,2   ; text coordinates
-
-	db JP_SPEED_OPTIONS_MENU_TEMPLATE ; UNUSED
-	db 0,6,5,10    ; text box coordinates
-	dw JapaneseSpeedOptionsText
-	db 2,7   ; text coordinates
-
-	db BATTLE_MENU_TEMPLATE
-	db 0,12,11,17  ; text box coordinates
-	dw BattleMenuText
-	db 9,14 ; text coordinates
-
-	db SAFARI_BATTLE_MENU_TEMPLATE
-	db 0,12,19,17  ; text box coordinates
-	dw SafariZoneBattleMenuText
-	db 17,14  ; text coordinates
-
-	db SWITCH_STATS_CANCEL_MENU_TEMPLATE
-	db 11,11,19,17 ; text box coordinates
-	dw SwitchStatsCancelText
-	db 17,12 ; text coordinates
-
-	db BUY_SELL_QUIT_MENU_TEMPLATE
-	db 0,0,10,6    ; text box coordinates
-	dw BuySellQuitText
-	db 8,1   ; text coordinates
-
-	db MONEY_BOX_TEMPLATE
-	db 11,0,19,2   ; text box coordinates
-	dw MoneyText
-	db 16,0  ; text coordinates
-
-	db JP_AH_MENU_TEMPLATE
-	db 7,6,11,10   ; text box coordinates
-	dw JapaneseAhText
-	db 8,8   ; text coordinates
-
-	db JP_POKEDEX_MENU_TEMPLATE
-	db 11,8,19,17  ; text box coordinates
-	dw JapanesePokedexMenu
-	db 12,10 ; text coordinates
-
-; note that there is no terminator
-
-BuySellQuitText:
-	db   "קנה"
-	next "מכר"
-	next "ביטול@"
-
-	db "@" ; unused
-
-UseTossText:
-	db   "השתמש"
-	next "זרוק@"
-
-JapaneseSaveMessageText:
-	db   "きろく"
-	next "メッセージ@"
-
-JapaneseSpeedOptionsText:
-	db   "はやい"
-	next "おそい@"
-
-MoneyText:
-	db "כסף@"
-
-JapaneseMochimonoText:
-	db "もちもの@"
-
-JapaneseMainMenuText:
-	db   "つづきから"
-	next "さいしょから@"
-
-BattleMenuText:
-	db   "תקוף  <PK><MN>"
-	next "פריט  ברח@"
-
-SafariZoneBattleMenuText:
-	db   "כדור  ×   פיתיון"
-	next "אבן       ברח@"
-
-SwitchStatsCancelText:
-	db   "החלף"
-	next "נתונים"
-	next "ביטול@"
-
-JapaneseAhText:
-	db "アッ！@"
-
-JapanesePokedexMenu:
-	db   "データをみる"
-	next "なきごえ"
-	next "ぶんぷをみる"
-	next "キャンセル@"
+INCLUDE "data/text_boxes.asm"
 
 DisplayMoneyBox:
 	ld hl, wd730
@@ -274,11 +133,11 @@ DisplayMoneyBox:
 	ld a, MONEY_BOX_TEMPLATE
 	ld [wTextBoxID], a
 	call DisplayTextBoxID
-	coord hl, 13, 1
+	hlcoord 13, 1
 	ld b, 1
 	ld c, 6
 	call ClearScreenArea
-	coord hl, 12, 1
+	hlcoord 12, 1
 	ld de, wPlayerMoney
 	ld c, $a3
 	call PrintBCDNumber
@@ -519,50 +378,7 @@ TwoOptionMenu_RestoreScreenTiles:
 	call UpdateSprites
 	ret
 
-; Format:
-; 00: byte width
-; 01: byte height
-; 02: byte put blank line before first menu item
-; 03: word text pointer
-TwoOptionMenuStrings:
-	db 4,3,0
-	dw .YesNoMenu
-	db 6,3,0
-	dw .NorthWestMenu
-	db 6,3,0
-	dw .SouthEastMenu
-	db 6,3,0
-	dw .YesNoMenu
-	db 6,3,0
-	dw .NorthEastMenu
-	db 7,3,0
-	dw .TradeCancelMenu
-	db 7,4,1
-	dw .HealCancelMenu
-	db 4,3,0
-	dw .NoYesMenu
-
-.NoYesMenu
-	db   "לא"
-	next "כן@"
-.YesNoMenu
-	db   "כן"
-	next "לא@"
-.NorthWestMenu
-	db   "צפון" ; UNUSED
-	next "מערב@" ; UNUSED
-.SouthEastMenu
-	db   "דרום" ; UNUSED
-	next "מזרח@" ; UNUSED
-.NorthEastMenu
-	db   "צפון" ; UNUSED
-	next "מזרח@" ; UNUSED
-.TradeCancelMenu
-	db   "החלף"
-	next "ביטול@"
-.HealCancelMenu
-	db   "רפא"
-	next "ביטול@"
+INCLUDE "data/yes_no_menu_strings.asm"
 
 DisplayFieldMoveMonMenu:
 	xor a
@@ -579,14 +395,14 @@ DisplayFieldMoveMonMenu:
 	jr nz, .fieldMovesExist
 
 ; no field moves
-	coord hl, 11, 11
+	hlcoord 11, 11
 	ld b, 5
 	ld c, 7
 	call TextBoxBorder
 	call UpdateSprites
 	ld a, 18
-	ld [hFieldMoveMonMenuTopMenuItemX], a
-	coord hl, 17, 12
+	ldh [hFieldMoveMonMenuTopMenuItemX], a
+	hlcoord 17, 12
 	ld de, PokemonMenuEntries
 	jp PlaceString
 
@@ -595,7 +411,7 @@ DisplayFieldMoveMonMenu:
 
 ; Calculate the text box position and dimensions based on the leftmost X coord
 ; of the field move names before adjusting for the number of field moves.
-	coord hl, 0, 11
+	hlcoord 0, 11
 	ld a, [wFieldMovesLeftmostXCoord]
 	dec a
 	ld e, a
@@ -626,7 +442,7 @@ DisplayFieldMoveMonMenu:
 	call UpdateSprites
 
 ; Calculate the position of the first field move name to print.
-	coord hl, 0, 12
+	hlcoord 0, 12
 	ld a, 17
 	ld e, a
 	ld d, 0
@@ -673,7 +489,7 @@ DisplayFieldMoveMonMenu:
 .donePrintingNames
 	pop hl
 	ld a, [wFieldMovesLeftmostXCoord]
-	coord hl, 0, 12
+	hlcoord, 0, 12
 	ld a, 17
 	ld e, a
 	ld d, 0
@@ -681,16 +497,7 @@ DisplayFieldMoveMonMenu:
 	ld de, PokemonMenuEntries
 	jp PlaceString
 
-FieldMoveNames:
-	db "חיתוך@"
-	db "תעופה@"
-	text_end
-	db "גלישה@"
-	db "עוצמה@"
-	db "הבזק@"
-	db "התחפרות@"
-	db "השתגרות@"
-	db "הטלת ביצה@"
+INCLUDE "data/moves/field_move_names.asm"
 
 PokemonMenuEntries:
 	db   "נתונים"
@@ -749,19 +556,4 @@ GetMonFieldMoves:
 	pop hl
 	ret
 
-; Format: [Move id], [name index], [leftmost tile]
-; Move id = id of move
-; Name index = index of name in FieldMoveNames
-; Leftmost tile = -1 + tile column in which the first letter of the move's name should be displayed
-;                 "SOFTBOILED" is $08 because it has 4 more letters than "SURF", for example, whose value is $0C
-FieldMoveDisplayData:
-	db CUT, $01, $0C
-	db FLY, $02, $0C
-	db $B4, $03, $0C ; unused field move
-	db SURF, $04, $0C
-	db STRENGTH, $05, $0C
-	db FLASH, $06, $0C
-	db DIG, $07, $0B
-	db TELEPORT, $08, $0B
-	db SOFTBOILED, $09, $09
-	db $ff ; list terminator
+INCLUDE "data/moves/field_moves.asm"

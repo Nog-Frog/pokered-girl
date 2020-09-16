@@ -42,10 +42,10 @@ SilphCo7Script_51b77:
 	predef_jump ReplaceTileBlock
 
 SilphCo7GateCoords:
-	db $03,$05
-	db $02,$0A
-	db $06,$0A
-	db $FF
+	dbmapcoord  5,  3
+	dbmapcoord 10,  2
+	dbmapcoord 10,  6
+	db -1 ; end
 
 SilphCo7Text_51bc8:
 	push hl
@@ -55,7 +55,7 @@ SilphCo7Text_51bc8:
 	ld a, [hl]
 	ld c, a
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	pop hl
 .asm_51bd4
 	ld a, [hli]
@@ -80,12 +80,12 @@ SilphCo7Text_51bc8:
 	ret
 .asm_51bf0
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	ret
 
 SilphCo7Text_51bf4:
 	EventFlagAddress hl, EVENT_SILPH_CO_7_UNLOCKED_DOOR1
-	ld a, [hUnlockedSilphCoDoors]
+	ldh a, [hUnlockedSilphCoDoors]
 	and a
 	ret z
 	cp $1
@@ -125,7 +125,7 @@ SilphCo7Script0:
 	call ArePlayerCoordsInArray
 	jp nc, CheckFightingMapTrainers
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $f0
 	ld [wJoyIgnore], a
 	ld a, PLAYER_DIR_DOWN
@@ -137,10 +137,10 @@ SilphCo7Script0:
 	ld a, MUSIC_MEET_RIVAL
 	call PlayMusic
 	ld a, $9
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $9
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
 	ld de, MovementData_51c7d
 	ld a, [wCoordIndex]
@@ -150,22 +150,22 @@ SilphCo7Script0:
 	inc de
 .asm_51c6c
 	ld a, $9
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call MoveSprite
 	ld a, $3
 	jp SilphCo7Text_51c10
 
 CoordsData_51c78:
-	db $02,$03
-	db $03,$03
-	db $FF
+	dbmapcoord  3,  2
+	dbmapcoord  3,  3
+	db -1 ; end
 
 MovementData_51c7d:
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
 	db NPC_MOVEMENT_UP
-	db $FF
+	db -1 ; end
 
 SilphCo7Script3:
 	ld a, [wd730]
@@ -174,7 +174,7 @@ SilphCo7Script3:
 	xor a
 	ld [wJoyIgnore], a
 	ld a, $d
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	call Delay3
 	ld hl, wd72d
@@ -183,7 +183,7 @@ SilphCo7Script3:
 	ld hl, SilphCo7Text14
 	ld de, SilphCo7Text_51ecd
 	call SaveEndBattleTextPointers
-	ld a, OPP_SONY2
+	ld a, OPP_RIVAL2
 	ld [wCurOpponent], a
 	ld a, [wRivalStarter]
 	cp STARTER2
@@ -212,17 +212,17 @@ SilphCo7Script4:
 	ld a, PLAYER_DIR_DOWN
 	ld [wPlayerMovingDirection], a
 	ld a, $9
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	ld a, SPRITE_FACING_UP
-	ld [hSpriteFacingDirection], a
+	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	ld a, $f
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, SFX_STOP_ALL_MUSIC
 	ld [wNewSoundID], a
 	call PlaySound
-	callba Music_RivalAlternateStart
+	farcall Music_RivalAlternateStart
 	ld de, MovementData_51d1d
 	ld a, [wcf0d]
 	cp $1
@@ -230,7 +230,7 @@ SilphCo7Script4:
 	ld de, MovementData_51d1a
 .asm_51d0e
 	ld a, $9
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	call MoveSprite
 	ld a, $5
 	jp SilphCo7Text_51c10
@@ -238,7 +238,7 @@ SilphCo7Script4:
 MovementData_51d1a:
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
-	db $FF
+	db -1 ; end
 
 MovementData_51d1d:
 	db NPC_MOVEMENT_LEFT
@@ -248,7 +248,7 @@ MovementData_51d1d:
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_DOWN
-	db $FF
+	db -1 ; end
 
 SilphCo7Script5:
 	ld a, [wd730]
@@ -280,42 +280,14 @@ SilphCo7F_TextPointers:
 	dw SilphCo7Text15
 
 SilphCo7TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_7F_TRAINER_0
-	db ($2 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_7F_TRAINER_0
-	dw SilphCo7BattleText1 ; TextBeforeBattle
-	dw SilphCo7AfterBattleText1 ; TextAfterBattle
-	dw SilphCo7EndBattleText1 ; TextEndBattle
-	dw SilphCo7EndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_7F_TRAINER_0, 2, SilphCo7BattleText1, SilphCo7EndBattleText1, SilphCo7AfterBattleText1
 SilphCo7TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_7F_TRAINER_1
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_7F_TRAINER_1
-	dw SilphCo7BattleText2 ; TextBeforeBattle
-	dw SilphCo7AfterBattleText2 ; TextAfterBattle
-	dw SilphCo7EndBattleText2 ; TextEndBattle
-	dw SilphCo7EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_7F_TRAINER_1, 3, SilphCo7BattleText2, SilphCo7EndBattleText2, SilphCo7AfterBattleText2
 SilphCo7TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_7F_TRAINER_2
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_7F_TRAINER_2
-	dw SilphCo7BattleText3 ; TextBeforeBattle
-	dw SilphCo7AfterBattleText3 ; TextAfterBattle
-	dw SilphCo7EndBattleText3 ; TextEndBattle
-	dw SilphCo7EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_7F_TRAINER_2, 3, SilphCo7BattleText3, SilphCo7EndBattleText3, SilphCo7AfterBattleText3
 SilphCo7TrainerHeader3:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_7F_TRAINER_3, 1
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_7F_TRAINER_3, 1
-	dw SilphCo7BattleText4 ; TextBeforeBattle
-	dw SilphCo7AfterBattleText4 ; TextAfterBattle
-	dw SilphCo7EndBattleText4 ; TextEndBattle
-	dw SilphCo7EndBattleText4 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_SILPH_CO_7F_TRAINER_3, 1, 4, SilphCo7BattleText4, SilphCo7EndBattleText4, SilphCo7AfterBattleText4
+	db -1 ; end
 
 SilphCo7Text1:
 ; lapras guy

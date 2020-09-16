@@ -1,17 +1,15 @@
 LavenderMart_Object:
 	db $0 ; border block
 
-	db 2 ; warps
-	warp 3, 7, 3, -1
-	warp 4, 7, 3, -1
+	def_warps
+	warp  3,  7, 3, LAST_MAP
+	warp  4,  7, 3, LAST_MAP
 
-	db 0 ; signs
+	def_signs
 
-	db 3 ; objects
-	object SPRITE_MART_GUY, 0, 5, STAY, RIGHT, 1 ; person
+	def_objects
+	object SPRITE_CLERK, 0, 5, STAY, RIGHT, 1 ; person
 	object SPRITE_BALDING_GUY, 3, 4, STAY, NONE, 2 ; person
-	object SPRITE_BLACK_HAIR_BOY_1, 7, 2, STAY, NONE, 3 ; person
+	object SPRITE_COOLTRAINER_M, 7, 2, STAY, NONE, 3 ; person
 
-	; warp-to
-	warp_to 3, 7, LAVENDER_MART_WIDTH
-	warp_to 4, 7, LAVENDER_MART_WIDTH
+	def_warps_to LAVENDER_MART

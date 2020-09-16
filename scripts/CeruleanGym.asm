@@ -2,7 +2,7 @@ CeruleanGym_Script:
 	ld hl, wCurrentMapScriptFlags
 	bit 6, [hl]
 	res 6, [hl]
-	call nz, CeruleanGymScript_5c6d0
+	call nz, .LoadNames
 	call EnableAutoTextBoxDrawing
 	ld hl, CeruleanGymTrainerHeader0
 	ld de, CeruleanGym_ScriptPointers
@@ -11,15 +11,15 @@ CeruleanGym_Script:
 	ld [wCeruleanGymCurScript], a
 	ret
 
-CeruleanGymScript_5c6d0:
-	ld hl, Gym2CityName
-	ld de, Gym2LeaderName
+.LoadNames:
+	ld hl, .CityName
+	ld de, .LeaderName
 	jp LoadGymLeaderAndCityName
 
-Gym2CityName:
+.CityName:
 	db "עיר הטורקיז@"
 
-Gym2LeaderName:
+.LeaderName:
 	db "טל@"
 
 CeruleanGymScript_5c6ed:
@@ -44,26 +44,26 @@ CeruleanGymScript3:
 
 CeruleanGymScript_5c70d:
 	ld a, $5
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_BEAT_MISTY
 	lb bc, TM_BUBBLEBEAM, 1
 	call GiveItem
 	jr nc, .BagFull
 	ld a, $6
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	SetEvent EVENT_GOT_TM11
 	jr .gymVictory
 .BagFull
 	ld a, $7
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 .gymVictory
 	ld hl, wObtainedBadges
-	set 1, [hl]
+	set BIT_CASCADEBADGE, [hl]
 	ld hl, wBeatGymFlags
-	set 1, [hl]
+	set BIT_CASCADEBADGE, [hl]
 
 	; deactivate gym trainers
 	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1
@@ -80,24 +80,10 @@ CeruleanGym_TextPointers:
 	dw CeruleanGymText7
 
 CeruleanGymTrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_CERULEAN_GYM_TRAINER_0
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_CERULEAN_GYM_TRAINER_0
-	dw CeruleanGymBattleText1 ; TextBeforeBattle
-	dw CeruleanGymAfterBattleText1 ; TextAfterBattle
-	dw CeruleanGymEndBattleText1 ; TextEndBattle
-	dw CeruleanGymEndBattleText1 ; TextEndBattle
-
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_0, 3, CeruleanGymBattleText1, CeruleanGymEndBattleText1, CeruleanGymAfterBattleText1
 CeruleanGymTrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_CERULEAN_GYM_TRAINER_1
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_CERULEAN_GYM_TRAINER_1
-	dw CeruleanGymBattleText2 ; TextBeforeBattle
-	dw CeruleanGymAfterBattleText2 ; TextAfterBattle
-	dw CeruleanGymEndBattleText2 ; TextEndBattle
-	dw CeruleanGymEndBattleText2 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_CERULEAN_GYM_TRAINER_1, 3, CeruleanGymBattleText2, CeruleanGymEndBattleText2, CeruleanGymAfterBattleText2
+	db -1 ; end
 
 CeruleanGymText1:
 	text_asm
@@ -121,14 +107,14 @@ CeruleanGymText1:
 	ld hl, CeruleanGymText_5c7d8
 	ld de, CeruleanGymText_5c7d8
 	call SaveEndBattleTextPointers
-	ld a, [hSpriteIndex]
+	ldh a, [hSpriteIndex]
 	ld [wSpriteIndex], a
 	call EngageMapTrainer
 	call InitBattleEnemyParameters
 	ld a, $2
 	ld [wGymLeaderNo], a
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld a, $3
 	ld [wCeruleanGymCurScript], a
 .done

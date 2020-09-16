@@ -23,53 +23,57 @@ PewterCityScript0:
 PewterCityScript_1925e:
 	CheckEvent EVENT_BEAT_BROCK
 	ret nz
+IF DEF(_DEBUG)
+	call DebugPressedOrHeldB
+	ret nz
+ENDC
 	ld hl, CoordsData_19277
 	call ArePlayerCoordsInArray
 	ret nc
 	ld a, $f0
 	ld [wJoyIgnore], a
 	ld a, $5
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	jp DisplayTextID
 
 CoordsData_19277:
-	db $11,$23
-	db $11,$24
-	db $12,$25
-	db $13,$25
-	db $ff
+	dbmapcoord 35, 17
+	dbmapcoord 36, 17
+	dbmapcoord 37, 18
+	dbmapcoord 37, 19
+	db -1 ; end
 
 PewterCityScript1:
 	ld a, [wNPCMovementScriptPointerTableNum]
 	and a
 	ret nz
 	ld a, $3
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	ld a, SPRITE_FACING_UP
-	ld [hSpriteFacingDirection], a
+	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	ld a, ($3 << 4) | SPRITE_FACING_UP
-	ld [hSpriteImageIndex], a
+	ldh [hSpriteImageIndex], a
 	call SetSpriteImageIndexAfterSettingFacingDirection
 	call PlayDefaultMusic
 	ld hl, wFlags_0xcd60
 	set 4, [hl]
 	ld a, $d
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $3c
-	ld [hSpriteScreenYCoord], a
+	ldh [hSpriteScreenYCoord], a
 	ld a, $30
-	ld [hSpriteScreenXCoord], a
-	ld a, $c
-	ld [hSpriteMapYCoord], a
-	ld a, $11
-	ld [hSpriteMapXCoord], a
+	ldh [hSpriteScreenXCoord], a
+	ld a, 12
+	ldh [hSpriteMapYCoord], a
+	ld a, 17
+	ldh [hSpriteMapXCoord], a
 	ld a, $3
 	ld [wSpriteIndex], a
 	call SetSpritePosition1
 	ld a, $3
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	ld de, MovementData_PewterMuseumGuyExit
 	call MoveSprite
 	ld a, $2
@@ -81,7 +85,7 @@ MovementData_PewterMuseumGuyExit:
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
 	db NPC_MOVEMENT_DOWN
-	db $FF
+	db -1 ; end
 
 PewterCityScript2:
 	ld a, [wd730]
@@ -112,32 +116,32 @@ PewterCityScript4:
 	and a
 	ret nz
 	ld a, $5
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	ld a, SPRITE_FACING_LEFT
-	ld [hSpriteFacingDirection], a
+	ldh [hSpriteFacingDirection], a
 	call SetSpriteFacingDirectionAndDelay
 	ld a, ($1 << 4) | SPRITE_FACING_LEFT
-	ld [hSpriteImageIndex], a
+	ldh [hSpriteImageIndex], a
 	call SetSpriteImageIndexAfterSettingFacingDirection
 	call PlayDefaultMusic
 	ld hl, wFlags_0xcd60
 	set 4, [hl]
 	ld a, $e
-	ld [hSpriteIndexOrTextID], a
+	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
 	ld a, $3c
-	ld [hSpriteScreenYCoord], a
+	ldh [hSpriteScreenYCoord], a
 	ld a, $40
-	ld [hSpriteScreenXCoord], a
-	ld a, $16
-	ld [hSpriteMapYCoord], a
-	ld a, $10
-	ld [hSpriteMapXCoord], a
+	ldh [hSpriteScreenXCoord], a
+	ld a, 22
+	ldh [hSpriteMapYCoord], a
+	ld a, 16
+	ldh [hSpriteMapXCoord], a
 	ld a, $5
 	ld [wSpriteIndex], a
 	call SetSpritePosition1
 	ld a, $5
-	ld [hSpriteIndex], a
+	ldh [hSpriteIndex], a
 	ld de, MovementData_PewterGymGuyExit
 	call MoveSprite
 	ld a, $5
@@ -150,7 +154,7 @@ MovementData_PewterGymGuyExit:
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
 	db NPC_MOVEMENT_RIGHT
-	db $FF
+	db -1 ; end
 
 PewterCityScript5:
 	ld a, [wd730]
@@ -215,12 +219,12 @@ PewterCityText3:
 	ld hl, PewterCityText_193fb
 	call PrintText
 	xor a
-	ld [hJoyPressed], a
-	ld [hJoyHeld], a
+	ldh [hJoyPressed], a
+	ldh [hJoyHeld], a
 	ld [wNPCMovementScriptFunctionNum], a
 	ld a, $2
 	ld [wNPCMovementScriptPointerTableNum], a
-	ld a, [hLoadedROMBank]
+	ldh a, [hLoadedROMBank]
 	ld [wNPCMovementScriptBank], a
 	ld a, $3
 	ld [wSpriteIndex], a
@@ -280,11 +284,11 @@ PewterCityText5:
 	ld hl, PewterCityText_1945d
 	call PrintText
 	xor a
-	ld [hJoyHeld], a
+	ldh [hJoyHeld], a
 	ld [wNPCMovementScriptFunctionNum], a
 	ld a, $3
 	ld [wNPCMovementScriptPointerTableNum], a
-	ld a, [hLoadedROMBank]
+	ldh a, [hLoadedROMBank]
 	ld [wNPCMovementScriptBank], a
 	ld a, $5
 	ld [wSpriteIndex], a

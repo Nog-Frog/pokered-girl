@@ -9,40 +9,40 @@ OaksAideScript:
 	ld b, wPokedexOwnedEnd - wPokedexOwned
 	call CountSetBits
 	ld a, [wNumSetBits]
-	ld [hOaksAideNumMonsOwned], a
+	ldh [hOaksAideNumMonsOwned], a
 	ld b, a
-	ld a, [hOaksAideRequirement]
+	ldh a, [hOaksAideRequirement]
 	cp b
 	jr z, .giveItem
 	jr nc, .notEnoughOwnedMons
 .giveItem
 	ld hl, OaksAideHereYouGoText
 	call PrintText
-	ld a, [hOaksAideRewardItem]
+	ldh a, [hOaksAideRewardItem]
 	ld b, a
 	ld c, 1
 	call GiveItem
 	jr nc, .bagFull
 	ld hl, OaksAideGotItemText
 	call PrintText
-	ld a, $1
+	ld a, OAKS_AIDE_GOT_ITEM
 	jr .done
 .bagFull
 	ld hl, OaksAideNoRoomText
 	call PrintText
-	xor a
+	xor a ; OAKS_AIDE_BAG_FULL
 	jr .done
 .notEnoughOwnedMons
 	ld hl, OaksAideUhOhText
 	call PrintText
-	ld a, $80
+	ld a, OAKS_AIDE_NOT_ENOUGH_MONS
 	jr .done
 .choseNo
 	ld hl, OaksAideComeBackText
 	call PrintText
-	ld a, $ff
+	ld a, OAKS_AIDE_REFUSED
 .done
-	ld [hOaksAideResult], a
+	ldh [hOaksAideResult], a
 	ret
 
 OaksAideHiText:

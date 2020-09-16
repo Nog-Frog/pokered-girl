@@ -55,11 +55,11 @@ GetAnimationSpeed:
 	ld bc, $10
 	ld a, [wCurrentMenuItem]
 	call AddNTimes
-	ld c, $40 ; amount to increase the tile id by
+	ld c, ICONOFFSET
 	ld a, [hl]
-	cp $4 ; tile ID for ICON_BALL
+	cp ICON_BALL << 2
 	jr z, .editCoords
-	cp $8 ; tile ID for ICON_HELIX
+	cp ICON_HELIX << 2
 	jr nz, .editTileIDS
 ; ICON_BALL and ICON_HELIX only shake up and down
 .editCoords
@@ -169,7 +169,7 @@ WriteMonPartySpriteOAMByPartyIndex:
 	push hl
 	push de
 	push bc
-	ld a, [hPartyMonIndex]
+	ldh a, [hPartyMonIndex]
 	ld hl, wPartySpecies
 	ld e, a
 	ld d, 0
@@ -187,7 +187,7 @@ WriteMonPartySpriteOAMBySpecies:
 ; Write OAM blocks for the party sprite of the species in
 ; [wMonPartySpriteSpecies].
 	xor a
-	ld [hPartyMonIndex], a
+	ldh [hPartyMonIndex], a
 	ld a, [wMonPartySpriteSpecies]
 	call GetPartyMonSpriteID
 	ld [wOAMBaseTile], a
@@ -202,11 +202,11 @@ UnusedPartyMonSpriteFunction:
 	ld a, [wcf91]
 	call GetPartyMonSpriteID
 	push af
-	ld hl, vSprites
+	ld hl, vSprites tile $00
 	call .LoadTilePatterns
 	pop af
 	add $54
-	ld hl, vSprites + $40
+	ld hl, vSprites tile $04
 	call .LoadTilePatterns
 	xor a
 	ld [wMonPartySpriteSpecies], a
@@ -237,8 +237,8 @@ WriteMonPartySpriteOAM:
 ; make a copy at wMonPartySpritesSavedOAM.
 	push af
 	ld c, $B
-	ld h, wOAMBuffer / $100
-	ld a, [hPartyMonIndex]
+	ld h, HIGH(wOAMBuffer)
+	ldh a, [hPartyMonIndex]
 	swap a
 	ld l, a
 	add $10
@@ -275,7 +275,7 @@ GetPartyMonSpriteID:
 	swap a ; use lower nybble if pokedex num is even
 .skipSwap
 	and $f0
-	srl a
+	srl a ; value == ICON constant << 2
 	srl a
 	ret
 

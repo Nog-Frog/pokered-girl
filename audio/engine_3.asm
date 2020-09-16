@@ -20,10 +20,10 @@ Audio3_UpdateMusic::
 	set 7, a
 	ld [wMuteAudioAndPauseMusic], a
 	xor a ; disable all channels' output
-	ld [rNR51], a
-	ld [rNR30], a
+	ldh [rNR51], a
+	ldh [rNR30], a
 	ld a, $80
-	ld [rNR30], a
+	ldh [rNR30], a
 	jr .nextChannel
 .applyAffects
 	call Audio3_ApplyMusicAffects
@@ -41,7 +41,7 @@ Audio3_ApplyMusicAffects:
 	ld hl, wChannelNoteDelayCounters ; delay until next note
 	add hl, bc
 	ld a, [hl]
-	cp $1 ; if the delay is 1, play next note
+	cp 1 ; if the delay is 1, play next note
 	jp z, Audio3_PlayNextNote
 	dec a ; otherwise, decrease the delay timer
 	ld [hl], a
@@ -163,8 +163,8 @@ Audio3_PlayNextNote:
 Audio3_sound_ret:
 	call Audio3_GetNextMusicByte
 	ld d, a
-	cp $ff ; is this command a sound_ret?
-	jp nz, Audio3_sound_call ; no
+	cp sound_ret_cmd
+	jp nz, Audio3_sound_call
 	ld b, 0
 	ld hl, wChannelFlags1
 	add hl, bc
@@ -183,9 +183,9 @@ Audio3_sound_ret:
 	jr nz, .skipSfxChannel3
 ; restart hardware channel 3 (wave channel) output
 	ld a, $0
-	ld [rNR30], a
+	ldh [rNR30], a
 	ld a, $80
-	ld [rNR30], a
+	ldh [rNR30], a
 .skipSfxChannel3
 	jr nz, .dontDisable
 	ld a, [wDisableChannelOutputWhenSfxEnds]
@@ -219,9 +219,9 @@ Audio3_sound_ret:
 .disableChannelOutput
 	ld hl, Audio3_HWChannelDisableMasks
 	add hl, bc
-	ld a, [rNR51]
+	ldh a, [rNR51]
 	and [hl]
-	ld [rNR51], a
+	ldh [rNR51], a
 .afterDisable
 	ld a, [wChannelSoundIDs + Ch5]
 	cp CRY_SFX_START
@@ -241,7 +241,7 @@ Audio3_sound_ret:
 	ret c
 .skipRewind
 	ld a, [wSavedVolume]
-	ld [rNR50], a
+	ldh [rNR50], a
 	xor a
 	ld [wSavedVolume], a
 .skipCry
@@ -251,8 +251,8 @@ Audio3_sound_ret:
 	ret
 
 Audio3_sound_call:
-	cp $fd ; is this command a sound_call?
-	jp nz, Audio3_sound_loop ; no
+	cp sound_call_cmd
+	jp nz, Audio3_sound_loop
 	call Audio3_GetNextMusicByte
 	push af
 	call Audio3_GetNextMusicByte
@@ -288,8 +288,8 @@ Audio3_sound_call:
 	jp Audio3_sound_ret
 
 Audio3_sound_loop:
-	cp $fe ; is this command a sound_loop?
-	jp nz, Audio3_note_type ; no
+	cp sound_loop_cmd
+	jp nz, Audio3_note_type
 	call Audio3_GetNextMusicByte
 	ld e, a
 	and a
@@ -327,8 +327,8 @@ Audio3_sound_loop:
 
 Audio3_note_type:
 	and $f0
-	cp $d0 ; is this command a note_type?
-	jp nz, Audio3_toggle_perfect_pitch ; no
+	cp note_type_cmd
+	jp nz, Audio3_toggle_perfect_pitch
 	ld a, d
 	and $f
 	ld b, $0
@@ -371,8 +371,8 @@ Audio3_note_type:
 
 Audio3_toggle_perfect_pitch:
 	ld a, d
-	cp $e8 ; is this command a toggle_perfect_pitch?
-	jr nz, Audio3_vibrato ; no
+	cp toggle_perfect_pitch_cmd
+	jr nz, Audio3_vibrato
 	ld b, 0
 	ld hl, wChannelFlags1
 	add hl, bc
@@ -382,8 +382,8 @@ Audio3_toggle_perfect_pitch:
 	jp Audio3_sound_ret
 
 Audio3_vibrato:
-	cp $ea ; is this command a vibrato?
-	jr nz, Audio3_pitch_slide ; no
+	cp vibrato_cmd
+	jr nz, Audio3_pitch_slide
 	call Audio3_GetNextMusicByte
 	ld b, 0
 	ld hl, wChannelVibratoDelayCounters
@@ -430,8 +430,8 @@ Audio3_vibrato:
 	jp Audio3_sound_ret
 
 Audio3_pitch_slide:
-	cp $eb ; is this command a pitch_slide?
-	jr nz, Audio3_duty_cycle ; no
+	cp pitch_slide_cmd
+	jr nz, Audio3_duty_cycle
 	call Audio3_GetNextMusicByte
 	ld b, 0
 	ld hl, wChannelPitchSlideLengthModifiers
@@ -461,8 +461,8 @@ Audio3_pitch_slide:
 	jp Audio3_note_length
 
 Audio3_duty_cycle:
-	cp $ec ; is this command a duty_cycle?
-	jr nz, Audio3_tempo ; no
+	cp duty_cycle_cmd
+	jr nz, Audio3_tempo
 	call Audio3_GetNextMusicByte
 	rrca
 	rrca
@@ -474,8 +474,8 @@ Audio3_duty_cycle:
 	jp Audio3_sound_ret
 
 Audio3_tempo:
-	cp $ed ; is this command a tempo?
-	jr nz, Audio3_stereo_panning ; no
+	cp tempo_cmd
+	jr nz, Audio3_stereo_panning
 	ld a, c
 	cp Ch5
 	jr nc, .sfxChannel
@@ -503,16 +503,16 @@ Audio3_tempo:
 	jp Audio3_sound_ret
 
 Audio3_stereo_panning:
-	cp $ee ; is this command a stereo_panning?
-	jr nz, Audio3_unknownmusic0xef ; no
+	cp stereo_panning_cmd
+	jr nz, Audio3_unknownmusic0xef
 	call Audio3_GetNextMusicByte
 	ld [wStereoPanning], a ; store panning
 	jp Audio3_sound_ret
 
 ; this appears to never be used
 Audio3_unknownmusic0xef:
-	cp $ef ; is this command an unknownmusic0xef?
-	jr nz, Audio3_duty_cycle_pattern ; no
+	cp unknownmusic0xef_cmd
+	jr nz, Audio3_duty_cycle_pattern
 	call Audio3_GetNextMusicByte
 	push bc
 	call Audio3_PlaySound
@@ -528,8 +528,8 @@ Audio3_unknownmusic0xef:
 	jp Audio3_sound_ret
 
 Audio3_duty_cycle_pattern:
-	cp $fc ; is this command a duty_cycle_pattern?
-	jr nz, Audio3_volume ; no
+	cp duty_cycle_pattern_cmd
+	jr nz, Audio3_volume
 	call Audio3_GetNextMusicByte
 	ld b, 0
 	ld hl, wChannelDutyCyclePatterns
@@ -545,15 +545,15 @@ Audio3_duty_cycle_pattern:
 	jp Audio3_sound_ret
 
 Audio3_volume:
-	cp $f0 ; is this command a volume?
-	jr nz, Audio3_execute_music ; no
+	cp volume_cmd
+	jr nz, Audio3_execute_music
 	call Audio3_GetNextMusicByte
-	ld [rNR50], a ; store volume
+	ldh [rNR50], a ; store volume
 	jp Audio3_sound_ret
 
 Audio3_execute_music:
-	cp $f8 ; is this command an execute_music?
-	jr nz, Audio3_octave ; no
+	cp execute_music_cmd
+	jr nz, Audio3_octave
 	ld b, $0
 	ld hl, wChannelFlags2
 	add hl, bc
@@ -562,8 +562,8 @@ Audio3_execute_music:
 
 Audio3_octave:
 	and $f0
-	cp $e0 ; is this command an octave?
-	jr nz, Audio3_sfx_note ; no
+	cp octave_cmd
+	jr nz, Audio3_sfx_note
 	ld hl, wChannelOctaves
 	ld b, 0
 	add hl, bc
@@ -574,7 +574,7 @@ Audio3_octave:
 
 ; sfx_note is either square_note or noise_note depending on the channel
 Audio3_sfx_note:
-	cp $20 ; is this command a sfx_note?
+	cp sfx_note_cmd
 	jr nz, Audio3_pitch_sweep
 	ld a, c
 	cp Ch4 ; is this a noise or sfx channel?
@@ -630,15 +630,15 @@ Audio3_pitch_sweep:
 	cp Ch5
 	jr c, Audio3_note ; if not a sfx
 	ld a, d
-	cp $10 ; is this command a pitch_sweep?
-	jr nz, Audio3_note ; no
+	cp pitch_sweep_cmd
+	jr nz, Audio3_note
 	ld b, $0
 	ld hl, wChannelFlags2
 	add hl, bc
 	bit BIT_EXECUTE_MUSIC, [hl]
 	jr nz, Audio3_note ; no
 	call Audio3_GetNextMusicByte
-	ld [rNR10], a
+	ldh [rNR10], a
 	jp Audio3_sound_ret
 
 Audio3_note:
@@ -647,12 +647,12 @@ Audio3_note:
 	jr nz, Audio3_note_length ; if not noise channel
 	ld a, d
 	and $f0
-	cp $b0 ; is this command a drum_note?
+	cp drum_note_cmd
 	jr z, .drum_note
-	jr nc, Audio3_note_length ; no
+	jr nc, Audio3_note_length
 
 	; this executes when on the noise channel and
-	; the command id is less than $b0
+	; the command id is less than drum_note_cmd ($b0)
 	; in this case, the upper nybble is used as the noise instrument ($1-$a)
 	; and the lower nybble is the length minus 1 (0-15)
 	; however, this doesn't work for instrument #2 because the command id
@@ -748,7 +748,7 @@ Audio3_note_length:
 Audio3_note_pitch:
 	pop af
 	and $f0
-	cp $c0 ; compare to rest
+	cp rest_cmd
 	jr nz, .notRest
 	ld a, c
 	cp Ch5
@@ -770,9 +770,9 @@ Audio3_note_pitch:
 	ld b, 0
 	ld hl, Audio3_HWChannelDisableMasks
 	add hl, bc
-	ld a, [rNR51]
+	ldh a, [rNR51]
 	and [hl]
-	ld [rNR51], a ; disable hardware channel 3's output
+	ldh [rNR51], a ; disable hardware channel 3's output
 	jr .done
 .notChannel3
 	ld b, REG_VOLUME_ENVELOPE
@@ -844,7 +844,7 @@ Audio3_EnableChannelOutput:
 	ld b, 0
 	ld hl, Audio3_HWChannelEnableMasks
 	add hl, bc
-	ld a, [rNR51]
+	ldh a, [rNR51]
 	or [hl] ; set this channel's bits
 	ld d, a
 	ld a, c
@@ -866,7 +866,7 @@ Audio3_EnableChannelOutput:
 	add hl, bc
 	and [hl]
 	ld d, a
-	ld a, [rNR51]
+	ldh a, [rNR51]
 	ld hl, Audio3_HWChannelDisableMasks
 	add hl, bc
 	and [hl] ; reset this channel's output bits
@@ -874,7 +874,7 @@ Audio3_EnableChannelOutput:
 	ld d, a
 .skip
 	ld a, d
-	ld [rNR51], a
+	ldh [rNR51], a
 	ret
 
 Audio3_ApplyDutyCycleAndSoundLength:
@@ -928,7 +928,7 @@ Audio3_ApplyWavePatternAndFrequency:
 	ld hl, rWave_0
 	ld b, $f
 	ld a, $0 ; stop hardware channel 3
-	ld [rNR30], a
+	ldh [rNR30], a
 .loop
 	ld a, [de]
 	inc de
@@ -938,7 +938,7 @@ Audio3_ApplyWavePatternAndFrequency:
 	and a
 	jr nz, .loop
 	ld a, $80 ; start hardware channel 3
-	ld [rNR30], a
+	ldh [rNR30], a
 	pop de
 .notChannel3
 	ld a, d
@@ -1330,7 +1330,7 @@ Audio3_CalculateFrequency:
 
 Audio3_PlaySound::
 	ld [wSoundID], a
-	cp $ff
+	cp SFX_STOP_ALL_MUSIC
 	jp z, .stopAllAudio
 	cp MAX_SFX_ID_3
 	jp z, .playSfx
@@ -1346,12 +1346,12 @@ Audio3_PlaySound::
 	ld [wMusicTempo + 1], a
 	ld [wMusicWaveInstrument], a
 	ld [wSfxWaveInstrument], a
-	ld d, $8
+	ld d, NUM_CHANNELS
 	ld hl, wChannelReturnAddresses
 	call .FillMem
 	ld hl, wChannelCommandPointers
 	call .FillMem
-	ld d, $4
+	ld d, NUM_MUSIC_CHANS
 	ld hl, wChannelSoundIDs
 	call .FillMem
 	ld hl, wChannelFlags1
@@ -1399,17 +1399,17 @@ Audio3_PlaySound::
 	ld a, $ff
 	ld [wStereoPanning], a
 	xor a
-	ld [rNR50], a
+	ldh [rNR50], a
 	ld a, $8
-	ld [rNR10], a
+	ldh [rNR10], a
 	ld a, 0
-	ld [rNR51], a
+	ldh [rNR51], a
 	xor a
-	ld [rNR30], a
+	ldh [rNR30], a
 	ld a, $80
-	ld [rNR30], a
+	ldh [rNR30], a
 	ld a, $77
-	ld [rNR50], a
+	ldh [rNR50], a
 	jp .playSoundCommon
 
 .playSfx
@@ -1555,7 +1555,7 @@ Audio3_PlaySound::
 	cp Ch5
 	jr nz, .skipSweepDisable
 	ld a, $8
-	ld [rNR10], a ; sweep off
+	ldh [rNR10], a ; sweep off
 .skipSweepDisable
 	ld a, c
 	and a
@@ -1565,22 +1565,22 @@ Audio3_PlaySound::
 
 .stopAllAudio
 	ld a, $80
-	ld [rNR52], a ; sound hardware on
-	ld [rNR30], a ; wave playback on
+	ldh [rNR52], a ; sound hardware on
+	ldh [rNR30], a ; wave playback on
 	xor a
-	ld [rNR51], a ; no sound output
-	ld [rNR32], a ; mute channel 3 (wave channel)
+	ldh [rNR51], a ; no sound output
+	ldh [rNR32], a ; mute channel 3 (wave channel)
 	ld a, $8
-	ld [rNR10], a ; sweep off
-	ld [rNR12], a ; mute channel 1 (pulse channel 1)
-	ld [rNR22], a ; mute channel 2 (pulse channel 2)
-	ld [rNR42], a ; mute channel 4 (noise channel)
+	ldh [rNR10], a ; sweep off
+	ldh [rNR12], a ; mute channel 1 (pulse channel 1)
+	ldh [rNR22], a ; mute channel 2 (pulse channel 2)
+	ldh [rNR42], a ; mute channel 4 (noise channel)
 	ld a, $40
-	ld [rNR14], a ; counter mode
-	ld [rNR24], a
-	ld [rNR44], a
+	ldh [rNR14], a ; counter mode
+	ldh [rNR24], a
+	ldh [rNR44], a
 	ld a, $77
-	ld [rNR50], a ; full volume
+	ldh [rNR50], a ; full volume
 	xor a
 	ld [wUnusedC000], a
 	ld [wDisableChannelOutputWhenSfxEnds], a
@@ -1699,10 +1699,10 @@ Audio3_PlaySound::
 	ld a, [wSavedVolume]
 	and a
 	jr nz, .done
-	ld a, [rNR50]
+	ldh a, [rNR50]
 	ld [wSavedVolume], a
 	ld a, $77
-	ld [rNR50], a ; full volume
+	ldh [rNR50], a ; full volume
 .done
 	ret
 

@@ -1,21 +1,13 @@
 TradeMons:
-; givemonster, getmonster, textstring, nickname (11 bytes), 14 bytes total
-	db NIDORINO,  NIDORINA, 0,"בילבי@@@@@"
-	text_end
-	db ABRA,      MR_MIME,  0,"אייפל@@@@@"
-	text_end
-	db BUTTERFREE,BEEDRILL, 2,"מאיה@@@@@@@"
-	db PONYTA,    SEEL,     0,"רב-חובל@@@"
-	text_end
-	db SPEAROW,   FARFETCHD,2,"ברבז@@@@@@"
-	text_end
-	db SLOWBRO,   LICKITUNG,0,"ליאוריק@@@"
-	text_end
-	db POLIWHIRL, JYNX,     1,"נגית@@@@@@"
-	text_end
-	db RAICHU,    ELECTRODE,1,"דר@@@@@@@@"
-	text_end
-	db VENONAT,   TANGELA,  2,"פלונטר@@@@"
-	text_end
-	db NIDORAN_M, NIDORAN_F,2,"שלג@@@@@@@"
-	text_end
+; entries correspond to TRADE_FOR_* constants
+	; give mon, get mon, dialog id, nickname
+	db NIDORINO,   NIDORINA,  TRADE_DIALOGSET_CASUAL, "בילבי@@@@@"
+	db ABRA,       MR_MIME,   TRADE_DIALOGSET_CASUAL, "אייפל@@@@@"
+	db BUTTERFREE, BEEDRILL,  TRADE_DIALOGSET_HAPPY,  "מאיה@@@@@@"
+	db PONYTA,     SEEL,      TRADE_DIALOGSET_CASUAL, "רב-חובל@@@"
+	db SPEAROW,    FARFETCHD, TRADE_DIALOGSET_HAPPY,  "ברבז@@@@@@"
+	db SLOWBRO,    LICKITUNG, TRADE_DIALOGSET_CASUAL, "ליאוריק@@@"
+	db POLIWHIRL,  JYNX,      TRADE_DIALOGSET_POLITE, "נגית@@@@@@"
+	db RAICHU,     ELECTRODE, TRADE_DIALOGSET_POLITE, "דר@@@@@@@@"
+	db VENONAT,    TANGELA,   TRADE_DIALOGSET_HAPPY,  "פלונטר@@@@"
+	db NIDORAN_M,  NIDORAN_F, TRADE_DIALOGSET_HAPPY,  "שלג@@@@@@@"

@@ -33,9 +33,9 @@ SilphCo4Script_19d21:
 	predef_jump ReplaceTileBlock
 
 SilphCo4GateCoords:
-	db $06,$02
-	db $04,$06
-	db $FF
+	dbmapcoord  2,  6
+	dbmapcoord  6,  4
+	db -1 ; end
 
 SilphCo4Script_19d5d:
 	push hl
@@ -45,7 +45,7 @@ SilphCo4Script_19d5d:
 	ld a, [hl]
 	ld c, a
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	pop hl
 .asm_19d69
 	ld a, [hli]
@@ -70,12 +70,12 @@ SilphCo4Script_19d5d:
 	ret
 .asm_19d85
 	xor a
-	ld [hUnlockedSilphCoDoors], a
+	ldh [hUnlockedSilphCoDoors], a
 	ret
 
 SilphCo4Script_19d89:
 	EventFlagAddress hl, EVENT_SILPH_CO_4_UNLOCKED_DOOR1
-	ld a, [hUnlockedSilphCoDoors]
+	ldh a, [hUnlockedSilphCoDoors]
 	and a
 	ret z
 	cp $1
@@ -101,33 +101,12 @@ SilphCo4F_TextPointers:
 	dw PickUpItemText
 
 SilphCo4TrainerHeader0:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_4F_TRAINER_0
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_4F_TRAINER_0
-	dw SilphCo4BattleText2 ; TextBeforeBattle
-	dw SilphCo4AfterBattleText2 ; TextAfterBattle
-	dw SilphCo4EndBattleText2 ; TextEndBattle
-	dw SilphCo4EndBattleText2 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_4F_TRAINER_0, 4, SilphCo4BattleText2, SilphCo4EndBattleText2, SilphCo4AfterBattleText2
 SilphCo4TrainerHeader1:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_4F_TRAINER_1
-	db ($3 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_4F_TRAINER_1
-	dw SilphCo4BattleText3 ; TextBeforeBattle
-	dw SilphCo4AfterBattleText3 ; TextAfterBattle
-	dw SilphCo4EndBattleText3 ; TextEndBattle
-	dw SilphCo4EndBattleText3 ; TextEndBattle
-
+	trainer EVENT_BEAT_SILPH_CO_4F_TRAINER_1, 3, SilphCo4BattleText3, SilphCo4EndBattleText3, SilphCo4AfterBattleText3
 SilphCo4TrainerHeader2:
-	dbEventFlagBit EVENT_BEAT_SILPH_CO_4F_TRAINER_2
-	db ($4 << 4) ; trainer's view range
-	dwEventFlagAddress EVENT_BEAT_SILPH_CO_4F_TRAINER_2
-	dw SilphCo4BattleText4 ; TextBeforeBattle
-	dw SilphCo4AfterBattleText4 ; TextAfterBattle
-	dw SilphCo4EndBattleText4 ; TextEndBattle
-	dw SilphCo4EndBattleText4 ; TextEndBattle
-
-	db $ff
+	trainer EVENT_BEAT_SILPH_CO_4F_TRAINER_2, 4, SilphCo4BattleText4, SilphCo4EndBattleText4, SilphCo4AfterBattleText4
+	db -1 ; end
 
 SilphCo4Text1:
 	text_asm

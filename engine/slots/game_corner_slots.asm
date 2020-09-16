@@ -1,12 +1,12 @@
 StartSlotMachine:
 	ld a, [wHiddenObjectFunctionArgument]
-	cp $fd
+	cp SLOTS_OUTOFORDER
 	jr z, .printOutOfOrder
-	cp $fe
+	cp SLOTS_OUTTOLUNCH
 	jr z, .printOutToLunch
-	cp $ff
+	cp SLOTS_SOMEONESKEYS
 	jr z, .printSomeonesKeys
-	callba AbleToPlaySlotsCheck
+	farcall AbleToPlaySlotsCheck
 	ld a, [wCanPlaySlots]
 	and a
 	ret z
@@ -22,7 +22,7 @@ StartSlotMachine:
 	ld a, 250
 .next
 	ld [wSlotMachineSevenAndBarModeChance], a
-	ld a, [hLoadedROMBank]
+	ldh a, [hLoadedROMBank]
 	ld [wSlotMachineSavedROMBank], a
 	call PromptUserToPlaySlots
 	ret

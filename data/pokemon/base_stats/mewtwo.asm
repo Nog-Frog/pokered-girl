@@ -3,7 +3,7 @@
 	db 106, 110,  90, 130, 154
 	;   hp  atk  def  spd  spc
 
-	db PSYCHIC, PSYCHIC ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 3 ; catch rate
 	db 220 ; base exp
 
@@ -11,7 +11,7 @@
 	dw MewtwoPicFront, MewtwoPicBack
 
 	db CONFUSION, DISABLE, SWIFT, PSYCHIC_M ; level 1 learnset
-	db 5 ; growth rate
+	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \

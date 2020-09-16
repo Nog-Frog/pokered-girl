@@ -2,9 +2,6 @@ INCLUDE "charmap.asm"
 
 INCLUDE "macros.asm"
 
-INCLUDE "hram.asm"
-INCLUDE "vram.asm"
-
 INCLUDE "constants/hardware_constants.asm"
 INCLUDE "constants/oam_constants.asm"
 INCLUDE "constants/misc_constants.asm"
@@ -35,7 +32,6 @@ INCLUDE "constants/credits_constants.asm"
 INCLUDE "constants/audio_constants.asm"
 INCLUDE "constants/music_constants.asm"
 INCLUDE "constants/tileset_constants.asm"
-INCLUDE "constants/starter_mons.asm"
 INCLUDE "constants/event_constants.asm"
 INCLUDE "constants/text_constants.asm"
 INCLUDE "constants/menu_constants.asm"

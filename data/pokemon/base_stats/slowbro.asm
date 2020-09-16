@@ -3,7 +3,7 @@
 	db  95,  75, 110,  30,  80
 	;   hp  atk  def  spd  spc
 
-	db WATER, PSYCHIC ; type
+	db WATER, PSYCHIC_TYPE ; type
 	db 75 ; catch rate
 	db 164 ; base exp
 
@@ -11,7 +11,7 @@
 	dw SlowbroPicFront, SlowbroPicBack
 
 	db CONFUSION, DISABLE, HEADBUTT, NO_MOVE ; level 1 learnset
-	db 0 ; growth rate
+	db GROWTH_MEDIUM_FAST ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   MEGA_KICK,    TOXIC,        BODY_SLAM,    TAKE_DOWN,    \
