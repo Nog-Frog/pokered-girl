@@ -45,7 +45,7 @@ BikeShopText1:
 	ld [wMaxMenuItem], a
 	ld a, $2
 	ld [wTopMenuItemY], a
-	ld a, $1
+	ld a, $F
 	ld [wTopMenuItemX], a
 	ld hl, wd730
 	set 6, [hl]
@@ -54,10 +54,10 @@ BikeShopText1:
 	ld c, $f
 	call TextBoxBorder
 	call UpdateSprites
-	coord hl, 2, 2
+	coord hl, 14, 2
 	ld de, BikeShopMenuText
 	call PlaceString
-	coord hl, 8, 3
+	coord hl, 14, 3
 	ld de, BikeShopMenuPrice
 	call PlaceString
 	ld hl, BikeShopText_1d815

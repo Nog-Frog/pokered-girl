@@ -9,8 +9,7 @@ _BikeShopText_1d810::
 
 _BikeShopText_1d815::
 	text "אלה אופניים"
-	line "שווים! אתה רוצה"
-	cont "אותם?"
+	line "שווים! אתה רוצה?"
 	done
 
 _BikeShopCantAffordText::
