@@ -87,7 +87,7 @@
 	charmap "<BOLD_KAF>",  $72 ; gfx/font/P.1bpp
 
 	; needed for LoadTownMap_Fly (see engine/items/town_map.asm)
-	charmap "▲",         $e9 ; gfx/town_map/up_arrow.1bpp
+	charmap "▲",         $ed ; gfx/town_map/up_arrow.1bpp
 
 	; needed for PrintAlphabet (see engine/menus/naming_screen.asm)
 	charmap "<ED>",      $d1 ; gfx/font/ED.1bpp
