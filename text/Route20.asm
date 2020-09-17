@@ -108,8 +108,8 @@ _Route20BattleText8::
 	done
 
 _Route20EndBattleText8::
-	text "שלא תעז לגעת"
-	line "בפנינים שלי!"
+	text "שלא תעז"
+	line "לגעת בפנינים שלי!"
 	prompt
 
 _Route20AfterBattleText8::

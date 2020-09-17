@@ -946,7 +946,7 @@ _MaleTrainerAboutToUseText::
 	text_ram wTrainerName
 	text " עומד"
 	line "לשלוח"
-	cont"@"
+	cont "@"
 	text_ram wEnemyMonNick
 	text "!"
 
@@ -1080,8 +1080,8 @@ _MustRechargeText::
 
 _DisabledNoMoreText::
 	text "המהלך של"
-	line "<USER> כבר"
-	cont "לא מושבת!"
+	line "<USER>"
+	cont "כבר לא מושבת!"
 	prompt
 
 _IsConfusedText::
@@ -1095,8 +1095,8 @@ _HurtItselfText::
 	prompt
 
 _ConfusedNoMoreText::
-	text "<USER> כבר"
-	line "לא מבולבל!"
+	text "<USER>"
+	line "כבר לא מבולבל!"
 	prompt
 
 _SavingEnergyText::
@@ -1242,7 +1242,8 @@ _SubstituteTookDamageText::
 
 _SubstituteBrokeText::
 	text "ממלא המקום של"
-	line "<TARGET> נשבר!"
+	line "<TARGET>"
+	cont "נשבר!"
 	prompt
 
 _BuildingRageText::

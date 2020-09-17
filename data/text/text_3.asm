@@ -260,8 +260,8 @@ _EvadedAttackText::
 	prompt
 
 _HitWithRecoilText::
-	text "<USER> נפגע"
-	line "מההדף!"
+	text "<USER>"
+	line "נפגע מההדף!"
 	prompt
 
 _ConvertedTypeText::
@@ -298,8 +298,8 @@ _TransformedText::
 	prompt
 
 _LightScreenProtectedText::
-	text "<USER> מוגן"
-	line "נגד מתקפות"
+	text "<USER>"
+	line "מוגן נגד מתקפות"
 	cont "מיוחדות!"
 	prompt
 
@@ -310,18 +310,20 @@ _ReflectGainedArmorText::
 	prompt
 
 _ShroudedInMistText::
-	text "<USER> לוט"
-	line "בערפל!"
+	text "<USER>"
+	line "לוט בערפל!"
 	prompt
 
 _SuckedHealthText::
-	text "<TARGET> איבד"
-	line "נ”פ בגלל היניקה!"
+	text "<TARGET>"
+	line "איבד נ”פ בגלל"
+	cont "היניקה!"
 	prompt
 
 _DreamWasEatenText::
-	text "החלום של <TARGET>"
-	line "נאכל!"
+	text "החלום של"
+	line "<TARGET>"
+	cont "נאכל!"
 	prompt
 
 _TradeCenterText1::

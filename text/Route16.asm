@@ -3,7 +3,8 @@ _Route16BattleText1::
 	done
 
 _Route16EndBattleText1::
-	text "שלא תעז לצחוק!"
+	text "שלא תעז"
+	line "לצחוק!"
 	prompt
 
 _Route16AfterBattleText1::
@@ -33,7 +34,8 @@ _Route16BattleText3::
 	done
 
 _Route16EndBattleText3::
-	text "חתיכת עכברוש!"
+	text "חתיכת"
+	line "עכברוש!"
 	prompt
 
 _Route16AfterBattleText3::
@@ -77,12 +79,14 @@ _Route16BattleText6::
 	done
 
 _Route16EndBattleText6::
-	text "אל תרגיז אותי!"
+	text "אל תרגיז"
+	line "אותי!"
 	prompt
 
 _Route16AfterBattleText6::
 	text "אני אוהב להטריד"
-	line "אנשים עם ה#ימונים"
+	line "אנשים עם"
+	cont "ה#ימונים"
 	cont "האכזריים שלי!"
 	done
 

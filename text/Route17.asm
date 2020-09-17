@@ -46,7 +46,7 @@ _Route17AfterBattleText3::
 _Route17BattleText4::
 	text "אנחנו אופנוענים!"
 	line "כוכבי הכביש"
-	line "המהיר!"
+	cont "המהיר!"
 	done
 
 _Route17EndBattleText4::
@@ -55,7 +55,7 @@ _Route17EndBattleText4::
 
 _Route17AfterBattleText4::
 	text "אתה מחפש"
-	line "הרפתקאה?"
+	line "הרפתקה?"
 	done
 
 _Route17BattleText5::
@@ -84,8 +84,9 @@ _Route17EndBattleText6::
 	prompt
 
 _Route17AfterBattleText6::
-	text "אולי חלק מה#ימונים"
-	line "צריכים אבני יסוד"
+	text "אולי חלק"
+	line "מה#ימונים"
+	cont "צריכים אבני יסוד"
 	cont "כדי להתפתח."
 	done
 
@@ -149,7 +150,7 @@ _Route17Text11::
 	text "זאת הודעה!"
 
 	para "היזהר מפריטים"
-	line "שהושלכו"
+	line "שהושלכו!"
 	done
 
 _Route17Text12::
