@@ -27,10 +27,10 @@ GetTrainerName_::
 	jr z, .notFound
 	cp b
 	jr nz, .loop
-	ld a, 1
+	xor a
 	jr .done
 .notFound
-	xor a
+	set 4, a
 .done
 	ld [wPronounGender], a
 

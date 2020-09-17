@@ -158,8 +158,8 @@ _Route15BattleText10::
 	done
 
 _Route15EndBattleText10::
-	text "הייתי חסר"
-	line "סבלנות!"
+	text "הייתי"
+	line "חסרת סבלנות!"
 	prompt
 
 _Route15AfterBattleText10::
