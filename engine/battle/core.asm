@@ -2059,7 +2059,7 @@ DisplayBattleMenu::
 .safariRightColumn
 	ldcoord_a 8, 14 
 	ldcoord_a 8, 16 
-	hlcoord, 12, 14 
+	hlcoord 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1 | LEFT_ALIGN, 2
 	call PrintNumber
@@ -2092,7 +2092,7 @@ DisplayBattleMenu::
 .safariLeftColumn
 	ldcoord_a 18, 14 ; 
 	ldcoord_a 18, 16 ; 
-	hlcoord, 12, 14 
+	hlcoord 12, 14 
 	ld de, wNumSafariBalls
 	lb bc, 1 | LEFT_ALIGN, 2
 	call PrintNumber

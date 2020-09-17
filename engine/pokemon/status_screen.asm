@@ -341,7 +341,7 @@ StatusScreen2:
 	call StatusScreen_PrintPP ; Fill the rest with --
 .InitPP
 	ld hl, wLoadedMonMoves
-	decoord, 1, 10
+	decoord 1, 10
 	ld b, 0
 .PrintPP
 	ld a, [hli]

@@ -91,7 +91,7 @@ MoveNames::
 	db "בולען@"       ; FISSURE
 	db "התחפרות@"     ; DIG
 	db "הרעלה@"       ; TOXIC
-	db "אנדרלמוסיה@   ; CONFUSION
+	db "אנדרלמוסיה@"   ; CONFUSION
 	db "אשליה@"       ; PSYCHIC
 	db "היפנוזה@"     ; HYPNOSIS
 	db "מדיטציה@"     ; MEDITATE

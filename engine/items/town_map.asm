@@ -120,7 +120,7 @@ LoadTownMap_Nest:
 	push hl
 	call DisplayWildLocations
 	ld de, MonsNestText
-	hlcoord, 19, 0
+	hlcoord 19, 0
 	call PlaceString
 	ld h, b
 	ld l, c

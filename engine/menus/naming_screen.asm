@@ -365,20 +365,20 @@ PrintNicknameAndUnderscores:
 	call CalcStringLength
 	ld a, c
 	ld [wNamingScreenNameLength], a
-	hlcoord, 1, 2
+	hlcoord 1, 2
 	lb bc, 1, 11
 	call ClearScreenArea
 
-	hlcoord, 7, 2 ; End of allowed name length for player/rival
+	hlcoord 7, 2 ; End of allowed name length for player/rival
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr c, .playerOrRival
-	hlcoord, 10, 2 ; End of allowed name length for pokemon
+	hlcoord 10, 2 ; End of allowed name length for pokemon
 
 .playerOrRival
 	ld de, wcf4b
 	call PlaceString
-	hlcoord, 1, 3
+	hlcoord 1, 3
 	ld a, [wNamingScreenType]
 	cp NAME_MON_SCREEN
 	jr nc, .pokemon1
@@ -464,7 +464,7 @@ PrintNamingText:
 	pop af
 	ld [wd11e], a
 	call GetMonName
-	hlcoord, 15, 1
+	hlcoord 15, 1
 	call PlaceString
 	; ld hl, $1
 	; add hl, bc
@@ -472,7 +472,7 @@ PrintNamingText:
 	; This used to be the "No" hiragana character (Meaning "'s"),
 	; but in the English version it's just one of the empty tiles.
 	; Since we use these empty tiles for Hebrew, it had to be removed.
-	hlcoord, 18, 3
+	hlcoord 18, 3
 	ld de, NicknameTextString
 	jr .placeString
 .notNickname

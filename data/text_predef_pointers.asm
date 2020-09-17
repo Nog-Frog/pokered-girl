@@ -29,17 +29,17 @@ TextPredefs::
 	add_tx_pre SaffronCityPokecenterBenchGuyText    ; 18
 	add_tx_pre MtMoonPokecenterBenchGuyText         ; 19
 	add_tx_pre RockTunnelPokecenterBenchGuyText     ; 1A
-	add_tx_pre UnusedBenchGuyText1                  ; 1B XXX unused
-	add_tx_pre UnusedBenchGuyText2                  ; 1C XXX unused
-	add_tx_pre UnusedBenchGuyText3                  ; 1D XXX unused
-	add_tx_pre UnusedPredefText                     ; 1E XXX unused
+	; add_tx_pre UnusedBenchGuyText1                ; 1B XXX unused
+	; add_tx_pre UnusedBenchGuyText2                ; 1C XXX unused
+	; add_tx_pre UnusedBenchGuyText3                ; 1D XXX unused
+	; add_tx_pre UnusedPredefText                   ; 1E XXX unused
 	add_tx_pre PokemonCenterPCText                  ; 1F
 	add_tx_pre ViridianSchoolNotebook               ; 20
 	add_tx_pre ViridianSchoolBlackboard             ; 21
 	add_tx_pre JustAMomentText                      ; 22
 	add_tx_pre OpenBillsPCText                      ; 23
 	add_tx_pre FoundHiddenItemText                  ; 24
-	add_tx_pre HiddenItemBagFullText                ; 25 XXX unused
+	; add_tx_pre HiddenItemBagFullText              ; 25 XXX unused
 	add_tx_pre VermilionGymTrashText                ; 26
 	add_tx_pre IndigoPlateauHQText                  ; 27
 	add_tx_pre GameCornerOutOfOrderText             ; 28
@@ -62,7 +62,7 @@ TextPredefs::
 	add_tx_pre NewBicycleText                       ; 39
 	add_tx_pre IndigoPlateauStatues                 ; 3A
 	add_tx_pre VermilionGymTrashSuccessText1        ; 3B
-	add_tx_pre VermilionGymTrashSuccessText2        ; 3C XXX unused
+	; add_tx_pre VermilionGymTrashSuccessText2      ; 3C XXX unused
 	add_tx_pre VermilionGymTrashSuccessText3        ; 3D
 	add_tx_pre VermilionGymTrashFailText            ; 3E
 	add_tx_pre TownMapText                          ; 3F

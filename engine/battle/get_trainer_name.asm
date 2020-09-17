@@ -21,8 +21,17 @@ GetTrainerName_::
 	; For gendered pronouns
 	ld b, a
 	ld hl, FemalePronounTrainerList
-	call TrainerListLoop
-	xor a, %00010000
+.loop
+	ld a, [hli]
+	cp $ff
+	jr z, .notFound
+	cp b
+	jr nz, .loop
+	ld a, 1
+	jr .done
+.notFound
+	xor a
+.done
 	ld [wPronounGender], a
 
 	ld a, TRAINER_NAME

@@ -489,7 +489,7 @@ DisplayFieldMoveMonMenu:
 .donePrintingNames
 	pop hl
 	ld a, [wFieldMovesLeftmostXCoord]
-	hlcoord, 0, 12
+	hlcoord 0, 12
 	ld a, 17
 	ld e, a
 	ld d, 0

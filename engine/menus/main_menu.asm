@@ -224,7 +224,7 @@ LinkMenu:
 .skipStartingTransfer
 	ld b, " "
 	ld c, " "
-	ld d, "▷"
+	ld d, "◁"
 	ld a, [wLinkMenuSelectionSendBuffer]
 	and (B_BUTTON << 2) ; was B button pressed?
 	jr nz, .updateCursorPosition

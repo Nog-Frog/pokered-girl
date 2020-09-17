@@ -414,13 +414,25 @@ PlayTrainerMusic::
 	ld a, [wEngagedTrainerClass]
 	ld b, a
 	ld hl, EvilTrainerList
-	call TrainerListLoop
+.evilTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .noEvilTrainer
+	cp b
+	jr nz, .evilTrainerListLoop
 	ld a, MUSIC_MEET_EVIL_TRAINER
-	jr nz, .PlaySound
+	jr .PlaySound
+.noEvilTrainer
 	ld hl, FemaleTrainerList
-	call TrainerListLoop
+.femaleTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .maleTrainer
+	cp b
+	jr nz, .femaleTrainerListLoop
 	ld a, MUSIC_MEET_FEMALE_TRAINER
-	jr nz, .PlaySound
+	jr .PlaySound
+.maleTrainer
 	ld a, MUSIC_MEET_MALE_TRAINER
 .PlaySound
 	ld [wNewSoundID], a
