@@ -71,7 +71,8 @@ _Route16AfterBattleText5::
 	text "אני אוהב את"
 	line "ה#ימונים שלי"
 	cont "אכזריים! הם"
-	cont "קורעים את אויביהם!"
+	cont "קורעים את"
+	cont "אויבהם!"
 	done
 
 _Route16BattleText6::

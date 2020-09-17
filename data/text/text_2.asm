@@ -244,7 +244,8 @@ _UnusedBenchGuyText3:: ; UNUSED
 _VermilionPokecenterGuyText::
 	text "אמנם #ימון ברמה"
 	line "גבוהה יותר חזק"
-	cont "מאחד ברמה נמוכה..."
+	cont "מאחד ברמה"
+	cont "נמוכה..."
 
 	para "אבל לכל"
 	line "ה#ימונים יש"
@@ -355,8 +356,9 @@ _CinnabarGymQuizIntroText::
 
 	para "אם אתה רוצה לשמור"
 	line "את בריאות"
-	cont "ה#ימונים שלך לקרב"
-	cont "מול המנהיג..."
+	cont "ה#ימונים שלך"
+	cont "לקרב מול"
+	cont "המנהיג..."
 
 	para "כדאי לך לענות"
 	line "נכון! קדימה,"
@@ -393,8 +395,8 @@ _CinnabarQuizQuestionsText5::
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "מ”מ82 מכיל את המהלך"
-	line "קרן מוות?"
+	text "מ”מ82 מכיל את"
+	line "המהלך קרן מוות?"
 	done
 
 _CinnabarGymQuizCorrectText::
@@ -619,8 +621,8 @@ _Route15UpstairsBinocularsText::
 	line "במשקפת..."
 
 	para "ציפור גדולה"
-	line "ומבריקה עפה לכיוון"
-	cont "הים."
+	line "ומבריקה עפה"
+	cont "לכיוון הים."
 	done
 
 _AerodactylFossilText::

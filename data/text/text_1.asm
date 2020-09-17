@@ -142,5 +142,6 @@ _OaksAideGotItemText::
 
 _OaksAideNoRoomText::
 	text "אוי! נראה שאין"
-	line "לך מספיק מקום בתיק."
+	line "לך מספיק מקום"
+	cont "בתיק."
 	done

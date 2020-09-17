@@ -86,8 +86,9 @@ _ReceivedTM42Text::
 	text_end
 
 _TM42Explanation::
-	text "מ”מ24 מכיל את מתקפת"
-	line "זלילתחלום..."
+	text "מ”מ24 מכיל את"
+	line "מתקפת..."
+	cont "זלילתחלום..."
 	cont "...נחירה..."
 	done
 

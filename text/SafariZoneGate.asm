@@ -86,7 +86,7 @@ _SafariZoneEntranceText_753eb::
 	para "לפני שאתה הולך,"
 	line "פנה מקום בתא"
 	cont "ה#ימונים במחשב"
-	cont "ל#ימונים  חדשים!"
+	cont "ל#ימונים חדשים!"
 	done
 
 _SafariZoneEntranceText_753f0::

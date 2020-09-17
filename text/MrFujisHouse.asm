@@ -24,7 +24,8 @@ _LavenderHouse1Text_1d8f4::
 
 _LavenderHouse1Text_1d8f9::
 	text "הוא חמים ונעים!"
-	line "כיף לחבק #ימונים!"
+	line "כיף לחבק"
+	cont "#ימונים!"
 	done
 
 _LavenderHouse1Text3::

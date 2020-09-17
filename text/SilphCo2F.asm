@@ -16,13 +16,14 @@ _ReceivedTM36Text::
 	text_end
 
 _TM36ExplanationText::
-	text "מ”מ63 מכיל את המהלך"
-	line "השמדה עצמית!"
+	text "מ”מ63 מכיל את"
+	line "המהלך השמדה"
+	cont "עצמית!"
 
 	para "זו מתקפה עוצמתית,"
-	line "אבל ה#ימון שמשתמש"
-	cont "בה יתעלף! היה"
-	cont "זהיר."
+	line "אבל ה#ימון"
+	cont "שמשתמש בה יתעלף!"
+	cont "היה זהיר."
 	done
 
 _TM36NoRoomText::

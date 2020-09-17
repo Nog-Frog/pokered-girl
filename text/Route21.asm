@@ -59,7 +59,8 @@ _Route21AfterBattleText4::
 
 _Route21BattleText5::
 	text "תפסתי את כל"
-	line "ה#ימונים שלי בים!"
+	line "ה#ימונים שלי"
+	cont "בים!"
 	done
 
 _Route21EndBattleText5::
@@ -69,7 +70,8 @@ _Route21EndBattleText5::
 
 _Route21AfterBattleText5::
 	text "איפה אתה תופס"
-	line "את ה#ימונים שלך?"
+	line "את ה#ימונים"
+	cont "שלך?"
 	done
 
 _Route21BattleText6::

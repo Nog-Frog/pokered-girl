@@ -27,7 +27,7 @@ _CurrentTooFastText::
 _CyclingIsFunText::
 	text "רכיבה על אופניים"
 	line "זה הכי! גלישה זה"
-	line "פאסה!"
+	cont "פאסה!"
 	prompt
 
 _FlashLightsAreaText::
@@ -36,8 +36,9 @@ _FlashLightsAreaText::
 	prompt
 
 _WarpToLastPokemonCenterText::
-	text "משתגר למרכז ה#ימון"
-	line "האחרון שביקרת בו."
+	text "משתגר למרכז"
+	line "ה#ימון האחרון"
+	cont "שביקרת בו."
 	done
 
 _CannotUseTeleportNowText::

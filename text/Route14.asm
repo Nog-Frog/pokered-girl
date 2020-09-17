@@ -31,14 +31,15 @@ _Route14EndBattleText2::
 
 _Route14AfterBattleText2::
 	text "הם צריכים ללמוד"
-	line "מהלכים טובים יותר."
+	line "מהלכים טובים"
+	cont "יותר."
 	done
 
 _Route14BattleText3::
-	text "יש מבצעים על מ”מ-ים"
+	text "יש מבצעים על מ”מים"
 	line "בעיר האביב!"
 	cont "אבל, רק למעט"
-	cont "אנשים יש מ”נ-ים!"
+	cont "אנשים יש מ”נים!"
 	done
 
 _Route14EndBattleText3::
@@ -66,12 +67,14 @@ _Route14EndBattleText4::
 
 _Route14AfterBattleText4::
 	text "#ימוני ציפור הם"
-	line "האהבה האמיתית שלי!"
+	line "האהבה האמיתית"
+	cont "שלי!"
 	done
 
 _Route14BattleText5::
 	text "שמעת על"
-	line "ה#ימונים האגדיים?"
+	line "ה#ימונים"
+	cont "האגדיים?"
 	done
 
 _Route14EndBattleText5::

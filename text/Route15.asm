@@ -105,7 +105,8 @@ _Route15AfterBattleText6::
 
 _Route15BattleText7::
 	text "היי ילד! קדימה!"
-	line "בדיוק קיבלתי אותם!"
+	line "בדיוק קיבלתי"
+	cont "אותם!"
 	done
 
 _Route15EndBattleText7::

@@ -16,7 +16,8 @@ _Route18AfterBattleText1::
 _Route18BattleText2::
 	text "קורוקוקו!"
 	line "אתה אוהב את"
-	cont "קריאות הציפור שלי?"
+	cont "קריאות הציפור"
+	cont "שלי?"
 	done
 
 _Route18EndBattleText2::

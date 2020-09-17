@@ -49,7 +49,8 @@ _SaffronCityText9::
 
 _SaffronCityText10::
 	text "אנשים בטוח ינהרו"
-	line "חזרה לזעפרן עכשיו."
+	line "חזרה לזעפרן"
+	cont "עכשיו."
 	done
 
 _SaffronCityText11::
@@ -111,8 +112,9 @@ _SaffronCityText20::
 	text "טיפים למאמנים"
 
 	para "ריפוי מלא מרפא"
-	line "את כל סוגי החוליים"
-	cont "כמו שינה וכוויה."
+	line "את כל סוגי"
+	cont "החוליים, כמו שינה"
+	cont "וכוויה."
 
 	para "זה עולה קצת"
 	line "יותר, אבל זה"

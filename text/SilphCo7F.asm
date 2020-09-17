@@ -147,7 +147,8 @@ _SilphCo7AfterBattleText4::
 
 _SilphCo7Text_51ebe::
 	text "<RIVAL>: מה"
-	line "עיכב אותך <PLAYER>?"
+	line "עיכב אותך"
+	cont "<PLAYER>?"
 	done
 
 _SilphCo7Text_51ec3::
