@@ -62,7 +62,7 @@ _SSTicketReceivedText::
 _SSTicketNoRoomText::
 	text "אתה סוחב יותר"
 	line "מדי בכיסים,"
-	line "חבריקו!"
+	cont "חבריקו!"
 	done
 
 _BillsHouseText_1e8cb::

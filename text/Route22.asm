@@ -42,7 +42,7 @@ _Route22Text_511bc::
 	cont "#ימונים?"
 
 	para "כדאי גם לך לתפוס"
-	cont "עוד #ימונים!"
+	line "עוד #ימונים!"
 	prompt
 
 _Route22RivalBeforeBattleText2::

@@ -1,6 +1,6 @@
 _SilphCo10Text_5a1d3::
 	text "וואההה!"
-	cont "אני מפחד!"
+	line "אני מפחד!"
 	done
 
 _SilphCo10Text_5a1d8::

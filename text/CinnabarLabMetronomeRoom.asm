@@ -4,7 +4,7 @@ _TM35PreReceiveText::
 
 	para "הוא יכול לגרום"
 	line "לכל מיני סוגים"
-	line "של כיף!"
+	cont "של כיף!"
 	prompt
 
 _ReceivedTM35Text::
