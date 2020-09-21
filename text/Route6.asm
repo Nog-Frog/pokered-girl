@@ -5,7 +5,7 @@ _Route6BattleText1::
 	done
 
 _Route6EndBattleText1::
-	text "אני פשוט"
+	text "אני"
 	line "פשוט לא מצליח"
 	cont "לנצח!"
 	prompt
@@ -64,8 +64,8 @@ _Route6BattleText5::
 	done
 
 _Route6EndBattleText5::
-	text "זה פשוט"
-	line "לא עבד!"
+	text "זה"
+	line "פשוט לא עבד!"
 	prompt
 
 _Route6AfterBattleText5::

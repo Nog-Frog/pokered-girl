@@ -95,7 +95,8 @@ _CeruleanGymBattleText2::
 	done
 
 _CeruleanGymEndBattleText2::
-	text "אין מצב!"
+	text "אין"
+	line "מצב!"
 	prompt
 
 _CeruleanGymAfterBattleText2::

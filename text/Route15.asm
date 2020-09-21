@@ -5,8 +5,8 @@ _Route15BattleText1::
 	done
 
 _Route15EndBattleText1::
-	text "לא מספיק"
-	line "טוב!"
+	text "לא"
+	line "מספיק טוב!"
 	prompt
 
 _Route15AfterBattleText1::
@@ -77,8 +77,8 @@ _Route15BattleText5::
 	done
 
 _Route15EndBattleText5::
-	text "נראית כל כך"
-	line "חמוד!"
+	text "נראית"
+	line "כל כך חמוד!"
 	prompt
 
 _Route15AfterBattleText5::
@@ -88,8 +88,9 @@ _Route15AfterBattleText5::
 	done
 
 _Route15BattleText6::
-	text "אני מגדל #ימונים"
-	line "כי אני גר לבד!"
+	text "אני מגדלת"
+	line "#ימונים כי אני"
+	cont "גרה לבד!"
 	done
 
 _Route15EndBattleText6::

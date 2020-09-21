@@ -91,7 +91,8 @@ _ViridianGymBattleText1::
 	done
 
 _ViridianGymEndBattleText1::
-	text "נגמר לי הדלק!"
+	text "נגמר"
+	line "לי הדלק!"
 	prompt
 
 _ViridianGymAfterBattleText1::
@@ -121,8 +122,8 @@ _ViridianGymBattleText3::
 	done
 
 _ViridianGymEndBattleText3::
-	text "אתם בהרמוניה"
-	line "מושלמת!"
+	text "אתם"
+	line "בהרמוניה מושלמת!"
 	prompt
 
 _ViridianGymAfterBattleText3::
@@ -152,7 +153,8 @@ _ViridianGymBattleText5::
 	done
 
 _ViridianGymEndBattleText5::
-	text "איבדתי אחיזה!"
+	text "איבדתי"
+	line "אחיזה!"
 	prompt
 
 _ViridianGymAfterBattleText5::

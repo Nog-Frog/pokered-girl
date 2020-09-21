@@ -10,8 +10,9 @@ _Route4BattleText1::
 	done
 
 _Route4EndBattleText1::
-	text "אה! #ימון פטריה"
-	line "מתוק שלי!"
+	text "אה!"
+	line "#ימון פטריה"
+	cont "מתוק שלי!"
 	prompt
 
 _Route4AfterBattleText1::

@@ -45,7 +45,8 @@ _Route20BattleText4::
 	done
 
 _Route20EndBattleText4::
-	text "ללא רחמים!"
+	text "ללא"
+	line "רחמים!"
 	prompt
 
 _Route20AfterBattleText4::

@@ -51,8 +51,8 @@ _MtMoon1BattleText5::
 	done
 
 _MtMoon1EndBattleText5::
-	text "ה#ימון שלי לא"
-	line "ישרוד!"
+	text "ה#ימון"
+	line "שלי לא ישרוד!"
 	prompt
 
 _MtMoon1AfterBattleText5::
@@ -82,7 +82,8 @@ _MtMoon1BattleText7::
 	done
 
 _MtMoon1EndBattleText7::
-	text "עלית עליי!"
+	text "עליתי"
+	line "עלי!"
 	prompt
 
 _MtMoon1AfterBattleText7::
