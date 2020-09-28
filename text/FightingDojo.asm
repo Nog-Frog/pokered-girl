@@ -22,7 +22,7 @@ _FightingDojoText_5ce98::
 
 	para "אבל, אני מפציר"
 	line "בך, אל תיקח"
-	cont "את הקמעשלנו"
+	cont "את הקמע שלנו"
 	cont "כפרס!"
 
 	para "בתמורה, אני אעניק"

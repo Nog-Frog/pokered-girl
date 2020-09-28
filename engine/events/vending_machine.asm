@@ -88,7 +88,7 @@ DrinkText:
 	db   "מים מינרלים"
 	next "משקה קל"
 	next "לימונדה"
-	next "CANCEL@"
+	next "ביטול@"
 
 DrinkPriceText:
 	db   "002¥"

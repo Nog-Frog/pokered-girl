@@ -16,7 +16,7 @@ _HallofFameRoomText1::
 	line "גם רשומים"
 	cont "בהיכל התהילה!"
 
-	para "עברת <PLAYER>!"
+	para "<PLAYER>! עברת"
 	line "הרבה כדי להפוך"
 	cont "לאלוף ליגת"
 	cont "ה#ימון!"

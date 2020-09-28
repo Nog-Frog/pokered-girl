@@ -6,7 +6,7 @@ _LoreleiBeforeBattleText::
 	line "מהרביעיה העילית!"
 
 	para "אין טוב ממני"
-	line "כשזה נוגע לאימון"
+	line "כשזה נוגע"
 	cont "לאימון #ימוני"
 	cont "קרח!"
 

@@ -132,7 +132,8 @@ _CinnabarGymText_759fe::
 	done
 
 _CinnabarGymText_75a03::
-	text "אתה לוהט מדי!"
+	text "אתה לוהט"
+	line "מדי!"
 	prompt
 
 _CinnabarGymText_75a08::
@@ -180,7 +181,7 @@ _CinnabarGymText_75a72::
 
 _CinnabarGymText_75a9d::
 	text "אש לא אפקטיבית"
-	line "מול H2O!"
+	line "מול O2H!"
 	done
 
 _CinnabarGymText_75aa2::

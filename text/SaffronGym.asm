@@ -137,7 +137,7 @@ _SaffronGymEndBattleText2::
 	prompt
 
 _SaffronGymAfterBattleText2::
-	text "#ימונים ע-"
+	text "#ימונים על-"
 	line "חושיים חוששים רק"
 	cont "מסוגי רוח וחרקים!"
 	done
