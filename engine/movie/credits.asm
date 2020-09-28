@@ -251,7 +251,7 @@ Credits:
 	hlcoord 12, 8
 	ld de, TheEndTextString
 	call PlaceString
-	hlcoord 12, 8
+	hlcoord 12, 9
 	inc de
 	call PlaceString
 	jp FadeInCreditsText
