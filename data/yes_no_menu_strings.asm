@@ -36,9 +36,9 @@ TwoOptionMenuStrings:
 	next "מזרח@"
 
 .TradeCancelMenu:
-	db   "החלף"
+	db   "החלפה"
 	next "ביטול@"
 
 .HealCancelMenu:
-	db   "רפא"
+	db   "ריפוי"
 	next "ביטול@"

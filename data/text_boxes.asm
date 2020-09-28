@@ -44,7 +44,7 @@ BuySellQuitText:
 	db "@" ; unused
 
 UseTossText:
-	db   "השתמש"
+	db   "שימוש"
 	next "זרוק@"
 
 JapaneseSaveMessageText:
@@ -66,7 +66,7 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "תקוף  <PK><MN>"
+	db   "מתקפה <PK><MN>"
 	next "פריט  ברח@"
 
 SafariZoneBattleMenuText:
@@ -74,7 +74,7 @@ SafariZoneBattleMenuText:
 	next "אבן       ברח@"
 
 SwitchStatsCancelText:
-	db   "החלף"
+	db   "החלפה"
 	next "נתונים"
 	next "ביטול@"
 
