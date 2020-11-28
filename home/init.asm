@@ -18,9 +18,10 @@ rLCDC_DEFAULT EQU %11100011
 ; * OBJ display enabled
 ; * BG display enabled
 
+	call RestoreSRAM  ; This includes xor a
+
 	di
 
-	xor a
 	ldh [rIF], a
 	ldh [rIE], a
 	ldh [rSCX], a

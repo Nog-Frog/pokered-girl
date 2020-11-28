@@ -154,6 +154,7 @@ SaveSAV:
 	ret nz
 .save
 	call SaveSAVtoSRAM
+	call batlessSave
 	hlcoord 1, 13
 	lb bc, 4, 18
 	call ClearScreenArea
@@ -706,3 +707,144 @@ PadSRAM_FF:
 	ld bc, SRAM_End - SRAM_Begin
 	ld a, $ff
 	jp FillMemory
+
+
+batlessSave::
+	di ;disable interrupts
+	push af
+	push bc
+	push de
+	push hl
+
+	ld   hl,batlessErase
+	ld   de,wSRAMtoFlashCode;<<<<<<<<<80 bytes of free WRAM
+	ld   bc,batlessEraseEnd - batlessErase
+	call CopyData
+	call wSRAMtoFlashCode ;<<<<<<<<<80 bytes of free WRAM
+	nop 
+
+	ld   hl,batlessWrite
+	ld   de,wSRAMtoFlashCode;<<<<<<<<<80 bytes of free WRAM
+	ld   bc,batlessWriteEnd - batlessWrite
+	call CopyData
+	xor  a
+	ld   c,a
+.loop:
+	push bc
+	call wSRAMtoFlashCode;<<<<<<<<<80 bytes of free WRAM
+	nop
+	pop  bc
+	inc  c
+	ld   a,c
+	cp   a,4
+	jr   nz,.loop
+	
+	pop  hl
+	pop  de
+	pop  bc
+	pop  af
+	ei
+	ret 
+
+; Old version of erase command (extracted by BennVenn): A9, 56, 80, A9, 56, 30
+; New version of erase command: AA, 55, 80, AA, 55, 30
+; Both versions should be padded before and after by an additional F0
+batlessErase::
+	ld   a,FLASH_SAVE_BANK
+	ld   [MBC1RomBank],a
+	nop  
+	ld   a,$F0
+	ld   [$4000],a
+	nop  
+	ld   a,$AA
+	ld   [$0AAA],a
+	nop  
+	ld   a,$55
+	ld   [$0555],a
+	nop  
+	ld   a,$80
+	ld   [$0AAA],a
+	nop  
+	ld   a,$AA
+	ld   [$0AAA],a
+	nop  
+	ld   a,$55
+	ld   [$0555],a
+	nop  
+	ld   a,$30
+	ld   [$4000],a
+	nop  
+.loop:
+	ld   a,[$4000]
+	cp   a,$FF
+	JR 	 z,.after 
+	JR   .loop 
+.after:
+	nop  
+	ld   a,$F0
+	ld   [$4000],a
+	ld   a,BANK(batlessSave) 
+	ld   [MBC1RomBank],a
+	ret
+
+batlessEraseEnd::
+
+
+; Old version of write command (extracted by BennVenn): A9, 56, A0
+; New version of write command: AA, 55, A0
+; Both versions should be padded before and after by an additional F0
+batlessWrite::
+	ld   hl,$A000
+	ld   de,$6000
+	ld   a,FLASH_SAVE_BANK
+	add  a,c
+	ld   [MBC1RomBank],a
+.start:
+	; Read byte from SRAM to b
+	ld   a,$0A
+	ld   [MBC1SRamEnable],a  
+	ld   a,$01
+	ld   [MBC1SRamBankingMode],a
+	ld 	 a,c  ; SRAM Bank
+	ld   [MBC1SRamBank],a
+	ld   a,[hl]
+	ld   b,a
+	xor  a
+	ld   [MBC1SRamBankingMode],a
+	ld   [MBC1SRamEnable],a
+
+	; Command to flash controller
+	ld   a,$F0
+	ld   [$4000],a
+	nop  
+	ld   a,$AA
+	ld   [$0AAA],a
+	nop  
+	ld   a,$55
+	ld   [$0555],a
+	nop  
+	ld   a,$A0
+	ld   [$0AAA],a
+	nop  
+
+	; Write byte b to flash
+	ld   a,b
+	ld   [de],a
+.before:
+	ld   a,[de]
+	xor  b
+	jr   z,.after   
+	jr   .before  
+.after:
+	inc  hl
+	inc  de
+	ld   a,h
+	cp   a,$C0
+	jr   nz,.start
+	ld   a,$F0
+	ld   [$4000],a
+	ld   a,BANK(batlessSave)
+	ld   [MBC1RomBank],a
+	ret  
+
+batlessWriteEnd::

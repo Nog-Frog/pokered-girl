@@ -254,6 +254,7 @@ wTileMapBackup::
 
 	ds 200
 
+wSRAMtoFlashCode::
 wSerialEnemyMonsPatchList::
 ; list of indexes to patch with SERIAL_NO_DATA_BYTE after transfer
 	ds 200

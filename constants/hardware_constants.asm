@@ -26,6 +26,9 @@ SRAM_ENABLE  EQU $0a
 
 NUM_SRAM_BANKS EQU 4
 
+; Batteryless save to flash
+FLASH_SAVE_BANK EQU $34
+
 ; interrupt flags
 VBLANK   EQU 0
 LCD_STAT EQU 1

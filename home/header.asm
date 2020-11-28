@@ -67,6 +67,40 @@ SECTION "joypad", ROM0[$0060]
 	reti
 
 
+SECTION "Batteryless", ROM0[$00CA]
+
+; Restores SRAM from batteryless Flash save,
+; located at banks FLASH_SAVE_BANK+0,1,2,3 addresses $6000-$6fff
+RestoreSRAM::
+	xor  a
+	ld   b,a
+.loop:  ; b=0 until b=3
+	ld   a,$0A
+	ld   [MBC1SRamEnable],a  ; Enable SRAM
+	ld   a,$01
+	ld   [MBC1SRamBankingMode],a
+    ld   a,b
+	ld   [MBC1SRamBank],a  ; SRAM bank b=0,1,2,3
+	ld   a,FLASH_SAVE_BANK
+	add  a,b
+	push bc
+	ld   hl,$6000
+	ld   de,SRAM_Begin
+	ld   bc,SRAM_End - SRAM_Begin
+	call FarCopyData
+	xor  a
+	ld   [MBC1SRamBankingMode],a
+	ld   [MBC1SRamEnable],a  ; Disable SRAM
+	pop  bc
+	inc  b
+	ld   a,b
+	cp   a,$04
+	jp   nz,.loop
+
+	xor  a ; the callee expects a=0 when returning!
+	ret
+
+
 SECTION "Header", ROM0[$0100]
 
 Start::
