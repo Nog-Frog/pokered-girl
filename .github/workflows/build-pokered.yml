@@ -14,14 +14,15 @@ jobs:
         with:
           path: main
 
-      - name: cd into repo
-        run: cd main
+      - name: debug
+        run: |
+          pwd
+          ls -lr
 
       - name: make
-        run: make
-
-      - name: cd out
-        run: cd ..
+        run: |
+          cd main
+          make
       
       - name: Check out github-pages branch
         uses: actions/checkout@v2
