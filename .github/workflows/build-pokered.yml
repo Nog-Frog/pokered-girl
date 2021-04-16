@@ -46,7 +46,7 @@ jobs:
           git commit -m "Update boy version ROMs" -a
 
       - name: Push changes
-        if: ${{ steps.commit-step.outcome == success }}
+        if: ${{ steps.commit-step.outcome == 'success' }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
