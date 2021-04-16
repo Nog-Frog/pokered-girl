@@ -1,0 +1,51 @@
+name: Build Pokered
+on:
+  push:
+    branches: [ master ]
+jobs:  
+  build-pokered:
+    runs-on: ubuntu-latest
+    container:
+      image: nogfrog/pokered-build-env
+      # options: -i
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+        with:
+          path: main
+
+      - name: cd into repo
+        run: cd main
+
+      - name: make
+        run: make
+
+      - name: cd out
+        run: cd ..
+      
+      - name: Check out github-pages branch
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          ref: github-pages
+          path: pages
+
+      - name: Replace old ROMs in pages branch
+        run: |
+          mv -uf main/pokered.gbc pages/downloads/red-boy.gbc
+          mv -uf main/pokeblue.gbc pages/downloads/blue-boy.gbc
+
+      - name: commit changes in pages branch
+        run: |
+          cd pages
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Update girl version ROMs" -a
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: github-pages
+
+      
