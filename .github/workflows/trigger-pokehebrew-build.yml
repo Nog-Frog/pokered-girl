@@ -2,8 +2,6 @@ name: Trigger build in PokeHebrew repository
 on:
   create:
     ref_type: tag
-  push:
-    branches: [ master ]
 
 jobs:  
   trigger-pokehebrew:
