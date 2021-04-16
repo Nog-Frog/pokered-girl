@@ -37,13 +37,16 @@ jobs:
           mv -uf main/pokeblue.gbc pages/downloads/blue-boy.gbc
 
       - name: commit changes in pages branch
+        id: commit-step
+        continue-on-error: true # Don't fail job if there are no changes to commit
         run: |
           cd pages
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Update girl version ROMs" -a
+          git commit -m "Update boy version ROMs" -a
 
       - name: Push changes
+        if: ${{ steps.commit-step.outcome == success }}
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
