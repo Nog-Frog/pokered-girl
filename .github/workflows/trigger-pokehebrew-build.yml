@@ -8,8 +8,10 @@ on:
 jobs:  
   trigger-pokehebrew:
     runs-on: ubuntu-latest
-    steps:
+    env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
+    steps:
       - name: Generate random number
         run: |
           echo "::set-env name=RANDOM::$RANDOM"
