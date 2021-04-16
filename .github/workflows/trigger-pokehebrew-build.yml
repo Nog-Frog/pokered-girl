@@ -2,8 +2,8 @@ name: Trigger build in PokeHebrew repository
 on:
   create:
     ref_type: tag
-  issues:
-    types: [ opened ]
+  push:
+    branches: [ master ]
 
 jobs:  
   trigger-pokehebrew:
@@ -12,7 +12,7 @@ jobs:
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v1
         with:
+          token: ${{ secrets.PAT }}
           repository: Nog-Frog/PokeHebrew
           issue-number: 1
-          token: ${{ secrets.PAT }}
           body: "Test comment for 'poking' the PokeHebrew repo."
