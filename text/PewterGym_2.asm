@@ -2,7 +2,7 @@ _PewterGymText_5c4a3::
 	text "בעולם ישנם סוגים"
 	line "רבים של מאמנים!"
 
-	para "נראה שאתה מהסוג"
+	para "נראה שאת מהסוג"
 	line "המוכשר!"
 
 	para "לך למכון בעיר"
@@ -15,7 +15,7 @@ _TM34PreReceiveText::
 	done
 
 _ReceivedTM34Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "מ”מ43!@"
 	text_end
 
@@ -28,7 +28,7 @@ _TM34ExplanationText::
 	cont "את המהלך!"
 
 	para "מ”מ הוא חד-פעמי!"
-	line "כשאתה בוחר איזה"
+	line "כשאת בוחרת איזה"
 	cont "#ימון ילמד את"
 	cont "המהלך, בחר"
 	cont "בזהירות!"
@@ -49,13 +49,13 @@ _TM34NoRoomText::
 
 _PewterGymText_5c4bc::
 	text "חשבתי אותך"
-	line "למובן מאליו."
+	line "למובנת מאליה."
 
 	para "אני מעניק לך את"
 	line "תג הסלע כאות"
 	cont "לנצחונך!"
 
-	para "<PLAYER> קיבל את"
+	para "<PLAYER> קיבלה את"
 	line "תג הסלע!@"
 	text_end
 
@@ -69,7 +69,7 @@ _PewterGymText_5c4c1::
 	line "שנושא אותו יהפכו"
 	cont "לחזקים יותר!"
 
-	para "מעתה, אתה יכול"
+	para "מעתה, את יכולה"
 	line "להשתמש במהלך הבזק"
 	cont "בכל עת!"
 	prompt
@@ -77,7 +77,7 @@ _PewterGymText_5c4c1::
 _PewterGymBattleText1::
 	text "עצור שם, ילד!"
 
-	para "אתה עוד במרחק שנות"
+	para "את עוד במרחק שנות"
 	line "אור מהקרב מול"
 	cont "צור!"
 	done
@@ -91,7 +91,7 @@ _PewterGymEndBattleText1::
 	prompt
 
 _PewterGymAfterBattleText1::
-	text "אתה די לוהט. אבל"
+	text "את די לוהטת. אבל"
 	line "לא לוהט כמו צור!"
 	done
 
@@ -134,7 +134,7 @@ _PewterGymText_5c524::
 
 _PewterGymText_5c529::
 	text "בדיוק כמו שחשבתי!"
-	line "אתה עשוי מאותו"
+	line "את עשויה מאותו"
 	cont "חומר שממנו עושים"
 	cont "אלופי #ימון!"
 	done

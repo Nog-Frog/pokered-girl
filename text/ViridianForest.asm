@@ -9,7 +9,7 @@ _ViridianForestText1::
 _ViridianForestBattleText1::
 	text "הי! יש לך"
 	line "#ימון! קדימה!"
-	cont "בוא נילחם!"
+	cont "בואי נילחם!"
 	done
 
 _ViridianForestEndBattleText1::
@@ -19,14 +19,14 @@ _ViridianForestEndBattleText1::
 	prompt
 
 _ViridianFrstAfterBattleText1::
-	text "ששש! אתה תבריח"
+	text "ששש! את תבריחי"
 	line "את החרקים מכאן!"
 	done
 
 _ViridianForestBattleText2::
-	text "יו! אתה לא יכול"
-	line "סתם לנוח כשאתה"
-	cont "מאמן #ימון!"
+	text "יו! את לא יכולה"
+	line "סתם לנוח כשאת"
+	cont "מאמנת #ימון!"
 	done
 
 _ViridianForestEndBattleText2::
@@ -42,18 +42,18 @@ _ViridianFrstAfterBattleText2::
 	done
 
 _ViridianForestBattleText3::
-	text "הי, חכה!"
-	line "לאן אתה ממהר?"
+	text "הי, חכי!"
+	line "לאן את ממהרת?"
 	done
 
 _ViridianForestEndBattleText3::
 	text "@" 
 	line "ויתרתי!"
-	cont "אתה טוב!"
+	cont "את טובה!"
 	prompt
 
 _ViridianFrstAfterBattleText3::
-	text "לפעמים אתה יכול"
+	text "לפעמים את יכולה"
 	line "למצוא חפצים"
 	cont "על האדמה!"
 
@@ -73,13 +73,13 @@ _ViridianForestText8::
 _ViridianForestText9::
 	text "טיפים למאמנים"
 
-	para "אם אתה רוצה"
+	para "אם את רוצה"
 	line "להימנע מקרבות,"
-	cont "תתרחק מהדשא!"
+	cont "תתרחקי מהדשא!"
 	done
 
 _ViridianForestText10::
-	text "השתמש בנוגדן כדי"
+	text "השתמשי בנוגדן כדי"
 	line "לרפא הרעלה!"
 	cont "אפשר לקנות אותם"
 	cont "ב#יוסק!"
@@ -88,7 +88,7 @@ _ViridianForestText10::
 _ViridianForestText11::
 	text "טיפים למאמנים"
 	
-	para "אם תיצור קשר דרך"
+	para "אם תיצרי קשר דרך"
 	line "המחשב עם פרופ'"
 	cont "אלון, הוא ייתן לך"
 	cont "ציון על ה#ידע"
@@ -100,7 +100,7 @@ _ViridianForestText12::
 
 	para "אסור לגנוב"
 	line "#ימונים ממאמנים"
-	cont "אחרים! תפוס"
+	cont "אחרים! תפסי"
 	cont "#ימונים רק"
 	cont "בטבע!"
 	done
@@ -108,8 +108,8 @@ _ViridianForestText12::
 _ViridianForestText13::
 	text "טיפים למאמנים"
 
-	para "החלש את ה#ימונים"
-	line "לפני שתנסה"
+	para "החלישי את ה#ימונים"
+	line "לפני שתנסי"
 	cont "לתפוס אותם!"
 
 	para "אם הם בריאים,"

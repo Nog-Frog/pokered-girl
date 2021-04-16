@@ -1,9 +1,9 @@
 _LTSurgePreBattleText::
-	text "היי, ילד! מה"
-	line "אתה חושב שאתה"
+	text "היי, ילדה! מה"
+	line "את חושבת שאת"
 	cont "עושה פה?"
 
-	para "אתה לא תשרוד"
+	para "את לא תשרדי"
 	line "זמן רב בקרב!"
 	cont "זה בטוח!"
 

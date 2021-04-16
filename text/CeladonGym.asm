@@ -6,7 +6,7 @@ _CeladonGymText_48a5e::
 
 	para "...אה..."
 	line "נדמה שנרדמתי."
-	cont "ברוך הבא."
+	cont "ברוכה הבאה."
 
 	para "שמי הוא איריס."
 	line "אני מנהיגת מכון"
@@ -32,14 +32,14 @@ _CeladonGymText_48a63::
 	line "אני מודה"
 	cont "בתבוסתי."
 
-	para "אתה חזק להפליא."
+	para "את חזקה להפליא."
 
 	para "עלי להעניק לך את"
 	line "תג הקשת בענן."
 	prompt
 
 _CeladonGymText_48a68::
-	text "אתה אוסף מידע על"
+	text "את אוספת מידע על"
 	line "#ימונים? עלי"
 	cont "לומר שזה מרשים."
 
@@ -65,7 +65,7 @@ _CeladonGymText9::
 	done
 
 _ReceivedTM21Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -96,7 +96,7 @@ _CeladonGymBattleText2::
 	done
 
 _CeladonGymEndBattleText2::
-	text "אתה אלים"
+	text "את אלימה"
 	line "מדי!"
 	prompt
 
@@ -127,7 +127,7 @@ _CeladonGymAfterBattleText3::
 	done
 
 _CeladonGymBattleText4::
-	text "אתה ממש מציצן,"
+	text "את ממש מציצנית,"
 	line "אה?"
 	done
 
@@ -143,7 +143,7 @@ _CeladonGymAfterBattleText4::
 	done
 
 _CeladonGymBattleText5::
-	text "קלוט את #ימוני"
+	text "קלטי את #ימוני"
 	line "הדשא שלי!"
 
 	para "כל כך קל"
@@ -164,13 +164,13 @@ _CeladonGymAfterBattleText5::
 	done
 
 _CeladonGymBattleText6::
-	text "אל תכניס #ימוני"
+	text "אל תכניסי #ימוני"
 	line "אש או חרק לכאן!"
 	done
 
 _CeladonGymEndBattleText6::
 	text "אוח!"
-	line "אתה!"
+	line "את!"
 	prompt
 
 _CeladonGymAfterBattleText6::
@@ -200,10 +200,10 @@ _CeladonGymAfterBattleText7::
 	done
 
 _CeladonGymBattleText8::
-	text "ברוך הבא למכון"
+	text "ברוכה הבאה למכון"
 	line "האביב!"
 
-	para "אל תעז להמעיט"
+	para "אל תעזי להמעיט"
 	line "בערכו של הכוח"
 	cont "הנשי!"
 	done
@@ -218,7 +218,7 @@ _CeladonGymAfterBattleText8::
 	line "ה#ימונים החזקים"
 	cont "שלי!"
 
-	para "חכה ותראה בפעם"
+	para "חכי ותראי בפעם"
 	line "הבאה!"
 	done
 

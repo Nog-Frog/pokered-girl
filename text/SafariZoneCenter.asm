@@ -5,7 +5,7 @@ _SafariZoneCenterText2::
 _SafariZoneCenterText3::
 	text "טיפים למאמנים"
 
-	para "לחץ על כפתור ה-"
+	para "לחצי על כפתור ה-"
 	line "START כדי לבדוק"
 	cont "כמה זמן נשאר!"
 	done

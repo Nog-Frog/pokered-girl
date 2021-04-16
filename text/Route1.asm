@@ -3,7 +3,7 @@ _Route1ViridianMartSampleText::
 	line "ב#יוסק."
 
 	para "זה כמו כלבו."
-	line "אתה מוזמן לבוא"
+	line "את מוזמנת לבוא"
 	cont "ולהתרשם בעצמך"
 	cont "מהסניף בעיר"
 	cont "הברקת!"
@@ -13,7 +13,7 @@ _Route1ViridianMartSampleText::
 	prompt
 
 _Route1Text_1cae8::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"

@@ -41,7 +41,7 @@ _Route3EndBattleText2::
 	prompt
 
 _Route3AfterBattleText2::
-	text "אתה מאחסן"
+	text "את מאחסנת"
 	line "את ה#ימונים שלך"
 	cont "במחשב? כל קופסה"
 	cont "יכולה להכיל עד"
@@ -49,24 +49,24 @@ _Route3AfterBattleText2::
 	done
 
 _Route3BattleText3::
-	text "אתה הסתכלת עליי"
+	text "את הסתכלת עליי"
 	line "נכון?"
 	done
 
 _Route3EndBattleText3::
-	text "אתה"
-	line "רשע מרושע!"
+	text "את"
+	line "רשעה מרושעת!"
 	prompt
 
 _Route3AfterBattleText3::
-	text "תפסיק לבהות"
-	line "אם אתה לא רוצה"
+	text "תפסיקי לבהות"
+	line "אם את לא רוצה"
 	cont "להלחם!"
 	done
 
 _Route3BattleText4::
-	text "אתה מאמן #ימון?"
-	line "בוא נלחם!"
+	text "את מאמנת #ימון?"
+	line "בואי נלחם!"
 	done
 
 _Route3EndBattleText4::
@@ -78,7 +78,7 @@ _Route3EndBattleText4::
 _Route3AfterBattleText4::
 	text "אם תא #ימונים"
 	line "במחשב מלא עד אפס"
-	cont "מקום, פשוט תחליף"
+	cont "מקום, פשוט תחליפי"
 	cont "לקופסה אחרת!"
 	done
 
@@ -88,18 +88,18 @@ _Route3BattleText5::
 	done
 
 _Route3EndBattleText5::
-	text "תתנהג"
+	text "תתנהגי"
 	line "יפה!"
 	prompt
 
 _Route3AfterBattleText5::
 	text "כדי להמנע מקרבות,"
-	line "אל תיתן לאנשים"
+	line "אל תתני לאנשים"
 	cont "לראות אותך!"
 	done
 
 _Route3BattleText6::
-	text "היי! אתה לא לובש"
+	text "היי! את לא לובשת"
 	line "מכנסיים קצרים!"
 	done
 
@@ -116,7 +116,7 @@ _Route3AfterBattleText6::
 	done
 
 _Route3BattleText7::
-	text "אתה יכול להלחם"
+	text "את יכולה להלחם"
 	line "ב#ימונים החדשים"
 	cont "שלי!"
 	done
@@ -135,7 +135,7 @@ _Route3AfterBattleText7::
 
 _Route3BattleText8::
 	text "איכס!"
-	line "אתה נגעת בי?"
+	line "את נגעת בי?"
 	done
 
 _Route3EndBattleText8::

@@ -290,7 +290,7 @@ CableClub_DoBattleOrTradeAgain:
 	jr CallCurrentTradeCenterFunction
 
 PleaseWaitString:
-	db "אנא המתן!@"
+	db "אנא המתיני!@"
 
 CallCurrentTradeCenterFunction:
 	ld hl, TradeCenterPointerTable
@@ -534,7 +534,7 @@ TradeCenter_SelectMon:
 	ld [wTradeCenterPointerTableIndex], a
 	jp CallCurrentTradeCenterFunction
 .statsTrade
-	db "החלף       נתונים@"
+	db "החלפה      נתונים@"
 .selectedCancelMenuItem
 	ld a, [wCurrentMenuItem]
 	ld b, a

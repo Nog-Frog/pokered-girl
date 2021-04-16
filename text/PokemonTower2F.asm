@@ -13,9 +13,9 @@ _PokemonTower2Text_6062d::
 
 _PokemonTower2Text_60632::
 	text "מה?"
-	line "יא שטינקר!"
+	line "יא שטינקרית!"
 
-	para "ריחמתי עליך!"
+	para "ריחמתי עלייך!"
 	prompt
 
 _PokemonTower2Text_60637::
@@ -29,7 +29,7 @@ _PokemonTower2Text_60637::
 
 _PokemonTower2Text_6063c::
 	text "איך ה#ידע"
-	line "שלך מתקדם, חבר?"
+	cont "להשיג, חברה!"
 	cont "בדיוק תפסתי רשרש!"
 
 	para "עוד לא מצאתי"
@@ -40,7 +40,7 @@ _PokemonTower2Text_6063c::
 	cont "טוב, אני חייב!"
 	cont "לעוף, יש לי"
 	cont "עוד הרבה דברים"
-	cont "להשיג, חבר!"
+	cont "להשיג, חברה!"
 
 	para "נתרחרח אחר-כך!"
 	done

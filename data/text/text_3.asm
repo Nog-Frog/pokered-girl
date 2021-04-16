@@ -10,7 +10,7 @@ _WouldYouLikeToSaveText::
 	done
 
 _GameSavedText::
-	text "<PLAYER> שמר"
+	text "<PLAYER> שמרה"
 	line "את המשחק!"
 	done
 

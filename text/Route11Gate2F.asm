@@ -8,25 +8,25 @@ _Route11GateUpstairsText_494a3::
 
 	para "הוא לא יכול לאתר"
 	line "את המיקום המדויק"
-	cont "שלו, אז תצטרך"
+	cont "שלו, אז תצטרכי"
 	cont "אותו בעצמך!"
 	done
 
 _BinocularsSnorlaxText::
-	text "מביט דרך המשקפת."
+	text "מביטה דרך המשקפת."
 
 	para "#ימון גדול ישן"
 	line "על השביל!"
 	done
 
 _BinocularsNoSnorlaxText::
-	text "מביט דרך המשקפת."
+	text "מביטה דרך המשקפת."
 
 	para "הנוף מרהיב!"
 	done
 
 _Route11GateUpstairsText_494d5::
-	text "מביט דרך המשקפת."
+	text "מביטה דרך המשקפת."
 
 	para "הדרך היחידה להגיע"
 	line "מעיר הטורקיז לעיר"

@@ -14,5 +14,5 @@ _PewterHouse2Text2::
 	cont "מותש מהקרב!"
 
 	para "אבל, לעולם לא"
-	line "מובטח שתצליח!"
+	line "מובטח שתצליחי!"
 	done

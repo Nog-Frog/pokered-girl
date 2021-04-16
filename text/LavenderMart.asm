@@ -9,7 +9,7 @@ _LavenderMartText2::
 	cont "Xמהירות, ו X"
 	cont "מיוחדת."
 
-	para "אתה יודע איפה"
+	para "את יודעת איפה"
 	line "אוכל למצוא כאלה?"
 	done
 

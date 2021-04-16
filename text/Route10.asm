@@ -1,5 +1,5 @@
 _Route10BattleText1::
-	text "וואו, גם אתה"
+	text "וואו, גם את"
 	line "#יטורף? רוצה"
 	cont "לראות את האוסף"
 	cont "שלי?"
@@ -34,7 +34,7 @@ _Route10AfterBattleText2::
 	done
 
 _Route10BattleText3::
-	text "היי ילד, רוצה"
+	text "היי ילדה, רוצה"
 	line "לראות את ה#ימון"
 	cont "שלי?"
 	done

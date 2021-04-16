@@ -4,13 +4,13 @@ _SilphCo5EndBattleText4::
 	prompt
 
 _SilphCo5AfterBattleText4::
-	text "אתה רק בקומה"
+	text "את רק בקומה"
 	line "החמישית. הבוס שלי"
 	cont "עוד רחוק!"
 	done
 
 _SilphCo5BattleText5::
-	text "הפגן קצת כבוד"
+	text "הפגיני קצת כבוד"
 	line "כלפי צוות רוקט!"
 	done
 

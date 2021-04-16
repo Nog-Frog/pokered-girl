@@ -1,13 +1,13 @@
 _PokemonTower5Text1::
-	text "התקרב, ילד!"
+	text "התקרבי, ילדה!"
 	line "יצרתי אזור שמוגן"
 	cont "בעזרת קסם לבן!"
 
-	para "תוכל לנוח כאן!"
+	para "תוכלי לנוח כאן!"
 	done
 
 _PokemonTower5BattleText1::
-	text "תן...לי..."
+	text "תני...לי..."
 	line "את...נשמתך..."
 	done
 
@@ -20,7 +20,7 @@ _PokemonTower5AfterBattleText1::
 	done
 
 _PokemonTower5BattleText2::
-	text "הצטרף...אלינו..."
+	text "הצטרפי...אלינו..."
 	done
 
 _PokemonTower5EndBattleText2::
@@ -40,7 +40,7 @@ _PokemonTower5EndBattleText3::
 	prompt
 
 _PokemonTower5AfterBattleText3::
-	text "התעשטתי על"
+	text "התעשתתי על"
 	line "עצמי!"
 	done
 
@@ -60,7 +60,7 @@ _PokemonTower5AfterBattleText4::
 	done
 
 _PokemonTower5Text7::
-	text "אתה באיזור"
+	text "את באיזור"
 	line "מוגן ומטוהר!"
 
 	para "ה#ימונים של"

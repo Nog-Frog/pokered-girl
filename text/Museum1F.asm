@@ -20,11 +20,11 @@ _Museum1FText_5c229::
 	prompt
 
 _Museum1FText_5c22e::
-	text "אתה לא יכול להתגנב"
+	text "את לא יכולה להתגנב"
 	line "מהדרך האחורית!"
 
 	para "טוב, שיהיה!"
-	line "אתה יודע מה זה"
+	line "את יודעת מה זה"
 	cont "ענבר?"
 	done
 
@@ -72,18 +72,18 @@ _Museum1FText_5c28e::
 	para "אז יש לי טובה"
 	line "לבקש!"
 
-	para "קח את זה למעבדת"
+	para "קחי את זה למעבדת"
 	line "ה#ימון ותן להם"
 	cont "לבחון את זה!"
 	prompt
 
 _ReceivedOldAmberText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "ענבר עתיק!@"
 	text_end
 
 _Museum1FText_5c299::
-	text "ששש! קח את הענבר"
+	text "ששש! קחי את הענבר"
 	line "העתיק לבדיקה!"
 	done
 

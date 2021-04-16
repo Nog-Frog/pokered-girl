@@ -12,14 +12,14 @@ _MomWakeUpText::
 
 _MomHealText1::
 	text "אמא: <PLAYER>!"
-	line "אולי כדאי שתנוח"
+	line "אולי כדאי שתנוחי"
 	cont "רגע?"
 	prompt
 
 _MomHealText2::
 	text "אמא: יופי!"
 	line "ה#ימונים שלך"
-	cont "ואתה נראים רעננים"
+	cont "ואת נראים רעננים"
 	cont "ומוכנים לצאת"
 	cont "לדרך!"
 	done

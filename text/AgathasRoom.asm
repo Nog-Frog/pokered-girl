@@ -3,7 +3,7 @@ _AgathaBeforeBattleText::
 	line "העילית!"
 
 	para "אלון הביע עניין"
-	line "רב בך, ילדון!"
+	line "רב בך, ילדונת!"
 
 	para "התרח הזקן הזה"
 	line "היה פעם מחוספס"
@@ -24,21 +24,21 @@ _AgathaBeforeBattleText::
 
 _AgathaEndBattleText::
 	text "או הו!"
-	line "אתה ממש משהו"
-	cont "מיוחד, ילדון!"
+	line "את ממש משהו"
+	cont "מיוחד, ילדונת!"
 	prompt
 
 _AgathaAfterBattleText::
-	text "אתה המנצח! עכשיו"
+	text "את המנצחת! עכשיו"
 	line "אני רואה מה התרח"
 	cont "הזקן מוצא בך!"
 
 	para "אין לי עוד מה"
-	line "מה להוסיף! צעד"
-	cont "הלאה, ילדון!"
+	line "מה להוסיף! צעדי"
+	cont "הלאה, ילדונת!"
 	done
 
 _AgathaDontRunAwayText::
 	text "קול מוכר קורא:"
-	line "אל תיסוג!"
+	line "אל תיסגי!"
 	done

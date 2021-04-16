@@ -7,7 +7,7 @@ _SchoolText1::
 _SchoolText2::
 	text "אוקיי!"
 
-	para "השתדל לקרוא"
+	para "השתדלי לקרוא"
 	line "בקפידה את מה"
 	cont "שכתוב על הלוח!"
 	done

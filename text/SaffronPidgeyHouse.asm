@@ -3,7 +3,7 @@ _SaffronHouse1Text1::
 	line "אני מקווה שנתראה"
 	cont "שוב בקרוב!"
 
-	para "היי! אל תציץ במכתב"
+	para "היי! אל תציצי במכתב"
 	line "שלי!"
 	done
 

@@ -12,8 +12,8 @@ _SaffronGymText_5d162::
 	cont "המחשבה."
 
 	para "אני לא אוהבת"
-	line "קרבות, אך אם אתה"
-	cont "מתעקש להילחם, אני"
+	line "קרבות, אך אם את"
+	cont "מתעקשת להילחם, אני"
 	cont "אראה לך את העוצמה"
 	cont "שלי!"
 	done
@@ -48,17 +48,17 @@ _SaffronGymText_5d173::
 	cont "ויתעלמו מהפקודות"
 	cont "שלך בקרב!"
 
-	para "אז אל תיתן"
+	para "אז אל תתני"
 	line "ל#ימונים שלך"
 	cont "לעלות יותר מדי"
 	cont "רמות!"
 
-	para "רגע, בבקשה, קח את"
+	para "רגע, בבקשה, קחי את"
 	line "המ”מ הזה איתך!"
 	done
 
 ReceivedTM46Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "מ”מ64!@"
 	text_end
 
@@ -78,7 +78,7 @@ _TM46NoRoomText::
 
 _SaffronGymText_5d1e6::
 	text "יו!"
-	line "אלופצ'יק!"
+	line "אלופצ'יקית!"
 
 	para "ה#ימונים של קסם"
 	line "משתמשים בכוחות"
@@ -123,11 +123,11 @@ _SaffronGymAfterBattleText1::
 
 	para "אם המטרה שלך"
 	line "היא להביס את קסם,"
-	cont "התמקד בניצחון!"
+	cont "התמקדי בניצחון!"
 	done
 
 _SaffronGymBattleText2::
-	text "אתה מפחד מהכוח"
+	text "את מפחדת מהכוח"
 	line "הלא-נראה שלנו?"
 	done
 
@@ -163,7 +163,7 @@ _SaffronGymAfterBattleText3::
 	done
 
 _SaffronGymBattleText4::
-	text "אתה יודע, כוח"
+	text "את יודעת, כוח"
 	line "לבדו אינו מספיק"
 	cont "כדי לנצח!"
 	done
@@ -180,7 +180,7 @@ _SaffronGymAfterBattleText4::
 	done
 
 _SaffronGymBattleText5::
-	text "אתה ואני,"
+	text "את ואני,"
 	line  "ה#ימונים שלנו"
 	cont "ילחמו!"
 	done
@@ -200,7 +200,7 @@ _SaffronGymBattleText6::
 	line "אבל היא מנהיגת"
 	cont "המכון!"
 
-	para "לא תצליח להגיע"
+	para "לא תצליחי להגיע"
 	line "אליה בכזו קלות!"
 	done
 
@@ -214,7 +214,7 @@ _SaffronGymAfterBattleText6::
 	line "היו שני מכוני"
 	cont "#ימון."
 
-	para "בבנין ליד נמצא"
+	para "בבניין ליד נמצא"
 	line "הדוג'ו. הוא איבד"
 	cont "את מעמדו בתור"
 	cont "מכון אחרי שכיסחנו"
@@ -225,7 +225,7 @@ _SaffronGymBattleText7::
 	text "מכון הזעפרן ידוע"
 	line "בבעלות האוב שבו!"
 
-	para "אתה משתוקק לפגוש"
+	para "את משתוקקת לפגוש"
 	line "את קסם! אני חשה"
 	cont "את זה!"
 	done

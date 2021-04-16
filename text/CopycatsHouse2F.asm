@@ -9,7 +9,7 @@ _CopycatsHouse2FText_5ccd4::
 	line "את מוזרה!"
 
 	para "חקיינית: מה?"
-	line "אתה רוצה שאני"
+	line "את רוצה שאני"
 	cont "אפסיק לחקות"
 	cont "אותך?"
 
@@ -24,12 +24,12 @@ _TM31PreReceiveText::
 	para "בשבילי?"
 	line "תודה רבה!"
 
-	para "אתה יכול לקחת"
+	para "את יכולה לקחת"
 	line "את זה בתמורה!"
 	prompt
 
 _ReceivedTM31Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -41,7 +41,7 @@ _TM31ExplanationText1::
 	line "המהלך האהוב עלי,"
 	cont "חקיינות!"
 
-	para "השתמש בו על"
+	para "השתמשי בו על"
 	line "#ימון חזק!@"
 	text_end
 
@@ -61,7 +61,7 @@ _TM31ExplanationText2::
 	done
 
 _TM31NoRoomText::
-	text "אתה לא רוצה"
+	text "את לא רוצה"
 	line "את זה?@"
 	text_end
 

@@ -8,12 +8,12 @@ _DaisyInitialText::
 _DaisyOfferMapText::
 	text "סבא ביקש ממך"
 	line "לעשות בשבילו"
-	cont "סידורים? קח, זה"
+	cont "סידורים? קחי, זה"
 	cont "יעזור לך!"
 	prompt
 
 _GotMapText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -24,7 +24,7 @@ _DaisyBagFullText::
 	done
 
 _DaisyUseMapText::
-	text "אתה יכול להשתמש"
+	text "את יכולה להשתמש"
 	line "במפה כדי להתמצא"
 	cont "באיזור."
 	done
@@ -32,7 +32,7 @@ _DaisyUseMapText::
 _BluesHouseDaisyWalkingText::
 	text "#ימון הם יצורים"
 	line "חיים! אם הם"
-	cont "מתעייפים, תן להם"
+	cont "מתעייפים, תני להם"
 	cont "לנוח!"
 	done
 

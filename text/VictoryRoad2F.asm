@@ -15,12 +15,12 @@ _VictoryRoad2EndBattleText1::
 
 _VictoryRoad2AfterBattleText1::
 	text "במידה ונתקעת,"
-	line "נסה להזיז כמה"
+	line "נסי להזיז כמה"
 	cont "מן הסלעים שמסביב!"
 	done
 
 _VictoryRoad2BattleText2::
-	text "אה, אז אתה רוצה"
+	text "אה, אז את רוצה"
 	line "לאתגר את"
 	cont "ELITE FOURה?" ;TO DO
 	done
@@ -46,15 +46,15 @@ _VictoryRoad2EndBattleText3::
 	prompt
 
 _VictoryRoad2AfterBattleText3::
-	text "אתה השגת"
+	text "את השגת"
 	line "את הזכות להגיע אל"
 	cont "VICTORY ROADה!" ;TO DO
 	done
 
 _VictoryRoad2BattleText4::
-	text "אם תצליח לעבור"
-	line "את החלק הזה, אתה"
-	cont "תוכל לפגוש את"
+	text "אם תצליחי לעבור"
+	line "את החלק הזה, את"
+	cont "תוכלי לפגוש את"
 	cont "הרביעיה העילית!"
 	done
 

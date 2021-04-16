@@ -5,7 +5,7 @@ _PewterPokecenterText2::
 	line "הירח? מה?"
 	cont "אני בשיחת טלפון!"
 
-	para "קישטה! לך!"
+	para "קישטה! לכי!"
 	done
 
 _PewterJigglypuffText::

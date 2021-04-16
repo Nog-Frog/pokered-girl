@@ -4,9 +4,9 @@ _FightingDojoText_5ce8e::
 	para "אני מאסטר הקראטה!"
 	line "אני המנהיג כאן!"
 
-	para "אתה קורא"
+	para "את קוראת"
 	line "עלינו תיגר?"
-	cont "צפה לצרות!"
+	cont "צפי לצרות!"
 
 	para "פוואה!"
 	done
@@ -29,18 +29,18 @@ _FightingDojoText_5ce98::
 	line "לך פרס - #ימון"
 	cont "מסוג לחימה!"
 
-	para "בחר אחד מהם!"
+	para "בחרי אחד מהם!"
 	done
 
 _FightingDojoText_5ce9d::
 	text "הו!"
 
-	para "הישאר כאן"
+	para "הישארי כאן"
 	line "להתאמן בקארטה!"
 	done
 
 _FightingDojoBattleText1::
-	text "הוארג! תוריד"
+	text "הוארג! חלצי"
 	line "את הנעליים שלך!"
 	done
 
@@ -50,7 +50,7 @@ _FightingDojoEndBattleText1::
 	prompt
 
 _FightingDojoAfterBattleText1::
-	text "חכה שתראה"
+	text "חכי שתראי"
 	line "את המאסטר שלנו!"
 
 	para "אני אפס"
@@ -58,8 +58,8 @@ _FightingDojoAfterBattleText1::
 	done
 
 _FightingDojoBattleText2::
-	text "שמעתי שאתה"
-	line "טוב! תראה לי!"
+	text "שמעתי שאת"
+	line "טובה! תראי לי!"
 	done
 
 _FightingDojoEndBattleText2::
@@ -94,7 +94,7 @@ _FightingDojoAfterBattleText3::
 _FightingDojoBattleText4::
 	text "הואהה!"
 
-	para "אתה מסיג גבול"
+	para "את מסיגה גבול"
 	line "בדוג'ו שלנו!"
 	done
 
@@ -110,18 +110,18 @@ _FightingDojoAfterBattleText4::
 	done
 
 _WantHitmonleeText::
-	text "אתה רוצה את"
+	text "את רוצה את"
 	line "ה#ימון הבועט"
 	cont "הכמפמדג'ה?"
 	done
 
 _WantHitmonchanText::
-	text "אתה רוצה את"
+	text "את רוצה את"
 	line "ה#ימון המתאגרף"
 	cont "הכמפארד?"
 	done
 
 _OtherHitmonText::
-	text "רק אל תהיה"
-	line "חמדן..."
+	text "רק אל תהיי"
+	line "חמדנית..."
 	done

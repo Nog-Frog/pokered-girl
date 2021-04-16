@@ -1,5 +1,5 @@
 PikachuFanText::
-	text "הבט בזנב המתוק"
+	text "הביטי בזנב המתוק"
 	line "של הצויצוץ שלי!"
 	cont "נכון שהוא מדהים?"
 	done
@@ -54,7 +54,7 @@ FanClubMeetChairText::
 
 FanClubChairStoryText::
 	text "נהדר!"
-	line "אז תקשיב טוב טוב!"
+	line "אז תקשיבי טוב טוב!"
 
 	para "בבת עיני..."
 	line "סוסורף..."
@@ -62,7 +62,7 @@ FanClubChairStoryText::
 	para "הוא...חמוד..."
 	line "מקסים...חכם..."
 	cont "וגם...מדהים..."
-	cont "אתה מסכים?..."
+	cont "את מסכימה?..."
 	cont "הו כן...הוא..."
 	cont "מהמם..."
 	cont "אדיב..."
@@ -73,7 +73,7 @@ FanClubChairStoryText::
 	cont "ונעים להחזיק..."
 	cont "מרהיב..."
 	cont "משובב נפש..."
-	cont "...אופס! תראה מה"
+	cont "...אופס! תראי מה"
 	cont "השעה! אני מעכב"
 	cont "אותך!"
 
@@ -83,7 +83,7 @@ FanClubChairStoryText::
 	prompt
 
 ReceivedBikeVoucherText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -96,7 +96,7 @@ ExplainBikeVoucherText::
 	line "הקופון בעד"
 	cont "אופניים!"
 
-	para "אל תדאג לגבי,"
+	para "אל תדאגי לגבי,"
 	line "הפחדרור שלי ייקח"
 	cont "אותי בתעופה לאן"
 	cont "שארצה!"
@@ -104,13 +104,13 @@ ExplainBikeVoucherText::
 	para "אז אין לי צורך"
 	line "באופניים!"
 
-	para "אני מקווה שאתה "
-	line "אוהב רכיבה!"
+	para "אני מקווה שאת "
+	line "אוהבת רכיבה!"
 	done
 
 FanClubNoStoryText::
-	text "הו, חזור"
-	line "כשתרצה"
+	text "הו, חזרי"
+	line "כשתרצי"
 	cont "לשמוע את הסיפור"
 	cont "שלי!"
 	done
@@ -126,7 +126,7 @@ FanClubChairFinalText::
 	done
 
 FanClubBagFullText::
-	text "פנה מקום בתיק"
+	text "פני מקום בתיק"
 	line "בשביל זה!"
 	done
 
@@ -144,5 +144,5 @@ _FanClubText7::
 
 _FanClubText8::
 	text "אם מישהו מתרברב,"
-	line "תחזיר לו גם!"
+	line "תחזירי לו גם!"
 	done

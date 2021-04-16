@@ -28,10 +28,10 @@ _GameDesignerText::
 
 	para "השלמת ה#ידע"
 	line "היא משימה קשה,"
-	cont "אבל אל תתיאש!"
+	cont "אבל אל תתייאשי!"
 
-	para "כשתסיים,"
-	line "חזור לספר לי!"
+	para "כשתסיימי,"
+	line "חזרי לספר לי!"
 	done
 
 _CompletedDexText::
@@ -56,7 +56,7 @@ _CeladonMansion3Text6::
 
 _CeladonMansion3Text7::
 	text "זה התסריט!"
-	line "אל תקרא! זה"
+	line "אל תקראי! זה"
 	cont "יקלקל לך את"
 	cont "הסוף!"
 	done

@@ -63,7 +63,7 @@ _SSAnne9AfterBattleText1::
 	done
 
 _SSAnne9BattleText2::
-	text "תראה מה דגתי!"
+	text "תראי מה דגתי!"
 	done
 
 _SSAnne9EndBattleText2::
@@ -79,7 +79,7 @@ _SSAnne9AfterBattleText2::
 	done
 
 _SSAnne9BattleText3::
-	text "מה אתה מעדיף,"
+	text "מה את מעדיפה,"
 	line "#ימון חזק"
 	cont "או נדיר?"
 	done
@@ -101,7 +101,7 @@ _SSAnne9BattleText4::
 	done
 
 _SSAnne9EndBattleText4::
-	text "תרגע!"
+	text "תרגעי!"
 	prompt
 
 _SSAnne9AfterBattleText4::

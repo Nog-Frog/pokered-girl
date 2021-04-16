@@ -6,8 +6,8 @@ _Route2GateText_5d616::
 	done
 
 _Route2GateText2::
-	text "ברגע שתלמד #ימון"
+	text "ברגע שתלמדי #ימון"
 	line "את המהלך הבזק,"
-	cont "תוכל לעבור דרך"
+	cont "תוכלי לעבור דרך"
 	cont "מנהרת הסלע."
 	done

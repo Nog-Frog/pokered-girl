@@ -10,12 +10,12 @@ _RocketHideout4Text_4557f::
 	prompt
 
 _RocketHideout4Text_45584::
-	text "אני מבין. אתה מטפל"
+	text "אני מבין. את מטפלת"
 	line "ב#ימונים שלך"
 	cont "בחום ואהבה."
 
-	para "ילד קטן כמוך לעולם"
-	line "לא יבין מדוע עלי"
+	para "ילדה קטנה כמוך לעולם"
+	line "לא תבין מדוע עלי"
 	cont "להגשים את מטרתי."
 
 	para "הפעם, אפנה לך את"
@@ -27,7 +27,7 @@ _RocketHideout4Text_45584::
 
 _RocketHideout4BattleText2::
 	text "אני מכיר אותך!"
-	line "אתה סיכלת את"
+	line "את סיכלת את"
 	cont "התוכנית שלנו בהר"
 	cont "הירח!"
 	done

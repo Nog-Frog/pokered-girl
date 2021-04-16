@@ -1,11 +1,11 @@
 _DayCareIntroText::
 	text "אני מנהל מעון יום."
-	line "תרצה שאגדל את אחד"
+	line "תרצי שאגדל את אחד"
 	cont "ה#ימונים שלך?"
 	done
 
 _DayCareWhichMonText::
-	text "איזה #ימון תרצה"
+	text "איזה #ימון תרצי"
 	line "שאגדל?"
 	prompt
 
@@ -18,7 +18,7 @@ _DayCareWillLookAfterMonText::
 	prompt
 
 _DayCareComeSeeMeInAWhileText::
-	text "בוא לראות אותי"
+	text "בואי לראות אותי"
 	line "בעוד כמה זמן."
 	done
 
@@ -37,7 +37,7 @@ _DayCareMonHasGrownText::
 	prompt
 
 _DayCareOweMoneyText::
-	text "אתה חייב לי@"
+	text "את חייבת לי@"
 	text_bcd wDayCareTotalCost, 2 | LEADING_ZEROES | LEFT_ALIGN
 	text "¥"
 	line "עבור החזרה של"
@@ -45,7 +45,7 @@ _DayCareOweMoneyText::
 	done
 
 _DayCareGotMonBackText::
-	text "<PLAYER> קיבל את"
+	text "<PLAYER> קיבלה את"
 	line "@"
 	text_ram wDayCareMonName
 	text " בחזרה!"

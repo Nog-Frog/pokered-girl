@@ -21,15 +21,15 @@ _VermilionCityTextSSAnneDeparted::
 	done
 
 _SSAnneWelcomeText4::
-	text "ברוך הבא לספינה"
+	text "ברוכה הבאה לספינה"
 	line "אנה!"
 	done
 
 _SSAnneWelcomeText9::
-	text "ברוך הבא לספינה"
+	text "ברוכה הבאה לספינה"
 	line "אנה!"
 
-	para "סלח לי, יש לך"
+	para "סלחי לי, יש לך"
 	line "כרטיס?"
 	prompt
 
@@ -37,7 +37,7 @@ _SSAnneFlashedTicketText::
 	text "<PLAYER> הציג את"
 	line "הכרטיס לשיט!"
 	
-	para "נהדר! ברוך הבא"
+	text "נהדר! ברוכה הבאה"
 	line "לספינה אנה!"
 	done
 
@@ -48,7 +48,7 @@ _SSAnneNoTicketText::
 
 	para "מצטער!"
 
-	para "אתה צריך כרטיס"
+	para "את צריכה כרטיס"
 	line "כדי לעלות לספינה."
 	done
 

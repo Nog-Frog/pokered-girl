@@ -14,7 +14,7 @@ _CeladonHouseText2::
 	done
 
 _CeladonHouseText3::
-	text "אל תיגע"
+	text "אל תיגעי"
 	line "בפוסטר שנמצא"
 	cont "במשחקיית רוקט!"
 

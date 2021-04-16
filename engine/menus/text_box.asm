@@ -501,7 +501,7 @@ INCLUDE "data/moves/field_move_names.asm"
 
 PokemonMenuEntries:
 	db   "נתונים"
-	next "החלף"
+	next "החלפה"
 	next "ביטול@"
 
 GetMonFieldMoves:

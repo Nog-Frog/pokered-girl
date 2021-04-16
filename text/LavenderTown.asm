@@ -1,5 +1,5 @@
 _LavenderTownText_4413c::
-	text "אתה מאמין"
+	text "את מאמינה"
 	line "ברוחות?"
 	done
 
@@ -46,7 +46,7 @@ _LavenderTownText4::
 _LavenderTownText5::
 	text "חדש! משקף סילף!"
 
-	para "הפוך את הבלתי"
+	para "הפכו את הבלתי"
 	line "נראה לנראה!"
 
 	para "סילף בע”מ"

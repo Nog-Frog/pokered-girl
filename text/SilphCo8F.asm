@@ -9,7 +9,7 @@ _SilphCo8Text_565c3::
 	done
 
 _SilphCo8BattleText1::
-	text "אתה לא תמשיך"
+	text "את לא תמשיכי"
 	line "מכאן!"
 	done
 
@@ -19,12 +19,12 @@ _SilphCo8EndBattleText1::
 	prompt
 
 _SilphCo8AfterBattleText1::
-	text "אם לא תסתלק"
+	text "אם לא תסתלקי"
 	line "אני אקרא לגיבוי!"
 	done
 
 _SilphCo8BattleText2::
-	text "אתה הכנסת אותנו"
+	text "את הכנסת אותנו"
 	line "לצרות!"
 	done
 
@@ -34,7 +34,7 @@ _SilphCo8EndBattleText2::
 	prompt
 
 _SilphCo8AfterBattleText2::
-	text "אז, מה אתה חושב"
+	text "אז, מה את חושבת"
 	line "על המבוך של"
 	cont "בניין סילף?"
 	done

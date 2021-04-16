@@ -15,7 +15,7 @@ _ReceivingHM01Text::
 	line "לך! אני מרגיש"
 	cont "הרבה יותר טוב!"
 
-	para "אתה רוצה ללמוד"
+	para "את רוצה ללמוד"
 	line "ממני את שיטת"
 	cont "החיתוך שלי?"
 
@@ -33,7 +33,7 @@ _ReceivingHM01Text::
 	prompt
 
 _ReceivedHM01Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -54,7 +54,7 @@ _HM01NoRoomText::
 	done
 
 _SSAnne7Text2::
-	text "פיכסה! אתה מתחרט"
+	text "פיכסה! את מתחרטת"
 	line "שהסתכלת!"
 	done
 

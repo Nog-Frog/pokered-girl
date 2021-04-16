@@ -11,7 +11,7 @@ _SilphCo6Text_1a24f::
 
 _SilphCo6Text_1a261::
 	text "אוי לי. אוי לי!"
-	line "בבקשה, עזור לי!"
+	line "בבקשה, עזרי לי!"
 	done
 
 _SilphCo6Text_1a266::
@@ -20,7 +20,7 @@ _SilphCo6Text_1a266::
 	done
 
 _SilphCo6Text_1a278::
-	text "תראה אותו! הוא"
+	text "תראי אותו! הוא"
 	line "כזה פחדן!"
 	done
 
@@ -48,8 +48,8 @@ _SilphCo6Text_1a2a6::
 	done
 
 _SilphCo6Text_1a2ab::
-	text "בוא לעבוד בסילף"
-	line ".כשתגדל"
+	text "בואו לעבוד בסילף"
+	line ".כשתגדלי"
 	done
 
 _SilphCo6BattleText2::
@@ -87,15 +87,15 @@ _SilphCo6AfterBattleText3::
 	done
 
 _SilphCo6BattleText4::
-	text "איך אתה מעז לבגוד"
+	text "איך את מעזה לבגוד"
 	line "בצוות רוקט?"
 	done
 
 _SilphCo6EndBattleText4::
-	text "בוגד!"
+	text "בוגדת!"
 	prompt
 
 _SilphCo6AfterBattleText4::
-	text "אם אתה בעד צדק,"
-	line "אתה בוגד ברוע!"
+	text "אם את בעד צדק,"
+	line "את בוגדת ברוע!"
 	done

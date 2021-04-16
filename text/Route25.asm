@@ -5,8 +5,8 @@ _Route25BattleText1::
 	done
 
 _Route25EndBattleText1::
-	text "אתה"
-	line "לא רע."
+	text "את"
+	line "לא רעה."
 	prompt
 
 _Route25AfterBattleText1::
@@ -77,8 +77,8 @@ _Route25EndBattleText5::
 _Route25AfterBattleText5::
 	text "אם ה#ימון שלך"
 	line "נהיה מבולבל או"
-	cont "נרדם, תחזיר אותו"
-	cont "לכדור ותשלח אחד"
+	cont "נרדם, תחזירי אותו"
+	cont "לכדור ותשלחי אחד"
 	cont "אחר במקומו!"
 	done
 
@@ -94,8 +94,8 @@ _Route25EndBattleText6::
 	prompt
 
 _Route25AfterBattleText6::
-	text "אתה הגעת מהר הירח?"
-	line "תוכל להביא לי"
+	text "את הגעת מהר הירח?"
+	line "תוכלי להביא לי"
 	cont "חמשדון?"
 	done
 
@@ -106,7 +106,7 @@ _Route25BattleText7::
 	done
 
 _Route25EndBattleText7::
-	text "אתה"
+	text "את"
 	line "עבדת קשה!"
 	prompt
 
@@ -134,13 +134,13 @@ _Route25AfterBattleText8::
 	done
 
 _Route25BattleText9::
-	text "אתה הולך לראות"
+	text "את הולכת לראות"
 	line "את הדר?"
-	cont "קודם, בוא נלחם!"
+	cont "קודם, בואי נלחם!"
 	done
 
 _Route25EndBattleText9::
-	text "אתה"
+	text "את"
 	line "משהו מיוחד."
 	prompt
 

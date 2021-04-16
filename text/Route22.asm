@@ -2,10 +2,10 @@ _Route22RivalBeforeBattleText1::
 	text "<RIVAL>: היי!"
 	line "<PLAYER>!"
 
-	para "אתה בדרך לליגת"
+	para "את בדרך לליגת"
 	line "ה#ימון?"
 
-	para "שכח מזה! אין מצב"
+	para "שכחי מזה! אין מצב"
 	line "שיש לך מספיק"
 	cont "תגים!"
 
@@ -25,9 +25,9 @@ _Route22RivalAfterBattleText1::
 	para "אני חייב להבין איך"
 	line "לעבור אותם!"
 
-	para "כדאי שגם אתה"
-	line "תפסיק להתמהמה"
-	cont "ותתחיל להתאמן!"
+	para "כדאי שגם את"
+	line "תפסיקי להתמהמה"
+	cont "ותתחילי להתאמן!"
 	done
 
 _Route22RivalDefeatedText1::
@@ -47,10 +47,10 @@ _Route22Text_511bc::
 
 _Route22RivalBeforeBattleText2::
 	text "<RIVAL>: מה?"
-	line "<PLAYER>! אתה"
+	line "<PLAYER>! את"
 	cont "כאן, איזו הפתעה!"
 
-	para "אתה בדרך לליגת"
+	para "את בדרך לליגת"
 	line "ה#ימונים?"
 
 	para "ואפילו אספת את"
@@ -70,12 +70,12 @@ _Route22RivalAfterBattleText2::
 	line "מעולה! אני מוכן"
 	cont "לליגת ה#ימון!"
 
-	para "<PLAYER>, אתה"
-	line "צריך להתאמן עוד"
+	para "<PLAYER>, את"
+	line "צריכה להתאמן עוד"
 	cont "קצת!"
 
-	para "אבל אתה בטח כבר"
-	line "יודע את זה."
+	para "אבל את בטח כבר"
+	line "יודעת את זה."
 	cont "יאללה, עפתי מפה."
 	cont "נתרחרח אחר-כך!"
 	done
@@ -90,12 +90,13 @@ _Route22Text_511d0::
 	text "<RIVAL>: פחחה!"
 	line "<PLAYER>! זה"
 	cont "הכי טוב שיש לך?"
-	cont "אתה אפילו לא"
-	cont "מתקרב לרמה שלי,"
-	cont "חבר!"
+	cont "את אפילו לא"
+	cont "מתקרבת לרמה שלי,"
+	cont "חברה!"
 
-	para "לך להתאמן עוד!"
-	line "יא כלומניק!"
+	para "לכי להתאמן עוד!"
+	line "יא כלומניקית!"
+	line "יא כלומניקית!"
 	prompt
 
 _Route22FrontGateText::

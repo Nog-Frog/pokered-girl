@@ -14,7 +14,7 @@ _PlayerBlackedOutText::
 	line "#ימונים שיכולים"
 	cont "להילחם!"
 
-	para "<PLAYER> התעלף!"
+	para "<PLAYER> התעלפה!"
 	prompt
 
 _RepelWoreOffText::
@@ -23,7 +23,7 @@ _RepelWoreOffText::
 	done
 
 _PokemartBuyingGreetingText::
-	text "קח את הזמן."
+	text "קחי את הזמן."
 	done
 
 _PokemartTellBuyPriceText::
@@ -51,7 +51,7 @@ _PokemartItemBagFullText::
 	prompt
 
 _PokemonSellingGreetingText::
-	text "מה תרצה למכור?"
+	text "מה תרצי למכור?"
 	done
 
 _PokemartTellSellPriceText::
@@ -155,7 +155,7 @@ _HMCantDeleteText::
 	prompt
 
 _PokemonCenterWelcomeText::
-	text "ברוך הבא למרכז"
+	text "ברוכה הבא למרכז"
 	line "ה#ימון!"
 
 	para "אנחנו מרפאים"
@@ -164,7 +164,7 @@ _PokemonCenterWelcomeText::
 	prompt
 
 _ShallWeHealYourPokemonText::
-	text "תרצה שנרפא את"
+	text "תרצי שנרפא את"
 	line "ה#ימונים שלך?"
 	done
 
@@ -194,7 +194,7 @@ _CableClubNPCAreaReservedFor2FriendsLinkedByCableText::
 	done
 
 _CableClubNPCWelcomeText::
-	text "ברוך הבא"
+	text "ברוכה הבאה"
 	line "למועדון החיבור!" ; TODO
 	done
 
@@ -207,14 +207,14 @@ _CableClubNPCPleaseApplyHereHaveToSaveText::
 	done
 
 _CableClubNPCPleaseWaitText::
-	text "אנא המתן.@"
+	text "אנא המתיני.@"
 	text_end
 
 _CableClubNPCLinkClosedBecauseOfInactivityText::
 	text "החיבור נסגר עקב"
 	line "חוסר פעילות."
 
-	para "אנא, צור קשר עם"
+	para "אנא, צרי קשר עם"
 	line "חברך. נשמח לראותך"
 	cont "שוב!"
 	done

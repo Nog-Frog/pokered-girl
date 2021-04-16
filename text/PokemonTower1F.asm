@@ -6,7 +6,7 @@ _PokemonTower1Text1::
 
 _PokemonTower1Text2::
 	text "באת לחלוק כבוד?"
-	line "תבורך!"
+	line "תבורכי!"
 	done
 
 _PokemonTower1Text3::

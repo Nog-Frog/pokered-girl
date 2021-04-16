@@ -7,7 +7,7 @@ _Lab4Text_75dc6::
 	line "מאובני #ימון"
 	cont "נדירים!"
 
-	para "אתה! יש לך מאובן"
+	para "את! יש לך מאובן"
 	line "בשבילי?"
 	prompt
 
@@ -18,7 +18,7 @@ _Lab4Text_75dcb::
 _Lab4Text_75dd0::
 	text "אני לקחת קצת זמן!"
 
-	para "אתה לך להליכה"
+	para "את לך להליכה"
 	line "לזמן מה!"
 	done
 
@@ -53,7 +53,7 @@ _Lab4Text_610ae::
 	done
 
 _Lab4Text_610b3::
-	text "אז! אתה למהר ולתת"
+	text "אז! את למהר ולתת"
 	line "לי את זה!"
 
 	para "<PLAYER> מסר"
@@ -65,11 +65,11 @@ _Lab4Text_610b3::
 _Lab4Text_610b8::
 	text "אני לקחת קצת זמן!"
 
-	para "אתה לך להליכה"
+	para "אתה לכי להליכה"
 	line "לזמן מה!"
 	done
 
 _Lab4Text_610bd::
-	text "איי-יה! אתה בוא"
+	text "איי-יה! את בואי"
 	line "שוב!"
 	done

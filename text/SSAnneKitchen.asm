@@ -1,7 +1,7 @@
 _SSAnne6Text1::
-	text "אתה, מון פטיט!"
+	text "את, מון פטיט!"
 	line "אנחנו עסוקים!"
-	cont "זוז! אתה מפריע!"
+	cont "זוז! את מפריעה!"
 	done
 
 _SSAnne6Text2::

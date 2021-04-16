@@ -17,14 +17,14 @@ _TowerRescueFujiText::
 	para "אני מוכרח להודות"
 	line "לך על דאגתך הכנה!"
 
-	para "בוא לבקר אותי בבית"
+	para "בואי לבקר אותי בבית"
 	line "שלי, בית ה#ימון"
 	cont "שנמצא למרגלות"
 	cont "המגדל."
 	done
 
 _PokemonTower7BattleText1::
-	text "מה אתה רוצה?"
+	text "מה את רוצה?"
 	line "למה באת לפה?"
 	done
 
@@ -57,21 +57,21 @@ _PokemonTower7AfterBattleText2::
 	line "ל#ימונים היא"
 	cont "בתור מרוויחי כסף!"
 
-	para "אל תתערב לנו"
+	para "אל תתערבי לנו"
 	line "בעניינים!"
 	done
 
 _PokemonTower7BattleText3::
-	text "אתה לא הולך לחלץ"
-	line "אף אחד, ילד!"
+	text "את לא הולכת לחלץ"
+	line "אף אחד, ילדה!"
 	done
 
 _PokemonTower7EndBattleText3::
 	text "אל"
-	line "תילחם בנו!"
+	line "תילחמי בנו!"
 	prompt
 
 _PokemonTower7AfterBattleText3::
-	text "אתה לא תצא מזה"
+	text "את לא תצאי מזה"
 	line "בזול!"
 	done

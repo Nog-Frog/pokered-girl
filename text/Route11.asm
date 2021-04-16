@@ -32,7 +32,7 @@ _Route11AfterBattleText2::
 
 _Route11BattleText3::
 	text "קדימה! אבל אל"
-	line "תרמה!"
+	line "תרמי!"
 	done
 
 _Route11EndBattleText3::
@@ -46,7 +46,7 @@ _Route11AfterBattleText3::
 	done
 
 _Route11BattleText4::
-	text "Cזהירות!"
+	text "בזהירות!"
 	line "אני מניח כאן"
 	cont "תשתיות חשמל!"
 	done
@@ -58,7 +58,7 @@ _Route11EndBattleText4::
 
 _Route11AfterBattleText4::
 	text "צריך לחסוך"
-	line "באנרגיה! ספר"
+	line "באנרגיה! ספרי"
 	cont "לכולם!"
 	done
 
@@ -76,8 +76,8 @@ _Route11EndBattleText5::
 	prompt
 
 _Route11AfterBattleText5::
-	text "מה אתה רוצה?"
-	line "עזוב אותי!"
+	text "מה את רוצה?"
+	line "עזבי אותי!"
 	done
 
 _Route11BattleText6::
@@ -126,11 +126,11 @@ _Route11AfterBattleText8::
 	line "שיורד מההרים מדי"
 	cont "פעם."
 
-	para "הןא ממש חזק, אם"
-	line "תצליח לתפוס אותו."
+	para "הוא ממש חזק, אם"
+	line "תצליחי לתפוס אותו."
 	done
 
 _Route11BattleText9::
-	text "היזהר מחוטי חשמל"
+	text "היזהרי מחוטי חשמל"
 	line "חשופים!"
 	done

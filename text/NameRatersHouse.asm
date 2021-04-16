@@ -44,7 +44,7 @@ _NameRaterText_1dac7::
 
 _NameRaterText_1dacc::
 	text "בסדר! מוזמן לבוא"
-	line "מתי שתרצה!"
+	line "מתי שתרצי!"
 	done
 
 _NameRaterText_1dad1::

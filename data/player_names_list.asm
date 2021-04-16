@@ -3,7 +3,7 @@ DefaultNamesPlayerList:
 	db "שם חדש@"
 	db "אדום@"
 	db "אש@"
-	db "דוד@"
+	next "תמר"
 
 DefaultNamesRivalList:
 	db "שם חדש@"
@@ -16,8 +16,8 @@ IF DEF(_BLUE)
 DefaultNamesPlayerList:
 	db "שם חדש@"
 	db "כחול@"
-	db "יוסי@"
-	db "יובל@"
+	db "שרה@"
+	db "נועה@"
 
 DefaultNamesRivalList:
 	db "שם חדש@"

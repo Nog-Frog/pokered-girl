@@ -4,8 +4,8 @@ _ViridianCityText1::
 	cont "חגורתך! אם כן,"
 	cont "יש לך #ימונים."
 
-	para "זה נהדר שאתה"
-	line "יכול לסחוב אותם"
+	para "זה נהדר שאת"
+	line "יכולה לסחוב אותם"
 	cont "איתך ולהשתמש בהם"
 	cont "בכל זמן ומקום!"
 	done
@@ -57,7 +57,7 @@ _ViridianCityText_1917a::
 	done
 
 _ViridianCityText_19191::
-	text "אתה לא יכול לעבור"
+	text "את לא יכולה לעבור"
 	line "פה!"
 
 	para "זה שטח פרטי!"
@@ -76,12 +76,12 @@ _ViridianCityText_191ca::
 	cont "הזה?"
 
 	para "זה מפחיד!"
-	line "הנה, אתה יכול"
+	line "הנה, את יכולה"
 	cont "לקבל את המ”מ הזה."
 	prompt
 
 _ReceivedTM42Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "מ”מ24!@"
 	text_end
 
@@ -102,21 +102,21 @@ _ViridianCityText_1920a::
 	line "את הקפה שלי, ואני"
 	cont "מרגיש מצוין!"
 
-	para "כמובן שאתה יכול"
+	para "כמובן שאת יכולה"
 	line "לעבור כאן!"
 
-	para "אתה ממהר?"
+	para "את ממהרת?"
 	done
 
 _ViridianCityText_1920f::
-	text "אני רואה שאתה עושה"
+	text "אני רואה שאת עושה"
 	line "שימוש ב#ידע."
 
-	para "כשאתה תופס"
+	para "כשאת תופסת"
 	line "#ימון, ה#ידע"
 	cont "מתעדכן אוטומטית."
 
-	para "מה? אתה לא יודע"
+	para "מה? את לא יודעת"
 	line "איך תופסים"
 	cont "#ימון?"
 
@@ -126,13 +126,13 @@ _ViridianCityText_1920f::
 
 _ViridianCityText_19214::
 	text "זמן זה כסף..."
-	line "תמשיך ללכת."
+	line "תמשיכי ללכת."
 	done
 
 _ViridianCityText_19219::
-	text "בהתחלה, אתה צריך"
+	text "בהתחלה, את צריכה"
 	line "להחליש את"
-	cont "ה#ימון שאתה"
+	cont "ה#ימון שאת"
 	cont "מנסה לתפוס."
 	done
 
@@ -145,8 +145,8 @@ _ViridianCityText8::
 _ViridianCityText9::
 	text "טיפים למאמנים"
 
-	para "תפוס #ימונים"
-	line "והרחב את האוסף"
+	para "תפסי #ימונים"
+	line "והרחיבי את האוסף"
 	cont "שלך!"
 
 	para "ככל שיהיו לך יותר,"
@@ -164,7 +164,7 @@ _ViridianCityText10::
 	cont "נ”כ."
 
 	para "כדי לשחזר נ”כ,"
-	line "רפא את ה#ימון"
+	line "רפאי את ה#ימון"
 	cont "במרכז ה#ימונים!"
 	done
 

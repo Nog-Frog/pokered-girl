@@ -4,21 +4,21 @@ _SSAnne10Text8::
 	text_end
 
 _SSAnne10BattleText1::
-	text "אתה יודע מה"
+	text "את יודעת מה"
 	line "אומרים על"
 	cont "מלחים וקרבות!"
 	done
 
 _SSAnne10EndBattleText1::
 	text "נכון!"
-	line "אחלה קרב,"
+	line "אחלה קרב, חברונת!"
 	cont "חברצ'יק!"
 	prompt
 
 _SSAnne10AfterBattleText1::
 	text "האהא!"
-	line "רוצה להיות מלח,"
-	cont "חברצ'יק?"
+	line "רוצה להיות מלחית,"
+	cont "חברונת?"
 	done
 
 _SSAnne10BattleText2::
@@ -44,7 +44,7 @@ _SSAnne10BattleText3::
 
 _SSAnne10EndBattleText3::
 	text "בסדר, "
-	line "אתה לא רע."
+	line "את לא רעה."
 	prompt
 
 _SSAnne10AfterBattleText3::
@@ -64,21 +64,20 @@ _SSAnne10EndBattleText4::
 	prompt
 
 _SSAnne10AfterBattleText4::
-	text "#ימוני ים"
-	line "חיים במים"
-	cont "עמוקים! אתה"
-	cont "תצטרך חכה."
+	text "#ימוני ים חיים"
+	line "במים עמוקים! את"
+	cont "תצטרכי חכה."
 	done
 
 _SSAnne10BattleText5::
-	text "חברצ'יק, אתה"
-	line "תשחה עם כרישים"
-	cont "אם תפסיד!"
+	text "חברצ'יקית, את"
+	line "תשחי עם כרישים"
+	cont "אם תפסידי!"
 	done
 
 _SSAnne10EndBattleText5::
 	text "ארג!"
-	line "הפסדתי לילד!"
+	line "הפסדתי לילדה!"
 	prompt
 
 _SSAnne10AfterBattleText5::
@@ -89,7 +88,7 @@ _SSAnne10AfterBattleText5::
 
 _SSAnne10BattleText6::
 	text "שלום לך!"
-	line "עצור לפטפט!"
+	line "עצרי לפטפט!"
 
 	para "כל ה#ימונים שלי"
 	line "הם מהים!"
@@ -97,13 +96,13 @@ _SSAnne10BattleText6::
 
 _SSAnne10EndBattleText6::
 	text "אוף!"
-	line "איך נתתי לו"
+	line "איך נתתי לה"
 	cont "להתחמק!"
 	prompt
 
 _SSAnne10AfterBattleText6::
 	text "עמדתי להפוך"
-	line "גם אותך לעוזר"
+	line "גם אותך לעוזרת"
 	cont "שלי!"
 	done
 

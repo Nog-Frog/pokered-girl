@@ -8,7 +8,7 @@ _TM35PreReceiveText::
 	prompt
 
 _ReceivedTM35Text::
-	text "<PLAYER> קיבל "
+	text "<PLAYER> קיבלה "
 	line "@"
 	text_ram wcf4b
 	text "!@"

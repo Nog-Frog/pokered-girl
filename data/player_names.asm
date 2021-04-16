@@ -3,7 +3,7 @@ DefaultNamesPlayer:
 	db   "שם חדש"
 	next "אדום"
 	next "אש"
-	next "דוד"
+	next "תמר"
 	db   "@"
 
 DefaultNamesRival:
@@ -18,8 +18,8 @@ IF DEF(_BLUE)
 DefaultNamesPlayer:
 	db   "שם חדש"
 	next "כחול"
-	next "יוסי"
-	next "יובל"
+	next "שרה"
+	next "נועה"
 	db   "@"
 
 DefaultNamesRival:

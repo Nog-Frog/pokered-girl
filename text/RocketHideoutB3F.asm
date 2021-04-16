@@ -1,5 +1,5 @@
 _RocketHideout3BattleText2::
-	text "תפסיק להתערב"
+	text "תפסיקי להתערב"
 	line "בעניינים של"
 	cont "צוות רוקט!"
 	done
@@ -18,7 +18,7 @@ _RocketHideout3AfterBattleTxt2::
 
 _RocketHideout3BattleTxt::
 	text "קיבלנו מידע"
-	line "מהפיקוד שאמר שאתה"
+	line "מהפיקוד שאמר שאת"
 	cont "כאן!"
 	done
 
@@ -28,8 +28,8 @@ _RocketHideout3EndBattleText3::
 	prompt
 
 _RocketHide3AfterBattleText3::
-	text "קדימה, לך מכאן!"
-	line "אבל תצטרך את"
+	text "קדימה, לכי מכאן!"
+	line "אבל תצטרכי את"
 	cont "המפתח למעלית כדי"
 	cont "להפעיל אותה!"
 	done

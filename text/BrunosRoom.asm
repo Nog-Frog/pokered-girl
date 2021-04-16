@@ -28,11 +28,11 @@ _BrunoEndBattleText::
 
 _BrunoAfterBattleText::
 	text "אני גמרתי כאן!"
-	line "לך להתמודד עם"
+	line "לכי להתמודד עם"
 	cont "האתגר הבא!"
 	done
 
 _BrunoDontRunAwayText::
 	text "קול מוכר קורא:"
-	line "אל תיסוג!"
+	line "אל תיסגי!"
 	done

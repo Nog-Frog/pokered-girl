@@ -32,7 +32,7 @@ _CeladonCityText4::
 _TM41PreText::
 	text "שלום לך!"
 
-	para "ראיתי אותך חולף,"
+	para "ראיתי אותך חולפת,"
 	line "אבל מעולם לא היתה"
 	cont "לנו הזדמנות"
 	cont "לפטפט!"
@@ -43,7 +43,7 @@ _TM41PreText::
 	prompt
 
 _ReceivedTM41Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -81,12 +81,12 @@ _CeladonCityText7::
 	text_end
 
 _CeladonCityText8::
-	text "למה אתה מסתכל"
+	text "למה את מסתכלת"
 	line "עלי ככה?"
 	done
 
 _CeladonCityText9::
-	text "אל תעמוד בדרכם"
+	text "אל תעמדי בדרכם"
 	line "של צוות רוקט!"
 	done
 
@@ -102,7 +102,7 @@ _CeladonCityText10::
 	line "מגביר את הסבירות"
 	cont "של מכה הרסנית!"
 
-	para "קנה לך כאלה"
+	para "קני לך כאלה"
 	line "בכל-בו אביב!"
 	done
 
@@ -140,7 +140,7 @@ _CeladonCityText16::
 	cont "מיוחדות, כמו"
 	cont "אש ומים!"
 
-	para "קנה לך כאלה"
+	para "קני לך כאלה"
 	line "בכל-בו אביב!"
 	done
 

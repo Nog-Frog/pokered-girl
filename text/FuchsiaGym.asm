@@ -1,8 +1,8 @@
 _KogaBeforeBattleText::
 	text "צפע: פחהחהחהחה!"
 
-	para "ילדון קטן כמוך,"
-	line "מעז לאתגר..."
+	para "ילדונת קטנה כמוך,"
+	line "מעזה לאתגר..."
 	cont "אותי?"
 
 	para "בסדר גמור, אני"
@@ -12,16 +12,16 @@ _KogaBeforeBattleText::
 	cont "מסוגל להשרות"
 	cont "עליך!"
 
-	para "התכונן להרגיש את"
+	para "התכונני להרגיש את"
 	line "היאוש המחלחל של"
 	cont "מתקפות רעל ושינה!"
 	done
 
 _KogaAfterBattleText::
 	text "האמפף!"
-	line "הראית מה אתה"
+	line "הראית מה את"
 	cont "באמת שווה!"
 
-	para "הנה! קח את תג"
+	para "הנה! קחי את תג"
 	line "הלב!"
 	prompt

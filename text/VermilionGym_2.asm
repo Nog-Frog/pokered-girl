@@ -1,6 +1,6 @@
 _LTSurgePostBattleAdviceText::
 	text "עצה קטנה ממני,"
-	line "ילד!"
+	line "ילדה!"
 
 	para "מתקפות חשמל"
 	line "בהחלט עוצמתיות!"
@@ -17,14 +17,14 @@ _LTSurgeThunderbadgeInfoText::
 
 	para "הוא גם יאפשר"
 	line "ל#ימון שלך לעוף"
-	cont "בכל זמן, ילד!"
+	cont "בכל זמן, ילדה!"
 
-	para "אתה מיוחד,"
-	line "ילד! קח את זה!"
+	para "את מיוחדת,"
+	line "ילדה! קחי את זה!"
 	done
 
 _ReceivedTM24Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -36,22 +36,22 @@ _TM24ExplanationText::
 	para "מ”מ42 מכיל את"
 	line "המתקפה חזיז ורעם!"
 
-	para "למד #ימון חשמל"
+	para "למדי #ימון חשמל"
 	line "את המתקפה!"
 	done
 
 _TM24NoRoomText::
-	text "הי ילד, פנה מקום"
+	text "הי ילדה, פני מקום"
 	line "בתיק!"
 	done
 
 _ReceivedThunderbadgeText::
 	text "וואה!"
 
-	para "אתה יריב רציני,"
-	line "ילד!"
+	para "את יריבה רצינית,"
+	line "ילדה!"
 
-	para "בסדר, קח את"
+	para "בסדר, קחי את"
 	line "תג הרעם!"
 	prompt
 
@@ -63,7 +63,7 @@ _VermilionGymBattleText1::
 
 _VermilionGymEndBattleText1::
 	text "די!"
-	line "אתה טוב מאוד!"
+	line "את טובה מאוד!"
 	prompt
 
 _VermilionGymAfterBattleText1::
@@ -106,14 +106,14 @@ _VermilionGymAfterBattleText3::
 	line "שני מתגים לדלת!"
 	cont "הנה רמז!"
 
-	para "כשתמצא את המתג"
+	para "כשתמצאי את המתג"
 	line "הראשון, השני יהיה"
 	cont "בדיוק לידו!"
 	done
 
 _VermilionGymFanPreBattleText::
 	text "יו!"
-	line "אלופצ'יק!"
+	line "אלופצ'יקית!"
 
 	para "לסרן ברק יש"
 	line "כינוי. אנשים"
@@ -125,14 +125,14 @@ _VermilionGymFanPreBattleText::
 
 	para "#ימוני מים"
 	line "ותעופה נמצאים"
-	cont "בסכנה כאן! היזהר"
+	cont "בסכנה כאן! היזהרי"
 	cont "ממהלכי השיתוק"
 	cont "שלו!"
 
 	para "סרן ברק מאוד" 
 	line "זהיר!"
 
-	para "תצטרך לפצח את"
+	para "תצטרכי לפצח את"
 	line "את הקוד כדי"
 	cont "להגיע אליו!"
 	done

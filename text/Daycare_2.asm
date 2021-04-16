@@ -4,7 +4,7 @@ _DayCareAllRightThenText::
 	text_end
 
 _DayCareComeAgainText::
-	text "בוא שוב."
+	text "בואי שוב."
 	done
 
 _DayCareNoRoomForMonText::

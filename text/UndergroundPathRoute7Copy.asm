@@ -14,10 +14,10 @@ _UGPathRoute7EntranceUnusedText_5d778::
 	done
 
 _UGPathRoute7EntranceUnusedText_5d77d::
-	text "אתה פה כדי לקנות"
+	text "את פה כדי לקנות"
 	line "בעיר האביב?"
 
-	para "פשוט צא החוצה"
+	para "פשוט צאי החוצה"
 	line "והתקדם מערבה!"
 	done
 
@@ -27,7 +27,7 @@ _UGPathRoute7EntranceUnusedText_5d782::
 	cont "הזעפרן ומוביל"
 	cont "לעיר הלבנדר."
 
-	para "אם אתה רוצה להגיע"
+	para "אם את רוצה להגיע"
 	line "לעיר הטורקיז,"
 	cont "לך לבניין ממול."
 	done

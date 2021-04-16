@@ -55,7 +55,7 @@ _ItemUseBallText06::
 	text_end
 
 _SurfingGotOnText::
-	text "<PLAYER> עלה על"
+	text "<PLAYER> עלתה על"
 	line "@"
 	text_ram wcd6d
 	text "!"
@@ -79,12 +79,12 @@ _VitaminNoEffectText::
 	prompt
 
 _ThrewBaitText::
-	text "<PLAYER> זרק"
+	text "<PLAYER> זרקה"
 	line "קצת אוכל."
 	done
 
 _ThrewRockText::
-	text "<PLAYER> זרק אבן."
+	text "<PLAYER> זרקה אבן."
 	done
 
 _PlayedFluteNoEffectText::
@@ -188,7 +188,7 @@ _ItemUseNotTimeText::
 	prompt
 
 _ItemUseNotYoursToUseText::
-	text "אל תשתמש במה"
+	text "אל תשתמשי במה"
 	line "שלא שלך!"
 	prompt
 
@@ -207,7 +207,7 @@ _FemaleThrowBallAtTrainerMonText1::
 	prompt
 
 _ThrowBallAtTrainerMonText2::
-	text "אל תהיה גנב!"
+	text "אל תהיי גנבת!"
 	prompt
 
 _NoCyclingAllowedHereText::
@@ -223,7 +223,7 @@ _NoSurfingHereText::
 	prompt
 
 _BoxFullCannotThrowBallText::
-	text "אתה לא יכול"
+	text "את לא יכולה"
 	line "להשתמש בפריט הזה"
 	cont "כי התא במחשב מלא!"
 	prompt

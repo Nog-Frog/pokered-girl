@@ -1,5 +1,5 @@
 _ViridianPokeCenterText2::
-	text "אתה יכול להשתמש"
+	text "את יכולה להשתמש"
 	line "במחשב שם בפינה."
 
 	para "פקידת הקבלה"

@@ -1,5 +1,5 @@
 _Mansion1BattleText2::
-	text "מי אתה? לא אמור"
+	text "מי את? לא אמור"
 	line "להיות פה אף אחד."
 	done
 
@@ -9,7 +9,7 @@ _Mansion1EndBattleText2::
 
 _Mansion1AfterBattleText2::
 	text "מפתח? אין לי מושג"
-	line "על מה אתה מדבר."
+	line "על מה את מדברת."
 	done
 
 _MansionSwitchText::

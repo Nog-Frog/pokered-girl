@@ -23,8 +23,8 @@ _Mansion3EndBattleText2::
 	prompt
 
 _Mansion3AfterBattleText2::
-	text "אז, אתה תקוע?"
-	line "נסה לקפוץ למטה"
+	text "אז, את תקועה?"
+	line "נסי לקפוץ למטה"
 	cont "משם!"
 	done
 

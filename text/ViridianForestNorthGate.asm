@@ -3,7 +3,7 @@ _ViridianForestExitText1::
 	line "חיים רק ביערות"
 	cont "ובמערות."
 
-	para "אתה צריך לחפש"
+	para "את צריכה לחפש"
 	line "בכל מקום"
 	cont "כדי למצוא סוגים"
 	cont "שונים."

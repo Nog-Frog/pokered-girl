@@ -58,19 +58,19 @@ _PokeCenterSignText::
 	done
 
 _FoundItemText::
-	text "<PLAYER> מצא"
+	text "<PLAYER> מצאה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
 	text_end
 
 _NoMoreRoomForItemText::
-	text "אתה לא יכול לסחוב"
+	text "את לא יכולה לסחוב"
 	line "עוד פריטים!"
 	done
 
 _OaksAideHiText::
-	text "היי! זוכר אותי?"
+	text "היי! זוכרת אותי?"
 	line "אני העוזר של"
 	cont "פרופ' אלון!"
 
@@ -93,14 +93,14 @@ _OaksAideHiText::
 	done
 
 _OaksAideUhOhText::
-	text "בוא נראה..."
+	text "בואי נראה..."
 	line "אוי לא! נראה"
 	cont "שתפסת רק @"
 	text_decimal hOaksAideNumMonsOwned, 1, 3
 	text ""
 	cont "סוגי #ימון!"
 
-	para "תצטרך לתפוס @"
+	para "תצטרכי לתפוס @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text ""
 	line "סוגים כדי לקבל את"
@@ -112,10 +112,10 @@ _OaksAideUhOhText::
 _OaksAideComeBackText::
 	text "המ. טוב, לא נורא."
 
-	para "כשתשיג @"
+	para "כשתשיגי @"
 	text_decimal hOaksAideRequirement, 1, 3
 	text ""
-	line "סוגים, בוא לדבר"
+	line "סוגים, בואי לדבר"
 	cont "איתי ואתן לך"
 	cont "@"
 	text_ram wOaksAideRewardItemName
@@ -134,7 +134,7 @@ _OaksAideHereYouGoText::
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> קיבל את"
+	text "<PLAYER> קיבלה את"
 	line "ה@"
 	text_ram wOaksAideRewardItemName
 	text "!@"

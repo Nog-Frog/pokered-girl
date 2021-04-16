@@ -9,13 +9,13 @@ _Route16GateUpstairsText_4982f::
 	done
 
 _Route16GateUpstairsText_4983b::
-	text "מביט דרך המשקפת."
+	text "מביטה דרך המשקפת."
 
 	para "זה כל-בו אביב!"
 	done
 
 _Route16GateUpstairsText_49847::
-	text "מביט דרך המשקפת."
+	text "מביטה דרך המשקפת."
 
 	para "זה שביל ארוך שעובר"
 	line "מעל מים!"

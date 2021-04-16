@@ -5,7 +5,7 @@ _FuchsiaHouse3Text_561bd::
 	para "אני אוההההב"
 	line "לדוג!"
 
-	para "גם אתה אוהב לדוג?"
+	para "גם את אוהבת לדוג?"
 	done
 
 _FuchsiaHouse3Text_561c2::
@@ -13,10 +13,10 @@ _FuchsiaHouse3Text_561c2::
 	line "אוהב את"
 	cont "הסגנון שלך!"
 
-	para "קח את זה"
-	line "וצא לדוג, חבוב!"
+	para "קחי את זה"
+	line "וצאי לדוג, חבובה!"
 
-	para "<PLAYER> קיבל"
+	para "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"

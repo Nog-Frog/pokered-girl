@@ -4,12 +4,12 @@ _SilphCo10Text_5a1d3::
 	done
 
 _SilphCo10Text_5a1d8::
-	text "בבקשה אל תספר"
+	text "בבקשה אל תספרי"
 	line "לאף אחד שבכיתי!"
 	done
 
 _SilphCo10BattleText1::
-	text "ברוך הבא לקומה"
+	text "ברוכה הבאה לקומה"
 	line "העשירית! כמה נחמד"
 	cont "מצידך שהצטרפת"
 	cont "אלי כאן!"
@@ -37,7 +37,7 @@ _SilphCo10EndBattleText2::
 	prompt
 
 _SilphCo10AfterBattleText2::
-	text "אתה מרוצה עכשיו"
+	text "את מרוצה עכשיו"
 	line "כשהבסת אותי!"
-	cont "אז הסתלק לך!"
+	cont "אז הסתלקי לך!"
 	done

@@ -9,19 +9,19 @@ _MtMoon3Text_49f64::
 	done
 
 _MtMoon3Text_49f6f::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
 	text_end
 
 _MtMoon3Text_49f7f::
-	text "תראה, אין לך מקום"
+	text "תראי, אין לך מקום"
 	line "בשביל זה.@"
 	text_end
 
 _MtMoon3Text_49f85::
-	text "היי, עצור!"
+	text "היי, עצרי!"
 
 	para "אני מצאתי את"
 	line "המאובנים האלו! הם"
@@ -67,7 +67,7 @@ _MtMoon3EndBattleText2::
 	prompt
 
 _MtMoon3AfterBattleText2::
-	text "אתה עיצבנת אותי!"
+	text "את עיצבנת אותי!"
 	line "צוות רוקט יכניס"
 	cont "אותך לרשימה"
 	cont "השחורה!"
@@ -92,17 +92,17 @@ _MtMoon3AfterBattleText3::
 _MtMoon3BattleText4::
 	text "אנחנו מרימים פה"
 	line "עסק גדול!"
-	cont "לך לעזאזל, ילדוו!"
+	cont "לכי לעזאזל, ילדונת!"
 	done
 
 _MtMoon3EndBattleText4::
-	text "אז, אתה טוב."
+	text "אז, את טובה."
 	prompt
 
 _MtMoon3AfterBattleText4::
-	text "אם אתה מוצא מאובן"
-	line "תן לי אותו"
-	cont "ותתחפף!"
+	text "אם את מוצאת מאובן"
+	line "תני לי אותו"
+	cont "ות'חפפי!"
 	done
 
 _MtMoon3BattleText5::

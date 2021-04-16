@@ -13,14 +13,14 @@ _SilphCoPresidentText::
 	para "מכיוון שאני עשיר,"
 	line "אני יכול להעניק"
 	cont "לך כל מה שרק"
-	cont "תרצה!"
+	cont "תרצי!"
 
 	para "הנה, אולי זה"
 	line "יתאים!"
 	prompt
 
 _ReceivedSilphCoMasterBallText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -39,7 +39,7 @@ _SilphCo10Text_6231c::
 	line "#ימון בלי יוצא"
 	cont "מן הכלל!"
 
-	para "שמור אותו בסוד."
+	para "שמרי אותו בסוד."
 	done
 
 _SilphCoMasterBallNoRoomText::
@@ -64,11 +64,11 @@ _SilphCo11Text3::
 	line "בהצעה עסקית"
 	cont "חשובה."
 
-	para "אל תדחף את האף"
+	para "אל תדחפי את האף"
 	line "שלך לענייני"
 	cont "מבוגרים..."
 
-	para "אחרת, התכונן"
+	para "אחרת, התכונני"
 	line "לסבול!"
 	done
 
@@ -86,7 +86,7 @@ _SilphCo10Text_62335::
 	para "אך צוות רוקט"
 	line "לעולם לא ייפול!"
 
-	para "<PLAYER>! אל תשכח"
+	para "<PLAYER>! אל תשכחי"
 	line "לעולם - כל"
 	cont "ה#ימונים קיימים"
 	cont "בשביל צוות"
@@ -97,8 +97,8 @@ _SilphCo10Text_62335::
 	done
 
 _SilphCo11BattleText1::
-	text "עצור מיד!"
-	line "אל תזוז!"
+	text "עצרי מיד!"
+	line "אל תזוזי!"
 	done
 
 _SilphCo11EndBattleText1::
@@ -107,12 +107,12 @@ _SilphCo11EndBattleText1::
 	prompt
 
 _SilphCo11AfterBattleText1::
-	text "אז, אתה רוצה לפגוש"
+	text "אז, את רוצה לפגוש"
 	line "את הבוס שלי?"
 	done
 
 _SilphCo11BattleText2::
-	text "עצור! קבעת פגישה"
+	text "עצרי! קבעת פגישה"
 	line "עם הבוס שלי?"
 	done
 
@@ -122,7 +122,7 @@ _SilphCo11EndBattleText2::
 	prompt
 
 _SilphCo11AfterBattleText2::
-	text "תיזהר, הבוס שלי"
+	text "תזהרי, הבוס שלי"
 	line "אוהב #ימונים"
 	cont "קשוחים!"
 	done

@@ -1,6 +1,6 @@
 _VictoryRoad1BattleText1::
 	text "אני אתפלא אם"
-	line "אתה מספיק חזק"
+	line "את מספיק חזקה"
 	cont "להילחם מולי!"
 	done
 
@@ -15,8 +15,8 @@ _VictoryRoad1AfterBattleText1::
 	done
 
 _VictoryRoad1BattleText2::
-	text "אני רואה שאתה טוב"
-	line "אבל בוא נראה עד"
+	text "אני רואה שאת טובה"
+	line "אבל בואי נראה עד"
 	cont "כמה!"
 	done
 
@@ -27,7 +27,7 @@ _VictoryRoad1EndBattleText2::
 
 _VictoryRoad1AfterBattleText2::
 	text "אני מודה,"
-	line "אתה טוב יותר"
+	line "את טובה יותר"
 	cont "ממני!"
 	done
 

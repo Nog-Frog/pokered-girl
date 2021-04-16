@@ -14,7 +14,7 @@ _PokemonTower4AfterBattleText1::
 
 _PokemonTower4BattleText2::
 	text "אני אטיל"
-	line "עליך קללה!"
+	line "עלייך קללה!"
 	cont "וואההה!"
 	done
 
@@ -30,7 +30,7 @@ _PokemonTower4AfterBattleText2::
 
 _PokemonTower4BattleText3::
 	text "הוהוהו..."
-	line "לא תביס אותי!"
+	line "לא תביסי אותי!"
 	done
 
 _PokemonTower4EndBattleText3::

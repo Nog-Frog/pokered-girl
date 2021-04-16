@@ -31,18 +31,18 @@ _WardenTeethText2::
 	prompt
 
 _WardenThankYouText::
-	text "פקח: תודה, ילד!"
+	text "פקח: תודה, ילדה!"
 	line "אף אחד לא הבין"
 	cont "אף מילה שאמרתי."
 
 	para "לא יכולתי לעבוד"
-	line "ככה. הרשה לי"
+	line "ככה. הרשי לי"
 	cont "להעניק לך משהו"
 	cont "עבור הטרחה."
 	prompt
 
 _ReceivedHM04Text::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcf4b
 	text "!@"
@@ -54,14 +54,14 @@ _HM04ExplanationText::
 
 	para "זה מאפשר ל#ימון"
 	line "להזיז סלעים"
-	cont "כאשר אתה"
+	cont "כאשר את"
 	cont "מחוץ לקרב."
 
 	para "אה כן, מצאת את"
 	line "הביתן הסודי באזור"
 	cont "הספארי?"
 
-	para "אם אתה מוצא, אתה"
+	para "אם את מוצאת, את"
 	line "זוכה במ”נ!"
 
 	para "השמועה אומרת שזה"

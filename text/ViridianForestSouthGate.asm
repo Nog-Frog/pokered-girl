@@ -1,7 +1,7 @@
 _ViridianForestEntranceText1::
-	text "אתה הולך"
+	text "את הולכת"
 	line "ליער ירוק-עד?"
-	cont "תיזהר, היער הזה"
+	cont "תיזהרי, היער הזה"
 	cont "הוא ממש מבוך!"
 	done
 

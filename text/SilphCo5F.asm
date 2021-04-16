@@ -1,20 +1,20 @@
 _SilphCo5Text_1a010::
 	text "צוות רוקט"
-	line "נסערים בגלל איזה"
-	cont "פולש. זה אתה,"
+	line "נסערים בגלל איזו"
+	cont "פולשת. זו את,"
 	cont "נכון?"
 	done
 
 _SilphCo5Text_1a015::
 	text "צוות רוקט"
-	line "הסתלקו! אתה"
-	cont "הגיבור שלנו!"
+	line "הסתלקו! את"
+	cont "הגיבורה שלנו!"
 	cont "תודה!"
 	done
 
 _SilphCo5BattleText2::
-	text "שמעתי שיש ילד"
-	line "שמשוטט כאן."
+	text "שמעתי שיש ילדה"
+	line "שמשוטטת כאן."
 	done
 
 _SilphCo5EndBattleText2::

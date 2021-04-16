@@ -1,10 +1,10 @@
 _MeetLaprasGuyText::
-	text "אה! היי! אתה לא"
+	text "אה! היי! את לא"
 	line "לא מצוות רוקט!"
 	cont "הגעת להציל אותנו?"
 	cont "ואו, תודה לך!"
 
-	para "אני רוצה שתיקח את"
+	para "אני רוצה שתקחי את"
 	line "ה#ימון הזה,"
 	cont "כאות הוקרה על"
 	cont "שהצלת אותנו."
@@ -18,8 +18,8 @@ _HeresYourLaprasText::
 	line "אבל יהיה לו הרבה"
 	cont "יותר טוב לצידך!"
 
-	para "אני חושב שאתה"
-	line "תהיה מאמן מצוין"
+	para "אני חושב שאת"
+	line "תהיי מאמנת מצוינת"
 	cont "לתכוגית!"
 
 	para "הוא שחיין מצוין"
@@ -61,17 +61,16 @@ _SilphCo7Text_51e23::
 	done
 
 _SilphCo7Text_51e28::
-	text "ואו! אתה רדפת"
+	text "ואו! את רדפת"
 	line "אחרי צוות רוקט"
 	cont "בכוחות עצמך?"
 	done
 
 _SilphCo7Text_51e46::
-	text "אתה! מסוכן מאוד"
+	text "את! מסוכן מאוד"
 	line "להסתובב כאן!"
-	cont "הגעת כדי להציל "
-	cont "אותי? אתה לא"
-	cont "יכול!"
+	cont "הגעת להציל אותי?"
+	cont "את לא יכולה!"
 	done
 
 _SilphCo7Text_51e4b::
@@ -81,18 +80,17 @@ _SilphCo7Text_51e4b::
 
 _SilphCo7BattleText1::
 	text "הו לא! אני מריח"
-	line "כאן מסתנן קטן!"
+	line "כאן מסתננת קטנה!"
 	done
 
 _SilphCo7EndBattleText1::
 	text "כיבוי"
 	line "אורות!" 
 	prompt
-
 _SilphCo7AfterBattleText1::
-	text "אתה לא תמצא את"
+	text "את לא תמצאי את"
 	line "הבוס אם רק"
-	cont "תתרוצץ כאן מסביב!"
+	cont "תתרוצצי מסביב!"
 	done
 
 _SilphCo7BattleText2::
@@ -109,7 +107,7 @@ _SilphCo7EndBattleText2::
 
 _SilphCo7AfterBattleText2::
 	text "למרות גילך הצעיר,"
-	line "אתה מאמן מיומן"
+	line "את מאמנת מיומנת"
 	cont "מאוד!"
 	done
 
@@ -130,8 +128,8 @@ _SilphCo7AfterBattleText3::
 	done
 
 _SilphCo7BattleText4::
-	text "מסיג גבול קטן?"
-	line "זה בטח אתה!"
+	text "מסיגת גבול קטנה?"
+	line "זו בטח את!"
 	done
 
 _SilphCo7EndBattleText4::
@@ -140,7 +138,7 @@ _SilphCo7EndBattleText4::
 	prompt
 
 _SilphCo7AfterBattleText4::
-	text "לך הביתה ילד"
+	text "לכי הביתה ילדה"
 	line "לפני שהבוס"
 	cont "יתעצבן מאוד!"
 	done
@@ -153,7 +151,7 @@ _SilphCo7Text_51ebe::
 
 _SilphCo7Text_51ec3::
 	text "<RIVAL>: חה חה חה!"
-	line "הנחתי שתגיע"
+	line "הנחתי שתגיעי"
 	cont "אם אני רק"
 	cont "אחכה כאן!"
 
@@ -169,16 +167,16 @@ _SilphCo7Text_51ec3::
 
 _SilphCo7Text_51ec8::
 	text "הו לא!"
-	line "אז נראה שאתה מוכן"
+	line "אז נראה שאת מוכנה"
 	cont "לקרב מול הבוס!"
 	prompt
 
 _SilphCo7Text_51ecd::
-	text "<RIVAL>: איך לספר"
+	text "<RIVAL>: איך לומר"
 	line "לך את זה..."
 
-	para "אתה לא מספיק"
-	line "חזק כדי לשחק"
+	para "את לא מספיק"
+	line "חזקה כדי לשחק"
 	cont "עם הגדולים!"
 	prompt
 
@@ -204,7 +202,7 @@ _SilphCo7Text_51ed2::
 	cont "החזק בעולם!"
 
 	para "<PLAYER>, טוב"
-	line "בהצלחה לך! תיזהר"
+	line "בהצלחה לך! תיזהרי"
 	cont "לא להזיע מהלחץ"
 	cont "ולהחליק בדרך לשם!"
 	done

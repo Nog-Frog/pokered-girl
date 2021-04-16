@@ -1,7 +1,7 @@
 _FuchsiaCityText1::
 	text "ניסית את"
 	line "משחק הספארי?"
-	cont "יש #ימונים"
+	cont "יש #ימונים שתוכלי"
 	cont "שאפשר לתפוס רק"
 	cont "שם."
 	done

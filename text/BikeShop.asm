@@ -1,5 +1,5 @@
 _BikeShopText_1d810::
-	text "שלום! ברוך הבא"
+	text "שלום! ברוכה הבאה"
 	line "לחנות האופניים."
 
 	para "יש לנו זוג"
@@ -9,7 +9,7 @@ _BikeShopText_1d810::
 
 _BikeShopText_1d815::
 	text "אלה אופניים"
-	line "שווים! אתה רוצה?"
+	line "שווים! את רוצה?"
 	done
 
 _BikeShopCantAffordText::
@@ -38,17 +38,17 @@ _BikeShopComeAgainText::
 	done
 
 _BikeShopText_1d82f::
-	text "אתה נהנה מהאופניים"
+	text "את נהנהת מהאופניים"
 	line "החדשים שלך?"
 
-	para "אתה יכול לרכב"
+	para "את יכולה  לרכב"
 	line "עליהם גם בשביל"
 	cont "האופניים או בתוך"
 	cont "מערות!"
 	done
 
 _BikeShopText_1d834::
-	text "כדאי שתפנה קצת"
+	text "כדאי שתפני קצת"
 	line "מקום בשביל זה!"
 	done
 

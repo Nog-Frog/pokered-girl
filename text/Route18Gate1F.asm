@@ -6,9 +6,9 @@ _Route18GateText_49928::
 
 _Route18GateText_4992d::
 	text "שביל האופניים הוא"
-	line "ישר בעליה מכאן."
+	line "ישר בעלייה מכאן."
 	done
 
 _Route18GateText_49932::
-	text "סלח לי!"
+	text "סלחי לי!"
 	done

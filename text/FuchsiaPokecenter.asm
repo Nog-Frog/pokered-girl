@@ -2,8 +2,8 @@ _FuchsiaPokecenterText1::
 	text "אי אפשר לנצח רק עם"
 	line "#ימון אחד חזק."
 
-	para "זה קשה, אבל אתה"
-	line "חייב לגדל אותם"
+	para "זה קשה, אבל את"
+	line "חייבת לגדל אותם"
 	cont "באופן שווה."
 	done
 

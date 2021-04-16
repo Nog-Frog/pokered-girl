@@ -18,7 +18,7 @@ _Route20BattleText2::
 	done
 
 _Route20EndBattleText2::
-	text "תפסיק!"
+	text "תפסיקי!"
 	prompt
 
 _Route20AfterBattleText2::
@@ -41,7 +41,7 @@ _Route20AfterBattleText3::
 	done
 
 _Route20BattleText4::
-	text "גם אתה כאן בחופשה?"
+	text "גם את כאן בחופשה?"
 	done
 
 _Route20EndBattleText4::
@@ -55,12 +55,12 @@ _Route20AfterBattleText4::
 	done
 
 _Route20BattleText5::
-	text "קלוט ת'שרירים"
+	text "קלטי ת'שרירים"
 	line "שלי!"
 	done
 
 _Route20EndBattleText5::
-	text "חלשלוש!"
+	text "חלשלושה!"
 	prompt
 
 _Route20AfterBattleText5::
@@ -70,9 +70,9 @@ _Route20AfterBattleText5::
 	done
 
 _Route20BattleText6::
-	text "למה אתה רוכב"
+	text "למה את רוכבת"
 	line "על #ימון?"
-	cont "אתה לא יודע"
+	cont "את לא יודעת"
 	cont "לשחות?"
 	done
 
@@ -109,12 +109,12 @@ _Route20BattleText8::
 	done
 
 _Route20EndBattleText8::
-	text "שלא תעז"
+	text "שלא תעזי"
 	line "לגעת בפנינים שלי!"
 	prompt
 
 _Route20AfterBattleText8::
-	text "אתה חושב שהפנינים"
+	text "את חושבת שהפנינים"
 	line "שלי יגדלו בתוך"
 	cont "מבוצדף?"
 	done
@@ -143,7 +143,7 @@ _Route20BattleText10::
 	done
 
 _Route20EndBattleText10::
-	text "חכה!"
+	text "חכי!"
 	prompt
 
 _Route20AfterBattleText10::

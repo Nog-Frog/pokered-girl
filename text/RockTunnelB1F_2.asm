@@ -2,7 +2,7 @@ _RockTunnel2AfterBattleText8::
 	text "אני אאמן את"
 	line "ה#ימונים שלי"
 	cont "כדי שינצחו את"
-	cont "שלך, ילד!"
+	cont "שלך, ילדה!"
 	done
 
 _RockTunnel2BattleText9::

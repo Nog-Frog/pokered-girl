@@ -2,12 +2,12 @@ _SaffronGateText_1dfe7::
 	text "אני בשמירה."
 	line "יואו, אני צמא!"
 
-	para "היי חכה שם,"
+	para "היי חכי שם,"
 	line "הכניסה סגורה."
 	done
 
 _SaffronGateText_8aaa9::
-	text "וואי אחי!"
+	text "וואי אחותי!"
 	line "אני מיובש!"
 	cont "..."
 	cont "הא? אני יכול"
@@ -22,10 +22,10 @@ _SaffronGateText_1dff1::
 	line "גלאג גלאג..."
 	cont "..."
 	cont "גולפ..."
-	cont "אם אתה רוצה להגיע"
+	cont "אם את רוצה להגיע"
 	cont "לעיר הזעפרן..."
 	cont "..."
-	cont "אתה יכול לעבור."
+	cont "את יכולה לעבור."
 	cont "אני אעדכן את שאר"
 	cont "השומרים!"
 	done

@@ -1,5 +1,5 @@
 _ItemUseText001::
-	text "<PLAYER> השתמש@"
+	text "<PLAYER> השתמשה@"
 	text_end
 
 _ItemUseText002::
@@ -9,7 +9,7 @@ _ItemUseText002::
 	done
 
 _GotOnBicycleText1::
-	text "<PLAYER> עלה על@"
+	text "<PLAYER> עלתה על@"
 	text_end
 
 _GotOnBicycleText2::
@@ -19,7 +19,7 @@ _GotOnBicycleText2::
 	prompt
 
 _GotOffBicycleText1::
-	text "<PLAYER> ירד@"
+	text "<PLAYER> ירדה@"
 	text_end
 
 _GotOffBicycleText2::
@@ -36,7 +36,7 @@ _ThrewAwayItemText::
 	prompt
 
 _IsItOKToTossItemText::
-	text "אתה בטוח שאתה"
+	text "את בטוחה שאת"
 	line "רוצה לזרוק את"
 	cont "ה@"
 	text_ram wcf4b
@@ -97,8 +97,8 @@ _WrongMon1Text::
 	text_ram wInGameTradeGiveMonName
 	text "!"
 
-	para "אם אתה משיג אחד,"
-	line "חזור לכאן!"
+	para "אם את משיגה אחד,"
+	line "חזרי לכאן!"
 	done
 
 _Thanks1Text::
@@ -106,7 +106,7 @@ _Thanks1Text::
 	done
 
 _AfterTrade1Text::
-	text "איך אתה מסתדר עם"
+	text "איך את מסתדרת עם"
 	line "ה@"
 	text_ram wInGameTradeReceiveMonName
 	text ""
@@ -114,8 +114,8 @@ _AfterTrade1Text::
 	done
 
 _WannaTrade2Text::
-	text "שלום לך! אתה"
-	line "מעוניין במקרה"
+	text "שלום לך! את"
+	line "מעוניינת במקרה"
 	cont "להחליף את"
 	para "ה@"
 	text_ram wInGameTradeGiveMonName
@@ -136,8 +136,8 @@ _WrongMon2Text::
 	text_ram wInGameTradeGiveMonName
 	text "."
 
-	para "כשתתפוס אחד,"
-	line "זכור לחזור"
+	para "כשתתפסי אחד,"
+	line "זכרי לחזור"
 	cont "ולהחליף אותו."
 	done
 
@@ -176,12 +176,12 @@ _WrongMon3Text::
 	text_ram wInGameTradeGiveMonName
 	text "."
 
-	para "אם אתה תופס אחד,"
-	line "בוא להחליף אותו!"
+	para "אם את תופסת אחד,"
+	line "בואי להחליף אותו!"
 	done
 
 _Thanks3Text::
-	text "תודה חבר!"
+	text "תודה חברה!"
 	done
 
 _AfterTrade3Text::

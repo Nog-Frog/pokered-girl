@@ -19,8 +19,8 @@ _CeruleanHouse2Text_74e7c::
 	done
 
 _CeruleanHouse2Text_74e81::
-	text "חזור לבקר מתי"
-	line "שתרצה."
+	text "חזרי לבקר מתי"
+	line "שתרצי."
 	done
 
 _CeruleanHouse2Text_74e96::
@@ -30,7 +30,7 @@ _CeruleanHouse2Text_74e96::
 
 	para "בנוסף, התג יאפשר"
 	line "לך להשתמש במהלך"
-	cont "הבזק מתי שתרצה."
+	cont "הבזק מתי שתרצי."
 	prompt
 
 _CeruleanHouse2Text_74e9b::
@@ -38,7 +38,7 @@ _CeruleanHouse2Text_74e9b::
 	line "03 יצייתו לך."
 
 	para "מרמה 03 ומעלה"
-	line "לא תוכל להשתלט"
+	line "לא תוכלי להשתלט"
 	cont "עליהם!"
 
 	para "בנוסף, התג יאפשר"
@@ -54,7 +54,7 @@ _CeruleanHouse2Text_74ea0::
 
 	para "בנוסף, התג יאפשר"
 	line "לך להשתמש במהלך"
-	cont "תעופה מתי שתרצה."
+	cont "תעופה מתי שתרצי."
 	prompt
 
 _CeruleanHouse2Text_74ea5::
@@ -62,7 +62,7 @@ _CeruleanHouse2Text_74ea5::
 	line "05 יצייתו לך."
 
 	para "מרמה 05 ומעלה"
-	line "לא תוכל להשתלט"
+	line "לא תוכלי להשתלט"
 	cont "עליהם!"
 
 	para "בנוסף, התג יאפשר"
@@ -87,7 +87,7 @@ _CeruleanHouse2Text_74eaf::
 	line "07 יצייתו לך."
 
 	para "מרמה 07 ומעלה"
-	line "לא תוכל להשתלט"
+	line "לא תוכלי להשתלט"
 	cont "עליהם!"
 	prompt
 

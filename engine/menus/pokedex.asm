@@ -384,7 +384,7 @@ PokedexMenuItemsText:
 	db   "מידע"
 	next "צליל"
 	next "מקום"
-	next "בטל@"
+	next "ביטול@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:

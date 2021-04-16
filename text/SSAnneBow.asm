@@ -25,18 +25,18 @@ _SSAnne5BattleText1::
 	done
 
 _SSAnne5EndBattleText1::
-	text "אתה"
+	text "את"
 	line "מרשים!"
 	prompt
 
 _SSAnne5AfterBattleText1::
 	text "כמה סוגים שונים"
-	line "של #ימונים אתה"
+	line "של #ימונים את"
 	cont "חושב שיש?"
 	done
 
 _SSAnne5BattleText2::
-	text "אהוי! אתה!"
+	text "אהוי! את!"
 	line "יש לך מחלת ים?"
 	done
 

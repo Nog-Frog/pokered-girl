@@ -1,7 +1,7 @@
 _MtMoon1BattleText2::
 	text "וואו! הבהלת"
-	line "אותי! אה, אתה!"
-	cont "בסך הכל ילד!"
+	line "אותי! אה, את!"
+	cont "בסך הכל ילדה!"
 	done
 
 _MtMoon1EndBattleText2::
@@ -15,7 +15,7 @@ _MtMoon1AfterBattleText2::
 	done
 
 _MtMoon1BattleText3::
-	text "גם אתה פה"
+	text "גם את פה"
 	line "כדי לחקור?"
 	done
 
@@ -46,7 +46,7 @@ _MtMoon1AfterBattleText4::
 	done
 
 _MtMoon1BattleText5::
-	text "מה! אל תתגנב!"
+	text "מה! אל תתגנבי!"
 	line "מאחורי!"
 	done
 
@@ -76,9 +76,9 @@ _MtMoon1AfterBattleText6::
 	done
 
 _MtMoon1BattleText7::
-	text "יש גברים חשודים"
+	text "יש אנשים חשודים"
 	line "בתוך המערה."
-	cont "מה אתה?"
+	cont "מה את?"
 	done
 
 _MtMoon1EndBattleText7::
@@ -93,7 +93,7 @@ _MtMoon1AfterBattleText7::
 	done
 
 _MtMoon1BattleText8::
-	text "עבור דרך המערה"
+	text "עברי דרך המערה"
 	line "כדי להגיע"
 	cont "לעיר הטורקיז!"
 	done
@@ -107,10 +107,10 @@ _MtMoon1AfterBattleText8::
 	text "אצלף הוא #ימון"
 	line "קשוח! אבל הוא"
 	cont "יכול להיות שימושי"
-	cont "אם תתפוס אחד."
+	cont "אם תתפסי אחד."
 	done
 
 _MtMoon1Text14::
-	text "היזהר! האצלף"
+	text "היזהרי! האצלף"
 	line "מוצץ דם!"
 	done

@@ -1,12 +1,12 @@
 _TM29PreReceiveText::
-	text "חכה! אל"
-	line "תגיד מילה..."
+	text "חכי! אל"
+	line "תגידי מילה..."
 
-	para "אתה רצית בזה!"
+	para "את רצית בזה!"
 	prompt
 
 _ReceivedTM29Text::
-	text "קיבל את <PLAYER>"
+	text "קיבלה את <PLAYER>"
 	line "@"
 	text_ram wcf4b
 	text "!@"

@@ -12,7 +12,7 @@ _PokemonTower2Text_60c24::
 	done
 
 _PokemonTower6BattleText1::
-	text "תן...לי..."
+	text "תני...לי..."
 	line "דם..."
 	done
 
@@ -36,7 +36,7 @@ _PokemonTower6EndBattleText2::
 
 _PokemonTower6AfterBattleText2::
 	text "זה לא ריח רע"
-	line "שהתנדף! זו היתה"
+	line "שהתנדף! זו הייתה"
 	cont "הרוח הרעה!"
 	done
 

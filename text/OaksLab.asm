@@ -9,7 +9,7 @@ _OaksLabText40::
 	line "אני לא חמדן"
 	cont "כמוך!"
 
-	para "נו, תבחר כבר,"
+	para "נו, תבחרי כבר,"
 	line "<PLAYER>!"
 	done
 
@@ -25,19 +25,19 @@ _OaksLabText39::
 	done
 
 _OaksLabCharmanderText::
-	text "אז אתה רוצה את"
+	text "אז את רוצה את"
 	line "#ימון האש,"
 	cont "גחומט?" 
 	done
 
 _OaksLabSquirtleText::
-	text "אז אתה רוצה את"
+	text "אז את רוצה את"
 	line "#ימון המים,"
 	cont "שפריצב?" 
 	done
 
 _OaksLabBulbasaurText::
-	text "אז אתה רוצה את"
+	text "אז את רוצה את"
 	line "#ימון הדשא,"
 	cont "מוזרע?" 
 	done
@@ -48,7 +48,7 @@ _OaksLabMonEnergeticText::
 	prompt
 
 _OaksLabReceivedMonText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "@"
 	text_ram wcd6d
 	text "!@"
@@ -61,21 +61,21 @@ _OaksLabLastMonText::
 
 _OaksLabText_1d2f0::
 	text "אלון: אז <PLAYER>,"
-	line "איזה #ימון אתה"
+	line "איזה #ימון את"
 	cont "רוצה?"
 	done
 
 _OaksLabText_1d2f5::
 	text "אלון: אם #ימון"
 	line "פראי מופיע,"
-	cont "אתה יכול להשתמש"
+	cont "את יכולה להשתמש"
 	cont "ב#ימון שלך כדי"
 	cont "להילחם בו!"
 	done
 
 _OaksLabText_1d2fa::
 	text "אלון: <PLAYER>,"
-	line "חנך את ה#ימון"
+	line "חנכי את ה#ימון"
 	cont "הצעיר שלך בקרבות!"
 	done
 
@@ -88,13 +88,13 @@ _OaksLabDeliverParcelText1::
 	para "טוב, נראה שהוא"
 	line "אוהב אותך מאוד."
 
-	para "כנראה שאתה מאמן"
-	line "#ימונים מוכשר!"
+	para "כנראה שאת מאמנת"
+	line "#ימונים מוכשרת!"
 
 	para "מה? הבאת לי"
 	line "משהו?"
 
-	para "<PLAYER> מסר"
+	para "<PLAYER> מסרה"
 	line "את החבילה של"
 	cont "אלון.@"
 	text_end
@@ -113,19 +113,19 @@ _OaksLabAroundWorldText::
 	done
 
 _OaksLabGivePokeballsText1::
-	text "אלון: אם אתה רוצה"
+	text "אלון: אם את רוצה"
 	line "לדעת פרטים"
 	cont "מדויקים על"
-	cont "#ימון, עליך"
+	cont "#ימון, עלייך"
 	cont "לעשות יותר מרק"
 	cont "לראות אותו."
 
-	para "עליך לתפוס אותו!"
-	line "השתמש באלה כדי"
+	para "עלייך לתפוס אותו!"
+	line "השתמשי באלה כדי"
 	cont "לתפוס #ימונים"
 	cont "פראיים."
 
-	para "<PLAYER> קיבל 5"
+	para "<PLAYER> קיבלה 5"
 	line "פוכדורים!@"
 	text_end
 
@@ -140,7 +140,7 @@ _OaksLabGivePokeballsText2::
 	cont "ולנסות לתפוס"
 	cont "אותו!"
 
-	para "לא תמיד תצליח"
+	para "לא תמיד תצליחי"
 	line "לתפוס את"
 	cont "ה#ימון."
 
@@ -150,7 +150,7 @@ _OaksLabGivePokeballsText2::
 	done
 
 _OaksLabPleaseVisitText::
-	text "אלון: בוא לבקר"
+	text "אלון: בואי לבקר"
 	line "מדי פעם."
 
 	para "אשמח לראות את"
@@ -214,8 +214,8 @@ _OaksLabChooseMonText::
 
 	para "עכשיו כשאני מבוגר,"
 	line "נשארו לי רק 3,"
-	cont "אבל אתה יכול לקחת"
-	cont "אחד! בחר!"
+	cont "אבל את יכולה לקחת"
+	cont "אחד! בחרי!"
 	done
 
 _OaksLabRivalInterjectionText::
@@ -247,9 +247,9 @@ _OaksLabRivalReceivedMonText::
 	text_end
 
 _OaksLabRivalChallengeText::
-	text "<RIVAL>: חכה"
+	text "<RIVAL>: חכי"
 	line "רגע, <PLAYER>!"
-	cont "בוא ננסה קצת"
+	cont "בואי ננסה קצת"
 	cont "את ה#ימונים"
 	cont "החדשים שלנו!"
 
@@ -315,7 +315,7 @@ _OaksLabText25::
 	line "ו<RIVAL>! קחו"
 	cont "לכם אחד!"
 
-	para "<PLAYER> קיבל"
+	para "<PLAYER> קיבלה"
 	line "מאלון את ה#ידע!@"
 	text_end
 
@@ -387,42 +387,42 @@ _OaksLabText_441cc::
 
 _OaksLabText_44201::
 	text "עוד יש לך הרבה"
-	line "עבודה לפניך."
-	cont "חפש #ימונים"
+	line "עבודה לפנייך."
+	cont "חפשי #ימונים"
 	cont "באיזורים עם"
 	cont "דשא!"
 	done
 
 _OaksLabText_44206::
-	text "אתה בכיוון הנכון!"
-	line "קבל מ”נ הבזק"
+	text "את בכיוון הנכון!"
+	line "קבלי מ”נ הבזק"
 	cont "מהעוזר שלי!"
 	done
 
 _OaksLabText_4420b::
 	text "עדיין חסרים לך"
-	line "#ימונים! נסה"
+	line "#ימונים! נסי"
 	cont "לתפוס זנים"
 	cont "שונים!"
 	done
 
 _OaksLabText_44210::
 	text "יופי, התקדמת"
-	line "הרבה! קבל"
+	line "הרבה! קבלי"
 	cont "מאתר חפצים"
 	cont "מהעוזר שלי!"
 	done
 
 _OaksLabText_44215::
 	text "נראה טוב!"
-	line "כשתגיע ל-05,"
-	cont "חפש את העוזר שלי!"
+	line "כשתגיעי ל-05,"
+	cont "חפשי את העוזר שלי!"
 	done
 
 _OaksLabText_4421a::
 	text "השגת לפחות 05"
 	line "זנים! ברכותיי!"
-	cont "קבל שיתוף נ”נ"
+	cont "קבלי שיתוף נ”נ"
 	cont "מהעוזר שלי!"
 	done
 
@@ -433,14 +433,14 @@ _OaksLabText_4421f::
 
 _OaksLabText_44224::
 	text "טוב מאוד!"
-	line "לך לדוג, אולי"
-	cont "תמצא #ימוני מים"
+	line "לכי לדוג, אולי"
+	cont "תמצאי #ימוני מים"
 	cont "חדשים!"
 	done
 
 _OaksLabText_44229::
 	text "נפלא!"
-	line "אתה אוהב"
+	line "את אוהבת"
 	cont "אוספים?"
 	done
 
@@ -453,8 +453,8 @@ _OaksLabText_4422e::
 
 _OaksLabText_44233::
 	text "תפסת לפחות 001"
-	line "זנים שונים! אתה"
-	cont "כל כך טוב, אני"
+	line "זנים שונים! את"
+	cont "כל כך טובה, אני"
 	cont "כמעט לא מאמין!"
 	done
 
@@ -466,21 +466,21 @@ _OaksLabText_44238::
 	done
 
 _OaksLabText_4423d::
-	text "נהדר! הצע לחברים"
+	text "נהדר! הציעי לחברים"
 	line "להחליף כדי להשיג"
 	cont "עוד #ימונים!"
 	done
 
 _OaksLabText_44242::
 	text "יוצא מן הכלל!"
-	line "הפכת למקצוען של"
+	line "הפכת למקצוענית של"
 	cont "ממש!"
 	done
 
 _OaksLabText_44247::
 	text "אין מילים בפי!"
-	line "התלמיד התעלה"
-	cont "על רבו!"
+	line "התלמידה התעלתה"
+	cont "על רבה!"
 	done
 
 _OaksLabText_4424c::

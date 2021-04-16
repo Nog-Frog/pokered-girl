@@ -1,6 +1,6 @@
 _VictoryRoad3BattleText2::
 	text "שמעתי שמועות"
-	line "על ילד פלא!"
+	line "על ילדת פלא!"
 	done
 
 _VictoryRoad3EndBattleText2::
@@ -14,8 +14,8 @@ _VictoryRoad3AfterBattleText2::
 	done
 
 _VictoryRoad3BattleText3::
-	text "בוא נראה"
-	line "כמה אתה טוב!"
+	text "בואי נראה"
+	line "כמה את טובה!"
 	done
 
 _VictoryRoad3EndBattleText3::
@@ -41,7 +41,7 @@ _VictoryRoad3EndBattleText4::
 _VictoryRoad3AfterBattleText4::
 	text "כל המאמנים פה"
 	line "מיועדים לליגת"
-	cont "ה#ימון! היזהר!"
+	cont "ה#ימון! היזהרי!"
 	done
 
 _VictoryRoad3BattleText5::
@@ -52,7 +52,7 @@ _VictoryRoad3BattleText5::
 
 _VictoryRoad3EndBattleText5::
 	text "אה!"
-	line "חזק כל כך!"
+	line "חזקה כל כך!"
 	prompt
 
 _VictoryRoad3AfterBattleText5::

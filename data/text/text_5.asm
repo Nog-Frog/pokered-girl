@@ -75,7 +75,7 @@ _CannotGetOffHereText::
 	prompt
 
 _GotMonText::
-	text "<PLAYER> קיבל"
+	text "<PLAYER> קיבלה"
 	line "את @"
 	text_ram wcd6d
 	text "!@"
@@ -101,7 +101,7 @@ _BoxIsFullText::
 	line "אפשר לשלוח אליו"
 	cont "עוד #ימונים!"
 
-	para "לך למרכז ה#ימון"
+	para "לכי למרכז ה#ימון"
 	line "ותחליף את התא"
 	cont "במחשב!"
 	done

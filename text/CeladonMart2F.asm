@@ -9,8 +9,8 @@ _CeladonMart2Text3::
 
 _CeladonMart2Text4::
 	text "כדאי להצטייד"
-	line "בהחייאה אם אתה"
-	cont "יוצא למסע ארוך."
+	line "בהחייאה אם את"
+	cont "יוצאת למסע ארוך."
 	done
 
 _CeladonMart2Text5::

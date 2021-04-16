@@ -10,7 +10,7 @@ _FuchsiaHouse1Text1::
 	done
 
 _FuchsiaHouse1Text2::
-	text "מה אתה אומר?"
+	text "מה את אומרת?"
 	line "פגשת את הדר?"
 
 	para "הוא הנכד שלי!"
@@ -25,7 +25,8 @@ _FuchsiaHouse1Text3::
 	line "פרטי ה#ימונים"
 	cont "שלו במחשב!"
 
-	para "אם תבקש ממנו, אולי"
-	line "הוא יראה לך איך!"
+	para "אם תבקשי ממנו, אולי"
+	line "אולי הוא יראה לך"
+	cont "איך!"
 	done
 
