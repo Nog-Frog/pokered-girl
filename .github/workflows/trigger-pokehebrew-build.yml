@@ -14,4 +14,5 @@ jobs:
         with:
           repository: Nog-Frog/PokeHebrew
           issue-number: 1
+          token: ${{ secrets.PAT }}
           body: "Test comment for 'poking' the PokeHebrew repo."
